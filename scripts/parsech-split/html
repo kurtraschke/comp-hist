@@ -1,0 +1,36 @@
+#!/usr/bin/perl -w
+
+use strict;
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(:ALL);
+use ParseCH::ExpNick;
+
+my $sp = "\&nbsp;\&nbsp;\&nbsp;";
+parser(@ARGV);
+
+print("<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML//EN\">\n");
+print("<HTML>\n");
+print("<HEAD><TITLE>The Computer History Graphing Project</TITLE></HEAD>\n");
+print("<BODY>\n");
+
+foreach my $node (sort keys %Name){
+  $Reference{$node} =~ s{(http:\S+)}{<A HREF="$1">$1</A>} if $Reference{$node};
+  print("<P><A NAME=\"$node\">$Name{$node}</A><BR>\n");
+  print("$sp Date: $Year{$node}") if defined $Year{$node};
+  print("-$Month{$node}") if defined $Month{$node};
+  print("-$Day{$node}") if defined $Day{$node};
+  print("<BR>\n") if defined $Year{$node};
+  print("$sp Reference: $Reference{$node}<BR>\n") if defined $Reference{$node};
+  print("$sp Info: $Info{$node}<BR>\n") if defined $Info{$node};
+  print("$sp Type: $Type{$node}<BR>\n") if defined $Type{$node};
+  print("$sp Status: $Status{$node}<BR>\n") if defined $Status{$node};
+  foreach my $linkto (keys %{$Linkto{$node}}){
+    print "$sp ", expnick($Linkto{$node}{$linkto});
+    if($Name{$linkto}){print " <A HREF=\#$linkto>$Name{$linkto}</A><BR>\n";}
+    else{print " $linkto<BR>\n";}
+  }
+  print("</P>\n");
+}
+
+print("</BODY>\n</HTML>");
