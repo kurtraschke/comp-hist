@@ -4,6 +4,7 @@ nova
 	Date: 1969-2
 	Reference: http://www.SimuLogics.com/machines.htm
 	Type: hardware
+	Made by datagen
 
 supernova
 	Name: Data General SuperNova
@@ -11,7 +12,7 @@ supernova
 	Reference: http://www.SimuLogics.com/machines.htm
 	Type: hardware
 	Successor to nova
-
+	Made by datagen
 
 
 	
