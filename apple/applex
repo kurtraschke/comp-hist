@@ -5,6 +5,7 @@ applei
 	Reference: The History of Computers
 	Type: hardware
 	Code taken from mos6502
+	Made by apple
 
 appleii
 	Name: Apple II
@@ -12,6 +13,7 @@ appleii
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
 	Type: hardware
 	Successor to applei
+	Made by apple
 
 appleiip
 	Name: Apple II Plus
@@ -19,6 +21,7 @@ appleiip
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
 	Type: hardware
 	Successor to appleii
+	Made by apple
 
 bhappleiip
 	Name: Bell & Howell Apple II Plus
@@ -26,6 +29,7 @@ bhappleiip
 	Reference: http://www.acornworld.net/~jmayrand/B%26H.html
 	Type: hardware
 	Code taken from appleiip
+	Made by apple
 
 appleiie
 	Name: Apple IIe
@@ -33,13 +37,15 @@ appleiie
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
 	Type: hardware
 	Successor to appleiip
-
+	Made by apple
+	
 appleiiee
         Name: Apple IIe Enhanced
         Date: 1985-3
         Reference: http://www.hypermall.com/History/ah07.html
 	Type: hardware
         Successor to appleiie
+	Made by apple
 
 appleiiep
         Name: Apple IIe Platinum
@@ -47,6 +53,7 @@ appleiiep
         Reference: http://www.hypermall.com/History/ah07.html
         Type: hardware
         Successor to appleiiee
+	Made by apple
 
 appleiic
 	Name: Apple IIc
@@ -54,6 +61,7 @@ appleiic
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
         Type: hardware
 	Code taken from appleiie
+	Made by apple
 
 appleiicp
 	Name: Apple IIc+
@@ -61,6 +69,7 @@ appleiicp
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
         Type: hardware
 	Successor to appleiic
+	Made by apple
 
 appleiigs
 	Name: Apple IIgs
@@ -68,6 +77,7 @@ appleiigs
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
         Type: hardware
 	Code taken from appleiie
+	Made by apple
 
 appleiii
 	Name: Apple III
@@ -82,6 +92,7 @@ appleiiip
 	Reference: http://www.applefritter.com/apples/appleiii/faq.html
         Type: hardware
 	Successor to appleiii
+	Made by apple
 
 appleiielc
 	Name: Macintosh LC Apple IIe Card
@@ -89,9 +100,7 @@ appleiielc
 	Reference: http://www.acornworld.net/~jmayrand/IIeCard.html
 	Type: hardware
 	Code taken from appleiiep
-
-
-
+	Made by apple
 
 
 
