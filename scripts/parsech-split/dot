@@ -51,7 +51,7 @@ for my $i ($Minyear .. $Maxyear){
   }
   print("\t$i.00->\n");
   for my $j (0 .. 12){
-    $d="$i.$j";
+    $d=sprintf("$i.%02d", $j);
     print("\t$d->\n")
       if defined $Date{$d}{$d};
   }
