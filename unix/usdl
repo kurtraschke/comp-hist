@@ -1,7 +1,7 @@
 #########################################################################
 #			Some USDL versions				#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/23 17:55:17 $
+# $Revision: 1.5 $ $Date: 2000/08/23 17:59:38 $
 #
 pwb1.0
 	Name: PWB/UNIX 1.0
@@ -82,8 +82,35 @@ ts2.0
 
 ts3.0
 	Name: TS 3.0
-	Date: 1981
-	Reference: Life With UNIX, pg 6
+	Date: 1979
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
         Type: OS
 	Successor to ts2.0
 
+ts3.0.1
+	Name: TS 3.0.1
+	Date: 1980
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to ts3.0
+
+ts4.0.1
+	Name: TS 4.0.1
+	Date: 1981
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to ts3.0.1
+
+ts5.0
+	Name: TS 5.0
+	Date: 1982
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to ts4.0
+
+ts5.2
+	Name: TS 5.2
+	Date: 1983
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to ts5.0
