@@ -4,7 +4,11 @@ OK, I guess I have to make a readme, so here it is. This is the computer family 
 
 In order to be able to use this, you will need a copy of Graphviz <http://research.att.com/sw/tools/graphviz/> and a Perl that is somewhere in the 5 range <http://www.perl.com>. To make a copy of where we are right now, type "make" in the top level directory.
 
-If you want to make a node, look in TODO to see what we need done. Then look at the syntax in the doc/ directory. 
+If you want to make a node, look in TODO and doc/goals to see what we need done. Then look at the syntax in the doc/ directory. 
 
 	TIA for your help-
 	Scott Fenton <sj12fn@home.com>
+
+
+
+
