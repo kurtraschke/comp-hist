@@ -4,56 +4,56 @@
 #Early IBM boxen
 
 602
-	Name: IBM 602
+	Name: International Business Machines 602
 	Date: 1943
 	Reference: http://multimedia.design.curtin.edu.au/cache/c/0003/
 	Type: hardware
 	Code taken from eniac
 
 604
-	Name: IBM 604
+	Name: International Business Machines 604
 	Date: 1948
 	Reference: http://www.science.uva.nl/faculteit/museum/604.html
 	Type: hardware
 	Successor to 602
 
 701
-	Name: IBM 701
+	Name: International Business Machines 701
 	Date: 1953
 	Reference: http://www.tcm.org/html/history/detail/1953-ibm701.html
 	Type: hardware
 	Successor to 604
 
 650
-	Name: IBM 650
+	Name: International Business Machines 650
 	Date: 1954-12
 	Reference: http://www.users.nwark.com/~rcmahq/jclark/ibm650.htm
 	Type: hardware
 	Successor to 701
 
 704
-	Name: IBM 704
+	Name: International Business Machines 704
 	Date: 1955
 	Reference: Copyright on IBM 704 Operations Manual
 	Type: hardware
 	Successor to 650
 
 709
-	Name: IBM 709
+	Name: International Business Machines 709
 	Date: 1957-1
 	Reference: http://www.ibm.com/news/ls/1999/07/articles/sidebar_09.phtml
 	Type: hardware
 	Successor to 704
 
 7090
-	Name: IBM 7090
+	Name: International Business Machines 7090
 	Date: 1959
 	Reference: http://ecommerce.ncsu.edu/topics/netcentrism/ibm7090.html
 	Type: hardware
 	Successor to 709
 
 7094
-	Name: IBM 7094
+	Name: International Business Machines 7094
 	Date: 1959
 	Reference: http://www.teleport.com/~prp/collect/main.html
 	Type: hardware
