@@ -75,7 +75,7 @@ clean:
 	cd scripts/new ; make clean
 
 biblio:
-	cat $(SRCS) | scripts/biblio > bibliography
+	perl scripts/parsech -o biblio $(SRCS) > bibliography
 
 info:
 	perl scripts/parsech -o info $(SRCS) > information
