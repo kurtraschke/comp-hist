@@ -1,0 +1,1852 @@
+linux200
+	Name: Linux 2.0.0
+	Type: os
+	Date: 1996-06-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre2014
+
+linux201
+	Name: Linux 2.0.1
+	Type: os
+	Date: 1996-07-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux200
+
+linux202
+	Name: Linux 2.0.2
+	Type: os
+	Date: 1996-07-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux201
+
+linux203
+	Name: Linux 2.0.3
+	Type: os
+	Date: 1996-07-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux202
+
+linux204
+	Name: Linux 2.0.4
+	Type: os
+	Date: 1996-07-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux203
+
+linux205
+	Name: Linux 2.0.5
+	Type: os
+	Date: 1996-07-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux204
+
+linux206
+	Name: Linux 2.0.6
+	Type: os
+	Date: 1996-07-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux205
+
+linux207
+	Name: Linux 2.0.7
+	Type: os
+	Date: 1996-07-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux206
+
+linux208
+	Name: Linux 2.0.8
+	Type: os
+	Date: 1996-07-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux207
+
+linux209
+	Name: Linux 2.0.9
+	Type: os
+	Date: 1996-07-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux208
+
+linux2010
+	Name: Linux 2.0.10
+	Type: os
+	Date: 1996-07-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux209
+
+linux2011
+	Name: Linux 2.0.11
+	Type: os
+	Date: 1996-08-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2010
+
+linux2012
+	Name: Linux 2.0.12
+	Type: os
+	Date: 1996-08-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2011
+
+linux2013
+	Name: Linux 2.0.13
+	Type: os
+	Date: 1996-08-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2012
+
+linux2014
+	Name: Linux 2.0.14
+	Type: os
+	Date: 1996-08-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2013
+
+linux2015
+	Name: Linux 2.0.15
+	Type: os
+	Date: 1996-08-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2014
+
+linux2016
+	Name: Linux 2.0.16
+	Type: os
+	Date: 1996-08-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2015
+
+linux2017
+	Name: Linux 2.0.17
+	Type: os
+	Date: 1996-09-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2016
+
+linux2018
+	Name: Linux 2.0.18
+	Type: os
+	Date: 1996-09-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2017
+
+linux2019
+	Name: Linux 2.0.19
+	Type: os
+	Date: 1996-09-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2018
+
+linux2020
+	Name: Linux 2.0.20
+	Type: os
+	Date: 1996-09-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2019
+
+linux2021
+	Name: Linux 2.0.21
+	Type: os
+	Date: 1996-09-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2020
+
+linux2022
+	Name: Linux 2.0.22
+	Type: os
+	Date: 1996-10-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2021
+
+linux2023
+	Name: Linux 2.0.23
+	Type: os
+	Date: 1996-10-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2022
+
+linux2024
+	Name: Linux 2.0.24
+	Type: os
+	Date: 1996-10-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2023
+
+linux2025
+	Name: Linux 2.0.25
+	Type: os
+	Date: 1996-11-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2024
+
+linux2026
+	Name: Linux 2.0.26
+	Type: os
+	Date: 1996-11-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2025
+
+linux2027
+	Name: Linux 2.0.27
+	Type: os
+	Date: 1996-12-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2026
+
+linux2028
+	Name: Linux 2.0.28
+	Type: os
+	Date: 1997-01-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2027
+
+linux2029
+	Name: Linux 2.0.29
+	Type: os
+	Date: 1997-02-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2028
+
+linux2030
+	Name: Linux 2.0.30
+	Type: os
+	Date: 1997-04-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2029
+
+linux2031
+	Name: Linux 2.0.31
+	Type: os
+	Date: 1997-10-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2030
+
+linux2032
+	Name: Linux 2.0.32
+	Type: os
+	Date: 1997-11-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2031
+
+linux2033
+	Name: Linux 2.0.33
+	Type: os
+	Date: 1997-12-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2032
+
+linux2034
+	Name: Linux 2.0.34
+	Type: os
+	Date: 1998-06-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2033
+
+linux2035
+	Name: Linux 2.0.35
+	Type: os
+	Date: 1998-07-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2034
+
+linux2036
+	Name: Linux 2.0.36
+	Type: os
+	Date: 1998-11-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2035
+
+linux2037
+	Name: Linux 2.0.37
+	Type: os
+	Date: 1999-06-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2036
+
+linux2038
+	Name: Linux 2.0.38
+	Type: os
+	Date: 1999-08-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2037
+
+linux210
+	Name: Linux 2.1.0
+	Type: os
+	Date: 1996-09-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2021
+
+linux211
+	Name: Linux 2.1.1
+	Type: os
+	Date: 1996-10-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux210
+
+linux212
+	Name: Linux 2.1.2
+	Type: os
+	Date: 1996-10-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux211
+
+linux213
+	Name: Linux 2.1.3
+	Type: os
+	Date: 1996-10-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux212
+
+linux214
+	Name: Linux 2.1.4
+	Type: os
+	Date: 1996-10-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux213
+
+linux215
+	Name: Linux 2.1.5
+	Type: os
+	Date: 1996-10-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux214
+
+linux216
+	Name: Linux 2.1.6
+	Type: os
+	Date: 1996-10-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux215
+
+linux217
+	Name: Linux 2.1.7
+	Type: os
+	Date: 1996-11-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux216
+
+linux218
+	Name: Linux 2.1.8
+	Type: os
+	Date: 1996-11-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux217
+
+linux219
+	Name: Linux 2.1.9
+	Type: os
+	Date: 1996-11-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux218
+
+linux2110
+	Name: Linux 2.1.10
+	Type: os
+	Date: 1996-11-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux219
+
+linux2111
+	Name: Linux 2.1.11
+	Type: os
+	Date: 1996-11-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2110
+
+linux2112
+	Name: Linux 2.1.12
+	Type: os
+	Date: 1996-11-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2111
+
+linux2113
+	Name: Linux 2.1.13
+	Type: os
+	Date: 1996-11-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2112
+
+linux2114
+	Name: Linux 2.1.14
+	Type: os
+	Date: 1996-12-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2113
+
+linux2115
+	Name: Linux 2.1.15
+	Type: os
+	Date: 1996-12-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2114
+
+linux2116
+	Name: Linux 2.1.16
+	Type: os
+	Date: 1996-12-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2115
+
+linux2117
+	Name: Linux 2.1.17
+	Type: os
+	Date: 1996-12-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2116
+
+linux2118
+	Name: Linux 2.1.18
+	Type: os
+	Date: 1996-12-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2117
+
+linux2119
+	Name: Linux 2.1.19
+	Type: os
+	Date: 1996-12-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2118
+
+linux2120
+	Name: Linux 2.1.20
+	Type: os
+	Date: 1997-01-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2119
+
+linux2121
+	Name: Linux 2.1.21
+	Type: os
+	Date: 1997-01-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2120
+
+linux2122
+	Name: Linux 2.1.22
+	Type: os
+	Date: 1997-01-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2121
+
+linux2123
+	Name: Linux 2.1.23
+	Type: os
+	Date: 1997-01-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2122
+
+linux2124
+	Name: Linux 2.1.24
+	Type: os
+	Date: 1997-01-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2123
+
+linux2125
+	Name: Linux 2.1.25
+	Type: os
+	Date: 1997-02-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2124
+
+linux2126
+	Name: Linux 2.1.26
+	Type: os
+	Date: 1997-02-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2125
+
+linux2127
+	Name: Linux 2.1.27
+	Type: os
+	Date: 1997-02-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2126
+
+linux2128
+	Name: Linux 2.1.28
+	Type: os
+	Date: 1997-03-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2127
+
+linux2129
+	Name: Linux 2.1.29
+	Type: os
+	Date: 1997-03-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2128
+
+linux2130
+	Name: Linux 2.1.30
+	Type: os
+	Date: 1997-03-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2129
+
+linux2131
+	Name: Linux 2.1.31
+	Type: os
+	Date: 1997-04-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2130
+
+linux2132
+	Name: Linux 2.1.32
+	Type: os
+	Date: 1997-04-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2131
+
+linux2133
+	Name: Linux 2.1.33
+	Type: os
+	Date: 1997-04-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2132
+
+linux2134
+	Name: Linux 2.1.34
+	Type: os
+	Date: 1997-04-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2133
+
+linux2135
+	Name: Linux 2.1.35
+	Type: os
+	Date: 1997-04-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2134
+
+linux2136
+	Name: Linux 2.1.36
+	Type: os
+	Date: 1997-04-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2135
+
+linux2137
+	Name: Linux 2.1.37
+	Type: os
+	Date: 1997-05-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2136
+
+linux2138
+	Name: Linux 2.1.38
+	Type: os
+	Date: 1997-05-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2137
+
+linux2139
+	Name: Linux 2.1.39
+	Type: os
+	Date: 1997-05-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2138
+
+linux2140
+	Name: Linux 2.1.40
+	Type: os
+	Date: 1997-05-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2139
+
+linux2141
+	Name: Linux 2.1.41
+	Type: os
+	Date: 1997-05-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2140
+
+linux2142
+	Name: Linux 2.1.42
+	Type: os
+	Date: 1997-05-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2141
+
+linux2143
+	Name: Linux 2.1.43
+	Type: os
+	Date: 1997-06-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2142
+
+linux2144
+	Name: Linux 2.1.44
+	Type: os
+	Date: 1997-07-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2143
+
+linux2145
+	Name: Linux 2.1.45
+	Type: os
+	Date: 1997-07-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2144
+
+linux2146
+	Name: Linux 2.1.46
+	Type: os
+	Date: 1997-07-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2145
+
+linux2147
+	Name: Linux 2.1.47
+	Type: os
+	Date: 1997-07-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2146
+
+linux2148
+	Name: Linux 2.1.48
+	Type: os
+	Date: 1997-08-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2147
+
+linux2149
+	Name: Linux 2.1.49
+	Type: os
+	Date: 1997-08-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2148
+
+linux2150
+	Name: Linux 2.1.50
+	Type: os
+	Date: 1997-08-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2149
+
+linux2151
+	Name: Linux 2.1.51
+	Type: os
+	Date: 1997-08-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2150
+
+linux2152
+	Name: Linux 2.1.52
+	Type: os
+	Date: 1997-09-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2151
+
+linux2153
+	Name: Linux 2.1.53
+	Type: os
+	Date: 1997-09-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2152
+
+linux2154
+	Name: Linux 2.1.54
+	Type: os
+	Date: 1997-09-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2153
+
+linux2155
+	Name: Linux 2.1.55
+	Type: os
+	Date: 1997-09-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2154
+
+linux2156
+	Name: Linux 2.1.56
+	Type: os
+	Date: 1997-09-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2155
+
+linux2157
+	Name: Linux 2.1.57
+	Type: os
+	Date: 1997-09-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2156
+
+linux2158
+	Name: Linux 2.1.58
+	Type: os
+	Date: 1997-10-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2157
+
+linux2159
+	Name: Linux 2.1.59
+	Type: os
+	Date: 1997-10-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2158
+
+linux2160
+	Name: Linux 2.1.60
+	Type: os
+	Date: 1997-10-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2159
+
+linux2161
+	Name: Linux 2.1.61
+	Type: os
+	Date: 1997-10-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2160
+
+linux2162
+	Name: Linux 2.1.62
+	Type: os
+	Date: 1997-11-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2161
+
+linux2163
+	Name: Linux 2.1.63
+	Type: os
+	Date: 1997-11-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2162
+
+linux2164
+	Name: Linux 2.1.64
+	Type: os
+	Date: 1997-11-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2163
+
+linux2165
+	Name: Linux 2.1.65
+	Type: os
+	Date: 1997-11-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2164
+
+linux2166
+	Name: Linux 2.1.66
+	Type: os
+	Date: 1997-11-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2165
+
+linux2167
+	Name: Linux 2.1.67
+	Type: os
+	Date: 1997-11-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2166
+
+linux2168
+	Name: Linux 2.1.68
+	Type: os
+	Date: 1997-11-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2167
+
+linux2169
+	Name: Linux 2.1.69
+	Type: os
+	Date: 1997-12-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2168
+
+linux2170
+	Name: Linux 2.1.70
+	Type: os
+	Date: 1997-12-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2169
+
+linux2171
+	Name: Linux 2.1.71
+	Type: os
+	Date: 1997-12-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2170
+
+linux2172
+	Name: Linux 2.1.72
+	Type: os
+	Date: 1997-12-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2171
+
+linux2173
+	Name: Linux 2.1.73
+	Type: os
+	Date: 1997-12-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2172
+
+linux2174
+	Name: Linux 2.1.74
+	Type: os
+	Date: 1997-12-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2173
+
+linux2175
+	Name: Linux 2.1.75
+	Type: os
+	Date: 1997-12-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2174
+
+linux2176
+	Name: Linux 2.1.76
+	Type: os
+	Date: 1997-12-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2175
+
+linux2177
+	Name: Linux 2.1.77
+	Type: os
+	Date: 1998-01-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2176
+
+linux2178
+	Name: Linux 2.1.78
+	Type: os
+	Date: 1998-01-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2177
+
+linux2179
+	Name: Linux 2.1.79
+	Type: os
+	Date: 1998-01-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2178
+
+linux2180
+	Name: Linux 2.1.80
+	Type: os
+	Date: 1998-01-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2179
+
+linux2181
+	Name: Linux 2.1.81
+	Type: os
+	Date: 1998-01-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2180
+
+linux2182
+	Name: Linux 2.1.82
+	Type: os
+	Date: 1998-01-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2181
+
+linux2183
+	Name: Linux 2.1.83
+	Type: os
+	Date: 1998-01-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2182
+
+linux2184
+	Name: Linux 2.1.84
+	Type: os
+	Date: 1998-01-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2183
+
+linux2185
+	Name: Linux 2.1.85
+	Type: os
+	Date: 1998-02-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2184
+
+linux2186
+	Name: Linux 2.1.86
+	Type: os
+	Date: 1998-02-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2185
+
+linux2187
+	Name: Linux 2.1.87
+	Type: os
+	Date: 1998-02-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2186
+
+linux2188
+	Name: Linux 2.1.88
+	Type: os
+	Date: 1998-02-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2187
+
+linux2189
+	Name: Linux 2.1.89
+	Type: os
+	Date: 1998-03-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2188
+
+linux2190
+	Name: Linux 2.1.90
+	Type: os
+	Date: 1998-03-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2189
+
+linux2191
+	Name: Linux 2.1.91
+	Type: os
+	Date: 1998-03-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2190
+
+linux2192
+	Name: Linux 2.1.92
+	Type: os
+	Date: 1998-04-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2191
+
+linux2193
+	Name: Linux 2.1.93
+	Type: os
+	Date: 1998-04-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2192
+
+linux2194
+	Name: Linux 2.1.94
+	Type: os
+	Date: 1998-04-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2193
+
+linux2195
+	Name: Linux 2.1.95
+	Type: os
+	Date: 1998-04-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2194
+
+linux2196
+	Name: Linux 2.1.96
+	Type: os
+	Date: 1998-04-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2195
+
+linux2197
+	Name: Linux 2.1.97
+	Type: os
+	Date: 1998-04-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2196
+
+linux2198
+	Name: Linux 2.1.98
+	Type: os
+	Date: 1998-04-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2197
+
+linux2199
+	Name: Linux 2.1.99
+	Type: os
+	Date: 1998-04-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2198
+
+linux21100
+	Name: Linux 2.1.100
+	Type: os
+	Date: 1998-05-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2199
+
+linux21101
+	Name: Linux 2.1.101
+	Type: os
+	Date: 1998-05-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21100
+
+linux21102
+	Name: Linux 2.1.102
+	Type: os
+	Date: 1998-05-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21101
+
+linux21103
+	Name: Linux 2.1.103
+	Type: os
+	Date: 1998-05-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21102
+
+linux21104
+	Name: Linux 2.1.104
+	Type: os
+	Date: 1998-06-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21103
+
+linux21105
+	Name: Linux 2.1.105
+	Type: os
+	Date: 1998-06-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21104
+
+linux21106
+	Name: Linux 2.1.106
+	Type: os
+	Date: 1998-06-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21105
+
+linux21107
+	Name: Linux 2.1.107
+	Type: os
+	Date: 1998-06-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21106
+
+linux21108
+	Name: Linux 2.1.108
+	Type: os
+	Date: 1998-07-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21107
+
+linux21109
+	Name: Linux 2.1.109
+	Type: os
+	Date: 1998-07-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21108
+
+linux21110
+	Name: Linux 2.1.110
+	Type: os
+	Date: 1998-07-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21109
+
+linux21111
+	Name: Linux 2.1.111
+	Type: os
+	Date: 1998-07-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21110
+
+linux21112
+	Name: Linux 2.1.112
+	Type: os
+	Date: 1998-07-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21111
+
+linux21113
+	Name: Linux 2.1.113
+	Type: os
+	Date: 1998-08-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21112
+
+linux21114
+	Name: Linux 2.1.114
+	Type: os
+	Date: 1998-08-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21113
+
+linux21115
+	Name: Linux 2.1.115
+	Type: os
+	Date: 1998-08-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21114
+
+linux21116
+	Name: Linux 2.1.116
+	Type: os
+	Date: 1998-08-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21115
+
+linux21117
+	Name: Linux 2.1.117
+	Type: os
+	Date: 1998-08-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21116
+
+linux21118
+	Name: Linux 2.1.118
+	Type: os
+	Date: 1998-08-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21117
+
+linux21119
+	Name: Linux 2.1.119
+	Type: os
+	Date: 1998-08-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21118
+
+linux21120
+	Name: Linux 2.1.120
+	Type: os
+	Date: 1998-09-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21119
+
+linux21121
+	Name: Linux 2.1.121
+	Type: os
+	Date: 1998-09-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21120
+
+linux21122
+	Name: Linux 2.1.122
+	Type: os
+	Date: 1998-09-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21121
+
+linux21123
+	Name: Linux 2.1.123
+	Type: os
+	Date: 1998-09-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21122
+
+linux21124
+	Name: Linux 2.1.124
+	Type: os
+	Date: 1998-10-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21123
+
+linux21125
+	Name: Linux 2.1.125
+	Type: os
+	Date: 1998-10-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21124
+
+linux21126
+	Name: Linux 2.1.126
+	Type: os
+	Date: 1998-10-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21125
+
+linux21127
+	Name: Linux 2.1.127
+	Type: os
+	Date: 1998-11-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21126
+
+linux21128
+	Name: Linux 2.1.128
+	Type: os
+	Date: 1998-11-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21127
+
+linux21129
+	Name: Linux 2.1.129
+	Type: os
+	Date: 1998-11-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21128
+
+linux21130
+	Name: Linux 2.1.130
+	Type: os
+	Date: 1998-11-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21129
+
+linux21131
+	Name: Linux 2.1.131
+	Type: os
+	Date: 1998-12-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21130
+
+linux21132
+	Name: Linux 2.1.132
+	Type: os
+	Date: 1998-12-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21131
+
+linux22pre1
+	Name: Linux 2.2.0-pre1
+	Type: os
+	Date: 1998-12-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux21132
+
+linux22pre2
+	Name: Linux 2.2.0-pre2
+	Type: os
+	Date: 1998-12-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre1
+
+linux22pre3
+	Name: Linux 2.2.0-pre3
+	Type: os
+	Date: 1999-01-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre2
+
+linux22pre4
+	Name: Linux 2.2.0-pre4
+	Type: os
+	Date: 1999-01-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre3
+
+linux22pre5
+	Name: Linux 2.2.0-pre5
+	Type: os
+	Date: 1999-01-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre4
+
+linux22pre6
+	Name: Linux 2.2.0-pre6
+	Type: os
+	Date: 1999-01-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre5
+
+linux22pre7
+	Name: Linux 2.2.0-pre7
+	Type: os
+	Date: 1999-01-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre6
+
+linux22pre8
+	Name: Linux 2.2.0-pre8
+	Type: os
+	Date: 1999-01-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre7
+
+linux22pre9
+	Name: Linux 2.2.0-pre9
+	Type: os
+	Date: 1999-01-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre8
+linux220
+	Name: Linux 2.2.0
+	Type: os
+	Date: 1999-01-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux22pre9
+
+linux221
+	Name: Linux 2.2.1
+	Type: os
+	Date: 1999-28-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux220
+
+linux222
+	Name: Linux 2.2.2
+	Type: os
+	Date: 1999-05-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux221
+
+linux223
+	Name: Linux 2.2.3
+	Type: os
+	Date: 1999-03-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux222
+
+linux224
+	Name: Linux 2.2.4
+	Type: os
+	Date: 1999-03-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux223
+
+linux225
+	Name: Linux 2.2.5
+	Type: os
+	Date: 1999-03-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux224
+
+linux226
+	Name: Linux 2.2.6
+	Type: os
+	Date: 1999-04-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux225
+
+linux227
+	Name: Linux 2.2.7
+	Type: os
+	Date: 1999-04-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux226
+
+linux228
+	Name: Linux 2.2.8
+	Type: os
+	Date: 1999-05-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux227
+
+linux229
+	Name: Linux 2.2.9
+	Type: os
+	Date: 1999-05-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux228
+
+linux2210
+	Name: Linux 2.2.10
+	Type: os
+	Date: 1999-06-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux229
+
+linux2211
+	Name: Linux 2.2.11
+	Type: os
+	Date: 1999-08-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2210
+
+linux2212
+	Name: Linux 2.2.12
+	Type: os
+	Date: 1999-08-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2211
+
+linux2213
+	Name: Linux 2.2.13
+	Type: os
+	Date: 1999-10-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2212
+
+linux2214
+	Name: Linux 2.2.14
+	Type: os
+	Date: 2000-01-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2213
+
+linux2215
+	Name: Linux 2.2.15
+	Type: os
+	Date: 2000-05-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2214
+
+linux2216
+	Name: Linux 2.2.16
+	Type: os
+	Date: 1999-06-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2215
+linux230
+	Name: Linux 2.3.0
+	Type: os
+	Date: 1999-05-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux228
+
+linux231
+	Name: Linux 2.3.1
+	Type: os
+	Date: 1999-05-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux230
+
+linux232
+	Name: Linux 2.3.2
+	Type: os
+	Date: 1999-05-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux231
+
+linux233
+	Name: Linux 2.3.3
+	Type: os
+	Date: 1999-05-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux232
+
+linux234
+	Name: Linux 2.3.4
+	Type: os
+	Date: 1999-05-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux233
+
+linux235
+	Name: Linux 2.3.5
+	Type: os
+	Date: 1999-06-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux234
+
+linux236
+	Name: Linux 2.3.6
+	Type: os
+	Date: 1999-06-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux235
+
+linux237
+	Name: Linux 2.3.7
+	Type: os
+	Date: 1999-06-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux236
+
+linux238
+	Name: Linux 2.3.8
+	Type: os
+	Date: 1999-06-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux237
+
+linux239
+	Name: Linux 2.3.9
+	Type: os
+	Date: 1999-06-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux238
+
+linux2310
+	Name: Linux 2.3.10
+	Type: os
+	Date: 1999-07-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux239
+
+linux2311
+	Name: Linux 2.3.11
+	Type: os
+	Date: 1999-07-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2310
+
+linux2312
+	Name: Linux 2.3.12
+	Type: os
+	Date: 1999-07-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2311
+
+linux2313
+	Name: Linux 2.3.13
+	Type: os
+	Date: 1999-08-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2312
+
+linux2314
+	Name: Linux 2.3.14
+	Type: os
+	Date: 1999-08-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2313
+
+linux2315
+	Name: Linux 2.3.15
+	Type: os
+	Date: 1999-08-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2314
+
+linux2316
+	Name: Linux 2.3.16
+	Type: os
+	Date: 1999-08-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2315
+
+linux2317
+	Name: Linux 2.3.17
+	Type: os
+	Date: 1999-09-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2316
+
+linux2318
+	Name: Linux 2.3.18
+	Type: os
+	Date: 1999-09-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2317
+
+linux2319
+	Name: Linux 2.3.19
+	Type: os
+	Date: 1999-10-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2318
+
+linux2320
+	Name: Linux 2.3.20
+	Type: os
+	Date: 1999-10-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2319
+
+linux2321
+	Name: Linux 2.3.21
+	Type: os
+	Date: 1999-10-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2320
+
+linux2322
+	Name: Linux 2.3.22
+	Type: os
+	Date: 1999-10-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2321
+
+linux2323
+	Name: Linux 2.3.23
+	Type: os
+	Date: 1999-10-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2322
+
+linux2324
+	Name: Linux 2.3.24
+	Type: os
+	Date: 1999-10-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2323
+
+linux2325
+	Name: Linux 2.3.25
+	Type: os
+	Date: 1999-11-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2324
+
+linux2326
+	Name: Linux 2.3.26
+	Type: os
+	Date: 1999-11-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2325
+
+linux2327
+	Name: Linux 2.3.27
+	Type: os
+	Date: 1999-11-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2326
+
+linux2328
+	Name: Linux 2.3.28
+	Type: os
+	Date: 1999-11-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2327
+
+linux2329
+	Name: Linux 2.3.29
+	Type: os
+	Date: 1999-11-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2328
+
+linux2330
+	Name: Linux 2.3.30
+	Type: os
+	Date: 1999-12-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2329
+
+linux2331
+	Name: Linux 2.3.31
+	Type: os
+	Date: 1999-12-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2330
+
+linux2332
+	Name: Linux 2.3.32
+	Type: os
+	Date: 1999-12-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2331
+
+linux2333
+	Name: Linux 2.3.33
+	Type: os
+	Date: 1999-12-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2332
+
+linux2334
+	Name: Linux 2.3.34
+	Type: os
+	Date: 1999-12-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2333
+
+linux2335
+	Name: Linux 2.3.35
+	Type: os
+	Date: 1999-12-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2334
+
+linux2336
+	Name: Linux 2.3.36
+	Type: os
+	Date: 2000-01-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2335
+
+linux2337
+	Name: Linux 2.3.37
+	Type: os
+	Date: 2000-01-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2336
+
+linux2338
+	Name: Linux 2.3.38
+	Type: os
+	Date: 2000-01-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2337
+
+linux2339
+	Name: Linux 2.3.39
+	Type: os
+	Date: 2000-01-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2338
+
+linux2340
+	Name: Linux 2.3.40
+	Type: os
+	Date: 2000-01-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2339
+
+linux2341
+	Name: Linux 2.3.41
+	Type: os
+	Date: 2000-01-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2340
+
+linux2342
+	Name: Linux 2.3.42
+	Type: os
+	Date: 2000-02-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2341
+
+linux2343
+	Name: Linux 2.3.43
+	Type: os
+	Date: 2000-02-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2342
+
+linux2344
+	Name: Linux 2.3.44
+	Type: os
+	Date: 2000-02-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2343
+
+linux2345
+	Name: Linux 2.3.45
+	Type: os
+	Date: 2000-02-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2344
+
+linux2346
+	Name: Linux 2.3.46
+	Type: os
+	Date: 2000-02-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2345
+
+linux2347
+	Name: Linux 2.3.47
+	Type: os
+	Date: 2000-02-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2346
+
+linux2348
+	Name: Linux 2.3.48
+	Type: os
+	Date: 2000-02-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2347
+
+linux2349
+	Name: Linux 2.3.49
+	Type: os
+	Date: 2000-03-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2348
+
+linux2350
+	Name: Linux 2.3.50
+	Type: os
+	Date: 2000-03-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2349
+
+linux2351
+	Name: Linux 2.3.51
+	Type: os
+	Date: 2000-03-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2350
+
+linux2399p1
+	Name: Linux 2.3.99-pre1
+	Type: os
+	Date: 2000-03-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2351
+
+linux2399p2
+	Name: Linux 2.3.99-pre2
+	Type: os
+	Date: 2000-03-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p1
+
+linux2399p3
+	Name: Linux 2.3.99-pre3
+	Type: os
+	Date: 2000-03-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p2
+
+linux2399p4
+	Name: Linux 2.3.99-pre4
+	Type: os
+	Date: 2000-04-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p3
+
+linux2399p5
+	Name: Linux 2.3.99-pre5
+	Type: os
+	Date: 2000-04-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p4
+
+linux2399p6
+	Name: Linux 2.3.99-pre6
+	Type: os
+	Date: 2000-04-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p5
+
+linux2399p7
+	Name: Linux 2.3.99-pre7
+	Type: os
+	Date: 2000-05-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p6
+
+linux2399p8
+	Name: Linux 2.3.99-pre8
+	Type: os
+	Date: 2000-05-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p7
+
+linux2399p9
+	Name: Linux 2.3.99-pre9
+	Type: os
+	Date: 2000-05-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p8
+
+linux24t1
+	Name: Linux 2.4.0-test1
+	Type: os
+	Date: 2000-05-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux2399p9
+
+linux24t2
+	Name: Linux 2.4.0-test2
+	Type: os
+	Date: 2000-06-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux24t1
+
+linux24t3
+	Name: Linux 2.4.0-test3
+	Type: os
+	Date: 2000-07-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux24t2
+
+linux24t4
+	Name: Linux 2.4.0-test4
+	Type: os
+	Date: 2000-07-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux24t3
+
+linux24t5
+	Name: Linux 2.4.0-test5
+	Type: os
+	Date: 2000-07-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux24t4
+
+linux24t6
+	Name: Linux 2.4.0-test6
+	Type: os
+	Date: 2000-08-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux24t5

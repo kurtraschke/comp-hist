@@ -1,209 +1,1648 @@
-#########################
-#	Linux 1.*	#
-#########################
-# The linux1 kernels
-
 linux100
 	Name: Linux 1.0.0
-	Date: 1994-3-13
-	Reference: LKVH
-	Type: OS
-	Successor to linuxpre1
+	Date: 1994-03-12
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux09915
 
 linux101
 	Name: Linux 1.0.1
-	Date: 1994-3-16
-	Reference: LKVH
-	Type: OS
+	Date: 1994-03-15
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux100
 
 linux102
 	Name: Linux 1.0.2
-	Date: 1994-3-18 
-	Reference: LKVH
-	Type: OS
+	Date: 1994-03-17
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux101
 
 linux103
 	Name: Linux 1.0.3
-	Date: 1994-3-21
-	Reference: LKVH
-	Type: OS
+	Date: 1994-03-20
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux102
 
 linux104
-        Name: Linux 1.0.4
-        Date: 1994-3-21
-        Reference: LKVH
-        Type: OS
-        Successor to linux103
+	Name: Linux 1.0.4
+	Date: 1994-03-21
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux103
 
 linux105
-        Name: Linux 1.0.5
-        Date: 1994-3-28
-        Reference: LKVH
-        Type: OS
-        Successor to linux104
+	Name: Linux 1.0.5
+	Date: 1994-03-27
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux104
 
 linux106
-        Name: Linux 1.0.6
-        Date: 1994-4-3
-        Reference: LKVH
-        Type: OS
-        Successor to linux105
-
-linux110
-        Name: Linux 1.1.0
-        Date: 1994-4-6
-        Reference: LKVH
-        Type: OS
-        Code taken from linux106
-
-linux111
-        Name: Linux 1.1.1
-        Date: 1994-4-6
-        Reference: LKVH
-        Type: OS
-        Successor to linux110
+	Name: Linux 1.0.6
+	Date: 1994-04-02
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux105
 
 linux107
-        Name: Linux 1.0.7
-        Date: 1994-4-6
-        Reference: LKVH
-        Type: OS
-        Successor to linux106
+	Name: Linux 1.0.7
+	Date: 1994-04-05
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux106
 
 linux108
-        Name: Linux 1.0.8
-        Date: 1994-4-7
-        Reference: LKVH
-        Type: OS
-        Successor to linux107
-
-linux112
-        Name: Linux 1.1.2
-        Date: 1994-4-11
-        Reference: LKVH
-        Type: OS
-        Successor to linux111
-
-linux113
-        Name: Linux 1.1.3
-        Date: 1994-4-13
-        Reference: LKVH
-        Type: OS
-        Successor to linux112
-
-linux114
-        Name: Linux 1.1.3
-        Date: 1994-4-13
-        Reference: LKVH
-        Type: OS
-        Successor to linux113
-
-linux115
-        Name: Linux 1.1.5
-        Date: 1994-4-15
-        Reference: LKVH
-        Type: OS
-        Successor to linux114
+	Name: Linux 1.0.8
+	Date: 1994-04-06
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux107
 
 linux109
-        Name: Linux 1.0.9
-        Date: 1994-4-17
-        Reference: LKVH
-        Type: OS
-        Successor to linux108
+	Name: Linux 1.0.9
+	Date: 1994-04-15
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux108
+linux110
+	Name: Linux 1.1.0
+	Date: 1994-04-05
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux106
+
+linux111
+	Name: Linux 1.1.1
+	Date: 1994-04-06
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux110
+
+linux112
+	Name: Linux 1.1.2
+	Date: 1994-04-10
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux111
+
+linux113
+	Name: Linux 1.1.3
+	Date: 1994-04-12
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux112
+
+linux114
+	Name: Linux 1.1.4
+	Date: 1994-04-12
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux113
+
+linux115
+	Name: Linux 1.1.5
+	Date: 1994-04-13
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux114
 
 linux116
-        Name: Linux 1.1.6
-        Date: 1994-4-19
-        Reference: LKVH
-        Type: OS
-        Successor to linux115
+	Name: Linux 1.1.6
+	Date: 1994-04-18
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux115
 
 linux117
-        Name: Linux 1.1.7
-        Date: 1994-4-19
-        Reference: LKVH
-        Type: OS
-        Successor to linux116
+	Name: Linux 1.1.7
+	Date: 1994-04-18
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux116
 
 linux118
-        Name: Linux 1.1.8
-        Date: 1994-4-21
-        Reference: LKVH
-        Type: OS
-        Successor to linux117
+	Name: Linux 1.1.8
+	Date: 1994-04-20
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux117
 
 linux119
-        Name: Linux 1.1.9
-        Date: 1994-4-25
-        Reference: LKVH
-        Type: OS
-        Successor to linux118
+	Name: Linux 1.1.9
+	Date: 1994-04-24
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux118
 
 linux1110
-        Name: Linux 1.1.10
-        Date: 1994-4-28
-        Reference: LKVH
-        Type: OS
-        Successor to linux119
+	Name: Linux 1.1.10
+	Date: 1994-04-27
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux119
+
+linux1110
+	Name: Linux 1.1.10
+	Date: 1994-04-27
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux119
 
 linux1111
-        Name: Linux 1.1.11
-        Date: 1994-5-2
-        Reference: LKVH
-        Type: OS
-        Successor to linux1110
+	Name: Linux 1.1.11
+	Date: 1994-05-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1110
 
 linux1112
-        Name: Linux 1.1.12
-        Date: 1994-5-7
-        Reference: LKVH
-        Type: OS
-        Successor to linux1111
+	Name: Linux 1.1.12
+	Date: 1994-05-06
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1111
 
 linux1113
-        Name: Linux 1.1.13
-        Date: 1994-5-23
-        Reference: LKVH
-        Type: OS
-        Successor to linux1112
+	Name: Linux 1.1.13
+	Date: 1994-05-22
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux112
 
 linux1114
-        Name: Linux 1.1.14
-        Date: 1994-5-24
-        Reference: LKVH
-        Type: OS
-        Successor to linux1113
+	Name: Linux 1.1.14
+	Date: 1994-05-22
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1113
 
 linux1115
-        Name: Linux 1.1.15
-        Date: 1994-5-25
-        Reference: LKVH
-        Type: OS
-        Successor to linux114
+	Name: Linux 1.1.15
+	Date: 1994-05-24
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1114
 
 linux1116
-        Name: Linux 1.1.16
-        Date: 1994-5-27
-        Reference: LKVH
-        Type: OS
-        Successor to linux1115
+	Name: Linux 1.1.16
+	Date: 1994-05-26
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1115
 
 linux1117
-        Name: Linux 1.1.17
-        Date: 1994-5-31
-        Reference: LKVH
-        Type: OS
-        Successor to linux1116
+	Name: Linux 1.1.17
+	Date: 1994-05-30
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1116
 
 linux1118
-        Name: Linux 1.1.18
-        Date: 1994-6-2
-        Reference: LKVH
-        Type: OS
-        Successor to linux1117
+	Name: Linux 1.1.18
+	Date: 1994-06-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1117
 
+linux1119
+	Name: Linux 1.1.19
+	Date: 1994-06-08
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1118
 
+linux1120
+	Name: Linux 1.1.20
+	Date: 1994-06-16
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1119
+
+linux1121
+	Name: Linux 1.1.21
+	Date: 1994-06-20
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1120
+
+linux1122
+	Name: Linux 1.1.22
+	Date: 1994-06-22
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1121
+
+linux1123
+	Name: Linux 1.1.23
+	Date: 1994-06-26
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1122
+
+linux1124
+	Name: Linux 1.1.24
+	Date: 1994-06-27
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1123
+
+linux1125
+	Name: Linux 1.1.25
+	Date: 1994-07-06
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1124
+
+linux1126
+	Name: Linux 1.1.26
+	Date: 1994-07-07
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1125
+
+linux1127
+	Name: Linux 1.1.27
+	Date: 1994-07-08
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1126
+
+linux1128
+	Name: Linux 1.1.28
+	Date: 1994-07-11
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1127
+
+linux1129
+	Name: Linux 1.1.29
+	Date: 1994-07-13
+	Type: os	
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1128
+
+linux1130
+	Name: Linux 1.1.30
+	Date: 1994-07-16
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1129
+
+linux1131
+	Name: Linux 1.1.31
+	Date: 1994-07-17
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1130
+
+linux1132
+	Name: Linux 1.1.32
+	Date: 1994-07-19
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1131
+
+linux1133
+	Name: Linux 1.1.33
+	Date: 1994-07-20
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1132
+
+linux1134
+	Name: Linux 1.1.34
+	Date: 1994-07-21
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1133
+
+linux1135
+	Name: Linux 1.1.35
+	Date: 1994-07-23
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1134
+
+linux1136
+	Name: Linux 1.1.36
+	Date: 1994-07-25
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1135
+
+linux1137
+	Name: Linux 1.1.37
+	Date: 1994-07-28
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1136
+
+linux1138
+	Name: Linux 1.1.38
+	Date: 1994-08-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1137
+
+linux1139
+	Name: Linux 1.1.39
+	Date: 1994-08-03
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1138
+
+linux1140
+	Name: Linux 1.1.40
+	Date: 1994-08-05
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1139
+
+linux1141
+	Name: Linux 1.1.41
+	Date: 1994-08-06
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1140
+
+linux1142
+	Name: Linux 1.1.42
+	Date: 1994-08-08
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1141
+
+linux1143
+	Name: Linux 1.1.43
+	Date: 1994-08-10
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1142
+
+linux1144
+	Name: Linux 1.1.44
+	Date: 1994-08-10
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1143
+
+linux1145
+	Name: Linux 1.1.45
+	Date: 1994-08-14
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1144
+
+linux1146
+	Name: Linux 1.1.46
+	Date: 1994-08-18
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1145
+
+linux1147
+	Name: Linux 1.1.47
+	Date: 1994-08-21
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1146
+
+linux1148
+	Name: Linux 1.1.48
+	Date: 1994-08-24
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1147
+
+linux1149
+	Name: Linux 1.1.49
+	Date: 1994-08-29
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1148
+
+linux1150
+	Name: Linux 1.1.50
+	Date: 1994-09-07
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1149
+
+linux1151
+	Name: Linux 1.1.51
+	Date: 1994-09-17
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1150
+
+linux1152
+	Name: Linux 1.1.52
+	Date: 1994-10-05
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1151
+
+linux1153
+	Name: Linux 1.1.53
+	Date: 1994-10-09
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1152
+
+linux1154
+	Name: Linux 1.1.54
+	Date: 1994-10-13
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1153
+
+linux1155
+	Name: Linux 1.1.55
+	Date: 1994-10-19
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1154
+
+linux1156
+	Name: Linux 1.1.56
+	Date: 1994-10-20
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1155
+
+linux1157
+	Name: Linux 1.1.57
+	Date: 1994-10-23
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1156
+
+linux1158
+	Name: Linux 1.1.58
+	Date: 1994-10-25
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1157
+
+linux1159
+	Name: Linux 1.1.59
+	Date: 1994-10-27
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1158
+
+linux1160
+	Name: Linux 1.1.60
+	Date: 1994-10-30
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1159
+
+linux1161
+	Name: Linux 1.1.61
+	Date: 1994-11-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1160
+
+linux1162
+	Name: Linux 1.1.62
+	Date: 1994-11-05
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1161
+
+linux1163
+	Name: Linux 1.1.63
+	Date: 1994-11-13
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1162
+
+linux1164
+	Name: Linux 1.1.64
+	Date: 1994-11-14
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1163
+
+linux1165
+	Name: Linux 1.1.65
+	Date: 1994-11-20
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1164
+
+linux1166
+	Name: Linux 1.1.66
+	Date: 1994-11-24
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1165
+
+linux1167
+	Name: Linux 1.1.67
+	Date: 1994-11-27
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1166
+
+linux1168
+	Name: Linux 1.1.68
+	Date: 1994-11-28
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1167
+
+linux1169
+	Name: Linux 1.1.69
+	Date: 1994-11-30
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1168
+
+linux1170
+	Name: Linux 1.1.70
+	Date: 1994-12-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1169
+
+linux1171
+	Name: Linux 1.1.71
+	Date: 1994-12-40
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1170
+
+linux1172
+	Name: Linux 1.1.72
+	Date: 1994-12-05
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1171
+
+linux1173
+	Name: Linux 1.1.73
+	Date: 1994-12-14
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1172
+
+linux1174
+	Name: Linux 1.1.74
+	Date: 1994-12-22
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1173
+
+linux1175
+	Name: Linux 1.1.75
+	Date: 1994-12-28
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1174
+
+linux1176
+	Name: Linux 1.1.76
+	Date: 1995-01-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1175
+
+linux1177
+	Name: Linux 1.1.77
+	Date: 1995-01-06
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1176
+
+linux1178
+	Name: Linux 1.1.78
+	Date: 1995-01-08
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1177
+
+linux1179
+	Name: Linux 1.1.79
+	Date: 1995-01-10
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1178
+
+linux1180
+	Name: Linux 1.1.80
+	Date: 1995-01-11
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1179
+
+linux1181
+	Name: Linux 1.1.81
+	Date: 1995-01-12
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1180
+
+linux1182
+	Name: Linux 1.1.82
+	Date: 1995-01-15
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1181
+
+linux1183
+	Name: Linux 1.1.83
+	Date: 1995-01-17
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1182
+
+linux1184
+	Name: Linux 1.1.84
+	Date: 1995-01-21
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1183
+
+linux1185
+	Name: Linux 1.1.85
+	Date: 1995-01-22
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1184
+
+linux1186
+	Name: Linux 1.1.86
+	Date: 1995-01-26
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1185
+
+linux1187
+	Name: Linux 1.1.87
+	Date: 1995-01-29
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1186
+
+linux1188
+	Name: Linux 1.1.88
+	Date: 1995-01-30
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1187
+
+linux1189
+	Name: Linux 1.1.89
+	Date: 1995-02-04
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1188
+
+linux1190
+	Name: Linux 1.1.90
+	Date: 1995-02-07
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1189
+
+linux1191
+	Name: Linux 1.1.91
+	Date: 1995-02-11
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1190
+
+linux1192
+	Name: Linux 1.1.92
+	Date: 1995-02-14
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1191
+
+linux1193
+	Name: Linux 1.1.93
+	Date: 1995-02-19
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1192
+
+linux1194
+	Name: Linux 1.1.94
+	Date: 1995-02-21
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)	
+	Successor to linux1193
+
+linux1195
+	Name: Linux 1.1.95
+	Date: 1995-03-01
+	Type: os
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1194
+linux120
+	Name: Linux 1.2.0
+	Type: os
+	Date: 1995-03-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1195
+
+linux121
+	Name: Linux 1.2.1
+	Type: os
+	Date: 1995-03-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux120
+
+linux122
+	Name: Linux 1.2.2
+	Type: os
+	Date: 1995-03-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux121
+
+linux123
+	Name: Linux 1.2.3
+	Type: os
+	Date: 1995-04-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux122
+
+linux124
+	Name: Linux 1.2.4
+	Type: os
+	Date: 1995-04-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux123
+
+linux125
+	Name: Linux 1.2.5
+	Type: os
+	Date: 1995-04-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux124
+
+linux126
+	Name: Linux 1.2.6
+	Type: os
+	Date: 1995-04-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux125
+
+linux127
+	Name: Linux 1.2.7
+	Type: os
+	Date: 1995-04-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux126
+
+linux128
+	Name: Linux 1.2.8
+	Type: os
+	Date: 1995-05-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux127
+
+linux129
+	Name: Linux 1.2.9
+	Type: os
+	Date: 1995-05-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux128
+
+linux1210
+	Name: Linux 1.2.10
+	Type: os
+	Date: 1995-06-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux129
+
+linux1211
+	Name: Linux 1.2.11
+	Type: os
+	Date: 1995-06-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1210
+
+linux1212
+	Name: Linux 1.2.12
+	Type: os
+	Date: 1995-07-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1211
+
+linux1213
+	Name: Linux 1.2.13
+	Type: os
+	Date: 1995-08-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1212
+linux130
+	Name: Linux 1.3.0
+	Type: os
+	Date: 1995-06-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1210
+
+linux131
+	Name: Linux 1.3.1
+	Type: os
+	Date: 1995-06-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux130
+
+linux132
+	Name: Linux 1.3.2
+	Type: os
+	Date: 1995-06-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux131
+
+linux133
+	Name: Linux 1.3.3
+	Type: os
+	Date: 1995-06-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux132
+
+linux134
+	Name: Linux 1.3.4
+	Type: os
+	Date: 1995-06-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux133
+
+linux135
+	Name: Linux 1.3.5
+	Type: os
+	Date: 1995-06-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux134
+
+linux136
+	Name: Linux 1.3.6
+	Type: os
+	Date: 1995-06-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux135
+
+linux137
+	Name: Linux 1.3.7
+	Type: os
+	Date: 1995-07-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux136
+
+linux138
+	Name: Linux 1.3.8
+	Type: os
+	Date: 1995-07-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux137
+
+linux139
+	Name: Linux 1.3.9
+	Type: os
+	Date: 1995-07-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux138
+
+linux1310
+	Name: Linux 1.3.10
+	Type: os
+	Date: 1995-07-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux139
+
+linux1311
+	Name: Linux 1.3.11
+	Type: os
+	Date: 1995-07-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1310
+
+linux1312
+	Name: Linux 1.3.12
+	Type: os
+	Date: 1995-07-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1311
+
+linux1313
+	Name: Linux 1.3.13
+	Type: os
+	Date: 1995-07-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1312
+
+linux1314
+	Name: Linux 1.3.14
+	Type: os
+	Date: 1995-07-30
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1313
+
+linux1315
+	Name: Linux 1.3.15
+	Type: os
+	Date: 1995-08-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1314
+
+linux1316
+	Name: Linux 1.3.16
+	Type: os
+	Date: 1995-08-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1315
+
+linux1317
+	Name: Linux 1.3.17
+	Type: os
+	Date: 1995-08-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1316
+
+linux1318
+	Name: Linux 1.3.18
+	Type: os
+	Date: 1995-08-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1317
+
+linux1319
+	Name: Linux 1.3.19
+	Type: os
+	Date: 1995-08-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1318
+
+linux1320
+	Name: Linux 1.3.20
+	Type: os
+	Date: 1995-08-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1319
+
+linux1321
+	Name: Linux 1.3.21
+	Type: os
+	Date: 1995-08-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1320
+
+linux1322
+	Name: Linux 1.3.22
+	Type: os
+	Date: 1995-08-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1321
+
+linux1323
+	Name: Linux 1.3.23
+	Type: os
+	Date: 1995-09-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1322
+
+linux1324
+	Name: Linux 1.3.24
+	Type: os
+	Date: 1995-09-04
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1323
+
+linux1325
+	Name: Linux 1.3.25
+	Type: os
+	Date: 1995-09-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1324
+
+linux1326
+	Name: Linux 1.3.26
+	Type: os
+	Date: 1995-09-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1325
+
+linux1327
+	Name: Linux 1.3.27
+	Type: os
+	Date: 1995-09-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1326
+
+linux1328
+	Name: Linux 1.3.28
+	Type: os
+	Date: 1995-09-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1327
+
+linux1329
+	Name: Linux 1.3.29
+	Type: os
+	Date: 1995-09-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1328
+
+linux1330
+	Name: Linux 1.3.30
+	Type: os
+	Date: 1995-09-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1329
+
+linux1331
+	Name: Linux 1.3.31
+	Type: os
+	Date: 1995-10-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1330
+
+linux1332
+	Name: Linux 1.3.32
+	Type: os
+	Date: 1995-10-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1331
+
+linux1333
+	Name: Linux 1.3.33
+	Type: os
+	Date: 1995-10-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1332
+
+linux1334
+	Name: Linux 1.3.34
+	Type: os
+	Date: 1995-10-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1333
+
+linux1335
+	Name: Linux 1.3.35
+	Type: os
+	Date: 1995-10-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1334
+
+linux1336
+	Name: Linux 1.3.36
+	Type: os
+	Date: 1995-10-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1335
+
+linux1337
+	Name: Linux 1.3.37
+	Type: os
+	Date: 1995-10-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1336
+
+linux1338
+	Name: Linux 1.3.38
+	Type: os
+	Date: 1995-11-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1337
+
+linux1339
+	Name: Linux 1.3.39
+	Type: os
+	Date: 1995-11-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1338
+
+linux1340
+	Name: Linux 1.3.40
+	Type: os
+	Date: 1995-11-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1339
+
+linux1341
+	Name: Linux 1.3.41
+	Type: os
+	Date: 1995-10-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1340
+
+linux1342
+	Name: Linux 1.3.42
+	Type: os
+	Date: 1995-10-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1341
+
+linux1343
+	Name: Linux 1.3.43
+	Type: os
+	Date: 1995-10-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1342
+
+linux1344
+	Name: Linux 1.3.44
+	Type: os
+	Date: 1995-10-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1343
+
+linux1345
+	Name: Linux 1.3.45
+	Type: os
+	Date: 1995-10-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1344
+
+linux1346
+	Name: Linux 1.3.46
+	Type: os
+	Date: 1995-12-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1345
+
+linux1347
+	Name: Linux 1.3.47
+	Type: os
+	Date: 1995-12-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1346
+
+linux1348
+	Name: Linux 1.3.48
+	Type: os
+	Date: 1995-12-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1347
+
+linux1349
+	Name: Linux 1.3.49
+	Type: os
+	Date: 1995-12-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1348
+
+linux1350
+	Name: Linux 1.3.50
+	Type: os
+	Date: 1995-12-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1349
+
+linux1351
+	Name: Linux 1.3.51
+	Type: os
+	Date: 1995-12-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1350
+
+linux1352
+	Name: Linux 1.3.52
+	Type: os
+	Date: 1995-12-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1351
+
+linux1353
+	Name: Linux 1.3.53
+	Type: os
+	Date: 1996-01-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1352
+
+linux1354
+	Name: Linux 1.3.54
+	Type: os
+	Date: 1996-01-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1353
+
+linux1355
+	Name: Linux 1.3.55
+	Type: os
+	Date: 1996-01-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1354
+
+linux1356
+	Name: Linux 1.3.56
+	Type: os
+	Date: 1996-01-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1355
+
+linux1357
+	Name: Linux 1.3.57
+	Type: os
+	Date: 1996-01-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1356
+
+linux1358
+	Name: Linux 1.3.58
+	Type: os
+	Date: 1996-01-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1357
+
+linux1359
+	Name: Linux 1.3.59
+	Type: os
+	Date: 1996-01-22
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1358
+
+linux1360
+	Name: Linux 1.3.60
+	Type: os
+	Date: 1996-02-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1359
+
+linux1361
+	Name: Linux 1.3.61
+	Type: os
+	Date: 1996-02-08
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1360
+
+linux1362
+	Name: Linux 1.3.62
+	Type: os
+	Date: 1996-02-10
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1361
+
+linux1363
+	Name: Linux 1.3.63
+	Type: os
+	Date: 1996-02-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1362
+
+linux1364
+	Name: Linux 1.3.64
+	Type: os
+	Date: 1996-02-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1363
+
+linux1365
+	Name: Linux 1.3.65
+	Type: os
+	Date: 1996-02-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1364
+
+linux1366
+	Name: Linux 1.3.66
+	Type: os
+	Date: 1996-02-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1365
+
+linux1367
+	Name: Linux 1.3.67
+	Type: os
+	Date: 1996-02-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1366
+
+linux1368
+	Name: Linux 1.3.68
+	Type: os
+	Date: 1996-02-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1367
+
+linux1369
+	Name: Linux 1.3.69
+	Type: os
+	Date: 1996-02-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1368
+
+linux1370
+	Name: Linux 1.3.70
+	Type: os
+	Date: 1996-02-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1369
+
+linux1371
+	Name: Linux 1.3.71
+	Type: os
+	Date: 1996-03-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1370
+
+linux1372
+	Name: Linux 1.3.72
+	Type: os
+	Date: 1996-03-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1371
+
+linux1373
+	Name: Linux 1.3.73
+	Type: os
+	Date: 1996-03-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1372
+
+linux1374
+	Name: Linux 1.3.74
+	Type: os
+	Date: 1996-03-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1373
+
+linux1375
+	Name: Linux 1.3.75
+	Type: os
+	Date: 1996-03-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1374
+
+linux1376
+	Name: Linux 1.3.76
+	Type: os
+	Date: 1996-03-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1375
+
+linux1377
+	Name: Linux 1.3.77
+	Type: os
+	Date: 1996-03-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1376
+
+linux1378
+	Name: Linux 1.3.78
+	Type: os
+	Date: 1996-03-24
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1377
+
+linux1379
+	Name: Linux 1.3.79
+	Type: os
+	Date: 1996-03-25
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1378
+
+linux1380
+	Name: Linux 1.3.80
+	Type: os
+	Date: 1996-03-27
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1379
+
+linux1381
+	Name: Linux 1.3.81
+	Type: os
+	Date: 1996-03-29
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1380
+
+linux1382
+	Name: Linux 1.3.82
+	Type: os
+	Date: 1996-04-01
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1381
+
+linux1383
+	Name: Linux 1.3.83
+	Type: os
+	Date: 1996-04-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1382
+
+linux1384
+	Name: Linux 1.3.84
+	Type: os
+	Date: 1996-04-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1383
+
+linux1385
+	Name: Linux 1.3.85
+	Type: os
+	Date: 1996-04-07
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1384
+
+linux1386
+	Name: Linux 1.3.86
+	Type: os
+	Date: 1996-04-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1385
+
+linux1387
+	Name: Linux 1.3.87
+	Type: os
+	Date: 1996-04-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1386
+
+linux1388
+	Name: Linux 1.3.88
+	Type: os
+	Date: 1996-04-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1387
+
+linux1389
+	Name: Linux 1.3.89
+	Type: os
+	Date: 1996-04-14
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1388
+
+linux1390
+	Name: Linux 1.3.90
+	Type: os
+	Date: 1996-04-15
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1389
+
+linux1391
+	Name: Linux 1.3.91
+	Type: os
+	Date: 1996-04-17
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1390
+
+linux1392
+	Name: Linux 1.3.92
+	Type: os
+	Date: 1996-04-19
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1391
+
+linux1393
+	Name: Linux 1.3.93
+	Type: os
+	Date: 1996-04-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1392
+
+linux1394
+	Name: Linux 1.3.94
+	Type: os
+	Date: 1996-04-21
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1393
+
+linux1395
+	Name: Linux 1.3.95
+	Type: os
+	Date: 1996-04-23
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1394
+
+linux1396
+	Name: Linux 1.3.96
+	Type: os
+	Date: 1996-04-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1395
+
+linux1397
+	Name: Linux 1.3.97
+	Type: os
+	Date: 1996-04-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1396
+
+linux1398
+	Name: Linux 1.3.98
+	Type: os
+	Date: 1996-05-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1397
+
+linux1399
+	Name: Linux 1.3.99
+	Type: os
+	Date: 1996-05-06
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1398
+
+linux13100
+	Name: Linux 1.3.100
+	Type: os
+	Date: 1996-05-09
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux1399
+
+linuxpre201
+	Name: Linux pre-2.0-1
+	Type: os
+	Date: 1996-05-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linux13100
+
+linuxpre202
+	Name: Linux pre-2.0-2
+	Type: os
+	Date: 1996-05-11
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre201
+
+linuxpre203
+	Name: Linux pre-2.0-2
+	Type: os
+	Date: 1996-05-12
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre202
+
+linuxpre204
+	Name: Linux pre-2.0-4
+	Type: os
+	Date: 1996-05-13
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre203
+
+linuxpre205
+	Name: Linux pre-2.0-5
+	Type: os
+	Date: 1996-05-16
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre204
+
+linuxpre206
+	Name: Linux pre-2.0-6
+	Type: os
+	Date: 1996-05-18
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre205
+
+linuxpre207
+	Name: Linux pre-2.0-7
+	Type: os
+	Date: 1996-05-20
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre206
+
+linuxpre208
+	Name: Linux pre-2.0-8
+	Type: os
+	Date: 1996-05-26
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre207
+
+linuxpre209
+	Name: Linux pre-2.0-9
+	Type: os
+	Date: 1996-05-28
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre208
+
+linuxpre2010
+	Name: Linux pre-2.0-10
+	Type: os
+	Date: 1996-05-31
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre209
+
+linuxpre2011
+	Name: Linux pre-2.0-11
+	Type: os
+	Date: 1996-06-02
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre2010
+
+linuxpre2012
+	Name: Linux pre-2.0-12
+	Type: os
+	Date: 1996-06-03
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre2011
+
+linuxpre2013
+	Name: Linux pre-2.0-13
+	Type: os
+	Date: 1996-06-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre2012
+
+linuxpre2014
+	Name: Linux pre-2.0-14
+	Type: os
+	Date: 1996-06-05
+	Reference: Linux Kernel Archive (www.kernel.org)
+	Successor to linuxpre2013
