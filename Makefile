@@ -40,7 +40,7 @@ LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian
 
 POWER-SRCS = ibm/power/power
 
-UNIX-STANDARDS = unix/standards/usr-group
+UNIX-STANDARDS = unix/standards/usr-group unix/standards/posix
 
 CPL-SRCS = bcpl/cpl $(BCPL-SRCS)
 
