@@ -1,8 +1,10 @@
+#Parse.h, a header for the to* scripts
+
 $minyear=3000;
 $maxyear=0;
 $linkcnt=0;
 while (<>) {
-    if (/^\#/) { next; }
+    if (/\#/) { next; }
     if (/^(\S+)/) { $node=$1; next; }
     if (/.*Name: (.*)/) { $Name{$node}=$1; $nodecnt++; next; }
 
