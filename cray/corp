@@ -1,4 +1,4 @@
-cray
+cri
 	Name: Cray Research, Inc.\nCRI
 	Date: 1972
 	Type: company
@@ -9,4 +9,20 @@ ccc
 	Date: 1989-11
 	Type: company
 	Reference: http://nhse.npac.syr.edu/hpccsurvey/orgs/craycc/craycc.html
-	Code taken from cray
+	Code taken from cri
+
+tera
+	Name: Tera Computer Company
+	Date: 1987
+	Type: company
+	Reference: http://www.cray.com/company/history.html
+	
+
+cray
+	Name: Cray, Inc.
+	Date: 1999-8
+	Type: company
+	Reference: http://www.cray.com/company/history.html
+	Successor to cri
+	Code taken from sgi
+	Successor to tera
