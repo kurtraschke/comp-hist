@@ -1,0 +1,18 @@
+#########################
+#	Progeny Linux	#
+#########################
+
+progenyrc1
+	Name: Progeny Debian Linux 1.0 Release Canidate 1
+	Date: 2001-03-16
+	Reference: http://www.progeny.com/news/newsreleases/?newsrelease=03_16_2001
+	Code taken from linux2218
+	Code taken from debian-02.2
+
+progeny1
+	Name: Progeny Debian Linux 1.0
+	Date: 2001-04-09
+	Reference: http://slashdot.org/article.pl?sid=01/04/09/1444249&mode=nested
+	Type: os
+	Code taken from linux2218
+	Code taken from debian-02.2
