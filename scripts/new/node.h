@@ -84,6 +84,8 @@
    FLINK (2, "Code taken from ", codetakenfrom )	\
    FLINK (2, "Influenced by ",   influencedby )		\
    FLINK (2, "Runs on ",         runson )			\
+   FLINK (2, "Ran on ",         ranon )			\
+   FLINK (2, "Made by ",       madeby)			\
    FDATE (0, "Founded on ",      foundedon ) 
 
 #ifdef PARSER
@@ -101,7 +103,7 @@ char
 
 char
 	*typeValues[] = {"OS", "os", "hardware", "language", "standard", 
-		"announcement", "company", "patent", NULL, "??"};
+		"announcement", "company", "patent", NULL, "??", "other"};
 
 #endif
 

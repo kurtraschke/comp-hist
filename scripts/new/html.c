@@ -102,6 +102,12 @@ int main (int argc, char *argv[])
         if (NULL != (nlink = nlist->runson))
             show_links (nlink, "Runs on");
 
+        if (NULL != (nlink = nlist->ranon))
+	  show_links (nlink, "Ran on");
+
+        if (NULL != (nlink = nlist->madeby))
+	  show_links (nlink, "Made by");
+
         printf ("\n<br><hr><br>\n");
         nlist = nlist->next;
     }
