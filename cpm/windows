@@ -125,6 +125,19 @@ win311
 	Type: os
 	Successor to windows31
 
+winpc10
+	Name: Microsoft Windows for Pen Computing 1.0
+	Reference: http://www.asap.cs.nott.ac.uk/AMI/apprentice/INTERNAL/tech08.htm
+	Type: os
+	Code taken from windows31
+
+winpc20
+	Name: Microsoft Pen Services 2.0
+	Reference: http://penwin.com/pen20.html
+	Type: os
+	Successor to winpc10
+	Influenced by win95beta
+
 win95beta
 	Name: Microsoft Chicago (Windows 95 beta)
 	Date: 1994-08-09
