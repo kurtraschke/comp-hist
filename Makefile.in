@@ -2,8 +2,8 @@ SRCS = `find ./src/ -type f| sed /CVS.*/d`
 
 all: dump vcg biblio info html chml browser dot dbm
 
-dot: dump
-	@PERL@ -w scripts/parsech-split/dot dump >comp-history.dot
+dot: $(SRCS)
+	@PERL@ -w scripts/parsech-split/dot $(SRCS) >comp-history.dot
 
 dot.ps: dot
 	@DOT@ -Tps comp-history.dot >comp-history.dot.ps
@@ -12,23 +12,23 @@ clean:
 	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm
 	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too.  CVS users can also run make cvs_clean for a more comprehensive cleanup."
 
-biblio: dump
-	@PERL@ scripts/parsech-split/biblio dump > bibliography
+biblio: $(SRCS)
+	@PERL@ scripts/parsech-split/biblio $(SRCS) > bibliography
 
-info: dump
-	@PERL@ scripts/parsech-split/info dump > information
+info: $(SRCS)
+	@PERL@ scripts/parsech-split/info $(SRCS) > information
 
-vcg: dump
-	@PERL@ -w scripts/parsech-split/vcg dump >comp-history.vcg 
+vcg: $(SRCS)
+	@PERL@ -w scripts/parsech-split/vcg $(SRCS) >comp-history.vcg 
 
 vcg.ps: vcg
 	@VCG@ comp-history.vcg -psoutput comp-history.vcg
 
-html: dump
-	@PERL@ scripts/parsech-split/html dump >comp-hist.html
+html: $(SRCS)
+	@PERL@ scripts/parsech-split/html $(SRCS) >comp-hist.html
 
-chml: dump
-	@PERL@ scripts/parsech-split/chml dump >comp-hist.xml
+chml: $(SRCS)
+	@PERL@ scripts/parsech-split/chml $(SRCS) >comp-hist.xml
 
 browser:
 	cd scripts/browser ; ./configure ; make 
@@ -36,8 +36,8 @@ browser:
 browse: browser dump
 	cd scripts/browser/src ; ./browser ../../../dump
 
-dbm: dump
-	@PERL@ scripts/parsech-split/dbm dump
+dbm: $(SRCS)
+	@PERL@ scripts/parsech-split/dbm $(SRCS)
 
 $(SRCS) :
 
