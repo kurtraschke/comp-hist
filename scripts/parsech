@@ -70,12 +70,12 @@ sub help {
     print("\t-o - sets the output format, takes one arg, see man page for possible args\n");
 }
 
-sub output (){
-    if($Opts{o} =~ /dump/){&dump;}
-    elsif($Opts{o} =~ /chml/){&chml;}
-    elsif($Opts{o} =~ /info/){&info;}
-    elsif($Opts{o} =~ /vcg/){&vcg;}
-    elsif($Opts{o} =~ /biblio/){&biblio;}
+sub output {
+    if($Opts{o} eq "dump"){&dump;}
+    elsif($Opts{o} eq "chml"){&chml;}
+    elsif($Opts{o} eq "info"){&info;}
+    elsif($Opts{o} eq "vcg"){&vcg;}
+    elsif($Opts{o} eq "biblio"){&biblio;}
     else {print "Invalid output format: valid formats are dump, chml, vcg, and info\n"; exit;}
 }
 
@@ -466,4 +466,8 @@ sub vcg{
 	}
     }
     print("}\n");
+}
+
+sub pyinit {
+    &parse;
 }
