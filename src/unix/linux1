@@ -94,6 +94,21 @@ linux113
         Type: OS
         Successor to linux112
 
+linux114
+        Name: Linux 1.1.3
+        Date: 1994-4-13
+        Reference: LKVH
+        Type: OS
+        Successor to linux113
+
+linux115
+        Name: Linux 1.1.5
+        Date: 1994-4-15
+        Reference: LKVH
+        Type: OS
+        Successor to linux114
+
+
 
 
 
