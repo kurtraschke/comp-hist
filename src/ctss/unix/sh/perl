@@ -88,6 +88,27 @@ perl3.014
 	Type: language
 	Successor to perl3.009..27
 
+perl3.015
+	Name: Perl 3.015
+	Date: 1990-03-13
+	Reference: perlhist
+	Type: language
+	Successor to perl3.014
+
+perl3.016..18
+	Name: Perl 3.016..18
+	Date: 1990-03-28
+	Reference: perlhist
+	Type: language
+	Successor to perl3.015
+
+perl3.019..27
+	Name: Perl 3.019..27
+	Date: 1990-08-10
+	Reference: perlhist
+	Type: language
+	Successor to perl3.016..18
+
 perl4
 	Name: The Practial Extraction and Reporting Language 4.000
 	Date: 1991-03-21
