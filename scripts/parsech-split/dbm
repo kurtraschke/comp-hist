@@ -5,6 +5,7 @@ use lib $Bin;
 use ParseCH qw(:ALL);
 use DB_File;
 use Data::Dumper;
+use Cwd;
 
 no strict "subs";
 my %d;
@@ -17,10 +18,17 @@ foreach my $key (keys %Linkto){
   $Linkto{$key} = Dumper(%{$Linkto{$key}});
 }
 
+#Setup for the python initalizer
+open(PYINIT, "> parsech_dbm/pyinit") or die "Couldn't open PYINIT: $!";
+print(PYINIT "chdbm = {\n");
+
 #Now, the hash tying
 foreach my $d (qw(Name Year Month Day Reference Info Type Status Linkto)){
   tie %d, 'DB_File', "parsech_dbm/$d", O_CREAT, 0640;
   %d = %{$d};
-  untie %d;
-  %d=qw();
+  print(PYINIT "\t\'$d\':\'", cwd(), "/parsech_dbm/$d\'\n"); #print a line 
+  untie %d;                                                  #in the python 
+  %d=()                                                      #initalizer
 }
+
+print(PYINIT "}\n"); #close the initalizer
