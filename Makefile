@@ -14,7 +14,7 @@ NEXT-SRCS = next/corp next/hw
 
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
-IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS) ibm/602 ibm/corp
+IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS) ibm/602 ibm/corp ibm/sys-360/360
 
 SINCLAIR-SRCS = sinclair
 
@@ -54,7 +54,7 @@ WAITS-SRCS = waits
 
 FORTRAN-SRCS = fortran/fortran
 
-RFC-STDS = rfc/off-stds
+RFC-STDS = rfc/off-stds rfc/assgin-nums
 
 SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(NEXT-SRCS) $(LISP-SRCS) $(SH-SRCS) $(BE-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(WAITS-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS)
 
