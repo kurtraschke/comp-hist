@@ -1,24 +1,45 @@
-#! /usr/bin/perl -w
+#! /usr/local/bin/perl5
 
+$default_succweight=200;
+$default_codeweight=20;
+$default_ideaweight=10;
 $minyear=3000;
 $maxyear=0;
 $linkcnt=0;
 while (<>) {
     if (/^#/) { next; }
     if (/^(\S+)/) { $node=$1; next; }
-    if (/\tName: (.*)/) { $Name{$node}=$1; $nodecnt++; next; }
+    if (/\tName: (.*)/) { $Name{$node}=$1; next; }
 
+    if (/\tSuccessor to (\S+)\s+(\d+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
+	$Weight[$linkcnt]=$2;
+	$linkcnt++; next;
+    }
+    if (/\tCode taken from (\S+)\s+(\d+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="code";
+	$Weight[$linkcnt]=$2;
+	$linkcnt++; next;
+    }
+    if (/\tInfluenced by (\S+)\s+(\d+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
+	$Weight[$linkcnt]=$2;
+	$linkcnt++; next;
+    }
     if (/\tSuccessor to (\S+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
-	$linkcnt++;
+	$Weight[$linkcnt]=$default_succweight;
+	$linkcnt++; next;
     }
     if (/\tCode taken from (\S+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="code";
-	$linkcnt++;
+	$Weight[$linkcnt]=$default_codeweight;
+	$linkcnt++; next;
     }
     if (/\tInfluenced by (\S+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
-	$linkcnt++;
+	$Weight[$linkcnt]=$default_ideaweight;
+	$linkcnt++; next;
     }
 
     if (/\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
@@ -40,11 +61,12 @@ dodate:
 }
 
 print("digraph unixhist {\nratio=auto; page=\"8.25,11.65\";\n");
-print("node [shape=plaintext,fontsize=24];\n");
+print("node [shape=plaintext,fontsize=30];\n");
 print("ranksep=0.1; nodesep=0.1; center=true;\n");
 
 # Draw the visible years
 print("{ edge [style=bold];\n");
+print("  node [shape=plaintext,fontsize=36,fontname=\"Times-Bold\"];\n");
 for ($i=$minyear; $i<=$maxyear; $i++) {
     $d= "$i.00"; $Date{$d}{$d}=$d; $Name{$d}=$d;
     $Date{$d}{$i}=$i; $Name{$i}=$i;
@@ -60,6 +82,7 @@ foreach $i (sort(keys(%Date))) {
     }
     print("}\n");
 }
+
 
 # Do the invisible years
 for ($i=$minyear; $i<=$maxyear; $i++) { 
@@ -84,18 +107,9 @@ for ($i=0; $i<$linkcnt; $i++) {
 	print(STDERR "Warning: node $From[$i] doesn't exist\n"); next;
     }
     print("\"$Name{$From[$i]}\" -> \"$Name{$To[$i]}\" ");
-    if ($Link[$i] eq "succ") { print("[weight=10,style=bold]"); }
-    if ($Link[$i] eq "code") { print("[weight=5]"); }
-    if ($Link[$i] eq "idea") { print("[weight=2,style=dotted]"); }
+    if ($Link[$i] eq "succ") { print("[weight=$Weight[$i],style=bold]"); }
+    if ($Link[$i] eq "code") { print("[weight=$Weight[$i],style=dashed]"); }
+    if ($Link[$i] eq "idea") { print("[weight=$Weight[$i],style=dotted]"); }
     print(";\n");
 }
 print("}\n");
-
-
-
-
-
-
-
-
-
