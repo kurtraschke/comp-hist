@@ -1,7 +1,7 @@
 #########################################################################
 #			1BSD and 2BSD versions				#
 #########################################################################
-# $Revision: 1.2 $ $Date: 2000/08/04 11:43:55 $
+# $Revision: 1.3 $ $Date: 2000/08/18 23:09:35 $
 #
 # [wkt] I need to examine the files for each version, and see how V6/V7
 # are related to the early 2BSDs.
@@ -9,6 +9,7 @@
 	Name: 1BSD
 	Date: 1978-03-09
 	Reference: Quarter Century of UNIX by Peter Salus, pg 142
+        Type: OS
 #		PDP-11, Pascal, ex(1)
 #		30 free copies of 1BSD sent out
 #		35 tapes sold for 50 USD [QCU]
@@ -17,6 +18,7 @@
 	Name: 2BSD
 	Date: 1979-05-10
 	Reference: last-mod times on Distributions/ucb/2bsd.tar in PUPS
+        Type: OS
 	Successor to 1bsd 1000
 	Code taken from v6
 #		75 2BSD tapes shipped
@@ -42,6 +44,7 @@
 	Name: 2.79BSD
 	Date: 1980-04
 	Reference: /LABEL in Distributions/ucb/2.79bsd.tar
+        Type: OS
 	Successor to 2bsd 1000
 
 # [wkt] Note on the 2.8 entries. I don't have a definitive date of release for
@@ -52,6 +55,7 @@
 	Name: 2.8BSD
 	Date: 1981-07
 	Reference: KSJ
+        Type: OS
 	Successor to 2.79bsd 1000
 	Code taken from v7
 
@@ -60,6 +64,7 @@
 	Name: 2.8.1BSD
 	Date: 1982-01
 	Reference: Quarter Century of UNIX by Peter Salus
+        Type: OS
 	Successor to 2.8bsd 1000
 #		set of performance improvements
 
@@ -67,6 +72,7 @@
 	Name: 2.8.2BSD
 	Date: 1982-09-08
 	Reference: file LABEL in Distributions/ucb/2.8bsd.tar
+        Type: OS
 	Successor to 2.8.1bsd 1000
 
 # [wkt] Again a reference to KSJ. I must find out what this is.
@@ -74,6 +80,7 @@
 	Name: 2.9BSD
 	Date: 1983-07
 	Reference: KSJ
+        Type: OS
 	Successor to 2.8.2bsd 1000
 	Code taken from 4.1cbsd
 
@@ -81,6 +88,7 @@
 	Name: 2.9.1BSD
 	Date: 1983-11
 	Reference: kernel notice in file in Distributions/ucb/2.9BSD
+        Type: OS
 	Successor to 2.9bsd 1000
 
 # [wkt] Get Steven to confirm this date. What was this release?
@@ -88,6 +96,7 @@
 	Name: 2.9BSD-Seismo
 	Date: 1985-08
 	Reference: Steven Schultz, sms@moe.2bsd.com
+        Type: OS
 	Successor to 2.9.1bsd 1000
 
 # [wkt] Another unknown reference source. Chase this up.
@@ -95,6 +104,7 @@
 	Name: 2.10BSD
 	Date: 1987-04
 	Reference: KKK
+        Type: OS
 	Successor to 2.9seismo 1000
 	Code taken from 4.3bsd
 
@@ -102,6 +112,7 @@
 	Name: 2.10.1BSD
 	Date: 1989
 	Reference: Quarter Century of UNIX by Peter Salus, pg 143
+        Type: OS
 	Successor to 2.10bsd 1000
 
 # [wkt] Get Steven to confirm this date.
@@ -109,18 +120,21 @@
 	Name: 2.11BSD
 	Date: 1992-02
 	Reference: Steven Schultz, sms@moe.2bsd.com
+        Type: OS
 	Successor to 2.10.1bsd 1000
 
 2.11pl100
 	Name: 2.11BSD patch 100
 	Date: 1993-01
 	Reference: Steven Schultz, sms@moe.2bsd.com, in comp.bugs.2bsd
+        Type: OS
 	Successor to 2.11bsd 1000
 
 2.11pl200
 	Name: 2.11BSD patch 200
 	Date: 1994-12
 	Reference: Steven Schultz, sms@moe.2bsd.com, in comp.bugs.2bsd
+        Type: OS
 	Successor to 2.11pl100 1000
 	Code taken from 4.4lite
 
@@ -128,12 +142,14 @@
 	Name: 2.11BSD patch 300
 	Date: 1996-02
 	Reference: Steven Schultz, sms@moe.2bsd.com, in comp.bugs.2bsd
+        Type: OS
 	Successor to 2.11pl200 1000
 
 2.11pl335
 	Name: 2.11BSD patch 335
 	Date: 1996-11
 	Reference: Steven Schultz, sms@moe.2bsd.com, in comp.bugs.2bsd
+        Type: OS
 	Successor to 2.11pl300 1000
 	Code taken from 4.4lite2
 
@@ -141,5 +157,6 @@
 	Name: 2.11BSD patch 400
 	Date: 1998-01
 	Reference: Steven Schultz, sms@moe.2bsd.com, in comp.bugs.2bsd
+        Type: OS
 	Successor to 2.11pl335 1000
 

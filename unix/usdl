@@ -1,12 +1,13 @@
 #########################################################################
 #			Some USDL versions				#
 #########################################################################
-# $Revision: 1.2 $ $Date: 2000/08/04 11:46:00 $
+# $Revision: 1.3 $ $Date: 2000/08/18 23:09:35 $
 #
 pwb1.0
 	Name: PWB/UNIX 1.0
 	Date: 1977-07-01
 	Reference: /usr/news/pibs in the archived PWB distribution
+	Type: OS
 	Successor to pwbunix
 	Code taken from v6
 #		prerelease test versions: 1977-06-6, 1977-06-13
@@ -15,12 +16,14 @@ mini-unix
 	Name: Mini-UNIX
 	Date: 1977-05
 	Reference: Quarter Century of UNIX by Peter Salus, which page?
+        Type: OS
 	Code taken from v6
 	
 32V
 	Name: 32V
 	Date: 1979-05
 	Reference: last-mod times on Distributions/usdl/32V/32v_usr.tar
+        Type: OS
 	Successor to v7
 
 # [wkt] The following dates are completely bogus. I've added these nodes
@@ -31,24 +34,28 @@ pwbunix
 	Name: PWB/UNIX
 	Date: 1974
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Code taken from v4
 
 pwb2.0
 	Name: PWB/UNIX 2.0
 	Date: 1978
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Successor to pwb1.0
 
 mert
 	Name: MERT
 	Date: 1974
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Code taken from v4
 
 rt1.0
 	Name: RT 1.0
 	Date: 1977
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Code taken from v6
 	Successor to mert
 
@@ -56,17 +63,20 @@ ts1.0
 	Name: TS 1.0
 	Date: 1977
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Code taken from v6
 
 ts2.0
 	Name: TS 2.0
 	Date: 1978
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Successor to ts1.0
 
 ts3.0
 	Name: TS 3.0
 	Date: 1981
 	Reference: Life With UNIX, pg 6
+        Type: OS
 	Successor to ts2.0
 

@@ -1,7 +1,7 @@
 #########################################################################
 #			        BSDI					#
 #########################################################################
-# $Revision: 1.2 $ $Date: 2000/08/03 19:39:27 $
+# $Revision: 1.3 $ $Date: 2000/08/18 23:09:35 $
 #
 # [wkt] 1.0?
 bsdi031
@@ -9,6 +9,7 @@ bsdi031
 #	Date: 1992-03-02 but conflicts with 032, so I've moved it to Jan
 	Date: 1992-01
 	Reference: Cover page of the Release Notes
+        Type: OS
 	Code taken from net2
 #	"based on the Net II release from the Computer Systems Research Group
 #	at the University of California (Berkeley)."
@@ -17,6 +18,7 @@ bsdi032
 	Name: BSD/386 0.3.2
 	Date: 1992-02-28
 	Reference: Greg Lehey
+        Type: OS
 	Successor to bsdi031
 
 # Name: BSD/386 0.3.3
@@ -29,12 +31,14 @@ bsdi094
 	Date: 1992-12-08
 	Reference: File dates on the boot floppies. The box and
 	Reference: the Release Notes say: "Copyright BSDI 1992". 
+        Type: OS
 	Successor to bsdi032
 
 bsdi1.0
 	Name: BSD/386 1.0
 	Date: 1993-03
 	Reference: Distribution CD Label: "March 1993"
+        Type: OS
 	Successor to bsdi094
 #	Code claimed by AT&T removed (was replaced only in 1.1).
 
@@ -42,12 +46,14 @@ bsdi1.1
 	Name: BSD/OS 1.1
 	Date: 1994-02-14
 	Reference: http://www.de.FreeBSD.ORG/de/ftp/releases/
+        Type: OS
 	Successor to bsdi1.0
 
 bsdi2.0
 	Name: BSD/OS 2.0
 	Date: 1995-01
 	Reference: Distribution CD Label: "January 1995"
+        Type: OS
 	Successor to bsdi1.1
 	Code taken from 4.4lite
 #	BSD BITS (BSDI newsletter): "The new release, BSD/OS 2.0 is based on
@@ -57,16 +63,19 @@ bsdi2.01
 	Name: BSD/OS 2.0.1
 	Date: 1995-08
 	Reference: http://www.de.FreeBSD.ORG/de/ftp/releases/
+        Type: OS
 	Successor to bsdi2.0
 
 bsdi2.1
 	Name: BSD/OS 2.1
 	Date: 1996-02-13
 	Reference: http://www.de.FreeBSD.ORG/de/ftp/releases/
+        Type: OS
 	Successor to bsdi2.01
 
 bsdi3.0
 	Name: BSD/OS 3.0
 	Date: 1997-02-27
 	Reference: http://www.de.FreeBSD.ORG/de/ftp/releases/
+        Type: OS
 	Successor to bsdi2.1
