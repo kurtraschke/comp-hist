@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 
+use Getopt::Std;
+
 =head1 NAME
 
 B<parsech> - Parse Comp-Hist
@@ -8,7 +10,7 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
     
-    parsech B<-o> [dump|chml|info]
+    parsech B<-o> [dump|chml|info|vcg]
     parsech B<-h>
     parsech B<-v>
 
@@ -21,10 +23,6 @@ support.
 
 Oh, and I wanted documentation, too.
 
-=cut back to the code
-
-use Getopt::Std;
-
 =head1 DESCRIPTION
 
 B<parsech> will take three arguments at this point,
@@ -35,7 +33,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments: dump, chml, or info.
+take the following arguments: dump, chml, vcg, or info.
 
 =item B<-v> version
 
@@ -74,7 +72,8 @@ sub output (){
     if($opts{o} =~ /dump/){&dump;}
     elsif($opts{o} =~ /chml/){&chml;}
     elsif($opts{o} =~ /info/){&info;}
-    else {print "Invalid output format: valid formats are dump, chml, and info\n"; exit;}
+    elsif($opts{o} =~ /vcg/){&vcg;}
+    else {print "Invalid output format: valid formats are dump, chml, vcg, and info\n"; exit;}
 }
 
 =head2 B<parse>
@@ -179,7 +178,7 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
-sub linkup ($ $ $) {
+sub linkup {
     push(@{$linkto{$_[0]}}, $_[1]);
     push(@{$linkweight{$_[0]}}, $_[2]);
     return 0;
@@ -254,3 +253,97 @@ sub info{
     }
 }
 
+=head2 b<setcolor>
+
+The setcolor routine turns types of nodes into colors and stores them in the %color hash. The rules for translation are below:
+
+=over 5
+
+=item hardware becomes blue
+
+=item OSes are red
+
+=item languages are green
+
+=item standards are yellow
+
+=item companies are cyan
+
+=item and announcements are gold
+
+=cut
+
+sub setcolor{
+    foreach $node (keys %type){
+	$color{$node} = "blue" if $type{$node} =~ /^hardware/;
+	$color{$node} = "red" if $type{$node} =~ /^os/i;
+	$color{$node} = "green" if $type{$node} =~ /^language/;
+	$color{$node} = "yellow" if $type{$node} =~ /^standard/;
+	$color{$node} = "cyan" if $type{$node} =~ /^company/;
+	$color{$node} = "gold" if $type{$node} =~ /^announcement/;
+	$color{$node} = "magenta" if $type{$node} =~ /^other/;
+    }
+}
+
+=head2 B<setshape>
+
+The setshape routine will set shapes for the nodes according to the following status/shape relationship:
+
+=over 5
+
+=item released/box
+
+=item internal/triangle
+
+=item continual evolution/ellipse
+
+=item prototype/rhomb
+
+=item research/triangle
+
+=item otherwise/box
+
+=cut
+
+sub setshape {
+    foreach $node (keys %name){
+	if ($status{$node} =~ /^released/){$shape{$node} = "box";}
+	if ($status{$node} =~ /^triangle/){$shape{$node} = "triangle";}
+	if ($status{$node} =~ /^contev/){$shape{$node} = "ellipse";}
+	if ($status{$node} =~ /^prototype/){$shape{$node} = "rhomb";}
+	if ($status{$node} =~ /^research/){$shape{$node} = "triangle";}
+	else {$shape{$node} = "box";}
+    }
+}
+
+=head2 B<vcg>
+
+The vcg subroutine is an adapted form of tovcg's "graph" routine. The changes are as follows:
+
+=over 5
+
+=item it calls dopos, setcolor, and setshape itself, rather than having external functions do that
+
+=item it prints the surrounding VCG headings
+
+=item it doesn't seperate the files from each other (yet)
+
+=item and it takes care of linkage
+
+=cut
+
+sub vcg{
+    &dopos;
+    &setcolor;
+    &setshape;
+    print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
+    foreach $node (keys %name){
+	if(!defined $vpos{$node}){
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} $shape{$node} }\n");
+	}
+	else{
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} $shape{$node} }\n");
+	}
+    }
+    print("}\n");
+}
