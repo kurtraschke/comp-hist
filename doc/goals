@@ -1,12 +1,12 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
 0.2
-	linux1 should be done
+	AMD should be done
 
 0.5
 	the Unix tree should be reasonably done
 	ITS should be in place
-	the linux kernels should be done
+	the linux1 kernels should be done
 	motorola should be done
 	datagen/nova should be done
 
@@ -18,7 +18,7 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 	VMS should be done
 	the PDP computers should be done
 	the VAX computers should be done
-	the AMD chips should be done
 	POSIX should be current
+	Linux should be done
 	at least one node in use today should be traced back to ENIAC
 
