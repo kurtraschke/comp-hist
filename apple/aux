@@ -4,16 +4,19 @@
 aux10
 	Name: Apple A/UX 1.0
 	Date: 1988-2
-	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html
+	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html and http://www.ugu.com/sui/ugu/show?I=aux.help.faq&F=1111111111&G=Y
 	Type: os
 	Made by apple
 #Does anyone know what unixes A/UX was derived from?
+#Yes
+	Influenced by 4.3bsd
+
 aux20
 	Name: Apple A/UX 2.0
 	Date: 1990-3
 	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html
 	Type: os
 	Made by apple
-	Successor to aux20
+	Successor to aux10
 
 
