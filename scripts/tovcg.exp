@@ -6,7 +6,7 @@
 @files = @ARGV;
 $minyear = 3000000;
 
-print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\tlayoutalgorithm: tree\n");
+print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
 
 foreach $file (@files){
     parse($file);
@@ -23,7 +23,7 @@ sub parse{
     my $file = $_[0];
     open FILE, $file;
     while(<FILE>){
-	s/\#.*//;
+	if(/\#.*/){ next; }
 	if(/^(\S+)/){ $node = $1; push( @{$files{$file}}, $1 ); next; }
 	if(/.*Name: (.*)/){ $name{$node} = $1; next; }
 	if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
@@ -84,7 +84,7 @@ sub dopos{
 sub graph{
     my $file = $_[0];
     print("\tgraph: {\n");
-    print("\t\ttitle: \"information in $file\"\n\t\tlayoutalgorithm: tree\n");
+    print("\t\ttitle: \"Information in $file\"\n\t\tcolor: khaki\n\n");
     foreach $node (@{$files{$file}}){
 	if(!defined $vpos{$node}){
 	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} }\n");
