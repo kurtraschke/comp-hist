@@ -60,7 +60,7 @@ PALM-SRCS = palm/palm
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS)
 
-all: comp-history-vcg biblio info html
+all: comp-history-vcg biblio info html xml
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
@@ -93,3 +93,5 @@ cparser:
 html:
 	cd scripts/new ; make comp-hist.html
 
+xml:
+	perl scripts/parsech -o xml $(SRCS) >comp-hist.xml
