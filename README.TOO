@@ -5,7 +5,8 @@ direct all questions, comments, etc, to me, Kurt Raschke <kurt@raschke.net>.
 
 2.  Since 0.01, the datafiles themselves have expanded a bit, though right now
 the focus is on fixing tovcg, the parser script for VCG.  If you're good with
-Perl, please take a look at it, and if you get it working, please submit a patch.
+Perl, please take a look at it, and if you get it generating something sane, 
+please submit a patch.
 
 3.  If you've got a project similar to this one, and you'd like to merge in your work,
 that is probably a good thing, so contact us, and let us know about your project.
@@ -13,3 +14,5 @@ that is probably a good thing, so contact us, and let us know about your project
 -Kurt Raschke
 
 UPDATE - I (Scott) am back, so questions may be directed to me again.
+
+
