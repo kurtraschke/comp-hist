@@ -3,7 +3,6 @@ pilot1000
 	Name:  Pilot 1000
 	Date: 1996-4
 	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
-	Info:  Ran PalmOS 1.0
 	Type: hardware
 	
 pilot5000
@@ -34,4 +33,38 @@ piii
 	Type: hardware
 	Successor to pppro
 	Successor to pppersonal
+
+piiix
+	Name: Palm IIIx
+	Date: 1999-2
+	Reference: http://www.palm.com/pr/palmvpalmiiix.html
+	Type: hardware
+	Successor to piii
+
+pv
+	Name: Palm V
+	Date: 1999-2
+	Reference: http://www.palm.com/pr/palmvpalmiiix.html
+	Type: hardware
+	Code taken from piii
+
+pvii
+	Name: Palm VII
+	Date: 1999-5-24
+	Reference: http://www.palm.com/pr/palmviiregional.html
+	Code taken from piii #This is a guesstimate.
+
+piiie
+	Name: Palm IIIe
+	Date: 1999-7-19
+	Reference: http://www.palm.com/pr/palmiiie.html
+	Successor to piiix
+
+pvx
+	Name: Palm Vx
+	Date: 
+	Reference: 
+	Type: hardware
+	Successor to pv
+
 
