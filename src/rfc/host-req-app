@@ -1,0 +1,9 @@
+#########################
+#	host-req-app	#
+#########################
+
+rfc1123
+	Name: Requirements for Internet Hosts -- Application and Support (RFC 1123)
+	Date: 1989-10
+	Type: standard
+	Influenced by rfc1122
