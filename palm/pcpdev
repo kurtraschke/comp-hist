@@ -20,6 +20,23 @@ hsvd
 	Type: hardware
 	Successor to hsv
 
+hsvprism
+	Name: Handspring Visor Prism
+	Date: 2000-10-16
+	Reference: http://slashdot.org/article.pl?sid=00/10/16/0411213&mode=nested
+	Type: hardware
+	Successor to hsvs
+	Successor to hsv
+	Successor to hsvd
+hsvplat
+        Name: Handspring Visor Platinum
+        Date: 2000-10-16
+        Reference: http://slashdot.org/article.pl?sid=00/10/16/0411213&mode=nested
+        Type: hardware
+        Successor to hsvs
+        Successor to hsv
+        Successor to hsvd
+
 trgpro
 	Name: TRG TRGPro
 	Date: 1999-10-18
