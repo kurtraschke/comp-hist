@@ -1,7 +1,7 @@
 #########################################################################
 #			        BSDI					#
 #########################################################################
-# $Revision: 1.3 $ $Date: 2000/08/18 23:09:35 $
+# $Revision: 1.4 $ $Date: 2000/08/23 17:38:36 $
 #
 # [wkt] 1.0?
 bsdi031
@@ -79,3 +79,23 @@ bsdi3.0
 	Reference: http://www.de.FreeBSD.ORG/de/ftp/releases/
         Type: OS
 	Successor to bsdi2.1
+
+bsdi4
+	Name: BSD/OS 4.0
+	Date: 1998-8-17
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to bsdi3
+
+bsdi4.0.1
+	Name: BSD/OS 4.0.1
+	Date: 1999-3-1
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to bsdi4
+
+bsdi4.1
+	Name: BSD/OS 4.1
+	Date: 1999-12-20
+	Type: OS
+	Successor to bsdi4.0.1
