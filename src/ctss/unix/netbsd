@@ -2,7 +2,7 @@
 #########################################################################
 #			          NetBSD				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/12/17 03:01:15 $
+# $Revision: 1.2 $ $Date: 2001/02/22 21:32:07 $
 #
 # Stuff from http://www.netbsd.org/Releases/formal.html
 #
@@ -105,3 +105,10 @@ netbsd1.4.3
         Reference: http://slashdot.org/article.pl?sid=00/11/26/1330230&mode=nested
         Type: OS
         Successor to netbsd1.4.3
+
+netbsd1.4
+	Name: NetBSD 1.5
+	Date: 2000-12-06
+	Reference: http://www.netbsd.org/Releases/formal-1.5/ 
+	Type: os
+	Successor to netbsd1.5
