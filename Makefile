@@ -18,7 +18,7 @@ TRANSISTOR-SRCS = transistor
 
 CTSS-SRCS = ctss/ctss $(UNIX-SRCS)
 
-DEC-SRCS = dec/pdp dec/tops dec/rsts
+DEC-SRCS = dec/pdp dec/tops dec/rsts dec/pdp11
 
 LINC-SRCS = linc
 
