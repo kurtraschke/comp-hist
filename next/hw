@@ -1,28 +1,47 @@
 #The NeXT black hardware goes here
-cube
+nextcomp
 	Name: NeXT Computer
 	Date: 1988-10-12
 	Reference: http://www.mackido.com/History/AppleTimeline.html
 	Type: hardware
 
 nextstation
-	Name: NeXTStation
+	Name: NeXTstation
 	Date: 1990-9-18
 	Reference: http://www.mackido.com/History/AppleTimeline.html
 	Type: hardware
-	Code taken from cube
+	Code taken from nextcomp
 
 nextstationcolor
-        Name: NeXTStation Color
+        Name: NeXTstation Color
         Date: 1990-9-18
         Reference: http://www.mackido.com/History/AppleTimeline.html
         Type: hardware
-        Code taken from cube
+	Code taken from nextstation
+	
+nextstationturbo
+	Name: NeXTstation Turbo
+	Reference: http://www.peanuts.org/faq-serve/cache/178.html
+	Type: hardware
+	Successor to nextstation
+
+nextstationcolorturbo
+        Name: NeXTstation Color Turbo 
+        Reference: http://www.peanuts.org/faq-serve/cache/178.html
+        Type: hardware
+        Successor to nextstationcolor
 
 nextcube
-        Name: NeXTCube
+        Name: NeXTcube
         Date: 1990-9-18
         Reference: http://www.mackido.com/History/AppleTimeline.html
         Type: hardware
-        Code taken from nextstationcolor
-	Successor to cube
+        Code taken from nextstation
+	Successor to nextcomp
+
+nextcubeturbo
+	Name: NeXTcube Turbo
+	Reference: http://www.peanuts.org/faq-serve/cache/178.html
+	Type: hardware
+	Successor to nextcube
+
