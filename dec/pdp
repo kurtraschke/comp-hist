@@ -1,0 +1,134 @@
+#################
+#	PDP	#
+#################
+#DEC's early line of hardware
+
+pdp1
+	Name: The Programmed Data Processor, model 1
+	Date: 1960-11
+	Reference: http://www.digital.com/timeline/1960.htm
+	Type: hardware
+
+pdp4
+	Name: The Programmed Data Processor, model 4
+	Date: 1962-7
+	Reference: http://www.digital.com/timeline/1962.htm
+	Type: hardware
+	Successor to pdp1
+
+pdp5
+	Name: The Programmed Data Processor, model 5
+	Date: 1963
+	Reference: http://www.digital.com/timeline/1963.htm
+	Type: hardware
+	Code taken from pdp4
+
+pdp6
+	Name: The Programmed Data Processor, model 6
+	Date: 1964-10
+	Reference: http://www.digital.com/timeline/1964.htm
+	Type: hardware
+	Code taken from pdp5
+
+pdp7
+	Name: The Programmed Data Processor, model 7
+	Date: 1964-11
+	Reference: http://www.digital.com/timeline/1964.htm
+	Type: hardware
+	Successor to pdp4
+
+pdp7a
+	Name: The Programmed Data Processor, model 7A
+	Date: 1965
+	Reference: http://www.digital.com/timeline/1965.htm
+	Type: hardware
+	Successor to pdp7
+
+pdp8
+	Name: The Programmed Data Processor, model 8
+	Date: 1965-4
+	Reference: http://www.digital.com/timeline/1965.htm
+	Type: hardware
+	Successor to pdp5
+
+pdp8s
+	Name: The Programmed Data Processor, model 8/S
+	Date: 1966-8
+	Reference: http://www.digital.com/timeline/1966.htm
+	Type: hardware
+	Successor to pdp5
+
+pdp9
+	Name: The Programmed Data Processor, model 9
+	Date: 1966-8
+	Reference: http://www.digital.com/timeline/1966.htm
+	Type: hardware
+	Successor to pdp7a
+
+linc8
+	Name: The Laboratory Instrument Computer 8
+	Date: 1966-8
+	Reference: http://www.digital.com/timeline/1966.htm
+	Type: hardware
+	Code taken from pdp8
+
+pdp10
+	Name: The Programmed Data Processor, model 10
+	Date: 1967-9
+	Reference: http://www.digital.com/timeline/1967.htm
+	Type: hardware
+	Successor to pdp6
+
+pdp8i
+	Name: The Programmed Data Processor, model 8I
+	Date: 1968-8
+	Reference: http://www.digital.com/timeline/1968.htm
+	Type: hardware
+	Successor to pdp8
+	Successor to pdp8s
+
+pdp8l
+	Name: The Programmed Data Processor, model 8L
+	Date: 1968-8
+	Reference: http://www.digital.com/timeline/1968-1.htm
+        Type: hardware
+        Successor to pdp8
+        Successor to pdp8s
+
+typeset8
+	Name: The TYPESET-8
+        Date: 1968-8
+        Reference: http://www.digital.com/timeline/1968.htm
+        Type: hardware
+	Code taken from pdp8
+
+pdp15
+	Name: The Programmed Data Processor, model 15
+	Date: 1969-3
+	Reference: http://www.digital.com/timeline/1969.htm
+	Type: hardware
+	Successor to pdp9
+
+pdp12
+	Name: The Programmed Data Processor, model 12
+	Date: 1969-3
+	Reference: http://www.digital.com/timeline/1969.htm
+	Type: hardware
+	Successor to linc8
+
+pdp14
+	Name: The Programmed Data Processor, model 14
+	Date: 1969-3
+	Reference: http://www.digital.com/timeline/1969.htm
+	Type: hardware
+	Influenced by pdp8
+	#That's a fudge up there, I don't know what it was influenced by
+
+pdp8e
+	Name: The Programmed Data Processor, model 8/E
+	Date: 1970
+	Reference: http://www.digital.com/timeline/1970.htm
+	Type: hardware
+	Successor to pdp8i
+	Successor to pdp8l
+
