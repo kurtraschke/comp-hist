@@ -43,6 +43,7 @@ sub parse{
 	if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
 	if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
 	if(/.*Type: company/){ $color{$node} = "color: cyan"; }
+	if(/.*Type: announcement/){$color{$node} = "color: gold"; }
 
 	if(/.*Status: released/){ $shape{$node} = "shape: box"; }
 	if(/.*Status: internal/){ $shape{$node} = "shape: triangle"; } 
