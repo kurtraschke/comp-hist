@@ -40,3 +40,33 @@ ibmos/21.20ee
 	Type: os
 	Successor to ibmos/21.10ee
 
+ibmos/21.30se
+	Name: IBM OS/2 1.30 SE
+	Date: 1991
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Info: The schism between IBM and Microsoft over OS/2 had come in 1990, so IBM alone was responsible for this and all future OS/2s. As a result, OS/2 1.30 was smaller, faster, and easier than the earlier versions of OS/2.
+	Type: os
+	Successor to ibmos/21.20se
+
+ibmos/21.30ee
+	Name: IBM OS/2 1.30 EE
+	Date: 1991
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.20ee
+
+ibmos/22
+	Name: IBM OS/2 2.0
+	Date: 1992-04 #"Spring" '92
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.30se
+	Successor to ibmos/21.30ee
+	Ran on 80386
+
+ibmos/22.10
+	Name: IBM OS/2 2.10
+	Date: 1993-05
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/22
