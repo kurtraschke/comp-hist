@@ -4,6 +4,7 @@ mk14
 	Name: Sinclair mk14
 	Date: 1978
 	Reference: http://www.nvg.ntnu.no/sinclair/planet/index.html
+	Type: hardware
 	#Few now recall it, but the 1977 Microcomputer Kit 14 was Sinclair's first computer. Its sales
 	#were modest - about 50,000 - and its capabilities minimal, as it had a tiny memory, no tape
 	#storage and no VDU! However, its importance was far greater than might otherwise seem
@@ -16,7 +17,8 @@ zx80
 	Name: Sinclair ZX80
 	Date: 1980
 	Reference: http://www.nvg.ntnu.no/sinclair/planet/index.html
-    Successor to mk14
+	Type: hardware
+        Successor to mk14
 	#The ZX80, launched in 1980 (sold for 330 UKP), is widely regarded as having founded the British home
 	#computer market. Although it is primitive compared even to the ZX81 and Spectrum, it laid
 	#the pattern for virtually every Sinclair machine to come. It was the smallest and cheapest
@@ -29,7 +31,8 @@ zx81
 	Name: Sinclair ZX81
 	Date: 1981
 	Reference: http://www.nvg.ntnu.no/sinclair/planet/index.html
-    Successor to zx80
+	Type: hardware
+        Successor to zx80
 	#Sinclair's third computer, the ZX81, was not "just another product" but a veritable
 	#phenomenon. By modern standards it is laughably primitive: only 1K of memory, no
 	#colour or sound, touch-sensitive keyboard... but back in 1981 the idea that a complete,
@@ -42,7 +45,8 @@ spectrum
 	Name: Sinclair ZX Spectrum
 	Date: 1982
 	Reference: http://www.nvg.ntnu.no/sinclair/planet/index.html
-    Successor to zx81
+	Type: hardware
+        Successor to zx81
 	#Sir Clive's 1982 machine - it was indeed originally codenamed the ZX82 - has passed
 	#into computer folklore as the biggest-selling home computer of all time. It lasted until
 	#about 1992-93, went through four models, sold millions in Britain and across the world
@@ -54,7 +58,8 @@ QL
 	Name: Sinclair QL
 	Date: 1984
 	Reference: http://www.nvg.ntnu.no/sinclair/planet/index.html
-    Successor to spectrum
+	Type: hardware
+        Successor to spectrum
 	#The QL was not a failure. That may seem to be a statement at odds with many
 	#people's recollections, but a micro which sells more than 100,000 and continues in
 	#use a decade later cannot be said to have flopped. What it did do, however, was to
@@ -68,6 +73,7 @@ Z88
 	Name: Sinclair Z88
 	Date: 1995
 	Reference: http://www.nvg.ntnu.no/sinclair/planet/index.html
+	Type: hardware
 	#After the takeover of Sinclair Research by Amstrad in 1986, Clive established a new
 	#company, Cambridge Computers (he had sold the rights to the Sinclair name). It did not
 	#take him long to bring a new project to fruition - the Z88, a laptop Z80-based machine

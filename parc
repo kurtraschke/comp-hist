@@ -3,10 +3,12 @@ alto
 	Name: Xerox Alto
 	Date: 1974
 	Reference: http://www.cat.uc.edu/dave/courses/info_theory/papers/parc.html
+	Type: hardware
 
 star
 	Name: Xerox Star
 	Date: 1981
 	Reference: http://www.cat.uc.edu/dave/courses/info_theory/papers/parc.html
+	Type: hardware
 	Successor to alto
 
