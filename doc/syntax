@@ -61,3 +61,8 @@ node
 	Date: 1989-24
 	Type: other
 #That type doesn't really exist. Go away.
+
+x
+	Name: X
+	Date: 6753-2
+	Type: language
