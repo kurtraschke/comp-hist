@@ -36,8 +36,8 @@ wince2.11
 	Type: OS
 	Successor to wince2.1
 
-pocket-pc
-	Name: Pocket-PC\n(Windows CE 3.0)
+pocketpc
+	Name: Pocket PC\n(Windows CE 3.0)
 	Date: 2000-4-19
 	Reference: Windows family tree
 	Type: OS

@@ -103,7 +103,7 @@ char
 
 char
 	*typeValues[] = {"OS", "os", "hardware", "language", "standard", 
-		"announcement", "company", "patent", NULL, "??", "other"};
+		"announcement", "company", "patent", "other", NULL, "??"};
 
 #endif
 
