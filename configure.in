@@ -1,0 +1,8 @@
+AC_INIT(TODO)
+AC_PROG_CC 
+AC_PATH_XTRA
+AC_PATH_PROG(VCG, xvcg, VCG not found!)
+AC_PATH_PROG(DOT, dot, GraphViz not found!)
+AC_PATH_PROGS(PERL, perl5 perl4 perl, /usr/bin/perl)
+AC_SYS_INTERPRETER
+AC_OUTPUT(Makefile)
