@@ -1,0 +1,31 @@
+#########################
+#	Power		#
+#########################
+
+power1
+	Name: IBM Power 1
+	Date: 1990
+	Reference: http://www.computerhistory.org/exhibits/microprocessors/up5.page
+	Type: hardware
+	Code taken from 386dx
+
+power2
+	Name: IBM Power 2
+	Date: 1993
+	Reference: http://www.computerhistory.org/exhibits/microprocessors/up5.page
+	Type: hardware
+	Successor to power1
+
+rsc
+	Name: IBM RSC
+	Date: 1992
+	Reference: http://www.computerhistory.org/exhibits/microprocessors/up5.page
+	Type: hardware
+	Code taken from power1
+
+p2sc
+	Name: IBM P2SC
+	Date: 1996
+	Reference: http://www.computerhistory.org/exhibits/microprocessors/up6.page
+	Type: hardware
+	Code taken from power2
