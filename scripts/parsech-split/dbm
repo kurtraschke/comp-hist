@@ -26,7 +26,7 @@ print(PYINIT "chdbm = {\n");
 foreach my $d (qw(Name Year Month Day Reference Info Type Status Linkto)){
   tie %d, 'DB_File', "parsech_dbm/$d", O_CREAT, 0640;
   %d = %{$d};
-  print(PYINIT "\t\'$d\':\'", cwd(), "/parsech_dbm/$d\'\n"); #print a line 
+  print(PYINIT "\t\'$d\':\'", cwd(), "/parsech_dbm/$d\',\n");#print a line 
   untie %d;                                                  #in the python 
   %d=()                                                      #initalizer
 }
