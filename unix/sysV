@@ -1,7 +1,7 @@
 #########################################################################
 #			System III and System V				#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/20 23:44:58 $
+# $Revision: 1.5 $ $Date: 2000/08/22 16:18:36 $
 #
 # [wkt] The dates and relationships in here are vague. Can anyone help
 # to improve them? Eric Fischer <eric@fudge.uchicago.edu> has given
@@ -37,11 +37,18 @@ sysVr3
 	Successor to sysVr2 1000
 	Code taken from v8
 	
+sysVr3.2
+	Name: Unix System V R3.2
+	Date: 1987
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to sysVr3
+
 sysVr4
 	Name: System VR4
 	Date: 1988
 	Reference: Life with UNIX, pg 6
         Type: OS
-	Successor to sysVr3 10000
+	Successor to sysVr3.2 10000
 	Code taken from 4.2bsd
-
+	Code taken from xenix5
