@@ -2,6 +2,7 @@ I have revamped the parser.
 
 I simplified idnetifier.c to the point where it was a single routine so
 I melded that with parser.c, and got rid of keywords.
+Compile with gcc -DTESTING -o cparse parser.c
 
 A new file node.h does all definition of node information. To add a new
 field you need to edit only one table in node.h and recompile, The parser
