@@ -5,7 +5,7 @@
 
 bcpl
 	Name: Basic Combined Programming Language
-	Date: 1967-7-27
+	Date: 1967-07-27
 	Reference: Memorandum M-352 of MIT Project MAC
 	Type: language
 	Code taken from cpl
@@ -48,14 +48,14 @@ c90
 
 c95
 	Name: ISO C (C95)
-	Date: 1996-4-1  #no, I don't know why it's called C95
+	Date: 1996-04-01  #no, I don't know why it's called C95
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: standard
 	Successor to c90
 
 c99
 	Name: ISO C (C90)
-	Date: 1999-12-1
+	Date: 1999-12-01
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: standard
 	Successor to c95

@@ -5,7 +5,7 @@
 
 system360
 	Name: IBM System 360 (Models 30, 40, 50, 60, and 70)
-	Date: 1964-4-7
+	Date: 1964-04-07
 	Reference: http://www.ibm.com/ibm/history/story/era3.html
 	Type: announcement
 	Code taken from icjkilby
@@ -15,14 +15,14 @@ system360
 
 sys36030
 	Name: IBM System 360, model 30
-	Date: 1965-4
+	Date: 1965-04
 	Reference: http://research.microsoft.com/~gbell/Computer_Structures__Readings_and_Examples/00000581.htm
 	Type: hardware
 	Successor to system360
 
 sys36040
 	Name: IBM System 360, model 40
-	Date: 1965-4
+	Date: 1965-04
 	Reference: http://research.microsoft.com/~gbell/Computer_Structures__Readings_and_Examples/00000581.htm
 	Type: hardware
 	Successor to system360

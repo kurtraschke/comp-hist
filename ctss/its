@@ -5,7 +5,7 @@
 
 sys
 	Name: SYS
-	Date: 1966-3
+	Date: 1966-03
 	Reference: Email with Tom Knight <tk@ai.mit.edu>
 	Type: OS
 	Status: continual evolution
@@ -16,7 +16,7 @@ sys
 
 its
 	Name: The Incompatible Timesharing System
-	Date: 1966-8
+	Date: 1966-08
 #	That's a fudge, tk says it was renamed in `late summer '66'. If anyone has better data, send it to me
 	Refernce: Email with Tom Knight
 	Info: From email with tk: Various "versions" of ITS were continuously released, over a 15 year period.  There was essentially no concept of experimental versions, with very few exceptions, having to do with adding major new facilites.  The system was often patched while running to fix bugs, while the source was updated with those changes for assembly into the next version.  This changed a bit as there became three and four machines running the system; the Dynamic Modelling Group (running MIT-DM) kept their own version and modified it for their use.  All of the other versions were assembled out of a conditionalized single source.  Usually all of the versions being run were identical or nearly identical, with the exception of DM.

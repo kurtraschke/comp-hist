@@ -2,14 +2,14 @@
 #Some of these systems ran UNICOS - does it have an entry?
 
 cray1
-	Name: Cray-1
+	Name: Cray-01
 	Date: 1976
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
 	Made by cri
 
 cray2
-	Name: Cray-2
+	Name: Cray-02
 	Date: 1985
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
@@ -33,8 +33,8 @@ crayymp
 	Made by cri
 
 cray3
-	Name: Cray-3
-	Date: 1993-5
+	Name: Cray-03
+	Date: 1993-05
 #Date is a guesstimate.
 	Reference: http://www.jps.net/ethelen/comp-hist/cray-comp.html
 	Type: hardware
@@ -42,7 +42,7 @@ cray3
 	Made by ccc
 
 cray4	
-	Name: Cray-4
+	Name: Cray-04
 	Date: 1994
 #Date is a guesstimate
 	Reference: http://www.cgl.ucsf.edu/home/tef/cray/tribute.html
@@ -105,7 +105,7 @@ crayj90se
 
 craysv1
 	Name: Cray SV1
-	Date: 1999-9-15
+	Date: 1999-09-15
 	Reference: http://www.cray.com/news/9909/backlog.html
 	Type: hardware
 	Made by cri
@@ -146,7 +146,7 @@ teramta
 #This is when Tera became Cray, Inc.
 craymta
 	Name: Cray MTA
-	Date: 2000-3
+	Date: 2000-03
 	Reference: http://www.findarticles.com/m0EIN/2000_April_4/61229579/p1/article.jhtml
 	Type: hardware
 	Made by cray

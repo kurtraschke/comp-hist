@@ -13,7 +13,7 @@ pdp1
 
 pdp4
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 4
-	Date: 1962-7
+	Date: 1962-07
 	Reference: http://www.digital.com/timeline/1962.htm
 	Type: hardware
 	Successor to pdp1
@@ -53,7 +53,7 @@ pdp7a
 
 pdp8
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 8
-	Date: 1965-4
+	Date: 1965-04
 	Reference: http://www.digital.com/timeline/1965.htm
 	Type: hardware
 	Successor to pdp5
@@ -61,7 +61,7 @@ pdp8
 
 pdp8s
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 8/S
-	Date: 1966-8
+	Date: 1966-08
 	Reference: http://www.digital.com/timeline/1966.htm
 	Type: hardware
 	Successor to pdp5
@@ -69,7 +69,7 @@ pdp8s
 
 pdp9
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 9
-	Date: 1966-8
+	Date: 1966-08
 	Reference: http://www.digital.com/timeline/1966.htm
 	Type: hardware
 	Successor to pdp7a
@@ -77,7 +77,7 @@ pdp9
 
 linc8
 	Name: The Digital Equipment Corporation Laboratory Instrument Computer 8
-	Date: 1966-8
+	Date: 1966-08
 	Reference: http://www.digital.com/timeline/1966.htm
 	Type: hardware
 	Code taken from pdp8
@@ -86,7 +86,7 @@ linc8
 
 pdp10
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 10
-	Date: 1967-9
+	Date: 1967-09
 	Reference: http://www.digital.com/timeline/1967.htm
 	Type: hardware
 	Successor to pdp6
@@ -94,7 +94,7 @@ pdp10
 
 pdp8i
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 8I
-	Date: 1968-8
+	Date: 1968-08
 	Reference: http://www.digital.com/timeline/1968.htm
 	Type: hardware
 	Successor to pdp8
@@ -103,16 +103,16 @@ pdp8i
 
 pdp8l
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 8L
-	Date: 1968-8
-	Reference: http://www.digital.com/timeline/1968-1.htm
+	Date: 1968-08
+	Reference: http://www.digital.com/timeline/1968-01.htm
         Type: hardware
         Successor to pdp8
         Successor to pdp8s
         Made by dec
 
 typeset8
-	Name: The Digital Equipment Corporation TYPESET-8
-        Date: 1968-8
+	Name: The Digital Equipment Corporation TYPESET-08
+        Date: 1968-08
         Reference: http://www.digital.com/timeline/1968.htm
         Type: hardware
 	Code taken from pdp8
@@ -120,7 +120,7 @@ typeset8
 
 pdp15
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 15
-	Date: 1969-3
+	Date: 1969-03
 	Reference: http://www.digital.com/timeline/1969.htm
 	Type: hardware
 	Successor to pdp9
@@ -128,7 +128,7 @@ pdp15
 
 pdp12
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 12
-	Date: 1969-3
+	Date: 1969-03
 	Reference: http://www.digital.com/timeline/1969.htm
 	Type: hardware
 	Successor to linc8
@@ -136,7 +136,7 @@ pdp12
 
 pdp14
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 14
-	Date: 1969-3
+	Date: 1969-03
 	Reference: http://www.digital.com/timeline/1969.htm
 	Type: hardware
 	Influenced by pdp8
@@ -155,7 +155,7 @@ pdp8e
 pdp1040
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 10/40/\nDECsystem-10/40
 	Date: 1971
-	Reference: http://www.digital.com/timeline/1971-2.htm
+	Reference: http://www.digital.com/timeline/1971-02.htm
 	Type: hardware
 	Successor to pdp10
         Made by dec 
@@ -163,7 +163,7 @@ pdp1040
 pdp1050
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 10/50\nDECsystem-10/50
         Date: 1971
-        Reference: http://www.digital.com/timeline/1971-2.htm
+        Reference: http://www.digital.com/timeline/1971-02.htm
         Type: hardware
         Successor to pdp1040
         Made by dec

@@ -5,7 +5,7 @@
 
 system097
 	Name: Apple System 0.97
-	Date: 1984-1-24
+	Date: 1984-01-24
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Ran on mac128k
@@ -13,7 +13,7 @@ system097
 
 finder1
 	Name: Apple Finder 1.0
-	Date: 1984-1-24
+	Date: 1984-01-24
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Ran on mac128k
@@ -21,7 +21,7 @@ finder1
 
 syssoftware1
 	Name: Apple System Software 1.0
-	Date: 1984-1-24
+	Date: 1984-01-24
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Aka finder1
@@ -31,21 +31,21 @@ syssoftware1
 
 system11
 	Name: Apple System 1.1
-	Date: 1984-5-5
+	Date: 1984-05-05
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system097
 
 finder11g
 	Name: Apple Finder 1.1g
-	Date: 1984-5-5
+	Date: 1984-05-05
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder1
 
 syssoftware01
 	Name: Apple System Software 0.1
-	Date: 1984-5-5
+	Date: 1984-05-05
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to syssoftware1
@@ -54,21 +54,21 @@ syssoftware01
 
 system2
 	Name: Apple System 2.0
-	Date: 1985-4
+	Date: 1985-04
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system11
 
 finder41
 	Name: Apple Finder 4.1
-	Date: 1985-4
+	Date: 1985-04
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder11g
 
 syssoftware0305
 	Name: Apple System Software 0.3, 0.5
-	Date: 1985-4
+	Date: 1985-04
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to syssoftware01
@@ -77,7 +77,7 @@ syssoftware0305
 
 system3
 	Name: Apple System 3
-	Date: 1986-1
+	Date: 1986-01
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system2
@@ -85,7 +85,7 @@ system3
 
 finder51
 	Name: Apple Finder 5.1
-	Date: 1986-1
+	Date: 1986-01
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder41
@@ -93,7 +93,7 @@ finder51
 
 syssoftware07
 	Name: Apple System Software, 0.7
-	Date: 1986-1
+	Date: 1986-01
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to syssoftware0305
@@ -103,21 +103,21 @@ syssoftware07
 
 system31
 	Name: Apple System 3.1
-	Date: 1986-2
+	Date: 1986-02
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system3
 
 finder52
 	Name: Apple Finder 5.2
-	Date: 1986-2
+	Date: 1986-02
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder51
 
 syssoftware1b
 	Name: Apple System Software 1.0
-	Date: 1986-2
+	Date: 1986-02
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Aka finder52
@@ -126,21 +126,21 @@ syssoftware1b
 
 system32
 	Name: Apple System 3.2
-	Date: 1986-6
+	Date: 1986-06
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system31
 
 finder53
 	Name: Apple Finder 5.3
-	Date: 1986-6
+	Date: 1986-06
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder52
 
 syssoftware11
 	Name: Apple System Software 1.1
-	Date: 1986-6
+	Date: 1986-06
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Aka system32
@@ -149,21 +149,21 @@ syssoftware11
 
 system33
 	Name: Apple System 3.3
-	Date: 1987-1
+	Date: 1987-01
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system32
 
 finder54
 	Name: Apple Finder 5.4
-	Date: 1987-1
+	Date: 1987-01
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder53
 
 syssoftware2
 	Name: Apple System Software 2.0
-	Date: 1987-1
+	Date: 1987-01
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Aka system33
@@ -172,14 +172,14 @@ syssoftware2
 
 system4
 	Name: Apple System 4.0
-	Date: 1987-3
+	Date: 1987-03
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system33
 
 syssoftware201
 	Name: Apple System Software 2.01
-	Date: 1987-3
+	Date: 1987-03
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Aka system4
@@ -188,21 +188,21 @@ syssoftware201
 
 system41
 	Name: Apple System 4.1
-	Date: 1987-4
+	Date: 1987-04
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system4
 
 finder55
 	Name: Apple Finder 5.5
-	Date: 1987-4
+	Date: 1987-04
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder54
 
 syssoftware201a
 	Name: Apple System Software 2.01
-	Date: 1987-4
+	Date: 1987-04
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to syssoftware201

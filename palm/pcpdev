@@ -3,20 +3,20 @@
 #Symbol SPT1500, Symbol SPT1700
 hsvs
 	Name: Handspring Visor Solo
-	Date: 1999-9
+	Date: 1999-09
 	Reference: http://www.redherring.com/insider/1999/0914/news-palm.html
 	Type: hardware
 
 hsv
 	Name: Handspring Visor
-	Date: 1999-9
+	Date: 1999-09
 	Reference: http://www.redherring.com/insider/1999/0914/news-palm.html
 	Type: hardware
 	Successor to hsvs
 
 hsvd
 	Name: Handspring Visor Deluxe
-	Date: 1999-9
+	Date: 1999-09
 	Type: hardware
 	Successor to hsv
 
@@ -48,13 +48,13 @@ trgpro
 
 sonyclie
 	Name: Sony CLIE PEG-S300
-	Date: 2000-8-30
+	Date: 2000-08-30
 	Reference: http://www.sel.sony.com/SEL/corpcomm/news/consumer/621.html
 	Type: hardware
 
 qcpdq
 	Name: Qualcomm pdQ
-	Date: 1998-9-21
+	Date: 1998-09-21
 	Reference: http://slashdot.org/articles/98/09/21/1318226.shtml
 	Type: hardware
 

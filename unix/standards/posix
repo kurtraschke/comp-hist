@@ -4,7 +4,7 @@
 
 posix
 	Name: Institute of Electrical and Electronic Engineers P1003
-	Date: 1984-6 #Ish
+	Date: 1984-06 #Ish
 	Reference: http://www.its.dtu.dk/ansat/ke/emp_work.pdf
 	Type: standard
 	Successor to /usr/group/standard
@@ -23,9 +23,9 @@ posix.11990
 	Type: standard
 	Successor to posix.11988
 
-posix.11994-3
+posix.11994-03
 	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
-	Date: 1994-3
+	Date: 1994-03
 	Reference: phone call to IEEE
 	Type: standard
 	Successor to posix.11990
@@ -35,7 +35,7 @@ posix.11994-10
 	Date: 1994-10
 	Reference: phone call to IEEE
 	Type: standard
-	Successor to posix.11994-3
+	Successor to posix.11994-03
 
 posix.11998
 	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
@@ -58,9 +58,9 @@ posix.21992
 	Type: standard
 	Successor to posix.2
 
-posix.21994-3
+posix.21994-03
 	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.2
-	Date: 1994-3
+	Date: 1994-03
 	Reference: phone call to IEEE
 	Type: standard
 	Successor to posix.21992
@@ -70,4 +70,4 @@ posix.21994-12
 	Date: 1994-12
 	Reference: phone call to IEEE
 	Type: standard
-	Successor to posix.21994-3
+	Successor to posix.21994-03

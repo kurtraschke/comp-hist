@@ -15,14 +15,14 @@ whirlwind
 
 whirlwindii
         Name: MIT Lincoln Lab Whirlwind II
-        Date: 1953-7
+        Date: 1953-07
         Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
         Type: hardware
 	Successor to whirlwind
 	Status: research
 
 tx0
-	Name: MIT Lincoln Lab TX-0
+	Name: MIT Lincoln Lab TX-00
 	Date: 1956
 	Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
 	Type: hardware
@@ -30,8 +30,8 @@ tx0
 	Status: research
 
 tx2
-	Name: MIT Lincoln Lab TX-2
-	Date: 1958-6
+	Name: MIT Lincoln Lab TX-02
+	Date: 1958-06
 	Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
 	Type: hardware
 	Successor to tx0

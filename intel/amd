@@ -5,7 +5,7 @@
 
 am386
 	Name: The Advanced Micro Devices AM386
-	Date: 1991-3
+	Date: 1991-03
 	Refernece: http://www.amd.com/about/history.html
 	Type: hardware
 	Influenced by 386sl
@@ -15,7 +15,7 @@ am386
 
 am486
 	Name: The Advanced Micro Devices AM486
-	Date: 1993-4
+	Date: 1993-04
 	Reference: http://www.amd.com/about/history.html
 	Type: hardware
 	Successor to am386
@@ -26,7 +26,7 @@ am486
 
 k5
 	Name: The Advanced Micro Devices K5
-	Date: 1997-1
+	Date: 1997-01
 	Reference: Date of K5 information sheet
 	Type: hardware
 	Successor to am486
@@ -35,7 +35,7 @@ k5
 
 k6
 	Name: The Advanced Micro Devices K6
-	Date: 1997-4
+	Date: 1997-04
 	Reference: http://www.pcguide.com/ref/cpu/fam/g6K6-c.html
 	Type: hardware
 	Successor to k5
@@ -43,23 +43,23 @@ k6
 	Influenced by ppro200
         Made by amd
 
-k6-2
-	Name: The Advanced Micro Devices K6-2
-	Date: 1998-5-29
+k6-02
+	Name: The Advanced Micro Devices K6-02
+	Date: 1998-05-29
 	Reference: http://www.zdnet.com/zdnn/content/pcwo/0528/319604.html
 	Type: hardware
 	Successor to k6
 
 k6-III
 	Name: The Advanced Micro Devices K6-III
-	Date: 1999-2
+	Date: 1999-02
 	Reference: http://www.zdnet.co.uk/pcdir/content/1999/07/systems/gt_p3vk63/
 	Type: hardware
-	Successor to k6-2
+	Successor to k6-02
 
 athlon
 	Name: The Advanced Micro Devices Athlon
-	Date: 1999-6-23
+	Date: 1999-06-23
 	Reference: Date on Slashdot announcement article
 	Type: hardware
 	Successor to k6-III
@@ -67,7 +67,7 @@ athlon
 
 duron
 	Name: The Advanced Micro Devices Duron
-	Date: 2000-6-19
+	Date: 2000-06-19
 	Reference: /. announcement
 	Type: hardware
 	Code taken from athlon

@@ -6,14 +6,14 @@
 
 gnu-announce
 	Name: Gnu's Not Unix
-	Date: 1987-9-23
+	Date: 1987-09-23
 	Reference: www.gnu.org/gnu
 	Type: announcement
 	Influenced by its #thanks to rms
 
 hurd0.0
 	Name: Hurd 0.0
-	Date: 1996-8-6
+	Date: 1996-08-06
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Code taken from mach3
@@ -22,7 +22,7 @@ hurd0.0
 
 gnu0.0
 	Name: Gnu's Not Unix 0.0
-	Date: 1996-8-6
+	Date: 1996-08-06
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Code taken from hurd0.0
@@ -31,14 +31,14 @@ gnu0.0
 
 hurd0.1
 	Name: Hurd 0.1
-	Date: 1996-9-7
+	Date: 1996-09-07
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Successor to hurd0.0
 
 gnu0.1
 	Name: Gnu's Not Unix 0.1
-	Date: 1996-9-7
+	Date: 1996-09-07
         Reference: The date on ftp.gnu.org
         Type: OS
         Successor to gnu0.0
@@ -46,7 +46,7 @@ gnu0.1
 
 hurd0.2
 	Name: Hurd 0.2
-	Date: 1997-6-16
+	Date: 1997-06-16
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Successor to hurd0.1
@@ -54,7 +54,7 @@ hurd0.2
 
 gnu0.2
 	Name: Gnu's Not Unix 0.2
-        Date: 1997-6-16
+        Date: 1997-06-16
         Reference: The date on ftp.gnu.org
         Type: OS
 	Successor to gnu0.1

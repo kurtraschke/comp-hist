@@ -2,14 +2,14 @@
 
 ans500
 	Name: Apple Network Server 500
-	Date: 1996-2
+	Date: 1996-02
 	Type: hardware
 	Reference: http://www.erik.co.uk/ans/
 	Code taken from ppc604
 
 ans700
         Name: Apple Network Server 700
-        Date: 1996-2
+        Date: 1996-02
         Type: hardware
         Reference: http://www.erik.co.uk/ans/
 	Successor to ans500

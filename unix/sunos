@@ -1,7 +1,7 @@
 #########################################################################
 #				SunOS				        #
 #########################################################################
-# $Revision: 1.7 $ $Date: 2000/10/01 12:53:31 $
+# $Revision: 1.8 $ $Date: 2000/12/10 00:51:13 $
 #
 # From: Joey KAHN <kahn@tholian.net>
 # 
@@ -60,7 +60,7 @@
 #
 sunos1
 	Name: SunOS 1.0
-	Date: 1982-2
+	Date: 1982-02
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -68,7 +68,7 @@ sunos1
 
 sunos1.1
 	Name: SunOS 1.1
-	Date: 1984-4
+	Date: 1984-04
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -77,7 +77,7 @@ sunos1.1
 
 sunos1.2
 	Name: SunOS 1.2
-	Date: 1985-1
+	Date: 1985-01
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -93,7 +93,7 @@ sunos2
 
 sunos3
 	Name: SunOS 3.0
-	Date: 1986-2-17
+	Date: 1986-02-17
 	Reference: SunOS 3.0 manual, title page
 	Type: OS
 	Status: released
@@ -101,7 +101,7 @@ sunos3
 
 sunos3.2
 	Name: SunOS 3.2
-	Date: 1986-9
+	Date: 1986-09
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -125,7 +125,7 @@ sunos4
 
 sunos4.0.3
 	Name: SunOS 4.0.3
-	Date: 1989-5
+	Date: 1989-05
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -133,7 +133,7 @@ sunos4.0.3
 
 sunos4.1
 	Name: SunOS 4.1
-	Date: 1990-3
+	Date: 1990-03
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -159,7 +159,7 @@ sunos4.1.2
 
 sunos4.1.3
 	Name: SunOS 4.1.3\n(Solaris 1.1a)
-	Date: 1992-8
+	Date: 1992-08
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released
@@ -167,7 +167,7 @@ sunos4.1.3
 
 sunos4.1.4
 	Name: SunOS  4.1.4\n(Solaris 1.1.2)
-	Date: 1994-9
+	Date: 1994-09
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: released

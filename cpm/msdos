@@ -8,7 +8,7 @@
 
 qdos01
 	Name: Quick'n'Dirty Operating System, version 0.1
-	Date: 1980-8
+	Date: 1980-08
 	Reference: http://www.MaxFrame.com/HISZCOMP.HTM
 	Type: OS
 	Influenced by cpm22
@@ -32,7 +32,7 @@ pcdos1
 
 msdos1
 	Name: Microsoft Disk Operating System 1.0
-	Date: 1981-8-12
+	Date: 1981-08-12
 	Reference: Windows family tree
 	Type: OS
 	Aka pcdos1
@@ -76,14 +76,14 @@ pcdos185
 
 msdos2
 	Name: Microsoft Disk Operating System 2.0
-	Date: 1983-3
+	Date: 1983-03
 	Reference: Windows family tree
 	Type: OS
 	Successor to msdos125
 
 msdos201
 	Name: Microsoft Disk Operating System 2.01
-	Date: 1983-4 #ish
+	Date: 1983-04 #ish
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to msdos2
@@ -163,21 +163,21 @@ pcdos32
 
 msdos32
 	Name: Microsoft Disk Operating System 3.2
-	Date: 1986-4
+	Date: 1986-04
 	Reference: Windows family tree
 	Type: OS
 	Successor to msdos31
 
 msdos33
 	Name: Microsoft Disk Operating System 3.3
-	Date: 1987-4-2
+	Date: 1987-04-02
 	Reference: Windows family tree
 	Type: os
 	Successor to msdos32
 
 msdos4
 	Name: Microsoft Disk Operating System 4.0
-	Date: 1988-7
+	Date: 1988-07
 	Reference: Windows family tree
         Type: OS
 	Successor to msdos33
@@ -281,14 +281,14 @@ msdos62
 
 msdos621
 	Name: Microsoft Disk Operating System 6.21
-	Date: 1994-3-2
+	Date: 1994-03-02
 	Reference: Windows family tree
 	Type: OS
 	Successor to msdos62
 
 msdos622
 	Name: Microsoft Disk Operating System 6.22
-	Date: 1994-3-11
+	Date: 1994-03-11
 	Reference: Windows family tree
         Type: OS
 	Successor to msdos621
@@ -309,7 +309,7 @@ drdos341
 
 drdos5
 	Name: DR-DOS 5.0
-	Date: 1990-5
+	Date: 1990-05
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to drdos341
@@ -330,14 +330,14 @@ drdos7
 
 msdos7
 	Name: Microsoft Disk Operating System 7.0
-	Date: 1995-8-24
+	Date: 1995-08-24
 	Reference: Windows family tree
 	Type: os
 	Successor to msdos622
 
 msdos710
 	Name: Microsoft Disk Operating System 7.10
-	Date: 1996-8
+	Date: 1996-08
 	Reference: Windows family tree
 	Type: os
 	Successor to msdos7

@@ -4,7 +4,7 @@
 
 solaris2
 	Name: Solaris 2\n(SunOS 5)
-	Date: 1992-7
+	Date: 1992-07
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Successor to sunos4.1
@@ -19,7 +19,7 @@ solaris2.1
 
 solaris2.2
 	Name: Solaris 2.2\n(SunOS 5.2)
-	Date: 1993-5
+	Date: 1993-05
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Successor to solaris2.1
@@ -47,14 +47,14 @@ solaris2.5
 
 solaris2.5.1
 	Name: Solaris 2.5.1\n(SunOS 5.5.1)
-	Date: 1996-5
+	Date: 1996-05
 	Reference: email with Daniel Price (dp@eng.sun.com)
 	Type: OS
 	Successor to solaris2.5 
 
 solaris2.6
 	Name: Solaris 2.6\nSunOS 5.6
-	Date: 1997-8
+	Date: 1997-08
 	Reference: email with Daniel Price (dp@eng.sun.com)
 	Type: OS
 	Successor to solaris2.5.1
@@ -68,7 +68,7 @@ solaris7
 
 solaris8b
 	Name: Solaris 8 (beta)
-	Date: 1999-11-2
+	Date: 1999-11-02
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Status: internal
@@ -76,7 +76,7 @@ solaris8b
 
 solaris8
 	Name: Solaris 8
-	Date: 2000-1-26
+	Date: 2000-01-26
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Successor to solaris8b

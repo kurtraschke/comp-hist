@@ -1,7 +1,7 @@
 # Here's where the Lisa info goes.
 lisa1
 	Name: Apple Lisa 1
-	Date: 1983-1
+	Date: 1983-01
 	Reference: http://members.lsol.net/lisa/faq/
 	Type: hardware
 	Influenced by alto
@@ -10,32 +10,32 @@ lisa1
 
 lisa2
 	Name: Apple Lisa 2
-	Date: 1984-1
-	Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+	Date: 1984-01
+	Reference: http://www.acornworld.net/~jmayrand/LISA2-05.html
         Type: hardware
 	Successor to lisa1
 	Made by apple
 
 lisa25
         Name: Lisa 2/5
-        Date: 1984-1
-        Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+        Date: 1984-01
+        Reference: http://www.acornworld.net/~jmayrand/LISA2-05.html
         Type: hardware
         Successor to lisa1
 	Made by apple
 
 lisa210
         Name: Apple Lisa 2/10
-        Date: 1984-1
-        Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+        Date: 1984-01
+        Reference: http://www.acornworld.net/~jmayrand/LISA2-05.html
         Type: hardware
         Successor to lisa1
 	Made by apple
 
 macxl
 	Name: Apple Macintosh XL
-	Date: 1985-1
-	Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+	Date: 1985-01
+	Reference: http://www.acornworld.net/~jmayrand/LISA2-05.html
         Type: hardware
 	Successor to lisa2
 	Successor to lisa25

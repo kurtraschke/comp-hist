@@ -107,7 +107,7 @@ hpux9.05
 
 hpux10
 	Name: Hewlett-Packard Unix 10.0
-	Date: 1995-2-9
+	Date: 1995-02-09
 	Reference: Unix history tree
 	Type: OS
 	Successor to hpux9.05
@@ -115,14 +115,14 @@ hpux10
 
 hpux10.10
 	Name: Hewlett-Packard Unix 10.10
-	Date: 1996-2
+	Date: 1996-02
 	Reference: Unix history tree
 	Type: OS
 	Successor to hpux10
 
 hpux10.20
 	Name: Hewlett-Packard Unix 10.20
-	Date: 1996-9-4
+	Date: 1996-09-04
 	Reference: Unix history tree
 	Type: OS
 	Successor to hpux10.10
@@ -150,7 +150,7 @@ hpux11a
 
 hpux11i
 	Name: Hewlett-Packard Unix 11i
-	Date: 2000-6-14
+	Date: 2000-06-14
 	Reference: Unix history tree
 	Type: OS
 	Successor to hpux11a

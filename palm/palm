@@ -7,15 +7,15 @@ gridpad
 	
 pilot1000
 	Name:  Pilot 1000
-	Date: 1996-4
-	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Date: 1996-04
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-07.html
 	Type: hardware
 	Influenced by gridpad
 
 pilot5000
 	Name: Pilot 5000
-	Date: 1996-4
-	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Date: 1996-04
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-07.html
 	Type: hardware
 	Successor to pilot1000
 	Influenced by gridpad
@@ -23,20 +23,20 @@ pilot5000
 pppersonal
 	Name: PalmPilot Personal
 	Date: 1997
-	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-07.html
 	Type: hardware
 	Successor to pilot5000
 
 pppro
 	Name: PalmPilot Professional
 	Date: 1997
-	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-07.html
 	Type: hardware
 	Sucessor to pilot5000
 
 piii
 	Name: Palm III
-	Date: 1998-3
+	Date: 1998-03
 	Reference: http://www.cos.ufrj.br/~xexeo/PILOT/shorthistory.html
 	Type: hardware
 	Successor to pppro
@@ -44,63 +44,63 @@ piii
 
 piiix
 	Name: Palm IIIx
-	Date: 1999-2
+	Date: 1999-02
 	Reference: http://www.palm.com/pr/palmvpalmiiix.html
 	Type: hardware
 	Successor to piii
 
 pv
 	Name: Palm V
-	Date: 1999-2
+	Date: 1999-02
 	Reference: http://www.palm.com/pr/palmvpalmiiix.html
 	Type: hardware
 	Code taken from piii
 
 pvii
 	Name: Palm VII
-	Date: 1999-5-24
+	Date: 1999-05-24
 	Reference: http://www.palm.com/pr/palmviiregional.html
 	Type: hardware
 	Code taken from piii #This is a guesstimate.
 
 piiie
 	Name: Palm IIIe
-	Date: 1999-7-19
+	Date: 1999-07-19
 	Reference: http://www.palm.com/pr/palmiiie.html
 	Type: hardware
 	Successor to piiix
 
 piiiese
 	Name: Palm IIIe SE
-	Date: 1999-10-4
+	Date: 1999-10-04
 	Reference: http://www.palmpower.com/issuesprint/issue199910/announce.html
 	Type: hardware
 	Successor to piiie
 
 pvx
 	Name: Palm Vx
-	Date: 1999-10-4
+	Date: 1999-10-04
 	Reference: http://www.palmpower.com/issuesprint/issue199910/announce.html
 	Type: hardware
 	Successor to pv
 
 piiixe
 	Name: Palm IIIxe
-	Date: 2000-2-22
+	Date: 2000-02-22
 	Reference: http://www.palm.com/pr/022200a.html
 	Type: hardware
 	Successor to piiix
 
 piiic
 	Name: Palm IIIc
-	Date: 2000-2-22
+	Date: 2000-02-22
 	Reference: http://www.palm.com/pr/022200c.html
 	Type: hardware
 	Successor to piiix #This is a guess
 
 pviix
 	Name: Palm VIIx
-	Date: 2000-8-7
+	Date: 2000-08-07
 	Reference: http://slashdot.org/articles/00/08/07/196239_F.shtml
 	Type: hardware
 	Successor to pvii

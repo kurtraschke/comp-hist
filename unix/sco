@@ -19,7 +19,7 @@ sco3.2.4
 
 openserver5
 	Name: Santa Cruz Operation Open Server 5.0
-	Date: 1995-5-9
+	Date: 1995-05-09
 	Reference: Unix history tree
 	Type: OS
 	Successor to sco3.2.4
@@ -27,14 +27,14 @@ openserver5
 
 openserver5.0.5
 	Name: Santa Cruz Operation Open Server 5.0.5
-	Date: 1998-8-12
+	Date: 1998-08-12
 	Reference: Unix history tree
 	Type: OS
 	Successor to openserver5
 
 openserver5.0.5a
 	Name: Santa Cruz Operation Open Server 5.0.5a
-	Date: 1999-2
+	Date: 1999-02
 	Reference: Unix history tree
 	Type: OS
 	Successor to openserver5.0.5

@@ -1,7 +1,7 @@
 #########################################################################
 #			Some USDL versions				#
 #########################################################################
-# $Revision: 1.8 $ $Date: 2000/08/28 13:00:14 $
+# $Revision: 1.9 $ $Date: 2000/12/10 00:51:13 $
 #
 pwb1.0
 	Name: PWB/UNIX 1.0
@@ -10,7 +10,7 @@ pwb1.0
 	Type: OS
 	Successor to pwbunix
 	Code taken from v6
-#		prerelease test versions: 1977-06-6, 1977-06-13
+#		prerelease test versions: 1977-06-06, 1977-06-13
 
 mini-unix
 	Name: Mini-UNIX

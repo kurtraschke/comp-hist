@@ -21,7 +21,7 @@ mklinuxdr2
 
 mklinuxdr3
 	Name: Microkernel Linux DR3
-	Date: 1998-7-31
+	Date: 1998-07-31
 	Reference: Unix history tree
 	Type: OS
 	Code taken from linux2030

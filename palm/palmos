@@ -1,7 +1,7 @@
 #PalmOS goes here. 
 palmos10
 	Name: PalmOS 1.0
-	Date: 1996-4
+	Date: 1996-04
 	Reference: PalmPilot : The Ultimate Guide
 	Type: os
 	Ran on pilot1000
@@ -42,7 +42,7 @@ palmos205
 
 palmos3
 	Name: PalmOS 3.0
-	Date: 1998-3
+	Date: 1998-03
 	Reference: PalmPilot : The Ultimate Guide
 	Type: os
 	Ran on piii

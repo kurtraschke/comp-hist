@@ -32,7 +32,7 @@ windows101
 
 windows103
 	Name: Microsoft Windows 1.03
-	Date: 1986-8-29
+	Date: 1986-08-29
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to windows101
@@ -40,21 +40,21 @@ windows103
 
 windows2
 	Name: Microsoft Windows 2.0
-	Date: 1987-4-2
+	Date: 1987-04-02
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to windows103
 
 win386
 	Name: Windows/386 (announced)
-	Date: 1987-4-2
+	Date: 1987-04-02
 	Reference: Windows family tree
 	Type: announcement
 	Code taken from windows103
 
 windows386	
 	Name: Microsoft Windows/386
-	Date: 1987-9-23
+	Date: 1987-09-23
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to win386
@@ -64,7 +64,7 @@ windows386
 
 windows201
 	Name: Microsoft Windows 2.01
-	Date: 1987-12-9
+	Date: 1987-12-09
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to windows2
@@ -85,7 +85,7 @@ win38621
 
 windows3
 	Name: Microsoft Windows 3.0
-	Date: 1990-5-22
+	Date: 1990-05-22
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to win38621
@@ -100,7 +100,7 @@ win3me
 
 windows31
 	Name: Microsoft Windows 3.1
-	Date: 1992-4-6
+	Date: 1992-04-06
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to win3me
@@ -140,7 +140,7 @@ winpc20
 
 msbob
 	Name: Microsoft Bob
-	Date: 1995-1-7
+	Date: 1995-01-07
 	Reference: http://www.microsoft.com/billgates/bio/1995.htm
 	Reference: http://www.gratefuldad.com/twinsoft/products/msbob/msbob.html
 	Type: os #(sort of)
@@ -155,7 +155,7 @@ win95beta
 
 windows95
 	Name: Microsoft Windows 95
-	Date: 1995-8-24
+	Date: 1995-08-24
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to windows31
@@ -201,7 +201,7 @@ win95osr25
 
 windows98
 	Name: Microsoft Windows 98
-	Date: 1998-6
+	Date: 1998-06
 	Reference: http://www.microsoft.com/billgates/bio/1998.htm
         Type: OS
 	Successor to win95osr25
@@ -216,13 +216,13 @@ windows98se
 windows98sp1
 	Name: Microsoft Windows SP1
 	Type: os
-	Date: 1999-6-25
+	Date: 1999-06-25
 	Reference: Windows family tree
 	Successor to windows98se
 
 windowsme
 	Name: Microsoft Windows Millenium Edition
-	Date: 2000-6-19
+	Date: 2000-06-19
 	Reference: http://www.microsoft.com/windowsme/news/default.asp
         Type: OS
 	Successor to windows98sp1

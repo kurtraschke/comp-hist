@@ -32,7 +32,7 @@ clisp
 
 clispansi
 	Name: The Common List Processing Language, ANSI
-	Date: 1994-12-8
+	Date: 1994-12-08
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: standard
 	Successor to clisp

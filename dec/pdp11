@@ -5,7 +5,7 @@
 
 pdp1120
         Name: The Digital Equipment Corporation Programmed Data Processor, model 11/20
-        Date: 1970-4
+        Date: 1970-04
         Reference: http://www.digital.com/timeline/1970.htm
         Type: hardware
         Code taken from pdp8e
@@ -13,7 +13,7 @@ pdp1120
 
 pdp1115
 	Name: The Digital Equipment Corporation Programmed Data Processor, model 11/15
-	Date: 1970-4
+	Date: 1970-04
 	Reference: http://www.telnet.hu/hamster/pdp-11/main.html
 	Type: hardware
 	Code taken from pdp8e

@@ -2,7 +2,7 @@
 
 osxserv10
 	Name: Apple Mac OS X Server 1.0
-	Date: 1999-3-16
+	Date: 1999-03-16
 	Reference: http://www.apple.com/pr/library/1999/mar/16opensource.html
 	Type: OS
 	Code taken from rhapdr2
@@ -10,7 +10,7 @@ osxserv10
 
 osxserv102
 	Name: Apple Mac OS X Server 1.0.2
-	Date: 1999-7-22
+	Date: 1999-07-22
 	Reference: Unix history tree
 	Type: OS
 	Successor to osxserv10
@@ -18,7 +18,7 @@ osxserv102
 #There was no MOSXS 1.1!
 osxserv12
 	Name: Apple Mac OS X Server 1.2
-	Date: 2000-1
+	Date: 2000-01
 	Reference: http://www.stepwise.com/Articles/FirstImpressions/MacOSXServer1.2/index.html
         Type: OS
 	Successor to osxserv102
@@ -30,7 +30,7 @@ osxserv13
 
 osxdp4
 	Name: Apple Mac OS X DP4
-	Date: 2000-3
+	Date: 2000-03
 	Reference: Some Apple page
         Type: OS
 	Successor to osxdp3
@@ -38,7 +38,7 @@ osxdp4
 
 osxdp3
 	Name: Apple Mac OS X DP3
-	Date: 2000-2
+	Date: 2000-02
 	Reference: stepwise.com
         Type: OS
 	Successor to osxdp2
@@ -53,7 +53,7 @@ osxdp2
 
 osxdp1
 	Name: Apple Mac OS X DP1
-	Date: 1999-5-11
+	Date: 1999-05-11
 	Reference: stepwise.com
         Type: OS
 	Code taken from rhapdr2	
@@ -61,7 +61,7 @@ osxdp1
 
 rhapdr1
 	Name: Rhapsody DR1
-	Date: 1997-9
+	Date: 1997-09
 	Reference: Unix history tree
 	Type: OS
 	Successor to openstep4
@@ -69,21 +69,21 @@ rhapdr1
 
 rhapdr2
         Name: Rhapsody DR2
-        Date: 1998-5
+        Date: 1998-05
         Reference: Unix history tree
         Type: OS
 	Successor to rhapdr1
 
 mosxpbannc
 	Name: Mac OS X Public Beta\nAnnouncement
-	Date: 2000-8-29
+	Date: 2000-08-29
 	Reference: http://www.apple.com/hotnews/articles/2000/08/seyboldsf/
 	Type: announcement
 	Successor to osxdp4
 
 mosxpb
 	Name: Mac OS X Public Beta
-	Date: 2000-9-13
+	Date: 2000-09-13
 	Reference: http://www.apple.com/hotnews/articles/2000/08/seyboldsf/
 	Type: os
 	Successor to mosxpbannc

@@ -7,14 +7,14 @@ nextcomp
 
 nextstation
 	Name: NeXTstation
-	Date: 1990-9-18
+	Date: 1990-09-18
 	Reference: http://www.mackido.com/History/AppleTimeline.html
 	Type: hardware
 	Code taken from nextcomp
 
 nextstationcolor
         Name: NeXTstation Color
-        Date: 1990-9-18
+        Date: 1990-09-18
         Reference: http://www.mackido.com/History/AppleTimeline.html
         Type: hardware
 	Code taken from nextstation
@@ -33,7 +33,7 @@ nextstationcolorturbo
 
 nextcube
         Name: NeXTcube
-        Date: 1990-9-18
+        Date: 1990-09-18
         Reference: http://www.mackido.com/History/AppleTimeline.html
         Type: hardware
         Code taken from nextstation

@@ -4,7 +4,7 @@
 
 aix1
 	Name: IBM Advanced Interactive eXecutive 1
-	Date: 1986-1-1
+	Date: 1986-01-01
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Code taken from sysVr2
@@ -39,14 +39,14 @@ aix3.1
 
 aix3.2
 	Name: IBM Advanced Interactive eXecutive 3.2
-	Date: 1990-6 #fudge tomake it more specific than 1990
+	Date: 1990-06 #fudge tomake it more specific than 1990
 	Reference: Unix History tree
 	Type: OS
 	Successor to aix3.1
 
 aix3.2.4
 	Name: IBM Advanced Interactive eXecutive 3.2.4
-	Date:  1993-7
+	Date:  1993-07
 	Reference: Unix History tree
 	Type: OS
 	Successor to aix3.2
@@ -60,7 +60,7 @@ aix4
 
 aix4.1
 	Name: IBM Advanced Interactive eXecutive 4.1
-	Date: 1994-7
+	Date: 1994-07
 	Reference: Unix History tree
 	Type: OS
 	Successor to aix4
@@ -81,14 +81,14 @@ aix4.3
 
 aix4.3.2
 	Name: IBM Advanced Interactive eXecutive 4.3.2
-	Date: 1998-10-5
+	Date: 1998-10-05
 	Reference: Unix History tree
 	Type: OS
 	Successor to aix4.3
 
 aix4.3.3
 	Name: IBM Advanced Interactive eXecutive 4.3.3
-	Date: 1999-9-13
+	Date: 1999-09-13
 	Reference: Unix History tree
 	Type: OS
 	Successor to aix4.3.2

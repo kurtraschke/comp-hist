@@ -1,7 +1,7 @@
 #########################################################################
 #			    Unixware					#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/31 16:56:02 $
+# $Revision: 1.5 $ $Date: 2000/12/10 00:51:13 $
 #
 # [wkt] Mostly stuff from Greg Lehey grog@lemis.com
 
@@ -21,14 +21,14 @@ unixware1.1.1
 
 unixware2
 	Name: SCO Unixware 2.0\nUnix System Vr4.2MP
-	Date: 1995-1
+	Date: 1995-01
 	Reference: Unix history tree
 	Type: OS
 	Successor to unixware1.1.1
 
 unixware2.1
 	Name: SCO Unixware 2.1
-	Date: 1996-2
+	Date: 1996-02
 	Reference: Unix history tree
 	Type: OS
 	Successor to unixware2
@@ -42,7 +42,7 @@ unixware2.1.2
 
 unixware7
 	Name: SCO Unixware 7\nUnix System Vr5
-	Date: 1998-3-3
+	Date: 1998-03-03
 	Reference: Unix history tree
 	Type: OS
 	Successor to unixware2.1.2
@@ -50,14 +50,14 @@ unixware7
 
 unixware7.0.1
 	Name: SCO Unixware 7.0.1
-	Date: 1998-9-8
+	Date: 1998-09-08
 	Reference: Unix history tree
 	Type: OS
 	Successor to unixware7
 
 unixware7.1
 	Name: SCO Unixware 7.1
-	Date: 1999-2-23
+	Date: 1999-02-23
 	Reference: Unix history tree
 	Type: OS
 	Successor to unixware7.0.1
@@ -71,7 +71,7 @@ unixware7.1.1
 
 unixwarensc
 	Name: SCO Unixware NSC 7.1.1+IP
-	Date: 2000-6-26
+	Date: 2000-06-26
 	Reference: Unix history  tree
 	Type: OS
 	Successor to unixware7.1.1

@@ -5,7 +5,7 @@
 
 cclasses
 	Name: C with Classes
-	Date: 1980-4
+	Date: 1980-04
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
 	Code taken from k&rc
@@ -13,7 +13,7 @@ cclasses
 
 c++
 	Name: C++
-	Date: 1983-7
+	Date: 1983-07
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
 	Successor to cclasses

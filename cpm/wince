@@ -24,21 +24,21 @@ wince2
 
 wince2.1
 	Name: Microsoft Windows Compact Edition 2.1
-	Date: 1998-7
+	Date: 1998-07
 	Reference: Windows family tree
 	Type: os
 	Successor to wince2
 
 wince2.11
 	Name: Microsoft Windows Compact Edition 2.11
-	Date: 1998-8 #Ish
+	Date: 1998-08 #Ish
 	Reference: Windows family tree
 	Type: OS
 	Successor to wince2.1
 
 pocketpc
 	Name: Pocket PC\n(Windows CE 3.0)
-	Date: 2000-4-19
+	Date: 2000-04-19
 	Reference: Windows family tree
 	Type: OS
 	Successor to wince2.11

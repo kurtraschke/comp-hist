@@ -1545,98 +1545,98 @@ linux13100
 	Successor to linux1399
 
 linuxpre201
-	Name: Linux pre-2.0-1
+	Name: Linux pre-02.0-01
 	Type: os
 	Date: 1996-05-11
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux13100
 
 linuxpre202
-	Name: Linux pre-2.0-2
+	Name: Linux pre-02.0-02
 	Type: os
 	Date: 1996-05-11
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre201
 
 linuxpre203
-	Name: Linux pre-2.0-2
+	Name: Linux pre-02.0-02
 	Type: os
 	Date: 1996-05-12
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre202
 
 linuxpre204
-	Name: Linux pre-2.0-4
+	Name: Linux pre-02.0-04
 	Type: os
 	Date: 1996-05-13
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre203
 
 linuxpre205
-	Name: Linux pre-2.0-5
+	Name: Linux pre-02.0-05
 	Type: os
 	Date: 1996-05-16
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre204
 
 linuxpre206
-	Name: Linux pre-2.0-6
+	Name: Linux pre-02.0-06
 	Type: os
 	Date: 1996-05-18
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre205
 
 linuxpre207
-	Name: Linux pre-2.0-7
+	Name: Linux pre-02.0-07
 	Type: os
 	Date: 1996-05-20
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre206
 
 linuxpre208
-	Name: Linux pre-2.0-8
+	Name: Linux pre-02.0-08
 	Type: os
 	Date: 1996-05-26
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre207
 
 linuxpre209
-	Name: Linux pre-2.0-9
+	Name: Linux pre-02.0-09
 	Type: os
 	Date: 1996-05-28
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre208
 
 linuxpre2010
-	Name: Linux pre-2.0-10
+	Name: Linux pre-02.0-10
 	Type: os
 	Date: 1996-05-31
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre209
 
 linuxpre2011
-	Name: Linux pre-2.0-11
+	Name: Linux pre-02.0-11
 	Type: os
 	Date: 1996-06-02
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre2010
 
 linuxpre2012
-	Name: Linux pre-2.0-12
+	Name: Linux pre-02.0-12
 	Type: os
 	Date: 1996-06-03
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre2011
 
 linuxpre2013
-	Name: Linux pre-2.0-13
+	Name: Linux pre-02.0-13
 	Type: os
 	Date: 1996-06-05
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre2012
 
 linuxpre2014
-	Name: Linux pre-2.0-14
+	Name: Linux pre-02.0-14
 	Type: os
 	Date: 1996-06-05
 	Reference: Linux Kernel Archive (www.kernel.org)

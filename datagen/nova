@@ -1,14 +1,14 @@
 #This is where the Data General Nova computers will go
 nova
 	Name: Data General Nova
-	Date: 1969-2
+	Date: 1969-02
 	Reference: http://www.SimuLogics.com/machines.htm
 	Type: hardware
 	Made by datagen
 
 supernova
 	Name: Data General SuperNova
-	Date: 1970-4
+	Date: 1970-04
 	Reference: http://www.SimuLogics.com/machines.htm
 	Type: hardware
 	Successor to nova

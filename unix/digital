@@ -4,14 +4,14 @@
 
 digital	
 	Name: Digital Unix\n(DEC OSF/1 AXP)
-	Date: 1995-3
+	Date: 1995-03
 	Reference: Unix history tree
 	Type: os
 	Successor to osf/1.3
 
 digitalv4
 	Name: Digital Unix\n(DEC OSF/1 V4)
-	Date: 1996-9
+	Date: 1996-09
 	Reference: Unix history tree
 	Type: os
 	Successor to digital
@@ -25,14 +25,14 @@ digital4
 
 tru64
 	Name: Tru64 Unix V4.0F
-	Date: 1999-2-1
+	Date: 1999-02-01
 	Reference: Unix history tree
 	Type: OS
 	Successor to digital4
 
 tru645
 	Name: Tru64 Unix V5.0
-	Date: 1999-8-12
+	Date: 1999-08-12
 	Reference: Unix history tree
 	Type: OS
 	Successor to tru64

@@ -20,7 +20,7 @@ edvac
 
 ias
         Name: Princeton University IAS
-        Date: 1952-6
+        Date: 1952-06
         Referenece: http://www.mailbase.ac.uk/lists-f-j/history-of-computing-uk2000-02/0002.html
         Type: hardware
 	Status: research
@@ -35,7 +35,7 @@ ordvac
 
 brlesc
 	Name: Ballistic Research Laboratory's Electronic Scientific Computer
-	Date: 1961-5-1
+	Date: 1961-05-01
 	Reference: Electronic Computers Within the Ordinance Corps, Chapter V <http://ftp.arl.mil/~mike/comphist/61ordnance/chap5.html>
         Type: hardware
 	Status: research

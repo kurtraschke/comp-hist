@@ -6,7 +6,7 @@
 
 ibm5150
 	Name: The IBM 5150 / Personal Computer
-	Date: 1981-8-12
+	Date: 1981-08-12
 	Reference: http://www.can.ibm.com/helpware/5150.html
 	Info: Excerpt from the announcement: "Today, IBM is announcing the IBM Personal Computer, a low cost computer system that will appeal to a broad spectrum of users. " Shall we enter this for understatement of the millenium?
 	Type: hardware
@@ -15,7 +15,7 @@ ibm5150
 
 ibm5140
 	Name: The IBM 5140 / Personal Computer Convertable
-	Date: 1986-4-2
+	Date: 1986-04-02
 	Reference: http://www.can.ibm.com/helpware/5140.html
 	Type: hardware
 	Code taken from ibm5150
@@ -23,7 +23,7 @@ ibm5140
 
 ibm4860
 	Name: The IBM 4860 / Personal Computer Junior
-	Date: 1983-11-1
+	Date: 1983-11-01
 	Reference: http://www.can.ibm.com/helpware/4860.html
 	Type: hardware
 	Code taken from 8088
