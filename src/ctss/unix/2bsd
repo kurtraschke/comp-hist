@@ -1,7 +1,7 @@
 #########################################################################
 #			1BSD and 2BSD versions				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/12/17 03:01:15 $
+# $Revision: 1.2 $ $Date: 2001/04/01 23:44:57 $
 #
 # [wkt] I need to examine the files for each version, and see how V6/V7
 # are related to the early 2BSDs.
@@ -63,7 +63,7 @@
 	Reference: KSJ
         Type: OS
 	Successor to 2.8.2bsd # 1000
-	Code taken from 4.1cbsd
+	Code taken from 4.1bbsd
 
 2.9.1bsd
 	Name: 2.9.1BSD
@@ -141,3 +141,9 @@
         Type: OS
 	Successor to 2.11pl335 # 1000
 
+2.11pl430
+	Name: 2.11BSD patch 430
+	Date: 1999-12-13
+	Reference: Unix history tree
+	Type: os
+	Successor to 2.11pl400
