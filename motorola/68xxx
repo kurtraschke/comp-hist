@@ -9,6 +9,13 @@
 	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
 	Type: hardware
 
+6809
+	Name: The  Motorola 6809
+	Date: would be nice
+	Reference: http://www.computerhistory.org/exhibits/microprocessors/up2.page#intel
+	Type: hardware
+	Successor to 6800
+
 68000
 	Name: The Motorola 68000
 	Date: 1979
@@ -51,6 +58,13 @@
 	Type: hardware
 	Code taken from 68030
 
+88100
+	Name: The Motorola 88100
+	Date: needed
+	Reference: http://www.computerhistory.org/exhibits/microprocessors/up2.page#intel
+	Type: hardware
+	Successor to 88000
+
 6803050
 	Name: The Motorola 68030 (50 MHz)
 	Date: 1989
@@ -71,3 +85,9 @@ mos6502
 	Reference: http://microbackup.magnet.fsu.edu/chipshots/mos/index.html
 	Type: hardware
 	Influenced by 6800
+
+
+
+
+
+
