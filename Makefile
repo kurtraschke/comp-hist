@@ -6,6 +6,8 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc-srcs
 
+SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS)
+
 all: comp-history.ps
 
 comp-history: 
@@ -20,10 +22,10 @@ unix-history.ps: unix-history
 unix-history: $(SRCS)
 	perl -w scripts/todot $(UNIX-SRCS)
 
-#ord-history.ps: ord-history
-#        dot -Tps ord-corps-hist
+ord-history.ps: ord-history
+        dot -Tps ord-corps-hist
 
-ord-history: $(SRCS)
+ord-history:
         perl -w scripts/todot $(ORD-SRCS)
 
 parc-history.ps: parc-history
