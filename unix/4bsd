@@ -1,0 +1,141 @@
+#########################################################################
+#			    3BSD/4BSD versions				#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/04/22 03:08:24 $
+#
+# [wkt] Most refs from pg 164 & 165 of QCU. I should also peruse Kirk's
+# CSRG CD set for verification of details.
+3bsd
+	Name: 3BSD
+	Date: 1980-03
+	Reference: last-mod timestamps in Distributions/ucb/3bsd.tar
+	Successor to 32V
+	Code taken from 2bsd
+#			virtual memory, page replacement,
+#			demand paging
+
+4bsd
+	Name: 4BSD
+	Date: 1980-10
+	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+	Successor to 3bsd
+
+4.1bsd
+	Name: 4.1BSD
+	Date: 1981-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+	Successor to 4bsd
+
+4.1absd
+	Name: 4.1a BSD
+	Date: 1982-04
+	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+	Successor to 4.1bsd
+#			alpha release, 100 sites, networking [44B]
+
+4.1bbsd
+	Name: 4.1b BSD
+# [wkt] Month in date is bogus. I made it up to make the graph look ok.
+	Date: 1982-08
+	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+	Successor to 4.1absd
+#			internal release, fast filesystem [44B]
+
+4.1cbsd
+	Name: 4.1c BSD
+# [wkt] Month in date is bogus. I made it up to make the graph look ok.
+	Date: 1982-12
+	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+	Successor to 4.1bbsd
+#			beta release, IPC [44B]
+
+4.2bsd
+	Name: 4.2BSD
+	Date: 1983-09
+	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+	Successor to 4.1cbsd
+#                       Landmark filesystem change.
+#                       VAX hardware support extended to 11/730.
+#                       Now runs on 11/780, 11/750, 11/730.
+
+
+4.3bsd
+	Name: 4.3BSD
+	Date: 1986-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+	Successor to 4.2bsd
+#			Code taken from DEC Ultrix with DEC's blessing
+#                       DNS added to the standard libc
+#                               (no MX records in Sendmail, though).
+#                       Added DEC's VAX 8600 and TMSCP support code
+#                               with DEC's blessing.
+#                       Added kernel-only support for MicroVAX II
+#                               (KA630). Without DEC's help!
+#                               It's unusable, though.
+
+
+4.3tahoe
+	Name: 4.3BSD Tahoe
+	Date: 1988-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+	Successor to 4.3bsd
+#			Code taken from CCI's 4.2BSD-based vendor release
+#                       tahoe architecture support added.
+#                       VAX hardware support enhancements:
+#                           MicroVAX II (KA630) support made actually
+#                               usable and extended to support QVSS and
+#                               QDSS graphics.
+#                           VAX 8200 support added by Chris Torek.
+#                           New drivers for disk MSCP (U/Q and BI).
+#                       No distribution tapes for VAX ever shipped,
+#                               though.
+#                       MX record support in Sendmail!
+
+net1
+	Name: BSD Net/1
+	Date: 1988-11
+	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+	Code taken from 4.3tahoe
+
+4.3reno
+	Name: 4.3BSD Reno
+	Date: 1990-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+	Successor to 4.3tahoe
+#			Influenced by Sun and DEC vendor systems (NFS and /var)
+#                       experimental hp300 architecture support added.
+#                       MicroVAX support extended to KA650 (MicroVAX III)
+#                               everywhere except the tmscp bootblock.
+
+
+net2
+	Name: BSD Net/2
+	Date: 1991-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+	Code taken from 4.3reno
+
+4.4alpha
+	Name: 4.4BSD Alpha
+	Date: 1992-07
+	Reference: Wolfram Schneider
+	Successor to 4.3reno
+
+4.4bsd
+	Name: 4.4BSD
+	Date: 1993-06
+	Reference: Usenet postings
+	Successor to 4.4alpha
+
+4.4lite
+	Name: 4.4BSD Lite
+	Date: 1994-03
+	Reference: Usenet postings
+	Code taken from 4.4bsd
+
+4.4lite2
+	Name: 4.4BSD Lite Release 2
+	Date: 1995-06
+	Reference: Usenet postings
+	Successor to 4.4lite
+#			the true final distribution from the CSRG
+

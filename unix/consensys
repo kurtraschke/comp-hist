@@ -1,0 +1,12 @@
+#########################################################################
+#			    Consensys					#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/04/22 03:08:31 $
+#
+# [wkt] Mostly stuff from Greg Lehey grog@lemis.com
+
+consensys4210
+	Name: Consensys UNIX System V.4.2.1.0
+	Date: 1992-11-14
+	Reference: Greg Lehey
+	Code taken from sysVr4

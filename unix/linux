@@ -1,0 +1,435 @@
+#################################
+#		Linux		#
+#################################
+#NOTE: This is only for /kernel/ releases. If you want to provide distros a space, start a Linux family tree and email me some of the stuff.
+
+linux001
+	Name: Linux 0.01
+	Date: 1991-9-17
+	Reference: Linux Kernel Version History
+	Influenced by minix1.2
+
+linux002
+	Name: Linux 0.02
+	Date: 1991-10
+	Reference: LKVH
+	Successor to linux001
+
+linux003
+	Name: Linux 0.03
+	Date: 1991-11
+	Reference: LKVH
+	Successor to linux002
+
+linux010
+	Name: Linux 0.10
+	Date: 1991-12-3
+	Reference: LKVH
+	Successor to linux003
+
+linux011
+	Name: Linux 0.11
+	Date: 1991-12-8
+	Reference: LKVH
+	Successor to linux010
+
+linux012
+	Name: Linux 0.12
+	Date: 1992-1-16
+	Reference: LKVH
+	Successor to linux011
+
+linux095
+	Name: Linux 0.95
+	Date: 1992-3-8
+	Reference: LKVH
+	Successor to linux012
+
+linux095a
+	Name: Linux 0.95a
+	Date: 1992-3-17
+	Reference: LKVH
+	Successor to linux095
+
+#The dates for 095b and 095c are fudges, if anyone has the real ones, put them in.
+
+linux095b
+	Name: Linux 0.95b
+	Date: 1992-3-24
+	Reference: LKVH
+	Successor to linux095a
+
+linux095c
+	Name: Linux 0.95c
+	Date: 1992-3-31
+	Reference: LKVH
+	Successor to linux095b
+
+linux095c+
+	Name: Linux 0.95c+
+	Date: 1992-4-9
+	Reference: LKVH
+	Successor to linux095c
+
+linuxpre096
+	Name: Linux pre-0.96
+	Date: 1992-4-22
+	Reference: LKVH
+	Successor to linux095c+
+
+#No, there was no Linux 0.96
+linux096a
+	Name: Linux 0.96a
+	Date: 1992-5-22
+	Reference: LKVH
+	Successor to linuxpre096
+
+#Date fudges are in style from 096a1-4
+linux096a1
+	Name: Linux 0.96a.1
+	Date: 1992-5-29
+	Reference: LKVH
+	Successor to linux096a
+
+linux096a2
+	Name: Linux 0.96a.2
+	Date: 1992-6-5
+	Reference: LKVH
+	Successor to linux096a1
+
+linux096a3
+	Name: Linux 0.96a.3
+	Date: 1992-6-12
+	Reference: LKVH
+	Successor to linux096a2
+
+linux096a4
+	Name: Linux 0.96a.3
+	Date: 1992-6-18
+	Reference: LKVH
+	Successor to linux096a3
+#date fudges end here
+
+linux096b
+	Name: Linux 0.96b
+	Date: 1992-6-22
+	Reference: LKVH
+	Successor to linux096a4
+
+linux096b1
+	Name: Linux 0.96b.1
+	Date: 1992-6-24
+	Reference: LKVH
+	Successor to linux096b
+
+linux096b2
+	Name: Linux 0.96b.2
+	Date: 1992-6-26
+	Reference: LKVH
+	Successor to linux096b1
+
+linux096c
+	Name: Linux 0.96c
+	Date: 1992-7-5
+	Reference: LKVH
+	Successor to linux096b2
+
+linux096c1
+	Name: Linux 0.96c.1
+	Date: 1992-7-11
+	Reference: 1992-7-11
+	Successor to linux096c
+
+linux096c2
+	Name: Linux 0.96c.2
+	Date: 1992-7-17
+	Reference: LKVH
+	Successor to linux096c1
+
+linux097
+	Name: Linux 0.97
+	Date: 1992-8-1
+	Reference: LKVH
+	Successor to linux096c2
+
+linux0971
+	Name: Linux 0.97.1
+	Date: 1992-8-6
+	Reference: LKVH
+	Successor to linux097
+
+linux0972
+	Name: Linux 0.97.2
+	Date: 1992-8-34
+	Reference: LKVH
+	Successor to linux0971
+
+linux0973
+	Name: Linux 0.97.3
+	Date: 1992-9-5
+	Reference: LKVH
+	Successor to linux0972
+
+linux0974
+	Name: Linux 0.97.4
+	Date: 1992-9-7
+	Reference: LKVH
+	Successor to linux0973
+
+linux0975
+	Name: Linux 0.97.5
+	Date: 1992-9-12
+	Reference: LKVH
+	Successor to linux0974
+
+linux0975a
+	Name: Linux 0.97.5a
+	Date: 1992-9-12
+	Reference: LKVH
+	Successor to linux0975
+
+linux0976
+	Name: Linux 0.97.6
+	Date: 1992-9-20
+	Reference: LKVH
+	Successor to linux0975a
+
+linux098
+	Name: Linux 0.98
+	Date: 1992-9-7
+	Reference: LKVH
+	Successor to linux0976
+
+linux0981
+	Name: Linux 0.98.1
+	Date: 1992-10-5
+	Reference: LKVH
+	Successor to linux098
+
+linux0982
+	Name: Linux 0.98.2
+	Date: 1992-10-18
+	Reference: LKVH
+	Successor to linux0981
+
+linux0983
+	Name: Linux 0.98.3
+	Date: 1992-10-27
+	Reference: LKVH
+	Successor to linux0982
+
+linux0984
+	Name: Linux 0.98.4
+	Date: 1992-11-9
+	Reference: LKVH
+	Successor to linux0983
+
+linux0985
+	Name: Linux 0.98.5
+	Date: 1992-11-15
+	Reference: LKVH
+	Successor to linux0984
+
+linux0986
+	Name: Linux 0.98.6
+	Date: 1992-12-2
+	Reference: LKVH
+	Successor to linux0985
+
+linux099
+	Name: Linux 0.99
+	Date: 1992-12-13
+	Reference: LKVH
+	Successor to linux0986
+
+linux0991
+	Name: Linux 0.99.1
+	Date: 1992-12-21
+	Reference: LKVH
+	Successor to linux099
+
+linux0992
+	Name: Linux 0.99.2
+	Date: 1993-1-1
+	Reference: LKVH
+	Successor to linux0991
+
+linux0993
+	Name: Linux 0.99.3
+	Date: 1993-1-13
+	Reference: LKVH
+	Successor to linux0992
+
+linux0994
+	Name: Linux 0.99.4
+	Date: 1993-1-21
+	Reference: LKVH
+	Successor to linux0993
+
+linux0995
+	Name: Linux 0.99.5
+	Date: 1993-2-9
+	Reference: LKVH
+	Successor to linux0994
+
+linux0996
+	Name: Linux 0.99.6
+	Date: 1993-2-22
+	Reference: LKVH
+	Successor to linux0995
+
+linux0997
+	Name: Linux 0.99.7
+	Date: 1993-3-17
+	Reference: LKVH
+	Successor to linux0996
+
+linux0997a
+	Name: Linux 0.99.7A
+	Date: 1993-3-22
+	Reference: LKVH
+	Successor to linux0997
+
+linux0998
+	Name: Linux 0.99.8
+	Date: 1993-4-9
+	Reference: LKVH
+	Successor to linux0997a
+
+linux0999
+	Name: Linux 0.99.9
+	Date: 1993-4-24
+	Reference: LKVH
+	Successor to linux0998
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+#! /usr/bin/perl -w
+
+$minyear=3000;
+$maxyear=0;
+$linkcnt=0;
+while (<>) {
+    if (/^#/) { next; }
+    if (/^(\S+)/) { $node=$1; next; }
+    if (/\tName: (.*)/) { $Name{$node}=$1; $nodecnt++; next; }
+
+    if (/\tSuccessor to (\S+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
+	$linkcnt++;
+    }
+    if (/\tCode taken from (\S+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="code";
+	$linkcnt++;
+    }
+    if (/\tInfluenced by (\S+)/) {
+	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
+	$linkcnt++;
+    }
+
+    if (/\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
+				# Convert to year-mon
+	$yr=$1; $mon=$2; goto dodate;
+    }
+    if (/\tDate:.*(\d\d\d\d)-(\d\d)/) {
+	$yr=$1; $mon=$2; goto dodate;
+    }
+    if (/\tDate:.*(\d\d\d\d)/) {
+	$yr=$1; $mon="00";
+dodate:
+	$d="$yr.$mon"; $Date{$d}{$node}=$node;
+	$Date{$d}{$d}=$d; $Name{$d}=$d;
+	if ($yr > $maxyear) { $maxyear=$yr; }
+	if ($yr < $minyear) { $minyear=$yr; }
+	next;
+    }
+}
+
+print("digraph unixhist {\nratio=auto; page=\"8.25,11.65\";\n");
+print("node [shape=plaintext,fontsize=24];\n");
+print("ranksep=0.1; nodesep=0.1; center=true;\n");
+
+# Draw the visible years
+print("{ edge [style=bold];\n");
+for ($i=$minyear; $i<=$maxyear; $i++) {
+    $d= "$i.00"; $Date{$d}{$d}=$d; $Name{$d}=$d;
+    $Date{$d}{$i}=$i; $Name{$i}=$i;
+    print("  $i ->\n");
+}
+print("  future;\n}\n");
+print("{ rank=max; future }\n");
+
+foreach $i (sort(keys(%Date))) {
+    print("{ rank=same; ");
+    foreach $j (keys(%{ $Date{$i} })) {
+        print("\"$Name{$j}\"; ");
+    }
+    print("}\n");
+}
+
+# Do the invisible years
+for ($i=$minyear; $i<=$maxyear; $i++) { 
+    print("{ edge [style=invis];\n");
+    for ($j=0; $j<=12; $j++) {
+	$d= sprintf("%d.%02d", $i,$j);
+	if (!defined($Date{$d}{$d})) { next; }
+	print("    $d [style=invis,height=0.1,width=0.1,fontsize=2];\n");
+    }
+    for ($j=0; $j<=12; $j++) {
+	$d= sprintf("%d.%02d", $i,$j);
+	if (!defined($Date{$d}{$d})) { next; }
+	print("    $d ->\n");
+    }
+    printf("    %d.00;\n}\n",$i+1);
+}
+$j=$maxyear+1; $j .= ".00";
+print("{ $j [style=invis,height=0.1,width=0.1,fontsize=2]; }\n");
+
+for ($i=0; $i<$linkcnt; $i++) {
+    if (!defined($Name{$From[$i]})) {
+	print(STDERR "Warning: node $From[$i] doesn't exist\n"); next;
+    }
+    print("\"$Name{$From[$i]}\" -> \"$Name{$To[$i]}\" ");
+    if ($Link[$i] eq "succ") { print("[weight=10,style=bold]"); }
+    if ($Link[$i] eq "code") { print("[weight=5]"); }
+    if ($Link[$i] eq "idea") { print("[weight=2,style=dotted]"); }
+    print(";\n");
+}
+print("}\n");
+
+
+
+
+
+
+
+
+

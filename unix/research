@@ -1,0 +1,79 @@
+#########################################################################
+#			    Research Editions				#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/04/22 03:08:26 $
+#
+pdp7
+	Name: PDP-7 version
+	Date: 1969-09
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+
+v1
+	Name: 1st Edition
+	Date: 1971-11-03
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to pdp7
+#			DEC PDP-11/20, Assembler
+
+v2
+	Name: 2nd Edition
+	Date: 1972-06-12
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v1
+#			10 Unix installations
+
+v3
+	Name: 3rd Edition
+	Date: 1973-02
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v2
+#			Pipes, 16 installations
+
+v4
+	Name: 4th Edition
+	Date: 1973-11
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v3
+#			rewriting in C effected,
+#			above 30 installations
+
+v5
+	Name: 5th Edition
+	Date: 1974-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v4
+#			above 50 installations
+
+v6
+	Name: 6th Edition
+	Date: 1975-05
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v5
+
+v7
+	Name: 7th Edition
+	Date: 1979-01
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v6
+
+v8
+	Name: 8th Edition
+	Date: 1985-02
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v7
+	Code taken from sysV
+	Code taken from 4.1cbsd
+#		dmr says code was taken from sysV and 4.1c
+
+v9
+	Name: 9th Edition
+	Date: 1986-09
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v8
+
+v10
+	Name: 10th Edition
+	Date: 1989-10
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Successor to v9
+

@@ -1,0 +1,64 @@
+#########################
+#	Windows		#
+#########################
+
+#Yes, I should be beaten many times for writing about Windows on a Linux system.
+
+windows101
+	Name: Windows 1.01
+	Date: 1985-11-20
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+#	Code taken from msdos2
+
+windows103
+	Name: Windows 1.03
+	Date: 1986-8-29
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Successor to windows101
+#	Code taken from msdos32 (when I put it in)
+
+windows2
+	Name: Windows 2.0
+	Date: 1987-4-2
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Successor to windows103
+
+windows386	
+	Name: Windows/386
+	Date: 1987-9-23
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Code taken from windows2
+
+windows201
+	Name: Windows 2.01
+	Date: 1987-12-9
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Successor to windows2
+
+windows3
+	Name: Windows 3.0
+	Date: 1990-5-22
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Successor to windows201
+
+windows31
+	Name: Windows 3.1
+	Date: 1992-4-6
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Successor to windows3
+
+windows311
+	Name: Windows for Workgroups 3.11
+	Date: 1993-11-8
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Code taken from windows31
+
+windows95
+	Name: Windows 95
+	Date: 1995-8-24
+	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Successor to windows31
+	Successor to windows311
+#	Successor to msdos622 (when I make it)
+
+# If anyone has the dates for win95sp1 and on, send them off to me.
