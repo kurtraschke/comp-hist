@@ -1,4 +1,4 @@
-#! /usr/local/bin/perl5
+#! /usr/bin/perl
 
 $default_succweight=200;
 $default_codeweight=20;
