@@ -76,7 +76,7 @@ biblio:
 	cat $(SRCS) | scripts/biblio > bibliography
 
 info:
-	perl -w scripts/info $(SRCS) > information
+	perl scripts/parsech -o info $(SRCS) > information
 
 comp-history-vcg:
 	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 
