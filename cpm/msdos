@@ -12,6 +12,7 @@ qdos01
 	Reference: http://www.MaxFrame.com/HISZCOMP.HTM
 	Type: OS
 	Influenced by cpm22
+	Ran on 8088
 
 86dos03
 	Name: 86-DOS, version 0.3
@@ -27,6 +28,7 @@ pcdos1
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to 86dos03
+	Ran on ibmpc
 
 pcdos105
 	Name: IBM Personal Computer DOS 1.05
