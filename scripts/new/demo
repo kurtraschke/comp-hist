@@ -1,0 +1,115 @@
+#This is both a torture test and demo file.
+#doc/demo.pdf is a pre-rendered version of this file that can be used as a key to the VCG output.  I don't know about dot, though.
+test
+	Name: Test Node
+	Date: 1950
+
+OS
+	Name: OS
+	Date: 1950
+	Type: OS
+
+os
+        Name: os
+        Date: 1950
+        Type: os
+
+hardware
+        Name: hardware
+        Date: 1950
+        Type: hardware
+
+standard
+        Name: standard
+        Date: 1950
+        Type: standard
+
+announcement
+        Name: announcement
+        Date: 1950
+        Type: announcement
+
+language
+        Name: language
+        Date: 1950
+        Type: language
+company
+        Name: company
+        Date: 1950
+        Type: company
+
+other
+        Name: other
+        Date: 1950
+        Type: other
+
+released
+	Name: released
+	Date: 1951
+	Status: released
+
+continualevolution
+        Name: continual evolution
+        Date: 1951
+        Status: continual evolution
+
+internal
+        Name: internal
+        Date: 1951
+	Status: internal
+
+prototype
+        Name: prototype
+        Date: 1951
+        Status: prototype
+
+research
+        Name: research
+        Date: 1951
+        Status: research
+
+aka1
+	Name: Aka (Parent)
+	Date: 1952
+
+aka2
+	Name: Aka (Child)
+	Date: 1953
+	Aka aka1
+
+succ1
+	Name: Successor to (Parent)
+	Date: 1952
+
+succ2
+	Name: Successor to (Child)
+	Date: 1953
+	Successor to succ1
+
+ctf1
+        Name: Code taken from (Parent)
+        Date: 1952
+
+ctf2
+        Name: Code taken from (Child)
+        Date: 1953
+        Code taken from ctf1
+
+influ1
+        Name: Influenced by (Parent)
+        Date: 1952
+
+influ2
+        Name: Influenced by (Child)
+        Date: 1953
+        Influenced by influ1
+
+ran1
+        Name: Runs on/Ran on (Parent)
+        Date: 1952
+
+ran2
+        Name: Runs on/Ran on (Child)
+        Date: 1953
+        Runs on ran1
+	Ran on ran1

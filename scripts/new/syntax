@@ -17,6 +17,7 @@ fakenode #a node nickname
 	Code taken from foonode #like MS DOS 6.22 to Windows 95
 	Influenced by barnode #like CP/M to QDOS
 	Runs on foovax #this should only be used for one-platform OSes, and even then only for the earliest possible hardware
+	Written in x #guess
 	#This is a comment
 
 fakecompany #this is a company name
@@ -31,7 +32,6 @@ fnode
 	Name: Fnode, version 325254
 	Date: 2000-4-20
 	Successor to fakenode0
-    Successor to fakenode
 	Type: standard
 
 fakenode0
@@ -44,9 +44,7 @@ foonode
 	Name: The Great Foo Node
 	Type: os
 	Influenced by barnode
-    Influenced by fakenode0
 	Ran on foovax
-    Reference : Ref 1
 
 foovax
 	Name: VAX, version FOO
@@ -57,9 +55,6 @@ barnode
 	Name: The BarNoDe
 	Date: 1992-6-2
 	Type: language
-    Reference: Ref 1
-    Reference:  Ref 2
-    Reference: Ref 3
 
 node
 	Name: The Node
