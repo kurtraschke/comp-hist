@@ -4,18 +4,25 @@
 #MS's Unix
 
 xenix
-	Name: XENIX
+	Name: Microsoft XENIX
 	Date: 1980-08-25
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Code taken from v7
 
-xenix3
-	Name: XENIX 3.0
-	Date: 1983-04
-	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+xenix2.3
+	Name: Microsoft XENIX 2.3
+#	Date?
+	Reference: Unix history tree
 	Type: OS
 	Successor to xenix
+
+xenix3
+	Name: Santa Cruz Operation XENIX 3.0
+	Date: 1983-02
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to xenix2.3
 
 xenix3.2
 	Name: XENIX 3.2
