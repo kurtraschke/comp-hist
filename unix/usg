@@ -1,0 +1,23 @@
+#########################
+#	USG Unix	#
+#########################
+#FIXME: add dates
+
+usg1.0
+	Name: Unix Support Group Unix 1.0
+#	Need date
+	Reference: Unix history tree
+	Type: OS
+	Code taken from pwb1.0
+
+usg2.0
+	Name: Unix Support Group Unix 2.0
+	Reference: Unix history tree
+	Type: OS
+	Successor to usg1.0
+
+usg3.0
+	Name: Unix Support Group Unix 3.0
+	Reference: Unix history tree
+	Type: OS
+	Successor to usg2.0
