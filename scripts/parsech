@@ -7,59 +7,6 @@ my(%Color, %Shape, %Linkto);
 my(%Reference, %Type, %Status, %Linkcolor);
 my(%Opts, $Maxyear, $Minyear, %VPos, $VScale);
 
-=head1 NAME
-
-B<parsech> - Parse Comp-Hist
-
-=head1 SYNOPSIS
-
-A parser for the Computer History Graphing Project.
-
-    parsech -o [dump|chml|info|vcg|biblio|dbm]
-    parsech -h
-    parsech -v
-    parsech -s(desired dopos scaling)
-
-=head1 ABSTRACT
-
-parsech is a unified parser for the Comp-Hist project.
-It came about thanks to the fact that I was sick of 
-writing a new parser for each new format we decided to 
-support.
-
-Oh, and I wanted documentation, too.
-
-=head1 DESCRIPTION
-
-B<parsech> will take three arguments at this point,
-plus all the files you want parsed.
-
-=over 5
-
-=item B<-o> output
-
-This switch dictates the output format. Currently, it will 
-take the following arguments: L<dump>, L<chml>, L<vcg>, L<info>, or L<biblio>.
-
-=item B<-v> version
-
-This switch will print out the version and exit.
-
-=item B<-h> help
-
-This switch will print a brief help message and exit.
-
-=item B<-s> scaling
-
-This switch will set the value used by L<dopos> to scale the L<vcg> output.
-
-
-=back
-
-=head1 INTERNALS
-
-=cut it out!
-
 getopts('hvo:s:', \%Opts); #Get our options for parsing
 
 if ( defined $Opts{s} ) {$VScale=$Opts{s};} else {$VScale=1;}
@@ -84,40 +31,9 @@ sub output {
   elsif($Opts{o} eq "vcg"){&vcg(@ARGV);}
   elsif($Opts{o} eq "biblio"){&biblio(@ARGV);}
   elsif($Opts{o} eq "dbm"){&dbm(@ARGV);}
+  elsif($Opts{o} eq "dot"){&dot(@ARGV);}
   else {print "Invalid output format: valid formats are dump, chml, vcg, dbm, and info\n"; exit;}
 }
-
-=head2 parse
-
-The parse subroutine does the heavy lifting involved in parsing,
-and really should be the only function that ever touches the 
-files contents.
-
-The data fields are parsed as follows:
-
-=over 5
-
-=item First, a regexp filters out the comments (C<s/\#.*//>)
-
-=item Next, we check to see if its a node nick field, and sets stuff up if it is.
-
-=item Then, we look for a Name: field and set that up.
-
-=item After that, date parsing happens.
-
-=item Then, reference parsing is done.
-
-=item As a follow up, we then do Info parsing
-
-=item Then, we do the Type parsing. Note that to get colors from this, the setcolor routine must be run.
-
-=item Then, status parsing happens. For shapes, do setshape.
-
-=item And finally, we check to see if linking must occur, and call the linkup function if it must.
-
-=back
-
-=cut yourself a slice of rug and start coding
 
 sub parse{
   no strict "refs";
@@ -125,66 +41,63 @@ sub parse{
   while(<>){
     s/\#.*//;
     if(/^(\S+)/){ $node = $1; }
-    if(/.*Name: (.*)/){ $Name{$node} = $1; }
-    if (/.*Founded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+    if(/^\tName: (.*)/){ $Name{$node} = $1; }
+    if (/^\tFounded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
       $Year{$node}=$1; 
       $Month{$node}=$2;
       $Day{$node}=$3;
     }
-    elsif (/.*Founded.*(\d\d\d\d)-(\d\d)/) {
+    elsif (/^\tFounded.*(\d\d\d\d)-(\d\d)/) {
       $Year{$node}=$1;
       $Month{$node}=$2;
     }
-    elsif (/.*Founded.*(\d\d\d\d)/) {
+    elsif (/^\tFounded.*(\d\d\d\d)/) {
       $Year{$node}=$1;
       $Month{$node}="0";
     }
     
-    if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+    if (/^\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
       $Year{$node}=$1;
 	$Month{$node}=$2;
       $Day{$node}=$3;
     }
-    elsif (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
+    elsif (/^\tDate:.*(\d\d\d\d)-(\d\d)/) {
       $Year{$node}=$1;
       $Month{$node}=$2;
     }
-    elsif (/.*Date:.*(\d\d\d\d)/) {
+    elsif (/^\tDate:.*(\d\d\d\d)/) {
 	$Year{$node}=$1;
 	$Month{$node}="0";
       }
     
-    if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
+    if(/^\tReference: (.*)/){ $Reference{$node} = $1; }
     
-    if(/.*Info: (.*)/){ $Info{$node} = $1; }
+    if(/^\tInfo: (.*)/){ $Info{$node} = $1; }
     
-    if(/.*Type: hardware/){ $Type{$node} = "hardware"; }
-    if(/.*Type: os/i){ $Type{$node} = "os"; }
-    if(/.*Type: language/){ $Type{$node} = "language"; }
-    if(/.*Type: standard/){ $Type{$node} = "standard"; }
-    if(/.*Type: other/){ $Type{$node} = "other"; }
-    if(/.*Type: company/){ $Type{$node} = "company"; }
-    if(/.*Type: announcement/){ $Type{$node} = "announcement"; }
+    if(/^\tType: hardware/){ $Type{$node} = "hardware"; }
+    elsif(/^\tType: os/i){ $Type{$node} = "os"; }
+    elsif(/^\tType: language/){ $Type{$node} = "language"; }
+    elsif(/^\tType: standard/){ $Type{$node} = "standard"; }
+    elsif(/^\tType: other/){ $Type{$node} = "other"; }
+    elsif(/^\tType: company/){ $Type{$node} = "company"; }
+    elsif(/^\tType: announcement/){ $Type{$node} = "announcement"; }
     
-    if(/.*Status: ([released|internal|prototype|research])/i){ $Status{$node} = $1; }
-    if(/.*Status: continual evolution/i){ $Status{$node} = "contev"; }
+    if(/^\tStatus: released/i){ $Status{$node} = "released"; }
+    elsif(/^\tStatus: internal/i){ $Status{$node} = "internal"; }
+    elsif(/^\tStatus: prototype/i){ $Status{$node} = "prototype"; }
+    elsif(/^\tStatus: research/i){ $Status{$node} = "research"; }
+    elsif(/^\tStatus: continual evolution/i){ $Status{$node} = "contev"; }
     
-    if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
-    if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
-    if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
-    if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
-    if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
-    if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
-    if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
+    if(/^\tAka (\S+)/) { linkup($node, $1, "aka"); }
+    if (/^\tSuccessor to (\S+)/) { linkup($node, $1, "successor"); }
+    if (/^\tCode taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+    if (/^\tInfluenced by (\S+)/) { linkup($node, $1, "influenced"); }
+    if(/^\tRuns on (\S+)/){ linkup($node, $1, "runson"); }
+    if(/^\tRan on (\S+)/){ linkup($node, $1, "runson"); }
+    if(/^\tWritten in (\S+)/){ linkup($node, $1, "writtenin"); }
     
   }
 }
-
-=head2 minmaxYear
-
-This function reads in the %Year hash (created by L<parse>) and sets the variables $Maxyear and $Minyear accordingly.
-
-=cut it out! that hurts!
 
 sub dominmaxYear {
   $Maxyear=0;
@@ -194,12 +107,6 @@ sub dominmaxYear {
     if($Year lt $Minyear){ $Minyear = int($Year); }
   }
 }
-
-=head2 dopos
-
-dopos reads in the nodes given to it as arguments and sets a vertical position for the node accordingly, which is then scaled by the value of $VScale. Useful mostly for dot and L<vcg> output.
-
-=cut , wrap, and print
 
 sub dopos{
   my($node, $Year);
@@ -218,26 +125,13 @@ sub dopos{
   }   
 }
 
-=head2 linkup
-
-linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by L<parse>.
-
-=cut ! Youre beautiful! A Day In The Life Of JAPH will be a hit!
-
 sub linkup {
   $Linkto{$_[0]}{$_[1]} = $_[2];
 }
 
-=head2 dump
-
-dump is a rough output format. All it does is sort the nodes and strip comments.
-
-=cut ! that scene is all wrong!
-
 sub dump {
-  my $node;
   &parse(@_);
-  foreach $node (sort keys %Name){
+  foreach my $node (sort keys %Name){
     print("$node\n");
     print("\tName: $Name{$node}\n");
     print("\tDate $Year{$node}") if defined $Year{$node};
@@ -248,6 +142,9 @@ sub dump {
     print("\tInfo: $Info{$node}\n") if defined $Info{$node};
     print("\tType: $Type{$node}\n") if defined $Type{$node};
     print("\tStatus: $Status{$node}\n") if defined $Status{$node};
+    foreach my $linkto (keys %{$Linkto{$node}}){
+      print "\t", expnick($Linkto{$node}{$linkto}), " $linkto\n";
+    }
     print("\n");
   }
 }
@@ -260,12 +157,6 @@ sub expnick {
   return "Runs on" if $_[0] =~ /runson/;
   return "Written in" if $_[0] =~ /writtenin/;
 }
-
-=head2 chml
-
-The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Markup Language).
-
-=cut
 
 sub chml{
   my($linkto, $node);
@@ -295,12 +186,6 @@ sub chml{
   print("</tree>\n");
 }
 
-=head2 info
-
-The info routine parses the data and then, for each node with an Info: field, spits out the node name and its contents.
-
-=cut
-
 sub info{
     my $node;
     &parse(@_);
@@ -309,12 +194,6 @@ sub info{
     }
 }
 
-=head2 biblio
-
-This routine is quite similar in operation to the L<info> routine, except that it looks for Reference: fields.
-
-=cut
-
 sub biblio{
     my $node;
     &parse(@_);
@@ -322,28 +201,6 @@ sub biblio{
         print("Bibliographical information for $Name{$node}: $Reference{$node}\n\n") if defined $Reference{$node};
     }
 }
-
-=head2 setcolor
-
-The setcolor routine turns types of nodes into colors and stores them in the %Color hash. The rules for translation are below:
-
-=over 5
-
-=item hardware becomes blue
-
-=item OSes are red
-
-=item languages are green
-
-=item standards are yellow
-
-=item companies are cyan
-
-=item and announcements are gold
-
-=back
-
-=cut
 
 sub setcolor{
     my $node;
@@ -358,28 +215,6 @@ sub setcolor{
     }
 }
 
-=head2 setshape
-
-The setshape routine will set shapes for the nodes according to the following status/shape relationship:
-
-=over 5
-
-=item released/box
-
-=item internal/triangle
-
-=item continual evolution/ellipse
-
-=item prototype/rhomb
-
-=item research/triangle
-
-=item otherwise/box
-
-=back
-
-=cut
-
 sub setshape {
     my $node;
     %Shape = ();
@@ -392,12 +227,6 @@ sub setshape {
 	else {$Shape{$node} = "box";}
     }
 }
-
-=head2 setlinkcolor
-
-This lovely little function sets up colors for all the links.
-
-=cut
 
 sub setlinkcolor {
   my($linkcolor, $linkweight);
@@ -414,23 +243,6 @@ sub setlinkcolor {
     }
   }
 }
-
-
-=head2 vcg
-
-The vcg subroutine is an adapted form of the "graph" subroutine from the old tovcg parser routine. The changes are as follows:
-
-=over 5
-
-=item it calls dopos, setcolor, and setshape itself, rather than having external functions do that
-
-=item it prints the surrounding VCG headings
-
-=item it doesnt seperate the files from each other (yet)
-
-=item and it takes care of linkage
-
-=cut
 
 sub vcg{
     &parse(@_);
@@ -491,4 +303,126 @@ sub dbm {
   }
 }
 
+sub dot {
+  &parse(@_);
+  &dominmaxYear;
+  &dopos;
+  print("digraph comp_hist {\n");
+  print("\tnode [shape=plaintext,fontsize=24]\n");
+  print("\t{ edge\n\t\t[style=bold]\n");
+  for ($Minyear..$Maxyear){ print "\t\t$_->\n";}
+  print("\t\tfuture;\n");
+  print("\t}\n");
+
+  print("}\n");
+}
+
+
  __END__
+
+=head1 NAME
+
+B<parsech> - Parse Comp-Hist
+
+=head1 SYNOPSIS
+
+A parser for the Computer History Graphing Project.
+
+    parsech -o [dump|chml|info|vcg|biblio|dbm]
+    parsech -h
+    parsech -v
+    parsech -s(desired dopos scaling)
+
+=head1 ABSTRACT
+
+parsech is a unified parser for the Comp-Hist project.
+It came about thanks to the fact that I was sick of 
+writing a new parser for each new format we decided to 
+support.
+
+Oh, and I wanted documentation, too.
+
+=head1 DESCRIPTION
+
+B<parsech> will take three arguments at this point,
+plus all the files you want parsed:
+
+=over 5
+
+=item B<-o> output
+
+This switch dictates the output format. Currently, it will 
+take the following arguments: L<dump>, L<chml>, L<vcg>, L<info>, or L<biblio>.
+
+=item B<-v> version
+
+This switch will print out the version and exit.
+
+=item B<-h> help
+
+This switch will print a brief help message and exit.
+
+=item B<-s> scaling
+
+This switch will set the value used by L<dopos> to scale the L<vcg> output.
+
+=back
+
+For example, if you wanted to get VCG output from file foo, 
+you would do the following:
+
+=over 5
+
+C<parsech -o vcg foo>
+
+=back
+
+However, if you were to want the scale to be decreased
+by a factor of five, you would do this:
+
+=over 5
+
+C<parsech -s 5 -o vcg foo>
+
+=back
+
+And finally, if you decided you wanted XML output, you
+would do this:
+
+=over 5
+
+C<parsech -o chml foo>
+
+=back
+
+=head1 AUTHOR
+
+Scott Fenton, with the help of many others. Go to 
+http://comp-hist.sourceforge.net for information
+on contacting us
+
+=head1 SEE ALSO
+
+The doc/syntax file elsewhere in this source tree
+
+The C parser one directory below here.	
+
+The XML DTD in the xml subdirectory.
+
+=head1 COPYRIGHT
+
+Copyright (C) 2000, Scott Fenton, Kurt Raschke, and others
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
