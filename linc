@@ -1,0 +1,27 @@
+#Laboratory INstrument Computer (LINC) and other Lincoln Lab computers
+linc
+	Name: Laboratory Instrument Computer
+	Date: 1962
+	Reference: http://www.nih.gov/od/museum/exhibits/linc/full-text.html
+	Type: hardware
+
+whirlwind
+	Name: MIT Lincoln Lab Whirlwind
+	Date: 1950-12
+	Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
+	Type: hardware
+
+tx0
+	Name: MIT Lincoln Lab TX-0
+	Date: 1956
+	Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
+	Type: hardware
+
+tx2
+	Name: MIT Lincoln Lab TX-2
+	Date: 1958-6
+	Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
+	Type: hardware
+
+
+
