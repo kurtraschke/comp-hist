@@ -197,7 +197,7 @@ sub dominmaxYear {
 
 =head2 dopos
 
-dopos reads in the nodes given to it as arguments and sets a vertical position for the node accordingly. Useful mostly for dot and L<vcg> output.
+dopos reads in the nodes given to it as arguments and sets a vertical position for the node accordingly, which is then scaled by the value of $VScale. Useful mostly for dot and L<vcg> output.
 
 =cut , wrap, and print
 
@@ -505,5 +505,3 @@ sub dbm {
     %links = ();
   }
 }
-
-
