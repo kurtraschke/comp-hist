@@ -1,7 +1,7 @@
 #########################################################################
 #			    Research Editions				#
 #########################################################################
-# $Revision: 1.7 $ $Date: 2000/08/22 13:42:53 $
+# $Revision: 1.8 $ $Date: 2000/08/28 12:54:32 $
 #
 updp7
 	Name: Unics
@@ -74,6 +74,7 @@ v7
         Type: OS
 	Status: research
 	Successor to v6 1000
+	Code taken from pwb1.0
 
 v8
 	Name: Unix Time-Sharing System,\n 8th Edition
