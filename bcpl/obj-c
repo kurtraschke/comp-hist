@@ -1,0 +1,18 @@
+#################################
+#	Objective C		#
+#################################
+
+concurrent-c
+	Name: Concurrent C
+	Date: 1984
+	Reference: Language history tree
+	Type: language
+	Code taken from k&rc
+
+obj-c
+	Name: Objective C
+	Date: 1986
+	Reference: Language history tree
+	Type: language
+	Code taken from k&rc
+#	Code taken from smalltalk-80
