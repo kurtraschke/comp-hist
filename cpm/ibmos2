@@ -70,3 +70,48 @@ ibmos/22.10
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
 	Successor to ibmos/22
+
+ibmos/2windows2.11
+	Name: IBM OS/2 for Windows 2.11
+	Date: 1993-11 #"Late" '93
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Info: This was a stripped down version of OS/2 for Windows users. It used the copy of Windows already on the hard drive to emulate Windows, instead of using IBM's windows emulator.
+	Code taken from ibmos/22.10
+
+ibmos/2windowswarp3
+	Name: IBM OS/2 Warp for Windows
+	Date: 1994-10
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2windows2.11
+
+ibmos/2warp3
+	Name: IBM OS/2 Warp 3.0
+	Date: 1994-10
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2windowswarp3
+	Successor to ibmos/22.10
+
+ibmos/2warpconnect
+	Name: IBM OS/2 Warp Connect
+	Date: 1995
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2warp3
+
+ibmos/2warpserver
+	Name: IBM OS/2 Warp Server
+	Date: 1996
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2warp3
+
+ibmos/2warp4
+	Name: IBM OS/2 Warp 4.0
+	Date: 1996-09
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2warpserver
+	Successor to ibmos/2warpconnect
