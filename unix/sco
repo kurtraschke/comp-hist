@@ -23,7 +23,7 @@ openserver5
 	Reference: Unix history tree
 	Type: OS
 	Successor to sco3.2.4
-#	Code taken from unixware1.1.1
+	Code taken from unixware1.1.1
 
 openserver5.0.5
 	Name: Santa Cruz Operation Open Server 5.0.5
