@@ -7,6 +7,8 @@ $maxyear = 0;
 $linkcnt = 0;
 $height = $maxyear - $minyear + 2;
 $width = $nodecnt / 2;
+$ob = 0x7B;
+$cb = 0x7D;
 
 while(<>){
        if(/.*\#/){ next; }
@@ -81,10 +83,10 @@ foreach $node (%name) {
     print("nearedge: { sourcename: $node targetname: $date{$node}.$nodecnt{$node} }\n\n");
 }
 
-$h = 0
-until($h > $linkcnt){
-     print("edge: { sourcename: $from{$h} targetname: $to{$h} thickness: $weight{$h} arrowsize: 20 } \n");
-$h++;
+$i = 0
+while($i < $linkcnt){
+    print("edge: $ob sourcename: $from{$i} targetname: $to{$i} thickness: $weight{$i} arrowsize: 20 $cb \n");
+$i = $i + 1;
  }
 
 print("\n}\n");
