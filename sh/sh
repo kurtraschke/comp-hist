@@ -5,9 +5,10 @@
 
 sh
 	Name: Bourne Shell
-	Date: 1971
+	Date: 1979-1
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
+	Ran on v7
 
 csh
 	Name: C Shell
@@ -16,6 +17,7 @@ csh
 	Type: language
 	Code taken from c
 	Code taken from sh
+	Ran on 2bsd
 
 bash
 	Name: Bourne Again Shell
