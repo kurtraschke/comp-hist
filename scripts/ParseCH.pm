@@ -1,4 +1,4 @@
-#The Comp-hist perl module for parsing. See the end for POD
+#The Comp-hist perl module for parsing.
 package ParseCH;
 
 use strict;
@@ -7,19 +7,20 @@ require Exporter;
 use vars        qw($VERSION @ISA @EXPORT %EXPORT_TAGS);
 
 # set version number
-$VERSION = 1.4; #CVS version
+$VERSION = 1.5; #CVS version
 
 @ISA = qw(Exporter);
-@EXPORT = qw(&docomment &doname &doref &dotype &dostatus &doinf &doto &dofrom &doweight);
+@EXPORT = qw(&docom &doname &doref &dotype &dostatus &doinf &doto &dofrom &doweight);
 %EXPORT_TAGS = ();
 
 #non-exported globals (nothing is exported. yet.)
-use vars    qw(@node @to @from @weight);
+use vars    qw(@node @to @from @weight $file);
 
 @node = '';
 @to = '';
 @from = '';
 @weight = '';
+$file = '';
 
 #First, an unexported function or two
 
@@ -70,17 +71,22 @@ my $linkup = sub {
     }
 }
 
-#Now the ones they can see
+#Now the exported ones
 
-sub docomment {
-    s/#.*//;
+sub docom {
+    foreach $file (@_){
+	while(<$file>){
+	    s/#.*//;
+	}
+    }
 }
 
 sub doname {
-    open FILE, $_[0];
-    while(<FILE>){
-	my $node = onode;
-	my $name{$node} = $1 if /.*Name: (.*)/;
+    foreach $file (@_){
+	while(<$file>){
+	    my $node = onode;
+	    my $name{$node} = $1 if /.*Name: (.*)/;
+	}
     }
     return %name;
 }
@@ -174,3 +180,5 @@ sub doweight {
         }
     return @weight;
 }
+
+END { }
