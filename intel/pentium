@@ -76,7 +76,7 @@ pentium233mmx
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to pentium200166mmx
 
-ppro200
+ppro200l2cache
 	Name: Intel Pentium Pro (200 MHz) with 1 MB of integrated L2 cache
 	Date: 1997-8-18
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
@@ -166,11 +166,11 @@ celery400
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to celery333
 
-p2xeon450
+p2xeon450a
 	Name: Intel Pentium II Xeon (450 MHz)
 	Date: 1999-1-5
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
-	Successor to p2xeon400
+	Successor to p2xeon450
 
 mpentium300
 	Name: Intel Mobile Pentium (300 MHz) with MMX
