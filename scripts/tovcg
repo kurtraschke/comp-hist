@@ -82,8 +82,9 @@ foreach $node (%name) {
 }
 
 $h = 0
-while($h < $linkcnt){
-     print("edge: { sourcename: $from{$i} targetname: $to{$i} thickness: $weight{$i} arrowsize: 20 } \n");
+until($h > $linkcnt){
+     print("edge: { sourcename: $from{$h} targetname: $to{$h} thickness: $weight{$h} arrowsize: 20 } \n");
+$h++;
  }
 
 print("\n}\n");
