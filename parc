@@ -1,0 +1,12 @@
+#This is where the Xerox PARC machines will go - things like the Star and Alto
+alto
+	Name: Xerox Alto
+	Date: 1974
+	Reference: http://www.cat.uc.edu/dave/courses/info_theory/papers/parc.html
+
+star
+	Name: Xerox Star
+	Date: 1981
+	Reference: http://www.cat.uc.edu/dave/courses/info_theory/papers/parc.html
+	Successor to alto
+
