@@ -116,3 +116,150 @@ vms4
 	Type: OS
 	Successor to vms3.7
 
+vms4.1
+	Name: Digital Equipment Corporation Virtual Memory System 4.1
+	Date: 1984
+	Reference: VMS history
+	Type: OS
+	Successor to vms4
+
+vms4.2
+	Name: Digital Equipment Corporation Virtual Memory System 4.2
+	Date: 1985
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.1
+
+vms4.3
+	Name: Digital Equipment Corporation Virtual Memory System 4.3
+	Date:  1986
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.2
+
+vms4.4
+	Name: Digital Equipment Corporation Virtual Memory System 4.4
+	Date: 1986
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.3
+
+vms4.5
+	Name: Digital Equipment Corporation Virtual Memory System 4.5
+	Date: 1986
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.4
+
+vms4.6
+	Name: Digital Equipment Corporation Virtual Memory System 4.6
+	Date: 1987
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.5
+
+vms4.7
+	Name: Digital Equipment Corporation Virtual Memory System 4.7
+	Date: 1987
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.6
+
+vms5
+	Name: Digital Equipment Corporation Virtual Memory System 5.0
+	Date: 1988
+	Reference: VMS history
+	Type: OS
+	Successor to vms4.7
+
+vms5.1
+	Name: Digital Equipment Corporation Virtual Memory System 5.1
+	Date: 1989
+	Reference: VMS history
+	Type: OS
+	Successor to vms5
+
+vms5.2
+	Name: Digital Equipment Corporation Virtual Memory System 5.2
+	Date: 1989
+	Reference: VMS history
+	Type: OS
+	Successor to vms5.1
+
+vms5.3
+	Name: Digital Equipment Corporation Virtual Memory System 5.3
+	Date: 1989
+	Reference: VMS history
+	Type: OS
+	Successor to vms5.2
+
+vms5.4
+	Name: Digital Equipment Corporation Virtual Memory System 5.4
+	Date: 1990
+	Reference: VMS history
+	Type: OS
+	Successor tovms5.3
+
+vms5.5vax
+	Name: Digital Equipment Corporation Virtual Memory System 5.5 VAX
+	Date: 1991
+	Reference: VMS history
+	Type: OS
+	Successor to vms5.4
+
+vms1axp
+	Name: Digital Equipment Corporation Virtual Memory System 1.0 AXP
+	Date: 1992
+	Reference: VMS history
+	Type: OS
+	Code taken from vms5.5vax
+
+vms1.5axp
+	Name: Digital Equipment Corporation Virtual Memory System 1.5 AXP
+	Date: 1993
+	Reference: VMS history
+	Type: OS
+	Successor to vms1axp
+
+vms6vax
+	Name: Digital Equipment Corporation Virtual Memory System 6.0 VAX
+	Date: 1993
+	Reference: VMS history
+	Type: OS
+	Successor to vms5.5vax
+
+vms6.1
+	Name: Digital Equipment Corporation Virtual Memory System 6.1 VAX & AXP
+	Date: 1994
+	Reference: VMS history
+	Type: OS
+	Successor to vms6vax
+	Successor to vms1.5axp
+
+vms6.2
+	Name: Digital Equipment Corporation Virtual Memory System 6.2 VAX & Alpha
+	Date: 1995
+	Reference: VMS history
+	Type: OS
+	Successor to vms6.1
+
+vms7
+	Name: Digital Equipment Corporation Virtual Memory System 7.0 VAX & Alpha
+	Date: 1995
+	Reference: VMS history
+	Type: OS
+	Successor to vms6.2
+
+vms7.1
+	Name: Digital Equipment Corporation Virtual Memory System 7.1 VAX & Alpha
+	Date: 1996
+	Reference: VMS history
+	Type: OS
+	Successor to vms7
+
+vms7.2
+	Name: Digital Equipment Corporation Virtual Memory System 7.2 VAX & Alpha
+	Date: 1998
+	Reference: VMS history
+	Type: OS
+	Successor to vms7.1
