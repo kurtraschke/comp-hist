@@ -6,7 +6,7 @@ osxserv10
 	Reference: http://www.apple.com/pr/library/1999/mar/16opensource.html
 	Type: OS
 	Code taken from rhapdr2
-#	Code taken from macos9
+	Code taken from macos9
 
 osxserv102
 	Name: Apple Mac OS X Server 1.0.2
