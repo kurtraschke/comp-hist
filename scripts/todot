@@ -31,6 +31,17 @@ while (<>) {
         $linkcnt++;
     }
 
+    if (/.*Founded.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
+                                # Convert to year-mon
+        $yr=$1; $mon=$2; goto dodate;
+    }
+    if (/.*Founded.*(\d\d\d\d)-(\d\d)/) {
+        $yr=$1; $mon=$2; goto dodate;
+    }
+    if (/.*Founded.*(\d\d\d\d)/) {
+        $yr=$1; $mon="00"; goto dodate;
+    }
+
     if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
                                 # Convert to year-mon
         $yr=$1; $mon=$2; goto dodate;

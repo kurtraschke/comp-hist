@@ -10,11 +10,15 @@ while(<>){
     if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2 - 1200;}
     if(/.*Date.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2 - 1200;}
     if(/.*Date.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12 - 1200; }
+    if(/.*Founded.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2 - 1200;}
+    if(/.*Founded.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2 - 1200;}
+    if(/.*Founded.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12 - 1200; }
     if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
     if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
     if(/.*Type: language/){ $color{$node} = "color: green"; }
     if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
     if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
+    if(/.*Type: company/){ $color{$node} = "color: cyan"; }
 
     if(/.*Aka (\S+)/) {
         print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
