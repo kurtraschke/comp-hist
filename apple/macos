@@ -248,3 +248,121 @@ syssoftware51
 	Aka finder6
 	Successor to syssoftware5
 
+system5
+	Name: Apple System 5
+	Date: 1987-12 #fudge
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system43
+
+system6
+	Name: Apple System 6
+	Date: 1988
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system5
+
+system7
+	Name: Apple System 7
+	Date: 1990
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system6
+
+system7.1
+	Name: Apple System 7.1
+	Date: 1992
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7
+
+system7.1.2
+	Name: Apple System 7.1.2
+	Date: 1993
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.1
+
+system7.5
+	Name: Apple System 7.5
+	Date: 1994
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.1.2
+
+system7.5.2
+	Name: Apple System 7.5.2
+	Date: 1995
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.5
+
+system7.5.3
+	Name: Apple System 7.5.3
+	Date: 1996
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.5.2
+
+system7.6
+	Name: Apple System 7.6
+	Date: 1996
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.5.3
+
+system7.6.1
+	Name: Apple System 7.6.1
+	Date: 1997
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.6
+
+macos8
+	Name: Apple MacOS 8.0
+	Date: 1997
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to system7.6.1
+
+macos8.1
+	Name: Apple MacOS 8.1
+	Date: 1998
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to macos8
+
+macos8.5
+	Name: Apple MacOS 8.5
+	Date: 1999
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to macos8.1
+
+macos8.5.1
+	Name: Apple MacOS 8.5.1
+	Date: 1999
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to macos8.5
+
+macos8.6
+	Name: Apple MacOS 8.6
+	Date: 1999
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to macos8.5.1
+
+macos9
+	Name: Apple MacOS 9.0
+	Date: 2000
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to macos8.6
+
+macos9.0.4
+	Name: Apple MacOS 9.0.4
+	Date: 2000
+	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
+	Type: OS
+	Successor to macos9
