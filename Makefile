@@ -58,15 +58,17 @@ RFC-STDS = rfc/off-stds rfc/assgin-nums
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS)
 
-all: comp-history-vcg biblio info
+all: comp-history-vcg biblio info cparser
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
 
 comp-history-dot.ps: comp-history-dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
+
 clean:
 	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump
+	cd scripts/new ; make clean
 
 biblio:
 	cat $(SRCS) | scripts/biblio > bibliography
@@ -80,12 +82,8 @@ comp-history-vcg:
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
 
-comp-history-gp:
-	perl -w scripts/togp $(SRCS) >comp-history.gp
-
-comp-history-gp.ps: comp-history-gp
-	graphplace -p -a comp-history.gp >comp-history.gp.ps
-
-
 dump:
 	cat $(SRCS) >dump
+
+cparser:
+	cd scripts/new ; make
