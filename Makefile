@@ -45,7 +45,7 @@ info:
 	cat $(SRCS) | sh ./scripts/info > information
 
 comp-history-vcg:
-	perl -w scripts/tovcg.exp $(SRCS) >comp-history.vcg 
+	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 
 
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
