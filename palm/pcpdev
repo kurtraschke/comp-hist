@@ -59,8 +59,8 @@ qcpdq
 	Type: hardware
 
 kycpdq2
-	Name: Kyocera pdq2
-	Date: #not yet!
+	Name: Kyocera pdq2\nQCP-6035
+	Date: 2000-11-27
 	Reference: http://www.pdabuzz.com/News/viewnews.cgi?newsid972931805,8769,
 	Type: hardware
 	Successor to qcpdq
