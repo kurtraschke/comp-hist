@@ -1,3 +1,4 @@
+
 #########################
 #	HP-UX		#
 #########################
@@ -37,7 +38,7 @@ hpux3
 	Name: Hewlett-Packard Unix 3.0
 	Date: 1988
 	Reference: Unix history tree
-	Type: Os
+	Type: OS
 	Successor to hpux2
 
 hpux7
@@ -153,3 +154,4 @@ hpux11i
 	Reference: Unix history tree
 	Type: OS
 	Successor to hpux11a
+

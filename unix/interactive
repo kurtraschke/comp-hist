@@ -1,24 +1,25 @@
+
 #########################
 #	Interactive	#
 #########################
 
 interactive
 	Name: Interactive Unix
-	Date: ?
+	Date: # ?
 	Reference: Unix history tree
 	Type: os
 	Code taken from v7
 
 is/3
 	Name: IS/3
-	Date: ?
+	Date: # ?
 	Reference: Unix history tree
 	Type: os
 	Successor to interactive
 
 pc/ix
 	Name: PC/IX
-	Date: ?
+	Date: # ?
 	Reference: Unix history tree
 	Type: OS
 	Successor to is/3
@@ -50,3 +51,4 @@ interactive4.1.1
 	Reference: Unix history tree
 	Type: os
 	Successor to interactive4.1a
+

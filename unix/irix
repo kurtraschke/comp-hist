@@ -1,10 +1,11 @@
+
 #########################
 #	IRIX		#
 #########################
 
 irix
 	Name: Silicon Graphics, Inc. IRIX
-	Date: when was IRIX announced?
+	Date: # when was IRIX announced?
 	Reference: Unix history tree
 	Type: announcement
 	Code taken from sysVr3.2
@@ -34,7 +35,7 @@ irix6.3
 	Name: Silicon Graphics, Inc. IRIX 6.3
 	Date: 1996-10
 	Reference: Unix history tree
-	Type: Os
+	Type: OS
 	Successor to irix6.2
 
 irix6.5
@@ -71,3 +72,4 @@ irix6.5.6
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix6.5.5
+

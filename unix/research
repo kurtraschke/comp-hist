@@ -1,7 +1,7 @@
 #########################################################################
 #			    Research Editions				#
 #########################################################################
-# $Revision: 1.10 $ $Date: 2000/08/29 22:32:10 $
+# $Revision: 1.11 $ $Date: 2000/09/04 13:01:36 $
 #
 updp7
 	Name: Uniplexed Information and Computing Service
@@ -18,7 +18,7 @@ v1
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to updp7 100
+	Successor to updp7 # 100
 	Runs on pdp1120
 #			DEC PDP-11/20, Assembler
 
@@ -28,7 +28,7 @@ v2
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to v1 100
+	Successor to v1 # 100
 #			10 Unix installations
 
 v3
@@ -37,7 +37,7 @@ v3
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to v2 100
+	Successor to v2 # 100
 #			Pipes, 16 installations
 
 v4
@@ -46,7 +46,7 @@ v4
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to v3 100
+	Successor to v3 # 100
 	Written in c
 #			rewriting in C effected,
 #			above 30 installations
@@ -57,7 +57,7 @@ v5
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to v4 100
+	Successor to v4 # 100
 #			above 50 installations
 
 v6
@@ -66,7 +66,7 @@ v6
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to v5 100
+	Successor to v5 # 100
 
 v7
 	Name: Unix Time-Sharing System,\n 7th Edition
@@ -74,7 +74,7 @@ v7
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: research
-	Successor to v6 1000
+	Successor to v6 # 1000
 	Code taken from pwb1.0
 	Written in k&rc
 
@@ -96,7 +96,7 @@ v9
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: released
-	Successor to v8 1000
+	Successor to v8 # 1000
 
 v10
 	Name: Unix Time-Sharing System,\n 10th Edition
@@ -104,5 +104,5 @@ v10
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
         Type: OS
 	Status: released
-	Successor to v9 100
+	Successor to v9 # 100
 

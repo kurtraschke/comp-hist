@@ -1,6 +1,8 @@
+
 #################################
 #		Linux0		#
 #################################
+
 #NOTE: This is only for /kernel/ releases. If you want to provide distros a space, start a Linux family tree and email me some of the stuff.
 
 linux001
@@ -188,7 +190,7 @@ linux0971
 
 linux0972
 	Name: Linux 0.97.2
-	Date: 1992-8-34
+	Date: 1992-8 # -34  !! invalid day !!
 	Reference: LKVH
         Type: OS
 	Successor to linux0971
@@ -663,123 +665,4 @@ linuxpre1
         Reference: LKVH
         Type: OS
         Successor to linux09915j
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,7 +1,7 @@
 #########################################################################
 #			    3BSD/4BSD versions				#
 #########################################################################
-# $Revision: 1.6 $ $Date: 2000/08/25 20:08:27 $
+# $Revision: 1.7 $ $Date: 2000/09/04 13:01:35 $
 #
 # [wkt] Most refs from pg 164 & 165 of QCU. I should also peruse Kirk's
 # CSRG CD set for verification of details.
@@ -19,21 +19,21 @@
 	Date: 1980-10
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
-	Successor to 3bsd 1000
+	Successor to 3bsd # 1000
 
 4.1bsd
 	Name: 4.1BSD
 	Date: 1981-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
-	Successor to 4bsd 1000
+	Successor to 4bsd # 1000
 
 4.1absd
 	Name: 4.1a BSD
 	Date: 1982-04
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
-	Successor to 4.1bsd 1000
+	Successor to 4.1bsd # 1000
 	Info: alpha release, 100 sites, networking [44B]
 
 4.1bbsd
@@ -42,7 +42,7 @@
 	Date: 1982-08
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
-	Successor to 4.1absd 1000
+	Successor to 4.1absd # 1000
 	Info: internal release, fast filesystem [44B]
 
 4.1cbsd
@@ -51,7 +51,7 @@
 	Date: 1982-12
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
-	Successor to 4.1bbsd 1000
+	Successor to 4.1bbsd # 1000
 	Info: beta release, IPC [44B]
 
 4.2bsd
@@ -68,7 +68,7 @@
 	Date: 1986-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
         Type: OS
-	Successor to 4.2bsd 1000
+	Successor to 4.2bsd # 1000
 	Info: Code came in from DEC Ultrix with DEC's blessing. DNS added to the standard libc (no MX records in Sendmail, though). Added DEC's VAX 8600 and TMSCP support code with DEC's blessing. Added kernel-only support for MicroVAX II (KA630). Without DEC's help! It's unusable, though.
 
 
@@ -103,7 +103,7 @@ net1
 	Date: 1990-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
         Type: OS
-	Successor to 4.3tahoe 1000
+	Successor to 4.3tahoe # 1000
 #			Influenced by Sun and DEC vendor systems (NFS and /var)
 #                       experimental hp300 architecture support added.
 #                       MicroVAX support extended to KA650 (MicroVAX III)
@@ -122,27 +122,27 @@ net2
 	Date: 1992-07
 	Reference: Wolfram Schneider
         Type: OS
-	Successor to 4.3reno 1000
+	Successor to 4.3reno # 1000
 
 4.4bsd
 	Name: 4.4BSD
 	Date: 1993-06
 	Reference: Usenet postings
         Type: OS
-	Successor to 4.4alpha 1000
+	Successor to 4.4alpha # 1000
 
 4.4lite
 	Name: 4.4BSD Lite
 	Date: 1994-03
 	Reference: Usenet postings
         Type: OS
-	Successor to 4.4bsd 1000
+	Successor to 4.4bsd # 1000
 
 4.4lite2
 	Name: 4.4BSD Lite Release 2
 	Date: 1995-06
 	Reference: Usenet postings
         Type: OS
-	Successor to 4.4lite 1000
+	Successor to 4.4lite # 1000
 	Info: the true final distribution from the CSRG
 

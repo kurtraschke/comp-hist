@@ -1,3 +1,4 @@
+
 #########################
 #	Hurd		#
 #########################
@@ -7,7 +8,7 @@ gnu-announce
 	Name: Gnu's Not Unix
 	Date: 1987-9-23
 	Reference: www.gnu.org/gnu
-	Type: announcemnet
+	Type: announcement
 	Influenced by its #thanks to rms
 
 hurd0.0

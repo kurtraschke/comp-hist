@@ -1,18 +1,20 @@
+
 #########################
 #	Ultrix		#
 #########################
+
 #More info would be nice.
 
 v7m
 	Name: The Unix Time-Sharing System, Version 7M
-#	Date: ?
+	Date: # ?
 	Reference: Unix history tree
 	Type: OS
 	Code taken from v7
 
 ultrix-11
 	Name: Ultrix-11
-	Date: ?
+	Date: # ?
 	Reference: Unix history tree
 	Type: OS
 	Successor to v7m
@@ -32,3 +34,4 @@ ultrix4.5
 	Reference: Unix history tree
 	Type: OS
 	Successor to ultrix-32
+

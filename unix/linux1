@@ -1,3 +1,5 @@
+
+
 linux100
 	Name: Linux 1.0.0
 	Date: 1994-03-12
@@ -566,7 +568,7 @@ linux1170
 
 linux1171
 	Name: Linux 1.1.71
-	Date: 1994-12-40
+	Date: 1994-12-04
 	Type: os
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux1170
@@ -1639,3 +1641,5 @@ linuxpre2014
 	Date: 1996-06-05
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linuxpre2013
+
+

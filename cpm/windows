@@ -194,6 +194,7 @@ windows98se
 
 windows98sp1
 	Name: Microsoft Windows SP1
+	Type: os
 	Date: 1999-6-25
 	Reference: Windows family tree
 	Successor to windows98se
