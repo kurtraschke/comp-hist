@@ -9,4 +9,5 @@ ibmpc
 	Date: 1981-8-12
 	Reference: http://www.can.ibm.com/helpware/5150.html
 #	Excerpt from the announcement: "Today, IBM is announcing the IBM Personal Computer, a low cost computer system that will appeal to a broad spectrum of users. " Shall we enter this for understatement of the millenium?
+	Type: hardware
 	Code taken from 8088
