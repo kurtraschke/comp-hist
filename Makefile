@@ -78,13 +78,13 @@ clean:
 	cd scripts/browser ; make clean
 
 biblio: unexpand
-	perl scripts/parsech -o biblio unexpand > bibliography
+	perl scripts/parsech-split/biblio unexpand > bibliography
 
 info: unexpand
-	perl scripts/parsech -o info unexpand > information
+	perl scripts/parsech-split/info unexpand > information
 
 vcg: unexpand
-	perl -w scripts/parsech -o vcg unexpand >comp-history.vcg 
+	perl -w scripts/parsech-split/vcg unexpand >comp-history.vcg 
 
 comp-hist-vcg.ps: vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
@@ -99,7 +99,7 @@ html:
 	cd scripts/new ; make comp-hist.html
 
 chml: unexpand
-	perl scripts/parsech -o chml unexpand >comp-hist.xml
+	perl scripts/parsech-split/chml unexpand >comp-hist.xml
 
 browser:
 	cd scripts/browser ; ./configure ; make 
@@ -108,7 +108,7 @@ browse: browser dump
 	cd scripts/browser/src ; ./browser ../../../dump
 
 dbm: unexpand
-	perl scripts/parsech -o dbm dump
+	perl scripts/parsech-split/dbm dump
 
 unexpand: dump
 	unexpand dump >unexpand
