@@ -165,6 +165,69 @@ perl4
 	Type: language
 	Successor to perl3.044
 
+perl4.001..3
+	Name: The Practical Extraction and Reporting Language 4.001..3
+	Date: 1991-04-12
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4
+
+perl4.004..9
+	Name: The Practical Extraction and Reporting Language 4.004..9
+	Date: 1991-06-07
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.001..3
+
+perl4.010
+	Name: The Practical Extraction and Reporting Language 4.010
+	Date: 1991-06-10
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.004..9
+
+perl4.011..18
+	Name: The Practical Extraction and Reporting Language 4.011..18
+	Date: 1991-11-05
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.010
+
+perl4.019
+	Name: The Practical Extraction and Reporting Language 4.019
+	Date: 1991-11-11
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.011..18
+
+perl4.020..33
+	Name: The Practical Extraction and Reporting Language 4.020..33
+	Date: 1992-06-08
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.020..33
+
+perl4.034
+	Name: The Practical Extraction and Reporting Language 4.034
+	Date: 1992-06-11
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.020..33
+
+perl4.035
+	Name: The Practical Extraction and Reporting Language 4.035
+	Date: 1992-06-23
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.034
+
+perl4.036
+	Name: The Practical Extraction and Reporting Language 4.036
+	Date: 1993-02-05
+	Reference: The Perl History Manual Page
+	Type: language
+	Successor to perl4.035
+
 perl5
 	Name: The Practial Extraction and Reporting Language 5.000
 	Date: 1994-10-18
