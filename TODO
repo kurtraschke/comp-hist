@@ -7,6 +7,8 @@ Short Term-
 	finish the Linux node
 ###Make a Xerox PARC node and fill it in (this is now less important)
 	flesh out the apple tree
+	flesh out the motorola and intel trees
+
 
 Mid Term-
 	port it away from Graphviz (I don't like its licence, I just picked it up from the original project)
