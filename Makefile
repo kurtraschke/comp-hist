@@ -8,7 +8,8 @@ UNIX-SRCS = unix/2bsd unix/386bsd unix/4bsd unix/freebsd unix/netbsd\
 	 $(UNIX-STANDARDS) unix/corps unix/ultrix unix/sco unix/chorus\
 	 unix/irix unix/digital unix/xinu unix/interactive $(SH-SRCS)
 
-CPM-SRCS = cpm/windows cpm/cpm cpm/msdos cpm/winnt cpm/msos2 cpm/wince
+CPM-SRCS = cpm/windows cpm/cpm cpm/msdos cpm/winnt cpm/msos2\
+	 cpm/wince cpm/ibmos2
 
 CRAY-SRCS = cray/cray cray/corp
 
