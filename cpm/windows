@@ -9,7 +9,7 @@ windows101
 	Date: 1985-11-20
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
 	Type: OS
-	Code taken from msdos201
+#	Code taken from msdos201
 
 windows103
 	Name: Windows 1.03
@@ -17,7 +17,7 @@ windows103
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to windows101
-	Code taken from pcdos32
+#	Code taken from pcdos32
 
 windows2
 	Name: Windows 2.0
@@ -69,7 +69,7 @@ windows95
         Type: OS
 	Successor to windows31
 	Successor to windows311
-	Successor to msdos622
+#	Successor to msdos622
 
 windows98
 	Name: Windows 98
