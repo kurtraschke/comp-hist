@@ -14,7 +14,11 @@ IBM-SRCS = intel/pc/ibmpc
 
 SINCLAIR-SRCS = sinclair
 
-SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS)
+CTSS-SRCS = ctss/ctss $(UNIX-SRCS)
+
+DEC-SRCS = dec/pdp dec/tops
+
+SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS)
 
 all: comp-history-dot.ps biblio comp-history-vcg
 
