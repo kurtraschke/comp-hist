@@ -1,0 +1,19 @@
+#########################
+#	HP-UX		#
+#########################
+#Hockey Pucks
+
+hpux
+	Name: Hewlett-Packard Unix
+#	When was HP/UX announced?
+	Reference: Unix History tree
+	Type: announcement
+	Code taken from unixsystem3
+
+hpux1
+	Name: Hewlett-Packard Unix 1.0
+	Date: 1986
+	Reference: Unix History tree
+	Type: OS
+	Successor to hpux
+	Code taken from sysVr2
