@@ -5,7 +5,7 @@ use strict;
 my(%Name, %Year, %Month, %Day, %Info);
 my(%Color, %Shape, %Linkto, %Linkweight);
 my(%Reference, %Type, %Status, %VCG_Weights);
-my(%Opts, $Maxyear, $Minyear, %VPos, $vscale);
+my(%Opts, $Maxyear, $Minyear, %VPos, $VScale);
 
 =head1 NAME
 
@@ -15,9 +15,9 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
 
-    parsech -o [dump|chml|info|vcg|biblio]
+    parsech -o [dump|chml|info|vcg|biblio|dbm]
     parsech -h
-    parsech -v 
+    parsech -v
     parsech -s(desired dopos scaling)
 
 =head1 ABSTRACT
@@ -62,7 +62,7 @@ This switch will set the value used by L<dopos> to scale the L<vcg> output.
 
 getopts('hvo:s:', \%Opts); #Get our options for parsing
 
-if ( defined $Opts{s} ) {$vscale=$Opts{s};} else {$vscale=1;}
+if ( defined $Opts{s} ) {$VScale=$Opts{s};} else {$VScale=1;}
 
 #now, the case statements for what to do
 if( defined $Opts{h} ){ &help; exit; }
@@ -83,14 +83,15 @@ sub output {
     elsif($Opts{o} eq "info"){&info;}
     elsif($Opts{o} eq "vcg"){&vcg;}
     elsif($Opts{o} eq "biblio"){&biblio;}
-    else {print "Invalid output format: valid formats are dump, chml, vcg, and info\n"; exit;}
+    elsif($Opts{o} eq "dbm"){&dbm;}
+    else {print "Invalid output format: valid formats are dump, chml, vcg, dbm, and info\n"; exit;}
 }
 
 =head2 parse
 
 The parse subroutine does the heavy lifting involved in parsing,
 and really should be the only function that ever touches the 
-file's contents.
+files contents.
 
 The data fields are parsed as follows:
 
@@ -98,7 +99,7 @@ The data fields are parsed as follows:
 
 =item First, a regexp filters out the comments (C<s/#.*//>)
 
-=item Next, we check to see if it's a node nick field, and sets stuff up if it is.
+=item Next, we check to see if its a node nick field, and sets stuff up if it is.
 
 =item Then, we look for a Name: field and set that up.
 
@@ -119,69 +120,66 @@ The data fields are parsed as follows:
 =cut yourself a slice of rug and start coding
 
 sub parse{
-    no strict "refs";
-    my($file, $node);
-    foreach $file (@ARGV){
-	open($file, $file);
-	while(<$file>){
-	    s/\#.*//;
-	    
-	    if(/^(\S+)/){ $node = $1; }
-	    
-	    if(/.*Name: (.*)/){ $Name{$node} = $1; }
-	   
-	    if (/.*Founded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
-	      $Year{$node}=$1; 
-	      $Month{$node}=$2;
-	      $Day{$node}=$3;
-	    }
-	    if (/.*Founded.*(\d\d\d\d)-(\d\d)/) {
-	      $Year{$node}=$1;
-	      $Month{$node}=$2;
-	    }
-	    if (/.*Founded.*(\d\d\d\d)/) {
-	      $Year{$node}=$1;
-	      $Month{$node}="0";
-	    }
-
-	    if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
-	      $Year{$node}=$1;
-	      $Month{$node}=$2;
-	      $Day{$node}=$3;
-	    }
-	    if (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
-	      $Year{$node}=$1;
-	      $Month{$node}=$2;
-	    }
-	    if (/.*Date:.*(\d\d\d\d)/) {
-	      $Year{$node}=$1;
-	      $Month{$node}="0";
-	    }
-	
-	    if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
-	
-	    if(/.*Info: (.*)/){ $Info{$node} = $1; }
-
-	    if(/.*Type: hardware/){ $Type{$node} = "hardware"; }
-	    if(/.*Type: os/i){ $Type{$node} = "os"; }
-	    if(/.*Type: language/){ $Type{$node} = "language"; }
-	    if(/.*Type: standard/){ $Type{$node} = "standard"; }
-	    if(/.*Type: other/){ $Type{$node} = "other"; }
-	    if(/.*Type: company/){ $Type{$node} = "company"; }
-	    if(/.*Type: announcement/){ $Type{$node} = "announcement"; }
-
-	    if(/.*Status: ([released|internal|prototype|research])/i){ $Status{$node} = $1; }
-	    if(/.*Status: continual evolution/i){ $Status{$node} = "contev"; }
-
-	    if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
-	    if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
-	    if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
-	    if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
-	    if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
-	    if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
-	    if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
-	}
+  no strict "refs";
+  my $node;
+  foreach my $file (@ARGV){
+    open($file, $file);
+    while(<$file>){
+      s/\#.*//;
+      if(/^(\S+)/){ $node = $1; }
+      if(/.*Name: (.*)/){ $Name{$node} = $1; }
+      if (/.*Founded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+	$Year{$node}=$1; 
+	$Month{$node}=$2;
+	$Day{$node}=$3;
+      }
+      elsif (/.*Founded.*(\d\d\d\d)-(\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}=$2;
+      }
+      elsif (/.*Founded.*(\d\d\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}="0";
+      }
+      
+      if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+	$Year{$node}=$1;
+	$Month{$node}=$2;
+	$Day{$node}=$3;
+      }
+      elsif (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}=$2;
+      }
+      elsif (/.*Date:.*(\d\d\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}="0";
+      }
+      
+      if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
+      
+      if(/.*Info: (.*)/){ $Info{$node} = $1; }
+      
+      if(/.*Type: hardware/){ $Type{$node} = "hardware"; }
+      if(/.*Type: os/i){ $Type{$node} = "os"; }
+      if(/.*Type: language/){ $Type{$node} = "language"; }
+      if(/.*Type: standard/){ $Type{$node} = "standard"; }
+      if(/.*Type: other/){ $Type{$node} = "other"; }
+      if(/.*Type: company/){ $Type{$node} = "company"; }
+      if(/.*Type: announcement/){ $Type{$node} = "announcement"; }
+      
+      if(/.*Status: ([released|internal|prototype|research])/i){ $Status{$node} = $1; }
+      if(/.*Status: continual evolution/i){ $Status{$node} = "contev"; }
+      
+      if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
+      if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
+      if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+      if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
+      if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
+      if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
+      if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
     }
+  }
 }
 
 =head2 minmaxYear
@@ -217,7 +215,7 @@ sub dopos{
       $Year = int($Year{$node}) - $Minyear;
       $VPos{$node} = $Year * 12 + $Month{$node};
     }
-    $VPos{$node} = ($VPos{$node}/$vscale);
+    $VPos{$node} = ($VPos{$node}/$VScale);
     print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
   }   
 }
@@ -231,7 +229,6 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 sub linkup {
   push(@{$Linkto{$_[0]}}, $_[1]);
   push(@{$Linkweight{$_[0]}}, $_[2]);
-  return 0;
 }
 
 =head2 dump
@@ -241,30 +238,30 @@ dump is a rough output format. All it does is sort the nodes and strip comments.
 =cut ! that scene is all wrong!
 
 sub dump {
-    my $node;
-    &parse;
-    foreach $node (sort keys %Name){
-	print("$node\n");
-	print("\tName: $Name{$node}\n");
-	print("\tDate $Year{$node}") if defined $Year{$node};
-	print("-$Month{$node}") if defined $Month{$node};
-	print("-$Day{$node}") if defined $Day{$node};
-	print("\n") if defined $Year{$node};
-	print("\tReference: $Reference{$node}\n") if defined $Reference{$node};
-	print("\tInfo: $Info{$node}\n") if defined $Info{$node};
-	print("\tType: $Type{$node}\n") if defined $Type{$node};
-	print("\tStatus: $Status{$node}\n") if defined $Status{$node};
-	print("\n");
-    }
+  my $node;
+  &parse;
+  foreach $node (sort keys %Name){
+    print("$node\n");
+    print("\tName: $Name{$node}\n");
+    print("\tDate $Year{$node}") if defined $Year{$node};
+    print("-$Month{$node}") if defined $Month{$node};
+    print("-$Day{$node}") if defined $Day{$node};
+    print("\n") if defined $Year{$node};
+    print("\tReference: $Reference{$node}\n") if defined $Reference{$node};
+    print("\tInfo: $Info{$node}\n") if defined $Info{$node};
+    print("\tType: $Type{$node}\n") if defined $Type{$node};
+    print("\tStatus: $Status{$node}\n") if defined $Status{$node};
+    print("\n");
+  }
 }
 
 sub expnick {
-    return "Aka" if $_[0] =~ /aka/;
-    return "Successor to" if $_[0] =~ /successor/;
-    return "Code taken from" if $_[0] =~ /codetaken/;
-    return "Influenced by" if $_[0] =~ /influenced/;
-    return "Runs on" if $_[0] =~ /runson/;
-    return "Written in" if $_[0] =~ /writtenin/;
+  return "Aka" if $_[0] =~ /aka/;
+  return "Successor to" if $_[0] =~ /successor/;
+  return "Code taken from" if $_[0] =~ /codetaken/;
+  return "Influenced by" if $_[0] =~ /influenced/;
+  return "Runs on" if $_[0] =~ /runson/;
+  return "Written in" if $_[0] =~ /writtenin/;
 }
 
 =head2 chml
@@ -274,31 +271,31 @@ The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Mark
 =cut
 
 sub chml{
-    my($i, $node);
-    &parse;
-    print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
-
-    print("<tree>\n");
-
-    foreach $node (sort keys %Name){
-	print("<node>\n");
-	print("\t<id>$node</id>\n");
-	print("\t<name>$Name{$node}</name>\n");
-	print("\t<date Year=\"$Year{$node}\"") if defined $Year{$node};
-	print(" month=\"$Month{$node}\"") if defined $Month{$node}; 
-	print(" day=\"$Day{$node}\"") if defined $Day{$node};
-	print(" />\n") if defined $Year{$node};
-	print("\t<type types=\"$Type{$node}\" />\n") if defined $Type{$node};
-	print("\t<status status=\"$Status{$node}\" />\n") if defined $Status{$node};
-	print("\t<reference>$Reference{$node} </reference>\n") if defined $Reference{$node};
-	print("\t<info>$Info{$node} </info>\n") if defined $Info{$node};
-	for( $i=0; $i <= $#{$Linkto{$node}}; $i++ ) {
+  my($i, $node);
+  &parse;
+  print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
+  
+  print("<tree>\n");
+  
+  foreach $node (sort keys %Name){
+    print("<node>\n");
+    print("\t<id>$node</id>\n");
+    print("\t<name>$Name{$node}</name>\n");
+    print("\t<date Year=\"$Year{$node}\"") if defined $Year{$node};
+    print(" month=\"$Month{$node}\"") if defined $Month{$node}; 
+    print(" day=\"$Day{$node}\"") if defined $Day{$node};
+    print(" />\n") if defined $Year{$node};
+    print("\t<type types=\"$Type{$node}\" />\n") if defined $Type{$node};
+    print("\t<status status=\"$Status{$node}\" />\n") if defined $Status{$node};
+    print("\t<reference>$Reference{$node} </reference>\n") if defined $Reference{$node};
+    print("\t<info>$Info{$node} </info>\n") if defined $Info{$node};
+    for( $i=0; $i <= $#{$Linkto{$node}}; $i++ ) {
 	    print("\t<link linktype=\"${$Linkweight{$node}}[$i]\"><id>${$Linkto{$node}}[$i]</id></link>\n");
-	}
-	print("</node>\n\n");
-    }
-
-    print("</tree>\n");
+	  }
+    print("</node>\n\n");
+  }
+  
+  print("</tree>\n");
 }
 
 =head2 info
@@ -477,6 +474,17 @@ sub vcg{
     print("}\n");
 }
 
-sub pyinit {
-    &parse;
+sub dbm {
+  use GDBM_File;
+  no strict "subs", "refs";
+  &parse;
+  my(%d);
+  mkdir('parsech_dbm');
+  chdir('parsech_dbm');
+  foreach my $hash ("Name", "Year", "Month", "Day", "Info",
+		    "Reference", "Type", "Status"){
+    tie(%d, 'GDBM_File', $hash, &GDBM_WRCREAT, 0640);
+    %d = %$hash;
+    untie(%d);
+  }
 }
