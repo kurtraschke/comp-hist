@@ -40,7 +40,7 @@ pentium133
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to pentium120
 
-ppro200180166150
+ppro200
 	Name: Intel Pentium Pro (200, 180, 166, 150 MHz)
 	Date: 1995-11-1
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
@@ -64,5 +64,32 @@ pentium200166mmx
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to pentium200
 
-p2300266233
-	Name: Intel Pentium 
+p2300
+	Name: Intel Pentium II (300, 266, 233 MHz)
+	Date: 1997-5-7
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentum200166mmx
+
+pentium233mmx
+	Name: Intel Pentium (233 MHz) with MMX
+	Date: 1997-6-2
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentium200166mmx
+
+ppro200l2
+	Name: Pentium Pro (200 MHz) with 1 MB of integrated L2 cache
+	Date: 1997-8-18
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to ppro200
+
+mpentium233
+	Name: Mobile Pentium with MMX (200, 233 MHz)
+	Date: 1997-9-8
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentium233mmx
+
+mpentium266
+	Name: Mobile Pentium with MMX (266 MHz)
+	Date: 1998-1-12
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+
