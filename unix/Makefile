@@ -1,4 +1,4 @@
-UNIX-SRCS= 2bsd 386bsd 4bsd freebsd netbsd openbsd research usdl sysV bsdi consensys tandem unixware sunos aos minix linux darwin
+UNIX-SRCS= 2bsd 386bsd 4bsd freebsd netbsd openbsd research usdl sysV bsdi consensys tandem unixware sunos aos minix linux0 darwin
 
 all: unix-history.ps
 
