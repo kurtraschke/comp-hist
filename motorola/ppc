@@ -17,6 +17,13 @@ ppc603
 	Type: hardware
 	Successor to ppc601
 
+ppc603q
+	Name: The Power Performance Chip 603q
+#	Date: ?
+	Reference: http://www.mactoolbox.com/ppc/#2.3
+	Type: hardware
+	Code taken from ppc603
+
 ppc604
 	Name: The Power Performance Chip 604 
 	Date: 1996
@@ -30,6 +37,13 @@ ppc604e
 	Reference: http://www.rimatech.com/powerpc/ppcnews.1997.html
 	Type: hardware
 	Successor to ppc604
+
+ppcx704
+	Name: The Power Performance Chip x704
+#	Date: ?
+	Reference: http://www.mactoolbox.com/ppc/#2.3
+	Type: hardware
+	Code taken from ppc604
 
 ppc620
 	Name: The Power Performance Chip 620
