@@ -4,6 +4,7 @@ osxserv10
 	Name: Apple Mac OS X Server 1.0
 	Date: 1999-3-16
 	Reference: http://www.apple.com/pr/library/1999/mar/16opensource.html
+	Type: OS
 	Code taken from darwin01
 #	Code taken from macos9
 
@@ -12,30 +13,35 @@ osxserv12
 	Name: Apple Mac OS X Server 1.2
 	Date: 2000-1
 	Reference: http://www.stepwise.com/Articles/FirstImpressions/MacOSXServer1.2/index.html
+        Type: OS
 	Successor to osxserv10
 
 osxdp4
 	Name: Apple Mac OS X DP4
 	Date: 2000-3
 	Reference: Some Apple page
+        Type: OS
 	Successor to osxdp3
 
 osxdp3
 	Name: Apple Mac OS X DP3
 	Date: 2000-2
 	Reference: stepwise.com
+        Type: OS
 	Successor to osxdp2
 
 osxdp2
 	Name: Apple Mac OS X DP2
 	Date: 1999-11-10
 	Reference: stepwise.com
+        Type: OS
 	Successor to osxdp1
 
 osxdp1
 	Name: Apple Mac OS X DP1
-	Date: 1999-5--11
+	Date: 1999-5-11
 	Reference: stepwise.com
+        Type: OS
 #	Code taken from mach30
 	Code taken from freebsd4.1
 	Influenced by darwin01

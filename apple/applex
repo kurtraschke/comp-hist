@@ -3,70 +3,82 @@ applei
 	Name: Apple I
 	Date: 1976
 	Reference: The History of Computers
+	Type: hardware
 
 appleii
 	Name: Apple II
 	Date: 1977-04
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+	Type: hardware
 	Successor to applei
 
 appleiip
 	Name: Apple II Plus
 	Date: 1979
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+	Type: hardware
 	Successor to appleii
 
 bhappleiip
 	Name: Bell & Howell Apple II Plus
 	Date: 1979
 	Reference: http://www.acornworld.net/~jmayrand/B%26H.html
+	Type: hardware
 	Code taken from appleiip
 
 appleiie
 	Name: Apple IIe
 	Date: 1983
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+	Type: hardware
 	Successor to appleiip
 
 appleiiee
         Name: Apple IIe Enhanced
         Date: 1985-3
         Reference: http://www.hypermall.com/History/ah07.html
+	Type: hardware
         Successor to appleiie
 
 appleiiep
         Name: Apple IIe Platinum
         Date: 1987-1
         Reference: http://www.hypermall.com/History/ah07.html
+        Type: hardware
         Successor to appleiiee
 
 appleiic
 	Name: Apple IIc
 	Date: 1984-04-24
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Type: hardware
 	Code taken from appleiie
 
 appleiicp
 	Name: Apple IIc+
 	Date: 1988-09
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Type: hardware
 	Successor to appleiic
 
 appleiigs
 	Name: Apple IIgs
 	Date: 1986
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Type: hardware
 	Code taken from appleiie
 
 appleiii
 	Name: Apple III
 	Date: 1980
 	Reference: http://www.applefritter.com/apples/appleiii/faq.html
+        Type: hardware
 
 appleiiip
 	Name: Apple III Plus
 	Date: 1984
 	Reference: http://www.applefritter.com/apples/appleiii/faq.html
+        Type: hardware
 	Successor to appleiii
 
 

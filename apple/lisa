@@ -3,30 +3,35 @@ lisa1
 	Name: Lisa 1
 	Date: 1983-1
 	Reference: http://members.lsol.net/lisa/faq/
+	Type: hardware
 	Influenced by star
 
 lisa2
 	Name: Lisa 2
 	Date: 1984-1
 	Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+        Type: hardware
 	Successor to lisa1
 
 lisa25
         Name: Lisa 2/5
         Date: 1984-1
         Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+        Type: hardware
         Successor to lisa1
 
 lisa210
         Name: Lisa 2/10
         Date: 1984-1
         Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+        Type: hardware
         Successor to lisa1
 
 macxl
 	Name: Macintosh XL
 	Date: 1985-1
 	Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
+        Type: hardware
 	Successor to lisa2
 	Successor to lisa25
 	Successor to lisa210
