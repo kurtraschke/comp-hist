@@ -1,0 +1,117 @@
+#########################
+#	IBM OS/2	#
+#########################
+#"A better Windows than Windows"
+
+ibmos/21
+	Name: International Business Machines Operating System/2 1.0
+	Date: 1987-12
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Code taken from msdos331
+	Ran on 80286
+
+ibmos/21.10se
+	Name: International Business Machines Operating System/2 1.10 Standard Edition
+	Date: 1988-10
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Info: This version of OS/2 was the first to include Presentation Manager, one of the best GUIs ever built.
+	Type: os
+	Successor to ibmos/21
+
+ibmos/21.10ee
+	Name: International Business Machines Operating System/2 1.10 Extended Edition
+	Date: 1989
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21
+
+ibmos/21.20se
+	Name: International Business Machines Operating System/2 1.20 Standard Edition
+	Date: 1989-11
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.10se
+
+ibmos/21.20ee
+	Name: International Business Machines Operating System/2 1.20 Extended Edition
+	Date: 1989-11
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.10ee
+
+ibmos/21.30se
+	Name: International Business Machines Operating System/2 1.30 Standard Edition
+	Date: 1991
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Info: The schism between IBM and Microsoft over OS/2 had come in 1990, so IBM alone was responsible for this and all future OS/2s. As a result, OS/2 1.30 was smaller, faster, and easier than the earlier versions of OS/2.
+	Type: os
+	Successor to ibmos/21.20se
+
+ibmos/21.30ee
+	Name: International Business Machines Operating System/2 1.30 Extended Edition
+	Date: 1991
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.20ee
+
+ibmos/22
+	Name: International Business Machines Operating System/2 2.0
+	Date: 1992-04 #"Spring" '92
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.30se
+	Successor to ibmos/21.30ee
+	Ran on 80386
+
+ibmos/22.10
+	Name: International Business Machines Operating System/2 2.10
+	Date: 1993-05
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/22
+
+ibmos/2windows2.11
+	Name: International Business Machines Operating System/2 for Windows 2.11
+	Date: 1993-11 #"Late" '93
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Info: This was a stripped down version of OS/2 for Windows users. It used the copy of Windows already on the hard drive to emulate Windows, instead of using IBM's windows emulator.
+	Code taken from ibmos/22.10
+
+ibmos/2windowswarp3
+	Name: International Business Machines Operating System/2 Warp for Windows
+	Date: 1994-10
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2windows2.11
+
+ibmos/2warp3
+	Name: International Business Machines Operating System/2 Warp 3.0
+	Date: 1994-10
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2windowswarp3
+	Successor to ibmos/22.10
+
+ibmos/2warpconnect
+	Name: International Business Machines Operating System/2 Warp Connect
+	Date: 1995
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2warp3
+
+ibmos/2warpserver
+	Name: International Business Machines Operating System/2 Warp Server
+	Date: 1996
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2warp3
+
+ibmos/2warp4
+	Name: International Business Machines Operating System/2 Warp 4.0
+	Date: 1996-09
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/2warpserver
+	Successor to ibmos/2warpconnect

@@ -1,0 +1,70 @@
+#################################
+#		CP/M		#
+#################################
+
+#The father of the devil.
+
+#Every date up through the one for CP/M 2.3 is a fudge
+cpm1
+	Name: Control Program for Microcomputers 1 
+	Date: 1975-06
+	Reference: Copyright date in the source code.
+	Type: OS
+	Influenced by tops10
+#	Influenced by decos8
+	Influenced by rsts11
+#	Influenced by decrsx11
+
+cpm11
+	Name: Control Program for Microcomputers 1.1 
+	Date: 1976-01
+	Reference: Copyright date in binary
+        Type: OS
+	Successor to cpm1
+
+cpm13
+	Name: Control Program for Microcomputers 1.3
+	Date: 1976-06
+	Reference: Copyright date in binary
+        Type: OS
+	Successor to cpm11
+
+cpm2
+	Name: Control Program for Microcomputers 2.0
+	Date: 1976-12
+	Reference: Copyright in User Manual
+        Type: OS
+	Successor to cpm13
+
+cpm21
+	Name: Control Program for Microcomputers 2.1
+	Date: 1977
+	Reference: Copyright in User Manual
+        Type: OS
+	Successor to cpm2
+
+cpm22
+	Name: Control Program for Microcomputers 2.2 
+	Date: 1978
+	Reference: Copyright in User Manual
+        Type: OS
+	Successor to cpm21
+
+cpm23
+	Name: Control Program for Microcomputers 2.3
+	Date: 1979
+	Reference: Copyright in User Manual
+        Type: OS
+	Successor to cpm22
+
+cpm3
+	Name: Control Program for Microcomputer Plus (CP/M 3.0)
+	Date: 1983
+	Reference: Copyright in User Manual
+	Type: OS
+	Successor to cpm23
+
+
+
+
+
