@@ -132,3 +132,37 @@ pdp8e
 	Successor to pdp8i
 	Successor to pdp8l
 
+pdp1120
+	Name: The Programmed Data Processor, model 11/20
+	Date: 1970-4
+	Reference: http://www.digital.com/timeline/1970.htm
+	Type: hardware
+	Code taken from pdp8e
+
+pdp1040
+	Name: The Programmed Data Processor, model 10/40
+	Date: 1971
+	Reference: http://www.digital.com/timeline/1971-2.htm
+	Type: hardware
+	Successor to pdp10
+
+pdp1050
+	Name: The Programmed Data Processor, model 10/50
+        Date: 1971
+        Reference: http://www.digital.com/timeline/1971-2.htm
+        Type: hardware
+        Successor to pdp1040
+
+pdp1145
+	Name: The Programmed Data Processor, model 11/45
+	Date: 1971
+	Reference: http://www.digital.com/timeline/1971.htm
+	Type: hardware
+	Successor to pdp1120
+
+pdp16/rtm
+	Name: The Programmed Data Processor, model 16/\nRegister Transfer Model
+	Date: 1971
+	Reference: http://www.digital.com/timeline/1971.htm
+	Type: hardware
+	Code taken from pdp1040
