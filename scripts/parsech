@@ -120,9 +120,9 @@ sub parse{
 	    s/\#.*//;
 	    
 	    if(/^(\S+)/){ $node = $1; }
-
+	    
 	    if(/.*Name: (.*)/){ $Name{$node} = $1; }
-
+	    
 	    if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$Year{$node} = $1; $Month{$node} =  $2; $Day{$node} = $3;}
 	    if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$Year{$node} = $1; $Month{$node} =  $2; $Day{$node} = $3;}
 	
@@ -160,9 +160,9 @@ This function reads in the %Year hash (created by L<parse>) and sets the variabl
 
 sub dominmaxYear {
     my $Year;
-    foreach $Year (keys %Year){
-	if($Year > $maxYear){ $maxYear = $Year; }
-	if($Year < $minYear){ $minYear = $Year; }
+    foreach $Year (values %Year){
+	if(int($Year) > $maxYear){ $maxYear = int($Year); }
+	if(int($Year) < $minYear){ $minYear = int($Year); }
     }
 }
 
@@ -173,30 +173,31 @@ dopos reads in the nodes given to it as arguments and sets a vertical position f
 =cut , wrap, and print
 
 sub dopos{
-    my($node, $Year);
-    my $file = $_[0];
-    foreach $node (@_){
-	if(!defined $Month{$node}){
-	    $Year = $Year{$node} - $minYear;
-	    $VPos{$node} = $Year * 12;
-	}
-	else{
-	    $Year = $Year{$node} - $minYear;
-	    $VPos{$node} = $Year * 12 + $Month{$node};
-	}
-    }   
+  &dominmaxYear;
+  my($node, $Year);
+  my $file = $_[0];
+  foreach $node (@_){
+    if(!defined $Month{$node}){
+      $Year = $Year{$node} - $minYear;
+      $VPos{$node} = $Year * 12;
+    }
+    else{
+      $Year = $Year{$node} - $minYear;
+      $VPos{$node} = $Year * 12 + $Month{$node};
+    }
+  }   
 }
 
 =head2 linkup
 
 linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by L<parse>.
 
-=cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
+=cut ! Youre beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup {
-    push(@{$Linkto{$_[0]}}, $_[1]);
-    push(@{$Linkweight{$_[0]}}, $_[2]);
-    return 0;
+  push(@{$Linkto{$_[0]}}, $_[1]);
+  push(@{$Linkweight{$_[0]}}, $_[2]);
+  return 0;
 }
 
 =head2 dump
@@ -422,7 +423,7 @@ sub vcg{
     my $node;
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
     foreach $node (sort keys %Name){
-	print("\t\tnode: {\n\ttitle: \"$node\"\n");
+	print("\tnode: {\n\t\ttitle: \"$node\"\n");
 	print("\t\tlabel: \"$Name{$node}\"\n");
 	print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
 	print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
