@@ -1,7 +1,7 @@
 #########################################################################
-#			SunOS and Solaris			        #
+#				SunOS				        #
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/21 00:27:35 $
+# $Revision: 1.5 $ $Date: 2000/08/22 13:26:22 $
 #
 # From: Joey KAHN <kahn@tholian.net>
 # 
@@ -58,19 +58,125 @@
 # Sun's bug database still contains bug reports going back to 3.2 (heck,
 # even 2.2 and 1.0) but none of them have dates ;(((
 #
+sunos1
+	Name: SunOS 1.0
+	Date: 1982-2
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Code taken from 4.1bsd
+
+sunos1.1
+	Name: SunOS 1.1
+	Date: 1984-4
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos1
+
+sunos1.2
+	Name: SunOS 1.2
+	Date: 1985-1
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos1.1
+
 sunos2
 	Name: SunOS 2.0
 	Date: 1985-05-15
 	Reference: SunOS 2.0 manual, title page
 	Type: OS
-#and since SunOS is a BSD
-	Code taken from 4.2bsd
+	Status: released
+	Successor to sunos1.2
 
 sunos3
 	Name: SunOS 3.0
 	Date: 1986-2-17
 	Reference: SunOS 3.0 manual, title page
 	Type: OS
+	Status: released
 	Successor to sunos2
 
+sunos3.2
+	Name: SunOS 3.2
+	Date: 1986-9
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos3
 
+sunos3.5
+	Name: SunOS 3.5
+	Date: 1988
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos3.2
+
+sunos4
+	Name: SunOS 4.0
+	Date: 1989
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos3.5
+
+sunos4.0.3
+	Name: SunOS 4.0.3
+	Date: 1989-5
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4
+
+sunos4.1
+	Name: SunOS 4.1
+	Date: 1990-3
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4.0.3
+
+#The split off towards Solaris came here
+
+sunos4.1.1
+	Name: SunOS 4.1.1\n(Solaris 1)
+	Date: 1990-11
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4.1
+
+sunos4.1.2
+	Name: SunOS 4.1.2\n(Solaris 1.0.1)
+	Date: 1991-12
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4.1.1
+
+sunos4.1.3
+	Name: SunOS 4.1.3\n(Solaris 1.1a)
+	Date: 1992-8
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4.1.2
+
+sunos4.1.4
+	Name: SunOS  4.1.4\n(Solaris 1.1.2)
+	Date: 1994-9
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4.1.3
+
+sunos5
+	Name: SunOS 5\n(Solaris 1.3)
+	Date: 1994-10
+#	Fudge up there. I know it was after 4.1.4 and in 1994
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to sunos4.1.4
