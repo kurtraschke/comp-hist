@@ -1,4 +1,10 @@
 #Here's where the 68k Macs go.
+cat
+	Name: Canon Cat
+	Date: 1987
+	Reference: http://www.landsnail.com/apple/local/cat.html
+	Type: hardware
+	Influenced by mac128k
 
 mac128k
 	Name: Macintosh 128k
