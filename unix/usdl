@@ -1,7 +1,7 @@
 #########################################################################
 #			Some USDL versions				#
 #########################################################################
-# $Revision: 1.3 $ $Date: 2000/08/18 23:09:35 $
+# $Revision: 1.4 $ $Date: 2000/08/23 17:55:17 $
 #
 pwb1.0
 	Name: PWB/UNIX 1.0
@@ -37,12 +37,19 @@ pwbunix
         Type: OS
 	Code taken from v4
 
+pwb1.2
+	Name: PWB/UNIX 1.2
+# 	needs date
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor  to pwb1.0
+
 pwb2.0
 	Name: PWB/UNIX 2.0
 	Date: 1978
 	Reference: Life With UNIX, pg 6
         Type: OS
-	Successor to pwb1.0
+	Successor to pwb1.2
 
 mert
 	Name: MERT
