@@ -1,0 +1,118 @@
+%########################
+#	VMS		#
+#########################
+
+vms1
+	Name: Digital Equipment Corporation Virtual Memory System 1.0
+	Date: 1978
+	Reference: VMS history <http://www.vaxarchive.org/swdoc/vms/vms_hist.shtml>
+	Type: OS
+	Status: prototype
+#	Ran on vax
+
+vms1.5
+	Name: Digital Equipment Corporation Virtual Memory System 1.5
+	Date: 1978
+	Reference: VMS history
+	Type: OS
+	Successor to vms1
+
+vms2
+	Name: Digital Equipment Corporation Virtual Memory System 2.0
+	Date: 1980
+	Reference: VMS history
+	Type: OS
+	Successor to vms1.5
+
+vms2.1
+	Name: Digital Equipment Corporation Virtual Memory System 2.1
+#	Date: ?
+	Reference: VMS history
+	Type: OS
+	Successor to vms2
+
+vms2.2
+	Name: Digital Equipment Corporation Virtual Memory System 2.2
+	Date: 1981
+	Reference: VMS history
+	Type: OS
+	Successor to vms2.1
+
+vms2.3
+	Name: Digital Equipment Corporation Virtual Memory System 2.3
+	Reference: VMS history
+	Type: OS
+	Successor to vms2.2
+
+vms2.4
+	Name: Digital Equipment Corporation Virtual Memory System 2.4
+	Reference: VMS history
+	Type: OS
+	Successor to vms2.3
+
+vms2.5
+	Name: Digital Equipment Corporation Virtual Memory System 2.5
+	Reference: VMS history
+	Type: os
+	Successor to vms2.4
+
+vms3
+	Name: Digital Equipment Corporation Virtual Memory System 3.0
+	Date: 1982
+	Reference: VMS history
+	Type: OS
+	Successor to vms2.5
+
+vms3.1
+	Name: Digital Equipment Corporation Virtual Memory System 3.1
+	Reference: VMS history
+	Type: OS
+	Successor to vms3
+
+vms3.2
+	Name: Digital Equipment Corporation Virtual Memory System 3.2
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.1
+
+vms3.3
+	Name: Digital Equipment Corporation Virtual Memory System 3.3
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.2
+
+vms3.4
+	Name: Digital Equipment Corporation Virtual Memory System 3.4
+	Date: 1984
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.3
+
+vms3.5
+	Name: Digital Equipment Corporation Virtual Memory System 3.5
+	Date: 1984
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.4
+
+vms3.6
+	Name: Digital Equipment Corporation Virtual Memory System 3.6
+	Date: 1984
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.5
+
+vms3.7
+	Name: Digital Equipment Corporation Virtual Memory System 3.7
+	Date: 1984
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.6
+
+vms4
+	Name: Digital Equipment Corporation Virtual Memory System 4.0
+	Date: 1984
+	Reference: VMS history
+	Type: OS
+	Successor to vms3.7
+
