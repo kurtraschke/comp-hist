@@ -1,0 +1,39 @@
+##########################################
+#		Ord Corps		 #
+##########################################
+#the home of all computers, this is where ENIAC and its direct descendants go
+
+eniac
+	Name: Electronical Numerical Integrator and Computer
+	Date: 1946-2-15
+	Reference: Electronic Computers Within the Ordinance Corps, Chapter II <http://ftp.arl.mil/~mike/comphist/61ordnance/chap2.html>
+	#only edvac ordvac and possibly univac should trace to this, all others should trace to those three
+
+edvac
+	Name: Electronic Discrete Variable Automatic Calculator 
+	Date: 1949-8
+	Reference: Electronic Computers Within the Ordinance Corps, Chapter III <http://ftp.arl.mil/~mike/comphist/61ordnance/chap3.html>
+	Code taken from eniac
+
+ordvac
+	Name: Ordnance Variable Automatic Computer
+	Date:	1951-11-15
+	Reference: Electronic Computers Within the Ordinance Corps, Chapter IV <http://ftp.arl.mil/~mike/comphist/61ordnance/chap4.html>
+	Code taken from eniac
+
+brlesc
+	Name: Ballistic Research Laboratory's Electronic Scientific Computer
+	Date: 1961-5-1
+	Reference: Electronic Computers Within the Ordinance Corps, Chapter V <http://ftp.arl.mil/~mike/comphist/61ordnance/chap5.html>
+	Code taken from edvac
+	Code taken from ordvac
+
+fadac
+	Name: Field Artillery Digital Automatic Computer
+	Date: 1959-9
+
+
+
+
+
+
