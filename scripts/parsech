@@ -8,7 +8,7 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
     
-    parsech B<-o> [dump]
+    parsech B<-o> [dump|xml]
     parsech B<-h>
     parsech B<-v>
 
@@ -35,7 +35,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments: dump.
+take the following arguments: dump and xml.
 
 =item B<-v> version
 
@@ -71,8 +71,9 @@ sub output (){
 	    &parse;
 	}
     }
-    if($opts{o} == "dump"){&dump;}
-    else {print "Invalid output format: valid formats are dump\n"; exit;}
+    if($opts{o} =~ /dump/){&dump;}
+    elsif($opts{o} =~ /xml/){&xml;}
+    else {print "Invalid output format: valid formats are dump and xml\n"; exit;}
 }
 
 =head2 B<parse>
@@ -213,3 +214,29 @@ sub expnick {
     return "Runs on" if $_[0] =~ /runson/;
     return "Written in" if $_[0] =~ /writtenin/;
 }
+
+
+sub xml{
+    print("<!DOCTYPE TREE PUBLIC \"\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\"\n\n");
+
+    print("<tree>\n");
+
+    foreach $node (sort keys %name){
+	print("<node>\n");
+	print("\t<id>$node</id>\n");
+	print("\t<name>$name{$node}</name>\n");
+	print("\t<date year=\"$year{$node}\" month=\"$month{$node}\" day=\"$day{$node}\" />\n");
+	print("\t<type types=\"$type{$node}\" />\n");
+	print("\t<status status=\"$status{$node}\" />\n") if defined $status{$node};
+	print("\t<reference>$reference{$node} </reference>\n");
+	print("\t<info>$info{$node} </info>\n");
+	for( $i=0; $i <= $#{$linkto{$node}}; $i++ ) {
+	    print("\t<link linktype=\"${$linkweight{$node}}[$i]\"><id>${$linkto{$node}}[$i]</id></link>\n");
+	}
+	print("</node>\n\n");
+    }
+
+    print("</tree>\n");
+
+}    
+
