@@ -45,12 +45,19 @@ windows2
         Type: OS
 	Successor to windows103
 
+win386
+	Name: Windows/386 (announced)
+	Date: 1987-4-2
+	Reference: Windows family tree
+	Type: announcement
+	Code taken from windows103
+
 windows386	
 	Name: Microsoft Windows/386
 	Date: 1987-9-23
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
-	Code taken from windows2
+	Successor to win386
 	Ran on 386sx
 	Ran on 386dx
 	Ran on 386sl
@@ -61,7 +68,6 @@ windows201
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Successor to windows2
-	Successor to windows386
 
 win28621
 	Name: Microsoft Windows/286 2.1
@@ -113,6 +119,12 @@ win311fw
         Type: OS
 	Successor to win31fw
 
+win311
+	Name: Microsoft Windows 3.11
+	Reference: Windows family tree
+	Type: os
+	Successor to windows31
+
 win95beta
 	Name: Microsoft Chicago (Windows 95 beta)
 	Date: 1994-08-09
@@ -130,12 +142,20 @@ windows95
 	Successor to msdos622
 	Successor to win95beta
 
+win95sp1
+	Name: Microsoft Windows 95 Service Pack 1
+	Date: 1995-12-31
+	Reference: Windows family tree
+	Type: os
+	Successor to windows95
+
 win95osr1
 	Name: Microsoft Windows 95a (OSR1)
 	Date: 1996-02
 	Reference: http://perso.wanadoo.fr/levenez/windows/
 	Type: OS
-	Successor to windows95
+	Successor to win95sp1
+	Code taken from msdos7
 
 win95osr2
 	Name: Microsoft Windows 95b (OSR2)
@@ -172,16 +192,19 @@ windows98se
         Type: OS
 	Successor to windows98
 
+windows98sp1
+	Name: Microsoft Windows SP1
+	Date: 1999-6-25
+	Reference: Windows family tree
+	Successor to windows98se
+
 windowsme
 	Name: Microsoft Windows Millenium Edition
 	Date: 2000-6-19
 	Reference: http://www.microsoft.com/windowsme/news/default.asp
         Type: OS
-	Successor to windows98se
+	Successor to windows98sp1
 
-
-
-	Reference: http://perso.wanadoo.fr/levenez/windows/
 
 
 
