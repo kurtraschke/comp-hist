@@ -95,8 +95,8 @@ dump:
 cparser:
 	cd scripts/new ; make
 
-html:
-	cd scripts/new ; make comp-hist.html
+html: unexpand
+	perl scripts/parsech-split/html unexpand >comp-hist.html
 
 chml: unexpand
 	perl scripts/parsech-split/chml unexpand >comp-hist.xml
