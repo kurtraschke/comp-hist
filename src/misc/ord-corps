@@ -39,3 +39,10 @@ brlesc
 	Reference: Electronic Computers Within the Ordinance Corps, Chapter V <http://ftp.arl.mil/~mike/comphist/61ordnance/chap5.html>
         Type: hardware
 	Status: research
+
+univac
+	Name: Universal Automatic Computer
+	Date: 1951-03-31
+	Reference: http://inq.philly.com/content/inquirer/2001/03/29/tech_life/UNIVAC29.htm
+	Type: hardware
+	Code taken from eniac
