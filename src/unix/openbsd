@@ -1,0 +1,80 @@
+#########################################################################
+#			          OpenBSD				#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/08/17 01:29:51 $
+#
+# [wkt] The following node isn't a true release, but indicates when OpenBSD
+# split development from NetBSD. In email from Theo de Raadt
+# <deraadt@cvs.openbsd.org>:
+#	Date: Mon, 14 Dec 1998 16:55:46 -0700
+# > Ok, when did OpenBSD split from NetBSD to be a development effort in its
+# > own right?
+#
+# revision 1.1.1.1
+# date: 1995/10/18 08:37:01;  author: deraadt;  state: Exp;  lines: +0 -0
+# initial import of NetBSD tree
+#
+# there was roughtly 7 months of independent development before this then,
+# as you can guess by reading www.theos.com/deraadt/coremail
+#
+# there are significant pieces of code from all over the place; of all
+# the projects around at the moment openbsd takes more code from others
+# than anyone else does. <end mail from Theo>
+openbsd
+	Name: OpenBSD
+	Date: 1995-10
+	Reference: see above email from Theo
+	Code taken from netbsd0.9
+
+# [wkt] The following date is very vague. Todd Miller millert@cvs.openbsd.org
+# says Autumn of '96. I haven't been able to narrow it down further.
+# That's northern hemisphere autumn as well.
+openbsd2.0
+	Name: OpenBSD 2.0
+	Date: 1996-10
+	Reference: Todd Miller <millert@cvs.openbsd.org>
+	Successor to openbsd
+
+openbsd2.1
+	Name: OpenBSD 2.1
+	Date: 1997-06-02
+	Reference: Usenet posting
+	Successor to openbsd2.0
+
+openbsd2.2
+	Name: OpenBSD 2.2
+	Date: 1997-12-01
+	Reference: Usenet posting
+	Successor to openbsd2.1
+
+openbsd2.3
+	Name: OpenBSD 2.3
+	Date: 1998-05-19
+	Reference: Usenet posting
+	Successor to openbsd2.2
+	Code taken from 4.4lite2
+
+openbsd2.4
+	Name: OpenBSD 2.4
+	Date: 1998-12-01
+	Reference: Usenet posting
+	Successor to openbsd2.3
+
+openbsd2.5
+	Name: OpenBSD 2.5
+	Date: 1999-05-19
+	Reference: http://www.openbsd.org/plus25.html
+	Successor to openbsd2.4
+
+openbsd2.6
+	Name: OpenBSD 2.6
+	Date: 1999-12-01
+	Reference: http://www.openbsd.org/plus26.html
+	Successor to openbsd2.5
+
+openbsd2.7
+	Name: OpenBSD 2.7
+	Date: 2000-06-15
+	Reference: http://www.openbsd.org/plus27.html
+	Successor to openbsd2.6
+

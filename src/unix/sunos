@@ -1,0 +1,70 @@
+#########################################################################
+#			SunOS and Solaris			        #
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/08/17 01:26:16 $
+#
+# From: Joey KAHN <kahn@tholian.net>
+# 
+# Found this on a sun web page:
+# 
+# SunOS       Solaris     FCS     Comments                       
+# ----------- -------     ------- ---------------------------    
+# 3.2			Sept 86	  So says Jim Carpenter in email
+# 3.3
+# 3.4
+# 3.5
+# 4.0
+# 4.0.2                   Sept 89 (386i Roadrunner)
+# 4.0.3                   May  89 (Sun2, Sun3/3x, Sun4)
+# 4.0.3c                  June 89 (SPARC Sun4c only)
+# 4.0.3 PSR_A             July 89 (SPARC 470/490 only)
+# 4.1                     Mar  90 (3/3x/4/4c except 470/490)
+# 4.1 PSR_A               May  90 (SPARC only for 390/490) 
+# 4.1.1       1.0         Nov  90 (All Sun3/4's)                 
+# 4.1.1B                  Feb  91 (SPARC only)                   
+# 4.1.1.1                 July 91 (CTE patches for Sun3/3x)
+# 4.1.1_U1                Nov  91 (Last Sun3/3x release)
+# 4.1.2       1.0.1       Dec  91 (SPARC + Sun4m/600MP Ross)     
+# 4.1.3       1.1A        Aug  92 (All SPARC+MP,Viking S10)       OW3.0
+# 4.1.3c      1.1C        Nov  93 (LX and Classic only)           OW3.0
+# 4.1.3_U1    1.1.1       Dec  93 (SPARC,LX,Classic/no-sun4d)     OW3.0
+# 4.1.3_U1b   1.1.1B      Feb  94 (SPARC3.5/S10,4mm & all 1.1s)   OW3.0
+# 4.1.4       1.1.2       Sep  94 (SPARC4m [Colorado CPUs]+new WS) 
+# 5.0         2.0         July 92 (Desktop Sun4c only)            OW3.0
+# 5.1         2.1         Dec  92 (All SPARC/no-1000/2000)        OW3.1
+# 5.2         2.2         May  93 (All SPARC + 1000/2000)         OW3.2
+# 5.3         2.3         Nov  93 (All SPARC + SS10SX)            OW3.3
+# 5.3         2.3 5/94    Mar  94 (SS5-audio & Voyager)           OW3.3
+# 5.3         2.3 8/94    Sep  94 (All SPARC+SSA+S24 fb)
+# 5.4         2.4         Dec  94 (All SPARC + Intel)             OW3.4 
+# 5.4         2.4 3/95    Mar  95 (All SPARC+SSA)                 OW3.4
+# 5.5         2.5         Nov  95 (All SPARC+Fusion-[NO SUN4/SUN4E]+SSA)
+# 
+# All I recall about pre 4.0 was that we were using SunOS 3.5 in '88. I'd
+# like to think 3.2 came out in '85 or '86--but memory isn't what it used
+# to be...
+# 
+# More research: first patch in Sun patch library:
+# 
+# 	Patch-ID# 100001-01
+# 	Keywords:       cc stack overflow local variable
+# 	Synopsis: C compiler: stack overflow: too many local variables
+# 	Date: 20-Apr-88
+# 
+# 	SunOS release:
+#         	3.4, 3.5
+# 
+# 
+# Sun's bug database still contains bug reports going back to 3.2 (heck,
+# even 2.2 and 1.0) but none of them have dates ;(((
+#
+sunos2
+	Name: SunOS 2.0
+	Date: 1985-05-15
+	Reference: SunOS 2.0 manual, title page
+
+sunos3
+	Name: SunOS 3.0
+	Date: 1986-02-17
+	Reference: SunOS 3.0 manual, title page
+	Successor to sunos2
