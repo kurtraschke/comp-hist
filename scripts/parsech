@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 
 use Getopt::Std;
+%linkto = ();
 
 =head1 NAME
 
@@ -101,6 +102,7 @@ The data fields are parsed as follows:
 =cut yourself a slice of rug and start coding
 
 sub parse{
+    %status = ();
     foreach $file (@ARGV){
 	open($file, $file);
 	while(<$file>){
@@ -179,6 +181,7 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup {
+    @{$linkto{$_[0]}} = '';
     push(@{$linkto{$_[0]}}, $_[1]);
     push(@{$linkweight{$_[0]}}, $_[2]);
     return 0;
@@ -309,9 +312,11 @@ The setshape routine will set shapes for the nodes according to the following st
 =cut
 
 sub setshape {
-    foreach $node (keys %name){
-	if ($status{$node} =~ /^released/){$shape{$node} = "box";}
-	if ($status{$node} =~ /^triangle/){$shape{$node} = "triangle";}
+    my $node = '';
+    %shape = ();
+    foreach $node (keys %status){
+	if ($status{$node} =~ /^released/){ $shape{$node} = "box"; }
+	if ($status{$node} =~ /^triangle/){ $shape{$node} = "triangle";}
 	if ($status{$node} =~ /^contev/){$shape{$node} = "ellipse";}
 	if ($status{$node} =~ /^prototype/){$shape{$node} = "rhomb";}
 	if ($status{$node} =~ /^research/){$shape{$node} = "triangle";}
@@ -328,6 +333,7 @@ This lovely little function sets up the weights for B<vcg> to use.
 sub setweights_vcg {
     foreach $node (keys %name){
 	foreach $linkweight (@{$linkweight{$node}}){
+	    @{$vcg_weights{$node}} = '';
 	    if($linkweight =~ /^aka/){
 		push(@{$vcg_weights{$node}}, "thickness: 8 arrowsize: 40 backarrowsize: 400");
 	    }
@@ -377,6 +383,8 @@ sub vcg{
     &setcolor;
     &setshape;
     &setweights_vcg;
+    my $node = '';
+    my $i = 'n';
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
     foreach $node (sort keys %name){
 	    print("\tnode: { title: \"$node\"");
@@ -385,8 +393,10 @@ sub vcg{
 	    print(" color: $color{$node}") if defined $color{$node};
 	    print(" shape: $shape{$node}") if defined $shape{$node};
 	    print(" }\n");
-	    for($i=0; $i < scalar(@{$linkto{$node}}); $i++){
-		print("\tedge: { sourcename: \"$linkto{$node}[$i]\" targetname: \"$node\"  $vcg_weights{$node}[$i] }\n");
+	    if(defined $linkto{$node}){
+		for($i=0; $i < scalar(@{$linkto{$node}}); $i++){
+		    print("\tedge: { sourcename: \"$linkto{$node}[$i]\" targetname: \"$node\"  $vcg_weights{$node}[$i] }\n");
+		}
 	    }
 	}
     print("}\n");
