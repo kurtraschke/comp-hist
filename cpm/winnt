@@ -5,7 +5,7 @@
 
 winnt31
 	Name: Windows New Technology 3.1
-	Date: 1993-7-17
+	Date: 1993-05-24
 	Reference: http://www.ultranet.com/~trident/winnt/features.htm#history
 	Type: OS
 	Code taken from windows31
@@ -14,21 +14,147 @@ winnt31
 winnt35
 	Name: Windows New Technology 3.5
 	Reference: http://www.ultranet.com/~trident/winnt/features.htm#history
+	Date: 1994-09-06
 	Type: OS
 	Successor to winnt31
-#	FIXME: add a date
+
+winnt351
+	Name: Windows New Technology 3.51
+	Date: 1995-06
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt35
 
 winnt4
 	Name: Windows New Technology 4.0
-	Date: 1996-8
+	Date: 1996-8-24
 	Reference: http://www.ultranet.com/~trident/winnt/features.htm#history
 	Type: OS
-	Successor to winnt35
+	Successor to winnt351
 	Code taken from windows95
+
+winnt4sp3
+	Name: Windows New Technology 4.0 Service Pack 3
+	Date: 1997
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4
+
+winnt4op
+	Name: Windows New Technology 4.0 Option Pack
+	Date: 1997-12
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4sp3
+
+winnt4op
+	Name: Windows New Technology 4.0 Option Pack
+	Date: 1997-12
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4sp3
+
+winnt4sp4
+	Name: Windows New Technology 4.0 Service Pack 4
+	Date: 1998-10
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4op
+
+winnt4sp5
+	Name: Windows New Technology 4.0 Service Pack 5
+	Date: 1999-05
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4sp4
+
+winnt4sp6
+	Name: Windows New Technology 4.0 Service Pack 6
+	Date: 1999-10
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4sp5
+
+winnt4sp6a
+	Name: Windows New Technology 4.0 Service Pack 6a
+	Date: 2000
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to winnt4sp6
+
+winnt5b1
+	Name: Cairo beta 1 (Windows NT 5.0)
+	Date: 1997-09-27
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Status: prototype
+	Successor to winnt4
+
+winnt5b2
+	Name: Cairo beta 2 (Windows NT 5.0)
+	Date: 1998-08-20
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Status: prototype
+	Successor to winnt5b1
+
+win2kann
+	Name: Windows 2000 announcement
+	Date: 1998-10-27
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Status: announcement
+	Successor to winnt5b2
+w2kfr
+	Name: Windows 2000 Final Release
+	Date: 1999-12-15
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Status: prototype
+	Successor to win2kann
 
 w2k
 	Name: Windows 2000
 	Date: 2000-2-17
 	Reference: http://slashdot.org/articles/99/12/15/1528209.shtml
 	Type: OS
-	Successor to winnt4
+	Successor to winnt4sp6a
+	Successor to w2kfr
+
+w2kdsb2
+	Name: Windows 2000 Datacenter Server (beta 2)
+	Date: 2000-05-23
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Status: prototype
+	Type: OS
+	Successor to w2k
+
+w2kdsrc1
+	Name: Windows 2000 Datacenter Server (release candidate 1)
+	Date: 2000-07-26
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Status: prototype
+	Type: OS
+	Successor to w2kdsb2
+
+w2ksp1
+	Name: Windows 2000 Service Pack 1
+	Date: 2000-07-27
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to w2k
+
+winneta
+	Name: Windows.NET (announcement)
+	Status: announcement
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Date: 2000-06-22
+	Type: OS
+	Successor to w2k
+
+wnetalpha
+	Name: Windows.NET (Whistler alpha)
+	Status: prototype
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Date: 2000-07-11
+	Successor to winneta

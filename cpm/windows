@@ -4,6 +4,20 @@
 
 #Yes, I should be beaten many times for writing about Windows on a Linux system.
 
+imanager
+	Name: Interface manager
+	Status: research
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Reference:
+	Date: 1981-09
+
+winann
+	Name: Windows announcement
+	Type: announce
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Date: 1983-11-10
+
 windows101
 	Name: Windows 1.01
 	Date: 1985-11-20
@@ -11,7 +25,7 @@ windows101
 	Type: OS
 	Code taken from msdos201
 	Influenced by syssoftware0305
-# This translates to "Stole from Mac System Software
+# This translates to "Stole from Mac System Software"
 	Influenced by alto
 	Ran on ibmpc
 
@@ -48,26 +62,62 @@ windows201
 	Successor to windows2
 	Successor to windows386
 
+win28621
+	Name: Windows/286 2.1
+	Date: 1988-06-28
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to windows201
+
+win38621
+	Name: Windows/386 2.1
+	Date: 1988-06-28
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to windows386
+
 windows3
 	Name: Windows 3.0
 	Date: 1990-5-22
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
-	Successor to windows201
+	Successor to win38621
+	Successor to win28621
+
+win3me
+	Name: Windows 3.0 + Multimedia Extensions
+	Date: 1991-10-20
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to windows3
 
 windows31
 	Name: Windows 3.1
 	Date: 1992-4-6
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
-	Successor to windows3
+	Successor to win3me
 
-windows311
-	Name: Windows for Workgroups 3.11
-	Date: 1993-11-8
-	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+win31fw
+	Name: Windows for Workgroups 3.1
+	Date: 1992-10-27
+	Reference: http://perso.wanadoo.fr/levenez/windows/
         Type: OS
 	Code taken from windows31
+
+win311fw
+	Name: Windows for Workgroups 3.11
+	Date: 1993-11-08
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+        Type: OS
+	Successor to win31fw
+
+win95beta
+	Name: Chicago (Windows 95 beta)
+	Date: 1994-08-09
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Status: prototype
 
 windows95
 	Name: Windows 95
@@ -77,17 +127,46 @@ windows95
 	Successor to windows31
 	Successor to windows311
 	Successor to msdos622
+	Successor to win95beta
+
+win95osr1
+	Name: Windows 95a (OSR1)
+	Date: 1996-02
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to windows95
+
+win95osr2
+	Name: Windows 95b (OSR2)
+	Date: 1996-08
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to win95osr1
+
+win95osr21
+	Name: Windows 95b (OSR2.1)
+	Date: 1997-04
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to win95osr2
+
+win95osr25
+	Name: Windows 95c (OSR2.5)
+	Date: 1997-11
+	Reference: http://perso.wanadoo.fr/levenez/windows/
+	Type: OS
+	Successor to win95osr21
 
 windows98
 	Name: Windows 98
 	Date: 1998-6
 	Reference: http://www.microsoft.com/billgates/bio/1998.htm
         Type: OS
-	Successor to windows95
+	Successor to win95osr25
 
 windows98se
 	Name: Windows 98 Second Edition
-	Date: 1999-4
+	Date: 1999-05-05
 	Reference: Readme file of the French version
         Type: OS
 	Successor to windows98
@@ -99,10 +178,9 @@ windowsme
         Type: OS
 	Successor to windows98se
 
-# If anyone has the dates for win95sp1 and so on, send them off to me.
 
 
-
+	Reference: http://perso.wanadoo.fr/levenez/windows/
 
 
 

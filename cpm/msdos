@@ -24,7 +24,7 @@ qdos01
 
 pcdos1
 	Name: IBM Personal Computer DOS 1.0
-	Date: 1981-08
+	Date: 1981-08-12
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to 86dos03
