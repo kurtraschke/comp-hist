@@ -3,8 +3,8 @@ package ParseCH;
 require Exporter;
 
 @ISA = qw(Exporter);
-@EXPORT = qw(docomment donode doname dodate doref doinfo dotype dostatus doaka dosucc doctf doinfluence doruns doran dowritten);
-@EXPORT_OK = qw(dofield do1field %name %year %month %day %ref %info %type %status @linkfrom @linkto @weight);
+@EXPORT = qw(docomment doname dodate doref doinfo dotype dostatus doaka dosucc doctf doinfluence doruns doran dowritten);
+@EXPORT_OK = qw(dofield do1field donode %name %year %month %day %ref %info %type %status @linkfrom @linkto @weight);
 $VERSION = 1.10;
 
 sub docomment {
@@ -12,11 +12,13 @@ sub docomment {
 }
 
 sub dofield {
+    donode;
     if(/^\b$_[0].? (.*)/){ my $field = $1; }
     return $field;
 }
 
 sub do1field {
+    donode;
     if(/^\b$_[0]:? ?(\S+)/){ my $field = $1; }
     return $field;
 }
