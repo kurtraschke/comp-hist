@@ -1,0 +1,20 @@
+#################
+#	ITS	#
+#################
+#The influence of Unix without Unix
+
+its1.4
+	Name: The Incompatible Timesharing System, version 1.4
+	Date: 1968-6
+	Reference: Date on user's manual
+	Type: OS
+#	Successor to its1.3
+	Influenced by ctss
+	Ran on pdp6
+
+its1.5
+	Name: The Incompatible Timesharing System, version 1.5
+	date: 1969-7
+	Refernce: Date on MIT AI memo 161A
+	Type: OS
+	Successor to its1.4
