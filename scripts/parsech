@@ -111,10 +111,12 @@ sub dominmaxYear {
 }
 
 sub dopos{
-  my($node, $Year, %VPos, $VScale);
-  my($Minyear, $Maxyear) = &dominmaxYear;
-  $VScale = $Opts{s} || 1;
-  foreach $node (keys %{$_[0]}){
+  my($node, $Year, %VPos, $VScale, %Year, %Month);
+  my($Minyear, $Maxyear) = dominmaxYear(\%{$_[1]});
+  $VScale = $_[0] || 1;
+  %Year = %{$_[1]};
+  %Month = %{$_[2]};
+  foreach $node (keys %Year){
     if(!defined $Month{$node}){
       $Year = int($Year{$node}) - $Minyear;
       $VPos{$node} = $Year * 12;
@@ -123,7 +125,7 @@ sub dopos{
       $Year = int($Year{$node}) - $Minyear;
       $VPos{$node} = $Year * 12 + $Month{$node};
     }
-    $VPos{$node} = ($VPos{$node}/$VScale);
+    $VPos{$node} = $VPos{$node} / $VScale;
 #    print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
   }
   return %VPos;
@@ -256,7 +258,7 @@ sub vcg{
   my($node, $linkto, %Linkcolor, %Color, %Shape);
   my(%VPos);
   &parse(@_);
-  %VPos = dopos(\%Year);
+  %VPos = dopos($Opts{s}, \%Year, \%Month);
   %Color = setcolor(\%Type);
   %Shape = setshape(\%Status);
   %Linkcolor = setlinkcolor(\%Linkto);
