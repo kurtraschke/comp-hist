@@ -82,79 +82,79 @@ perl3.009..13
 	Successor to perl3.006..8
 
 perl3.014
-	Name: Perl 3.014
+	Name: The Practical Extraction and Reporting Language 3.014
 	Date: 1990-03-13
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.009..27
 
 perl3.015
-	Name: Perl 3.015
+	Name: The Practical Extraction and Reporting Language 3.015
 	Date: 1990-03-13
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.014
 
 perl3.016..18
-	Name: Perl 3.016..18
+	Name: The Practical Extraction and Reporting Language 3.016..18
 	Date: 1990-03-28
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.015
 
 perl3.019..27
-	Name: Perl 3.019..27
+	Name: The Practical Extraction and Reporting Language 3.019..27
 	Date: 1990-08-10
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.016..18
 
 perl3.028
-	Name: Perl 3.028
+	Name: The Practical Extraction and Reporting Language 3.028
 	Date: 1990-08-14
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.019..27
 
 perl3.029..36
-	Name: Perl 3.029..36
+	Name: The Practical Extraction and Reporting Language 3.029..36
 	Date: 1990-10-17
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.028
 
 perl3.037
-	Name: Perl 3.037
+	Name: The Practical Extraction and Reporting Language 3.037
 	Date: 1990-10-20
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.029..36
 
 perl3.040
-	Name: Perl 3.040
+	Name: The Practical Extraction and Reporting Language 3.040
 	Date: 1990-11-10
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.037
 
 perl3.041
-	Name: Perl 3.041
+	Name: The Practical Extraction and Reporting Language 3.041
 	Date: 1990-11-13
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.040
 
 perl3.042..43
-	Name: Perl 3.042..43
+	Name: The Practical Extraction and Reporting Language 3.042..43
 	Date: 1991-01
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.042..43
 
 perl3.044
-	Name: Perl 3.044
+	Name: The Practical Extraction and Reporting Language 3.044
 	Date: 1991-01-12
-	Reference: perlhist
+	Reference: The Perl History manpage
 	Type: language
 	Successor to perl3.042..43
 
