@@ -1,7 +1,6 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
 1.0
-	the CCC (<http://digiweb.com/~hansp/ccc>) should be merged in
 	MacOS should be done (this includes OSX)
 	POSIX should be current
 	at least one node in use today should be traced back to ENIAC
