@@ -2,7 +2,7 @@ UNIX-SRCS = unix/2bsd unix/386bsd unix/4bsd unix/freebsd unix/netbsd unix/openbs
 
 CPM-SRCS = cpm/windows cpm/cpm cpm/msdos cpm/winnt cpm/msos2 cpm/wince
 
-CRAY-SRCS = cray/cray cray/corp
+CRAY-SRCS = cray/cray cray/corp cray/servers
 
 ORD-SRCS = ord-corps
 
