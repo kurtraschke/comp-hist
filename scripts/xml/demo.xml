@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE TREE PUBLIC "" "http://comp-hist.sourceforge.net/comp-hist.dtd">
+<tree>
+<node>
+<id>test</id>
+<name>Test Node</name>
+<date year="2000" month="1" day="1" hour="0" minute="01" />
+<type types="os" />
+<status status="released" />
+<reference>reference</reference>
+<info>All of your info goes here.</info>
+</node>
+
+<node>
+<id>test2</id>
+<name>Test Node 2</name>
+<date year="2000" month="1" day="1" hour="0" minute="01" />
+<type types="os" />
+<status status="released" />
+<reference>reference</reference>
+<info>All of your info goes here.</info>
+<link linktype="aka">id</link>
+</node>
+</tree>
