@@ -12,3 +12,15 @@ star
 	Type: hardware
 	Successor to alto
 
+notetaker
+	Name: Xerox Notetaker
+	Date: 1978
+	Reference: http://www.wired.com/wired/archive/7.11/computer_pr.html
+	Type: hardware
+	Code taken from alto
+dorado
+	Name: Xerox Dorado
+	Date: 1978
+	Reference: http://www.fortunecity.com/marina/reach/435/complist.html
+	Type: hardware
+	Code taken from alto
