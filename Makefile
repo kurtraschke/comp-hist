@@ -1,4 +1,4 @@
-UNIX-SRCS = unix/2bsd unix/386bsd unix/4bsd unix/freebsd unix/netbsd unix/openbsd unix/research unix/usdl unix/sysV unix/bsdi unix/consensys unix/tandem unix/unixware unix/sunos unix/aos unix/minix unix/linux0 unix/darwin unix/linux1 unix/mach unix/xenix unix/nextstep unix/linux2 unix/solaris unix/hurd unix/plan9 unix/osf unix/aix unix/hpux
+UNIX-SRCS = unix/2bsd unix/386bsd unix/4bsd unix/freebsd unix/netbsd unix/openbsd unix/research unix/usdl unix/sysV unix/bsdi unix/consensys unix/tandem unix/unixware unix/sunos unix/aos unix/minix unix/linux0 unix/darwin unix/linux1 unix/mach unix/xenix unix/nextstep unix/linux2 unix/solaris unix/hurd unix/plan9 unix/osf unix/aix unix/hpux $(LINUX-SRCS)
 
 CPM-SRCS = cpm/windows cpm/cpm cpm/msdos cpm/winnt
 
@@ -35,6 +35,8 @@ LISP-SRCS = lisp
 SH-SRCS = sh/sh sh/awk sh/perl
 
 BE-SRCS = be/corp be/bebox be/beos
+
+LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian
 
 SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(NEXT-SRCS) $(BCPL-SRCS) $(LISP-SRCS) $(SH-SRCS) $(BE-SRCS)
 
