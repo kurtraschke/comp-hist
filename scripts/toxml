@@ -1,0 +1,95 @@
+#!/usr/bin/perl -w
+
+#Toxml, a new try at parsing
+
+
+
+#Parser, a hack to allow the code generators to have one common parser
+
+sub docomment {
+	s/#.*//;
+}
+
+sub donode {
+    if(/(\S+)/){ my $node = $1;}
+    return $node;
+}
+
+sub dofield {
+    if(/^\b$_[0].? (.*)/){ my $field = $1; }
+    return $field;
+}
+
+sub do1field {
+    if(/^\b$_[0]:? (\S+)/){ my $field = $1; }
+    return $field;
+}
+
+sub doname {
+    my $name = dofield(Name);
+    return $name;
+}
+
+sub dodate {
+    if(/^\b[Date|Founded].*(\d\d\d\d)-((\d\d)?-(\d\d)?)?/){
+	my $year = $1;
+	my $month = $3;
+	my $day = $4;
+    }
+    return ($year, $month, $day);
+}
+
+sub doref {
+    my $ref = dofield(Reference);
+    return $ref;
+}
+
+sub doinfo {
+    my $info = dofield(Info);
+    return $info;
+}
+
+sub dotype {
+    my $type = do1field(Type);
+    return $type;
+}
+
+sub dostatus {
+    my $status = do1field(Status);
+    return $status;
+}
+
+sub doaka {
+    my $aka = do1field(Aka);
+    return $aka;
+}
+
+sub dosucc {
+    my $succ = do1field("Successor to");
+    return $succ;
+}
+
+sub doctf {
+    my $code = do1field("Code taken from");
+    return $code;
+}
+
+sub doinfluence {
+    my $inf = do1field("Influenced by");
+    return $inf;
+}
+
+sub doruns {
+    my $runs = do1field("Runs on");
+    return $runs;
+}
+
+sub doran {
+    my $ran = do1field("Ran on");
+    return $ran;
+}
+
+sub dowritten {
+    my $written = do1field("Written in");
+    return $written;
+}
