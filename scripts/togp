@@ -5,6 +5,7 @@
 $linkcnt = 0;
 
 while(<>){
+    s/\#.*//;
     if(/^(\S+)/){ $node = $1; }
     if(/.*Name: (.*)/){ $name{$node} = $1; }
     if(/.*Aka (\S+)/){ $from[$linkcnt] = $1; $to[$linkcnt] = $node; }
