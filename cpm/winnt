@@ -1,0 +1,34 @@
+#########################
+#	Windows NT	#
+#########################
+#"Not Today"
+
+winnt31
+	Name: Windows New Technology 3.1
+	Date: 1993-7-17
+	Reference: http://www.ultranet.com/~trident/winnt/features.htm#history
+	Type: OS
+	Code taken from windows31
+#	Code taken from os2
+
+winnt35
+	Name: Windows New Technology 3.5
+	Reference: http://www.ultranet.com/~trident/winnt/features.htm#history
+	Type: OS
+	Successor to winnt31
+#	FIXME: add a date
+
+winnt4
+	Name: Windows New Technology 4.0
+	Date: 1996-8
+	Reference: http://www.ultranet.com/~trident/winnt/features.htm#history
+	Type: OS
+	Successor to winnt35
+	Code taken from windows95
+
+w2k
+	Name: Windows 2000
+	Date: 2000-2-17
+	Reference: http://slashdot.org/articles/99/12/15/1528209.shtml
+	Type: OS
+	Successor to winnt4
