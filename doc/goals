@@ -1,9 +1,6 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
-0.04
-	Type: field should be in everything (done)
-
-0.1
+0.1 (0.1 is out, however these milestones have not been achieved, so I suppose that they are just being moved en masse to the next version)
 	linux1 should be done
 	the motorola tree should be partway done
 0.5
@@ -12,6 +9,7 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 	ITS should be in place
 	the linux kernels should be done
 	motorola should be done
+	datagen/nova should be done
 1.0
 	MacOS should be done (this includes OSX)
 	Apple hardware should be close to current
