@@ -5,7 +5,7 @@ use strict;
 BEGIN{
   use Exporter ();
   use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-  $VERSION = do { my @r = (q$Revision: 1.1 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 1.2 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
   @ISA = qw(Exporter);
   @EXPORT = qw(&parser);
   %EXPORT_TAGS = (ALL => [qw(&parser %Name %Year %Month %Day %Reference %Info %Type %Status %Linkto)]);
@@ -36,6 +36,7 @@ sub parser {
       }
       elsif (/.*Founded.*(\d\d\d\d)/) {
 	$Year{$node}=$1;
+	$Month{$node}="00";
       }
       
       if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
@@ -49,6 +50,7 @@ sub parser {
       }
       elsif (/.*Date:.*(\d\d\d\d)/) {
 	$Year{$node}=$1;
+	$Month{$node}="00";
       }
       
       if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
