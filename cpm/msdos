@@ -28,7 +28,7 @@ pcdos1
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to 86dos03
-	Ran on ibmpc
+	Ran on ibm5150
 
 msdos1
 	Name: Microsoft Disk Operating System 1.0
