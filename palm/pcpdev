@@ -1,6 +1,6 @@
 #Other Palm Computing Platform devices go here.
 #Devices needing to be entered:
-#Qualcomm pdQ, Symbol SPT1500, Symbol SPT1700
+#Symbol SPT1500, Symbol SPT1700
 hsvs
 	Name: Handspring Visor Solo
 	Date: 1999-9
@@ -52,4 +52,15 @@ sonyclie
 	Reference: http://www.sel.sony.com/SEL/corpcomm/news/consumer/621.html
 	Type: hardware
 
+qcpdq
+	Name: Qualcomm pdQ
+	Date: 1998-9-21
+	Reference: http://slashdot.org/articles/98/09/21/1318226.shtml
+	Type: hardware
 
+kycpdq2
+	Name: Kyocera pdq2
+	Date: #not yet!
+	Reference: http://www.pdabuzz.com/News/viewnews.cgi?newsid972931805,8769,
+	Type: hardware
+	Successor to qcpdq
