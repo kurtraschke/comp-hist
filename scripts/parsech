@@ -475,7 +475,9 @@ sub vcg{
 sub dbm {
   use GDBM_File;
   no strict "subs";
+  my %links;
   mkdir('parsech_dbm', 0777);
+  mkdir('parsech_dbm/links', 0777);
   tie(%Name, 'GDBM_File', 'parsech_dbm/Name', &GDBM_WRCREAT, 0640);
   tie(%Year, 'GDBM_File', 'parsech_dbm/Year', &GDBM_WRCREAT, 0640);
   tie(%Month, 'GDBM_File', 'parsech_dbm/Month', &GDBM_WRCREAT, 0640);
@@ -493,6 +495,15 @@ sub dbm {
   untie(%Type);
   untie(%Status);
   untie(%Reference);
+  #Now, we store the links. Each node gets its own DBM database
+  foreach my $mnode (sort keys %Linkto){
+    tie(%links, 'GDBM_File', "parsech_dbm/links/$mnode", &GDBM_WRCREAT, 0640);
+    for(my $i; defined $Linkto{$mnode}[$i]; $i++){
+      $links{$Linkto{$mnode}[$i]} = $Linkweight{$mnode}[$i];
+    }
+    untie(%links);
+    %links = ();
+  }
 }
 
 
