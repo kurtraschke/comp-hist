@@ -186,3 +186,64 @@ syssoftware201
 	Aka finder54
 	Successor to syssoftware2
 
+system41
+	Name: System 4.1
+	Date: 1987-4
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system4
+
+finder55
+	Name: Finder 5.5
+	Date: 1987-4
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder54
+
+syssoftware201a
+	Name: System Software 2.01
+	Date: 1987-4
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to syssoftware201
+	Aka finder55
+	Aka system41
+
+system42
+	Name: System 4.2
+	Date: 1987-10
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system41
+
+finder6
+	Name: Finder 6.0
+	Date: 1987-10
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder55
+
+syssoftware5
+	Name: System Software 5.0
+	Date: 1987-10
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka finder6
+	Aka system42
+	Successor to syssoftware201a
+
+system43
+	Name: System 4.3
+	Date: 1987-11
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system42
+
+syssoftware51
+	Name: System Software 5.1
+	Date: 1987-11
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka system43
+	Aka finder6
+	Successor to syssoftware5
