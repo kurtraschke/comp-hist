@@ -79,7 +79,7 @@ info:
 	perl scripts/parsech -o info $(SRCS) > information
 
 comp-history-vcg:
-	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 
+	perl -w scripts/parsech -o vcg $(SRCS) >comp-history.vcg 
 
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
