@@ -1,0 +1,65 @@
+#################################################
+#		Minix				#
+#################################################
+#All the info hearin is from email with Andy Tanenbaum (ast@cs.vu.nl)
+
+minix1
+	Name: Minix 1.0
+	Date: 1987
+	Reference: Email with ast.
+        Type: OS
+	Influenced by v7
+
+minix1.1
+	Name: Minix 1.1
+	Date : 1989
+	Reference: Email with ast.
+        Type: OS
+	Successor to minix1
+
+minix1.2
+	Name: Minix 1.2
+	Date: 1991
+	Reference: Email with ast.
+        Type: OS
+	Successor to minix1.1
+	#Since this was current in '91, I'll assume Linus used this for 0.01
+
+minix1.3
+	Name: Minix 1.3
+	Date: 1993
+	Reference: Email with ast.
+        Type: OS
+	Successor to minix1.2
+
+minix1.4
+	Name: Minix 1.4
+	Date: 1995
+	Reference: Email with ast.
+        Type: OS
+	Successor to minix1.3
+
+minix1.5
+	Name: Minix 1.5
+	Date: 1996
+	#Date is a fudge to make chart look right.
+	Reference: Email with ast.
+        Type: OS
+	Successor to minix1.4
+
+minix1.7.2
+	Name: Minix 1.7.2
+	Date: 1996-03
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to minix1.5
+
+minix2
+	Name: Minix 2.0
+	Date: 1997
+	Reference: Email with ast.
+        Type: OS
+	Successor to minix1.7.2
+
+
+

@@ -1,0 +1,63 @@
+#########################################################################
+#			System III and System V				#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/12/17 03:01:15 $
+#
+# [wkt] The dates and relationships in here are vague. Can anyone help
+# to improve them? Eric Fischer <eric@fudge.uchicago.edu> has given
+# me sysV, sysVr2
+#
+unixsystem3
+	Name: Unix System III
+	Date: 1981-11
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Code taken from ts3.0.1 # 1000
+	Code taken from 32V
+	Successor to cb3
+
+sysIV
+	Name: Unix System IV
+	Date: 1982
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to unixsystem3
+
+sysV
+	Name: Unix System V
+	Date: 1983-01
+	Reference: Unix System V Release Description, title page
+        Type: OS
+	Successor to sysIV # 1000
+	
+sysVr2
+	Name: Unix System VR2
+	Date: 1984-04
+	Reference: Unix System V manual for 3B2, title page
+        Type: OS
+	Successor to sysV # 1000
+	
+sysVr3
+	Name: Unix System VR3
+	Date: 1986
+	Reference: Life with UNIX, pg 28
+        Type: OS
+	Successor to sysVr2 # 1000
+	Code taken from v8
+	
+sysVr3.2
+	Name: Unix Unix System V R3.2
+	Date: 1987
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to sysVr3
+
+sysVr4
+	Name: Unix System VR4
+	Date: 1988
+	Reference: Life with UNIX, pg 6
+        Type: OS
+	Successor to sysVr3.2 # 10000
+	Code taken from 4.2bsd
+	Code taken from xenix5
+

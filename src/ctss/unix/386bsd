@@ -1,0 +1,26 @@
+#########################################################################
+#			    386BSD					#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/12/17 03:01:15 $
+#
+386bsd0.0
+	Name: 386BSD 0.0
+	Date: 1992-02
+	Reference: Distribution notes
+        Type: OS
+	Code taken from net2
+
+386bsd0.1
+	Name: 386BSD 0.1
+	Date: 1992-07
+	Reference: Distribution notes
+        Type: OS
+	Successor to 386bsd0.0
+
+386bsd1.0
+	Name: 386BSD 1.0
+	Date: 1994-11-12
+	Reference: Usenet posting
+        Type: OS
+	Successor to 386bsd0.1
+

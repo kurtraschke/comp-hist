@@ -1,0 +1,10 @@
+#########################
+#	LSX Unix	#
+#########################
+
+lsx
+	Name: LSX Unix
+#	Date?
+	Reference: Unix history tree
+	Type: OS
+	Code taken from v6

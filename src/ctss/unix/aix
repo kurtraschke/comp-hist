@@ -1,0 +1,100 @@
+#################################
+#		AIX		#
+#################################
+
+aix1
+	Name: IBM Advanced Interactive eXecutive 1
+	Date: 1986-01-01
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Code taken from sysVr2
+
+#dates would be nice for 2 and 2.2.1
+
+aix2
+	Name: IBM Advanced Interactive eXecutive 2
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to aix1
+
+aix2.2.1
+	Name: IBM Advanced Interactive eXecutive 2.2.1
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to aix2
+
+aix3
+	Name: IBM Advanced Interactive eXecutive 3
+	Date: 1989
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to aix2.2.1
+
+aix3.1
+	Name: IBM Advanced Interactive eXecutive 3.1
+	Date: 1990
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix3
+
+aix3.2
+	Name: IBM Advanced Interactive eXecutive 3.2
+	Date: 1990-06 #fudge tomake it more specific than 1990
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix3.1
+
+aix3.2.4
+	Name: IBM Advanced Interactive eXecutive 3.2.4
+	Date:  1993-07
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix3.2
+
+aix4
+	Name: IBM Advanced Interactive eXecutive 4.0
+	Date: 1993-12 #fudge for better charts
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix3.2.4
+
+aix4.1
+	Name: IBM Advanced Interactive eXecutive 4.1
+	Date: 1994-07
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix4
+
+aix4.2.5
+	Name: IBM Advanced Interactive eXecutive 4.2.5
+	Date: 1994-12 #fudge
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix4.1
+
+aix4.3
+	Name: IBM Advanced Interactive eXecutive 4.3
+#	date would be nice
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix4.2.5
+
+aix4.3.2
+	Name: IBM Advanced Interactive eXecutive 4.3.2
+	Date: 1998-10-05
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix4.3
+
+aix4.3.3
+	Name: IBM Advanced Interactive eXecutive 4.3.3
+	Date: 1999-09-13
+	Reference: Unix History tree
+	Type: OS
+	Successor to aix4.3.2
+
+
+
+
+
+

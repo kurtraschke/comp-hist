@@ -1,0 +1,108 @@
+#########################################################################
+#			    Research Editions				#
+#########################################################################
+# $Revision: 1.1 $ $Date: 2000/12/17 03:01:15 $
+#
+updp7
+	Name: Uniplexed Information and Computing Service
+	Date: 1969-09
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+	Type: OS
+	Status: research
+	Runs on pdp7
+	Influenced by multicsproject
+
+v1
+	Name: Unix Time-Sharing System,\n 1st Edition
+	Date: 1971-11-03
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to updp7 # 100
+	Runs on pdp1120
+#			DEC PDP-11/20, Assembler
+
+v2
+	Name: Unix Time-Sharing System,\n 2nd Edition
+	Date: 1972-06-12
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to v1 # 100
+#			10 Unix installations
+
+v3
+	Name: Unix Time-Sharing System,\n 3rd Edition
+	Date: 1973-02
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to v2 # 100
+#			Pipes, 16 installations
+
+v4
+	Name: Unix Time-Sharing System,\n 4th Edition
+	Date: 1973-11
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to v3 # 100
+	Written in c
+#			rewriting in C effected,
+#			above 30 installations
+
+v5
+	Name: Unix Time-Sharing System,\n 5th Edition
+	Date: 1974-06
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to v4 # 100
+#			above 50 installations
+
+v6
+	Name: Unix Time-Sharing System,\n 6th Edition
+	Date: 1975-05
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to v5 # 100
+
+v7
+	Name: Unix Time-Sharing System,\n 7th Edition
+	Date: 1979-01
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: research
+	Successor to v6 # 1000
+	Code taken from pwb1.0
+	Written in k&rc
+
+v8
+	Name: Unix Time-Sharing System,\n 8th Edition
+	Date: 1985-02
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: released
+	# Status change due to AT&T's stance on unix after v7
+	Successor to 4.1cbsd
+	Code taken from sysV
+#		dmr says code was taken from sysV and 4.1c, and that
+#		the latter is the real antecendant
+
+v9
+	Name: Unix Time-Sharing System,\n 9th Edition
+	Date: 1986-09
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: released
+	Successor to v8 # 1000
+
+v10
+	Name: Unix Time-Sharing System,\n 10th Edition
+	Date: 1989-10
+	Reference: Quarter Century of UNIX by Peter Salus, pg 43
+        Type: OS
+	Status: released
+	Successor to v9 # 100
+
