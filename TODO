@@ -5,6 +5,7 @@ Short Term-
 	flesh out the CP/M directory
 	fix up the Unix directory
 	finish the Linux node
+	Make a Xerox PARC node and fill it in
 
 Mid Term-
 	port it away from Graphviz (I don't like its licence, I just picked it up from the original project)
