@@ -1,0 +1,18 @@
+#########################
+#	MiniLinux	#
+#########################
+
+minilinux-2.0.35
+	Name: Minilinux 2.0.35
+	Date: 1998
+	Reference: ftp://ftp.ampr.torun.pl/pub/hamradio/linux/minilinux/v2.0.35/README.TXT
+	Type: OS
+	Code taken from linux2035
+
+minilinux-2.2.15
+	Name: Minilinux 2.2.15
+	Date: 2000-8-5
+	Reference: ftp://ftp.ampr.torun.pl/pub/hamradio/linux/minilinux/current/README.TXT
+	Type: OS
+	Successor to minilinux-2.0.38
+	Code taken from linux2215
