@@ -8,6 +8,7 @@ solaris2
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Successor to sunos4.1
+	Code taken from sysVr4
 
 solaris2.1
 	Name: Solaris 2.1\n(SunOS 5.1)
