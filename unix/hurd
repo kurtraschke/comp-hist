@@ -3,13 +3,21 @@
 #########################
 #And GNU
 
+gnu-announce
+	Name: Gnu's Not Unix
+	Date: 1987-9-23
+	Reference: www.gnu.org/gnu
+	Type: announcemnet
+	Influenced by its #thanks to rms
+
 hurd0.0
 	Name: Hurd 0.0
 	Date: 1996-8-6
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Code taken from mach3
-	Influenced by its #thanks to rms
+	Successor to gnu-announce
+	Influenced by posix.11994-10
 
 gnu0.0
 	Name: Gnu's Not Unix 0.0
@@ -17,7 +25,8 @@ gnu0.0
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Code taken from hurd0.0
-	Influenced by its
+	Successor to gnu-announce
+	Influenced by posix.21994-12
 
 hurd0.1
 	Name: Hurd 0.1
