@@ -10,3 +10,15 @@ transistor
 #DO NOT use that type up there for ANYTHING outside this file! Only I may decide when it may be used.
 #The only computer that may link to  the transistor is the TX-0
 
+icjkilby
+	Name: The Integrated Circuit,\nInvented by Jack Kilby
+	Date: 1958-9-12
+	Reference: http://www.pbs.org/transistor/background1/events/icinv.html
+	Type: other
+
+icrnoyce
+	Name: The Integrated Circuit,\nInvented by Robert Noyce
+	Date: 1961-4-25
+	Reference: http://www.pbs.org/transistor/background1/events/icinv.html
+	Type: other
+#Yes, the IC was invented twice
