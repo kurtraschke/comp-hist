@@ -2,6 +2,7 @@
 #	4004	    #
 #####################
 #Every intel chip that's pre Pentium should be here.
+#2000-08-12 : added 8080 - modified 8008 date - modified 80186 "father"
 
 4004
 	Name: Intel 4004
@@ -11,22 +12,29 @@
 
 8008
 	Name: Intel 8008
-	Date: 1972-5
+	Date: 1972-4
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
-        Type: hardware
+    Type: hardware
 	Successor to 4004
+
+8080
+	Name: Intel 8080
+	Date: 1974-04
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Type: hardware
+	Successor to 8008
 
 8085
 	Name: Intel 8085
 	Date: 1976-3
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
         Type: hardware
-	Successor to 8008
+	Successor to 8080
 
 8086
 	Name: Intel 8086
 	Date: 1978-6-8
-	Reference:  http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
         Type: hardware
 	Successor to 8085
 
@@ -42,7 +50,8 @@
 	Date: 1982
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
         Type: hardware
-	Successor to 8085
+	Successor to 8086
+	Successor to 8088
 
 80286
 	Name: Intel 80286
