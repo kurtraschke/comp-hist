@@ -9,7 +9,7 @@ html:
 	cc -o html html.c parser.c
 
 clean:
-	rm cparse html
+	rm -f cparse html
 
 comp-hist.html: html
 	cd ../../ ; make dump
