@@ -8,12 +8,14 @@ windows101
 	Name: Windows 1.01
 	Date: 1985-11-20
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+	Type: OS
 	Code taken from msdos201
 
 windows103
 	Name: Windows 1.03
 	Date: 1986-8-29
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Successor to windows101
 	Code taken from pcdos32
 
@@ -21,42 +23,50 @@ windows2
 	Name: Windows 2.0
 	Date: 1987-4-2
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Successor to windows103
 
 windows386	
 	Name: Windows/386
 	Date: 1987-9-23
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Code taken from windows2
 
 windows201
 	Name: Windows 2.01
 	Date: 1987-12-9
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Successor to windows2
+	Successor to windows386
 
 windows3
 	Name: Windows 3.0
 	Date: 1990-5-22
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Successor to windows201
 
 windows31
 	Name: Windows 3.1
 	Date: 1992-4-6
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Successor to windows3
 
 windows311
 	Name: Windows for Workgroups 3.11
 	Date: 1993-11-8
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Code taken from windows31
 
 windows95
 	Name: Windows 95
 	Date: 1995-8-24
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
+        Type: OS
 	Successor to windows31
 	Successor to windows311
 	Successor to msdos622
@@ -65,18 +75,21 @@ windows98
 	Name: Windows 98
 	Date: 1998-6
 	Reference: http://www.microsoft.com/billgates/bio/1998.htm
+        Type: OS
 	Successor to windows95
 
 windows98se
 	Name: Windows 98 Second Edition
 	Date: 1999-4
 	Reference: Readme file of the French version
+        Type: OS
 	Successor to windows98
 
 windowsme
 	Name: Windows Millenium Edition
 	Date: 2000-6-19
 	Reference: http://www.microsoft.com/windowsme/news/default.asp
+        Type: OS
 	Successor to windows98se
 
 # If anyone has the dates for win95sp1 and so on, send them off to me.
