@@ -108,7 +108,96 @@ linux115
         Type: OS
         Successor to linux114
 
+linux109
+        Name: Linux 1.0.9
+        Date: 1994-4-17
+        Reference: LKVH
+        Type: OS
+        Successor to linux108
 
+linux116
+        Name: Linux 1.1.6
+        Date: 1994-4-19
+        Reference: LKVH
+        Type: OS
+        Successor to linux115
+
+linux117
+        Name: Linux 1.1.7
+        Date: 1994-4-19
+        Reference: LKVH
+        Type: OS
+        Successor to linux116
+
+linux118
+        Name: Linux 1.1.8
+        Date: 1994-4-21
+        Reference: LKVH
+        Type: OS
+        Successor to linux117
+
+linux119
+        Name: Linux 1.1.9
+        Date: 1994-4-25
+        Reference: LKVH
+        Type: OS
+        Successor to linux118
+
+linux1110
+        Name: Linux 1.1.10
+        Date: 1994-4-28
+        Reference: LKVH
+        Type: OS
+        Successor to linux119
+
+linux1111
+        Name: Linux 1.1.11
+        Date: 1994-5-2
+        Reference: LKVH
+        Type: OS
+        Successor to linux1110
+
+linux1112
+        Name: Linux 1.1.12
+        Date: 1994-5-7
+        Reference: LKVH
+        Type: OS
+        Successor to linux1111
+
+linux1113
+        Name: Linux 1.1.13
+        Date: 1994-5-23
+        Reference: LKVH
+        Type: OS
+        Successor to linux1112
+
+linux1114
+        Name: Linux 1.1.14
+        Date: 1994-5-24
+        Reference: LKVH
+        Type: OS
+        Successor to linux1113
+
+linux1115
+        Name: Linux 1.1.15
+        Date: 1994-5-25
+        Reference: LKVH
+        Type: OS
+        Successor to linux114
+
+linux1116
+        Name: Linux 1.1.16
+        Date: 1994-5-27
+        Reference: LKVH
+        Type: OS
+        Successor to linux1115
+
+linux1117
+        Name: Linux 1.1.17
+        Date: 1994-5-31
+        Reference: LKVH
+        Type: OS
+        Successor to linux1116
 
 
 
