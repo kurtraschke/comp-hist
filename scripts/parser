@@ -24,6 +24,15 @@ sub doname {
     return $name;
 }
 
+sub dodate {
+    if(/^\b[Date|Founded].*(\d\d\d\d)-((\d\d)?-(\d\d)?)?/){
+	my $year = $1;
+	my $month = $3;
+	my $day = $4;
+    }
+    return ($year, $month, $day);
+}
+
 sub doref {
     my $ref = dofield(Reference);
     return $ref;
