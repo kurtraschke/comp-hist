@@ -73,7 +73,7 @@ comp-hist-dot.ps: dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-*
+	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/
 	cd scripts/new ; make clean
 	cd scripts/browser ; make clean
 
