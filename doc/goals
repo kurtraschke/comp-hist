@@ -2,20 +2,21 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 
 0.03
 	tovcg shold be done
-
+	apple/applex and apple/lisa should be done
 0.1
 	we shold have two functional parsers
 	linux0 and linux1 should be done
 	the intel chips shuld all be in
-
+	the motorola tree should be partway done
 0.5
 	we should have at least three working parsers
 	the Unix tree should be reasonably done
 	ITS should be in place
 	the linux kernels should be done
-
+	motorola should be done
 1.0
 	MacOS should be done (this includes OSX)
+	Apple hardware should be close to current
 	TOPS-10 should be done
 	TOPS-20 should be done
 	WAITS shoulde be done
