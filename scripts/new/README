@@ -1,0 +1,47 @@
+I have revamped the parser.
+
+I simplified idnetifier.c to the point where it was a single routine so
+I melded that with parser.c, and got rid of keywords.
+
+A new file node.h does all definition of node information. To add a new
+field you need to edit only one table in node.h and recompile, The parser
+is now completeley table driven and has no internal knowledge of the
+node data fields.
+
+I have implemented mandatory fileds and allow the tables to specify that
+a filed muct have certain values.
+
+Parser.c compiles as an object module which exports two or three routines :
+
+struct Node *parse_files (int argc, char **argv) 
+   this will parse the file list and return a pointer to the parsed list
+
+struct Node*seek_node (struct Node nodes, char *s)
+   this will search the list 'nodes' for an id of 's' and return a node
+   pointer. Returns NULL if no node found.
+
+if DISPLAY is defined and additional routine is exported:
+
+void disp_node (struct Node *n)
+   which will print the node in canonical form to stdout.
+
+
+Compile parser.c with TESTING defined causes a complete program to be
+built which will parse all its input files and output all nodes in
+conanical form.
+
+
+
+Limitations
+Input lines are limited to 512 characters
+
+
+Bugs
+probably some 
+
+Todo (in no particular order)
+use btree to speed up the match_field
+process Info: field
+add more error handling
+makefile 
+
