@@ -21,7 +21,7 @@ A parser for the Computer History Graphing Project.
 
 =head1 ABSTRACT
 
-parsech is a unified parser for the Comp-hist project.
+parsech is a unified parser for the Comp-Hist project.
 It came about thanks to the fact that I was sick of 
 writing a new parser for each new format we decided to 
 support.
@@ -38,7 +38,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments: L<dump|/"B_dump_">, L<chml|/"B_chml_">, L<vcg|/"B_vcg_">, L<info|/"B_info_">, or L<biblio|/"B_biblio_">.
+take the following arguments: L<dump>, L<chml>, L<vcg>, L<info>, or L<biblio>.
 
 =item B<-v> version
 
@@ -47,6 +47,9 @@ This switch will print out the version and exit.
 =item B<-h> help
 
 This switch will print a brief help message and exit.
+
+
+=back
 
 =head1 INTERNALS
 
@@ -76,7 +79,7 @@ sub output (){
     else {print "Invalid output format: valid formats are dump, chml, vcg, and info\n"; exit;}
 }
 
-=head2 B<parse>
+=head2 parse
 
 The parse subroutine does the heavy lifting involved in parsing,
 and really should be the only function that ever touches the 
@@ -149,9 +152,9 @@ sub parse{
     }
 }
 
-=head2 B<minmaxyear> 
+=head2 minmaxyear
 
-This function reads in the %year hash (created by L<parse|/"B_parse_">) and sets the variables $maxyear and $minyear accordingly.
+This function reads in the %year hash (created by L<parse>) and sets the variables $maxyear and $minyear accordingly.
 
 =cut it out! that hurts!
 
@@ -163,9 +166,9 @@ sub dominmaxyear {
     }
 }
 
-=head2 B<dopos>
+=head2 dopos
 
-dopos reads in the nodes given to it as arguments and sets a vertical position for the node accordingly. Useful mostly for dot and L<vcg|/"B_vcg_"> output.
+dopos reads in the nodes given to it as arguments and sets a vertical position for the node accordingly. Useful mostly for dot and L<vcg> output.
 
 =cut , wrap, and print
 
@@ -184,9 +187,9 @@ sub dopos{
     }   
 }
 
-=head2 B<linkup>
+=head2 linkup
 
-linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by L<parse|/"B_parse_">.
+linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by L<parse>.
 
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
@@ -196,7 +199,7 @@ sub linkup {
     return 0;
 }
 
-=head2 B<dump>
+=head2 dump
 
 dump is a rough output format. All it does is sort the nodes and strip comments.
 
@@ -229,7 +232,7 @@ sub expnick {
     return "Written in" if $_[0] =~ /writtenin/;
 }
 
-=head2 B<chml>
+=head2 chml
 
 The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Markup Language).
 
@@ -263,7 +266,7 @@ sub chml{
     print("</tree>\n");
 }
 
-=head2 B<info>
+=head2 info
 
 The info routine parses the data and then, for each node with an Info: field, spits out the node name and its contents.
 
@@ -277,9 +280,9 @@ sub info{
     }
 }
 
-=head2 B<biblio>
+=head2 biblio
 
-This routine is quite similar in operation to the L<info|/"B_info_"> routine, except that it looks for Reference: fields.
+This routine is quite similar in operation to the L<info> routine, except that it looks for Reference: fields.
 
 =cut
 
@@ -291,7 +294,7 @@ sub biblio{
     }
 }
 
-=head2 B<setcolor>
+=head2 setcolor
 
 The setcolor routine turns types of nodes into colors and stores them in the %color hash. The rules for translation are below:
 
@@ -326,7 +329,7 @@ sub setcolor{
     }
 }
 
-=head2 B<setshape>
+=head2 setshape
 
 The setshape routine will set shapes for the nodes according to the following status/shape relationship:
 
@@ -361,9 +364,9 @@ sub setshape {
     }
 }
 
-=head2 B<setweights_vcg>
+=head2 setweights_vcg
 
-This lovely little function sets up the weights for L<vcg|/"B_vcg_"> to use. 
+This lovely little function sets up the weights for L<vcg> to use. 
 
 =cut
 
@@ -399,7 +402,7 @@ sub setweights_vcg {
     }
 }
 
-=head2 B<vcg>
+=head2 vcg
 
 The vcg subroutine is an adapted form of tovcg's "graph" routine. The changes are as follows:
 
