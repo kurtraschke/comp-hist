@@ -1,4 +1,4 @@
-SRCS = `find ./src/ -type f| sed /CVS.*/d`
+SRCS = `find ./src/ -type f| sed /CVS.*/d | echo \`cat\``
 
 all: dump vcg biblio info html chml browser dot dbm
 
