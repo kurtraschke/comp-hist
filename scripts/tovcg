@@ -1,74 +1,28 @@
 #!/usr/bin/perl -w
 
-#Tovcg, freedom from Graphviz
+#Tovcg, take 2
 
-$minyear = 3000;
-$maxyear = 0;
-$linkcnt = 0;
-$nodecnt = 0;
-$i = 0;
-
+print("graph: {\ntitle: \"The Computer Family Tree\"\n");
 while(<>){
-       if(/.*\#/){}
-       if(/(\S+)/){ $node = $1; }
-       if(/.*Name: (.*)/){$name{$node} = $1; $nodecnt++; next;}
-
-       if(/.*Successor to (.*)/){
-            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "10";
-            $linkcnt++;
-        }
-
-       if(/.*Code taken from (.*)/){
-            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "7";
-            $linkcnt++;
-        }
-
-       if(/.*Influenced by (.*)/){
-            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "4";
-            $linkcnt++;
-        }
-
-        if(/.*Type: hardware/){ $color{$node} = "yellow"; }
-        if(/.*Type: [OS|os]/){ $color{$node} = "blue"; }
-        if(/.*Type: standard/){ $color{$node} = "red"; }
-        if(/.*Type: language/){ $color{$node} = "green"; }
-
-        if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
-                               # Convert to year-mon
-            $yr=$1; $mon=$2; goto dodate;
-        }
-        if (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
-            $yr=$1; $mon=$2; goto dodate;
-        }
-        if (/.*Date:.*(\d\d\d\d)/) {
-            $yr=$1; $mon="00";
-dodate:
-        if ($yr > $maxyear) { $maxyear=$yr; }
-        if ($yr < $minyear) { $minyear=$yr; }
-        next;
-        }
-   }
-
-print("graph: { title: comp-hist\n\n");
-
-#draw the years
-for($i = $minyear; $i < $maxyear; $i++){
-    $j = $i + 1;
-    print("node: { title: $i }\n");
-    print("edge: { sourcename: $i targetname: $j }\n");
+    if(/.*\#/){ next; }
+    if(/^(\S+)/){ print("node: { title: \"$1\""); $node = $1; next; }
+    if(/.*Name: (.*)/){ print(" label: \"$1\"}\n"); next; }
+    if(/.*Aka (\S+)/) {
+        print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
+    }
+    if (/.*Successor to (\S+)/) {
+        print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 4 arrowsize: 20 }\n");
+    }
+    if (/.*Code taken from (\S+)/) {
+        print("edge: { sourcename: \"$1\" targetname: \"$node\" }\n");
+    }
+    if (/.*Influenced by (\S+)/) {
+        print("edge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
+    }
 }
-print("node: { title: $j }\n");
-print("\n");
-
-foreach $node (%name) {
-    print("node: { width: 138 height: 74 borderwidth: 7 title: \"$node\" label: \"$name{$node}\" color: $color{$node} } \n");
-}
-
-for($i = 0; $i <= $linkcnt; $i++){
-    print("edge: { sourcename: $from{$i} targetname: $to{$i} thickness: $weight{$i} arrowsize: 20 } \n");
- }
 
 print("\n}\n");
+
 
 
 
