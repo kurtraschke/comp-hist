@@ -55,3 +55,11 @@ mandrake-7.2
 	Reference: http://lwn.net/2000/features/Timeline/?month=all
 	Type: os
 	Successor to mandrake-7.0
+
+mandrake-8.0
+	Name: Mandrake Linux 8.0
+	Date: 2001-04-19
+	Reference: http://slashdot.org/article.pl?sid=01/04/19/1149203
+	Type: os
+	Successor to mandrake-7.2
+	Code taken from linux243
