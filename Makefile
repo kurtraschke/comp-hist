@@ -6,12 +6,14 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS)
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc
+
+SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS)
 
 all: comp-history.ps
 
 comp-history: 
-	perl -w scripts/todot $(CPM-SRCS) $(UNIX-SRCS) $(PARC-SRCS) $(ORD-SRCS) >comp-history
+	perl -w scripts/todot $(SRCS) >comp-history
 
 comp-history.ps: comp-history 
 	dot -Tps comp-history >comp-history.ps
