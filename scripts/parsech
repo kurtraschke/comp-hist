@@ -51,7 +51,7 @@ getopts('hvo:', \%opts); #Get our options for parsing
 
 #now, the case statements for what to do
 if( defined $opts{h} ){ &help; exit; }
-elsif( defined $opts{v} ){ print("Parsech, version 0.03, 2000-9-23\n"); exit; }
+elsif( defined $opts{v} ){ print("Parsech, version 1.5, 2000-10-4\n"); exit; }
 elsif( defined $opts{o} ) { &output; }
 else{ print("Invalid args. See -h for proper usage\n"); exit; }
 
