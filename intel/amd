@@ -43,12 +43,26 @@ k6
 	Influenced by ppro200
         Made by amd
 
+k6-2
+	Name: The AMD K6-2
+	Date: 1998-5-29
+	Reference: http://www.zdnet.com/zdnn/content/pcwo/0528/319604.html
+	Type: hardware
+	Successor to k6
+
+k6-III
+	Name: The AMD K6-III
+	Date: 1999-2
+	Reference: http://www.zdnet.co.uk/pcdir/content/1999/07/systems/gt_p3vk63/
+	Type: hardware
+	Successor to k6-2
+
 athlon
 	Name: The AMD Athlon
 	Date: 1999-6-23
 	Reference: Date on Slashdot announcement article
 	Type: hardware
-	Successor to k6
+	Successor to k6-III
 	Influenced by p3550
 
 duron
