@@ -1,0 +1,35 @@
+#########################
+#	Chorus		#
+#########################
+
+chorus
+	Name: Chorus
+	Date: 1986
+	Reference: Unix history tree
+	Type: OS
+	Code taken from sysVr2
+
+chorus3.2
+	Name: Chorus/MiX V3.2
+	Date: 1988
+	Reference: Unix history tree
+	Type: OS
+	Successor to chorus
+	Code taken from sysVr3.2
+
+chorussvr4
+	Name: Chorus/MiX SVR4
+	Date: 1991
+	Reference: Unix history tree
+	Code taken from sysVr4
+	Successor to chorus3.2
+
+chorussvr4a
+        Name: Chorus/MiX SVR4
+        Reference: Unix history tree
+        Successor to chorussvr4
+
+chorussvr4b
+        Name: Chorus/MiX SVR4
+        Reference: Unix history tree
+        Successor to chorussvr4a
