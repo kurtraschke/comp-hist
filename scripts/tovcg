@@ -2,23 +2,35 @@
 
 #Tovcg, take 2
 
+open(INFO, "+>> informatiton");
+
+$minyear = 3000;
+$maxyear = 0;
+
 print("graph: {\ntitle: \"The Computer Family Tree\"\n\n");
 while(<>){
     if(/.*\#/){ next; }
     if(/^(\S+)/){ $node = $1; next; }
     if(/.*Name: (.*)/){ $name{$node} = $1; next; }
-    if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2 - 1200;}
-    if(/.*Date.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2 - 1200;}
-    if(/.*Date.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12 - 1200; }
-    if(/.*Founded.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2 - 1200;}
-    if(/.*Founded.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2 - 1200;}
-    if(/.*Founded.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12 - 1200; }
+    if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
+    if(/.*Date.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; goto dodate;}
+    if(/.*Date.*(\d\d\d\d)/)
+    { $year{$node} = $1;
+    dodate:
+      if($year{$node} < $minyear){ $minyear = $year{$node}; }
+      if($year{$node} > $maxyear){ $maxyear = $year{$node}; }
+  }
+    if(/.*Founded.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
+    if(/.*Founded.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; goto dodate;}
+    if(/.*Founded.*(\d\d\d\d)/){ $year{$node} = $1; goto dodate; }
     if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
     if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
     if(/.*Type: language/){ $color{$node} = "color: green"; }
     if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
     if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
     if(/.*Type: company/){ $color{$node} = "color: cyan"; }
+
+    if(/.*Info: (.*)/){ print(INFO "Information on $name{$node}"); }
 
     if(/.*Aka (\S+)/) {
         print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
@@ -37,6 +49,17 @@ while(<>){
     }
     if(/.*Ran on (\S+)/){
         print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
+    }
+}
+
+foreach $node (keys(%year)){
+    if(!defined $month{$node}){
+	$year = $year{$node} - $minyear;
+	$vpos{$node} = $year * 12;
+    }
+    else{
+	$year = $year{$node} - $minyear;
+	$vpos{$node} = $year * 12 + $month{$node};
     }
 }
 
