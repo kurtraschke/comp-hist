@@ -81,7 +81,12 @@ appleiiip
         Type: hardware
 	Successor to appleiii
 
-
+appleiielc
+	Name: Macintosh LC Apple IIe Card
+	Date: 1991
+	Reference: http://www.acornworld.net/~jmayrand/IIeCard.html
+	Type: hardware
+	Code taken from appleiiep
 
 
 
