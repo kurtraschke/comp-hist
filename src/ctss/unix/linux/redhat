@@ -1,0 +1,75 @@
+#########################
+#	Red Hat		#
+#########################
+#The distro I'm writing this from
+
+redhat-01.0
+	Name: Red Hat Commercial Linux (Mother's Day) 1.0
+	Date: 1995-06-05
+	Reference: date on user's manual
+	Type: OS
+	Code taken from linux128
+
+redhat-01.1
+	Name: Red Hat Commercial Linux (Mother's Day) 1.1
+#	Date: needed
+	Reference: ftp site
+	Type: OS
+	Successor to redhat-01.0
+
+redhat-02.0
+	Name: Red Hat Linux 2.0
+#	Date: needed
+	Reference: ftp.redhat.com
+	Type: OS
+	Code taken from linux1213
+	Successor to redhat-01.1
+
+#other releases please
+
+redhat-05.1
+	Name: Red Hat Linux 5.1
+	Date: 1998-05-17
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2034
+	Successor to redhat-02.0
+
+redhat-05.2
+	Name: Red Hat Linux 5.2
+	Date: 1998-11-01
+	Reference: /. announcement
+	Type: OS
+	Successor to redhat-05.1
+
+redhat-06.0
+	Name: Red Hat Linux 6.0
+	Date: 1999-04-26
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux225
+	Successor to redhat-05.2
+
+redhat-06.1
+	Name: Red Hat Linux 6.1
+	Date: 1999-10-02
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2212
+	Successor to redhat-06.0
+
+redhat-06.2
+	Name: Red Hat Linux 6.2
+	Date: 2000-03-27
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2214
+	Successor to redhat-06.1
+
+redhat-07.0
+	Name: Red Hat Linux 7.0
+	Date: 2000-09-25
+	Reference: http://slashdot.org/article.pl?sid=00/09/25/1547247&mode=thread
+	Type: OS
+	Code taken from linux2216
+	Successor to redhat-06.2
