@@ -339,13 +339,20 @@ sub vcg{
     &setcolor;
     &setshape;
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
-    foreach $node (keys %name){
-	if(!defined $vpos{$node}){
-	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" color: $color{$node} shape: $shape{$node} }\n");
+    foreach $node (sort keys %name){
+	    print("\tnode: { title: \"$node\"");
+	    print(" label: \"$name{$node}\"");
+	    print(" vertical_order: $vpos{$node}") if defined $vpos{$node};
+	    print(" color: $color{$node}") if defined $color{$node};
+	    print(" shape: $shape{$node}") if defined $shape{$node};
+	    print(" }\n");
+	    foreach $linkto (@{$linkto{$node}}){
+		print("\tedge: { sourcename: \"$linkto\" targetname: \"$node\" }\n");
+	    }
 	}
-	else{
-	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} color: $color{$node} shape: $shape{$node} }\n");
-	}
-    }
     print("}\n");
 }
+
+
+
+
