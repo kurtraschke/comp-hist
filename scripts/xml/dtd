@@ -14,6 +14,6 @@
 <!ELEMENT type  (EMPTY)>
 <!ATTLIST type types (os|hardware|announcement|language)>
 <!ELEMENT status  (EMPTY)>
-<!ATTLIST status statuses (released|internal|prototype|research|contevol)>
+<!ATTLIST status status (released|internal|prototype|research|contevol)>
 <!ELEMENT link (id)+>
-<!ATTLIST link linktypes (aka|successor|codetaken|influenced|runson|writtenin)>
+<!ATTLIST link linktype (aka|successor|codetaken|influenced|runson|writtenin)>
