@@ -4,14 +4,20 @@ ans500
 	Name: Apple Network Server 500
 	Date: 1996-2
 	Type: hardware
-	Made by apple
 	Reference: http://www.erik.co.uk/ans/
-
 
 ans700
         Name: Apple Network Server 700
         Date: 1996-2
         Type: hardware
-        Made by apple
         Reference: http://www.erik.co.uk/ans/
 	Successor to ans500
+
+ans300
+	Name: Apple Network Server 300
+	Date: 1997
+	Type: hardware
+	Status: prototype
+	Reference: email with Chuck Goolsbee <chuck@rackhenge.net>
+	Successor to ans500
+	Successor to ans700
