@@ -1,6 +1,5 @@
 #!/usr/bin/perl -w
 
-
 =head1 NAME
 
 B<parsech> - Parse Comp-Hist
@@ -9,7 +8,7 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
     
-    parsech B<-o> [dump|xml|vcg|dot|html]
+    parsech B<-o> [dump]
     parsech B<-h>
     parsech B<-v>
 
@@ -50,12 +49,12 @@ This switch will print a brief help message and exit.
 
 =cut it out!
 
-getopts('o:hv', \%opts); #Get our options for parsing
+getopts('hvo:', \%opts); #Get our options for parsing
 
 #now, the case statements for what to do
 if( defined $opts{h} ){ &help; exit; }
-elsif( defined $opts{v} ){ print("Parsech, version 0.02, 2000-9-23\n"); exit; }
-elsif( defined $opts{o} ) { $output = $opts{o}; &$output; }
+elsif( defined $opts{v} ){ print("Parsech, version 0.03, 2000-9-23\n"); exit; }
+elsif( defined $opts{o} ) { $output = $opts{o}; &$output(ARGV); }
 else{ print("Invalid args. See -h for proper usage\n"); exit; }
 
 sub help {
@@ -98,9 +97,9 @@ The data fields are parsed as follows:
 sub parse{
 	s/\#.*//;
 
-	if(/^(\S+)/){ $node = $1; next; }
+	if(/^(\S+)/){ $node = $1; }
 
-	if(/^\bName: (.*)/){ $name{$node} = $1; next; }
+	if(/^\bName: (.*)/){ $name{$node} = $1; }
 
 	if(/^\bDate.*(\d\d\d\d)-(\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
 	if(/^\bDate.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2;}
@@ -130,13 +129,13 @@ sub parse{
 	if(/^\bStatus: research/i){ $status{$node} = "research"; }
 
 
-	if(/^\bAka (\S+)/) { linkup $node, $1, "aka"; }
-	if (/^\bSuccessor to (\S+)/) { linkup $node, $1, "successor"; }
-	if (/^\bCode taken from (\S+)/) { linkup $node, $1, "codetaken"; }
-	if (/^\bInfluenced by (\S+)/) { linkup $node, $1, "influenced"; }
-	if(/^\bRuns on (\S+)/){ linkup $node, $1, "runson"; }
-	if(/^\bRan on (\S+)/){ linkup $node $1, "runson"; }
-	if(/^\bWritten in (\S+)/){ linkup $node, $1, "writtenin"; }
+	if(/^\bAka (\S+)/) { linkup($node, $1, "aka"); }
+	if (/^\bSuccessor to (\S+)/) { linkup($node, $1, "successor"); }
+	if (/^\bCode taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+	if (/^\bInfluenced by (\S+)/) { linkup($node, $1, "influenced"); }
+	if(/^\bRuns on (\S+)/){ linkup($node, $1, "runson"); }
+	if(/^\bRan on (\S+)/){ linkup($node, $1, "runson"); }
+	if(/^\bWritten in (\S+)/){ linkup($node, $1, "writtenin"); }
 }
 
 =head2 B<minmaxyear> 
@@ -178,10 +177,11 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
-sub linkup{
+sub linkup ($ $ $) {
     push(@linkfrom, $_[0]);
     push(@linkto, $_[1]);
     push(@linkweight, $_[2]);
+    return 0;
 }
 
 =head2 B<dump>
@@ -191,8 +191,10 @@ B<dump> is a rough output format. All it does is sort the nodes and strip commen
 =cut ! that scene is all wrong!
 
 sub dump {
-    while(<>){
-	parse;
+    foreach (@{$_[0]}){
+	while(<>){
+	    parse;
+	}
     }
     foreach $node (sort keys %name){
 	print("$node\n");
@@ -221,10 +223,10 @@ B<expnick> expands the nicknames B<parse> assigns to certan fields.
 =cut
 
 sub expnick ($) {
-    return "Aka" if $_[0] == aka;
-    return "Successor to" if $_[0] == successor;
-    return "Code taken from" if $_[0] == codetaken;
-    return "Influenced by" if $_[0] == influenced;
-    return "Runs on" if $_[0] == runson;
-    return "Written in" if $_[0] == writtenin;
+    return "Aka" if $_[0] == "aka";
+    return "Successor to" if $_[0] == "successor";
+    return "Code taken from" if $_[0] == "codetaken";
+    return "Influenced by" if $_[0] == "influenced";
+    return "Runs on" if $_[0] == "runson";
+    return "Written in" if $_[0] == "writtenin";
 }
