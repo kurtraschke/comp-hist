@@ -1,118 +1,13 @@
-#################################
-#		Perl		#
-#################################
-#"There's more than one way to do it!"
+PCL-CVS release v2_9_9
 
-perl1
-	Name: The Practial Extraction and Reporting Language 1.000
-	Date: 1987-12-18
-	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
-	Type: language
-	Code taken from nawk
-	Code taken from sh
+Repository       : sj12fn@cvs.comp-hist.sourceforge.net:/cvsroot/comp-hist
+Working directory: /home/scott/ichs/comp-hist/src/ctss/unix/sh/
 
-perl1.001..10
-	Name: The Practical Extraction and Reporting Language 1.001..10
-	Date: 1988-01-30
-	Reference: the perl history manpage
-	Type: language
-	Successor to perl1
 
-perl1.011..14
-	Name: The Practical Extraction and Reporting Language 1.011..14
-	Date: 1988-02-02
-	Reference: the perl history manpage
-	Type: language
-	Successor to perl1.001..10
 
-perl2
-	Name: The Practial Extraction and Reporting Language 2.000
-	Date: 1988-06-05
-	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
-	Type: language
-	Successor to perl1.011..14
+In directory .:
+              Modified                perl
 
-perl2.001
-	Name: The Practical Extraction and Reporting Language 2.001
-	Date: 1988-06-28
-	Reference: the perl history manpage
-	Type: language
-	Successor to perl2
-
-perl3
-	Name: The Practial Extraction and Reporting Language 3.000
-	Date: 1989-10-18
-	Reference: http://perso.wanadoo.fr/levenez/lang/index.html 
-	Type: language
-	Successor to perl2.001
-
-perl3.001
-	Name: The Practical Extraction and Reporting Language 3.001
-	Date: 1989-10-26
-	Reference: The Perl History manpage
-	Type: language
-	Successor to perl3
-
-perl3.002..4
-	Name: The Practical Extraction and Reporting Language 3.002..4
-	Date: 1989-11-11
-	Reference: The Perl History manpage
-	Type: language
-	Successor to perl3.001
-
-perl3.005
-	Name: The Practical Extraction and Reporting Language 3.005
-	Date: 1989-11-18
-	Reference: The Perl History manpage
-	Type: language
-	Successor to perl3.003..4
-
-perl3.006..8
-	Name: The Practical Extraction and Reporting Language 3.006..8
-	Date: 1989-12-22
-	Reference: The Perl History manpage
-	Type: language
-	Successor to perl3.005
-
-perl3.009..13
-	Name: The Practical Extraction and Reporting Language 3.009..13
-	Date: 1990-03-02
-	Reference: The Perl History manpage
-	Type: language
-	Successor to perl3.006..8
-
-perl3.014
-	Name: Perl 3.014
-	Date: 1990-03-13
-	Reference: perlhist
-	Type: language
-	Successor to perl3.009..27
-
-perl4
-	Name: The Practial Extraction and Reporting Language 4.000
-	Date: 1991-03-21
-	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
-	Type: language
-	Successor to perl3.014
-
-perl5
-	Name: The Practial Extraction and Reporting Language 5.000
-	Date: 1994-10-18
-	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
-	Type: language
-	Successor to perl4
-
-perl5.005_50
-	Name: The Practial Extraction and Reporting Language 5.005_50
-	Date: 1998-07-26
-	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
-	Type: language
-	Successor to perl5
-
-perl5.6.0
-	Name: The Practial Extraction and Reporting Language 5.6.0
-	Date: 2000-03-28
-	Reference: http://perso.wanadoo.fr/levenez/lang/history.html#01
-	Type: language
-	Successor to perl5.005_50
+--------------------- End ---------------------
+-- last cmd: cvs -f update -P -d --
 
