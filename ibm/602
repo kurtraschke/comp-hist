@@ -100,12 +100,19 @@ stretch
 	Type: hardware
 	Successor to 610
 
+1401
+	Name: IBM 1401
+	Date: 1961
+	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
+	Type: hardware
+	Succcessor to 303
+
 1410
 	Name: International Business Machines 1410
 	Date: 1962
 	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
 	Type: hardware
-	Successor to 303
+	Successor to 1401
 
 
 
