@@ -28,7 +28,7 @@ MOTOROLA-SRCS = motorola/68xxx motorola/ppc
 
 SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS)
 
-all: comp-history-vcg biblio
+all: comp-history-vcg biblio info
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
@@ -40,6 +40,9 @@ clean:
 
 biblio:
 	cat $(SRCS) | scripts/biblio > bibliography
+
+info:
+	cat $(SRCS) | sh ./scripts/info > information
 
 comp-history-vcg:
 	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
