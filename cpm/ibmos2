@@ -1,0 +1,42 @@
+#########################
+#	IBM OS/2	#
+#########################
+#"A better Windows than Windows"
+
+ibmos/21
+	Name: International Business Machines Operating System/2 1.0
+	Date: 1987-12
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Code taken from msdos331
+	Ran on 80286
+
+ibmos/21.10se
+	Name: International Business Machines Operating System/2 1.10 Standard Edition
+	Date: 1988-10
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Info: This version of OS/2 was the first to include Presentation Manager, one of the best GUIs ever built.
+	Type: os
+	Successor to ibmos/21
+
+ibmos/21.10ee
+	Name: International Business Machines Operating System/2 1.10 Extended Edition
+	Date: 1989
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21
+
+ibmos/21.20se
+	Name: International Business Machines Operating System/2 1.20 Standard Edition
+	Date: 1989-11
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.10se
+
+ibmos/21.20ee
+	Name: International Business Machines Operating System/2 1.20 Extended Edition
+	Date: 1989-11
+	Reference: http://www.os2bbs.com/os2news/OS2History.html
+	Type: os
+	Successor to ibmos/21.10ee
+
