@@ -254,7 +254,7 @@ sub info{
     }
 }
 
-=head2 b<setcolor>
+=head2 B<setcolor>
 
 The setcolor routine turns types of nodes into colors and stores them in the %color hash. The rules for translation are below:
 
