@@ -28,4 +28,16 @@ makdrake-5.3
 
 mandrake-6.0
 	Name: Mandrake Linux 6.0
-	Date: 1999
+	Date: 1999-05
+	Reference: http://lwn.net/1999/features/Timeline/?month=all
+	Type: os
+	Successor to mandrake-5.3
+
+mandrake-6.1
+	Name: Mandrake Linux 6.1
+	Date: 1999-09
+	Reference: http://lwn.net/1999/features/Timeline/?month=all
+	Type: os
+	Sucessor to mandrake-6.0
+
+
