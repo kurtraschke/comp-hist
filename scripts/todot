@@ -26,6 +26,11 @@ while (<>) {
         $linkcnt++;
     }
 
+    if (/.*Runs on (\S+)/) {
+        $From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
+        $linkcnt++;
+    }
+
     if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
                                 # Convert to year-mon
         $yr=$1; $mon=$2; goto dodate;
