@@ -45,3 +45,11 @@ perl5.005_50
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
 	Successor to perl5
+
+perl5.6.0
+	Name: The Practial Extraction and Reporting Language 5.6.0
+	Date: 1000-3-28
+	Reference: http://perso.wanadoo.fr/levenez/lang/history.html#01
+	Type: language
+	Successor to perl5.005_50
+
