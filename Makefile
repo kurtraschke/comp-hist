@@ -62,7 +62,7 @@ SUN-SRCS = sun/corp
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS)
 
-all: comp-history-vcg biblio info html chml
+all: comp-history-vcg biblio info html chml browser
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
@@ -73,7 +73,7 @@ comp-history-dot.ps: comp-history-dot
 clean:
 	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-*
 	cd scripts/new ; make clean
-
+	cd scripts/browser ; make clean
 biblio:
 	perl scripts/parsech -o biblio $(SRCS) > bibliography
 
@@ -97,3 +97,9 @@ html:
 
 chml:
 	perl scripts/parsech -o chml $(SRCS) >comp-hist.xml
+
+browser:
+	cd scripts/browser ; ./configure ; make 
+
+browse: browser dump
+	cd scripts/browser/src ; ./browser ../../../dump
