@@ -2,6 +2,8 @@
 
 #Toxml, a new try at parsing
 
+print("<?xml version=\"1.0\" standalone=\"no\" ?>\n");
+print("<!DOCTYPE COMPHIST PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/chml.dtd\">\n\n");
 
 
 #Parser, a hack to allow the code generators to have one common parser
