@@ -113,7 +113,9 @@ sub parse{
 
 	if(/.*Name: (.*)/){ $name{$node} = $1; }
 
-	if(/.*[Date|Founded].*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+	if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+        if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+
 
 	if(/.*Reference: (.*)/){ $reference{$node} = $1; }
 
