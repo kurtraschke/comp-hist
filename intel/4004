@@ -1,0 +1,91 @@
+#####################
+#	4004	    #
+#####################
+#Every intel chip that's pre Pentium should be here.
+
+4004
+	Name: Intel 4004
+	Date: 1971-11-15
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+
+8008
+	Name: Intel 8008
+	Date: 1972-5
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 4004
+
+8085
+	Name: Intel 8085
+	Date: 1976-3
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 8008
+
+8086
+	Name: Intel 8086
+	Date: 1978-6-8
+	Reference:  http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 8085
+
+8088
+	Name: Intel 8088
+	Date: 1979-6
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 8085
+
+80186
+	Name: Intel 80186
+	Date: 1982
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 8085
+
+80286
+	Name: Intel 80286
+	Date: 1982-2
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 8088
+	Successor to 8086
+	Successor to 80186
+
+386dx
+	Name: Intel 80386 DX
+	Date: 1985-10-17
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 80286
+
+386sx
+	Name: Intel 80386 SX
+	Date: 1988-6-16
+	Successor to 80286
+
+486dx
+	Name: Intel 80486 DX
+	Date: 1989-5-10
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 386dx
+
+386sl
+	Name: Intel 80386 SL
+	Date: 1990-10-15
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 80286
+
+486sx
+	Name: Intel 80486
+	Date: 1991-5-22
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm 
+	Successor to 386sx
+
+dx2
+	Name: Intel DX2
+	Date: 1992-3-3
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 486sx
+
+486sl
+	Name: Intel 80486 SL
+	Date: 1992-11-9
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 386sl
+
+
+
