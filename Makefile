@@ -39,9 +39,7 @@ clean:
 	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf information
 
 biblio:
-	cat $(SRCS) >/tmp/biblio
-	scripts/biblio
-	rm /tmp/biblio
+	cat $(SRCS) | scripts/biblio > biblography
 
 comp-history-vcg:
 	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
