@@ -1,0 +1,12 @@
+#############################
+#	The Transistor	    #
+#############################
+
+transistor
+	Name: The Transistor
+	Date: 1947-12-23
+	Reference: http://www.pbs.org/transistor/background1/events/miraclemo.html
+	Type: other
+#DO NOT use that type up there for ANYTHING outside this file! Only I may decide when it may be used.
+#The only computer that may link to  the transistor is the TX-0
+
