@@ -62,12 +62,12 @@ piiie
 	Type: hardware
 	Successor to piiix
 
-palmiiiese
+piiiese
 	Name: Palm IIIe SE
 	Date: 1999-10-4
 	Reference: http://www.palmpower.com/issuesprint/issue199910/announce.html
 	Type: hardware
-	Successor to palmiiie
+	Successor to piiie
 
 pvx
 	Name: Palm Vx
@@ -75,3 +75,11 @@ pvx
 	Reference: http://www.palmpower.com/issuesprint/issue199910/announce.html
 	Type: hardware
 	Successor to pv
+
+piiixe
+	Name: Palm IIIxe
+	Date: 2000-2-22
+	Reference: http://www.palm.com/pr/022200a.html
+	Type: hardware
+	Successor to piiix
+
