@@ -1274,14 +1274,14 @@ linux220
 linux221
 	Name: Linux 2.2.1
 	Type: os
-	Date: 1999-28-01
+	Date: 1999-01-28
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux220
 
 linux222
 	Name: Linux 2.2.2
 	Type: os
-	Date: 1999-05-22
+	Date: 1999-02-22
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux221
 
