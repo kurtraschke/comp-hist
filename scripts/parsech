@@ -102,7 +102,6 @@ The data fields are parsed as follows:
 =cut yourself a slice of rug and start coding
 
 sub parse{
-    %status = ();
     foreach $file (@ARGV){
 	open($file, $file);
 	while(<$file>){
@@ -181,7 +180,6 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup {
-    @{$linkto{$_[0]}} = '';
     push(@{$linkto{$_[0]}}, $_[1]);
     push(@{$linkweight{$_[0]}}, $_[2]);
     return 0;
