@@ -1,0 +1,55 @@
+#################################
+#		Perl		#
+#################################
+#"There's more than one way to do it!"
+
+perl1
+	Name: The Practial Extraction and Reporting Language 1.000
+	Date: 1987-12-18
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Code taken from nawk
+	Code taken from sh
+
+perl2
+	Name: The Practial Extraction and Reporting Language 2.000
+	Date: 1988-01-05
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Successor to perl1
+
+perl3
+	Name: The Practial Extraction and Reporting Language 3.000
+	Date: 1989-10-18
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html 
+	Type: language
+	Successor to perl2
+
+perl4
+	Name: The Practial Extraction and Reporting Language 4.000
+	Date: 1991-03-21
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Successor to perl3
+
+perl5
+	Name: The Practial Extraction and Reporting Language 5.000
+	Date: 1994-10-18
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Successor to perl4
+
+perl5.005_50
+	Name: The Practial Extraction and Reporting Language 5.005_50
+	Date: 1998-07-26
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Successor to perl5
+
+perl5.6.0
+	Name: The Practial Extraction and Reporting Language 5.6.0
+	Date: 2000-03-28
+	Reference: http://perso.wanadoo.fr/levenez/lang/history.html#01
+	Type: language
+	Successor to perl5.005_50
+
