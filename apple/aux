@@ -4,10 +4,9 @@
 aux10
 	Name: Apple A/UX 1.0
 	Date: 1988-2
-	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html and http://www.ugu.com/sui/ugu/show?I=aux.help.faq&F=1111111111&G=Y
+	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html
+	Reference: http://www.ugu.com/sui/ugu/show?I=aux.help.faq&F=1111111111&G=Y
 	Type: os
-#Does anyone know what unixes A/UX was derived from?
-#Yes
 	Influenced by 4.3bsd
 	Influenced by sysVr2
 	Influenced by sysVr3
@@ -50,6 +49,3 @@ aux311
         Type: os
         Reference: http://www.faqs.org/faqs/aux-faq/part2/
         Successor to aux310
-
-
-
