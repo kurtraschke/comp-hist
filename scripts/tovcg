@@ -45,8 +45,8 @@ sub parse{
 	if(/.*Type: company/){ $color{$node} = "color: cyan"; }
 
 	if(/.*Status: released/){ $shape{$node} = "shape: box"; }
-	if(/.*Status: killed/){ $shape{$node} = "shape: triangle"; } 
-	if(/.*Status: Jobsed/){ $shape{$node} = "shape: triangle"; }
+	if(/.*Status: internal/){ $shape{$node} = "shape: triangle"; } 
+	if(/.*Status: continual evolution/){ $shape{$node} = "shape: triangle"; }
 	if(/.*Status: prototype/){ $shape{$node} = "shape: rhomb"; }
 	if(/.*Status: research/){ $shape{$node} = "shape: ellipse"; }
 
