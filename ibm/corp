@@ -1,0 +1,12 @@
+ctr
+	Name: Computing-Tabulating-Recording Company
+	Date: 1911
+	Reference: http://www.ibm.com/ibm/history/
+	Type: company
+
+ibm
+	Name: International Business Machines
+	Date: 1924
+	Reference: http://www.ibm.com/ibm/history/
+	Type: company
+	Successor to ctr
