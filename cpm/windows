@@ -9,12 +9,11 @@ imanager
 	Status: research
 	Reference: http://perso.wanadoo.fr/levenez/windows/
 	Type: OS
-	Reference:
 	Date: 1981-09
 
 winann
 	Name: Microsoft Windows announcement
-	Type: announce
+	Type: announcement
 	Reference: http://perso.wanadoo.fr/levenez/windows/
 	Date: 1983-11-10
 	Successor to imanager
@@ -29,6 +28,7 @@ windows101
 # This translates to "Stole from Mac System Software"
 	Influenced by alto
 	Ran on ibmpc
+	Successor to winann
 
 windows103
 	Name: Microsoft Windows 1.03
