@@ -1,4 +1,6 @@
-OK, for all you people wondering how to make your own node, here are directions. I will put this in the form of a sample node, anything in parenthesies is my description.
+#OK, for all you people wondering how to make your own node, 
+#here are directions. I will put this in the form of a sample 
+#node, anything in parenthesies is my description.
 
 fakenode (a node nickname)
 	Name: Fake Node (this is what will show up on the final graph)
