@@ -1,0 +1,16 @@
+#The BeBox, Be, Inc.'s only hardware product goes here.
+
+beboxdual60366
+	Name: BeBox Dual603-66
+	Date: 1995-10-03
+	Type: hardware
+	Reference: http://www-classic.be.com/aboutbe/pressreleases/95-10-03_Intro.html
+	Code taken from ppc603
+
+beboxdual603133
+        Name: BeBox Dual603-133
+        Date: 1995-10-03
+        Type: hardware
+	Reference: http://www-classic.be.com/aboutbe/pressreleases/96-08-05_BeBox133.html
+	Successor to beboxdual60366
+

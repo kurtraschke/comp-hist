@@ -1,0 +1,58 @@
+#The BeOS goes here.
+beosdr7
+	Name: BeOS for the BeBox\nBeOS DR7
+	Date: 1996-04
+	Reference: http://www.be.com/aboutbe/companybackground.html
+	Type: os
+	Ran on beboxdual60366
+	Influenced by posix.11994-10
+
+beosdr8
+        Name: BeOS for the PPC\nBeOS DR8
+        Date: 1996-08
+        Reference: http://www.be.com/aboutbe/companybackground.html
+        Type: os
+	Successor to beosdr7
+
+beospr
+        Name: BeOS Preview Release
+        Date: 1997-07-14
+        Reference: http://www.be.com/aboutbe/companybackground.html
+        Type: os
+	Successor to beosdr8
+
+beospr2
+        Name: BeOS Preview Release 2
+        Date: 1997-10
+        Reference: http://www.be.com/aboutbe/companybackground.html
+        Type: os
+        Successor to beospr
+
+beosr3
+        Name: BeOS Release 3
+        Date: 1998-03-20
+        Reference: http://www.be.com/aboutbe/companybackground.html
+        Type: os
+        Successor to beospr2
+
+beosr4
+        Name: BeOS Release 4
+        Date: 1998-11
+        Reference: http://www.be.com/aboutbe/companybackground.html
+        Type: os
+        Successor to beosr3
+
+beos4.5
+	Name: BeOS Release 4.5
+	Date: 1999-06-15
+	Reference: /. announcement
+	Type: OS
+	Successor to beosr4
+
+beos5
+	Name: BeOS Release 5
+	Date: 2000-03-28	
+	Reference: /. announcement
+	Type: OS
+	Successor to beos4.5
+
