@@ -15,7 +15,7 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
     
-    parsech B<-o> [dump|chml|info|vcg]
+    parsech B<-o> [dump|chml|info|vcg|biblio]
     parsech B<-h>
     parsech B<-v>
 
@@ -38,7 +38,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments: dump, chml, vcg, or info.
+take the following arguments: dump, chml, vcg, info, or biblio.
 
 =item B<-v> version
 
@@ -72,6 +72,7 @@ sub output (){
     elsif($opts{o} =~ /chml/){&chml;}
     elsif($opts{o} =~ /info/){&info;}
     elsif($opts{o} =~ /vcg/){&vcg;}
+    elsif($opts{o} =~ /biblio/){&biblio;}
     else {print "Invalid output format: valid formats are dump, chml, vcg, and info\n"; exit;}
 }
 
@@ -265,6 +266,14 @@ sub info{
     &parse;
     foreach $node (sort keys %info){
 	print("Info on $name{$node}: $info{$node}\n\n");
+    }
+}
+
+sub biblio{
+    my $node;
+    &parse;
+    foreach $node (sort keys %reference){
+        print("Bibliographical information for $name{$node}: $info{$reference}\n\n"); if defined $reference{$node};
     }
 }
 
