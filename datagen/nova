@@ -67,4 +67,5 @@ mpt100
 	Name: Data General MPT-100 workstation
 	Date: 1981
 	Reference: http://www.SimuLogics.com/machines.htm
+	Type: hardware
 	Successor to micronova
