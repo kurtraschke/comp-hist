@@ -6,11 +6,13 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx
 
 INTEL-SRCS = intel/4004 intel/pentium
 
-SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS)
+IBM-SRCS = ibmpc 
+
+SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS)
 
 all: comp-history.ps
 
