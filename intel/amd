@@ -1,0 +1,52 @@
+#################
+#	AMD	#
+#################
+#Intel's worst nightmare
+
+am386
+	Name: The AMD AM386
+	Date: 1991-3
+	Refernece: http://www.amd.com/about/history.html
+	Type: hardware
+	Influenced by 386sl
+	Influenced by 386dx
+	Influenced by 386sx
+	Made by amd
+
+am486
+	Name: The AMD AM486
+	Date: 1993-4
+	Reference: http://www.amd.com/about/history.html
+	Type: hardware
+	Successor to am386
+        Influenced by 486sl
+        Influenced by 486dx
+        Influenced by 486sx
+        Made by amd
+
+k5
+	Name: The AMD K5
+	Date: 1997-1
+	Reference: Date of K5 information sheet
+	Type: hardware
+	Successor to am486
+	Influenced by pentium6066
+
+
+k6
+	Name: The AMD K6
+	Date: 1997-4
+	Reference: http://www.pcguide.com/ref/cpu/fam/g6K6-c.html
+	Type: hardware
+	Successor to k5
+#	Successor to NexGen
+	Influenced by ppro200
+        Made by amd
+
+athlon
+	Name: The AMD Athlon
+	Date: 1999-6-23
+	Reference: Date on Slashdot announcement article
+	Type: hardware
+	Successor to k6
+	Influenced by p3550
