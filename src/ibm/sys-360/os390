@@ -1,0 +1,46 @@
+#########################
+#	OS/390		#
+#########################
+#number 3
+
+os390v2r5
+	Name: IBM OS/390 Version 2 Release 5
+	Date: 1998-02-24
+	Reference: http://www2.ibmlink.ibm.com/usalets&parms=H_298-049
+	Type: os
+#	Successor to os390v2r4
+
+os390v2r6
+	Name: IBM OS/390 Version 2 Release 6
+	Date: 1998-08-18
+	Reference: http://www2.ibmlink.ibm.com/usalets&parms=H_298-278
+	Type: os
+	Successor to os390v2r5
+
+os390v2r7
+	Name: IBM OS/390 Version 2 Release 7
+	Date: 1999-02-23
+	Reference: http://www-1.ibm.com/servers/eserver/zseries/zos/news.html
+	Type: os
+	Successor to os390v2r6
+
+os390v2r8
+	Name: IBM OS/390 Version 2 Release 8
+	Date: 1999-08-24
+	Reference: http://www2.ibmlink.ibm.com/usalets&parms=H_299-234
+	Type: os
+	Successor to os390v2r7
+
+os390v2r9
+	Name: IBM OS/390 Version 2 Release 9
+	Date: 2000-02-29
+	Reference: http://www2.ibmlink.ibm.com/usalets&parms=H_200-030
+	Type: os
+	Successor to os390v2r8
+
+os390v2r10
+	Name: IBM OS/390 Version 2 Release 10
+	Date: 2000-05-16
+	Reference: http://www.ibmlink.ibm.com/usalets&parms=H_200-145
+	Type: os
+	Successor to os390v2r9
