@@ -1,0 +1,10 @@
+#################
+#	PDP	#
+#################
+#DEC's early line of hardware
+
+pdp1
+	Name: The Programmed Data Processor, model 1
+	Date: 1959-12
+	Reference: http://www.digital.com/timeline/1959-2.htm
+	Type: hardware
