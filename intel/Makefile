@@ -1,4 +1,4 @@
-INTEL-SRCS = 4004
+INTEL-SRCS = 4004 pentium
 
 all: intel-history.ps
 
