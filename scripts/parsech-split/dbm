@@ -18,7 +18,7 @@ foreach my $key (keys %Linkto){
 }
 
 #Now, the hash tying
-foreach my $d qw(Name Year Month Day Reference Info Type Status Linkto){
+foreach my $d (qw(Name Year Month Day Reference Info Type Status Linkto)){
   tie %d, 'DB_File', "parsech_dbm/$d", O_CREAT, 0640;
   %d = %{$d};
   untie %d;
