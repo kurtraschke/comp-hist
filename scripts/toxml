@@ -1,97 +1,77 @@
 #!/usr/bin/perl -w
 
-#Toxml, a new try at parsing
+#Toxml, take 2
 
-print("<?xml version=\"1.0\" standalone=\"no\" ?>\n");
-print("<!DOCTYPE COMPHIST PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/chml.dtd\">\n\n");
+%files = ();
+@files = @ARGV;
+$name = '';
+@linkfrom = '';
+@linkto = '';
+@linkweight = '';
+%type = ();
+%year = ();
+%month = ();
+%day = ();
 
-
-#Parser, a hack to allow the code generators to have one common parser
-
-sub docomment {
-	s/#.*//;
+foreach $file (@files){
+    parse($file);
 }
 
-sub donode {
-    if(/(\S+)/){ my $node = $1;}
-    return $node;
-}
+&xml;
 
-sub dofield {
-    if(/^\b$_[0].? (.*)/){ my $field = $1; }
-    return $field;
-}
+sub parse{
+    my $file = $_[0];
+    open FILE, $file;
+    while(<FILE>){
+	s/\#.*//;
+	if(/^(\S+)/){ $node = $1; push( @{$files{$file}}, $1 ); next; }
+	if(/^\bName: (.*)/){ $name{$node} = $1; }
+	if(/^\bDate.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){ $year{$node} = $1; $month{$node} =  $2; $day{$node} = $3; }
 
-sub do1field {
-    if(/^\b$_[0]:? (\S+)/){ my $field = $1; }
-    return $field;
-}
+	if(/^\bType: ([hardware|os|language|standard|other|company|announcement])/i){ $type{$node} = $1; }
 
-sub doname {
-    my $name = dofield(Name);
-    return $name;
-}
+	if(/^\bReference: (.*)/){ $reference{$node} = $1; }
+  
+	if(/^\bInfo: (.*)/){ $info{$node} = $1; }
 
-sub dodate {
-    if(/^\b[Date|Founded].*(\d\d\d\d)-((\d\d)?-(\d\d)?)?/){
-	my $year = $1;
-	my $month = $3;
-	my $day = $4;
+	if(/^\bStatus: ([released|internal|prototype|research])/i){ $status{$node} = $1; }
+	if(/^\bStatus: continual evolution/i){ $status{$node} = "contev"; }
+
+	if(/^\bAka (\S+)/) { &linkup($node, $1, "aka"); }
+	if(/^\bSuccessor to (\S+)/) { &linkup($node, $1, "successor"); }
+	if(/^\bCode taken from (\S+)/) { &linkup($node, $1, "codetaken"); }
+	if(/^\bInfluenced by (\S+)/) { &linkup($node, $1, "influenced"); }
+	if(/^\bRuns on (\S+)/){ &linkup($node, $1, "runson"); }
+	if(/^\bRan on (\S+)/){ &linkup($node, $1, "ranon"); }
+	if(/^\bWritten in (\S+)/){ &linkup($node, $1, "writtenin"); }
     }
-    return ($year, $month, $day);
 }
 
-sub doref {
-    my $ref = dofield(Reference);
-    return $ref;
+sub linkup{
+    push(@{$linkto{$_[0]}}, $_[1]);
+    push(@{$linkweight{$_[0]}}, $_[2]);
 }
 
-sub doinfo {
-    my $info = dofield(Info);
-    return $info;
-}
+sub xml{
+    print("<!DOCTYPE TREE PUBLIC \"\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\"\n\n");
 
-sub dotype {
-    my $type = do1field(Type);
-    return $type;
-}
+    print("<tree>\n");
 
-sub dostatus {
-    my $status = do1field(Status);
-    return $status;
-}
+    foreach $node (sort keys %name){
+	print("<node>\n");
+	print("\t<id>$node</id>\n");
+	print("\t<name>$name{$node}</name>\n");
+	print("\t<date year=\"$year{$node}\" month=\"$month{$node}\" day=\"$day{$node}\" />\n");
+	print("\t<type types=\"$type{$node}\" />\n");
+	print("\t<status status=\"$status{$node}\" />\n") if defined $status{$node};
+	print("\t<reference>$reference{$node} </reference>\n");
+	print("\t<info>$info{$node} </info>\n");
+	for( $i=0; $i <= $#{$linkfrom{$node}}; $i++ ) {
+	    print("\t<link linktype=\"${$linkweight{$node}}[$i]\"><id>${$linkfrom{$node}}[$i]</link>\n");
+	}
+	print("</node>\n");
+    }
 
-sub doaka {
-    my $aka = do1field(Aka);
-    return $aka;
-}
+    print("</tree>\n");
 
-sub dosucc {
-    my $succ = do1field("Successor to");
-    return $succ;
-}
-
-sub doctf {
-    my $code = do1field("Code taken from");
-    return $code;
-}
-
-sub doinfluence {
-    my $inf = do1field("Influenced by");
-    return $inf;
-}
-
-sub doruns {
-    my $runs = do1field("Runs on");
-    return $runs;
-}
-
-sub doran {
-    my $ran = do1field("Ran on");
-    return $ran;
-}
-
-sub dowritten {
-    my $written = do1field("Written in");
-    return $written;
 }
