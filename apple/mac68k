@@ -1,1 +1,27 @@
-Here's where the 68k Macs go.
+#Here's where the 68k Macs go.
+
+mac128k
+	Name: Macintosh 128k
+	Date: 1984-1
+	Reference:  Macworld Mac and Power Mac Secrets
+	Code taken from lisa2
+	Influenced by star
+
+mac512k
+	Name: Macintosh 512k
+	Date: 1984-9-10
+	Reference:  Macworld Mac and Power Mac Secrets
+	Successor to mac128k
+
+mac512ke
+        Name: Macintosh 512ke
+        Date: 1986-4
+        Reference:  Macworld Mac and Power Mac Secrets
+        Successor to mac512k
+
+macplus
+        Name: Macintosh Plus
+        Date: 1986-1
+        Reference:  Macworld Mac and Power Mac Secrets
+        Successor to mac512k
+
