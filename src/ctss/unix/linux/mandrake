@@ -7,7 +7,7 @@ mandrake-5.1
 	Date: 1998-07
 	Reference: http://lwn.net/1999/features/1998timeline/
 	Type: os
-	Code taken from redhat-05.1
+	Code taken from redhat-5.1
 #	Kernel?
 
 mandrake-5.2
@@ -15,7 +15,7 @@ mandrake-5.2
 	Date: 1998-12
 	Reference: http://lwn.net/1999/features/1998timeline/
 	Type: os
-	Code taken from redhat-05.2
+	Code taken from redhat-5.2
 	Successor to mandrake-5.1
 
 mandrake-5.3
