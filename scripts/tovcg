@@ -23,7 +23,7 @@ sub parse{
     my $file = $_[0];
     open FILE, $file;
     while(<FILE>){
-	if(/\#.*/){ next; }
+	s/\#.*//;
 	if(/^(\S+)/){ $node = $1; push( @{$files{$file}}, $1 ); next; }
 	if(/.*Name: (.*)/){ $name{$node} = $1; next; }
 	if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
