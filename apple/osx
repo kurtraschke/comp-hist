@@ -7,6 +7,13 @@ osxserv10
 	Code taken from darwin01
 #	Code taken from macos9
 
+#There was no MOSXS 1.1!
+osxserv12
+	Name: Apple Mac OS X Server 1.2
+	Date: 2000-1
+	Reference: http://www.stepwise.com/Articles/FirstImpressions/MacOSXServer1.2/index.html
+	Successor to osxserv10
+
 osxdp4
 	Name: Apple Mac OS X DP4
 	Date: 2000-3
