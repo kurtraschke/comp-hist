@@ -3,10 +3,10 @@
 #Tovcg.exp, the next generation of tovcg
 
 %files = ();
-@files = @AGRV;
+@files = @ARGV;
 $minyear = 3000000;
 
-print("graph: {\ntitle: \"The Computer Family Tree\"\n\n");
+print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\tlayoutalgorithm: tree\n");
 
 foreach $file (@files){
     parse($file);
@@ -14,6 +14,10 @@ foreach $file (@files){
 
 foreach $file (@files){
     dopos($file);
+}
+
+foreach $file (@file){
+    graph($file);
 }
 
 print("\n}\n");
@@ -44,25 +48,25 @@ sub parse{
 	if(/.*Type: company/){ $color{$node} = "color: cyan"; }
 	
 	if(/.*Aka (\S+)/) {
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
 	}
 	if (/.*Successor to (\S+)/) {
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 4 arrowsize: 20 }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 4 arrowsize: 20 }\n");
 	}
 	if (/.*Code taken from (\S+)/) {
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" }\n");
 	}
 	if (/.*Influenced by (\S+)/) {
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
 	}
 	if(/.*Runs on (\S+)/){
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
 	}
 	if(/.*Ran on (\S+)/){
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
 	}
 	if(/.*Made by (\S+)/){
-	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 10 }\n");
+	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 10 }\n");
 	}
     }
 }
@@ -79,6 +83,21 @@ sub dopos{
 	    $vpos{$node} = $year * 12 + $month{$node};
 	}
     }
+   
+sub graph{
+    $file = $_[0];
+    print("\tgraph: {\n\t\ttitle: \"history in $file\"\n\t\tlayoutalgorithm: tree\n");
+    foreach $node (@{$files{$file}}){
+	if(!defined $vpos{$node}){
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} }\n");
+	}
+	else{
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} }\n");
+	}
+    }
+    print("\n}\n");
+}
+
 }
 
 
