@@ -16,7 +16,7 @@ SINCLAIR-SRCS = sinclair
 
 TRANSISTOR-SRCS = transistor
 
-CTSS-SRCS = ctss/ctss $(UNIX-SRCS)
+CTSS-SRCS = ctss/ctss ctss/multics $(UNIX-SRCS)
 
 DEC-SRCS = dec/pdp dec/tops dec/rsts dec/pdp11 dec/corp
 
