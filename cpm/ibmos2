@@ -41,7 +41,7 @@ ibmos/21.20ee
 	Successor to ibmos/21.10ee
 
 ibmos/21.30se
-	Name: IBM OS/2 1.30 SE
+	Name: International Business Machines Operating System/2 1.30 Standard Edition
 	Date: 1991
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Info: The schism between IBM and Microsoft over OS/2 had come in 1990, so IBM alone was responsible for this and all future OS/2s. As a result, OS/2 1.30 was smaller, faster, and easier than the earlier versions of OS/2.
@@ -49,14 +49,14 @@ ibmos/21.30se
 	Successor to ibmos/21.20se
 
 ibmos/21.30ee
-	Name: IBM OS/2 1.30 EE
+	Name: International Business Machines Operating System/2 1.30 Extended Edition
 	Date: 1991
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
 	Successor to ibmos/21.20ee
 
 ibmos/22
-	Name: IBM OS/2 2.0
+	Name: International Business Machines Operating System/2 2.0
 	Date: 1992-04 #"Spring" '92
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
@@ -65,14 +65,14 @@ ibmos/22
 	Ran on 80386
 
 ibmos/22.10
-	Name: IBM OS/2 2.10
+	Name: International Business Machines Operating System/2 2.10
 	Date: 1993-05
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
 	Successor to ibmos/22
 
 ibmos/2windows2.11
-	Name: IBM OS/2 for Windows 2.11
+	Name: International Business Machines Operating System/2 for Windows 2.11
 	Date: 1993-11 #"Late" '93
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
@@ -80,14 +80,14 @@ ibmos/2windows2.11
 	Code taken from ibmos/22.10
 
 ibmos/2windowswarp3
-	Name: IBM OS/2 Warp for Windows
+	Name: International Business Machines Operating System/2 Warp for Windows
 	Date: 1994-10
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
 	Successor to ibmos/2windows2.11
 
 ibmos/2warp3
-	Name: IBM OS/2 Warp 3.0
+	Name: International Business Machines Operating System/2 Warp 3.0
 	Date: 1994-10
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
@@ -95,21 +95,21 @@ ibmos/2warp3
 	Successor to ibmos/22.10
 
 ibmos/2warpconnect
-	Name: IBM OS/2 Warp Connect
+	Name: International Business Machines Operating System/2 Warp Connect
 	Date: 1995
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
 	Successor to ibmos/2warp3
 
 ibmos/2warpserver
-	Name: IBM OS/2 Warp Server
+	Name: International Business Machines Operating System/2 Warp Server
 	Date: 1996
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
 	Successor to ibmos/2warp3
 
 ibmos/2warp4
-	Name: IBM OS/2 Warp 4.0
+	Name: International Business Machines Operating System/2 Warp 4.0
 	Date: 1996-09
 	Reference: http://www.os2bbs.com/os2news/OS2History.html
 	Type: os
