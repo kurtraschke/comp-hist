@@ -29,3 +29,32 @@ darwin10
         Type: OS
         Successor to darwin03
 	Code taken from freebsd3.4
+
+darwin101
+	Name: Apple Darwin 1.0.1
+	Reference: #None specifically, but I've seen pages that suggest that it exists.
+	Type: OS
+	Successor to darwin10
+
+darwin102
+	Name: Darwin 1.0.2
+	Date: 2000-4-14
+	Reference: http://www.darwinos.org
+	Type: os
+	Successor to darwin101
+
+darwin12
+	Name: Darwin 1.2
+	Date: 2000-11-15
+	Reference: http://www.publicsource.apple.com/
+	Type: os
+	Successor to darwin102
+	Code taken from mosxpb
+
+darwin121
+	Name: Darwin 1.2.1
+	Date: 2000-11-16
+	Reference: http://osx.macnn.com/
+	Type: os
+	Successor to darwin121
+
