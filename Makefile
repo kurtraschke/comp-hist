@@ -6,7 +6,7 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux
 
 INTEL-SRCS = intel/4004 intel/pentium
 
