@@ -1,7 +1,7 @@
 #########################################################################
 #			System III and System V				#
 #########################################################################
-# $Revision: 1.6 $ $Date: 2000/08/23 18:04:44 $
+# $Revision: 1.7 $ $Date: 2000/08/23 19:20:53 $
 #
 # [wkt] The dates and relationships in here are vague. Can anyone help
 # to improve them? Eric Fischer <eric@fudge.uchicago.edu> has given
@@ -28,7 +28,7 @@ sysV
 	Date: 1983-01
 	Reference: Unix System V Release Description, title page
         Type: OS
-	Successor to unixsystem3 1000
+	Successor to sysIV 1000
 	
 sysVr2
 	Name: Unix System VR2

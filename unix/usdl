@@ -1,7 +1,7 @@
 #########################################################################
 #			Some USDL versions				#
 #########################################################################
-# $Revision: 1.5 $ $Date: 2000/08/23 17:59:38 $
+# $Revision: 1.6 $ $Date: 2000/08/23 19:17:08 $
 #
 pwb1.0
 	Name: PWB/UNIX 1.0
@@ -106,7 +106,7 @@ ts5.0
 	Date: 1982
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
-	Successor to ts4.0
+	Successor to ts4.0.1
 
 ts5.2
 	Name: TS 5.2
