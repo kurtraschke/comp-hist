@@ -50,6 +50,7 @@ while(<>){
     }
     if(/.*Made by (\S+)/){
 	print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 10 }\n");
+    }
 }
 
 foreach $node (keys(%year)){
