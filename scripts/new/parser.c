@@ -24,42 +24,42 @@ int
 static void out_of_memory (char *proc)
 {
 	fprintf (stderr, "Out of memory %s %s[%d] - exiting\n", proc, 
-	    current_file, current_line);	
+		current_file, current_line);	
 	exit (10);
 }
 	
 
 static char *dupstr (const char *s)
 {
-    static int
-        stringcount = 0;
+	static int
+		stringcount = 0;
 
-    static char*
-        stringpool;
+	static char*
+		stringpool;
 
-    char 
-        *t;
+	char 
+		*t;
 
-    int
-        sl = strlen (s) + 1;
+	int
+		sl = strlen (s) + 1;
 
-    if (sl > stringcount)
-    {
-        stringpool = (char *) malloc (stringcount = STRINGPOOL);
+	if (sl > stringcount)
+	{
+		stringpool = (char *) malloc (stringcount = STRINGPOOL);
 
-        if (stringpool == NULL)
-            out_of_memory ("allocating stringpool");
-    }
+		if (stringpool == NULL)
+			out_of_memory ("allocating stringpool");
+	}
 
-    t = stringpool;
-    stringpool += sl;
-    stringcount -= sl;
+	t = stringpool;
+	stringpool += sl;
+	stringcount -= sl;
 
 	return strcpy (t, s);
 }
 
 
-void error (int severity, char *errmsg)
+void error (int severity, char *nodeid, char *errmsg)
 {
 	char
 		*lp = current_line;
@@ -67,15 +67,21 @@ void error (int severity, char *errmsg)
 	if (current_pos)
 	{
 		fprintf (stderr, "\n%s", current_line);
-
+		
+		if (*(current_line + strlen (current_line) - 1) != '\n')
+			fprintf (stderr, "\n");
+		
 		while (lp < current_pos)
 			fprintf (stderr, "%c", (*lp++ == '\t') ? '\t' : ' ');
 	}
-
+	
 	fprintf (stderr, "^\n");
 		
 	if (current_file)
 		fprintf (stderr, "%s[%d] ", current_file, line_count);
+
+	if (nodeid)
+			fprintf (stderr, "in node %s, ", nodeid);
 
 	fprintf (stderr, "%s\n", errmsg);
 
@@ -99,7 +105,7 @@ static int short get_line (char *s, FILE *f)
 	while (0 < fgets (s, LINE_LENGTH, f))
 	{
 		if (!feof (f) && (*(s + strlen (s) - 1) != '\n'))
-			error (0, "Line too long");
+			error (0, NULL, "Line too long");
 		else
 			line_count++;
 
@@ -134,70 +140,84 @@ static void skip_spaces (void)
 }
 
 
-static void read_date (struct Date **d)
+static void read_date (char *nodeid, struct Date **d)
 {
 	/* reads a date from current_pos */
-
+	
 	int
-		n;
+		year = 0,
+		month = 0,
+		day = 0;
 
-    static struct Date
-        *datepool;
+	static struct Date
+		*datepool;
 
-    static int
-        datecount = 0;
+	static int
+		datecount = 0;
 
 	skip_spaces ();
 
-
-    if (datecount == 0)
-    {
-        datepool = (struct Date *) malloc ((datecount = DATEPOOL) * 
-            sizeof (struct Date));
-
-        if (datepool == NULL)
-            out_of_memory ("allocating datepool");
-    }
-
-    *d = datepool++;
-    datecount--;
-
-	(*d)->month = (*d)->day = 0;
-
-	n = 0;
-	while (isdigit (*current_pos))
-		n = (n * 10) + (*current_pos++ - '0');
-
-	if ((n < 1900) || (n > MAX_YEAR))
-		error (0, "Year out of range");
-
-	(*d)->year = n;
-
-	if ((*current_pos == '-') || (*current_pos == '/'))
+	if (isdigit (*current_pos))
 	{
-		current_pos++;
-		n = 0;
 		while (isdigit (*current_pos))
-			n = n * 10 + (*current_pos++ - '0');
+			year = (year * 10) + (*current_pos++ - '0');
 
-		if ((n < 1) || (n > 12))
-			error (0, "Month out of range");
-
-		(*d)->month = n;
-
-		if ((*current_pos == '-') || (*current_pos == '/'))
+		if ((year < 1900) || (year > MAX_YEAR))
 		{
-			current_pos++;
-			n = 0;
-			while (isdigit (*current_pos))
-				n = n * 10 + (*current_pos++ - '0');
-
-			if ((n < 1) || (n > 31))
-				error (0, "Day out of range");
-
-			(*d)->day = n;
+			error (0, nodeid, "Year out of range");
+			return;
 		}
+
+		skip_spaces ();
+		if ((*current_pos == '-') || (*current_pos == '/'))
+			current_pos++;
+		if (isdigit (*current_pos))
+		{
+			while (isdigit (*current_pos))
+				month = month * 10 + (*current_pos++ - '0');
+
+			if ((month < 1) || (month > 12))
+			{
+				error (0, nodeid, "Month out of range");
+				month = 0;
+			}
+	
+			skip_spaces ();
+			if ((*current_pos == '-') || (*current_pos == '/'))
+				current_pos++;
+			if (isdigit (*current_pos))
+			{	
+				while (isdigit (*current_pos))
+					day = day * 10 + (*current_pos++ - '0');
+
+				if ((day < 1) || (day > 31))
+				{
+					error (0, nodeid, "Day out of range");
+					day = 0;
+				}
+			}
+		}
+	
+		if (datecount == 0)
+		{
+			datepool = (struct Date *) malloc ((datecount = DATEPOOL) * 
+				sizeof (struct Date));
+
+			if (datepool == NULL)
+				out_of_memory ("allocating datepool");
+		}
+
+		*d = datepool++;
+		datecount--;
+
+		(*d)->year = year;
+		(*d)->month = month;
+		(*d)->day = day;
 	}
+
+	skip_spaces ();
+	if ((*current_pos != '\n') && (*current_pos != '#') && *current_pos)
+		error (0, nodeid, "invalid date format");
 }
 
 
@@ -211,46 +231,48 @@ static struct Node *add_new_node (struct Node *list)
 	int
 		fn;
 
-    char
-        savech,
-        *ts;
+	char
+		savech,
+		*cs,
+		*ts;
 
-    static int
-        nodecount = 0;
+	static int
+		nodecount = 0;
 
-    static struct Node
-        *nodepool;
+	static struct Node
+		*nodepool;
 
-    if (nodecount == 0)
-    {
-        nodepool = (struct Node *) malloc ((nodecount = NODEPOOL) *
-            sizeof (struct Node));
+	if (nodecount == 0)
+	{
+   	nodepool = (struct Node *) malloc ((nodecount = NODEPOOL) *
+   		sizeof (struct Node));
 
-        if (nodepool == NULL)
-            out_of_memory ("nodepool allocation");
-    }
+   	if (nodepool == NULL)
+   		out_of_memory ("nodepool allocation");
+   }
 
-    tmp = nodepool++;
-    nodecount--;
+   tmp = nodepool++;
+   nodecount--;
+  
+   cs = ts = current_pos;
+   while (*ts && (*ts != '#') && (*ts != '\r') && (*ts != '\n'))
+		if ((' ' == *ts) || (*ts == '\t'))
+			ts++;
+		else   
+	 		*cs++ = *ts++;
 
-    ts = current_pos;
-    while (*ts && (*ts != '#') && !isspace (*ts))
-        ts++;
+   *cs = '\0';
+   tmp->id = dupstr (current_pos);
 
-    savech = *ts;
-    *ts = '\0';
-    tmp->id = dupstr (current_pos);
-    *ts = savech;
-
-	if (seek_node (list, tmp->id))
-		error (0, "Duplicate node id");
+   if (seek_node (list, tmp->id))
+   	error (0, NULL, "Duplicate node id");
 		
-	tmp->next = list;
+   tmp->next = list;
 
-	/* Clear all field contnets */
+   /* Clear all field contnets */
 
-	for (fn = 0; fields[fn].typ != UNK; fn++)
-	   tmp->field[fn] = NULL;
+   for (fn = 0; fields[fn].typ != UNK; fn++)
+   	tmp->field[fn] = NULL;
 
 	return tmp;
 }
@@ -259,7 +281,6 @@ static struct Node *add_new_node (struct Node *list)
 void parse_line (struct Node *node)
 {
 	/* the main function which analyzes a field line */
-
 
 	/* determine if there is an identifier which is a prefix of s */
 	/* returns the position of the first character after the field name */
@@ -273,158 +294,182 @@ void parse_line (struct Node *node)
 
 	char
 		savech,
-        *s,
+		*s,
 		*ts,
 		**vv;
 		
-    struct NodeLink
-        *nl;
+	struct NodeLink
+		*nl;
 
-    static struct NodeLink
-        *nodelinkpool;
+	static struct NodeLink
+		*nodelinkpool;
 
-    static int
-        nodelinkcount = 0;
+	static int
+		nodelinkcount = 0;
 
 
 	skip_spaces ();
 
-    /* Find the field corresponding to this input line */
+	/* Find the field corresponding to this input line */
 
-    while (1)
+   
+	while (1)
 	{
-        /* We start i at 0, so the pre-inc will check field[1] first.
-           If we do not find the field id in this line and the client
-           asks to store undefined fileds then we set i to 0
-         */
+		/* We start i at 0, so the pre-inc will check field[1] first.
+			If we do not find the field id in this line and the client
+			asks to store undefined fileds then we set i to 0
+		 */
 
-	    if (0 == (n = strlen (fields[++i].fname)))
-	    {
-            /* Check if this is an ignore field */
+		if (0 == (n = strlen (fields[++i].fname)))
+		{
+			/* Check if this is an ignore field */
             
-            vv = ignore_fields;
-            while (*vv)
-            {
-                if (strncmp (current_pos, *vv, strlen (*vv)) == 0)
-                    return;
-                vv++;
-            }
+			vv = ignore_fields;
+			while (*vv)
+			{
+				if (strncmp (current_pos, *vv, strlen (*vv)) == 0)
+					return;
+				vv++;
+			}
 
-            #if     UNKNOWNFIELDS == -1  /* Declare error */    
-                error (0, "Unknown field definition");
-                return;
-            #elsif  UNKNOWNFIELDS == 0   /* Silently ignore */
-                return;
-            #else                        /* Save in MSTR field[0] */
-                i = 0;
-                break;
-            #endif
-        }
+			#if     UNKNOWNFIELDS == -1  /* Declare error */    
+				error (0, node->id, "Unknown field definition");
+				return;
+			#elsif  UNKNOWNFIELDS == 0   /* Silently ignore */
+				return;
+			#else                        /* Save in MSTR field[0] */
+				i = 0;
+				break;
+			#endif
+		}
 		else if (0 == strncmp (current_pos, fields[i].fname, n))
-            break;
-    }
+			break;
+	}
 
-    /* i is the field index, n is the length of the field id string */
+	/* i is the field index, n is the length of the field id string */
 
 	current_pos += n;
 
+	
 	if (((fields[i].flags & ALLOWDUPS) == 0) && node->field[i])
-        error (0, "Duplicate field");
+		error (0, node->id, "Duplicate field");
 
-  	skip_spaces ();
-    ts = current_pos;
+	skip_spaces ();
+	ts = current_pos;
 
-   	/* Find end of line, # or \n */
 
-   	while (*ts && (*ts != '#') && (*ts != '\n'))
-   		ts++;
+	if (fields[i].typ == LINK)
+	{
+		/* For LINK fields, we delete any whitespace in the data portion of
+			the field, this provides some flexibility in specifying node 
+			links
+		 */
 
-   	/* Trim any trailing whitespace */
+		char
+		*cs = ts;
 
-   	ts--;
-   	while (((*ts == '\t') || (*ts == ' ')) && (ts > current_pos))
-   		ts--;
+		while (*cs && (*cs != '#') && (*cs != '\n') && (*ts != '\r'))
+			if ((' ' == *cs) || (*cs == '\t'))
+				cs++;
+			else
+				*ts++ = *cs++;
+	}
+	else
+	{
+		/* Find end of line, # or \n */
 
-   	/* And terminate the string */
+		while (*ts && (*ts != '#') && (*ts != '\n') && (*ts != '\r'))
+			ts++;
 
-   	savech = *++ts;
-   	*ts = '\0';
+		/* Trim any trailing whitespace */
 
-    switch (fields[i].typ)
+		ts--;
+		while (((*ts == '\t') || (*ts == ' ')) && (ts >= current_pos))
+			ts--;
+		ts++;
+	}
+
+	/* And terminate the string */
+
+	savech = *ts;
+	*ts = '\0';
+
+	switch (fields[i].typ)
 	{
 	case STR:
-        (char *)(node->field[i]) = dupstr (current_pos);
-        *(current_pos = ts) = savech;
-        return;
+		(char *)(node->field[i]) = dupstr (current_pos);
+		*(current_pos = ts) = savech;
+		return;
 
 	case LINK:
-    case MSTR:
-        /* All link fields are implemented using NodeLinks which
-           allow multiple links.
-         */
+	case MSTR:
+		/* All link fields are implemented using NodeLinks which
+			allow multiple links.
+		 */
               
-        if (nodelinkcount == 0)
-        {
-           nodelinkpool = (struct NodeLink *) malloc (
-               (nodelinkcount = NODELINKPOOL) * sizeof (struct NodeLink));
+		if (nodelinkcount == 0)
+		{
+			nodelinkpool = (struct NodeLink *) malloc (
+				(nodelinkcount = NODELINKPOOL) * sizeof (struct NodeLink));
 
-           if (nodelinkpool == NULL)
-              out_of_memory ("allocating nodelinkpool");
-        }
+			if (nodelinkpool == NULL)
+				out_of_memory ("allocating nodelinkpool");
+		}
 
-        /* Here we add the new nodelink to the end of the chain,
-           or to the head if it is empty. Yes it is easier to add
-           to the head but this way ensures that for multiple field
-           specifications, the order in the list is the same as the
-           order in the file.
-         */
+		/* Here we add the new nodelink to the end of the chain,
+			or to the head if it is empty. Yes it is easier to add
+			to the head but this way ensures that for multiple field
+			specifications, the order in the list is the same as the
+			order in the file.
+		 */
 
-        if ((nl = (struct NodeLink *)(node->field[i])) == NULL)
-            nl = (struct NodeLink *)(node->field[i]) = nodelinkpool++;
-        else
-        {
-            while (nl->next)
-               nl = nl->next;
+        
+		if ((nl = (struct NodeLink *)(node->field[i])) == NULL)
+			nl = (struct NodeLink *)(node->field[i]) = nodelinkpool++;
+		else
+		{
+			while (nl->next)
+				nl = nl->next;
 
-            nl->next = nodelinkpool++;
-            nl = nl->next;
-        }
+			nl->next = nodelinkpool++;
+			nl = nl->next;
+		}
 
-        nl->next = NULL;
-        nodelinkcount--;
+		nl->next = NULL;
+		nodelinkcount--;
          
-        (char *)(nl->node) = dupstr (current_pos);
-        *(current_pos = ts) = savech;
+		(char *)(nl->node) = dupstr (current_pos);
+		*(current_pos = ts) = savech;
 
-    	return;
+		return;
 
 	case DATE:
-		read_date ((struct Date **)&(node->field[i]));
-        *ts = savech;
+		read_date (node->id, (struct Date **)&(node->field[i]));
+		*ts = savech;
 
-        return;
+		return;
 
 	case ENUM:
 		vv = fields[i].values;
 
 		while (1)
 		{
-            if (*vv == NULL)   /* End of valid values */
-            {
-      	    	error (0, (*++vv == NULL) ? "Invalid field value" : 
-      	    	    "Invalid field value - using default");
+			if (*vv == NULL)   /* End of valid values */
+			{
+				error (0, node->id, (*++vv == NULL) ? "Invalid field value" : 
+					"Invalid field value - using default");
 
-                break;
-            }
+				break;
+			}
 
-   			if (strcmp (*vv, current_pos) == 0)
+			if (strcmp (*vv, current_pos) == 0)
 				break;
 
-            vv++;
+			vv++;
 		}
 
 		(char *)(node->field[i]) = *vv;
-           return;
+		return;
 	}
 }
 
@@ -465,7 +510,7 @@ struct Node *parse_files (int argc, char **argv)
 	while (argc--)  /* For each requested file */
 	{
 		if ((f = fopen (*argv, "r")) == NULL)       /* Open the file */
-			error (1, "cannot open file");  
+			error (1, NULL, "cannot open file");  
 
 		current_file = *argv++;
 		line_count = 0;
@@ -473,7 +518,7 @@ struct Node *parse_files (int argc, char **argv)
 		get_line (current_line, f);                 /* Get the first line */
 
 		if (*current_pos == ' ')                    /* Should be a nodeid */
-			error (1, "Expected node id");
+			error (1, NULL, "Expected node id");
 
 		do   /* Scan the rest of the file */
 			if (*current_pos != ' ')
@@ -535,21 +580,21 @@ struct Node *parse_files (int argc, char **argv)
 
 			if ((fields[fn].typ == LINK) && t->field[fn])
 			{
-                nl = (struct NodeLink *)(t->field[fn]);
+				nl = (struct NodeLink *)(t->field[fn]);
                 
-                while (nl)
-                {
-				    if (NULL == (tmp = seek_node (node_list, 
-				        (char *)(nl->node))))
-				    {
-					    fprintf (stderr, "%s : Cannot find %s node '%s'\n",
-						    t->id, fields[fn].fname, (char *)(nl->node));
-		 			    error_count++;
-				    }
+				while (nl)
+				{
+					if (NULL == (tmp = seek_node (node_list, 
+						(char *)(nl->node))))
+					{
+						fprintf (stderr, "Node '%s', field '%s' cannot find node '%s'\n",
+							t->id, fields[fn].fname, (char *)(nl->node));
+							error_count++;
+					}
 
-				    nl->node = tmp;
-				    nl = nl->next;
-                }
+					nl->node = tmp;
+					nl = nl->next;
+				}
 			}
 
 			fn++;
@@ -630,13 +675,15 @@ void disp_node (struct Node *n)
 
                 while (nl)
                 {
-                    printf ("\t%s%s\n", fields[fn].fname,
-					    nl->node->id);
+					if (nl->node)
+                    	printf ("\t%s%s\n", fields[fn].fname, nl->node->id);
                     nl = nl->next;
                 }
 
 				break;
 			}
+
+		fflush (stdout);
 
         if (fn == 0)
             break;
@@ -671,6 +718,7 @@ int main (int argc, char **argv)
 	while (t)
 	{
 		disp_node (t);
+		fflush (stdout);
 		t = t->next;
 	}
 
