@@ -9,12 +9,16 @@ use ParseCH::DirGraph qw(:ALL);
 
 parser(@ARGV);
 
+#variable setup
 my $d;
 my($Minyear, $Maxyear) = dominmaxYear(\%Year);
+my %Linkcolor = setlinkcolor(\%Linkto);
 my %Date = dopos("dot", 1, \%Year, \%Month);
+my %Color = setcolor(\%Type);
+my %Shape = setshape(\%Status);
 
 #Print a dot header out
-print("digraph unixhist {\nratio=auto; page=\"8.25,11.65\";\n");
+print("digraph comphist {\nratio=auto; page=\"8.25,11.65\";\n");
 print("node [shape=plaintext,fontsize=24];\n");
 print("ranksep=0.1; nodesep=0.1; center=true;\n\n");
 
@@ -55,6 +59,22 @@ for my $i ($Minyear .. $Maxyear){
   print("}\n");
 }
 printf("{ %d.00 [style=invis,height=0.1,width=0.2,fontsize=2]; }\n\n", $Maxyear+1);
+
+#Write up the edges
+foreach my $node (keys %Linkto){
+  foreach my $linkto (keys %{$Linkto{$node}}){
+    print("\"$linkto\" -> \"$node\" [color=$Linkcolor{$node}{$linkto}];\n");
+  }
+}
+print("\n");
+
+#Write the node info
+foreach my $node (keys %Name){
+  print("\"$node\" [label=\"$Name{$node}\"");
+  print(",color=$Color{$node}") if defined $Color{$node};
+  print(",shape=$Shape{$node}") if defined $Shape{$node};
+  print("]\n");
+}
 
 #Close the dot file
 print("}\n");
