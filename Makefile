@@ -56,7 +56,7 @@ FORTRAN-SRCS = fortran/fortran
 
 RFC-STDS = rfc/off-stds rfc/assgin-nums
 
-PALM-SRCS = palm/palm
+PALM-SRCS = palm/palm palm/palmos palm/pcpdev
 
 SUN-SRCS = sun/corp
 
