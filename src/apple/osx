@@ -88,3 +88,9 @@ mosxpb
 	Type: os
 	Successor to mosxpbannc
 
+mosx
+	Name: Mac OS X 1.0
+	Date: 2001-03-21
+	Reference: http://www.apple.com/pr/library/2001/mar/21osxstore.html
+	Type: os
+	Successor to mosxpb
