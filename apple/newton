@@ -1,6 +1,6 @@
 #This file is for the Apple Newton Messagepad devices
 
-applenewtomp
+applenewtonmp
 	Name: Apple Newton Messagepad
 	Date: 1993-8
 	Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
@@ -11,7 +11,7 @@ sharpexpertpad
 	Date: 1993-9
 	Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
 	Type: hardware
-	Code taken from applenewtonomp
+	Code taken from applenewtonmp
 
 applenewtmp100
         Name: Apple Newton Messagepad 100
@@ -68,5 +68,5 @@ applenewtmp2100
         Date: 1997-10
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
-        Successor to applenewtmp2000
+        Successor to applenewtmp200
 
