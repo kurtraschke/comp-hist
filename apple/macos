@@ -1,0 +1,92 @@
+#########################
+#	MacOS		#
+#########################
+#The pre-OS X MacOSes
+
+system097
+	Name: System 0.97
+	Date: 1984-1-24
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Ran on mac128k
+	Influenced by alto
+
+finder1
+	Name: Finder 1.0
+	Date: 1984-1-24
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Ran on mac128k
+	Influenced by alto
+
+syssoftware1
+	Name: System Software 1.0
+	Date: 1984-1-24
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka finder1
+	Aka system097
+	Ran on mac128k
+	Influenced by alto
+
+system11
+	Name: System 1.1
+	Date: 1984-5-5
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system097
+
+finder11g
+	Name: Finder 1.1g
+	Date: 1984-5-5
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder1
+
+syssoftware01
+	Name: System Software 0.1
+	Date: 1984-5-5
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to syssoft1
+	Aka finder11g
+	Aka system11
+
+system2
+	Name: System 2.0
+	Date: 1985-4
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system11
+
+finder41
+	Name: Finder 4.1
+	Date: 1985-4
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder11
+
+syssoftware0305
+	Name: System Software 0.3, 0.5
+	Date: 1985-4
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to syssoftware01
+	Aka finder41
+	Aka system2
+
+system3
+	Name: System 3
+	Date: 1986-1
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system2
+#	Ran on macplus
+
+finder51
+	Name: Finder 5.1
+	Date: 1986-1
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder41
+#	Ran on macplus
