@@ -3,9 +3,9 @@
 use Getopt::Std;
 use strict;
 my(%Name, %Year, %Month, %Day, %Info);
-my(%Color, %shape, %linkto, %linkweight);
-my(%reference, %type, %status, %vcg_weights);
-my(%opts, $maxYear, $minYear, %vpos);
+my(%Color, %Shape, %Linkto, %Linkweight);
+my(%Reference, %Type, %Status, %VCG_Weights);
+my(%Opts, $maxYear, $minYear, %VPos);
 
 =head1 NAME
 
@@ -55,12 +55,12 @@ This switch will print a brief help message and exit.
 
 =cut it out!
 
-getopts('hvo:', \%opts); #Get our options for parsing
+getopts('hvo:', \%Opts); #Get our options for parsing
 
 #now, the case statements for what to do
-if( defined $opts{h} ){ &help; exit; }
-elsif( defined $opts{v} ){ print("Parsech, version 1.5, 2000-10-4\n"); exit; }
-elsif( defined $opts{o} ) { &output; }
+if( defined $Opts{h} ){ &help; exit; }
+elsif( defined $Opts{v} ){ print("Parsech, version 1.5, 2000-10-4\n"); exit; }
+elsif( defined $Opts{o} ) { &output; }
 else{ print("Invalid args. See -h for proper usage\n"); exit; }
 
 sub help {
@@ -71,11 +71,11 @@ sub help {
 }
 
 sub output (){
-    if($opts{o} =~ /dump/){&dump;}
-    elsif($opts{o} =~ /chml/){&chml;}
-    elsif($opts{o} =~ /info/){&info;}
-    elsif($opts{o} =~ /vcg/){&vcg;}
-    elsif($opts{o} =~ /biblio/){&biblio;}
+    if($Opts{o} =~ /dump/){&dump;}
+    elsif($Opts{o} =~ /chml/){&chml;}
+    elsif($Opts{o} =~ /info/){&info;}
+    elsif($Opts{o} =~ /vcg/){&vcg;}
+    elsif($Opts{o} =~ /biblio/){&biblio;}
     else {print "Invalid output format: valid formats are dump, chml, vcg, and info\n"; exit;}
 }
 
@@ -126,20 +126,20 @@ sub parse{
 	    if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$Year{$node} = $1; $Month{$node} =  $2; $Day{$node} = $3;}
 	    if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$Year{$node} = $1; $Month{$node} =  $2; $Day{$node} = $3;}
 	
-	    if(/.*Reference: (.*)/){ $reference{$node} = $1; }
+	    if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
 	
 	    if(/.*Info: (.*)/){ $Info{$node} = $1; }
 
-	    if(/.*Type: hardware/){ $type{$node} = "hardware"; }
-	    if(/.*Type: os/i){ $type{$node} = "os"; }
-	    if(/.*Type: language/){ $type{$node} = "language"; }
-	    if(/.*Type: standard/){ $type{$node} = "standard"; }
-	    if(/.*Type: other/){ $type{$node} = "other"; }
-	    if(/.*Type: company/){ $type{$node} = "company"; }
-	    if(/.*Type: announcement/){ $type{$node} = "announcement"; }
+	    if(/.*Type: hardware/){ $Type{$node} = "hardware"; }
+	    if(/.*Type: os/i){ $Type{$node} = "os"; }
+	    if(/.*Type: language/){ $Type{$node} = "language"; }
+	    if(/.*Type: standard/){ $Type{$node} = "standard"; }
+	    if(/.*Type: other/){ $Type{$node} = "other"; }
+	    if(/.*Type: company/){ $Type{$node} = "company"; }
+	    if(/.*Type: announcement/){ $Type{$node} = "announcement"; }
 
-	    if(/.*Status: ([released|internal|prototype|research])/i){ $status{$node} = $1; }
-	    if(/.*Status: continual evolution/i){ $status{$node} = "contev"; }
+	    if(/.*Status: ([released|internal|prototype|research])/i){ $Status{$node} = $1; }
+	    if(/.*Status: continual evolution/i){ $Status{$node} = "contev"; }
 
 	    if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
 	    if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
@@ -178,11 +178,11 @@ sub dopos{
     foreach $node (@_){
 	if(!defined $Month{$node}){
 	    $Year = $Year{$node} - $minYear;
-	    $vpos{$node} = $Year * 12;
+	    $VPos{$node} = $Year * 12;
 	}
 	else{
 	    $Year = $Year{$node} - $minYear;
-	    $vpos{$node} = $Year * 12 + $Month{$node};
+	    $VPos{$node} = $Year * 12 + $Month{$node};
 	}
     }   
 }
@@ -194,8 +194,8 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup {
-    push(@{$linkto{$_[0]}}, $_[1]);
-    push(@{$linkweight{$_[0]}}, $_[2]);
+    push(@{$Linkto{$_[0]}}, $_[1]);
+    push(@{$Linkweight{$_[0]}}, $_[2]);
     return 0;
 }
 
@@ -215,10 +215,10 @@ sub dump {
 	print("-$Month{$node}") if defined $Month{$node};
 	print("-$Day{$node}") if defined $Day{$node};
 	print("\n") if defined $Year{$node};
-	print("\tReference: $reference{$node}\n") if defined $reference{$node};
+	print("\tReference: $Reference{$node}\n") if defined $Reference{$node};
 	print("\tInfo: $Info{$node}\n") if defined $Info{$node};
-	print("\tType: $type{$node}\n") if defined $type{$node};
-	print("\tStatus: $status{$node}\n") if defined $status{$node};
+	print("\tType: $Type{$node}\n") if defined $Type{$node};
+	print("\tStatus: $Status{$node}\n") if defined $Status{$node};
 	print("\n");
     }
 }
@@ -253,12 +253,12 @@ sub chml{
 	print(" month=\"$Month{$node}\"") if defined $Month{$node}; 
 	print(" day=\"$Day{$node}\"") if defined $Day{$node};
 	print(" />\n") if defined $Year{$node};
-	print("\t<type types=\"$type{$node}\" />\n") if defined $type{$node};
-	print("\t<status status=\"$status{$node}\" />\n") if defined $status{$node};
-	print("\t<reference>$reference{$node} </reference>\n") if defined $reference{$node};
+	print("\t<type types=\"$Type{$node}\" />\n") if defined $Type{$node};
+	print("\t<status status=\"$Status{$node}\" />\n") if defined $Status{$node};
+	print("\t<reference>$Reference{$node} </reference>\n") if defined $Reference{$node};
 	print("\t<info>$Info{$node} </info>\n") if defined $Info{$node};
-	for( $i=0; $i <= $#{$linkto{$node}}; $i++ ) {
-	    print("\t<link linktype=\"${$linkweight{$node}}[$i]\"><id>${$linkto{$node}}[$i]</id></link>\n");
+	for( $i=0; $i <= $#{$Linkto{$node}}; $i++ ) {
+	    print("\t<link linktype=\"${$Linkweight{$node}}[$i]\"><id>${$Linkto{$node}}[$i]</id></link>\n");
 	}
 	print("</node>\n\n");
     }
@@ -289,8 +289,8 @@ This routine is quite similar in operation to the L<info> routine, except that i
 sub biblio{
     my $node;
     &parse;
-    foreach $node (sort keys %reference){
-        print("Bibliographical information for $Name{$node}: $reference{$node}\n\n") if defined $reference{$node};
+    foreach $node (sort keys %Reference){
+        print("Bibliographical information for $Name{$node}: $Reference{$node}\n\n") if defined $Reference{$node};
     }
 }
 
@@ -318,14 +318,14 @@ The setcolor routine turns types of nodes into colors and stores them in the %Co
 
 sub setcolor{
     my $node;
-    foreach $node (keys %type){
-	$Color{$node} = "blue" if $type{$node} =~ /^hardware/;
-	$Color{$node} = "red" if $type{$node} =~ /^os/i;
-	$Color{$node} = "green" if $type{$node} =~ /^language/;
-	$Color{$node} = "yellow" if $type{$node} =~ /^standard/;
-	$Color{$node} = "cyan" if $type{$node} =~ /^company/;
-	$Color{$node} = "gold" if $type{$node} =~ /^announcement/;
-	$Color{$node} = "magenta" if $type{$node} =~ /^other/;
+    foreach $node (keys %Type){
+	$Color{$node} = "blue" if $Type{$node} =~ /^hardware/;
+	$Color{$node} = "red" if $Type{$node} =~ /^os/i;
+	$Color{$node} = "green" if $Type{$node} =~ /^language/;
+	$Color{$node} = "yellow" if $Type{$node} =~ /^standard/;
+	$Color{$node} = "cyan" if $Type{$node} =~ /^company/;
+	$Color{$node} = "gold" if $Type{$node} =~ /^announcement/;
+	$Color{$node} = "magenta" if $Type{$node} =~ /^other/;
     }
 }
 
@@ -353,14 +353,14 @@ The setshape routine will set shapes for the nodes according to the following st
 
 sub setshape {
     my $node;
-    %shape = ();
-    foreach $node (keys %status){
-	if ($status{$node} =~ /^released/){ $shape{$node} = "box"; }
-	if ($status{$node} =~ /^triangle/){ $shape{$node} = "triangle";}
-	if ($status{$node} =~ /^contev/){$shape{$node} = "ellipse";}
-	if ($status{$node} =~ /^prototype/){$shape{$node} = "rhomb";}
-	if ($status{$node} =~ /^research/){$shape{$node} = "triangle";}
-	else {$shape{$node} = "box";}
+    %Shape = ();
+    foreach $node (keys %Status){
+	if ($Status{$node} =~ /^released/){ $Shape{$node} = "box"; }
+	if ($Status{$node} =~ /^triangle/){ $Shape{$node} = "triangle";}
+	if ($Status{$node} =~ /^contev/){$Shape{$node} = "ellipse";}
+	if ($Status{$node} =~ /^prototype/){$Shape{$node} = "rhomb";}
+	if ($Status{$node} =~ /^research/){$Shape{$node} = "triangle";}
+	else {$Shape{$node} = "box";}
     }
 }
 
@@ -373,25 +373,25 @@ This lovely little function sets up the weights for L<vcg> to use.
 sub setweights_vcg {
     my($node, $linkweight);
     foreach $node (keys %Name){
-	foreach $linkweight (@{$linkweight{$node}}){
-	    @{$vcg_weights{$node}} = '';
+	foreach $linkweight (@{$Linkweight{$node}}){
+	    @{$VCG_Weights{$node}} = '';
 	    if($linkweight =~ /^aka/){
-		push(@{$vcg_weights{$node}}, "thickness: 8 arrowsize: 40 backarrowsize: 400");
+		push(@{$VCG_Weights{$node}}, "thickness: 8 arrowsize: 40 backarrowsize: 400");
 	    }	    
 	    elsif($linkweight =~ /^successor/){
-		push(@{$vcg_weights{$node}},  "thickness: 4 arrowsize: 20"); 
+		push(@{$VCG_Weights{$node}},  "thickness: 4 arrowsize: 20"); 
 	    }	    
 	    elsif($linkweight =~ /^codetaken/){
-		push(@{$vcg_weights{$node}},  "");
+		push(@{$VCG_Weights{$node}},  "");
 	    }	    
 	    elsif($linkweight =~ /^influenced/){
-		push(@{$vcg_weights{$node}}, "linestyle: dashed");
+		push(@{$VCG_Weights{$node}}, "linestyle: dashed");
 	    }
 	    elsif($linkweight =~ /^runson/){
-		push(@{$vcg_weights{$node}}, "thickness: 8 linestyle: dashed");
+		push(@{$VCG_Weights{$node}}, "thickness: 8 linestyle: dashed");
 	    }	    
 	    elsif($linkweight =~ /^writtenin/){
-		push(@{$vcg_weights{$node}}, "thickness: 6 linestyle: dashed");
+		push(@{$VCG_Weights{$node}}, "thickness: 6 linestyle: dashed");
 	    }
 	}
     }
@@ -424,16 +424,16 @@ sub vcg{
     foreach $node (sort keys %Name){
 	print("\t\tnode: {\n\ttitle: \"$node\"\n");
 	print("\t\tlabel: \"$Name{$node}\"\n");
-	print("\t\tvertical_order: $vpos{$node}\n") if defined $vpos{$node};
+	print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
 	print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
-	print("\t\tshape: $shape{$node}\n") if defined $shape{$node};
+	print("\t\tshape: $Shape{$node}\n") if defined $Shape{$node};
 	print(" \t}\n");
-	if(defined $linkto{$node}){
-	    for(my $i=0; $i < scalar(@{$linkto{$node}}); $i++){
+	if(defined $Linkto{$node}){
+	    for(my $i=0; $i < scalar(@{$Linkto{$node}}); $i++){
 		print("\tedge: {\n");
-		print("\t\tsourcename: \"$linkto{$node}[$i]\"\n");
+		print("\t\tsourcename: \"$Linkto{$node}[$i]\"\n");
 		print("\t\ttargetname: \"$node\" \n");
-		print("\t\t$vcg_weights{$node}[$i]\n") if defined $vcg_weights{$node}[$i];
+		print("\t\t$VCG_Weights{$node}[$i]\n") if defined $VCG_Weights{$node}[$i];
 		print("\t}\n");
 	    }
 	}
