@@ -14,10 +14,10 @@ B<parsech> - Parse Comp-Hist
 =head1 SYNOPSIS
 
 A parser for the Computer History Graphing Project.
-    
+
     parsech B<-o> [dump|chml|info|vcg|biblio]
     parsech B<-h>
-    parsech B<-v>
+    parsech B<-v> 
 
 =head1 ABSTRACT
 
@@ -261,6 +261,12 @@ sub chml{
     print("</tree>\n");
 }
 
+=head2 B<info>
+
+The info routine parses the data and then, for each node with an Info: field, spits out the node name and its contents.
+
+=cut
+
 sub info{
     my $node;
     &parse;
@@ -268,6 +274,12 @@ sub info{
 	print("Info on $name{$node}: $info{$node}\n\n");
     }
 }
+
+=head2 B<biblio>
+
+This routine is quite similar in operation to the info routine, except that it looks for Reference: fields.
+
+=cut
 
 sub biblio{
     my $node;
