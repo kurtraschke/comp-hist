@@ -8,6 +8,8 @@ PARC-SRCS = parc
 
 APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/osx apple/aux apple/macos apple/corp apple/ans apple/newton
 
+NEXT-SRCS = next/corp next/hw
+
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
 IBM-SRCS = intel/pc/ibmpc 
@@ -28,7 +30,8 @@ MOTOROLA-SRCS = motorola/68xxx motorola/ppc
 
 C-SRCS = c
 
-SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(C-SRCS)
+
+SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(NEXT-SRCS) $(C-SRCS)
 
 all: comp-history-vcg biblio info
 
