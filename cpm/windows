@@ -61,4 +61,10 @@ windows95
 	Successor to windows311
 #	Successor to msdos622 (when I make it)
 
-# If anyone has the dates for win95sp1 and on, send them off to me.
+windows98
+	Name: Windows 98
+	Date: 1998-6
+	Reference: http://www.microsoft.com/billgates/bio/1998.htm
+	Successor to windows95
+
+# If anyone has the dates for win95sp1 and so on, send them off to me.
