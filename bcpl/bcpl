@@ -37,6 +37,7 @@ c89
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: standard
 	Successor to k&rc
+	Code taken from /usr/group/standard
 
 c90
 	Name: ISO C (C90)
