@@ -45,12 +45,19 @@ solaris2.5
 	Type: OS
 	Successor to solaris2.4
 
-solaris2.6
-	Name: Solaris 2.6
-	Date: 1998
-	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+solaris2.5.1
+	Name: Solaris 2.5.1\n(SunOS 5.5.1)
+	Date: 1996-5
+	Reference: email with Daniel Price (dp@eng.sun.com)
 	Type: OS
-	Successor to solaris2.5
+	Successor to solaris2.5 
+
+solaris2.6
+	Name: Solaris 2.6\nSunOS 5.6
+	Date: 1997-8
+	Reference: email with Daniel Price (dp@eng.sun.com)
+	Type: OS
+	Successor to solaris2.5.1
 
 solaris7
 	Name: Solaris 7
