@@ -47,9 +47,9 @@ sub parse{
 
 	if(/.*Status: released/){ $shape{$node} = "shape: box"; }
 	if(/.*Status: internal/){ $shape{$node} = "shape: triangle"; } 
-	if(/.*Status: continual evolution/){ $shape{$node} = "shape: triangle"; }
+	if(/.*Status: continual evolution/){ $shape{$node} = "shape: ellipse"; }
 	if(/.*Status: prototype/){ $shape{$node} = "shape: rhomb"; }
-	if(/.*Status: research/){ $shape{$node} = "shape: ellipse"; }
+	if(/.*Status: research/){ $shape{$node} = "shape: triangle"; }
 
 	if(/.*Aka (\S+)/) {
 	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
