@@ -1,0 +1,68 @@
+#################
+#	Mach	#
+#################
+#A unixish microkernel
+
+mach
+	Name: Mach
+	Date: 1985
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Influenced by 4.2bsd
+
+mach2
+	Name: Mach 2.0
+#	If anyone has the release date for 2.0, please send it in
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to mach
+
+mach2.5
+	Name: Mach 2.5
+	Date: 1988
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to mach2
+
+mach2.6
+	Name: Mach 2.6
+#	Date please?
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to mach2.5
+
+mach3
+	Name: Mach 3.0
+#	Same here
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to mach2.6
+
+mach4uk02p21
+	Name: Mach 4.0\nUK02p21
+	Date: 1995-11-3
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to mach3
+
+mach4uk22
+	Name: Mach 4.0\nUK22
+	Date: 1996-3-29
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to machuk02p21
+
+mach4
+	Name: Mach 4
+	Date: 1998
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Status: released
+	Successor to machuk22
