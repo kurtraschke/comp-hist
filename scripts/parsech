@@ -1,0 +1,157 @@
+#!/usr/bin/perl -w
+
+=head1 NAME
+
+B<parsech> - Parse Comp-Hist
+
+=head1 SYNOPSIS
+
+A parser for the Computer History Graphing Project.
+    
+    parsech B<-o> [dump|xml|vcg|dot|html]
+    parsech B<-h>
+    parsech B<-v>
+
+=head1 ABSTRACT
+
+parsech is a unified parser for the Comp-hist project.
+It came about thanks to the fact that I was sick of 
+writing a new parser for each new format we decided to 
+support.
+
+Oh, and I wanted documentation, too.
+
+=cut back to the code
+
+use Getopt::Std;
+
+=head1 DESCRIPTION
+
+B<parsech> will take three arguments at this point,
+plus all the files you want parsed.
+
+=over 5
+
+=item B<-o> output
+
+This switch dictates the output format. Currently, it will 
+take the following arguments
+
+=item B<-v> version
+
+This switch will print out the version and exit.
+
+=item B<-h> help
+
+This switch will print a brief help message and exit.
+
+=head1 INTERNALS
+
+=cut it out!
+
+getopts('o:hv'); #Get our options for parsing
+
+#now, the case statements for what to do
+if( defined $opt_h ){ &help; exit; }
+elsif( defined $opt_v ){ print("Parsech, version 0.01, 2000-9-23\n"); exit; }
+elsif( defined $opt_o ){ &$opt_o; }
+else{ print("Invalid args. See -h for proper usage\n"); exit; }
+
+sub help {
+    print("ParseCH, the Parser for Comp-Hist\n");
+    print("\t-v - print a version and exit\n");
+    print("\t-h - print this message and exit\n");
+    print("\t-o - sets the output format, takes one arg, see man page for possible args\n");
+}
+
+=head2 B<parse> function
+
+The parse subroutine does the heavy lifting involved in parsing,
+and really should be the only function that ever touches the 
+file's contents.
+
+The data fields are parsed as follows:
+
+=item First, a regexp filters out the comments (C<s/#.*//>)
+
+=item Next, we check to see if it's a node nick field, and sets stuff up if it is.
+
+=item Then, we look for a Name: field and set that up.
+
+=item After that, date parsing happens.
+
+=item Then, we do the Type parsing. Note that to get colors from this, the setcolor routine must be run.
+
+=item Then, status parsing happens. For shapes, do setshape.
+
+=item And finally, we check to see if linking must occur, and call the linkup function if it must.
+
+=cut yourself a slice of rug and start coding
+
+sub parse{
+	s/\#.*//;
+
+	if(/^(\S+)/){ $node = $1; next; }
+
+	if(/^\bName: (.*)/){ $name{$node} = $1; next; }
+
+	if(/^\bDate.*(\d\d\d\d)-(\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+	if(/^\bDate.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2;}
+	if(/^\bDate.*(\d\d\d\d)/){ $year{$node} = $1; }
+	if(/^\bFounded.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; }
+	if(/^\bFounded.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; }
+	if(/^\bFounded.*(\d\d\d\d)/){ $year{$node} = $1; }
+
+
+	if(/^\bType: hardware/i){ $type{$node} = "hardware"; }
+	if(/^\bType: OS/i){ $type{$node} = "os"; }
+	if(/^\bType: language/i){ $type{$node} = "language"; }
+	if(/^\bType: standard/i){ $type{$node} = "standard"; }
+	if(/^\bType: other/i){ $type{$node} = "other"; } #You don't know about this line. Go away.
+	if(/^\bType: company/i){ $type{$node} = "company"; }
+	if(/^\bType: announcement/i){$type{$node} = "announcement"; }
+
+
+	if(/^\bStatus: released/i){ $status{$node} = "released"; }
+	if(/^\bStatus: internal/i){ $status{$node} = "internal"; } 
+	if(/^\bStatus: continual evolution/i){ $status{$node} = "contev"; }
+	if(/^\bStatus: prototype/i){ $status{$node} = "prototype"; }
+	if(/^\bStatus: research/i){ $status{$node} = "research"; }
+
+
+	if(/^\bAka (\S+)/) { linkup $node, $1, "aka"; }
+	if (/^\bSuccessor to (\S+)/) { linkup $node, $1, "successor"; }
+	if (/^\bCode taken from (\S+)/) { linkup $node, $1, "codetaken"; }
+	if (/^\bInfluenced by (\S+)/) { linkup $node, $1, "influenced"; }
+	if(/^\bRuns on (\S+)/){ linkup $node, $1, "runson"; }
+	if(/^\bRan on (\S+)/){ linkup $node $1, "runson"; }
+	if(/^\bWritten in (\S+)/){ linkup $node, $1, "writtenin"; }
+}
+
+sub dominmaxyear {
+    foreach $year (keys %year){
+	if($year > $maxyear){ $maxyear = $year; }
+	if($year < $minyear){ $minyear = $year; }
+    }
+}
+
+sub dopos{
+    my $file = $_[0];
+    foreach $node (@{$files{$file}}){
+	if(!defined $month{$node}){
+	    $year = $year{$node} - $minyear;
+	    $vpos{$node} = $year * 12;
+	}
+	else{
+	    $year = $year{$node} - $minyear;
+	    $vpos{$node} = $year * 12 + $month{$node};
+	}
+    }   
+}
+
+sub linkup{
+    push(@linkfrom, $_[0]);
+    push(@linkto, $_[1]);
+    push(@linkweight, $_[2]);
+}
+
