@@ -2,7 +2,7 @@ UNIX-SRCS = unix/2bsd unix/386bsd unix/4bsd unix/freebsd unix/netbsd unix/openbs
 
 CPM-SRCS = cpm/windows cpm/cpm cpm/msdos cpm/winnt cpm/msos2 cpm/wince
 
-CRAY-SRCS = cray/cray cray/corp cray/servers
+CRAY-SRCS = cray/cray cray/corp
 
 ORD-SRCS = ord-corps $(IBM-SRCS)
 
@@ -60,7 +60,7 @@ PALM-SRCS = palm/palm
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS)
 
-all: comp-history-vcg biblio info html xml
+all: comp-history-vcg biblio info html chml
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
@@ -94,4 +94,4 @@ html:
 	cd scripts/new ; make comp-hist.html
 
 xml:
-	perl scripts/parsech -o xml $(SRCS) >comp-hist.xml
+	perl scripts/parsech -o chml $(SRCS) >comp-hist.chml
