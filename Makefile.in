@@ -9,7 +9,7 @@ dot.ps: dot
 	@DOT@ -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/
+	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/ Makefile
 	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too."
 
 biblio: dump
@@ -42,7 +42,10 @@ dbm: dump
 $(SRCS) :
 
 dump: $(SRCS)
-	cat $(SRCS) | unexpand > dump
+	unexpand $(SRCS) > dump
 
 sources:
 	@echo $(SRCS)
+
+cvs_clean:
+	rm -f config.*
