@@ -1,11 +1,4 @@
 #Here's where the 68k Macs go.
-cat
-	Name: Canon Cat
-	Date: 1987
-	Reference: http://www.landsnail.com/apple/local/cat.html
-	Type: hardware
-	Influenced by mac128k
-
 mac128k
 	Name: Macintosh 128k
 	Date: 1984-1
@@ -201,5 +194,148 @@ macperforma460
         Type: hardware
         Successor to maclciii
 
+macq605
+	Name: Macintosh Quadra 605
+	Date: 1993-10-21
+	Reference: http://lowendmac.com/quadra/q605.shtml
+	Type: hardware
+	Aka macperforma475
+	
+macperforma475
+	Name: Macintosh Performa 475/476
+	Date: 1993-10-18
+	Reference: http://lowendmac.com/quadra/q605.shtml
+	Type: hardware
+	Successor to macperforma460
+
+maclc475
+	Name: Macintosh LC 475
+	Date: 1993-10-18
+	Reference: http://lowendmac.com/quadra/q605.shtml
+	Type: hardware
+	Aka macperforma475
+	Successor to maclciii
+
+maclc520
+	Name: Macintosh LC 520
+	Date: 1993-6-28
+	Reference: http://lowendmac.com/500/lc520.shtml
+	Type: hardware
+	Code taken from maclciii
+ 
+macperforma520
+        Name: Macintosh Performa 520
+        Date: 1993-6-28
+        Reference: http://lowendmac.com/500/lc520.shtml
+        Type: hardware
+        Aka maclc520
+
+maclc550
+        Name: Macintosh LC 550
+        Date: 1994-2-2
+        Reference: http://lowendmac.com/500/lc550.shtml
+        Type: hardware
+        Aka macperforma550
+
+macperforma550
+        Name: Macintosh Performa 550
+        Date: 1993-10-18
+        Reference: http://lowendmac.com/500/lc550.shtml
+        Type: hardware
+	Successor to maclc520
+
+macperforma560
+        Name: Macintosh Performa 560
+        Date: 1994-1-1
+        Reference: http://lowendmac.com/500/lc550.shtml
+        Type: hardware
+        Aka macperforma550
 
 
+macperforma575
+	Name: Macintosh Performa 575
+	Date: 1994-2-1
+	Reference: http://lowendmac.com/500/lc575.shtml
+	Type: hardware
+	Code taken from macq605
+	Successor to macperforma550
+
+macperforma577
+        Name: Macintosh Performa 577
+        Date: 1994-2-1
+        Reference: http://lowendmac.com/500/lc575.shtml
+        Type: hardware
+        Aka macperforma575
+
+macperforma578
+        Name: Macintosh Performa 578
+        Date: 1994-2-1
+        Reference: http://lowendmac.com/500/lc575.shtml
+        Type: hardware
+        Aka macperforma575
+
+maclc575
+	Name: Macintosh LC 575
+	Date: 1994-10-3
+	Reference: http://lowendmac.com/500/lc575.shtml
+	Type: hardware
+	Aka macperforma575
+
+maclc580
+	Name: Macintosh LC 580
+	Date: 1995-4-3
+	Type: hardware
+	Reference: http://lowendmac.com/500/lc580.shtml
+	Successor to maclc575
+
+macperforma580
+	Name: Macintosh Performa 580
+	Date: 1995-5-1
+	Reference: http://lowendmac.com/500/lc580.shtml
+	Type: hardware
+	Aka maclc580
+
+mactv
+	Name: Macintosh TV
+	Date: 1993-10-25
+	Reference: http://lowendmac.com/500/mactv.shtml
+	Type: hardware
+	Code taken from maclc550
+
+maccent610
+	Name: Macintosh Centris 610
+	Date: 1993-2
+	Reference: http://lowendmac.com/quadra/c610.shtml
+	Type: hardware
+
+maccent650
+        Name: Macintosh Centris 650
+        Date: 1993-2
+        Reference: http://lowendmac.com/quadra/c650.shtml
+        Type: hardware
+	Successor to maccent610
+
+macq610
+	Name: Macintosh Quadra 610
+	Date: 1993-10-21
+#The date is a quasi-fudge to make the graph look right
+	Type: hardware
+	Reference: http://lowendmac.com/quadra/q610.shtml
+	Successor to maccent610
+	Successor to macq605
+
+macq650
+        Name: Macintosh Quadra 650
+        Date: 1993-10-21
+#The date is a quasi-fudge to make the graph look right
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q650.shtml
+        Successor to maccent650
+        Successor to macq610
+
+macq630
+	Name: Macintosh Quadra 630
+	Date: 1994-7-18
+	Type: hardware
+	Reference: http://lowendmac.com/quadra/q630.shtml
+	Successor to macq610
