@@ -10,7 +10,7 @@ $i = 0;
 
 while(<>){
        if(/.*\#/){}
-       if(/(\S+)/){ $node = $1;}
+       if(/(\S+)/){ $node = $1; }
        if(/.*Name: (.*)/){$name{$node} = $1; $nodecnt++; next;}
 
        if(/.*Successor to (.*)/){
