@@ -1,4 +1,5 @@
 OK, for all you people wondering how to make your own node, here are directions. I will put this in the form of a sample node, anything in parenthesies is my description.
+Note:  If you are confused, that is a tab, not five spaces.  Todot(the parser) will choke if you give it spaces, so be careful when you copy/paste, and make sure the tab stays a tab.
 
 fakenode (a node nickname)
 	Name: Fake Node (this is what will show up on the final graph)
