@@ -1,7 +1,7 @@
 #########################################################################
 #			          OpenBSD				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/08/17 01:29:51 $
+# $Revision: 1.2 $ $Date: 2000/08/18 02:05:58 $
 #
 # [wkt] The following node isn't a true release, but indicates when OpenBSD
 # split development from NetBSD. In email from Theo de Raadt
@@ -24,6 +24,7 @@ openbsd
 	Name: OpenBSD
 	Date: 1995-10
 	Reference: see above email from Theo
+        Type: OS
 	Code taken from netbsd0.9
 
 # [wkt] The following date is very vague. Todd Miller millert@cvs.openbsd.org
@@ -33,24 +34,28 @@ openbsd2.0
 	Name: OpenBSD 2.0
 	Date: 1996-10
 	Reference: Todd Miller <millert@cvs.openbsd.org>
+        Type: OS
 	Successor to openbsd
 
 openbsd2.1
 	Name: OpenBSD 2.1
 	Date: 1997-06-02
 	Reference: Usenet posting
+        Type: OS
 	Successor to openbsd2.0
 
 openbsd2.2
 	Name: OpenBSD 2.2
 	Date: 1997-12-01
 	Reference: Usenet posting
+        Type: OS
 	Successor to openbsd2.1
 
 openbsd2.3
 	Name: OpenBSD 2.3
 	Date: 1998-05-19
 	Reference: Usenet posting
+        Type: OS
 	Successor to openbsd2.2
 	Code taken from 4.4lite2
 
@@ -58,23 +63,27 @@ openbsd2.4
 	Name: OpenBSD 2.4
 	Date: 1998-12-01
 	Reference: Usenet posting
+        Type: OS
 	Successor to openbsd2.3
 
 openbsd2.5
 	Name: OpenBSD 2.5
 	Date: 1999-05-19
 	Reference: http://www.openbsd.org/plus25.html
+        Type: OS
 	Successor to openbsd2.4
 
 openbsd2.6
 	Name: OpenBSD 2.6
 	Date: 1999-12-01
 	Reference: http://www.openbsd.org/plus26.html
+        Type: OS
 	Successor to openbsd2.5
 
 openbsd2.7
 	Name: OpenBSD 2.7
 	Date: 2000-06-15
 	Reference: http://www.openbsd.org/plus27.html
+        Type: OS
 	Successor to openbsd2.6
 
