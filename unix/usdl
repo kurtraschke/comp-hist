@@ -1,7 +1,7 @@
 #########################################################################
 #			Some USDL versions				#
 #########################################################################
-# $Revision: 1.6 $ $Date: 2000/08/23 19:17:08 $
+# $Revision: 1.7 $ $Date: 2000/08/27 18:33:26 $
 #
 pwb1.0
 	Name: PWB/UNIX 1.0
@@ -42,7 +42,7 @@ pwb1.2
 # 	needs date
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
-	Successor  to pwb1.0
+	Successor to pwb1.0
 
 pwb2.0
 	Name: PWB/UNIX 2.0
