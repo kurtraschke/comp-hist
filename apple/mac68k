@@ -140,6 +140,7 @@ macperforma600
 maclc
 	Name: Macintosh LC
 	Date: 1990-9
+	Type: hardware
 	Reference: http://www.lowendmac.com/lc/lc.shtml
 	Code taken from 68020
 	Influenced by maciici
@@ -339,3 +340,68 @@ macq630
 	Type: hardware
 	Reference: http://lowendmac.com/quadra/q630.shtml
 	Successor to macq610
+	Aka macperforma630
+
+maclc630
+        Name: Macintosh LC 630
+        Date: 1994-7-18
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+        Aka macperforma630
+
+macperforma630
+        Name: Macintosh Performa 630
+        Date: 1994-7-1
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+
+macperforma631
+        Name: Macintosh Performa 631
+        Date: 1994-7-1
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+	Aka macperforma630
+
+macperforma635
+        Name: Macintosh Performa 635
+        Date: 1994-7-1
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+        Aka macperforma630
+
+macperforma636
+        Name: Macintosh Performa 636
+        Date: 1994-7-1
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+        Aka macperforma630
+
+macperforma637
+        Name: Macintosh Performa 637
+        Date: 1994-7-1
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+        Aka macperforma630
+
+macperforma638
+        Name: Macintosh Performa 638
+        Date: 1994-7-1
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q630.shtml
+        Aka macperforma630
+
+maccent660av
+	Name: Macintosh Centris 660av
+	Date: 1993-7
+	Type: hardware
+	Reference: http://lowendmac.com/quadra/q660av.shtml
+	Successor to maccent650
+
+macq660av
+        Name: Macintosh Quadra 660av
+        Date: 1993-10-21
+#The date is a quasi-fudge to make the graph look right
+        Type: hardware
+        Reference: http://lowendmac.com/quadra/q660av.shtml
+        Successor to maccent660av
+        Successor to macq650
