@@ -1,0 +1,29 @@
+#################################
+#	Assigned Numbers	#
+#################################
+
+rfc349
+	Name: Proposed Standard Socket Numbers (RFC 349)
+	Date: 1972-5-30
+	Reference: date on RFC
+	Type: standard
+
+rfc433
+	Name: Socket Number List (RFC 433)
+	Date: 1972-12-22
+	Type: standard
+	Successor to rfc349
+
+rfc503
+	Name: Socket Number List (RFC 503)
+	Date: 1973-4-12
+	Type: standard
+	Successor to rfc433
+
+rfc739
+	Name: Assigned Numbers (RFC 739)
+	Date: 1977-11-11
+	Type: standard
+	Successor to rfc503
+
+rfc
