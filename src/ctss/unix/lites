@@ -1,0 +1,25 @@
+#################
+#	Lites	#
+#################
+#another microkernel
+
+lites1
+	Name: Lites 1.0
+	Date: 1995-02-28
+	Reference: http://perso.wanadoo.fr/levenez/unix/history.html
+#	Code taken from mach4uk02
+	Code taken from 4.4lite
+
+lites1.1
+	Name: Lites 1.1
+	Date: 1995-03-24
+	Reference: http://perso.wanadoo.fr/levenez/unix/history.html
+	Successor to lites1
+
+lites1.1u3
+	Name: Lites 1.1u3
+	Date: 1996-03-30
+	Reference: http://perso.wanadoo.fr/levenez/unix/history.html
+	Successor to lites1.1
+	Influenced by mach4uk02p21
+
