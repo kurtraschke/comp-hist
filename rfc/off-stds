@@ -136,8 +136,20 @@ rfc2400
 	Type: standard
 	Successor to rfc2300
 
-rfc2600
-	Name: Internet Official Protocol Standards (RFC 2600)
-	Date: 2000-3
+rfc2500
+	Name: Internet Official Protocol Standards (RFC 2500)
+	Date: 1999-06
 	Type: standard
 	Successor to rfc2400
+
+rfc2600
+	Name: Internet Official Protocol Standards (RFC 2600)
+	Date: 2000-03
+	Type: standard
+	Successor to rfc2500
+
+rfc2700
+	Name: Internet Official Protocol Standards (RFC 2700)
+	Date: 2000-08
+	Type: standard
+	Successor to rfc2600
