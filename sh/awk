@@ -1,0 +1,34 @@
+#########################
+#	Awk		#
+#########################
+
+awk
+	Name: Awk
+	Date: 1977
+	Reference: http://www.gnu.org/manual/gawk/html_chapter/gawk_1.html#SEC2
+	Type: language
+	Code taken from c
+
+nawk
+	Name: New Awk
+	Date: 1985
+	Reference: http://www.gnu.org/manual/gawk/html_chapter/gawk_1.html#SEC2
+	Type: language
+	Successor to awk
+#	Influenced by posix.2
+
+gawk
+	Name: GNU Awk
+	Date: 1986
+	Reference: http://www.gnu.org/manual/gawk/html_chapter/gawk_1.html#SEC2
+	Type: language
+	Code taken from awk
+#	Influenced by posix.2
+
+gawk2
+	Name: GNU Awk 2
+	Date: 1989
+	Reference: http://www.gnu.org/manual/gawk/html_chapter/gawk_1.html#SEC2
+	Type: language
+	Code taken from nawk
+	Successor to awk
