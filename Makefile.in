@@ -48,4 +48,5 @@ sources:
 	@echo $(SRCS)
 
 cvs_clean:
+	make clean
 	rm -f config.* Makefile
