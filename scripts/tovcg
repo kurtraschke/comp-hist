@@ -2,11 +2,20 @@
 
 #Tovcg, take 2
 
-print("graph: {\ntitle: \"The Computer Family Tree\"\n");
+print("graph: {\ntitle: \"The Computer Family Tree\"\n\n");
 while(<>){
     if(/.*\#/){ next; }
-    if(/^(\S+)/){ print("node: { title: \"$1\""); $node = $1; next; }
-    if(/.*Name: (.*)/){ print(" label: \"$1\"}\n"); next; }
+    if(/^(\S+)/){ $node = $1; next; }
+    if(/.*Name: (.*)/){ $name{$node} = $1; next; }
+    if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2;}
+    if(/.*Date.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2;}
+    if(/.*Date.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12; }
+    if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
+    if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
+    if(/.*Type: language/){ $color{$node} = "color: green"; }
+    if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
+    if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
+
     if(/.*Aka (\S+)/) {
         print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
     }
@@ -24,6 +33,14 @@ while(<>){
     }
 }
 
+foreach $node (keys(%name)){
+    if(!defined $vpos{$node}){
+	print("node: { title: \"$node\" label: \"$name{$node}\" $color{$node} }\n");
+    }
+    else{
+	print("node: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} }\n");
+    }
+}
 print("\n}\n");
 
 
