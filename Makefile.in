@@ -9,7 +9,7 @@ dot.ps: dot
 	@DOT@ -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm `find -type f | grep \~`
+	rm -rf *.html *.css comp-hist* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm `find -type f | grep \~`
 	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too.  CVS users can also run make cvs_clean for a more comprehensive cleanup."
 
 biblio: dump
