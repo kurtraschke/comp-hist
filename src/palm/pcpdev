@@ -47,6 +47,22 @@ hsve
 	Influenced by pvx
 	Code taken from hsvplat
 
+hsvpro
+	Name: Handspring Visor Pro
+	Date: 2001-9-17
+	Reference: http://www.handspring.com/company/pr63.jhtml
+	Type: hardware
+	Successor to hsvd
+	Code taken from hsve
+	Code taken from hsvplat
+
+hsvneo
+        Name: Handspring Visor Neo
+        Date: 2001-9-17
+        Reference: http://www.handspring.com/company/pr63.jhtml
+        Type: hardware
+        Successor to hsvd
+
 trgpro
 	Name: TRG TRGPro
 	Date: 1999-10-18
@@ -67,6 +83,34 @@ sonyclie
 	Reference: http://www.sel.sony.com/SEL/corpcomm/news/consumer/621.html
 	Type: hardware
 
+sonycliepegs320
+	Name: Sony CLIE PEG-S320
+	Date: 2001-6-25
+	Reference: http://www.sonystyle.com/micros/clie/news/archive/archive02.html
+	Type: hardware
+	Successor to sonyclie
+
+sonycliepegn610c
+        Name: Sony CLIE PEG-N610C
+        Date: 2001-6-25
+        Reference: http://www.sonystyle.com/micros/clie/news/archive/archive02.html
+        Type: hardware
+        Successor to sonycliepegn710c
+
+sonycliepegn710c
+        Name: Sony CLIE PEG-N710C
+        Date: 2001-5-01
+        Reference: http://www.pdabuzz.com/News/viewnews.cgi?newsid988735454,7095,
+        Type: hardware
+        Successor to sonyclie
+
+sonycliepegn760c
+        Name: Sony CLIE PEG-N760C
+        Date: 2001-9-18
+        Reference: http://www.sonystyle.com/micros/clie/news/index.html
+        Type: hardware
+        Successor to sonycliepegn710c
+
 qcpdq
 	Name: Qualcomm pdQ
 	Date: 1998-09-21
@@ -79,3 +123,7 @@ kycpdq2
 	Reference: http://www.pdabuzz.com/News/viewnews.cgi?newsid972931805,8769,
 	Type: hardware
 	Successor to qcpdq
+
+
+
+
