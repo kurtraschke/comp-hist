@@ -2,7 +2,7 @@
 #########################################################################
 #			          NetBSD				#
 #########################################################################
-# $Revision: 1.5 $ $Date: 2000/09/04 13:01:36 $
+# $Revision: 1.6 $ $Date: 2000/11/29 01:33:39 $
 #
 # Stuff from http://www.netbsd.org/Releases/formal.html
 #
@@ -99,3 +99,9 @@ netbsd1.4.2
         Type: OS
 	Successor to netbsd1.4.1 # 1000
 
+netbsd1.4.3
+        Name: NetBSD 1.4.2
+        Date: 2000-11-26
+        Reference: http://slashdot.org/article.pl?sid=00/11/26/1330230&mode=nested
+        Type: OS
+        Successor to netbsd1.4.3
