@@ -8,6 +8,11 @@ while (<>) {
     if (/^(\S+)/) { $node=$1; next; }
     if (/.*Name: (.*)/) { $Name{$node}=$1; $nodecnt++; next; }
 
+    if (/.*Aka (\S+)/) {
+        $From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
+        $linkcnt++;
+    }
+
     if (/.*Successor to (\S+)/) {
         $From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
         $linkcnt++;
