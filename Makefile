@@ -18,7 +18,11 @@ CTSS-SRCS = ctss/ctss $(UNIX-SRCS)
 
 DEC-SRCS = dec/pdp dec/tops dec/rsts
 
-SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS)
+LINC-SRCS = linc
+
+DATAGEN-SRCS = datagen/nova
+
+SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS)
 
 all: comp-history-dot.ps biblio comp-history-vcg
 
@@ -39,6 +43,7 @@ comp-history-vcg:
 	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
+
 
 
 
