@@ -2,9 +2,34 @@
 							 User definitions
 ---------------------------------------------------------------------------*/
 
+/* The defintion of UNKNOWNFIELDS controls the actions of the parser
+   on encountering a filed which is not matched by any of the field 
+   defintions.
+
+   If UNKNOWNFIELDS is 0, the parser will silently discard the unknown
+   field definiton.
+
+   If UNKNOWFIELDS is 1, the parser will establish an MSTR at the 
+   item field in the node structure and save the entire line (excluding
+   leading/trailing whitespace and comments) in that field. This allows
+   for a ser program to recover the unknown field values.
+
+   If UNKNOWNFILEDS is -1, then parser will flag such fields as errors.
+ */
+
+#ifndef UNKNOWNFIELDS
+#define UNKNOWFIELDS 1
+#endif
+
+/* MAX_YEAR defines the maximum value permitted as the year of a Date */
+
 #ifndef MAX_YEAR
 #define MAX_YEAR    2001
 #endif
+
+/* LINELENGTH defines the size of the longest supported line form the 
+   input file
+ */
 
 #ifndef LINE_LENGTH
 #define LINE_LENGTH 1024
@@ -41,35 +66,53 @@
 
    For ENUM fields, an additional line is required defining the values
    to be accepted for that field. This should be an array of pointer to
-   strings with the strings being the valid values. Aterminating NULL
-   must be provided. The name of theis variable should be the struct field
-   name concatenated with "Values" (see example below).
+   strings with the strings being the valid values. A terminating NULL
+   must be provided. One more value after the NULL must be provided, this
+   is the value which will bu placed in the field if its read value is
+   not one on the list. The name of this variable should be the struct 
+   field name concatenated with "Values" (see example below).
  */
 
 #define FIELD_DEFS \
    FSTR  (1, "Name:",            name )				\
-   FMSTR (2, "Reference:",       reference )		\
    FENUM (1, "Type:",            type )				\
+   FDATE (0, "Date:",            date )				\
+   FMSTR (2, "Reference:",       reference )		\
    FSTR  (0, "Status:",          status )			\
    FLINK (2, "Aka ",             aka )				\
    FLINK (2, "Successor to ",    successorto )		\
    FLINK (2, "Code taken from ", codetakenfrom )	\
    FLINK (2, "Influenced by ",   influencedby )		\
    FLINK (2, "Runs on ",         runson )			\
-   FDATE (0, "Date:",            date )				\
    FDATE (0, "Founded on ",      foundedon ) 
 
-char  
+#ifdef PARSER
 
+char  
+    /* Specify here Field ids which should be ignored, that is
+       neither stored in the node list nor cause an error 
+     */
+
+    *ignore_fields[] = {
+        "Info:",
+        NULL };
+    
 	/* Valid values of 'type' field */
 
-	*typeValues[] = {"OS", "os", "hardware", "language", "standard", 
-		"announcement", "company", NULL};
+char
+	*typeValues[] = {"OS", "hardware", "language", "standard", 
+		"announcement", "company", NULL, "??"};
 
+#endif
+
+/*                    END OF USER DEFINITION                               */ 
 
 /*---------------------------------------------------------------------------
 								 Node definition
 ---------------------------------------------------------------------------*/
+
+enum f_types { UNK, STR, MSTR, LINK, DATE, ENUM }; 
+
 
 struct Date {
 	unsigned char
@@ -103,6 +146,28 @@ struct Node {
    FIELD_DEFS
 };
 
+#undef FSTR
+#undef FMSTR
+#undef FLINK
+#undef FDATE
+#undef FENUM
+
+#ifndef PARSER
+
+/* This section defines a constant for each data field in a node.
+   This constant defines the format of that datafield in terms of 
+   the f_types enumeration.
+ */
+
+#define FSTR(r,s,n)     const enum f_types n##_typ = STR;
+#define FMSTR(r,s,n)    const enum f_types n##_typ = MSTR;
+#define FLINK(r,s,n)    const enum f_types n##_typ = LINK;
+#define FDATE(r,s,n)    const enum f_types n##_typ = DATE;
+#define FENUM(r,s,n)    const enum f_types n##_typ = ENUM;
+
+FIELD_DEFS    
+    
+#endif
 
 #undef FSTR
 #undef FMSTR
@@ -127,8 +192,6 @@ void disp_node (struct Node *n);		/* Print node n to standard out. */
 
 #ifdef PARSER
 
-enum f_types { UNK, STR, MSTR, LINK, DATE, ENUM }; 
-
 struct fstruct {
 	enum f_types typ;
 	char flags;
@@ -145,13 +208,14 @@ struct fstruct {
 
 /* Define functions to generate field description table */
 
-#define FSTR(r,s,n)     {STR, r, s, NULL}, 
+#define FSTR(r,s,n)     {STR,  r, s, NULL}, 
 #define FMSTR(r,s,n)    {MSTR, r, s, NULL},
 #define FLINK(r,s,n)    {LINK, r, s, NULL}, 
 #define FDATE(r,s,n)    {DATE, r, s, NULL}, 
 #define FENUM(r,s,n)    {ENUM, r, s, n##Values},
  
 struct fstruct fields [] = {
+   {MSTR, 2, "", NULL},
 	FIELD_DEFS
    {UNK, 0, "", NULL}
 };
