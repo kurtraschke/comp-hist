@@ -8,6 +8,7 @@ ppc601
 	Date: 1995
 	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
 	Type: hardware
+	Code taken from rsc
 
 ppc603
 	Name: The Power Performance Chip 603 / 603e / E603e
