@@ -1723,3 +1723,51 @@ perl5.6.0
 	Type: language
 	Successor to perl5.6.0-RC3
 
+perl5.6.1-TRIAL1
+	Name: Perl 5.6.1-TRIAL1
+	Date: 2000-12-18
+	Reference: perlhist
+	Type: language
+	Successor to perl5.6.0
+
+perl5.6.1-TRIAL2
+	Name: Perl 5.6.1-TRIAL2
+	Date: 2001-01-31
+	Reference: perlhist
+	Type: language
+	Successor to perl5.6.1-TRIAL1
+
+perl5.6.1-TRIAL3
+	Name: Perl 5.6.1-TRIAL3
+	Date: 2001-03-19
+	Reference: perlhist
+	Type: language
+	Successor to perl5.6.1-TRIAL2
+
+perl5.6.1-foolish
+	Name: Perl 5.6.1-foolish
+	Date: 2001-04-01 #hence, the name
+	Reference: perlhist
+	Type: language
+	Successor to perl5.6.1-TRIAL3
+
+perl5.6.1
+	Name: Perl 5.6.1
+	Date: 2001-04-08
+	Reference: perlhist
+	Type: language
+	Successor to perl5.6.1-foolish
+
+perl5.7.0
+	Name: Perl 5.7.0
+	Date: 2000-09-12
+	Reference: perlhist
+	Type: language
+	Successor to perl5.6.0
+
+perl5.7.1
+	Name: Perl 5.7.1
+	Date: 2001-04-09
+	Reference: perlhist
+	Type: language
+	Successor to perl5.7.0
