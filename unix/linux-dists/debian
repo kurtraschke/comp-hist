@@ -80,7 +80,7 @@ debian-2.1
 
 debian-2.2
 	Name: Debian GNU/Linux 2.2
-	Date: 2000-8-14
+	Date: 2000-8-15
 	Reference: "The Debian Project History"
 	Type: OS
 	Code taken from linux2216
