@@ -4,7 +4,7 @@ CPM-SRCS = cpm/windows cpm/cpm
 
 ORD-SRCS = ord-corps
 
-PARC-SRCS = parc-srcs
+PARC-SRCS = parc
 
 SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS)
 
@@ -19,20 +19,20 @@ comp-history.ps: comp-history
 unix-history.ps: unix-history
 	dot -Tps unix/unix-history
 
-unix-history: $(SRCS)
+unix-history:
 	perl -w scripts/todot $(UNIX-SRCS)
 
-ord-history.ps: ord-history
-        dot -Tps ord-corps-hist
+#ord-history.ps: ord-history
+#        dot -Tps ord-corps-history
 
-ord-history:
-        perl -w scripts/todot $(ORD-SRCS)
+#ord-history:
+#        perl -w scripts/todot $(ORD-SRCS)
 
-parc-history.ps: parc-history
-        dot -Tps parc-history
+#parc-history.ps: parc-history
+#        dot -Tps parc-history
 
-parc-history: $(SRCS)
-        perl -w scripts/todot $(PARC-SRCS)
+#parc-history: $(SRCS)
+#        perl -w scripts/todot $(PARC-SRCS)
 
 clean:
 	rm -f *.html *.css comp-history *.aux *.log comp-history.ps
