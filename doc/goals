@@ -7,7 +7,6 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 1.0
 	MacOS should be done (this includes OSX)
 	Apple hardware should be close to current
-	WAITS shoulde be done
 	VMS should be done
 	the PDP computers should be done
 	the VAX computers should be done
@@ -15,4 +14,5 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 	at least one node in use today should be traced back to ENIAC
 	the Unix History tree should be completely merged in.
 
-
+someday
+	WAITS
