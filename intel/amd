@@ -4,7 +4,7 @@
 #Intel's worst nightmare
 
 am386
-	Name: The AMD AM386
+	Name: The Advanced Micro Devices AM386
 	Date: 1991-3
 	Refernece: http://www.amd.com/about/history.html
 	Type: hardware
@@ -14,7 +14,7 @@ am386
 	Made by amd
 
 am486
-	Name: The AMD AM486
+	Name: The Advanced Micro Devices AM486
 	Date: 1993-4
 	Reference: http://www.amd.com/about/history.html
 	Type: hardware
@@ -25,7 +25,7 @@ am486
         Made by amd
 
 k5
-	Name: The AMD K5
+	Name: The Advanced Micro Devices K5
 	Date: 1997-1
 	Reference: Date of K5 information sheet
 	Type: hardware
@@ -34,7 +34,7 @@ k5
 
 
 k6
-	Name: The AMD K6
+	Name: The Advanced Micro Devices K6
 	Date: 1997-4
 	Reference: http://www.pcguide.com/ref/cpu/fam/g6K6-c.html
 	Type: hardware
@@ -44,21 +44,21 @@ k6
         Made by amd
 
 k6-2
-	Name: The AMD K6-2
+	Name: The Advanced Micro Devices K6-2
 	Date: 1998-5-29
 	Reference: http://www.zdnet.com/zdnn/content/pcwo/0528/319604.html
 	Type: hardware
 	Successor to k6
 
 k6-III
-	Name: The AMD K6-III
+	Name: The Advanced Micro Devices K6-III
 	Date: 1999-2
 	Reference: http://www.zdnet.co.uk/pcdir/content/1999/07/systems/gt_p3vk63/
 	Type: hardware
 	Successor to k6-2
 
 athlon
-	Name: The AMD Athlon
+	Name: The Advanced Micro Devices Athlon
 	Date: 1999-6-23
 	Reference: Date on Slashdot announcement article
 	Type: hardware
@@ -66,7 +66,7 @@ athlon
 	Influenced by p3550
 
 duron
-	Name: The AMD Duron
+	Name: The Advanced Micro Devices Duron
 	Date: 2000-6-19
 	Reference: /. announcement
 	Type: hardware
