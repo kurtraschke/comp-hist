@@ -5,6 +5,8 @@ lisa1
 	Reference: http://members.lsol.net/lisa/faq/
 	Type: hardware
 	Influenced by alto
+	Code taken from 68000
+	Made by apple
 
 lisa2
 	Name: Lisa 2
@@ -12,6 +14,7 @@ lisa2
 	Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
         Type: hardware
 	Successor to lisa1
+	Made by apple
 
 lisa25
         Name: Lisa 2/5
@@ -19,6 +22,7 @@ lisa25
         Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
         Type: hardware
         Successor to lisa1
+	Made by apple
 
 lisa210
         Name: Lisa 2/10
@@ -26,6 +30,7 @@ lisa210
         Reference: http://www.acornworld.net/~jmayrand/LISA2-5.html
         Type: hardware
         Successor to lisa1
+	Made by apple
 
 macxl
 	Name: Macintosh XL
@@ -36,5 +41,6 @@ macxl
 	Successor to lisa25
 	Successor to lisa210
 	Code taken from mac128k
+	Made by apple
 
 
