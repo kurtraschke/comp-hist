@@ -5,8 +5,15 @@ osxserv10
 	Date: 1999-3-16
 	Reference: http://www.apple.com/pr/library/1999/mar/16opensource.html
 	Type: OS
-	Code taken from darwin01
+	Code taken from rhapdr2
 #	Code taken from macos9
+
+osxserv102
+	Name: Apple Mac OS X Server 1.0.2
+	Date: 1999-7-22
+	Reference: Unix history tree
+	Type: OS
+	Successor to osxserv10
 
 #There was no MOSXS 1.1!
 osxserv12
@@ -14,7 +21,7 @@ osxserv12
 	Date: 2000-1
 	Reference: http://www.stepwise.com/Articles/FirstImpressions/MacOSXServer1.2/index.html
         Type: OS
-	Successor to osxserv10
+	Successor to osxserv102
 
 osxdp4
 	Name: Apple Mac OS X DP4
@@ -42,10 +49,17 @@ osxdp1
 	Date: 1999-5-11
 	Reference: stepwise.com
         Type: OS
-#	Code taken from mach30
-	Code taken from freebsd4.1
-	Influenced by darwin01
+	Code taken from rhapdr2	
 
+rhapdr1
+	Name: Rhapsody DR1
+	Date: 1997-9
+	Reference: Unix history tree
+	Type: OS
 
-
+rhapdr2
+        Name: Rhapsody DR2
+        Date: 1998-5
+        Reference: Unix history tree
+        Type: OS
 
