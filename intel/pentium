@@ -427,12 +427,30 @@ p3xeon933
         Type: hardware
 	Successor to p3xeon866
 
+mcelery650
+	Name: Mobile Intel Celeron (650, 600 MHz)
+	Date: 2000-6-19
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Type: hardware
+	Successor to mcelery550
 
+mp3750
+	Name: Intel Mobile Pentium III (750 MHz)
+	Date: 2000-6-19
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Type: hardware
+	Successor to mp3700
 
+lpmcelery500
+	Name: Low Power Mobile Intel Celeron (500 MHz)
+	Date: 2000-6-19
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm 
+	Type: hardware
+	Code taken from mcelery650
 
-
-
-
-
-
-
+lpmp3600
+	Name: Intel Low Power Mobile Pentium III (600 MHz)
+	Date: 2000-6-19
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm 
+	Type: hardware
+	Code taken from mp3750
