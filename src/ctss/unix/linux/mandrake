@@ -40,4 +40,18 @@ mandrake-6.1
 	Type: os
 	Sucessor to mandrake-6.0
 
+mandrake-7.0
+	Name: Mandrake Linux 7.0
+	Date: 2000-01
+	Reference: http://lwn.net/2000/features/Timeline/?month=all
+	Type: os
+	Successor to mandrake-6.0
 
+#anyone know when mandrake-7.1 was made?
+
+mandrake-7.2
+	Name: Mandrake Linux 7.2
+	Date: 2000-10
+	Reference: http://lwn.net/2000/features/Timeline/?month=all
+	Type: os
+	Successor to mandrake-7.0
