@@ -114,3 +114,17 @@ finder52
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder51
+
+syssoftware1b
+	Name: System Software 1.0
+	Date: 1986-2
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka finder52
+	Aka system31
+	Successor to syssoftware07
+
+system32
+	Name: System 3.2
+	Date: 1986-6
+	Reference: http://www.applemuseum.seastar.net/
