@@ -5,7 +5,7 @@ use strict;
 BEGIN{
   use Exporter ();
   use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-  $VERSION = do { my @r = (q$Revision: 1.2 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 1.3 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
   @ISA = qw(Exporter);
   @EXPORT = qw(&parser);
   %EXPORT_TAGS = (ALL => [qw(&parser %Name %Year %Month %Day %Reference %Info %Type %Status %Linkto)]);
@@ -20,7 +20,7 @@ sub parser {
   foreach my $file (@_){
     open $file, $file;
     while(<>){
-      s/\#.*//;
+      s/(?<!\\)\#.*//; #get rid of anything on a line after a non-backslashed pound
       if(/^(\S+)/){ $node = $1; }
       
       if(/.*Name: (.*)/){ $Name{$node} = $1; }
