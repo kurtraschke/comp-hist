@@ -1,0 +1,32 @@
+#########################
+#	Plan 9		#
+#########################
+#Unix++
+
+plan9
+	Name: Plan 9
+#	When was p9 announced?
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: announcement
+	Code taken from v8
+
+plan9r1
+	Name: Plan 9 r1
+	Date: 1990
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to plan9
+
+plan9r2
+	Name: Plan 9 r2
+	Date: 1995-7
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Succesor to plan9r1
+
+plan9r3
+	Name: Plan 9 r3
+	Date: 2000-6-2
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to plan9r2
