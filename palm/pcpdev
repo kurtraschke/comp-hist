@@ -1,4 +1,21 @@
 #Other Palm Computing Platform devices go here.
 #Devices I know of so far:
 #TRGPro, Visor, Qualcomm pdQ, Symbol SPT1500, Symbol SPT1700, Sony CLIE
-#More research needs to be done on this, and the info needs to be put into this file.
+hsvs
+	Name: Handspring Visor Solo
+	Date: 1999-9
+	Reference: http://www.redherring.com/insider/1999/0914/news-palm.html
+	Type: hardware
+
+hsv
+	Name: Handspring Visor
+	Date: 1999-9
+	Reference: http://www.redherring.com/insider/1999/0914/news-palm.html
+	Type: hardware
+	Successor to hsvs
+
+hsvd
+	Name: Handspring Visor Deluxe
+	Date: 1999-9
+	Type: hardware
+	Successor to hsv
