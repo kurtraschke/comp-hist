@@ -47,5 +47,5 @@ dump:
 sources:
 	@echo $(SRCS)
 
-cvs_clean: clean
+distclean: clean
 	rm -f config.* Makefile
