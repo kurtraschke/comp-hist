@@ -321,7 +321,7 @@ mp3500018
 	Code taken from p3600
 
 p3733018
-	Name: Intel Pentium III (500, 533, 550, 600, 650, 667, 700, and 733 MHz) (0.18 micron process)
+	Name: Intel Pentium III (500, 533, 550, 600,\n650, 667, 700, and 733 MHz) (0.18 micron process)
 	Date: 1999-10-25
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
         Type: hardware
