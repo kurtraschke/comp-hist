@@ -5,7 +5,7 @@
 while(<>){
     if(/^(\S+)/){ $node = $1; }
     if(/.*Name: (.*)/){ $name{$node} = $1; }
-    if(/.*Info: (.*)/){ $info{$node} = $1; }
+    if(/.*Info: (.*)/){ s/\\n/\n/g; $info{$node} = $1; }
 }
 
 foreach $node (keys %info){
