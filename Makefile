@@ -31,10 +31,10 @@ SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-S
 all: comp-history-vcg biblio
 
 comp-history-dot: 
-	perl -w scripts/todot $(SRCS) >comp-history-dot
+	perl -w scripts/todot $(SRCS) >comp-history.dot
 
 comp-history-dot.ps: comp-history-dot
-	dot -Tps comp-history-dot >comp-history-dot.ps
+	dot -Tps comp-history.dot >comp-history.dot.ps
 clean:
 	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf information
 
@@ -43,10 +43,13 @@ biblio:
 
 comp-history-vcg:
 	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
+
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
 
+comp-history-gp:
+	perl -w scripts/togp $(SRCS) >comp-history.gp
 
-
-
+comp-history-gp.ps: comp-history-gp
+	graphplace -p -a comp-history.gp
 
