@@ -34,7 +34,7 @@ comp-history-dot:
 comp-history-dot.ps: comp-history-dot
 	dot -Tps comp-history-dot >comp-history-dot.ps
 clean:
-	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf
+	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf information
 
 biblio:
 	cat $(SRCS) >/tmp/biblio
