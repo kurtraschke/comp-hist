@@ -7,3 +7,6 @@ test:
 
 html:
 	cc -o html html.c parser.c
+
+clean:
+	rm cparse html
