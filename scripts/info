@@ -1,2 +1,13 @@
-grep Info: | sort -u | sed s/.*Info:// 
+#!/usr/bin/perl -w
 
+#Info, the perl edition
+
+while(<>){
+    if(/^(\S+)/){ $node = $1; }
+    if(/.*Name: (.*)/){ $name{$node} = $1; }
+    if(/.*Info: (.*)/){ $info{$node} = $1; }
+}
+
+foreach $node (keys %info){
+    print("Info on $name{$node}: $info{$node}\n\n");
+}
