@@ -1,75 +1,16 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl -wP
 
-#Tovcg, freedom from Graphviz
+#include[parse.h]
 
-$minyear = 3000;
-$maxyear = 0;
-$linkcnt = 0;
-$nodecnt = 0;
-$i = 0;
-
-while(<>){
-       if(/.*\#/){}
-       if(/(\S+)/){ $node = $1; }
-       if(/.*Name: (.*)/){$name{$node} = $1; $nodecnt++; next;}
-
-       if(/.*Successor to (.*)/){
-            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "10";
-	    $linkcnt++;
-	}
-
-       if(/.*Code taken from (.*)/){
-            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "7";
-            $linkcnt++;
-        }
-
-       if(/.*Influenced by (.*)/){
-            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "4";
-            $linkcnt++;
-        }
-
-	if(/.*Type: hardware/){ $color{$node} = "yellow"; }
-	if(/.*Type: [OS|os]/){ $color{$node} = "blue"; }
-	if(/.*Type: standard/){ $color{$node} = "red"; }
-	if(/.*Type: language/){ $color{$node} = "green"; }
-
-        if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
-                               # Convert to year-mon
-            $yr=$1; $mon=$2; goto dodate;
-	}
-        if (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
-            $yr=$1; $mon=$2; goto dodate;
-        }
-        if (/.*Date:.*(\d\d\d\d)/) {
-            $yr=$1; $mon="00";
-dodate:
-        if ($yr > $maxyear) { $maxyear=$yr; }
-        if ($yr < $minyear) { $minyear=$yr; }
-        next;
-	}
-   }
-
-print("graph: { title: comp-hist\n\n");
-
-#draw the years
-for($i = $minyear; $i < $maxyear; $i++){
-    $j = $i + 1;
-    print("node: { title: $i }\n");
-    print("edge: { sourcename: $i targetname: $j }\n");
-}
-print("node: { title: $j }\n");
+print("graph: { \n");
+print("title: \"The Computer Family Tree\"\n");
 print("\n");
 
-foreach $node (%name) {
-    print("node: { width: 138 height: 74 borderwidth: 7 title: \"$node\" label: \"$name{$node}\" color: $color{$node} } \n");
+#Draw the visible years
+print("graph: {\ntitle: years\nlabel: \"Years in the History of Computing\"\nshape: rhomb");
+for($i = $minyear; $i <= $maxyear; $i++){
+    $d="$i.00"; $Date{$d}{$d}=$d; $Name{$d}=$d; $j=++$i;
+    $Date{$d}{$i}=$i; $Name{$i}=$i;
+    print("edge: { sourcename: $i targetname: $j }\n");
 }
-
-for($i = 0; $i <= $linkcnt; $i++){
-    print("edge: { sourcename: $from{$i} targetname: $to{$i} thickness: $weight{$i} arrowsize: 20 } \n");
- }
-
-print("\n}\n");
-
-
-
 
