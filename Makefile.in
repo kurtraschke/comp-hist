@@ -1,13 +1,55 @@
-PCL-CVS release v2_9_9
+SRCS = `find ./src/ -type f| sed /CVS.*/d `
 
-Repository       : sj12fn@cvs.comp-hist.sourceforge.net:/cvsroot/comp-hist
-Working directory: /home/scott/ichs/comp-hist/
+all: dump vcg biblio info html chml browser dot dbm
 
+dot: dump
+	@PERL@ -w scripts/parsech-split/dot dump &gt;comp-history.dot
 
+dot.ps: dot
+	@DOT@ -Tps comp-history.dot &gt;comp-history.dot.ps
 
-In directory .:
-              Modified                Makefile.in
+clean:
+	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm `find -type f | grep \~`
+	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too.  CVS users can also run make cvs_clean for a more comprehensive cleanup."
 
---------------------- End ---------------------
--- last cmd: cvs -f update -P -d --
+biblio: dump
+	@PERL@ scripts/parsech-split/biblio dump &gt; bibliography
+
+info:  dump
+	@PERL@ scripts/parsech-split/info dump &gt; information
+
+vcg: dump
+	@PERL@ -w scripts/parsech-split/vcg dump &gt;comp-history.vcg 
+
+vcg.ps: vcg
+	@VCG@ comp-history.vcg -psoutput comp-history.vcg
+
+html: dump
+	@PERL@ scripts/parsech-split/html dump &gt;comp-hist.html
+
+chml: dump
+	@PERL@ scripts/parsech-split/chml dump &gt;comp-hist.xml
+
+browser:
+	cd scripts/browser ; ./configure ; make 
+
+browse: browser dump
+	cd scripts/browser/src ; ./browser ../../../dump
+
+dbm: dump
+	@PERL@ scripts/parsech-split/dbm dump
+
+$(SRCS) :
+
+dump: 
+	unexpand $(SRCS) &gt; dump
+
+sources:
+	@echo $(SRCS)
+
+distclean realclean: clean
+	rm -f config.* Makefile
+
+dist:
+	tar cfz ../comp-hist.tar.gz .
 
