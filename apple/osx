@@ -1,1 +1,8 @@
 #This is where Apple's OS X and OS X Server will go.
+
+osxserv
+	Name: Apple Mac OS X Server 1.0
+	Date: 1999-3-16
+	Reference: http://www.apple.com/pr/library/1999/mar/16opensource.html
+	Code taken from darwin01
+#	Code taken from macos9
