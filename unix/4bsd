@@ -1,7 +1,7 @@
 #########################################################################
 #			    3BSD/4BSD versions				#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/23 20:45:06 $
+# $Revision: 1.5 $ $Date: 2000/08/25 15:21:46 $
 #
 # [wkt] Most refs from pg 164 & 165 of QCU. I should also peruse Kirk's
 # CSRG CD set for verification of details.
@@ -12,8 +12,7 @@
         Type: OS
 	Successor to 32V
 	Code taken from 2bsd
-#			virtual memory, page replacement,
-#			demand paging
+	Info: virtual memory, page replacement, demand paging
 
 4bsd
 	Name: 4BSD
@@ -35,7 +34,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
 	Successor to 4.1bsd 1000
-#			alpha release, 100 sites, networking [44B]
+	Info: alpha release, 100 sites, networking [44B]
 
 4.1bbsd
 	Name: 4.1b BSD
@@ -44,7 +43,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
 	Successor to 4.1absd 1000
-#			internal release, fast filesystem [44B]
+	Info: internal release, fast filesystem [44B]
 
 4.1cbsd
 	Name: 4.1c BSD
@@ -53,7 +52,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
 	Successor to 4.1bbsd 1000
-#			beta release, IPC [44B]
+	Info: beta release, IPC [44B]
 
 4.2bsd
 	Name: 4.2BSD
@@ -61,9 +60,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
         Type: OS
 	Successor to 4.1cbsd
-#                       Landmark filesystem change.
-#                       VAX hardware support extended to 11/730.
-#                       Now runs on 11/780, 11/750, 11/730.
+        Info: Landmark filesystem change. VAX hardware support extended to 11/730. Now runs on 11/780, 11/750, 11/730.
 
 
 4.3bsd
@@ -72,14 +69,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
         Type: OS
 	Successor to 4.2bsd 1000
-#			Code taken from DEC Ultrix with DEC's blessing
-#                       DNS added to the standard libc
-#                               (no MX records in Sendmail, though).
-#                       Added DEC's VAX 8600 and TMSCP support code
-#                               with DEC's blessing.
-#                       Added kernel-only support for MicroVAX II
-#                               (KA630). Without DEC's help!
-#                               It's unusable, though.
+	Info: Code taken from DEC Ultrix with DEC's blessing. DNS added to the standard libc (no MX records in Sendmail, though). Added DEC's VAX 8600 and TMSCP support code with DEC's blessing. Added kernel-only support for MicroVAX II (KA630). Without DEC's help! It's unusable, though.
 
 
 4.3tahoe
@@ -154,5 +144,5 @@ net2
 	Reference: Usenet postings
         Type: OS
 	Successor to 4.4lite 1000
-#			the true final distribution from the CSRG
+	Info: the true final distribution from the CSRG
 
