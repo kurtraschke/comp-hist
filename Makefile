@@ -74,7 +74,6 @@ comp-hist-dot.ps: dot
 
 clean:
 	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/ unexpand
-	cd scripts/new ; make clean
 	cd scripts/browser ; make clean
 
 biblio: unexpand
@@ -91,9 +90,6 @@ comp-hist-vcg.ps: vcg
 
 dump:
 	cat $(SRCS) >dump
-
-cparser:
-	cd scripts/new ; make
 
 html: unexpand
 	perl scripts/parsech-split/html unexpand >comp-hist.html
