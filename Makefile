@@ -71,7 +71,7 @@ comp-history-dot.ps: comp-history-dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml
+	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-*
 	cd scripts/new ; make clean
 
 biblio:
