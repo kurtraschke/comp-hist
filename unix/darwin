@@ -5,6 +5,7 @@ darwin01
         Reference: http://publicsource.apple.com/news/
 	Type: OS
         Code taken from rhapdr2
+	Code taken from freebsd3.1
 
 darwin02
         Name: Apple Darwin 0.2
@@ -19,6 +20,7 @@ darwin03
         Reference: http://publicsource.apple.com/news/
         Type: OS
         Successor to darwin02
+	Code taken from freebsd3.3
 
 darwin10
         Name: Apple Darwin 1.0
@@ -26,4 +28,4 @@ darwin10
         Reference: http://publicsource.apple.com/news/
         Type: OS
         Successor to darwin03
-
+	Code taken from freebsd3.4
