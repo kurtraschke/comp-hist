@@ -43,13 +43,11 @@ print("\n");
 #lock the invisible years in place
 for my $i ($Minyear .. $Maxyear){
   print("{ edge [style=invis]\n");
-  print("\t$i.00 [style=invis,height=0.1,width=0.2,fontsize=2];\n");
   for my $j (0 .. 12){
     $d="$i.$j";
     print("\t$d [style=invis,height=0.1,width=0.2,fontsize=2];\n")
       if defined $Date{$d}{$d};
   }
-  print("\t$i.00->\n");
   for my $j (0 .. 12){
     $d=sprintf("$i.%02d", $j);
     print("\t$d->\n")
