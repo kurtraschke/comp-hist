@@ -1,0 +1,9 @@
+#########################
+#	host-req-comm	#
+#########################
+
+rfc1122
+	Name: Requirements for Internet Hosts -- Communication Layers (RFC 1122)
+	Date: 1989-10
+	Type: standard
+	Influenced by rfc1123
