@@ -16,11 +16,29 @@ appleiip
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
 	Successor to appleii
 
+bhappleiip
+	Name: Bell & Howell Apple II Plus
+	Date: 1979
+	Reference: http://www.acornworld.net/~jmayrand/B%26H.html
+	Code taken from appleiip
+
 appleiie
 	Name: Apple IIe
 	Date: 1983
 	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
 	Successor to appleiip
+
+appleiiee
+        Name: Apple IIe Enhanced
+        Date: 1985-3
+        Reference: http://www.hypermall.com/History/ah07.html
+        Successor to appleiie
+
+appleiiep
+        Name: Apple IIe Platinum
+        Date: 1987-1
+        Reference: http://www.hypermall.com/History/ah07.html
+        Successor to appleiiee
 
 appleiic
 	Name: Apple IIc
