@@ -12,7 +12,7 @@
                    hour        CDATA "01"
                    minute      CDATA "00">
 <!ELEMENT type  (EMPTY)>
-<!ATTLIST type types (os|hardware|announcement|language) #REQUIRED>
+<!ATTLIST type types (os|hardware|announcement|language|standard|other) #REQUIRED>
 <!ELEMENT status  (EMPTY)>
 <!ATTLIST status status (released|internal|prototype|research|contevol) #REQUIRED>
 <!ELEMENT link (id)+>
