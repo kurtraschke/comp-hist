@@ -9,3 +9,21 @@ tops10
 	Type: OS
 	Runs on pdp6
 	Runs on pdp10
+
+tenex
+	Name: TENEX
+	Date: 1969
+	Reference: http://ns.opost.com/dlm/tenex/hbook.html
+	Type: OS
+	Ran on pdp10
+	Influenced by tops10
+#	Influenced by multics
+
+tops20
+	Name: TOPS-20
+	Date: 1976-1
+	Reference: http://www.digital.com/timeline/1976-2.htm
+	Type: OS
+	Ran on pdp10
+	Successor to tops10
+	Successor to tenex
