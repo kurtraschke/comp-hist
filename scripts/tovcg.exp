@@ -14,16 +14,13 @@ foreach $file (@files){
 
 foreach $file (@files){
     dopos($file);
-}
-
-foreach $file (@file){
     graph($file);
 }
 
 print("\n}\n");
 
 sub parse{
-    $file = $_[0];
+    my $file = $_[0];
     open FILE, $file;
     while(<FILE>){
 	s/\#.*//;
@@ -72,7 +69,7 @@ sub parse{
 }
 
 sub dopos{
-    $file = $_[0];
+    my $file = $_[0];
     foreach $node (@{$files{$file}}){
 	if(!defined $month{$node}){
 	    $year = $year{$node} - $minyear;
@@ -85,8 +82,9 @@ sub dopos{
     }
    
 sub graph{
-    $file = $_[0];
-    print("\tgraph: {\n\t\ttitle: \"history in $file\"\n\t\tlayoutalgorithm: tree\n");
+    my $file = $_[0];
+    print("\tgraph: {\n");
+    print("\t\ttitle: \"information in $file\"\n\t\tlayoutalgorithm: tree\n");
     foreach $node (@{$files{$file}}){
 	if(!defined $vpos{$node}){
 	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} }\n");
