@@ -1,3 +1,14 @@
 <!--comp-hist.dtd-->
 <!ELEMENT tree (node)+>
-<!ELEMENT node (id, name, date) reference 
+<!ELEMENT node (id, name, date, type, status) (reference, link)+>
+<!ELEMENT id  (#PCDATA)>
+<!ELEMENT name  (#PCDATA)>
+<!ELEMENT reference  (#PCDATA)>
+<!ELEMENT date     (EMPTY)>
+<!ATTLIST date     year   CDATA #REQUIRED
+                   month       CDATA #REQUIRED
+                   day         CDATA #REQUIRED
+                   hour        CDATA #REQUIRED
+                   minute      CDATA #REQUIRED>
+<!ELEMENT type  (EMPTY)>
+<!ATTLIST type 
