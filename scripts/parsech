@@ -1,7 +1,11 @@
 #!/usr/bin/perl -w
 
 use Getopt::Std;
-%linkto = ();
+use strict;
+my(%name, %year, %month, %day, %info);
+my(%color, %shape, %linkto, %linkweight);
+my(%reference, %type, %status, %vcg_weights);
+my(%opts, $maxyear, $minyear, %vpos);
 
 =head1 NAME
 
@@ -102,6 +106,8 @@ The data fields are parsed as follows:
 =cut yourself a slice of rug and start coding
 
 sub parse{
+    no strict "refs";
+    my($file, $node);
     foreach $file (@ARGV){
 	open($file, $file);
 	while(<$file>){
@@ -147,6 +153,7 @@ This function reads in the %year hash (created by B<parse>) and sets the variabl
 =cut it out! that hurts!
 
 sub dominmaxyear {
+    my $year;
     foreach $year (keys %year){
 	if($year > $maxyear){ $maxyear = $year; }
 	if($year < $minyear){ $minyear = $year; }
@@ -160,6 +167,7 @@ dopos reads in the nodes given to it as arguments and sets a vertical position f
 =cut , wrap, and print
 
 sub dopos{
+    my($node, $year);
     my $file = $_[0];
     foreach $node (@_){
 	if(!defined $month{$node}){
@@ -192,6 +200,7 @@ B<dump> is a rough output format. All it does is sort the nodes and strip commen
 =cut ! that scene is all wrong!
 
 sub dump {
+    my $node;
     &parse;
     foreach $node (sort keys %name){
 	print("$node\n");
@@ -224,6 +233,7 @@ The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Mark
 =cut
 
 sub chml{
+    my($i, $node);
     &parse;
     print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
 
@@ -251,6 +261,7 @@ sub chml{
 }
 
 sub info{
+    my $node;
     &parse;
     foreach $node (sort keys %info){
 	print("Info on $name{$node}: $info{$node}\n\n");
@@ -278,6 +289,7 @@ The setcolor routine turns types of nodes into colors and stores them in the %co
 =cut
 
 sub setcolor{
+    my $node;
     foreach $node (keys %type){
 	$color{$node} = "blue" if $type{$node} =~ /^hardware/;
 	$color{$node} = "red" if $type{$node} =~ /^os/i;
@@ -310,7 +322,7 @@ The setshape routine will set shapes for the nodes according to the following st
 =cut
 
 sub setshape {
-    my $node = '';
+    my $node;
     %shape = ();
     foreach $node (keys %status){
 	if ($status{$node} =~ /^released/){ $shape{$node} = "box"; }
@@ -329,6 +341,7 @@ This lovely little function sets up the weights for B<vcg> to use.
 =cut
 
 sub setweights_vcg {
+    my($node, $linkweight);
     foreach $node (keys %name){
 	foreach $linkweight (@{$linkweight{$node}}){
 	    @{$vcg_weights{$node}} = '';
