@@ -1,6 +1,7 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
 0.5
+	There should be three working parsers
 	the Unix history tree at http://perso.wanadoo.fr/levenez/unix/index.html should be merged in
 	the linux1 kernels should be done
 	motorola should be done
