@@ -1,10 +1,10 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
 0.04
-	Type: field should be in everything
+	Type: field should be in everything (done)
 
 0.1
-	linux0 and linux1 should be done
+	linux1 should be done
 	the motorola tree should be partway done
 0.5
 	we should have at least three working parsers
