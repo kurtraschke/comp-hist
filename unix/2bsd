@@ -1,7 +1,7 @@
 #########################################################################
 #			1BSD and 2BSD versions				#
 #########################################################################
-# $Revision: 1.3 $ $Date: 2000/08/18 23:09:35 $
+# $Revision: 1.4 $ $Date: 2000/08/23 17:46:49 $
 #
 # [wkt] I need to examine the files for each version, and see how V6/V7
 # are related to the early 2BSDs.
@@ -10,6 +10,7 @@
 	Date: 1978-03-09
 	Reference: Quarter Century of UNIX by Peter Salus, pg 142
         Type: OS
+	Code taken from v6
 #		PDP-11, Pascal, ex(1)
 #		30 free copies of 1BSD sent out
 #		35 tapes sold for 50 USD [QCU]
