@@ -1,8 +1,8 @@
 		The Computer History Family Tree
 
-OK, I guess I have to make a readme, so here it is. This is the computer family tree, a project to show /all/ the relationships between the various computer languages, operating systems, hardware, and standards. Our strong points are unix, cp/m and their derivitaves.
+OK, I guess I have to make a readme, so here it is. This is the computer family tree, a project to show /all/ the relationships between the various computer languages, operating systems, hardware, and standards.
 
-In order to be able to use this, you will need a copy of Graphviz <http://research.att.com/sw/tools/graphviz/> or VCG <http://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html>. Also, you will need a Perl that is somewhere in the 5 range <http://www.perl.com>. To make a copy of where we are right now, type "make" in the top level directory.  Other 'make'ables include the following:
+In order to be able to use this, you will need a copy of Graphviz <http://research.att.com/sw/tools/graphviz/> or VCG <http://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html>. Also, you will need a Perl that is somewhere in the 5 range <http://www.perl.com>. To make a copy of where we are right now, first type './configure', then type 'make' in the top level directory.  Other 'make'ables include the following:
 
 dump - Dumps the contents of all of the datafiles into a single file named 'dump' in the root directory.  Useful for troubleshooting, and exporting the data for use with other parsers.
 
@@ -10,7 +10,7 @@ browse - Compiles and runs a GTK-based visual browser.
 
 If you are using VCG, doc/demo.pdf is a key to the various symbols and colors used in the VCG display.
 
-If you want to make a node, look in TODO to see what we need done. Then look at the syntax in the doc/ directory. All contributions to this project from others would be appreciated.
+If you want to make a node, look in TODO to see what we need done. Then look at the syntax in the doc/ directory. The datafiles are all in /src, and if you create a new file, it will be automatically recognized and compiled in by the Makefile.  All contributions to this project from others would be appreciated.
 
 	TIA for your help-
 	Scott Fenton <sj12fn@home.com>
