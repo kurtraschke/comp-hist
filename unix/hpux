@@ -17,3 +17,10 @@ hpux1
 	Type: OS
 	Successor to hpux
 	Code taken from sysVr2
+
+hpux1.2
+	Name: Hewlett-Packard Unix 1.2
+	Date: 1987
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux1
