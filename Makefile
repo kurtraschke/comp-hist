@@ -93,5 +93,5 @@ cparser:
 html:
 	cd scripts/new ; make comp-hist.html
 
-xml:
-	perl scripts/parsech -o chml $(SRCS) >comp-hist.chml
+chml:
+	perl scripts/parsech -o chml $(SRCS) >comp-hist.xml
