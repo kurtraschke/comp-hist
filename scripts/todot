@@ -60,7 +60,7 @@ dodate:
     }
 }
 
-print("digraph comp-hist {\nratio=auto; page=\"8.25,11.65\";\n");
+print("digraph comphist {\nratio=auto; page=\"8.25,11.65\";\n");
 print("node [shape=plaintext,fontsize=24];\n");
 print("ranksep=0.1; nodesep=0.1; center=true;\n");
 
