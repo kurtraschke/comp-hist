@@ -37,19 +37,19 @@ sub parse{
 	    if($year{$node} < $minyear){ $minyear = $year{$node}; }
 	}
 
-	if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
-	if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
-	if(/.*Type: language/){ $color{$node} = "color: green"; }
-	if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
-	if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
-	if(/.*Type: company/){ $color{$node} = "color: cyan"; }
-	if(/.*Type: announcement/){$color{$node} = "color: gold"; }
+	if(/.*Type: hardware/i){ $color{$node} = "color: blue"; }
+	if(/.*Type: OS/i){ $color{$node} = "color: red"; }
+	if(/.*Type: language/i){ $color{$node} = "color: green"; }
+	if(/.*Type: standard/i){ $color{$node} = "color: yellow"; }
+	if(/.*Type: other/i){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
+	if(/.*Type: company/i){ $color{$node} = "color: cyan"; }
+	if(/.*Type: announcement/i){$color{$node} = "color: gold"; }
 
-	if(/.*Status: released/){ $shape{$node} = "shape: box"; }
-	if(/.*Status: internal/){ $shape{$node} = "shape: triangle"; } 
-	if(/.*Status: continual evolution/){ $shape{$node} = "shape: ellipse"; }
-	if(/.*Status: prototype/){ $shape{$node} = "shape: rhomb"; }
-	if(/.*Status: research/){ $shape{$node} = "shape: triangle"; }
+	if(/.*Status: released/i){ $shape{$node} = "shape: box"; }
+	if(/.*Status: internal/i){ $shape{$node} = "shape: triangle"; } 
+	if(/.*Status: continual evolution/i){ $shape{$node} = "shape: ellipse"; }
+	if(/.*Status: prototype/i){ $shape{$node} = "shape: rhomb"; }
+	if(/.*Status: research/i){ $shape{$node} = "shape: triangle"; }
 
 	if(/.*Aka (\S+)/) {
 	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
