@@ -2,8 +2,6 @@
 
 #Tovcg, take 2
 
-open(INFO, "+>> information");
-
 $minyear = 3000;
 
 print("graph: {\ntitle: \"The Computer Family Tree\"\n\n");
