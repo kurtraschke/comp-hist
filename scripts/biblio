@@ -1,2 +1,2 @@
-grep Reference: | sort -u | sed s/.*Reference:// 
+grep Reference: | sort -u | sed s/.*Reference: // 
 
