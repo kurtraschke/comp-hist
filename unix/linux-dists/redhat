@@ -24,3 +24,46 @@ redhat-2.0
 	Type: OS
 	Code taken from linux1213
 	Successor to redhat-1.1
+
+#other releases please
+
+redhat-5.1
+	Name: Red Hat Linux 5.1
+	Date: 1998-5-17
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2034
+	Successor to redhat-2.0
+
+redhat-5.2
+	Nama: Red Hat Linux 5.2
+	Date: 1998-11-1
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2036
+	Successor to redhat-5.1
+
+redhat-6.0
+	Name: Red Hat Linux 6.0
+	Date: 1999-4-26
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux225
+	Successor to redhat-5.2
+
+redhat-6.1
+	Name: Red Hat Linux 6.1
+	Date: 1999-10-2
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2212
+	Successor to redhat-6.0
+
+redhat-6.2
+	Name: Red Hat Linux 6.2
+	Date: 2000-3-27
+	Reference: /. announcement
+	Type: OS
+	Code taken from linux2214
+	Successor to redhat-6.1
+
