@@ -1,7 +1,7 @@
 #########################################################################
 #			1BSD and 2BSD versions				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/04/22 03:08:19 $
+# $Revision: 1.1.1.1 $ $Date: 2000/04/22 03:08:19 $
 #
 # [wkt] I need to examine the files for each version, and see how V6/V7
 # are related to the early 2BSDs.

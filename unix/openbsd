@@ -1,7 +1,7 @@
 #########################################################################
 #			          OpenBSD				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/04/22 03:08:30 $
+# $Revision: 1.1.1.1 $ $Date: 2000/04/22 03:08:30 $
 #
 # [wkt] The following node isn't a true release, but indicates when OpenBSD
 # split development from NetBSD. In email from Theo de Raadt
