@@ -1,7 +1,7 @@
 #########################################################################
 #			System III and System V				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/04/22 03:08:30 $
+# $Revision: 1.2 $ $Date: 2000/08/04 11:46:48 $
 #
 # [wkt] The dates and relationships in here are vague. Can anyone help
 # to improve them? Eric Fischer <eric@fudge.uchicago.edu> has given
@@ -11,32 +11,32 @@ system3
 	Name: System III
 	Date: 1982
 	Reference: Life with UNIX, pg 27
-	Code taken from ts3.0
+	Code taken from ts3.0 1000
 	Code taken from 32V
 
 sysV
 	Name: System V
 	Date: 1983-01
 	Reference: System V Release Description, title page
-	Successor to system3
+	Successor to system3 1000
 	
 sysVr2
 	Name: System VR2
 	Date: 1984-04
 	Reference: System V manual for 3B2, title page
-	Successor to sysV
+	Successor to sysV 1000
 	
 sysVr3
 	Name: System VR3
 	Date: 1986
 	Reference: Life with UNIX, pg 28
-	Successor to sysVr2
+	Successor to sysVr2 1000
 	Code taken from v8
 	
 sysVr4
 	Name: System VR4
 	Date: 1988
 	Reference: Life with UNIX, pg 6
-	Successor to sysVr3
+	Successor to sysVr3 10000
 	Code taken from 4.2bsd
 

@@ -1,7 +1,7 @@
 #########################################################################
 #			    3BSD/4BSD versions				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/04/22 03:08:24 $
+# $Revision: 1.2 $ $Date: 2000/08/04 11:43:55 $
 #
 # [wkt] Most refs from pg 164 & 165 of QCU. I should also peruse Kirk's
 # CSRG CD set for verification of details.
@@ -18,19 +18,19 @@
 	Name: 4BSD
 	Date: 1980-10
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
-	Successor to 3bsd
+	Successor to 3bsd 1000
 
 4.1bsd
 	Name: 4.1BSD
 	Date: 1981-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
-	Successor to 4bsd
+	Successor to 4bsd 1000
 
 4.1absd
 	Name: 4.1a BSD
 	Date: 1982-04
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
-	Successor to 4.1bsd
+	Successor to 4.1bsd 1000
 #			alpha release, 100 sites, networking [44B]
 
 4.1bbsd
@@ -38,7 +38,7 @@
 # [wkt] Month in date is bogus. I made it up to make the graph look ok.
 	Date: 1982-08
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
-	Successor to 4.1absd
+	Successor to 4.1absd 1000
 #			internal release, fast filesystem [44B]
 
 4.1cbsd
@@ -46,7 +46,7 @@
 # [wkt] Month in date is bogus. I made it up to make the graph look ok.
 	Date: 1982-12
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
-	Successor to 4.1bbsd
+	Successor to 4.1bbsd 1000
 #			beta release, IPC [44B]
 
 4.2bsd
@@ -63,7 +63,7 @@
 	Name: 4.3BSD
 	Date: 1986-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
-	Successor to 4.2bsd
+	Successor to 4.2bsd 1000
 #			Code taken from DEC Ultrix with DEC's blessing
 #                       DNS added to the standard libc
 #                               (no MX records in Sendmail, though).
@@ -101,7 +101,7 @@ net1
 	Name: 4.3BSD Reno
 	Date: 1990-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
-	Successor to 4.3tahoe
+	Successor to 4.3tahoe 1000
 #			Influenced by Sun and DEC vendor systems (NFS and /var)
 #                       experimental hp300 architecture support added.
 #                       MicroVAX support extended to KA650 (MicroVAX III)
@@ -118,24 +118,24 @@ net2
 	Name: 4.4BSD Alpha
 	Date: 1992-07
 	Reference: Wolfram Schneider
-	Successor to 4.3reno
+	Successor to 4.3reno 1000
 
 4.4bsd
 	Name: 4.4BSD
 	Date: 1993-06
 	Reference: Usenet postings
-	Successor to 4.4alpha
+	Successor to 4.4alpha 1000
 
 4.4lite
 	Name: 4.4BSD Lite
 	Date: 1994-03
 	Reference: Usenet postings
-	Code taken from 4.4bsd
+	Successor to 4.4bsd 1000
 
 4.4lite2
 	Name: 4.4BSD Lite Release 2
 	Date: 1995-06
 	Reference: Usenet postings
-	Successor to 4.4lite
+	Successor to 4.4lite 1000
 #			the true final distribution from the CSRG
 
