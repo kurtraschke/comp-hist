@@ -18,6 +18,7 @@ A parser for the Computer History Graphing Project.
     parsech -o [dump|chml|info|vcg|biblio]
     parsech -h
     parsech -v 
+    parsech -s(desired dopos scaling)
 
 =head1 ABSTRACT
 
@@ -48,6 +49,10 @@ This switch will print out the version and exit.
 
 This switch will print a brief help message and exit.
 
+=item B<-s> scaling
+
+This switch will set the value used by L<dopos> to scale the L<vcg> output.
+
 
 =back
 
@@ -57,9 +62,8 @@ This switch will print a brief help message and exit.
 
 getopts('hvo:s:', \%Opts); #Get our options for parsing
 
-if ( defined $Opts{s} ) {
-    $vscale=$Opts{s};} else {
-	$vscale=1;}
+if ( defined $Opts{s} ) {$vscale=$Opts{s};} else {$vscale=1;}
+
 #now, the case statements for what to do
 if( defined $Opts{h} ){ &help; exit; }
 elsif( defined $Opts{v} ){ print("Parsech, version 1.5, 2000-10-4\n"); exit; }
