@@ -83,3 +83,16 @@ piiixe
 	Type: hardware
 	Successor to piiix
 
+piiic
+	Name: Palm IIIc
+	Date: 2000-2-22
+	Reference: http://www.palm.com/pr/022200c.html
+	Type: hardware
+	Successor to piiix #This is a guess
+
+pviix
+	Name: Palm VIIx
+	Date: 2000-8-7
+	Reference: http://slashdot.org/articles/00/08/07/196239_F.shtml
+	Type: hardware
+	Successor to pvii
