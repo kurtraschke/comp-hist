@@ -58,3 +58,51 @@
 	Reference: http://www.teleport.com/~prp/collect/main.html
 	Type: hardware
 	Successor to 7090
+
+stretch
+	Name: IBM Stretch / IBM 7030 Data Processing System
+	Date: 1961-4
+	Reference: http://www.brouhaha.com/~eric/retrocomputing/ibm/stretch/
+	Type: hardware
+	Successor to 7094
+7040
+	Name: IBM 7040
+	Date: 1963
+	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
+	Type: hardware
+	Successor to stretch
+
+7044
+	Name: IBM 7044
+	Date: 1963
+	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
+	Type: hardware
+	Successor to 7040
+
+608
+	Name: IBM 608
+	Date: 1958
+	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
+	Type: hardware
+	Successor to 604
+
+610
+	Name: IBM 610
+	Date: 1958
+	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
+	Type: hardware
+	Successor to 608
+
+303
+	Name: IBM 303 (RAMAC)
+	Date?
+	Reference: http://ftp.arl.mil/ftp/historic-computers/drawings/big-comp-tree.gif
+	Type: hardware
+	Successor to 610
+
+1410
+	Name: IBM 1410
+	Date: 1962
+	Reference: http://www.comp.nus.edu.sg/~johnm/cs3220/Computer_index.htm
+	Type: hardware
+	Successor to 303
