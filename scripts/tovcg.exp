@@ -43,7 +43,13 @@ sub parse{
 	if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
 	if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
 	if(/.*Type: company/){ $color{$node} = "color: cyan"; }
-	
+
+	if(/.*Status: released/){ $shape{$node} = "shape: box"; }
+	if(/.*Status: killed/){ $shape{$node} = "shape: triangle"; } 
+	if(/.*Status: Jobsed/){ $shape{$node} = "shape: triangle"; }
+	if(/.*Status: prototype/){ $shape{$node} = "shape: rhomb"; }
+	if(/.*Status: research/){ $shape{$node} = "shape: ellipse"; }
+
 	if(/.*Aka (\S+)/) {
 	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
 	}
@@ -62,10 +68,6 @@ sub parse{
 	if(/.*Ran on (\S+)/){
 	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
 	}
-	if(/.*Made by (\S+)/){
-	    print("\tedge: { sourcename: \"$1\" targetname: \"$node\" thickness: 10 }\n");
-	}
-    }
 }
 
 sub dopos{
@@ -87,10 +89,10 @@ sub graph{
     print("\t\ttitle: \"Information in $file\"\n\t\tcolor: khaki\n\n");
     foreach $node (@{$files{$file}}){
 	if(!defined $vpos{$node}){
-	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} }\n");
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} $shape{$node} }\n");
 	}
 	else{
-	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} }\n");
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} $shape{$node} }\n");
 	}
     }
     print("\n}\n");
