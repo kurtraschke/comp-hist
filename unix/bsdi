@@ -1,7 +1,7 @@
 #########################################################################
 #			        BSDI					#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/23 17:38:36 $
+# $Revision: 1.5 $ $Date: 2000/08/23 17:48:33 $
 #
 # [wkt] 1.0?
 bsdi031
@@ -85,7 +85,7 @@ bsdi4
 	Date: 1998-8-17
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
-	Successor to bsdi3
+	Successor to bsdi3.0
 
 bsdi4.0.1
 	Name: BSD/OS 4.0.1
