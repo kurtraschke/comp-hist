@@ -48,7 +48,7 @@ syssoftware01
 	Date: 1984-5-5
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
-	Successor to syssoft1
+	Successor to syssoftware1
 	Aka finder11g
 	Aka system11
 
@@ -64,7 +64,7 @@ finder41
 	Date: 1985-4
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
-	Successor to finder11
+	Successor to finder11g
 
 syssoftware0305
 	Name: System Software 0.3, 0.5
@@ -81,7 +81,7 @@ system3
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to system2
-#	Ran on macplus
+	Ran on macplus
 
 finder51
 	Name: Finder 5.1
@@ -89,4 +89,28 @@ finder51
 	Reference: http://www.applemuseum.seastar.net/
 	Type: OS
 	Successor to finder41
-#	Ran on macplus
+	Ran on macplus
+
+syssoftware07
+	Name: System Software, 0.7
+	Date: 1986-1
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to syssoftware0305
+	Aka system3
+	Aka finder51
+	Ran on macplus
+
+system31
+	Name: System 3.1
+	Date: 1986-2
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system3
+
+finder52
+	Name: Finder 5.2
+	Date: 1986-2
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder51
