@@ -54,7 +54,7 @@ WAITS-SRCS = waits
 
 FORTRAN-SRCS = fortran/fortran
 
-RFC-STDS = rfc/off-stds rfc/assgin-nums
+RFC-STDS = rfc/off-stds rfc/assgin-nums rfc/host-req-comm rfc/host-req-apps
 
 PALM-SRCS = palm/palm palm/palmos palm/pcpdev
 
