@@ -18,7 +18,7 @@ applenewtmp100
         Date: 1994-3
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
-	Successor to applenewtomp
+	Successor to applenewtonmp
 
 applenewtmp110
         Name: Apple Newton Messagepad 110
@@ -60,8 +60,8 @@ applenewtemate300
         Date: 1997-3
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
-        Code taken from applenewtmp2000
-	Influenced by dynabook
+        Code taken from applenewtmp200
+#	Influenced by dynabook
 
 applenewtmp2100
         Name:  Apple Newton Messagepad 2100
