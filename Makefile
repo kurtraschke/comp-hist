@@ -116,3 +116,6 @@ $(SRCS) :
 
 dump: $(SRCS)
 	cat $(SRCS) | unexpand > dump
+
+sources:
+	@echo $(SRCS)
