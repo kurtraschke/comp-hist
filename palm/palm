@@ -1,0 +1,37 @@
+#Here's where the Pilot, PalmPilot, and Palm
+pilot1000
+	Name:  Pilot 1000
+	Date: 1996-4
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Info:  Ran PalmOS 1.0
+	Type: hardware
+	
+pilot5000
+	Name: Pilot 5000
+	Date: 1996-4
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Type: hardware
+	Successor to pilot1000
+
+pppersonal
+	Name: PalmPilot Personal
+	Date: 1997
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Type: hardware
+	Successor to pilot5000
+
+pppro
+	Name: PalmPilot Professional
+	Date: 1997
+	Reference: http://www.ssc.com/mirrors/LDP/HOWTO/PalmOS-HOWTO-7.html
+	Type: hardware
+	Sucessor to pilot5000
+
+piii
+	Name: Palm III
+	Date: 1998-3
+	Reference: http://www.cos.ufrj.br/~xexeo/PILOT/shorthistory.html
+	Type: hardware
+	Successor to pppro
+	Successor to pppersonal
+
