@@ -31,11 +31,14 @@ crayymp
 
 cray3
 	Name: Cray-3
-	Date: 
-	Reference: 
+	Date: 1993-5
+#Date is a guesstimate.
+	Reference: http://www.jps.net/ethelen/comp-hist/cray-comp.html
 	Type: hardware
 	Successor to cray2
 	Made by ccc
+
+#There were plans for a cray-4, does anyone have any data on it?
 
 crayc90
 	Name: Cray C90
