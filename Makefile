@@ -64,38 +64,36 @@ SGI-SRCS = sgi/corp
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS) $(SGI-SRCS)
 
-all: unexpand vcg biblio info html chml browser dot dbm
+all: dump vcg biblio info html chml browser dot dbm
 
-dot: unexpand
-	perl -w scripts/todot unexpand >comp-history.dot
+dot: dump
+	perl -w scripts/todot dump >comp-history.dot
 
 comp-hist-dot.ps: dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/ unexpand
-	cd scripts/browser ; make clean
+	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/
+	@echo "Errors after this point are fine - it's just because you haven't compiled the browser."
+	-cd scripts/browser ; make clean
 
-biblio: unexpand
-	perl scripts/parsech-split/biblio unexpand > bibliography
+biblio: dump
+	perl scripts/parsech-split/biblio dump > bibliography
 
-info: unexpand
-	perl scripts/parsech-split/info unexpand > information
+info: dump
+	perl scripts/parsech-split/info dump > information
 
-vcg: unexpand
-	perl -w scripts/parsech-split/vcg unexpand >comp-history.vcg 
+vcg: dump
+	perl -w scripts/parsech-split/vcg dump >comp-history.vcg 
 
 comp-hist-vcg.ps: vcg
-	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
+	xvcg comp-history.vcg -psoutput comp-history.vcg
 
-dump:
-	cat $(SRCS) >dump
+html: dump
+	perl scripts/parsech-split/html dump >comp-hist.html
 
-html: unexpand
-	perl scripts/parsech-split/html unexpand >comp-hist.html
-
-chml: unexpand
-	perl scripts/parsech-split/chml unexpand >comp-hist.xml
+chml: dump
+	perl scripts/parsech-split/chml dump >comp-hist.xml
 
 browser:
 	cd scripts/browser ; ./configure ; make 
@@ -103,8 +101,10 @@ browser:
 browse: browser dump
 	cd scripts/browser/src ; ./browser ../../../dump
 
-dbm: unexpand
-	perl scripts/parsech-split/dbm unexpand
+dbm: dump
+	perl scripts/parsech-split/dbm dump
 
-unexpand: dump
-	unexpand dump >unexpand
+$(SRCS) :
+
+dump: $(SRCS)
+	cat $(SRCS) | unexpand > dump
