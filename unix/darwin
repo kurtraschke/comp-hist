@@ -4,8 +4,7 @@ darwin01
         Date: 1999-03-16
         Reference: http://publicsource.apple.com/news/
 	Type: OS
-        Code taken from freebsd4.1
-#        Code taken from mach30
+        Code taken from rhapdr2
 
 darwin02
         Name: Apple Darwin 0.2
