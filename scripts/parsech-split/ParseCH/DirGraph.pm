@@ -5,13 +5,17 @@ use strict;
 BEGIN{
   use Exporter ();
   use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-  $VERSION = do { my @r = (q$Revision: 1.1 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 1.2 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
   @ISA = qw(Exporter);
   @EXPORT = qw();
   %EXPORT_TAGS = (ALL => [qw(&dominmaxYear &dopos &setcolor &setshape &setlinkcolor)]);
   @EXPORT_OK = qw(&dominmaxYear &dopos &setcolor &setshape &setlinkcolor);
 }
 
+sub round {
+    my($number) = shift;
+    return int($number + .5 * ($number <=> 0));
+}
 
 sub dominmaxYear {
   my $Maxyear=0;
@@ -40,7 +44,7 @@ sub dopos{
       $Year = int($Year{$node}) - $Minyear;
       $VPos{$node} = $Year * 12 + $Month{$node};
     }
-    $VPos{$node} = ($VPos{$node}/$VScale);
+    $VPos{$node} = round($VPos{$node}/$VScale);
 #    print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
   }
   return %VPos;
