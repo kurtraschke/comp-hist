@@ -7,12 +7,11 @@ $maxyear = 0;
 $linkcnt = 0;
 $height = $maxyear - $minyear + 2;
 $width = $nodecnt / 2;
-$nextyear = $minyear + 1;
 
 while(<>){
        if(/^#.*/){ next; }
        if(/^(\S+)/){ $node = $1; next; }
-       if(/.*Name: (.*)){$name{$node} = $1; $nodecnt{$node}++; next;}
+       if(/.*Name: (.*)/){$name{$node} = $1; $nodecnt{$node}++; next;}
 
        if(/.*Successor to (.*)/){
             $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "10";
@@ -29,10 +28,10 @@ while(<>){
             $linkcnt++;
         }
 
-	if(/.*Type: hardware/){ $color{$node} = yellow; }
-	if(/.*Type: OS/){ $color{$node} = blue; }
-	if(/.*Type: standard/){ $color{$node} = red; }
-	if(/.*Type: language/){ $color{$node} = green; }
+	if(/.*Type: hardware/){ $color{$node} = "yellow"; }
+	if(/.*Type: OS/){ $color{$node} = "blue"; }
+	if(/.*Type: standard/){ $color{$node} = "red"; }
+	if(/.*Type: language/){ $color{$node} = "green"; }
 
         if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
                                 # Convert to year-mon
@@ -52,7 +51,7 @@ dodate:
     }
 }
 
-print("graph: { title = "The Computer Family Tree"\n\n");
+print("graph: { title = comp-hist\n\n");
 print("smanhatten_edges: yes\nlayoutalgorithm: tree\n");
 print("scaling: 0.34\n");
 print("x: 120 y: 20\nxmax: 1152\nymax: 900\n");
@@ -65,27 +64,27 @@ print("node.textcolor: black\n\n");
 #draw the visible years
 $i = $minyear;       
 while ($i < $maxyear) {
-    print("node: { width: 138 height: 74 bordercolor: black borderwidth: 7 title: "$i" label: "$i" color: $color{$node} } \n);
+    print("node: { width: 138 height: 74 bordercolor: black borderwidth: 7 title: $i label: $i color: $color{$node} } \n");
 }
 
 $i = $minyear;
 while($i < $maxyear){
      print("edge: { sourcename: $i ");
-     $i++
-     print("targetname: $i \n" });
+     $i++;
+     print("targetname: $i \n }");
 }
 print("\n");
 
-foreach $node %name {
-    print("node: { width: 138 height: 74 bordercolor: black borderwidth: 7 title: "$node" label: "$name{$node}" color: $color{$node} \n") ;
+foreach $node (%name) {
+    print("node: { width: 138 height: 74 bordercolor: black borderwidth: 7 title: $node label: $name{$node} color: $color{$node} \n") ;
     print("node: { width: 0 height: 0 borderwidth: 0 title: $date{$node}.$nodecnt{$node} }\n");
     print("nearedge: { sourcename: $node targetname: $date{$node}.$nodecnt{$node} }\n\n");
 }
 
-$i = 0
-while($i < $lnkcnt){
-     print("edge: { sourcename: $from{$i} targetname: $to{$i} thickness: $weight{$i} arrowsize: 20 }\n");
-}
+$h = 0
+while($h < $lnkcnt){
+     print("edge: { sourcename: $from{$i} targetname: $to{$i} thickness: $weight{$i} arrowsize: 20 } \n");
+ }
 
 
 
