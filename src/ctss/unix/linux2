@@ -1907,3 +1907,23 @@ linux24t12
 	Reference: LWN announcement
 	Type: os
 	Successor to linux24t11
+
+linux24pre
+	Name: Linux 2.4.0-prerelease
+	Date: 2000-12-31
+	Reference: date on tarball
+	Type: os
+	Successor to linux24t12
+
+linux240
+	Name: Linux 2.4.0
+	Date: 2001-1-4
+	Reference: date on tarball
+	Type: os
+	Successor to linux24pre
+
+linux241
+	Name: Linux 2.4.1
+	Date: 2001-1-30
+	Type: os
+	Successor to linux240
