@@ -1,0 +1,32 @@
+#########################
+#	Algol		#
+#########################
+
+algol58
+	Name: Algorithmic Language 58
+	Date: 1958
+	Reference: http://www.engin.umd.umich.edu/CIS/course.des/cis400/algol/algol.html
+	Type: standard
+
+algol60
+	Name: Algorithmic Language 60
+	Date: 1960
+	Reference: http://www.engin.umd.umich.edu/CIS/course.des/cis400/algol/algol.html
+	Type: standard
+	Successor to algol58
+
+algol66
+	Name: Algorithmic Language 66
+	Date: 1966
+	Reference: http://www.engin.umd.umich.edu/CIS/course.des/cis400/algol/algol.html
+	Type: standard
+	Successor to algol60
+
+algol68
+	Name: Algorithmic Language 68
+	Date: 1968
+	Reference: http://www.engin.umd.umich.edu/CIS/course.des/cis400/algol/algol.html
+	Type: standard
+	Successor to algol66
+
+
