@@ -1,7 +1,7 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
-0.1.1
-	the motorola tree should be partway done
+0.2
+	linux1 should be done
 
 0.5
 	the Unix tree should be reasonably done
@@ -20,6 +20,5 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 	the VAX computers should be done
 	the AMD chips should be done
 	POSIX should be current
-	Multics should be done
 	at least one node in use today should be traced back to ENIAC
 
