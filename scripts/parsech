@@ -273,7 +273,7 @@ sub biblio{
     my $node;
     &parse;
     foreach $node (sort keys %reference){
-        print("Bibliographical information for $name{$node}: $info{$reference}\n\n"); if defined $reference{$node};
+        print("Bibliographical information for $name{$node}: $reference{$node}\n\n"); if defined $reference{$node};
     }
 }
 
