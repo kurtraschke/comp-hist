@@ -7,8 +7,6 @@ Working directory: /home/scott/ichs/comp-hist/
 
 In directory .:
               Modified                Makefile.in
-              Unknown                 comp-history.vcg
-              Unknown                 dump
 
 --------------------- End ---------------------
 -- last cmd: cvs -f update -P -d --
