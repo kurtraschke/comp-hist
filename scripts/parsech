@@ -214,7 +214,7 @@ sub dopos{
       $VPos{$node} = $Year * 12 + $Month{$node};
     }
     $VPos{$node} = ($VPos{$node}/$VScale);
-    print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
+#    print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
   }   
 }
 
@@ -222,7 +222,7 @@ sub dopos{
 
 linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by L<parse>.
 
-=cut ! Youre beautiful! A Day In The Life Of JAPH will be a hit!
+=cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup {
   push(@{$Linkto{$_[0]}}, $_[1]);
