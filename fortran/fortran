@@ -1,0 +1,59 @@
+#########################
+#	Fortran		#
+#########################
+
+fortan
+	Name: Formula Translator
+	Date: 1954-11
+	Reference: Language family tree
+	Type: language
+	Made by ibm
+
+fortrani
+	Name: Formula Translator I
+	Date: 1956-10
+	Reference: Language family tree
+	Type: language
+	Successor to fortran
+
+fortranii
+	Name: Formula Translator II
+	Date: 1957
+	Reference: Language family tree
+	Type: language
+	Successor to fortranii
+
+fortraniii
+	Name: Formula Translator III
+	Date: 1958-10 #really late '58
+	Reference: Language family tree
+	Type: language
+	Successor to fortranii
+
+fortraniv
+	Name: Formula Translator IV
+	Date: 1962
+	Reference: Language family tree
+	Type: language
+	Successor to fortraniii
+
+fortran66
+	Nae: Formula Translator 66 ANSI
+	Date: 1966
+	Reference: Language family tree
+	Type: standard
+	Successor to fortraniv
+
+fortranv
+	Name: Formula Translator V / 77 ANSI
+	Date: 1978-4
+	Reference: Language family tree
+	Type: standard
+	Successor to fortran66
+
+fortran90
+	Name: Formula Translator 90 ISO
+	Date: 1991
+	Reference: Language family tree
+	Type: standard
+	Successor to fortranv
