@@ -1,0 +1,11 @@
+#################
+#	Z/OS	#
+#################
+#OS/390, the next generation
+
+zosv1r1
+	Name: International Business Machines z/Operating System Version 1 Release 1
+	Date: 2000-10-03
+	Reference: http://www.ibmlink.ibm.com/usalets&parms=H_200-352	
+	Type: os
+	Successor to os390v2r10
