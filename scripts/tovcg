@@ -7,9 +7,9 @@ while(<>){
     if(/.*\#/){ next; }
     if(/^(\S+)/){ $node = $1; next; }
     if(/.*Name: (.*)/){ $name{$node} = $1; next; }
-    if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2;}
-    if(/.*Date.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2;}
-    if(/.*Date.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12; }
+    if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$vpos{$node} = $1 * 12 + $2 - 1200;}
+    if(/.*Date.*(\d\d\d\d)-(\d\d)/){$vpos{$node} = $1 * 12 + $2 - 1200;}
+    if(/.*Date.*(\d\d\d\d)/){ $vpos{$node} = $1 * 12 - 1200; }
     if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
     if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
     if(/.*Type: language/){ $color{$node} = "color: green"; }
@@ -28,7 +28,7 @@ while(<>){
     if (/.*Influenced by (\S+)/) {
         print("edge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
     }
-    if(/.*Runs on (\S+)/){
+    if(/.*[Runs|Ran] on (\S+)/){
 	print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
     }
 }
