@@ -1,0 +1,124 @@
+NAME
+    parsech - Parse Comp-Hist
+
+SYNOPSIS
+    A parser for the Computer History Graphing Project.
+
+        parsech -o [dump|chml|info|vcg|biblio]
+        parsech -h
+        parsech -v 
+
+ABSTRACT
+    parsech is a unified parser for the Comp-hist project. It came
+    about thanks to the fact that I was sick of writing a new parser
+    for each new format we decided to support.
+
+    Oh, and I wanted documentation, too.
+
+DESCRIPTION
+    parsech will take three arguments at this point, plus all the
+    files you want parsed.
+
+    -o output
+         This switch dictates the output format. Currently, it will
+         take the following arguments: dump, chml, vcg, info, or
+         biblio.
+
+    -v version
+         This switch will print out the version and exit.
+
+    -h help
+         This switch will print a brief help message and exit.
+
+INTERNALS
+  parse
+
+         The parse subroutine does the heavy lifting involved in
+         parsing, and really should be the only function that ever
+         touches the file's contents.
+
+         The data fields are parsed as follows:
+
+    First, a regexp filters out the comments (`s/#.*//')
+    Next, we check to see if it's a node nick field, and sets stuff up if it is.
+    Then, we look for a Name: field and set that up.
+    After that, date parsing happens.
+    Then, reference parsing is done.
+    As a follow up, we then do Info parsing
+    Then, we do the Type parsing. Note that to get colors from this, the setcolor routine must be run.
+    Then, status parsing happens. For shapes, do setshape.
+    And finally, we check to see if linking must occur, and call the linkup function if it must.
+  minmaxyear
+
+         This function reads in the %year hash (created by parse)
+         and sets the variables $maxyear and $minyear accordingly.
+
+  dopos
+
+         dopos reads in the nodes given to it as arguments and sets
+         a vertical position for the node accordingly. Useful mostly
+         for dot and vcg output.
+
+  linkup
+
+         linkup is the routine that creates the @linkfrom, @linkto,
+         and @linkweight arrays. Used mostly by parse.
+
+  dump
+
+         dump is a rough output format. All it does is sort the
+         nodes and strip comments.
+
+  chml
+
+         The chml routine sucks in the files, and spits out a bit of
+         CHML (Comp-Hist Markup Language).
+
+  info
+
+         The info routine parses the data and then, for each node
+         with an Info: field, spits out the node name and its
+         contents.
+
+  biblio
+
+         This routine is quite similar in operation to the info
+         routine, except that it looks for Reference: fields.
+
+  setcolor
+
+         The setcolor routine turns types of nodes into colors and
+         stores them in the %color hash. The rules for translation
+         are below:
+
+    hardware becomes blue
+    OSes are red
+    languages are green
+    standards are yellow
+    companies are cyan
+    and announcements are gold
+  setshape
+
+         The setshape routine will set shapes for the nodes
+         according to the following status/shape relationship:
+
+    released/box
+    internal/triangle
+    continual evolution/ellipse
+    prototype/rhomb
+    research/triangle
+    otherwise/box
+  setweights_vcg
+
+         This lovely little function sets up the weights for vcg to
+         use.
+
+  vcg
+
+         The vcg subroutine is an adapted form of tovcg's "graph"
+         routine. The changes are as follows:
+
+    it calls dopos, setcolor, and setshape itself, rather than having external functions do that
+    it prints the surrounding VCG headings
+    it doesn't seperate the files from each other (yet)
+    and it takes care of linkage
