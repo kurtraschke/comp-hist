@@ -1,0 +1,19 @@
+<!--comp-hist.dtd-->
+<!ELEMENT tree (node)+>
+<!ELEMENT node (id, name, date, type, status) (reference, link, info)+ >
+<!ELEMENT id  (#PCDATA)>
+<!ELEMENT name  (#PCDATA)>
+<!ELEMENT reference  (#PCDATA)>
+<!ELEMENT info  (#PCDATA)>
+<!ELEMENT date     (EMPTY)>
+<!ATTLIST date     year   CDATA #REQUIRED
+                   month       CDATA "01"
+                   day         CDATA "01"
+                   hour        CDATA "01"
+                   minute      CDATA "00">
+<!ELEMENT type  (EMPTY)>
+<!ATTLIST type types (os|hardware|announcement|language) #REQUIRED>
+<!ELEMENT status  (EMPTY)>
+<!ATTLIST status status (released|internal|prototype|research|contevol) #REQUIRED>
+<!ELEMENT link (id)+>
+<!ATTLIST link linktype (aka|successor|codetaken|influenced|runson|writtenin) #REQUIRED>
