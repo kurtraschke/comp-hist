@@ -4,7 +4,7 @@ require Exporter;
 
 @ISA = qw(Exporter);
 @EXPORT = qw(docomment doname dodate doref doinfo dotype dostatus doaka dosucc doctf doinfluence doruns doran dowritten);
-@EXPORT_OK = qw(dofield do1field donode %name %year %month %day %ref %info %type %status @linkfrom @linkto @weight);
+@EXPORT_OK = qw(dofield do1field donode %name %year %month %day %ref %info %type %status @linkfrom @linkto @weight $node);
 $VERSION = 1.10;
 
 sub docomment {
