@@ -2,7 +2,7 @@
 
 #Tovcg, take 2
 
-open(INFO, "+>> informatiton");
+open(INFO, "+>> information");
 
 $minyear = 3000;
 $maxyear = 0;
