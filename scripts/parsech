@@ -75,16 +75,16 @@ sub help {
     print("\t-v - print a version and exit\n");
     print("\t-h - print this message and exit\n");
     print("\t-o - sets the output format, takes one arg, see man page for possible args\n");
-}
+  }
 
 sub output {
-    if($Opts{o} eq "dump"){&dump;}
-    elsif($Opts{o} eq "chml"){&chml;}
-    elsif($Opts{o} eq "info"){&info;}
-    elsif($Opts{o} eq "vcg"){&vcg;}
-    elsif($Opts{o} eq "biblio"){&biblio;}
-    elsif($Opts{o} eq "dbm"){&dbm;}
-    else {print "Invalid output format: valid formats are dump, chml, vcg, dbm, and info\n"; exit;}
+  if($Opts{o} eq "dump"){&dump(@ARGV);}
+  elsif($Opts{o} eq "chml"){&chml(@ARGV);}
+  elsif($Opts{o} eq "info"){&info(@ARGV);}
+  elsif($Opts{o} eq "vcg"){&vcg(@ARGV);}
+  elsif($Opts{o} eq "biblio"){&biblio(@ARGV);}
+  elsif($Opts{o} eq "dbm"){&dbm(@ARGV);}
+  else {print "Invalid output format: valid formats are dump, chml, vcg, dbm, and info\n"; exit;}
 }
 
 =head2 parse
@@ -122,63 +122,61 @@ The data fields are parsed as follows:
 sub parse{
   no strict "refs";
   my $node;
-  foreach my $file (@ARGV){
-    open($file, $file);
-    while(<$file>){
-      s/\#.*//;
-      if(/^(\S+)/){ $node = $1; }
-      if(/.*Name: (.*)/){ $Name{$node} = $1; }
-      if (/.*Founded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
-	$Year{$node}=$1; 
-	$Month{$node}=$2;
-	$Day{$node}=$3;
-      }
-      elsif (/.*Founded.*(\d\d\d\d)-(\d\d)/) {
-	$Year{$node}=$1;
-	$Month{$node}=$2;
-      }
-      elsif (/.*Founded.*(\d\d\d\d)/) {
-	$Year{$node}=$1;
-	$Month{$node}="0";
-      }
-      
-      if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
-	$Year{$node}=$1;
-	$Month{$node}=$2;
-	$Day{$node}=$3;
-      }
-      elsif (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
-	$Year{$node}=$1;
-	$Month{$node}=$2;
-      }
-      elsif (/.*Date:.*(\d\d\d\d)/) {
-	$Year{$node}=$1;
-	$Month{$node}="0";
-      }
-      
-      if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
-      
-      if(/.*Info: (.*)/){ $Info{$node} = $1; }
-      
-      if(/.*Type: hardware/){ $Type{$node} = "hardware"; }
-      if(/.*Type: os/i){ $Type{$node} = "os"; }
-      if(/.*Type: language/){ $Type{$node} = "language"; }
-      if(/.*Type: standard/){ $Type{$node} = "standard"; }
-      if(/.*Type: other/){ $Type{$node} = "other"; }
-      if(/.*Type: company/){ $Type{$node} = "company"; }
-      if(/.*Type: announcement/){ $Type{$node} = "announcement"; }
-      
-      if(/.*Status: ([released|internal|prototype|research])/i){ $Status{$node} = $1; }
-      if(/.*Status: continual evolution/i){ $Status{$node} = "contev"; }
-      
-      if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
-      if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
-      if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
-      if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
-      if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
-      if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
-      if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
+  while(<>){
+    s/\#.*//;
+    if(/^(\S+)/){ $node = $1; }
+    if(/.*Name: (.*)/){ $Name{$node} = $1; }
+    if (/.*Founded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+      $Year{$node}=$1; 
+      $Month{$node}=$2;
+      $Day{$node}=$3;
     }
+    elsif (/.*Founded.*(\d\d\d\d)-(\d\d)/) {
+      $Year{$node}=$1;
+      $Month{$node}=$2;
+    }
+    elsif (/.*Founded.*(\d\d\d\d)/) {
+      $Year{$node}=$1;
+      $Month{$node}="0";
+    }
+    
+    if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+      $Year{$node}=$1;
+	$Month{$node}=$2;
+      $Day{$node}=$3;
+    }
+    elsif (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
+      $Year{$node}=$1;
+      $Month{$node}=$2;
+    }
+    elsif (/.*Date:.*(\d\d\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}="0";
+      }
+    
+    if(/.*Reference: (.*)/){ $Reference{$node} = $1; }
+    
+    if(/.*Info: (.*)/){ $Info{$node} = $1; }
+    
+    if(/.*Type: hardware/){ $Type{$node} = "hardware"; }
+    if(/.*Type: os/i){ $Type{$node} = "os"; }
+    if(/.*Type: language/){ $Type{$node} = "language"; }
+    if(/.*Type: standard/){ $Type{$node} = "standard"; }
+    if(/.*Type: other/){ $Type{$node} = "other"; }
+    if(/.*Type: company/){ $Type{$node} = "company"; }
+    if(/.*Type: announcement/){ $Type{$node} = "announcement"; }
+    
+    if(/.*Status: ([released|internal|prototype|research])/i){ $Status{$node} = $1; }
+    if(/.*Status: continual evolution/i){ $Status{$node} = "contev"; }
+    
+    if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
+    if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
+    if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+    if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
+    if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
+    if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
+    if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
+    
   }
 }
 
@@ -239,7 +237,7 @@ dump is a rough output format. All it does is sort the nodes and strip comments.
 
 sub dump {
   my $node;
-  &parse;
+  &parse(@_);
   foreach $node (sort keys %Name){
     print("$node\n");
     print("\tName: $Name{$node}\n");
@@ -272,7 +270,7 @@ The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Mark
 
 sub chml{
   my($i, $node);
-  &parse;
+  &parse(@_);
   print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
   
   print("<tree>\n");
@@ -306,7 +304,7 @@ The info routine parses the data and then, for each node with an Info: field, sp
 
 sub info{
     my $node;
-    &parse;
+    &parse(@_);
     foreach $node (sort keys %Info){
 	print("Info on $Name{$node}: $Info{$node}\n\n");
     }
@@ -320,7 +318,7 @@ This routine is quite similar in operation to the L<info> routine, except that i
 
 sub biblio{
     my $node;
-    &parse;
+    &parse(@_);
     foreach $node (sort keys %Reference){
         print("Bibliographical information for $Name{$node}: $Reference{$node}\n\n") if defined $Reference{$node};
     }
@@ -446,7 +444,7 @@ The vcg subroutine is an adapted form of tovcg's "graph" routine. The changes ar
 =cut
 
 sub vcg{
-    &parse;
+    &parse(@_);
     &dominmaxYear;
     &dopos;
     &setcolor;
@@ -476,15 +474,25 @@ sub vcg{
 
 sub dbm {
   use GDBM_File;
-  no strict "subs", "refs";
-  &parse;
-  my(%d);
+  no strict "subs";
   mkdir('parsech_dbm', 0777);
-  chdir('parsech_dbm');
-  foreach my $hash ("Name", "Year", "Month", "Day", "Info",
-		    "Reference", "Type", "Status"){
-    tie(%d, 'GDBM_File', $hash, &GDBM_WRCREAT, 0640);
-    %d = %$hash;
-    untie(%d);
-  }
+  tie(%Name, 'GDBM_File', 'parsech_dbm/Name', &GDBM_WRCREAT, 0640);
+  tie(%Year, 'GDBM_File', 'parsech_dbm/Year', &GDBM_WRCREAT, 0640);
+  tie(%Month, 'GDBM_File', 'parsech_dbm/Month', &GDBM_WRCREAT, 0640);
+  tie(%Day, 'GDBM_File', 'parsech_dbm/Day', &GDBM_WRCREAT, 0640);
+  tie(%Info, 'GDBM_File', 'parsech_dbm/Info', &GDBM_WRCREAT, 0640);
+  tie(%Type, 'GDBM_File', 'parsech_dbm/Type', &GDBM_WRCREAT, 0640);
+  tie(%Reference, 'GDBM_File', 'parsech_dbm/Reference', &GDBM_WRCREAT, 0640);
+  tie(%Status, 'GDBM_File', 'parsech_dbm/Status', &GDBM_WRCREAT, 0640);
+  &parse(@_);
+  untie(%Name);
+  untie(%Year);
+  untie(%Month);
+  untie(%Day);
+  untie(%Info);
+  untie(%Type);
+  untie(%Status);
+  untie(%Reference);
 }
+
+
