@@ -9,13 +9,15 @@ hurd0.0
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Code taken from mach3
+	Influenced by its #thanks to rms
 
 gnu0.0
-	Name: GNU 0.0
+	Name: Gnu's Not Unix 0.0
 	Date: 1996-8-6
 	Reference: The date on ftp.gnu.org
 	Type: OS
 	Code taken from hurd0.0
+	Influenced by its
 
 hurd0.1
 	Name: Hurd 0.1
@@ -25,7 +27,7 @@ hurd0.1
 	Successor to hurd0.0
 
 gnu0.1
-	Name: GNU 0.1
+	Name: Gnu's Not Unix 0.1
 	Date: 1996-9-7
         Reference: The date on ftp.gnu.org
         Type: OS
@@ -41,7 +43,7 @@ hurd0.2
 	Code taken from mach4uk22
 
 gnu0.2
-	Name: GNU 0.2
+	Name: Gnu's Not Unix 0.2
         Date: 1997-6-16
         Reference: The date on ftp.gnu.org
         Type: OS
