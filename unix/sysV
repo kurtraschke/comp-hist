@@ -1,7 +1,7 @@
 #########################################################################
 #			System III and System V				#
 #########################################################################
-# $Revision: 1.7 $ $Date: 2000/08/23 19:20:53 $
+# $Revision: 1.8 $ $Date: 2000/08/28 13:40:34 $
 #
 # [wkt] The dates and relationships in here are vague. Can anyone help
 # to improve them? Eric Fischer <eric@fudge.uchicago.edu> has given
@@ -14,7 +14,7 @@ unixsystem3
 	Type: OS
 	Code taken from ts3.0.1 1000
 	Code taken from 32V
-#	Successor to cb3
+	Successor to cb3
 
 sysIV
 	Name: Unix System IV
