@@ -318,11 +318,62 @@ p31g
 	Date: 2000-3-8
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to p3xeon800018
-	#this is the successor to an xeon because the next 
+	#this is the successor to an xeon because the next p3 is slower
 
 p3866
 	Name: Intel Pentium III (866, 850 MHz) (0.18 micron process)
 	Date: 2000-3-20
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to p3733018
+
+celery600
+	Name: Intel Celeron (600 and 566 MHz)
+	Date: 2000-3-29
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to celery500
+
+p3xeon866
+	Name: Intel Pentium II Xeon (866 MHz) (0.18 micron process)
+	Date: 2000-5-10
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to p3xeon800018
+
+mcelery550
+	Name: Mobile Intel Celeron (550 MHz) (0.18 micron process)
+	Date: 2000-5-24
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to mcelery500
+
+mp3700
+	Name: Intel Mobile Pentium III with SpeedStep (700 MHz)
+	Date: 2000-5-24
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to mp3650
+
+p3700a
+	Name: Intel Pentium III (700 MHz) (0.18 micron process)
+	Date: 2000-5-22
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to p3866
+
+p3933
+	Name: Intel Pentium III (933 MHz) (0.18 micron process)
+	Date: 2000-5-24
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to p3700a
+
+p3xeon933
+	Name: Intel Pentium III Xeon (933 MHz) (0.18 micron process)
+	Date: 2000-5-24
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to p3xeon866
+
+
+
+
+
+
+
+
+
 
