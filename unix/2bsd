@@ -1,7 +1,7 @@
 #########################################################################
 #			1BSD and 2BSD versions				#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/08/23 17:46:49 $
+# $Revision: 1.5 $ $Date: 2000/08/25 15:17:39 $
 #
 # [wkt] I need to examine the files for each version, and see how V6/V7
 # are related to the early 2BSDs.
@@ -11,9 +11,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 142
         Type: OS
 	Code taken from v6
-#		PDP-11, Pascal, ex(1)
-#		30 free copies of 1BSD sent out
-#		35 tapes sold for 50 USD [QCU]
+	Info: PDP-11, Pascal, ex(1), 30 free copies of 1BSD sent out, 35 tapes sold for 50 USD [QCU]
 
 2bsd
 	Name: 2BSD
@@ -22,24 +20,7 @@
         Type: OS
 	Successor to 1bsd 1000
 	Code taken from v6
-#		75 2BSD tapes shipped
-#		Note: csh in 2bsd is derived from the v6 Mashey shell.
-#		Therefore: 2bsd is `derived' from v6, in some sense.
-
-# [wkt] This is a confusing release. The following commentary refers to the
-# file Distributions/ucb/2.79bsd.tar in the PUPS Archive. The file /LABEL says:
-#	Second Berkeley Software Tape
-#	Apr 1980 TAR 800BPI 2.79bsd (no kernel)
-# The /README has two dates:
-#	Thu Apr 19 23:25:43 PST 1979	(original 2BSD date)
-#	Fri Feb 20 22:34:06 PST 1981	(followed by some blurb)
-# The file /install.ms has the information:
-#	revised March 1980
-# The timestamps in the file show a large gap from Jun 1979 to Jan 1980,
-# and then timestamps continually to Jun 1981. I will use the Apr 1980
-# date as given in /LABEL
-#
-# Note: 2.79 doesn't have any AT&T UNIX source code in it.
+	Info: 75 2BSD tapes shipped. \nNote: csh in 2bsd is derived from the v6 Mashey shell. Therefore: 2bsd is `derived' from v6, in some sense.
 
 2.79bsd
 	Name: 2.79BSD
@@ -47,11 +28,8 @@
 	Reference: /LABEL in Distributions/ucb/2.79bsd.tar
         Type: OS
 	Successor to 2bsd 1000
+	Info: # [wkt] This is a confusing release. The following commentary refers to the file Distributions/ucb/2.79bsd.tar in the PUPS Archive. The file /LABEL says:\n       Second Berkeley Software Tape\n       Apr 1980 TAR 800BPI 2.79bsd (no kernel)\n The /README has two dates:\n       Thu Apr 19 23:25:43 PST 1979    (original 2BSD date)\n       Fri Feb 20 22:34:06 PST 1981    (followed by some blurb)\n The file /install.ms has the information:\n       revised March 1980\n The timestamps in the file show a large gap from Jun 1979 to Jan 1980,\n and then timestamps continually to Jun 1981. I will use the Apr 1980\n date as given in /LABEL\n\n Note: 2.79 doesn't have any AT&T UNIX source code in it.
 
-# [wkt] Note on the 2.8 entries. I don't have a definitive date of release for
-# 2.8BSD. From somewhere I have the reference of KSJ, but I don't know what
-# that means. The 2.8 tape in the PUPS archive is from a release dated
-# Sep 8, 1982.
 2.8bsd
 	Name: 2.8BSD
 	Date: 1981-07
@@ -59,6 +37,8 @@
         Type: OS
 	Successor to 2.79bsd 1000
 	Code taken from v7
+	Info: [wkt] Note on the 2.8 entries. I don't have a definitive date of release for\n 2.8BSD. From somewhere I have the reference of KSJ, but I don't know what\n that means. The 2.8 tape in the PUPS archive is from a release dated\n Sep 8, 1982.
+
 
 # I don't know what page this reference comes from.
 2.8.1bsd
@@ -67,7 +47,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus
         Type: OS
 	Successor to 2.8bsd 1000
-#		set of performance improvements
+	Info: set of performance improvements
 
 2.8.2bsd
 	Name: 2.8.2BSD
