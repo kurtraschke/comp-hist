@@ -5,7 +5,7 @@ use strict;
 my(%Name, %Year, %Month, %Day, %Info);
 my(%Color, %Shape, %Linkto, %Linkweight);
 my(%Reference, %Type, %Status, %VCG_Weights);
-my(%Opts, $Maxyear, $Minyear, %VPos);
+my(%Opts, $Maxyear, $Minyear, %VPos, $vscale);
 
 =head1 NAME
 
@@ -55,8 +55,11 @@ This switch will print a brief help message and exit.
 
 =cut it out!
 
-getopts('hvo:', \%Opts); #Get our options for parsing
+getopts('hvo:s:', \%Opts); #Get our options for parsing
 
+if ( defined $Opts{s} ) {
+    $vscale=$Opts{s};} else {
+	$vscale=1;}
 #now, the case statements for what to do
 if( defined $Opts{h} ){ &help; exit; }
 elsif( defined $Opts{v} ){ print("Parsech, version 1.5, 2000-10-4\n"); exit; }
@@ -210,6 +213,8 @@ sub dopos{
       $Year = int($Year{$node}) - $Minyear;
       $VPos{$node} = $Year * 12 + $Month{$node};
     }
+    $VPos{$node} = ($VPos{$node}/$vscale);
+    print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
   }   
 }
 
