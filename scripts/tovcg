@@ -28,8 +28,11 @@ while(<>){
     if (/.*Influenced by (\S+)/) {
         print("edge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
     }
-    if(/.*[Runs|Ran] on (\S+)/){
+    if(/.*Runs on (\S+)/){
 	print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
+    }
+    if(/.*Ran on (\S+)/){
+        print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
     }
 }
 
