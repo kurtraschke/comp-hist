@@ -47,5 +47,8 @@ dump:
 sources:
 	@echo $(SRCS)
 
-distclean: clean
+distclean realclean: clean
 	rm -f config.* Makefile
+
+dist:
+	tar cfz ../comp-hist.tar.gz .
