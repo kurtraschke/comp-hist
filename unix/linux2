@@ -1390,6 +1390,13 @@ linux2217
 	Type: os
 	Successor to linux2216
 
+linux2218
+	Name: Linux 2.2.18
+	Date: 2000-12-11
+	Reference: /. Announcement article
+	Type: os
+	Successor to linux2217
+
 linux230
 	Name: Linux 2.3.0
 	Type: os
@@ -1893,3 +1900,10 @@ linux24t11
 	Reference: date on kernel.org
 	Type: OS
 	Successor to linux24t10
+
+linux24t12
+	Name: Linux 2.4.0-test12
+	Date: 2000-12-11
+	Reference: LWN announcement
+	Type: os
+	Successor to linux24t11
