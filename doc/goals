@@ -1,0 +1,29 @@
+OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
+
+0.03
+	tovcg shold be done
+
+0.1
+	we shold have two functional parsers
+	linux0 and linux1 should be done
+	the intel chips shuld all be in
+
+0.5
+	we should have at least three working parsers
+	the Unix tree should be reasonably done
+	ITS should be in place
+	the linux kernels should be done
+
+1.0
+	MacOS should be done (this includes OSX)
+	TOPS-10 should be done
+	TOPS-20 should be done
+	WAITS shoulde be done
+	Winnt should be done
+	VMS should be done
+	the PDP computers should be done
+	the VAX computers should be done
+	the AMD chips should be done
+	POSIX should be current
+	Multics should be done
+	at least one node in use today should be traced back to ENIAC
