@@ -5,7 +5,6 @@ mac128k
 	Date: 1984-1
 	Reference:  Macworld Mac and Power Mac Secrets
 	Type: hardware
-	Made by apple
 	Code taken from 68000
 	Code taken from lisa2
 	Influenced by alto
@@ -16,7 +15,6 @@ mac512k
 	Reference:  Macworld Mac and Power Mac Secrets
         Type: hardware
 	Successor to mac128k
-	Made by apple
 
 mac512ke
         Name: Macintosh 512ke
@@ -24,7 +22,6 @@ mac512ke
         Reference:  Macworld Mac and Power Mac Secrets
         Type: hardware
         Successor to mac512k
-	Made by apple
 
 macplus
         Name: Macintosh Plus
@@ -32,7 +29,6 @@ macplus
         Reference:  Macworld Mac and Power Mac Secrets
         Type: hardware
         Successor to mac512k
-	Made by apple
 
 macse
 	Name: Macintosh SE
@@ -40,7 +36,6 @@ macse
 	Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
 	Successor to macplus
-	Made by apple
 
 macsefdhd
         Name: Macintosh SE FDHD
@@ -48,7 +43,6 @@ macsefdhd
         Refenence: http://www.lowendmac.com/compact/se.shtml
         Type: hardware
         Successor to macse
-        Made by apple
 
 macse30
         Name: Macintosh SE/30
@@ -56,7 +50,6 @@ macse30
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macsefdhd
-	Made by apple
 
 macclassic
         Name: Macintosh Classic
@@ -64,7 +57,6 @@ macclassic
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macse30
-	Made by apple
 
 macclassicii
         Name: Macintosh Classic II
@@ -73,14 +65,12 @@ macclassicii
 	Type: hardware
         Successor to macclassic
 	Code taken from 68030
-	Made by apple
 
 macperforma200
         Name: Macintosh Performa 200
         Date: 1991-9
         Refenence: Macworld Mac and Power Mac Secrets
         Type: hardware
-	Made by apple
 	Aka macclassicii
 
 maccc
@@ -89,7 +79,6 @@ maccc
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macclassicii
-	Made by apple
 
 macii
         Name: Macintosh II
@@ -98,7 +87,6 @@ macii
 	Type: hardware
         Influenced by macse
 	Code taken from 68020
-	Made by apple
 
 maciix
         Name: Macintosh IIx
@@ -106,7 +94,6 @@ maciix
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macii
-	Made by apple
 	Code taken from 68030
 
 maciifx
@@ -115,7 +102,6 @@ maciifx
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciix
-	Made by apple
 
 maciicx
         Name: Macintosh IIcx
@@ -123,7 +109,6 @@ maciicx
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciix
-	Made by apple
 
 maciici
         Name: Macintosh IIci
@@ -131,7 +116,6 @@ maciici
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciicx
-	Made by apple
 
 maciisi
         Name: Macintosh IIsi
@@ -139,7 +123,6 @@ maciisi
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciici
-	Made by apple
 
 maciivx
         Name: Macintosh IIvx
@@ -147,7 +130,6 @@ maciivx
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciisi
-	Made by apple
 
 macperforma600
         Name: Macintosh Performa 600
@@ -155,22 +137,18 @@ macperforma600
         Refenence: Macworld Mac and Power Mac Secrets
         Type: hardware
         Aka maciivx
-        Made by apple
 
 maclc
 	Name: Macintosh LC
 	Date: 1990-9
 	Reference: http://www.lowendmac.com/lc/lc.shtml
-	Made by apple
 	Code taken from 68020
 	Influenced by maciici
-	Type: hardware
 
 maclcii
 	Name: Macintosh LC II
 	Date: 1992-3
 	Reference: http://www.lowendmac.com/lc/lcii.shtml
-	Made by apple
 	Type: hardware
 	Code taken from 68030
 	Successor to maclc
@@ -179,7 +157,6 @@ macperforma400
 	Name: Macintosh Performa 400
 	Date: 1993-9
 	Reference: http://www.lowendmac.com/lc/lcii.shtml
-        Made by apple
         Type: hardware
 	Aka maclcii
 
@@ -187,7 +164,6 @@ macperforma405
         Name: Macintosh Performa 405
         Date: 1993-9
         Reference: http://www.lowendmac.com/lc/lcii.shtml
-        Made by apple
         Type: hardware
         Aka maclcii
 
@@ -195,7 +171,6 @@ macperforma410
         Name: Macintosh Performa 410
         Date: 1993-9
         Reference: http://www.lowendmac.com/lc/lcii.shtml
-        Made by apple
         Type: hardware
         Aka maclcii
 
@@ -203,7 +178,6 @@ macperforma430
         Name: Macintosh Performa 430
         Date: 1993-9
         Reference: http://www.lowendmac.com/lc/lcii.shtml
-        Made by apple
         Type: hardware
         Aka maclcii
 
@@ -211,7 +185,6 @@ maclciii
 	Name: Macintosh LC III
 	Date: 1993-2
 	Reference:  http://www.lowendmac.com/lc/lciii.shtml
-	Made by apple
 	Type: hardware
 	Successor to maclcii
 
@@ -219,7 +192,6 @@ macperforma460
         Name: Macintosh Performa 460
         Date: 1993-9
         Reference: http://www.lowendmac.com/lc/lcii.shtml
-        Made by apple
         Type: hardware
         Successor to maclciii
 
