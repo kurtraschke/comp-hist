@@ -33,7 +33,9 @@ windows386
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Code taken from windows2
-	Ran on 386
+	Ran on 386sx
+	Ran on 386dx
+	Ran on 386sl
 
 windows201
 	Name: Windows 2.01
