@@ -67,11 +67,17 @@ windows98
 	Reference: http://www.microsoft.com/billgates/bio/1998.htm
 	Successor to windows95
 
+windows98se
+	Name: Windows 98 Second Edition
+	Date: 1999-4
+	Reference: Readme file of the French version
+	Successor to windows98
+
 windowsme
 	Name: Windows Millenium Edition
 	Date: 2000-6-19
 	Reference: http://www.microsoft.com/windowsme/news/default.asp
-	Successor to windows98
+	Successor to windows98se
 
 # If anyone has the dates for win95sp1 and so on, send them off to me.
 

@@ -1,19 +1,188 @@
 #########################
 #	MS-DOS		#
-# QDOS as well.		#
+# 	PC-DOS   	#
+# 	DR-DOS   	#
 #########################
 
-msdos1
-	Name: Microsoft Disk Operating System 1.0
-	Date: 1981 #the release date of the PC
-	Reference: http://www.acad.humberc.on.ca/~frig8279/osessay/dos/history.html
+# it all comes from a book called Programmer's Technical Reference for MSDOS and the IBM PC 
+# by Dave Williams. I have a demo version distributed as a text-file
 
-#msdos11
-#	Name: Microsoft Disk Operating System 1.1
-#	Date: Unknown
-# 	Reference: http://www.acad.humberc.on.ca/~frig8279/osessay/dos/history.html
+86dos
+	Name: Paterson's Quick'n'Dirty DOS
+	Date: 1981-02
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+	
+pcdos1
+	Name: IBM Personal Computer DOS 1.0
+	Date: 1981-08
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+	Successor to 86dos
 
-msdos2
-	Name: Microsoft Disk Operating System 2.0
+pcdos105
+	Name: IBM Personal Computer DOS 1.05
+	Date: 1981
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos11
+	Name: IBM Personal Computer DOS 1.1
+	Date: 1982-06
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos125
+	Name: Microsoft Disk Operating System 1.25
+	Date: 1982-07
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos2
+	Name: IBM Personal Computer DOS 2.0
+	Date: 1983-03
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos185
+	Name: IBM Personal Computer DOS 1.85
+	Date: 1983-04
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+	Successor to pcdos11
+
+msdos201
+	Name: Microsoft Disk Operating System 2.01
 	Date: 1983
-	Reference: http://www.acad.humberc.on.ca/~frig8279/osessay/dos/history.html
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos21
+#for IBM PCjr
+	Name: IBM Personal Computer DOS 2.1
+	Date: 1983-10
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos211
+	Name: Microsoft Disk Operating System 2.11
+	Date: 1983-12
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+	Successor to msdos201
+	Influenced by pcdos21
+
+msdos212
+#special version for TI professional
+	Name: Microsoft Disk Operating System 2.12
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos3
+	Name: IBM Personal Computer DOS 3.0
+	Date: 1984-08
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos305
+	Name: Microsoft Disk Operating System 3.05
+	Date: 1984-11
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos31
+	Name: IBM Personal Computer DOS 3.1
+	Date: 1984-11
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos225
+	Name: Microsoft Disk Operating System 2.25
+	Date: 1985-10
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos32
+	Name: IBM Personal Computer DOS 3.2
+	Date: 1986-01
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos4
+	Name: Microsoft Disk Operating System 4.0
+	Date: 1986-04
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos33
+	Name: IBM Personal Computer DOS 3.3
+	Date: 1987-04
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos331
+	Name: Microsoft Disk Operating System 3.31
+	Date: 1987-11
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos34
+#development version - not released
+	Name: IBM Personal Computer DOS 3.4
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos211r
+#for Tandy machines
+	Name: Microsoft Disk Operating System 2.11R
+	Date: 1988
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+pcdos4
+	Name: IBM Personal Computer DOS 4.0
+	Date: 1988-08
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos401
+	Name: Microsoft Disk Operating System 4.01
+	Date: 1989-01
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos321r
+#for laptops
+	Name: Microsoft Disk Operating System 3.21R
+	Date: 1989-09
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos33r
+#for TI laptops
+	Name: Microsoft Disk Operating System 3.3R
+	Date: 1990
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos5
+	Name: Microsoft Disk Operating System 5.0
+	Date: 1991-06
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+	Influenced by drdos5
+
+msdosv
+#japanese version
+	Name: Microsoft Disk Operating System V
+	Date: 1993-02
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos6
+	Name: Microsoft Disk Operating System 6.0
+	Date: 1993-03
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+msdos62
+	Name: Microsoft Disk Operating System 6.2
+
+msdos622
+	Name: Microsoft Disk Operating System 6.22
+
+drdos34
+	Name: DR-DOS 3.4
+	Date: 1988-06
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+drdos341
+	Name: DR-DOS 3.41
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+drdos5
+	Name: DR-DOS 5.0
+	Date: 1990-5
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+drdos6
+	Name: DR-DOS 6.0
+	Date: 1991-12
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+
+drdos7
+	Name: Novell Dos 7.0
+	Date: 1993-03
+	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
