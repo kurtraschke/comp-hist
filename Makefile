@@ -108,7 +108,7 @@ browse: browser dump
 	cd scripts/browser/src ; ./browser ../../../dump
 
 dbm: unexpand
-	perl scripts/parsech-split/dbm dump
+	perl scripts/parsech-split/dbm unexpand
 
 unexpand: dump
 	unexpand dump >unexpand
