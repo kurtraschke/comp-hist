@@ -1,0 +1,28 @@
+#The NeXT black hardware goes here
+cube
+	Name: NeXT Computer
+	Date: 1988-10-12
+	Reference: http://www.mackido.com/History/AppleTimeline.html
+	Type: hardware
+
+nextstation
+	Name: NeXTStation
+	Date: 1990-9-18
+	Reference: http://www.mackido.com/History/AppleTimeline.html
+	Type: hardware
+	Code taken from cube
+
+nextstationcolor
+        Name: NeXTStation Color
+        Date: 1990-9-18
+        Reference: http://www.mackido.com/History/AppleTimeline.html
+        Type: hardware
+        Code taken from cube
+
+nextcube
+        Name: NeXTCube
+        Date: 1990-9-18
+        Reference: http://www.mackido.com/History/AppleTimeline.html
+        Type: hardware
+        Code taken from nextstationcolor
+	Successor to cube
