@@ -206,7 +206,7 @@ vms5.5vax
 	Reference: VMS history
 	Type: OS
 	Successor to vms5.4
-#	Influenced by posix.1
+	Influenced by posix.11990
 
 vms1axp
 	Name: Digital Equipment Corporation Virtual Memory System 1.0 AXP
