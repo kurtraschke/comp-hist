@@ -1,8 +1,8 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
-0.1 (0.1 is out, however these milestones have not been achieved, so I suppose that they are just being moved en masse to the next version)
-	linux1 should be done
+0.11
 	the motorola tree should be partway done
+
 0.5
 	we should have at least three working parsers
 	the Unix tree should be reasonably done
