@@ -6,13 +6,15 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux apple/macos
 
 INTEL-SRCS = intel/4004 intel/pentium
 
 IBM-SRCS = intel/pc/ibmpc 
 
 SINCLAIR-SRCS = sinclair
+
+TRANSISTOR-SRCS = transistor
 
 CTSS-SRCS = ctss/ctss $(UNIX-SRCS)
 
@@ -22,7 +24,7 @@ LINC-SRCS = linc
 
 DATAGEN-SRCS = datagen/nova
 
-SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS)
+SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS)
 
 all: comp-history-dot.ps biblio comp-history-vcg
 
