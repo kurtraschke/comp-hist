@@ -39,12 +39,27 @@ hsvplat
         Successor to hsv
         Successor to hsvd
 
+hsve
+	Name: Handspring Visor Edge
+	Date: 2001-3-12
+	Reference: http://www.handspring.com/company/pr44.jhtml
+	Type: hardware
+	Influenced by pvx
+	Code taken from hsvplat
+
 trgpro
 	Name: TRG TRGPro
 	Date: 1999-10-18
 	Reference: http://www.trgpro.com/about/press101899a.html
 	Type: hardware
 	Code taken from piiixe
+
+he330
+	Name: HandEra 330
+	Date: 2001-4-23
+	Reference: http://news.pdalive.com/newsitem.asp?NewsID=500
+	Type: hardware
+	Successor to trgpro
 
 sonyclie
 	Name: Sony CLIE PEG-S300

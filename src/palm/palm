@@ -1,4 +1,4 @@
-#Here's where the Pilot, PalmPilot, and Palm devices go  Other devices running the PalmOS go in palm/pcpdev.
+#Here's where the Pilot, PalmPilot, and Palm devices go.  Other devices running the PalmOS go in palm/pcpdev.
 gridpad
 	Name: GRiDPad
 	Date: 1989
@@ -111,4 +111,26 @@ pm100
 	Reference: http://www.palmgear.com/faq/faq.cfm?sid=14705819991013200443&faqID=18&catID=2
 	Type: hardware
 	Successor to piiie
+
+pm105
+	Name: Palm m105
+	Date: 2001-3-6
+	Reference: http://www.prnewswire.com/cgi-bin/micro_stories.pl?ACCT=153400&TICK=PALM&STORY=/www/story/03-06-2001/0001441618&EDATE=Mar+6,+2001
+	Type: hardware
+	Successor to pm100
+
+pm500
+	Name: Palm m500
+	Date: 2001-3-19
+	Reference: http://www.prnewswire.com/cgi-bin/micro_stories.pl?ACCT=153400&TICK=PALM&STORY=/www/story/03-19-2001/0001449989&EDATE=Mar+19,+2001
+	Type: hardware
+	Successor to pvx
+
+pm505
+        Name: Palm m505
+        Date: 2001-3-19
+        Reference: http://www.prnewswire.com/cgi-bin/micro_stories.pl?ACCT=153400&TICK=PALM&STORY=/www/story/03-19-2001/0001449989&EDATE=Mar+19,+2001
+        Type: hardware
+        Successor to pm500
+	Code taken from piiic
 
