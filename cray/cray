@@ -3,6 +3,7 @@ cray1
 	Date: 1976
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
+	Made by cray
 
 cray2
 	Name: Cray-2
@@ -10,6 +11,7 @@ cray2
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
 	Successor to cray1
+	Made by cray
 
 crayxmp
 	Name: Cray X-MP
@@ -17,6 +19,7 @@ crayxmp
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
 	Code taken from cray1
+	Made by cray	
 
 crayymp
 	Name: Cray Y-MP
@@ -24,4 +27,22 @@ crayymp
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
 	Successor to crayxmp
+	Made by cray
+
+cray3
+	Name: Cray-3
+	Date: 
+	Reference: 
+	Type: hardware
+	Successor to cray2
+	Made by ccc
+
+crayc90
+	Name: Cray C90
+	Date: 1991
+	Reference: http://ftp.cray.com/~kjt/cray/gallery/
+	Type: hardware
+	Successor to crayymp
+	Made by cray
+
 
