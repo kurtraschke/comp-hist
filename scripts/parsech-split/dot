@@ -1,0 +1,60 @@
+#!/usr/bin/perl -w
+
+use strict;
+no strict 'refs';
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(:ALL);
+use ParseCH::DirGraph qw(:ALL);
+
+parser(@ARGV);
+
+my $d;
+my($Minyear, $Maxyear) = dominmaxYear(\%Year);
+my %Date = dopos("dot", 1, \%Year, \%Month);
+
+#Print a dot header out
+print("digraph unixhist {\nratio=auto; page=\"8.25,11.65\";\n");
+print("node [shape=plaintext,fontsize=24];\n");
+print("ranksep=0.1; nodesep=0.1; center=true;\n\n");
+
+#do a year timeline
+print("{ edge [style=bold];\n");
+for my $i ($Minyear .. $Maxyear) {
+  print("\t$i->\n");
+}
+print("\tfuture;\n}\n\n");
+
+#Print node rankings
+foreach my $Month (sort keys %Date){
+  print("{ rank=same; ");
+  foreach my $node (keys %{$Date{$Month}}){
+    print("\"$node\"; ");
+  }
+  print(" }\n");
+}
+print("\n");
+
+
+#lock the invisible years in place
+for my $i ($Minyear .. $Maxyear){
+  print("{ edge [style=invis]\n");
+  print("\t$i.00 [style=invis,height=0.1,width=0.2,fontsize=2];\n");
+  for my $j (0 .. 12){
+    $d="$i.$j";
+    print("\t$d [style=invis,height=0.1,width=0.2,fontsize=2];\n")
+      if defined $Date{$d}{$d};
+  }
+  print("\t$i.00->\n");
+  for my $j (0 .. 12){
+    $d="$i.$j";
+    print("\t$d->\n")
+      if defined $Date{$d}{$d};
+  }
+  printf("\t%d.00;\n", $i+1);
+  print("}\n");
+}
+printf("{ %d.00 [style=invis,height=0.1,width=0.2,fontsize=2]; }\n\n", $Maxyear+1);
+
+#Close the dot file
+print("}\n");
