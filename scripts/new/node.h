@@ -1,17 +1,35 @@
 /*---------------------------------------------------------------------------
-										Field definitions
+							 User definitions
 ---------------------------------------------------------------------------*/
+
+#ifndef MAX_YEAR
+#define MAX_YEAR    2001
+#endif
+
+#ifndef LINE_LENGTH
+#define LINE_LENGTH 1024
+#endif
+
 
 /* This table is used to define the field names and the Node struct fields
 
    The function name specifies the type of field : STR for string, LINK for 
    links, DATE for dates or ENUM for fields whose values are to be checked.
+   The MSTR type allows multiple strings to be stored on a linked list like
+   the LINKS.
 
-   The first parameter is 1 or 0 depending on whether that field is
-   mandatory. If the field is not specified and the value is 1 then an 
-   error is declared.
+   The first parameter is a flag value to control error checking etc.
+   The field is bit encoded, values are given towards the end of the file.
 
-	The second parameter defines the string used to introduce this field.
+       Bit 0 (value 1) if set makes the field mandatory, ie generate an 
+       error if the field is not specified in a node.
+       
+       Bit 1 (value 2) if set allows the field to be specified multiple
+       times, when clear the field must be specified at most once.
+       (Note that if this flag is set, the parser will accpet multiple 
+        fields but will only save the multiples for LINK or MSTR fields)
+
+   The second parameter defines the string used to introduce this field.
    This string is case sensitive.
 
    The third parameter specifies the Node struct field name. STR and 
@@ -29,16 +47,16 @@
  */
 
 #define FIELD_DEFS \
-   FSTR  (1, "Name:",            name ) \
-   FSTR  (0, "Reference:",       reference ) \
-   FENUM (1, "Type:",            type )\
-   FSTR  (0, "Status:",          status ) \
-   FLINK (0, "Aka ",             aka ) \
-   FLINK (0, "Successor to ",    successorto ) \
-   FLINK (0, "Code taken from ", codetakenfrom ) \
-   FLINK (0, "Influenced by ",	influencedby ) \
-   FLINK (0, "Runs on ",         runson ) \
-   FDATE (0, "Date:",            date ) \
+   FSTR  (1, "Name:",            name )				\
+   FMSTR (2, "Reference:",       reference )		\
+   FENUM (1, "Type:",            type )				\
+   FSTR  (0, "Status:",          status )			\
+   FLINK (2, "Aka ",             aka )				\
+   FLINK (2, "Successor to ",    successorto )		\
+   FLINK (2, "Code taken from ", codetakenfrom )	\
+   FLINK (2, "Influenced by ",   influencedby )		\
+   FLINK (2, "Runs on ",         runson )			\
+   FDATE (0, "Date:",            date )				\
    FDATE (0, "Founded on ",      foundedon ) 
 
 char  
@@ -50,7 +68,7 @@ char
 
 
 /*---------------------------------------------------------------------------
-										 Node definition
+								 Node definition
 ---------------------------------------------------------------------------*/
 
 struct Date {
@@ -64,9 +82,17 @@ struct Date {
 
 
 #define FSTR(r,s,n)   char * n;
-#define FLINK(r,s,n)  struct Node * n;
+#define FMSTR(r,s,n)  struct NodeLink * n;
+#define FLINK(r,s,n)  struct NodeLink * n;
 #define FDATE(r,s,n)  struct Date * n;
 #define FENUM(r,s,n)  char * n;
+
+
+struct NodeLink {
+    struct Node *node;
+    struct NodeLink *next;
+};
+
 
 struct Node {
 	char *id;
@@ -77,7 +103,9 @@ struct Node {
    FIELD_DEFS
 };
 
+
 #undef FSTR
+#undef FMSTR
 #undef FLINK
 #undef FDATE
 #undef FENUM
@@ -97,22 +125,31 @@ void disp_node (struct Node *n);		/* Print node n to standard out. */
 
 /*-------------------------------------------------------------------------*/
 
+#ifdef PARSER
 
-enum f_types { UNK, STR, LINK, DATE, ENUM }; 
+enum f_types { UNK, STR, MSTR, LINK, DATE, ENUM }; 
 
 struct fstruct {
 	enum f_types typ;
-   char rqd_flag;
+	char flags;
 	char *fname;
-   char **values;
+	char **values;
 };
 
-#ifdef PARSER
 
-#define FSTR(r,s,n) {STR, r, s, NULL}, 
-#define FLINK(r,s,n) {LINK, r, s, NULL}, 
-#define FDATE(r,s,n) {DATE, r, s, NULL}, 
-#define FENUM(r,s,n) {ENUM, r, s, n##Values},
+/* Values for fstruct flags */
+
+#define REQUIRED        0x01
+#define ALLOWDUPS       0x02
+
+
+/* Define functions to generate field description table */
+
+#define FSTR(r,s,n)     {STR, r, s, NULL}, 
+#define FMSTR(r,s,n)    {MSTR, r, s, NULL},
+#define FLINK(r,s,n)    {LINK, r, s, NULL}, 
+#define FDATE(r,s,n)    {DATE, r, s, NULL}, 
+#define FENUM(r,s,n)    {ENUM, r, s, n##Values},
  
 struct fstruct fields [] = {
 	FIELD_DEFS
@@ -123,7 +160,19 @@ struct fstruct fields [] = {
 #undef FLINK
 #undef FDATE
 #undef FENUM
+#undef FIELD_DEFS
+
+/* Define the pool sizes for allocating the various data structures */
+
+#define NODEPOOL        500     /* struct Node */
+#define DATEPOOL        1000    /* struct Date */
+#define NODELINKPOOL    1000    /* struct NodeLink */
+#define STRINGPOOL      8192    /* char */
+
+#else   /* Not parser so undef all non parser defines */
+
+#undef MAX_YEAR
+#undef LINE_LENGTH
+#undef FIELD_DEFS
 
 #endif
-
-#undef FIELDEFS
