@@ -36,11 +36,10 @@ redhat-5.1
 	Successor to redhat-2.0
 
 redhat-5.2
-	Nama: Red Hat Linux 5.2
+	Name: Red Hat Linux 5.2
 	Date: 1998-11-1
 	Reference: /. announcement
 	Type: OS
-	Code taken from linux2036
 	Successor to redhat-5.1
 
 redhat-6.0
