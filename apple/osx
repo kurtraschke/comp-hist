@@ -59,6 +59,8 @@ rhapdr1
 	Date: 1997-9
 	Reference: Unix history tree
 	Type: OS
+	Successor to openstep4
+	Code taken from mach3
 
 rhapdr2
         Name: Rhapsody DR2
