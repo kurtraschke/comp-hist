@@ -1,1 +1,19 @@
-#This is where Apple A/UX goes.
+#This is where Apple A/UX goes.  A/UX was a version of Unix that ran on some Macs.
+
+
+aux10
+	Name: Apple A/UX 1.0
+	Date: 1988-2
+	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html
+	Type: os
+	Made by apple
+
+aux20
+	Name: Apple A/UX 2.0
+	Date: 1990-3
+	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html
+	Type: os
+	Made by apple
+	Successor to aux20
+
+
