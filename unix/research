@@ -1,7 +1,7 @@
 #########################################################################
 #			    Research Editions				#
 #########################################################################
-# $Revision: 1.6 $ $Date: 2000/08/22 12:41:02 $
+# $Revision: 1.7 $ $Date: 2000/08/22 13:42:53 $
 #
 updp7
 	Name: Unics
@@ -10,7 +10,7 @@ updp7
 	Type: OS
 	Status: research
 	Runs on pdp7
-	Influenced by multics
+	Influenced by multicsproject
 
 v1
 	Name: Unix Time-Sharing System,\n 1st Edition
