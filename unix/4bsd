@@ -1,7 +1,7 @@
 #########################################################################
 #			    3BSD/4BSD versions				#
 #########################################################################
-# $Revision: 1.5 $ $Date: 2000/08/25 15:21:46 $
+# $Revision: 1.6 $ $Date: 2000/08/25 20:08:27 $
 #
 # [wkt] Most refs from pg 164 & 165 of QCU. I should also peruse Kirk's
 # CSRG CD set for verification of details.
@@ -69,7 +69,7 @@
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
         Type: OS
 	Successor to 4.2bsd 1000
-	Info: Code taken from DEC Ultrix with DEC's blessing. DNS added to the standard libc (no MX records in Sendmail, though). Added DEC's VAX 8600 and TMSCP support code with DEC's blessing. Added kernel-only support for MicroVAX II (KA630). Without DEC's help! It's unusable, though.
+	Info: Code came in from DEC Ultrix with DEC's blessing. DNS added to the standard libc (no MX records in Sendmail, though). Added DEC's VAX 8600 and TMSCP support code with DEC's blessing. Added kernel-only support for MicroVAX II (KA630). Without DEC's help! It's unusable, though.
 
 
 4.3tahoe
