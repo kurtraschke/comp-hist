@@ -3,70 +3,70 @@
 #########################
 
 irix
-	Name: SGI IRIX
+	Name: Silicon Graphics, Inc. IRIX
 	Date: when was IRIX announced?
 	Reference: Unix history tree
 	Type: announcement
 	Code taken from sysVr3.2
 
 irix4.0.5
-	Name: SGI IRIX 4.0.5
+	Name: Silicon Graphics, Inc. IRIX 4.0.5
 	Date: 1990
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix
 
 irix5.3
-	Name: SGI IRIX 5.3
+	Name: Silicon Graphics, Inc. IRIX 5.3
 	Date: 1993
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix4.0.5
 
 irix6.2
-	Name: SGI IRIX 6.2
+	Name: Silicon Graphics, Inc. IRIX 6.2
 	Date: 1996-1
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix 5.3
 
 irix6.3
-	Name: SGI IRIX 6.3
+	Name: Silicon Graphics, Inc. IRIX 6.3
 	Date: 1996-10
 	Reference: Unix history tree
 	Type: Os
 	Successor to irix6.2
 
 irix6.5
-	Name: SGI IRIX 6.5
+	Name: Silicon Graphics, Inc. IRIX 6.5
 	Date: 1998-6-15
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix6.3
 
 irix6.5.2
-	Name: SGI IRIX 6.5.2
+	Name: Silicon Graphics, Inc. IRIX 6.5.2
 	Date: 1998-11-17
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix6.5
 
 irix6.5.3
-	Name: SGI IRIX 6.5.3
+	Name: Silicon Graphics, Inc. IRIX 6.5.3
 	Date: 1999-2-9
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix6.5.2
 
 irix6.5.5
-	Name: SGI IRIX 6.5.5
+	Name: Silicon Graphics, Inc. IRIX 6.5.5
 	Date: 1999-5
 	Reference: Unix history tree
 	Type: OS
 	Successor to irix6.5.3
 
 irix6.5.6
-	Name: SGI IRIX 6.5.6
+	Name: Silicon Graphics, Inc. IRIX 6.5.6
 	Date: 1999-11
 	Reference: Unix history tree
 	Type: OS
