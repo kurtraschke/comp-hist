@@ -12,7 +12,7 @@ NEXT-SRCS = next/corp next/hw
 
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
-IBM-SRCS = intel/pc/ibmpc 
+IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS)
 
 SINCLAIR-SRCS = sinclair
 
@@ -39,8 +39,6 @@ BE-SRCS = be/corp be/bebox be/beos
 LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian
 
 POWER-SRCS = ibm/power/power
-
-IBM-SRCS = $(POWER-SRCS)
 
 SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(NEXT-SRCS) $(BCPL-SRCS) $(LISP-SRCS) $(SH-SRCS) $(BE-SRCS) $(IBM-SRCS)
 
