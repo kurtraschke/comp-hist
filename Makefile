@@ -54,5 +54,6 @@ comp-history-gp:
 	perl -w scripts/togp $(SRCS) >comp-history.gp
 
 comp-history-gp.ps: comp-history-gp
-	graphplace -p -a comp-history.gp
+	graphplace -p -a comp-history.gp >comp-history.gp.ps
+
 
