@@ -1,6 +1,6 @@
 perl1.000
 	Name: The Practical Extraction and Reporting Language 1.000
-	Date: 1987-Dec-18
+	Date: 1987-12-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Influenced by nawk
@@ -8,1715 +8,1715 @@ perl1.000
 
 perl1.001..10
 	Name: The Practical Extraction and Reporting Language 1.001..10
-	Date: 1988-Jan-30
+	Date: 1988-01-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl1.000
 
 perl1.011..14
 	Name: The Practical Extraction and Reporting Language 1.011..14
-	Date: 1988-Feb-02
+	Date: 1988-02-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl1.001..10
 
 perl2.000
 	Name: The Practical Extraction and Reporting Language 2.000
-	Date: 1988-Jun-05
+	Date: 1988-06-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl1.011..14
 
 perl2.001
 	Name: The Practical Extraction and Reporting Language 2.001
-	Date: 1988-Jun-28
+	Date: 1988-06-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl2.000
 
 perl3.000
 	Name: The Practical Extraction and Reporting Language 3.000
-	Date: 1989-Oct-18
+	Date: 1989-10-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl2.001
 
 perl3.001
 	Name: The Practical Extraction and Reporting Language 3.001
-	Date: 1989-Oct-26
+	Date: 1989-10-26
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.000
 
 perl3.002..4
 	Name: The Practical Extraction and Reporting Language 3.002..4
-	Date: 1989-Nov-11
+	Date: 1989-11-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.001
 
 perl3.005
 	Name: The Practical Extraction and Reporting Language 3.005
-	Date: 1989-Nov-18
+	Date: 1989-11-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.002..4
 
 perl3.006..8
 	Name: The Practical Extraction and Reporting Language 3.006..8
-	Date: 1989-Dec-22
+	Date: 1989-12-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.005
 
 perl3.009..13
 	Name: The Practical Extraction and Reporting Language 3.009..13
-	Date: 1990-Mar-02
+	Date: 1990-03-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.006..8
 
 perl3.014
 	Name: The Practical Extraction and Reporting Language 3.014
-	Date: 1990-Mar-13
+	Date: 1990-03-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.009..13
 
 perl3.015
 	Name: The Practical Extraction and Reporting Language 3.015
-	Date: 1990-Mar-14
+	Date: 1990-03-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.014
 
 perl3.016..18
 	Name: The Practical Extraction and Reporting Language 3.016..18
-	Date: 1990-Mar-28
+	Date: 1990-03-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.015
 
 perl3.019..27
 	Name: The Practical Extraction and Reporting Language 3.019..27
-	Date: 1990-Aug-10
+	Date: 1990-08-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.016..18
 
 perl3.028
 	Name: The Practical Extraction and Reporting Language 3.028
-	Date: 1990-Aug-14
+	Date: 1990-08-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.019..27
 
 perl3.029..36
 	Name: The Practical Extraction and Reporting Language 3.029..36
-	Date: 1990-Oct-17
+	Date: 1990-10-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.028
 
 perl3.037
 	Name: The Practical Extraction and Reporting Language 3.037
-	Date: 1990-Oct-20
+	Date: 1990-10-20
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.029..36
 
 perl3.040
 	Name: The Practical Extraction and Reporting Language 3.040
-	Date: 1990-Nov-10
+	Date: 1990-11-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.037
 
 perl3.041
 	Name: The Practical Extraction and Reporting Language 3.041
-	Date: 1990-Nov-13
+	Date: 1990-11-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.040
 
 perl3.042..43
 	Name: The Practical Extraction and Reporting Language 3.042..43
-	Date: 1990-Jan-??
+	Date: 1990-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.041
 
 perl3.044
 	Name: The Practical Extraction and Reporting Language 3.044
-	Date: 1991-Jan-12
+	Date: 1991-01-12
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.042..43
 
 perl4.000
 	Name: The Practical Extraction and Reporting Language 4.000
-	Date: 1991-Mar-21
+	Date: 1991-03-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl3.044
 
 perl4.001..3
 	Name: The Practical Extraction and Reporting Language 4.001..3
-	Date: 1991-Apr-12
+	Date: 1991-04-12
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.000
 
 perl4.004..9
 	Name: The Practical Extraction and Reporting Language 4.004..9
-	Date: 1991-Jun-07
+	Date: 1991-06-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.001..3
 
 perl4.010
 	Name: The Practical Extraction and Reporting Language 4.010
-	Date: 1991-Jun-10
+	Date: 1991-06-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.004..9
 
 perl4.011..18
 	Name: The Practical Extraction and Reporting Language 4.011..18
-	Date: 1991-Nov-05
+	Date: 1991-11-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.010
 
 perl4.019
 	Name: The Practical Extraction and Reporting Language 4.019
-	Date: 1991-Nov-11
+	Date: 1991-11-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.011..18
 
 perl4.020..33
 	Name: The Practical Extraction and Reporting Language 4.020..33
-	Date: 1992-Jun-08
+	Date: 1992-06-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.019
 
 perl4.034
 	Name: The Practical Extraction and Reporting Language 4.034
-	Date: 1992-Jun-11
+	Date: 1992-06-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.020..33
 
 perl4.035
 	Name: The Practical Extraction and Reporting Language 4.035
-	Date: 1992-Jun-23
+	Date: 1992-06-23
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.034
 
 perl4.036
 	Name: The Practical Extraction and Reporting Language 4.036
-	Date: 1993-Feb-05
+	Date: 1993-02-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.035
 
 perl5.000alpha1
 	Name: The Practical Extraction and Reporting Language 5.000alpha1
-	Date: 1993-Jul-31
+	Date: 1993-07-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl4.036
 
 perl5.000alpha2
 	Name: The Practical Extraction and Reporting Language 5.000alpha2
-	Date: 1993-Aug-16
+	Date: 1993-08-16
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha1
 
 perl5.000alpha3
 	Name: The Practical Extraction and Reporting Language 5.000alpha3
-	Date: 1993-Oct-10
+	Date: 1993-10-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha2
 
 perl5.000alpha4
 	Name: The Practical Extraction and Reporting Language 5.000alpha4
-	Date: 1993-???-??
+	Date: 1993-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha3
 
 perl5.000alpha5
 	Name: The Practical Extraction and Reporting Language 5.000alpha5
-	Date: 1993-???-??
+	Date: 1993-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha4
 
 perl5.000alpha6
 	Name: The Practical Extraction and Reporting Language 5.000alpha6
-	Date: 1994-Mar-18
+	Date: 1994-03-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha5
 
 perl5.000alpha7
 	Name: The Practical Extraction and Reporting Language 5.000alpha7
-	Date: 1994-Mar-25
+	Date: 1994-03-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha6
 
 perl5.000alpha8
 	Name: The Practical Extraction and Reporting Language 5.000alpha8
-	Date: 1994-Apr-04
+	Date: 1994-04-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha7
 
 perl5.000alpha9
 	Name: The Practical Extraction and Reporting Language 5.000alpha9
-	Date: 1994-May-05
+	Date: 1994-05-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha8
 
 perl5.000alpha10
 	Name: The Practical Extraction and Reporting Language 5.000alpha10
-	Date: 1994-Jun-11
+	Date: 1994-06-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha9
 
 perl5.000alpha11
 	Name: The Practical Extraction and Reporting Language 5.000alpha11
-	Date: 1994-Jul-01
+	Date: 1994-07-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha10
 
 perl5.000a11a
 	Name: The Practical Extraction and Reporting Language 5.000a11a
-	Date: 1994-Jul-07
+	Date: 1994-07-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha11
 
 perl5.000a11b
 	Name: The Practical Extraction and Reporting Language 5.000a11b
-	Date: 1994-Jul-14
+	Date: 1994-07-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a11a
 
 perl5.000a11c
 	Name: The Practical Extraction and Reporting Language 5.000a11c
-	Date: 1994-Jul-19
+	Date: 1994-07-19
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a11b
 
 perl5.000a11d
 	Name: The Practical Extraction and Reporting Language 5.000a11d
-	Date: 1994-Jul-22
+	Date: 1994-07-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a11c
 
 perl5.000alpha12
 	Name: The Practical Extraction and Reporting Language 5.000alpha12
-	Date: 1994-Aug-04
+	Date: 1994-08-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a11d
 
 perl5.000a12a
 	Name: The Practical Extraction and Reporting Language 5.000a12a
-	Date: 1994-Aug-08
+	Date: 1994-08-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000alpha12
 
 perl5.000a12b
 	Name: The Practical Extraction and Reporting Language 5.000a12b
-	Date: 1994-Aug-15
+	Date: 1994-08-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12a
 
 perl5.000a12c
 	Name: The Practical Extraction and Reporting Language 5.000a12c
-	Date: 1994-Aug-22
+	Date: 1994-08-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12b
 
 perl5.000a12d
 	Name: The Practical Extraction and Reporting Language 5.000a12d
-	Date: 1994-Aug-22
+	Date: 1994-08-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12c
 
 perl5.000a12e
 	Name: The Practical Extraction and Reporting Language 5.000a12e
-	Date: 1994-Aug-22
+	Date: 1994-08-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12d
 
 perl5.000a12f
 	Name: The Practical Extraction and Reporting Language 5.000a12f
-	Date: 1994-Aug-24
+	Date: 1994-08-24
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12e
 
 perl5.000a12g
 	Name: The Practical Extraction and Reporting Language 5.000a12g
-	Date: 1994-Aug-24
+	Date: 1994-08-24
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12f
 
 perl5.000a12h
 	Name: The Practical Extraction and Reporting Language 5.000a12h
-	Date: 1994-Aug-24
+	Date: 1994-08-24
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12g
 
 perl5.000beta1
 	Name: The Practical Extraction and Reporting Language 5.000beta1
-	Date: 1994-Aug-30
+	Date: 1994-08-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a12h
 
 perl5.000b1a
 	Name: The Practical Extraction and Reporting Language 5.000b1a
-	Date: 1994-Sep-06
+	Date: 1994-09-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000beta1
 
 perl5.000beta2
 	Name: The Practical Extraction and Reporting Language 5.000beta2
-	Date: 1994-Sep-14
+	Date: 1994-09-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b1a
 
 perl5.000b2a
 	Name: The Practical Extraction and Reporting Language 5.000b2a
-	Date: 1994-Sep-14
+	Date: 1994-09-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000beta2
 
 perl5.000b2b
 	Name: The Practical Extraction and Reporting Language 5.000b2b
-	Date: 1994-Sep-17
+	Date: 1994-09-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b2a
 
 perl5.000b2c
 	Name: The Practical Extraction and Reporting Language 5.000b2c
-	Date: 1994-Sep-17
+	Date: 1994-09-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b2b
 
 perl5.000beta3
 	Name: The Practical Extraction and Reporting Language 5.000beta3
-	Date: 1994-Sep-??
+	Date: 1994-09-??
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b2c
 
 perl5.000b3a
 	Name: The Practical Extraction and Reporting Language 5.000b3a
-	Date: 1994-Sep-18
+	Date: 1994-09-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000beta3
 
 perl5.000b3b
 	Name: The Practical Extraction and Reporting Language 5.000b3b
-	Date: 1994-Sep-22
+	Date: 1994-09-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3a
 
 perl5.000b3c
 	Name: The Practical Extraction and Reporting Language 5.000b3c
-	Date: 1994-Sep-23
+	Date: 1994-09-23
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3b
 
 perl5.000b3d
 	Name: The Practical Extraction and Reporting Language 5.000b3d
-	Date: 1994-Sep-27
+	Date: 1994-09-27
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3c
 
 perl5.000b3e
 	Name: The Practical Extraction and Reporting Language 5.000b3e
-	Date: 1994-Sep-28
+	Date: 1994-09-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3d
 
 perl5.000b3f
 	Name: The Practical Extraction and Reporting Language 5.000b3f
-	Date: 1994-Sep-30
+	Date: 1994-09-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3e
 
 perl5.000b3g
 	Name: The Practical Extraction and Reporting Language 5.000b3g
-	Date: 1994-Oct-04
+	Date: 1994-10-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3f
 
 perl5.000b3h
 	Name: The Practical Extraction and Reporting Language 5.000b3h
-	Date: 1994-Oct-07
+	Date: 1994-10-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3g
 
 perl5.000gamma
 	Name: The Practical Extraction and Reporting Language 5.000gamma
-	Date: 1994-Oct-13?
+	Date: 1994-10-13?
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b3h
 
 perl5.000
 	Name: The Practical Extraction and Reporting Language 5.000
-	Date: 1994-Oct-17
+	Date: 1994-10-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000gamma
 
 perl5.000a
 	Name: The Practical Extraction and Reporting Language 5.000a
-	Date: 1994-Dec-19
+	Date: 1994-12-19
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000
 
 perl5.000b
 	Name: The Practical Extraction and Reporting Language 5.000b
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000a
 
 perl5.000c
 	Name: The Practical Extraction and Reporting Language 5.000c
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000b
 
 perl5.000d
 	Name: The Practical Extraction and Reporting Language 5.000d
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000c
 
 perl5.000e
 	Name: The Practical Extraction and Reporting Language 5.000e
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000d
 
 perl5.000f
 	Name: The Practical Extraction and Reporting Language 5.000f
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000e
 
 perl5.000g
 	Name: The Practical Extraction and Reporting Language 5.000g
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000f
 
 perl5.000h
 	Name: The Practical Extraction and Reporting Language 5.000h
-	Date: 1995-Jan-18
+	Date: 1995-01-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000g
 
 perl5.000i
 	Name: The Practical Extraction and Reporting Language 5.000i
-	Date: 1995-Jan-26
+	Date: 1995-01-26
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000h
 
 perl5.000j
 	Name: The Practical Extraction and Reporting Language 5.000j
-	Date: 1995-Feb-07
+	Date: 1995-02-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000i
 
 perl5.000k
 	Name: The Practical Extraction and Reporting Language 5.000k
-	Date: 1995-Feb-11
+	Date: 1995-02-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000j
 
 perl5.000l
 	Name: The Practical Extraction and Reporting Language 5.000l
-	Date: 1995-Feb-21
+	Date: 1995-02-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000k
 
 perl5.000m
 	Name: The Practical Extraction and Reporting Language 5.000m
-	Date: 1995-Feb-28
+	Date: 1995-02-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000l
 
 perl5.000n
 	Name: The Practical Extraction and Reporting Language 5.000n
-	Date: 1995-Mar-07
+	Date: 1995-03-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000m
 
 perl5.000o
 	Name: The Practical Extraction and Reporting Language 5.000o
-	Date: 1995-Mar-13?
+	Date: 1995-03-13?
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000n
 
 perl5.001
 	Name: The Practical Extraction and Reporting Language 5.001
-	Date: 1995-Mar-13
+	Date: 1995-03-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.000o
 
 perl5.001a
 	Name: The Practical Extraction and Reporting Language 5.001a
-	Date: 1995-Mar-15
+	Date: 1995-03-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001
 
 perl5.001b
 	Name: The Practical Extraction and Reporting Language 5.001b
-	Date: 1995-Mar-31
+	Date: 1995-03-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001a
 
 perl5.001c
 	Name: The Practical Extraction and Reporting Language 5.001c
-	Date: 1995-Apr-07
+	Date: 1995-04-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001b
 
 perl5.001d
 	Name: The Practical Extraction and Reporting Language 5.001d
-	Date: 1995-Apr-14
+	Date: 1995-04-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001c
 
 perl5.001e
 	Name: The Practical Extraction and Reporting Language 5.001e
-	Date: 1995-Apr-18
+	Date: 1995-04-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001d
 
 perl5.001f
 	Name: The Practical Extraction and Reporting Language 5.001f
-	Date: 1995-May-31
+	Date: 1995-05-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001e
 
 perl5.001g
 	Name: The Practical Extraction and Reporting Language 5.001g
-	Date: 1995-May-25
+	Date: 1995-05-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001f
 
 perl5.001h
 	Name: The Practical Extraction and Reporting Language 5.001h
-	Date: 1995-May-25
+	Date: 1995-05-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001g
 
 perl5.001i
 	Name: The Practical Extraction and Reporting Language 5.001i
-	Date: 1995-May-30
+	Date: 1995-05-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001h
 
 perl5.001j
 	Name: The Practical Extraction and Reporting Language 5.001j
-	Date: 1995-Jun-05
+	Date: 1995-06-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001i
 
 perl5.001k
 	Name: The Practical Extraction and Reporting Language 5.001k
-	Date: 1995-Jun-06
+	Date: 1995-06-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001j
 
 perl5.001l
 	Name: The Practical Extraction and Reporting Language 5.001l
-	Date: 1995-Jun-06
+	Date: 1995-06-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001k
 
 perl5.001m
 	Name: The Practical Extraction and Reporting Language 5.001m
-	Date: 1995-Jul-02
+	Date: 1995-07-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001l
 
 perl5.001n
 	Name: The Practical Extraction and Reporting Language 5.001n
-	Date: 1995-Oct-31
+	Date: 1995-10-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001m
 
 perl5.002beta1
 	Name: The Practical Extraction and Reporting Language 5.002beta1
-	Date: 1995-Nov-21
+	Date: 1995-11-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.001n
 
 perl5.002b1a
 	Name: The Practical Extraction and Reporting Language 5.002b1a
-	Date: 1995-Dec-04
+	Date: 1995-12-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002beta1
 
 perl5.002b1b
 	Name: The Practical Extraction and Reporting Language 5.002b1b
-	Date: 1995-Dec-04
+	Date: 1995-12-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1a
 
 perl5.002b1c
 	Name: The Practical Extraction and Reporting Language 5.002b1c
-	Date: 1995-Dec-04
+	Date: 1995-12-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1b
 
 perl5.002b1d
 	Name: The Practical Extraction and Reporting Language 5.002b1d
-	Date: 1995-Dec-04
+	Date: 1995-12-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1c
 
 perl5.002b1e
 	Name: The Practical Extraction and Reporting Language 5.002b1e
-	Date: 1995-Dec-08
+	Date: 1995-12-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1d
 
 perl5.002b1f
 	Name: The Practical Extraction and Reporting Language 5.002b1f
-	Date: 1995-Dec-08
+	Date: 1995-12-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1e
 
 perl5.002b1g
 	Name: The Practical Extraction and Reporting Language 5.002b1g
-	Date: 1995-Dec-21
+	Date: 1995-12-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1f
 
 perl5.002b1h
 	Name: The Practical Extraction and Reporting Language 5.002b1h
-	Date: 1996-Jan-05
+	Date: 1996-01-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1g
 
 perl5.002b2
 	Name: The Practical Extraction and Reporting Language 5.002b2
-	Date: 1996-Jan-14
+	Date: 1996-01-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b1h
 
 perl5.002b3
 	Name: The Practical Extraction and Reporting Language 5.002b3
-	Date: 1996-Feb-02
+	Date: 1996-02-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b2
 
 perl5.002gamma
 	Name: The Practical Extraction and Reporting Language 5.002gamma
-	Date: 1996-Feb-11
+	Date: 1996-02-11
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002b3
 
 perl5.002delta
 	Name: The Practical Extraction and Reporting Language 5.002delta
-	Date: 1996-Feb-27
+	Date: 1996-02-27
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002gamma
 
 perl5.002
 	Name: The Practical Extraction and Reporting Language 5.002
-	Date: 1996-Feb-29
+	Date: 1996-02-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002delta
 
 perl5.002_01
 	Name: The Practical Extraction and Reporting Language 5.002_01
-	Date: 1996-Mar-25
+	Date: 1996-03-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002
 
 perl5.003
 	Name: The Practical Extraction and Reporting Language 5.003
-	Date: 1996-Jun-25
+	Date: 1996-06-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.002_01
 
 perl5.003_01
 	Name: The Practical Extraction and Reporting Language 5.003_01
-	Date: 1996-Jul-31
+	Date: 1996-07-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003
 
 perl5.003_02
 	Name: The Practical Extraction and Reporting Language 5.003_02
-	Date: 1996-Aug-10
+	Date: 1996-08-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_01
 
 perl5.003_03
 	Name: The Practical Extraction and Reporting Language 5.003_03
-	Date: 1996-Aug-28
+	Date: 1996-08-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_02
 
 perl5.003_04
 	Name: The Practical Extraction and Reporting Language 5.003_04
-	Date: 1996-Sep-02
+	Date: 1996-09-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_03
 
 perl5.003_05
 	Name: The Practical Extraction and Reporting Language 5.003_05
-	Date: 1996-Sep-12
+	Date: 1996-09-12
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_04
 
 perl5.003_06
 	Name: The Practical Extraction and Reporting Language 5.003_06
-	Date: 1996-Oct-07
+	Date: 1996-10-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_05
 
 perl5.003_07
 	Name: The Practical Extraction and Reporting Language 5.003_07
-	Date: 1996-Oct-10
+	Date: 1996-10-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_06
 
 perl5.003_08
 	Name: The Practical Extraction and Reporting Language 5.003_08
-	Date: 1996-Nov-19
+	Date: 1996-11-19
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_07
 
 perl5.003_09
 	Name: The Practical Extraction and Reporting Language 5.003_09
-	Date: 1996-Nov-26
+	Date: 1996-11-26
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_08
 
 perl5.003_10
 	Name: The Practical Extraction and Reporting Language 5.003_10
-	Date: 1996-Nov-29
+	Date: 1996-11-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_09
 
 perl5.003_11
 	Name: The Practical Extraction and Reporting Language 5.003_11
-	Date: 1996-Dec-06
+	Date: 1996-12-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_10
 
 perl5.003_12
 	Name: The Practical Extraction and Reporting Language 5.003_12
-	Date: 1996-Dec-19
+	Date: 1996-12-19
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_11
 
 perl5.003_13
 	Name: The Practical Extraction and Reporting Language 5.003_13
-	Date: 1996-Dec-20
+	Date: 1996-12-20
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_12
 
 perl5.003_14
 	Name: The Practical Extraction and Reporting Language 5.003_14
-	Date: 1996-Dec-23
+	Date: 1996-12-23
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_13
 
 perl5.003_15
 	Name: The Practical Extraction and Reporting Language 5.003_15
-	Date: 1996-Dec-23
+	Date: 1996-12-23
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_14
 
 perl5.003_16
 	Name: The Practical Extraction and Reporting Language 5.003_16
-	Date: 1996-Dec-24
+	Date: 1996-12-24
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_15
 
 perl5.003_17
 	Name: The Practical Extraction and Reporting Language 5.003_17
-	Date: 1996-Dec-27
+	Date: 1996-12-27
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_16
 
 perl5.003_18
 	Name: The Practical Extraction and Reporting Language 5.003_18
-	Date: 1996-Dec-31
+	Date: 1996-12-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_17
 
 perl5.003_19
 	Name: The Practical Extraction and Reporting Language 5.003_19
-	Date: 1997-Jan-04
+	Date: 1997-01-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_18
 
 perl5.003_20
 	Name: The Practical Extraction and Reporting Language 5.003_20
-	Date: 1997-Jan-07
+	Date: 1997-01-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_19
 
 perl5.003_21
 	Name: The Practical Extraction and Reporting Language 5.003_21
-	Date: 1997-Jan-15
+	Date: 1997-01-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_20
 
 perl5.003_22
 	Name: The Practical Extraction and Reporting Language 5.003_22
-	Date: 1997-Jan-16
+	Date: 1997-01-16
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_21
 
 perl5.003_23
 	Name: The Practical Extraction and Reporting Language 5.003_23
-	Date: 1997-Jan-25
+	Date: 1997-01-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_22
 
 perl5.003_24
 	Name: The Practical Extraction and Reporting Language 5.003_24
-	Date: 1997-Jan-29
+	Date: 1997-01-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_23
 
 perl5.003_25
 	Name: The Practical Extraction and Reporting Language 5.003_25
-	Date: 1997-Feb-04
+	Date: 1997-02-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_24
 
 perl5.003_26
 	Name: The Practical Extraction and Reporting Language 5.003_26
-	Date: 1997-Feb-10
+	Date: 1997-02-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_25
 
 perl5.003_27
 	Name: The Practical Extraction and Reporting Language 5.003_27
-	Date: 1997-Feb-18
+	Date: 1997-02-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_26
 
 perl5.003_28
 	Name: The Practical Extraction and Reporting Language 5.003_28
-	Date: 1997-Feb-21
+	Date: 1997-02-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_27
 
 perl5.003_90
 	Name: The Practical Extraction and Reporting Language 5.003_90
-	Date: 1997-Feb-25
+	Date: 1997-02-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_28
 
 perl5.003_91
 	Name: The Practical Extraction and Reporting Language 5.003_91
-	Date: 1997-Mar-01
+	Date: 1997-03-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_90
 
 perl5.003_92
 	Name: The Practical Extraction and Reporting Language 5.003_92
-	Date: 1997-Mar-06
+	Date: 1997-03-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_91
 
 perl5.003_93
 	Name: The Practical Extraction and Reporting Language 5.003_93
-	Date: 1997-Mar-10
+	Date: 1997-03-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_92
 
 perl5.003_94
 	Name: The Practical Extraction and Reporting Language 5.003_94
-	Date: 1997-Mar-22
+	Date: 1997-03-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_93
 
 perl5.003_95
 	Name: The Practical Extraction and Reporting Language 5.003_95
-	Date: 1997-Mar-25
+	Date: 1997-03-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_94
 
 perl5.003_96
 	Name: The Practical Extraction and Reporting Language 5.003_96
-	Date: 1997-Apr-01
+	Date: 1997-04-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_95
 
 perl5.003_97
 	Name: The Practical Extraction and Reporting Language 5.003_97
-	Date: 1997-Apr-03
+	Date: 1997-04-03
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_96
 
 perl5.003_97a
 	Name: The Practical Extraction and Reporting Language 5.003_97a
-	Date: 1997-Apr-05
+	Date: 1997-04-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97
 
 perl5.003_97b
 	Name: The Practical Extraction and Reporting Language 5.003_97b
-	Date: 1997-Apr-08
+	Date: 1997-04-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97a
 
 perl5.003_97c
 	Name: The Practical Extraction and Reporting Language 5.003_97c
-	Date: 1997-Apr-10
+	Date: 1997-04-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97b
 
 perl5.003_97d
 	Name: The Practical Extraction and Reporting Language 5.003_97d
-	Date: 1997-Apr-13
+	Date: 1997-04-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97c
 
 perl5.003_97e
 	Name: The Practical Extraction and Reporting Language 5.003_97e
-	Date: 1997-Apr-15
+	Date: 1997-04-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97d
 
 perl5.003_97f
 	Name: The Practical Extraction and Reporting Language 5.003_97f
-	Date: 1997-Apr-17
+	Date: 1997-04-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97e
 
 perl5.003_97g
 	Name: The Practical Extraction and Reporting Language 5.003_97g
-	Date: 1997-Apr-18
+	Date: 1997-04-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97f
 
 perl5.003_97h
 	Name: The Practical Extraction and Reporting Language 5.003_97h
-	Date: 1997-Apr-24
+	Date: 1997-04-24
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97g
 
 perl5.003_97i
 	Name: The Practical Extraction and Reporting Language 5.003_97i
-	Date: 1997-Apr-25
+	Date: 1997-04-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97h
 
 perl5.003_97j
 	Name: The Practical Extraction and Reporting Language 5.003_97j
-	Date: 1997-Apr-28
+	Date: 1997-04-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97i
 
 perl5.003_98
 	Name: The Practical Extraction and Reporting Language 5.003_98
-	Date: 1997-Apr-30
+	Date: 1997-04-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_97j
 
 perl5.003_99
 	Name: The Practical Extraction and Reporting Language 5.003_99
-	Date: 1997-May-01
+	Date: 1997-05-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_98
 
 perl5.003_99a
 	Name: The Practical Extraction and Reporting Language 5.003_99a
-	Date: 1997-May-09
+	Date: 1997-05-09
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_99
 
 perlp54rc1
 	Name: The Practical Extraction and Reporting Language p54rc1
-	Date: 1997-May-12
+	Date: 1997-05-12
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.003_99a
 
 perlp54rc2
 	Name: The Practical Extraction and Reporting Language p54rc2
-	Date: 1997-May-14
+	Date: 1997-05-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perlp54rc1
 
 perl5.004
 	Name: The Practical Extraction and Reporting Language 5.004
-	Date: 1997-May-15
+	Date: 1997-05-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perlp54rc2
 
 perl5.004_01
 	Name: The Practical Extraction and Reporting Language 5.004_01
-	Date: 1997-Jun-13
+	Date: 1997-06-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004
 
 perl5.004_02
 	Name: The Practical Extraction and Reporting Language 5.004_02
-	Date: 1997-Aug-07
+	Date: 1997-08-07
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_01
 
 perl5.004_03
 	Name: The Practical Extraction and Reporting Language 5.004_03
-	Date: 1997-Sep-05
+	Date: 1997-09-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_02
 
 perl5.004_04
 	Name: The Practical Extraction and Reporting Language 5.004_04
-	Date: 1997-Oct-15
+	Date: 1997-10-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_03
 
 perl5.004m5t1
 	Name: The Practical Extraction and Reporting Language 5.004m5t1
-	Date: 1998-Mar-04
+	Date: 1998-03-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04
 
 perl5.004_04-m2
 	Name: The Practical Extraction and Reporting Language 5.004_04-m2
-	Date: 1997-May-01
+	Date: 1997-05-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004m5t1
 
 perl5.004_04-m3
 	Name: The Practical Extraction and Reporting Language 5.004_04-m3
-	Date: 1998-May-15
+	Date: 1998-05-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-m2
 
 perl5.004_04-m4
 	Name: The Practical Extraction and Reporting Language 5.004_04-m4
-	Date: 1998-May-19
+	Date: 1998-05-19
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-m3
 
 perl5.004_04-MT5
 	Name: The Practical Extraction and Reporting Language 5.004_04-MT5
-	Date: 1998-Jul-21
+	Date: 1998-07-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-m4
 
 perl5.004_04-MT6
 	Name: The Practical Extraction and Reporting Language 5.004_04-MT6
-	Date: 1998-Oct-09
+	Date: 1998-10-09
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-MT5
 
 perl5.004_04-MT7
 	Name: The Practical Extraction and Reporting Language 5.004_04-MT7
-	Date: 1998-Nov-22
+	Date: 1998-11-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-MT6
 
 perl5.004_04-MT8
 	Name: The Practical Extraction and Reporting Language 5.004_04-MT8
-	Date: 1998-Dec-03
+	Date: 1998-12-03
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-MT7
 
 perl5.004_04-MT9
 	Name: The Practical Extraction and Reporting Language 5.004_04-MT9
-	Date: 1999-Apr-26
+	Date: 1999-04-26
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-MT8
 
 perl5.004_05
 	Name: The Practical Extraction and Reporting Language 5.004_05
-	Date: 1999-Apr-29
+	Date: 1999-04-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_04-MT9
 
 perl5.004_50
 	Name: The Practical Extraction and Reporting Language 5.004_50
-	Date: 1997-Sep-09
+	Date: 1997-09-09
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_05
 
 perl5.004_51
 	Name: The Practical Extraction and Reporting Language 5.004_51
-	Date: 1997-Oct-02
+	Date: 1997-10-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_50
 
 perl5.004_52
 	Name: The Practical Extraction and Reporting Language 5.004_52
-	Date: 1997-Oct-15
+	Date: 1997-10-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_51
 
 perl5.004_53
 	Name: The Practical Extraction and Reporting Language 5.004_53
-	Date: 1997-Oct-16
+	Date: 1997-10-16
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_52
 
 perl5.004_54
 	Name: The Practical Extraction and Reporting Language 5.004_54
-	Date: 1997-Nov-14
+	Date: 1997-11-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_53
 
 perl5.004_55
 	Name: The Practical Extraction and Reporting Language 5.004_55
-	Date: 1997-Nov-25
+	Date: 1997-11-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_54
 
 perl5.004_56
 	Name: The Practical Extraction and Reporting Language 5.004_56
-	Date: 1997-Dec-18
+	Date: 1997-12-18
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_55
 
 perl5.004_57
 	Name: The Practical Extraction and Reporting Language 5.004_57
-	Date: 1998-Feb-03
+	Date: 1998-02-03
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_56
 
 perl5.004_58
 	Name: The Practical Extraction and Reporting Language 5.004_58
-	Date: 1998-Feb-06
+	Date: 1998-02-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_57
 
 perl5.004_59
 	Name: The Practical Extraction and Reporting Language 5.004_59
-	Date: 1998-Feb-13
+	Date: 1998-02-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_58
 
 perl5.004_60
 	Name: The Practical Extraction and Reporting Language 5.004_60
-	Date: 1998-Feb-20
+	Date: 1998-02-20
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_59
 
 perl5.004_61
 	Name: The Practical Extraction and Reporting Language 5.004_61
-	Date: 1998-Feb-27
+	Date: 1998-02-27
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_60
 
 perl5.004_62
 	Name: The Practical Extraction and Reporting Language 5.004_62
-	Date: 1998-Mar-06
+	Date: 1998-03-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_61
 
 perl5.004_63
 	Name: The Practical Extraction and Reporting Language 5.004_63
-	Date: 1998-Mar-17
+	Date: 1998-03-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_62
 
 perl5.004_64
 	Name: The Practical Extraction and Reporting Language 5.004_64
-	Date: 1998-Apr-03
+	Date: 1998-04-03
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_63
 
 perl5.004_65
 	Name: The Practical Extraction and Reporting Language 5.004_65
-	Date: 1998-May-15
+	Date: 1998-05-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_64
 
 perl5.004_66
 	Name: The Practical Extraction and Reporting Language 5.004_66
-	Date: 1998-May-29
+	Date: 1998-05-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_65
 
 perl5.004_67
 	Name: The Practical Extraction and Reporting Language 5.004_67
-	Date: 1998-Jun-15
+	Date: 1998-06-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_66
 
 perl5.004_68
 	Name: The Practical Extraction and Reporting Language 5.004_68
-	Date: 1998-Jun-23
+	Date: 1998-06-23
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_67
 
 perl5.004_69
 	Name: The Practical Extraction and Reporting Language 5.004_69
-	Date: 1998-Jun-29
+	Date: 1998-06-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_68
 
 perl5.004_70
 	Name: The Practical Extraction and Reporting Language 5.004_70
-	Date: 1998-Jul-06
+	Date: 1998-07-06
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_69
 
 perl5.004_71
 	Name: The Practical Extraction and Reporting Language 5.004_71
-	Date: 1998-Jul-09
+	Date: 1998-07-09
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_70
 
 perl5.004_72
 	Name: The Practical Extraction and Reporting Language 5.004_72
-	Date: 1998-Jul-12
+	Date: 1998-07-12
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_71
 
 perl5.004_73
 	Name: The Practical Extraction and Reporting Language 5.004_73
-	Date: 1998-Jul-13
+	Date: 1998-07-13
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_72
 
 perl5.004_74
 	Name: The Practical Extraction and Reporting Language 5.004_74
-	Date: 1998-Jul-14
+	Date: 1998-07-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_73
 
 perl5.004_75
 	Name: The Practical Extraction and Reporting Language 5.004_75
-	Date: 1998-Jul-15
+	Date: 1998-07-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_74
 
 perl5.004_76
 	Name: The Practical Extraction and Reporting Language 5.004_76
-	Date: 1998-Jul-21
+	Date: 1998-07-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_75
 
 perl5.005
 	Name: The Practical Extraction and Reporting Language 5.005
-	Date: 1998-Jul-22
+	Date: 1998-07-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.004_76
 
 perl5.005_01
 	Name: The Practical Extraction and Reporting Language 5.005_01
-	Date: 1998-Jul-27
+	Date: 1998-07-27
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005
 
 perl5.005_02-T1
 	Name: The Practical Extraction and Reporting Language 5.005_02-T1
-	Date: 1998-Aug-02
+	Date: 1998-08-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_01
 
 perl5.005_02-T2
 	Name: The Practical Extraction and Reporting Language 5.005_02-T2
-	Date: 1998-Aug-05
+	Date: 1998-08-05
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_02-T1
 
 perl5.005_02
 	Name: The Practical Extraction and Reporting Language 5.005_02
-	Date: 1998-Aug-08
+	Date: 1998-08-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_02-T2
 
 perl5.005_03-MT1
 	Name: The Practical Extraction and Reporting Language 5.005_03-MT1
-	Date: 1998-Nov-30
+	Date: 1998-11-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_02
 
 perl5.005_03-MT2
 	Name: The Practical Extraction and Reporting Language 5.005_03-MT2
-	Date: 1999-Jan-04
+	Date: 1999-01-04
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_03-MT1
 
 perl5.005_03-MT3
 	Name: The Practical Extraction and Reporting Language 5.005_03-MT3
-	Date: 1999-Jan-17
+	Date: 1999-01-17
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_03-MT2
 
 perl5.005_03-MT4
 	Name: The Practical Extraction and Reporting Language 5.005_03-MT4
-	Date: 1999-Jan-26
+	Date: 1999-01-26
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_03-MT3
 
 perl5.005_03-MT5
 	Name: The Practical Extraction and Reporting Language 5.005_03-MT5
-	Date: 1999-Jan-28
+	Date: 1999-01-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_03-MT4
 
 perl5.005_03
 	Name: The Practical Extraction and Reporting Language 5.005_03
-	Date: 1999-Mar-28
+	Date: 1999-03-28
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_03-MT5
 
 perl5.005_04
 	Name: The Practical Extraction and Reporting Language 5.005_04
-	Date: 2000-***-**
+	Date: 2000
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_03
 
 perl5.005_50
 	Name: The Practical Extraction and Reporting Language 5.005_50
-	Date: 1998-Jul-26
+	Date: 1998-07-26
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_04
 
 perl5.005_51
 	Name: The Practical Extraction and Reporting Language 5.005_51
-	Date: 1998-Aug-10
+	Date: 1998-08-10
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_50
 
 perl5.005_52
 	Name: The Practical Extraction and Reporting Language 5.005_52
-	Date: 1998-Sep-25
+	Date: 1998-09-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_51
 
 perl5.005_53
 	Name: The Practical Extraction and Reporting Language 5.005_53
-	Date: 1998-Oct-31
+	Date: 1998-10-31
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_52
 
 perl5.005_54
 	Name: The Practical Extraction and Reporting Language 5.005_54
-	Date: 1998-Nov-30
+	Date: 1998-11-30
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_53
 
 perl5.005_55
 	Name: The Practical Extraction and Reporting Language 5.005_55
-	Date: 1999-Feb-16
+	Date: 1999-02-16
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_54
 
 perl5.005_56
 	Name: The Practical Extraction and Reporting Language 5.005_56
-	Date: 1999-Mar-01
+	Date: 1999-03-01
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_55
 
 perl5.005_57
 	Name: The Practical Extraction and Reporting Language 5.005_57
-	Date: 1999-May-25
+	Date: 1999-05-25
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_56
 
 perl5.005_58
 	Name: The Practical Extraction and Reporting Language 5.005_58
-	Date: 1999-Jul-27
+	Date: 1999-07-27
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_57
 
 perl5.005_59
 	Name: The Practical Extraction and Reporting Language 5.005_59
-	Date: 1999-Aug-02
+	Date: 1999-08-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_58
 
 perl5.005_60
 	Name: The Practical Extraction and Reporting Language 5.005_60
-	Date: 1999-Aug-02
+	Date: 1999-08-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_59
 
 perl5.005_61
 	Name: The Practical Extraction and Reporting Language 5.005_61
-	Date: 1999-Aug-20
+	Date: 1999-08-20
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_60
 
 perl5.005_62
 	Name: The Practical Extraction and Reporting Language 5.005_62
-	Date: 1999-Oct-15
+	Date: 1999-10-15
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_61
 
 perl5.005_63
 	Name: The Practical Extraction and Reporting Language 5.005_63
-	Date: 1999-Dec-09
+	Date: 1999-12-09
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_62
 
 perl5.5.640
 	Name: The Practical Extraction and Reporting Language 5.5.640
-	Date: 2000-Feb-02
+	Date: 2000-02-02
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.005_63
 
 perl5.5.650
 	Name: The Practical Extraction and Reporting Language 5.5.650
-	Date: 2000-Feb-08
+	Date: 2000-02-08
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.5.640
 
 perl5.5.660
 	Name: The Practical Extraction and Reporting Language 5.5.660
-	Date: 2000-Feb-22
+	Date: 2000-02-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.5.650
 
 perl5.5.670
 	Name: The Practical Extraction and Reporting Language 5.5.670
-	Date: 2000-Feb-29
+	Date: 2000-02-29
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.5.660
 
 perl5.6.0-RC1
 	Name: The Practical Extraction and Reporting Language 5.6.0-RC1
-	Date: 2000-Mar-09
+	Date: 2000-03-09
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.5.670
 
 perl5.6.0-RC2
 	Name: The Practical Extraction and Reporting Language 5.6.0-RC2
-	Date: 2000-Mar-14
+	Date: 2000-03-14
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.6.0-RC1
 
 perl5.6.0-RC3
 	Name: The Practical Extraction and Reporting Language 5.6.0-RC3
-	Date: 2000-Mar-21
+	Date: 2000-03-21
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.6.0-RC2
 
 perl5.6.0
 	Name: The Practical Extraction and Reporting Language 5.6.0
-	Date: 2000-Mar-22
+	Date: 2000-03-22
 	Reference: The Perl History Manual Page
 	Type: language
 	Successor to perl5.6.0-RC3
