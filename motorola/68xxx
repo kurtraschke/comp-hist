@@ -1,0 +1,67 @@
+#################################
+#	Motorola 68xxx		#
+#################################
+#The early (pre-PowerPC) motorola processors
+
+6800
+	Name: The Motorola 6800
+	Date: 1974
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+
+68000
+	Name: The Motorola 68000
+	Date: 1979
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 6800
+
+68020
+	Name: The Motorola 68020
+	Date: 1984
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 68010
+
+68010
+	Name: The Motorola 68010
+	Date: 1984
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 68000
+
+68008
+	Name: The Motorola 68008
+	Date: 1985
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 68010
+
+68030
+	Name: The Motorola 68030
+	Date: 1987
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 68008
+
+88000
+	Name: The Motorola 88000
+	Date: 1988
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Code taken from 68030
+
+6803050
+	Name: The Motorola 68030 (50 MHz)
+	Date: 1989
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 68030
+
+68040
+	Name: The Motorola 68040
+	Date: 1991
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to 6803050
+
