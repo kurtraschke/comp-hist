@@ -42,3 +42,16 @@ beosr4
         Type: os
         Successor to beosr3
 
+beos4.5
+	Name: BeOS Release 4.5
+	Date: 1999-6-15
+	Reference: /. announcement
+	Type: OS
+	Successor to beosr4
+
+beos5
+	Name: BeOS Release 5
+	Date: 2000-3-28	
+	Reference: /. announcement
+	Type: OS
+	Successor to beos4.5
