@@ -6,19 +6,27 @@
 # it all comes from a book called Programmer's Technical Reference for MSDOS and the IBM PC 
 # by Dave Williams. I have a demo version distributed as a text-file
 
-86dos
-	Name: Tim Paterson's Quick'n'Dirty Operating System
-	Date: 1981-02
-	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams and the release dates of 86dos and cp/m 2.3
+qdos01
+	Name: Quick'n'Dirty Operating System, version 0.1
+	Date: 1980-8
+	Reference: http://www.MaxFrame.com/HISZCOMP.HTM
 	Type: OS
 	Influenced by cpm23
-	
+
+86dos03
+	Name: 86-DOS, version 0.3
+	Date: 1980-12
+	Reference: http://www.MaxFrame.com/HISZCOMP.HTM
+	Type: OS
+	Successor to qdos01
+#This is what MS licenced to make MSDOS	
+
 pcdos1
 	Name: IBM Personal Computer DOS 1.0
 	Date: 1981-08
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
-	Successor to 86dos
+	Successor to 86dos03
 
 pcdos105
 	Name: IBM Personal Computer DOS 1.05
