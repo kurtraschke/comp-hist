@@ -63,12 +63,6 @@ sub help {
 }
 
 sub output (){
-    foreach (@ARGV){
-	open FILE, $_;
-	while(<FILE>){
-	    &parse;
-	}
-    }
     if($opts{o} =~ /dump/){&dump;}
     elsif($opts{o} =~ /chml/){&chml;}
     elsif($opts{o} =~ /info/){&info;}
@@ -107,37 +101,42 @@ The data fields are parsed as follows:
 =cut yourself a slice of rug and start coding
 
 sub parse{
-	s/\#.*//;
+    foreach(@ARGV){
+	open(FILE, $_);
+	while(<FILE>){
+	    s/\#.*//;
+	    
+	    if(/^(\S+)/){ $node = $1; }
 
-	if(/^(\S+)/){ $node = $1; }
+	    if(/.*Name: (.*)/){ $name{$node} = $1; }
 
-	if(/.*Name: (.*)/){ $name{$node} = $1; }
-
-	if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
-        if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+	    if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+	    if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
 	
-	if(/.*Reference: (.*)/){ $reference{$node} = $1; }
+	    if(/.*Reference: (.*)/){ $reference{$node} = $1; }
 	
-	if(/.*Info: (.*)/){ $info{$node} = $1; }
+	    if(/.*Info: (.*)/){ $info{$node} = $1; }
 
-	if(/.*Type: hardware/){ $type{$node} = "hardware"; }
-	if(/.*Type: os/i){ $type{$node} = "os"; }
-	if(/.*Type: language/){ $type{$node} = "language"; }
-	if(/.*Type: standard/){ $type{$node} = "standard"; }
-	if(/.*Type: other/){ $type{$node} = "other"; }
-	if(/.*Type: company/){ $type{$node} = "company"; }
-	if(/.*Type: announcement/){ $type{$node} = "announcement"; }
+	    if(/.*Type: hardware/){ $type{$node} = "hardware"; }
+	    if(/.*Type: os/i){ $type{$node} = "os"; }
+	    if(/.*Type: language/){ $type{$node} = "language"; }
+	    if(/.*Type: standard/){ $type{$node} = "standard"; }
+	    if(/.*Type: other/){ $type{$node} = "other"; }
+	    if(/.*Type: company/){ $type{$node} = "company"; }
+	    if(/.*Type: announcement/){ $type{$node} = "announcement"; }
 
-	if(/.*Status: ([released|internal|prototype|research])/i){ $status{$node} = $1; }
-	if(/.*Status: continual evolution/i){ $status{$node} = "contev"; }
+	    if(/.*Status: ([released|internal|prototype|research])/i){ $status{$node} = $1; }
+	    if(/.*Status: continual evolution/i){ $status{$node} = "contev"; }
 
-	if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
-	if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
-	if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
-	if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
-	if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
-	if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
-	if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
+	    if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
+	    if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
+	    if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+	    if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
+	    if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
+	    if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
+	    if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
+	}
+    }
 }
 
 =head2 B<minmaxyear> 
@@ -192,6 +191,7 @@ B<dump> is a rough output format. All it does is sort the nodes and strip commen
 =cut ! that scene is all wrong!
 
 sub dump {
+    &parse;
     foreach $node (sort keys %name){
 	print("$node\n");
 	print("\tName: $name{$node}\n");
@@ -223,6 +223,7 @@ The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Mark
 =cut
 
 sub chml{
+    &parse;
     print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
 
     print("<tree>\n");
@@ -249,6 +250,7 @@ sub chml{
 }
 
 sub info{
+    &parse;
     foreach $node (sort keys %info){
 	print("Info on $name{$node}: $info{$node}\n\n");
     }
@@ -370,6 +372,7 @@ The vcg subroutine is an adapted form of tovcg's "graph" routine. The changes ar
 =cut
 
 sub vcg{
+    &parse;
     &dopos;
     &setcolor;
     &setshape;
