@@ -1942,3 +1942,10 @@ linux242
 	Reference: http://slashdot.org/article.pl?sid=01/02/22/1618220&mode=nested
 	Type: os
 	Successor to linux241
+
+linux243
+	Name: Linux 2.4.3
+	Date: 2001-03-30
+	Reference: http://slashdot.org/articles/01/03/30/1418259.shtml
+	Type: os
+	Successor to linux242
