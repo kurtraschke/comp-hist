@@ -54,7 +54,7 @@ getopts('hvo:', \%opts); #Get our options for parsing
 #now, the case statements for what to do
 if( defined $opts{h} ){ &help; exit; }
 elsif( defined $opts{v} ){ print("Parsech, version 0.03, 2000-9-23\n"); exit; }
-elsif( defined $opts{o} ) { $output = $opts{o}; &$output(ARGV); }
+elsif( defined $opts{o} ) { &output; }
 else{ print("Invalid args. See -h for proper usage\n"); exit; }
 
 sub help {
@@ -62,6 +62,17 @@ sub help {
     print("\t-v - print a version and exit\n");
     print("\t-h - print this message and exit\n");
     print("\t-o - sets the output format, takes one arg, see man page for possible args\n");
+}
+
+sub output (){
+    foreach (@ARGV){
+	open FILE, $_;
+	while(<FILE>){
+	    &parse;
+	}
+    }
+    if($opts{o} == "dump"){&dump;}
+    else {print "Invalid output format: valid formats are dump\n"; exit;}
 }
 
 =head2 B<parse>
@@ -99,43 +110,32 @@ sub parse{
 
 	if(/^(\S+)/){ $node = $1; }
 
-	if(/^\bName: (.*)/){ $name{$node} = $1; }
+	if(/.*Name: (.*)/){ $name{$node} = $1; }
 
-	if(/^\bDate.*(\d\d\d\d)-(\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
-	if(/^\bDate.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2;}
-	if(/^\bDate.*(\d\d\d\d)/){ $year{$node} = $1; }
-	if(/^\bFounded.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; }
-	if(/^\bFounded.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; }
-	if(/^\bFounded.*(\d\d\d\d)/){ $year{$node} = $1; }
+	if(/.*[Date|Founded].*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
 
+	if(/.*Reference: (.*)/){ $reference{$node} = $1; }
 
-	if(/^\bReference: (.*)/){ $reference{$node} = $1; }
+	if(/.*Info: (.*)/){ $info{$node} = $1; }
 
-	if(/^\bInfo: (.*)/){ $info{$node} = $1; }
+	if(/.*Type: hardware/){ $type{$node} = "hardware"; }
+	if(/.*Type: os/i){ $type{$node} = "os"; }
+	if(/.*Type: language/){ $type{$node} = "language"; }
+	if(/.*Type: standard/){ $type{$node} = "standard"; }
+	if(/.*Type: other/){ $type{$node} = "other"; }
+	if(/.*Type: company/){ $type{$node} = "company"; }
+	if(/.*Type: announcement/){ $type{$node} = "announcement"; }
 
-	if(/^\bType: hardware/i){ $type{$node} = "hardware"; }
-	if(/^\bType: OS/i){ $type{$node} = "os"; }
-	if(/^\bType: language/i){ $type{$node} = "language"; }
-	if(/^\bType: standard/i){ $type{$node} = "standard"; }
-	if(/^\bType: other/i){ $type{$node} = "other"; } #You don't know about this line. Go away.
-	if(/^\bType: company/i){ $type{$node} = "company"; }
-	if(/^\bType: announcement/i){$type{$node} = "announcement"; }
+	if(/.*Status: ([released|internal|prototype|research])/i){ $status{$node} = $1; }
+	if(/.*Status: continual evolution/i){ $status{$node} = "contev"; }
 
-
-	if(/^\bStatus: released/i){ $status{$node} = "released"; }
-	if(/^\bStatus: internal/i){ $status{$node} = "internal"; } 
-	if(/^\bStatus: [continual evolution|contev]/i){ $status{$node} = "contev"; }
-	if(/^\bStatus: prototype/i){ $status{$node} = "prototype"; }
-	if(/^\bStatus: research/i){ $status{$node} = "research"; }
-
-
-	if(/^\bAka (\S+)/) { linkup($node, $1, "aka"); }
-	if (/^\bSuccessor to (\S+)/) { linkup($node, $1, "successor"); }
-	if (/^\bCode taken from (\S+)/) { linkup($node, $1, "codetaken"); }
-	if (/^\bInfluenced by (\S+)/) { linkup($node, $1, "influenced"); }
-	if(/^\bRuns on (\S+)/){ linkup($node, $1, "runson"); }
-	if(/^\bRan on (\S+)/){ linkup($node, $1, "runson"); }
-	if(/^\bWritten in (\S+)/){ linkup($node, $1, "writtenin"); }
+	if(/.*Aka (\S+)/) { linkup($node, $1, "aka"); }
+	if (/.*Successor to (\S+)/) { linkup($node, $1, "successor"); }
+	if (/.*Code taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+	if (/.*Influenced by (\S+)/) { linkup($node, $1, "influenced"); }
+	if(/.*Runs on (\S+)/){ linkup($node, $1, "runson"); }
+	if(/.*Ran on (\S+)/){ linkup($node, $1, "runson"); }
+	if(/.*Written in (\S+)/){ linkup($node, $1, "writtenin"); }
 }
 
 =head2 B<minmaxyear> 
@@ -178,9 +178,8 @@ linkup is the routine that creates the @linkfrom, @linkto, and @linkweight array
 =cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup ($ $ $) {
-    push(@linkfrom, $_[0]);
-    push(@linkto, $_[1]);
-    push(@linkweight, $_[2]);
+    push(@{$linkto{$_[0]}}, $_[1]);
+    push(@{$linkweight{$_[0]}}, $_[2]);
     return 0;
 }
 
@@ -191,11 +190,6 @@ B<dump> is a rough output format. All it does is sort the nodes and strip commen
 =cut ! that scene is all wrong!
 
 sub dump {
-    foreach (@{$_[0]}){
-	while(<>){
-	    parse;
-	}
-    }
     foreach $node (sort keys %name){
 	print("$node\n");
 	print("\tName: $name{$node}\n");
@@ -207,26 +201,15 @@ sub dump {
 	print("\tInfo: $info{$node}\n") if defined $info{$node};
 	print("\tType: $type{$node}\n") if defined $type{$node};
 	print("\tStatus: $status{$node}\n") if defined $status{$node};
-	for($i = 0; $i <= $#linkfrom; $i++){
-	    if($linkfrom[$i] == $node){
-		my $expweight = expnick $linkweight[$i];
-		print("\t$expweight $linkto[$i]");
-	    }
-	}
+	print("\n");
     }
 }
 
-=head2 B<expnick>
-
-B<expnick> expands the nicknames B<parse> assigns to certan fields.
-
-=cut
-
-sub expnick ($) {
-    return "Aka" if $_[0] == "aka";
-    return "Successor to" if $_[0] == "successor";
-    return "Code taken from" if $_[0] == "codetaken";
-    return "Influenced by" if $_[0] == "influenced";
-    return "Runs on" if $_[0] == "runson";
-    return "Written in" if $_[0] == "writtenin";
+sub expnick {
+    return "Aka" if $_[0] =~ /aka/;
+    return "Successor to" if $_[0] =~ /successor/;
+    return "Code taken from" if $_[0] =~ /codetaken/;
+    return "Influenced by" if $_[0] =~ /influenced/;
+    return "Runs on" if $_[0] =~ /runson/;
+    return "Written in" if $_[0] =~ /writtenin/;
 }
