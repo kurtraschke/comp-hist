@@ -2,18 +2,16 @@ Just about everything right now, but here are the big things:
 
 Short Term-
 	add a Type feld to the syntax to seperate OSes, hardware, languages, etc.
-	flesh out the CP/M directory
 	fix up the Unix directory
-	finish the Linux node
 	flesh out the apple tree
-	flesh out the motorola and intel trees
-
+	flesh out the motorola tree
 
 Mid Term-
-	port it away from Graphviz (I don't like its licence, I just picked it up from the original project)
 	extend into new families
 	go further into the past (straight back to ENIAC)
 	Add gif options to the Makefile
+	finish the Linux nodes
+
 Long Term-
 	flesh out tree (/every/ OS that exists should find a node)
 	begin Linux distro tree and other sub-trees
