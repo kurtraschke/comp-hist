@@ -47,12 +47,19 @@ minix1.5
         Type: OS
 	Successor to minix1.4
 
+minix1.7.2
+	Name: Minix 1.7.2
+	Date: 1996-3
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to minix1.5
+
 minix2
 	Name: Minix 2.0
 	Date: 1997
 	Reference: Email with ast.
         Type: OS
-	Successor to minix1.5
+	Successor to minix1.7.2
 
 
 
