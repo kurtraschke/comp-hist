@@ -6,7 +6,7 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/osx apple/aux apple/macos apple/corp apple/ans
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/osx apple/aux apple/macos apple/corp apple/ans apple/newton
 
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
@@ -36,7 +36,7 @@ comp-history-dot:
 comp-history-dot.ps: comp-history-dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 clean:
-	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf information
+	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf information dump
 
 biblio:
 	cat $(SRCS) | scripts/biblio > bibliography
@@ -57,3 +57,5 @@ comp-history-gp.ps: comp-history-gp
 	graphplace -p -a comp-history.gp >comp-history.gp.ps
 
 
+dump:
+	cat $(SRCS) >dump
