@@ -2,15 +2,20 @@ I have revamped the parser.
 
 I simplified idnetifier.c to the point where it was a single routine so
 I melded that with parser.c, and got rid of keywords.
-Compile with gcc -DTESTING -o cparse parser.c
 
 A new file node.h does all definition of node information. To add a new
 field you need to edit only one table in node.h and recompile, The parser
 is now completeley table driven and has no internal knowledge of the
 node data fields.
 
-I have implemented mandatory fileds and allow the tables to specify that
-a filed muct have certain values.
+Unknown fields may now be saved for subsequent parsing. Fileds may be specified
+as multi occurrence in which case all occurrences are saved in the order of the
+input file. A list of ignored field-ids may also be specified.
+
+See the file node.h for detailson how the various options work.
+
+I have implemented mandatory fields and allow the tables to specify that
+a field must have certain values.
 
 Parser.c compiles as an object module which exports two or three routines :
 
@@ -31,11 +36,8 @@ Compile parser.c with TESTING defined causes a complete program to be
 built which will parse all its input files and output all nodes in
 conanical form.
 
-
-
 Limitations
-Input lines are limited to 512 characters
-
+Input lines are limited to 1024 characters, but this is a define in node.h
 
 Bugs
 probably some 
@@ -44,5 +46,5 @@ Todo (in no particular order)
 use btree to speed up the match_field
 process Info: field
 add more error handling
-makefile 
-
+
+
