@@ -1949,3 +1949,10 @@ linux243
 	Reference: http://slashdot.org/articles/01/03/30/1418259.shtml
 	Type: os
 	Successor to linux242
+
+linux244
+	Name: Linux 2.4.4
+	Date: 2001-04-28
+	Reference: /. announcement date
+	Type: os
+	Successor to linux243
