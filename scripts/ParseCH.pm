@@ -1,76 +1,103 @@
-#ParseCH, take three
+#ParseCH.pm, take 2
 package ParseCH;
 require Exporter;
 
 @ISA = qw(Exporter);
-@EXPORT = qw(parsech dodate);
-@EXPORT_OK = qw(%name %year %month %day %type %status %ref %info @linkfrom @linkto @linkweight $minyear $maxyear);
-$VERSION = 2.00;
+@EXPORT = qw(docomment doname dodate doref doinfo dotype dostatus doaka dosucc doctf doinfluence doruns doran dowritten);
+@EXPORT_OK = qw(dofield do1field donode %name %year %month %day %ref %info %type %status @linkfrom @linkto @weight $node);
+$VERSION = 1.13;
 
-sub parsech{
-	s/\#.*//;
-	if(/^(\S+)/){ $node = $1; }
-	if(/^\bName: (.*)/){ $name{$node} = $1; }
-	if(/^\b[Date|Founded].*(\d\d\d\d)-(\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; $day{$node} = $3; }
-	if(/^\b[Date|Founded].*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; }
-	if(/^\b[Date|Founded].*(\d\d\d\d)/){ $year{$node} = $1; }
-	if(/^\bReference: (.*)/){ $ref{$node} = $1; }
-	if(/^\bInfo: (.*)/){ $info{$node} = $1; }
-	if(/^\bType: hardware/i){ $type{$node} = "hardware"; }
-	if(/^\bType: OS/i){ $type{$node} = "os"; }
-	if(/^\bType: language/i){ $type{$node} = "language"; }
-	if(/.*Type: standard/i){ $type{$node} = "standard"; }
-	if(/^\bType: other/i){ $type{$node} = "other"; } #You don't know about this line. Go away.
-	if(/.*Type: company/i){ $type{$node} = "company"; }
-	if(/^\bType: announcement/i){$type{$node} = "announce"; }
+sub docomment {
+	s/#.*//;
+}
 
-	if(/.*Status: released/i){ $status{$node} = "released"; }
-	if(/^\bStatus: internal/i){ $status{$node} = "internal"; } 
-	if(/^\bStatus: continual evolution/i){ $status{$node} = "conevol"; }
-	if(/^\bStatus: prototype/i){ $status{$node} = "prototype"; }
-	if(/^\bStatus: research/i){ $status{$node} = "research"; }
+sub dofield {
+    if(/^\b$_[0].? (.*)/){ my $field = $1; }
+    return $field;
+}
 
-	if(/^\bAka (\S+)/) {
-	    push(@linkfrom, $node);
-	    push(@linkto, $1);
-	    push(@linkweight, "aka");
-	}
-	if (/^\bSuccessor to (\S+)/) {
-            push(@linkfrom, $node);
-            push(@linkto, $1);
-            push(@linkweight, "successor");
-	}
-	if (/^\bCode taken from (\S+)/) {
-            push(@linkfrom, $node);
-            push(@linkto, $1);
-            push(@linkweight, "codetaken");
-	}
-	if (/^\bInfluenced by (\S+)/) {
-            push(@linkfrom, $node);
-            push(@linkto, $1);
-            push(@linkweight, "influenced");
-	}
-	if(/^\bRuns on (\S+)/){
-            push(@linkfrom, $node);
-            push(@linkto, $1);
-            push(@linkweight, "runson");
-	}
-	if(/^\bRan on (\S+)/){
-            push(@linkfrom, $node);
-            push(@linkto, $1);
-            push(@linkweight, "ranon");
-	}
-	if(/^\bWritten in (\S+)/){
-            push(@linkfrom, $node);
-            push(@linkto, $1);
-            push(@linkweight, "writtenin");
-	 }
-    
+sub do1field {
+    if(/^\b$_[0]:? ?(\S+)/){ my $field = $1; }
+    return $field;
+}
+
+sub donode {
+    $node = do1field();
+}
+
+sub doname {
+    $name{$node} = dofield(Name);
 }
 
 sub dodate {
-    foreach $node (keys %year){
-	if($year{$node} < $minyear){ $minyear = $year{$node}; }
-	if($year{$node} > $maxyear){ $maxyear = $year{$node}; }
+    if(/^\b[Date|Founded].*(\d\d\d\d)-((\d\d)?-(\d\d)?)?/){
+	$year{$node} = $1;
+	$month{$node} = $3;
+	$day{$node} = $4;
     }
+}
+
+sub doref {
+    $ref{$node} = dofield(Reference);
+}
+
+sub doinfo {
+    $info{$node} = dofield(Info);
+}
+
+sub dotype {
+    $type{$node} = do1field(Type);
+}
+
+sub dostatus {
+    $status{$node} = do1field(Status);
+}
+
+sub doaka {
+    my $aka = do1field(Aka);
+    push(@linkfrom, $node);
+    push(@linkto, $ran);
+    push(@weight, "runson");
+}
+
+sub dosucc {
+    my $succ = do1field("Successor to");
+    push(@linkfrom, $node);
+    push(@linkto, $ran);
+    push(@weight, "runson");
+}
+
+sub doctf {
+    my $code = do1field("Code taken from");
+    push(@linkfrom, $node);
+    push(@linkto, $code);
+    push(@weight, "codetaken");
+}
+
+sub doinfluence {
+    my $inf = do1field("Influenced by");
+    push(@linkfrom, $node);
+    push(@linkto, $inf);
+    push(@weight, "influenced");
+}
+
+sub doruns {
+    my $runs = do1field("Runs on");
+    push(@linkfrom, $node);
+    push(@linkto, $runs);
+    push(@weight, "runson");
+}
+
+sub doran {
+    my $ran = do1field("Ran on");
+    push(@linkfrom, $node);
+    push(@linkto, $ran);
+    push(@weight, "runson");
+}
+
+sub dowritten {
+    my $written = do1field("Written in");
+    push(@linkfrom, $node);
+    push(@linkto, $ran);
+    push(@weight, "runson");
 }
