@@ -1,0 +1,73 @@
+#########################
+#	POSIX		#
+#########################
+
+posix
+	Name: Institute of Electrical and Electronic Engineers P1003
+	Date: 1984-06 #Ish
+	Reference: http://www.its.dtu.dk/ansat/ke/emp_work.pdf
+	Type: standard
+	Successor to /usr/group/standard
+
+posix.11988
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
+	Date: 1988
+	Reference: http://www.its.dtu.dk/ansat/ke/emp_work.pdf
+	Type: standard
+	Successor to posix
+
+posix.11990
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
+	Date: 1990
+	Reference: http://www.its.dtu.dk/ansat/ke/emp_work.pdf
+	Type: standard
+	Successor to posix.11988
+
+posix.11994-03
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
+	Date: 1994-03
+	Reference: phone call to IEEE
+	Type: standard
+	Successor to posix.11990
+
+posix.11994-10
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
+	Date: 1994-10
+	Reference: phone call to IEEE
+	Type: standard
+	Successor to posix.11994-03
+
+posix.11998
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.1
+	Date: 1998
+	Reference: phone call to IEEE
+	Type: standard
+	Successor to posix.11994-10
+
+posix.2
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.2
+	Date: 1986
+	Reference: http://www.its.dtu.dk/ansat/ke/emp_work.pdf
+	Type: standard
+	Successor to posix
+
+posix.21992
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.2
+	Date: 1992
+	Reference: http://www.its.dtu.dk/ansat/ke/emp_work.pdf
+	Type: standard
+	Successor to posix.2
+
+posix.21994-03
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.2
+	Date: 1994-03
+	Reference: phone call to IEEE
+	Type: standard
+	Successor to posix.21992
+
+posix.21994-12
+	Name: Institute of Electrical and Electronic Engineers Portable Operating System Interface X 1003.2
+	Date: 1994-12
+	Reference: phone call to IEEE
+	Type: standard
+	Successor to posix.21994-03
