@@ -1,4 +1,4 @@
-#Here's where the Pilot, PalmPilot, and Palm
+#Here's where the Pilot, PalmPilot, and Palm devices go  Other devices running the PalmOS go in palm/pcpdev.
 pilot1000
 	Name:  Pilot 1000
 	Date: 1996-4
@@ -52,19 +52,26 @@ pvii
 	Name: Palm VII
 	Date: 1999-5-24
 	Reference: http://www.palm.com/pr/palmviiregional.html
+	Type: hardware
 	Code taken from piii #This is a guesstimate.
 
 piiie
 	Name: Palm IIIe
 	Date: 1999-7-19
 	Reference: http://www.palm.com/pr/palmiiie.html
+	Type: hardware
 	Successor to piiix
+
+palmiiiese
+	Name: Palm IIIe SE
+	Date: 1999-10-4
+	Reference: http://www.palmpower.com/issuesprint/issue199910/announce.html
+	Type: hardware
+	Successor to palmiiie
 
 pvx
 	Name: Palm Vx
-	Date: 
-	Reference: 
+	Date: 1999-10-4
+	Reference: http://www.palmpower.com/issuesprint/issue199910/announce.html
 	Type: hardware
 	Successor to pv
-
-
