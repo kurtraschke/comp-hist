@@ -12,7 +12,7 @@ cpm1
 	Type: OS
 	Influenced by tops10
 #	Influenced by decos8
-#	Influenced by decrsts
+	Influenced by rsts11
 #	Influenced by decrsx11
 
 cpm11
