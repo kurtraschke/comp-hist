@@ -64,7 +64,7 @@ SGI-SRCS = sgi/corp
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS) $(SGI-SRCS)
 
-all: vcg biblio info html chml browser dot
+all: vcg biblio info html chml browser dot dbm
 
 dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
@@ -106,3 +106,6 @@ browser:
 
 browse: browser dump
 	cd scripts/browser/src ; ./browser ../../../dump
+
+dbm:
+	perl scripts/parsech -o dbm $(SRCS)
