@@ -1,36 +1,44 @@
 #########################################################################
 #			System III and System V				#
 #########################################################################
-# $Revision: 1.5 $ $Date: 2000/08/22 16:18:36 $
+# $Revision: 1.6 $ $Date: 2000/08/23 18:04:44 $
 #
 # [wkt] The dates and relationships in here are vague. Can anyone help
 # to improve them? Eric Fischer <eric@fudge.uchicago.edu> has given
 # me sysV, sysVr2
 #
 unixsystem3
-	Name: System III
-	Date: 1982
-	Reference: Life with UNIX, pg 27
+	Name: Unix System III
+	Date: 1981-11
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
-	Code taken from ts3.0 1000
+	Code taken from ts3.0.1 1000
 	Code taken from 32V
+#	Successor to cb3
+
+sysIV
+	Name: Unix System IV
+	Date: 1982
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to unixsystem3
 
 sysV
-	Name: System V
+	Name: Unix System V
 	Date: 1983-01
-	Reference: System V Release Description, title page
+	Reference: Unix System V Release Description, title page
         Type: OS
 	Successor to unixsystem3 1000
 	
 sysVr2
-	Name: System VR2
+	Name: Unix System VR2
 	Date: 1984-04
-	Reference: System V manual for 3B2, title page
+	Reference: Unix System V manual for 3B2, title page
         Type: OS
 	Successor to sysV 1000
 	
 sysVr3
-	Name: System VR3
+	Name: Unix System VR3
 	Date: 1986
 	Reference: Life with UNIX, pg 28
         Type: OS
@@ -38,14 +46,14 @@ sysVr3
 	Code taken from v8
 	
 sysVr3.2
-	Name: Unix System V R3.2
+	Name: Unix Unix System V R3.2
 	Date: 1987
 	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
 	Type: OS
 	Successor to sysVr3
 
 sysVr4
-	Name: System VR4
+	Name: Unix System VR4
 	Date: 1988
 	Reference: Life with UNIX, pg 6
         Type: OS
