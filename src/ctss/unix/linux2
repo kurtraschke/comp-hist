@@ -1956,3 +1956,10 @@ linux244
 	Reference: /. announcement date
 	Type: os
 	Successor to linux243
+
+linux245
+	Name: Linux 2.4.5
+	Date: 2001-05-26
+	Reference: LWN article
+	Type: os
+	Successor to linux244
