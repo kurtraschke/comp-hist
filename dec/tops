@@ -9,6 +9,7 @@ tops10
 	Type: OS
 	Runs on pdp6
 	Runs on pdp10
+	Made by dec
 
 tenex
 	Name: TENEX
@@ -17,7 +18,8 @@ tenex
 	Type: OS
 	Ran on pdp10
 	Influenced by tops10
-#	Influenced by multics
+	Influenced by multics
+#	Made by bbn
 
 tops20
 	Name: TOPS-20
@@ -27,3 +29,4 @@ tops20
 	Ran on pdp10
 	Successor to tops10
 	Successor to tenex
+	Made by dec
