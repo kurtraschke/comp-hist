@@ -30,6 +30,14 @@ pcdos1
 	Successor to 86dos03
 	Ran on ibmpc
 
+msdos1
+	Name: Microsoft Disk Operating System 1.0
+	Date: 1981-8-12
+	Reference: Windows family tree
+	Type: OS
+	Aka pcdos1
+	Successor to 86dos03
+
 pcdos105
 	Name: IBM Personal Computer DOS 1.05
 	Date: 1981
@@ -50,6 +58,7 @@ msdos125
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Code taken from pcdos11
+	Successor to msdos1
 
 pcdos2
 	Name: IBM Personal Computer DOS 2.0
@@ -65,12 +74,19 @@ pcdos185
         Type: OS
 	Successor to pcdos11
 
+msdos2
+	Name: Microsoft Disk Operating System 2.0
+	Date: 1983-3
+	Reference: Windows family tree
+	Type: OS
+	Successor to msdos125
+
 msdos201
 	Name: Microsoft Disk Operating System 2.01
-	Date: 1983
+	Date: 1983-4 #ish
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
-	Successor to msdos125
+	Successor to msdos2
 
 pcdos21
 #for IBM PCjr
@@ -102,13 +118,27 @@ pcdos3
         Type: OS
 	Successor to pcdos21
 
+msdos3
+	Name: Microsoft Disk Operating System 3.0
+	Date: 1984
+	Reference: Windows family tree
+	Type: OS
+	Successor to msdos212
+
 msdos305
 	Name: Microsoft Disk Operating System 3.05
 	Date: 1984-11
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
-	Successor to msdos212
+	Successor to msdos3
 	Influenced by pcdos3
+
+msdos31
+        Name: Microsoft Disk Operating System 3.1
+        Date: 1984-11
+	Reference: Windows family tree
+	Type: Os
+	Successor to msdos305
 
 pcdos31
 	Name: IBM Personal Computer DOS 3.1
@@ -131,12 +161,26 @@ pcdos32
         Type: OS
 	Successor to pcdos31
 
+msdos32
+	Name: Microsoft Disk Operating System 3.2
+	Date: 1986-4
+	Reference: Windows family tree
+	Type: OS
+	Successor to msdos31
+
+msdos33
+	Name: Microsoft Disk Operating System 3.3
+	Date: 1987-4-2
+	Reference: Windows family tree
+	Type: os
+	Successor to msdos32
+
 msdos4
 	Name: Microsoft Disk Operating System 4.0
-	Date: 1986-04
-	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+	Date: 1988-7
+	Reference: Windows family tree
         Type: OS
-	Successor to msdos305
+	Successor to msdos33
 
 pcdos33
 	Name: IBM Personal Computer DOS 3.3
@@ -179,7 +223,7 @@ msdos401
 	Date: 1989-01
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
-	Successor to msdos331
+	Successor to msdos4
 	Influenced by pcdos4
 
 msdos321r
@@ -206,6 +250,13 @@ msdos5
 	Successor to msdos401
 	Influenced by drdos5
 
+msdos5a
+	Name: Microsoft Disk Operating System 5.0a
+	Date: 1992
+	Reference: Windows family tree
+	Type: os
+	Successor to msdos5
+
 msdosv
 #japanese version
 	Name: Microsoft Disk Operating System V
@@ -219,17 +270,28 @@ msdos6
 	Date: 1993-03
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
-	Successor to msdos5
+	Successor to msdos5a
 
 msdos62
 	Name: Microsoft Disk Operating System 6.2
+	Date: 1993-11
+	Reference: Windows family tree
         Type: OS
 	Successor to msdos6
 
+msdos621
+	Name: Microsoft Disk Operating System 6.21
+	Date: 1994-3-2
+	Reference: Windows family tree
+	Type: OS
+	Successor to msdos62
+
 msdos622
 	Name: Microsoft Disk Operating System 6.22
+	Date: 1994-3-11
+	Reference: Windows family tree
         Type: OS
-	Successor to msdos62
+	Successor to msdos621
 
 drdos34
 	Name: DR-DOS 3.4
@@ -265,3 +327,17 @@ drdos7
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to drdos6
+
+msdos7
+	Name: Microsoft Disk Operating System 7.0
+	Date: 1995-8-24
+	Reference: Windows family tree
+	Type: os
+	Successor to msdos622
+
+msdos710
+	Name: Microsoft Disk Operating System 7.10
+	Date: 1996-8
+	Reference: Windows family tree
+	Type: os
+	Successor to msdos7
