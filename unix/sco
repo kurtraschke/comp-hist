@@ -1,0 +1,40 @@
+#########################
+#	SCO Unix	#
+#########################
+
+scounix
+	Name: Santa Cruz Operation Unix\nSystem V/386
+	Date: 1989
+	Reference: Unix history tree
+	Type: OS
+	Successor to xenix5
+	Code taken from sysVr3.2
+
+sco3.2.4
+	Name: Santa Cruz Operation Unix 3.2.4\n(Open Desktop)
+	Date: 1994
+	Reference: Unix history tree
+	Type: OS
+	Successor to scounix
+
+openserver5
+	Name: Santa Cruz Operation Open Server 5.0
+	Date: 1995-5-9
+	Reference: Unix history tree
+	Type: OS
+	Successor to sco3.2.4
+#	Code taken from unixware1.1.1
+
+openserver5.0.5
+	Name: Santa Cruz Operation Open Server 5.0.5
+	Date: 1998-8-12
+	Reference: Unix history tree
+	Type: OS
+	Successor to openserver5
+
+openserver5.0.5a
+	Name: Santa Cruz Operation Open Server 5.0.5a
+	Date: 1999-2
+	Reference: Unix history tree
+	Type: OS
+	Successor to openserver5.0.5
