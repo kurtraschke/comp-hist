@@ -2,6 +2,8 @@ UNIX-SRCS = unix/2bsd unix/386bsd unix/4bsd unix/freebsd unix/netbsd unix/openbs
 
 CPM-SRCS = cpm/windows cpm/cpm cpm/msdos cpm/winnt
 
+CRAY-SRCS = cray/cray cray/corp
+
 ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
@@ -46,7 +48,7 @@ CPL-SRCS = bcpl/cpl $(BCPL-SRCS)
 
 ALGOL-SRCS = algol/algol $(CPL-SRCS)
 
-SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(NEXT-SRCS) $(LISP-SRCS) $(SH-SRCS) $(BE-SRCS) $(ALGOL-SRCS)
+SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(NEXT-SRCS) $(LISP-SRCS) $(SH-SRCS) $(BE-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS)
 
 all: comp-history-vcg biblio info
 
