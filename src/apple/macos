@@ -355,14 +355,22 @@ macos8.6
 
 macos9
 	Name: Apple MacOS 9.0
-	Date: 2000
+	Date: 1999-10-5
 	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
 	Type: OS
 	Successor to macos8.6
 
 macos9.0.4
 	Name: Apple MacOS 9.0.4
-	Date: 2000
+	Date: 2000-4-4
 	Reference: http://is.rice.edu/~rickr/stud_doc/mac/MacOS_History.html
 	Type: OS
 	Successor to macos9
+
+macos9.1
+	Name: Apple MacOS 9.1
+	Date: 2001-01-09
+	Reference: http://docs.info.apple.com/article.html?artnum=75103
+	Type: OS
+	Successor to macos9.0.4
+

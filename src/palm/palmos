@@ -69,7 +69,13 @@ palmos32
 	Successor to palmos32
 
 palmos350
-	Palm OS 3.5
+	Name: Palm OS 3.5
 	Date: # Umm,?
 	Type: os
 #	Ran on 
+	Successor to palmos32
+
+palmos4
+	Name: Palm OS 4
+	Type: os
+	Successor to palmos350
