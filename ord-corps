@@ -13,13 +13,13 @@ edvac
 	Name: Electronic Discrete Variable Automatic Calculator 
 	Date: 1949-8
 	Reference: Electronic Computers Within the Ordinance Corps, Chapter III <http://ftp.arl.mil/~mike/comphist/61ordnance/chap3.html>
-	Code taken from eniac
+	Successor to eniac
 
 ordvac
 	Name: Ordnance Variable Automatic Computer
 	Date:	1951-11-15
 	Reference: Electronic Computers Within the Ordinance Corps, Chapter IV <http://ftp.arl.mil/~mike/comphist/61ordnance/chap4.html>
-	Code taken from eniac
+	Successor to eniac
 
 brlesc
 	Name: Ballistic Research Laboratory's Electronic Scientific Computer
