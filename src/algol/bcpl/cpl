@@ -1,0 +1,13 @@
+#################################
+#		CPL		#
+#################################
+#ancestor of C
+
+cpl
+	Name: Combined Programming Language
+	Date: 1963
+	Reference: http://www.plexoft.com/SBF/A06.html
+	Type: language
+	Info: In 1963, a practical version of Algol was developed at Cambridge University and the University of London, called Combined Programming Language (CPL). Algol --> CPL --> BCPL --> B --> C
+	Code taken from algol60
+

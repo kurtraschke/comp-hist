@@ -1,0 +1,26 @@
+#################
+#	C++	#
+#################
+#The successor to c
+
+cclasses
+	Name: C with Classes
+	Date: 1980-04
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Code taken from k&rc
+#	Code taken from algol68
+
+c++
+	Name: C++
+	Date: 1983-07
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Successor to cclasses
+
+ansic++
+	Name: ANSI/ISO C++
+	Date: 1998
+	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
+	Type: language
+	Successor to c++
