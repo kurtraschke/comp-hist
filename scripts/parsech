@@ -377,24 +377,19 @@ sub setweights_vcg {
 	    @{$vcg_weights{$node}} = '';
 	    if($linkweight =~ /^aka/){
 		push(@{$vcg_weights{$node}}, "thickness: 8 arrowsize: 40 backarrowsize: 400");
-	    }
-	    
+	    }	    
 	    elsif($linkweight =~ /^successor/){
 		push(@{$vcg_weights{$node}},  "thickness: 4 arrowsize: 20"); 
-	    }
-	    
+	    }	    
 	    elsif($linkweight =~ /^codetaken/){
 		push(@{$vcg_weights{$node}},  "");
-	    }
-	    
+	    }	    
 	    elsif($linkweight =~ /^influenced/){
 		push(@{$vcg_weights{$node}}, "linestyle: dashed");
 	    }
-
 	    elsif($linkweight =~ /^runson/){
 		push(@{$vcg_weights{$node}}, "thickness: 8 linestyle: dashed");
-	    }
-
+	    }	    
 	    elsif($linkweight =~ /^writtenin/){
 		push(@{$vcg_weights{$node}}, "thickness: 6 linestyle: dashed");
 	    }
@@ -424,25 +419,24 @@ sub vcg{
     &setcolor;
     &setshape;
     &setweights_vcg;
-    my $node = '';
-    my $i = 'n';
+    my $node;
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
     foreach $node (sort keys %name){
-	    print("\tnode: { title: \"$node\"");
-	    print(" label: \"$name{$node}\"");
-	    print(" vertical_order: $vpos{$node}") if defined $vpos{$node};
-	    print(" color: $color{$node}") if defined $color{$node};
-	    print(" shape: $shape{$node}") if defined $shape{$node};
-	    print(" }\n");
-	    if(defined $linkto{$node}){
-		for($i=0; $i < scalar(@{$linkto{$node}}); $i++){
-		    print("\tedge: { ");
-		    print("sourcename: \"$linkto{$node}[$i]\" ");
-		    print("targetname: \"$node\"  ");
-		    print("$vcg_weights{$node}[$i] ") if defined $vcg_weights{$node}[$i];
-		    print("}\n");
-		}
+	print("\t\tnode: {\n\ttitle: \"$node\"\n");
+	print("\t\tlabel: \"$name{$node}\"\n");
+	print("\t\tvertical_order: $vpos{$node}\n") if defined $vpos{$node};
+	print("\t\tcolor: $color{$node}\n") if defined $color{$node};
+	print("\t\tshape: $shape{$node}\n") if defined $shape{$node};
+	print(" \t}\n");
+	if(defined $linkto{$node}){
+	    for(my $i=0; $i < scalar(@{$linkto{$node}}); $i++){
+		print("\tedge: {\n");
+		print("\t\tsourcename: \"$linkto{$node}[$i]\"\n");
+		print("\t\ttargetname: \"$node\" \n");
+		print("\t\t$vcg_weights{$node}[$i]\n") if defined $vcg_weights{$node}[$i];
+		print("\t}\n");
 	    }
 	}
+    }
     print("}\n");
 }
