@@ -11,12 +11,26 @@ perl1
 	Code taken from nawk
 	Code taken from sh
 
+perl1.001..10
+	Name: The Perl 1.001..10
+	Date: 1988-01-30
+	Reference: the perlhist manpage
+	Type: language
+	Successor to perl1
+
+perl1.011..14
+	Name: The Perl 1.011..14
+	Date: 1988-02-02
+	Reference: the perlhist manpage
+	Type: language
+	Successor to perl1.001..10
+
 perl2
 	Name: The Practial Extraction and Reporting Language 2.000
 	Date: 1988-01-05
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
-	Successor to perl1
+	Successor to perl1.011..14
 
 perl3
 	Name: The Practial Extraction and Reporting Language 3.000
