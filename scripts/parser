@@ -10,7 +10,7 @@ sub donode {
 }
 
 sub dofield {
-    if(/^\b$_[0] (.*)/){ my $field = $1; }
+    if(/^\b$_[0].? (.*)/){ my $field = $1; }
     return $field;
 }
 
@@ -22,6 +22,16 @@ sub do1field {
 sub doname {
     my $name = dofield(Name);
     return $name;
+}
+
+sub doref {
+    my $ref = dofield(Reference);
+    return $ref;
+}
+
+sub doinfo {
+    my $info = dofield(Info);
+    return $info;
 }
 
 sub dotype {
