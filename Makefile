@@ -20,8 +20,8 @@ unix-history.ps: unix-history
 unix-history: $(SRCS)
 	perl -w scripts/todot $(UNIX-SRCS)
 
-ord-history.ps: ord-history
-        dot -Tps ord-history
+#ord-history.ps: ord-history
+#        dot -Tps ord-corps-hist
 
 ord-history: $(SRCS)
         perl -w scripts/todot $(ORD-SRCS)
