@@ -8,7 +8,7 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
     
-    parsech B<-o> [dump|xml]
+    parsech B<-o> [dump|xml|info]
     parsech B<-h>
     parsech B<-v>
 
@@ -35,7 +35,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments: dump and xml.
+take the following arguments: dump, xml, or info.
 
 =item B<-v> version
 
@@ -73,7 +73,8 @@ sub output (){
     }
     if($opts{o} =~ /dump/){&dump;}
     elsif($opts{o} =~ /xml/){&xml;}
-    else {print "Invalid output format: valid formats are dump and xml\n"; exit;}
+    elsif($opts{o} =~ /info/){&info;}
+    else {print "Invalid output format: valid formats are dump, xml, and info\n"; exit;}
 }
 
 =head2 B<parse>
@@ -237,6 +238,10 @@ sub xml{
     }
 
     print("</tree>\n");
+}
 
-}    
-
+sub info{
+    foreach $node (sort keys %info){
+	print("Info on $name{$node}: $info{$node}\n\n");
+    }
+}
