@@ -90,3 +90,11 @@ redhat-7.0
 	Type: OS
 	Code taken from linux2216
 	Successor to redhat-6.2
+
+redhat-7.1
+	Name: Red Hat Linux 7.1
+	Date: 2001-0416
+	Reference: /. announcement
+	Type: os
+	Code taken from linux243
+	Successor to redhat-7.0
