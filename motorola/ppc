@@ -1,0 +1,50 @@
+#########################
+#	PowerPC		#
+#########################
+#This list only goes up to about 1995, anything more would be appreciated
+
+ppc6015066
+	Name: The Power Performance Chip 601 (50 and 66 MHz)
+	Date: 1995
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+
+ppc6036680
+	Name: The Power Performance Chip 603 (66 and 80 MHz)
+	Date: 1995-3
+#That's a fudge up there, I put it in to make the graph look right
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to ppc6015066
+
+ppc60180
+	Name: The Power Performance Chip 601 (80 MHz)
+	Date: 1995-6
+#Same deal here
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to ppc6015066
+
+ppc601100
+	Name: The Power Performance Chip 601 (100 MHz)
+	Date: 1996
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Successor to ppc60180
+
+ppc604100
+	Name: The Power Performance Chip 604 (100 MHz)
+	Date: 1996
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Code taken from ppc60180
+
+ppc620133
+	Name: The Power Performance Chip 620 (133 MHz)
+	Date: 1996
+	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
+	Type: hardware
+	Code taken from ppc60180
+
+
+
