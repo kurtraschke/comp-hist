@@ -10,6 +10,7 @@ windows101
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
 	Type: OS
 	Code taken from msdos201
+	Ran on ibmpc
 
 windows103
 	Name: Windows 1.03
@@ -32,6 +33,7 @@ windows386
 	Reference: http://www.bryant.edu/~history/n364proj/fall_99/tobia
         Type: OS
 	Code taken from windows2
+	Ran on 386
 
 windows201
 	Name: Windows 2.01
