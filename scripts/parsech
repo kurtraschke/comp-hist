@@ -339,10 +339,10 @@ sub vcg{
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
     foreach $node (keys %name){
 	if(!defined $vpos{$node}){
-	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" $color{$node} $shape{$node} }\n");
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" color: $color{$node} shape: $shape{$node} }\n");
 	}
 	else{
-	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} $shape{$node} }\n");
+	    print("\t\tnode: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} color: $color{$node} shape: $shape{$node} }\n");
 	}
     }
     print("}\n");
