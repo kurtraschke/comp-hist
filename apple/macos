@@ -128,3 +128,61 @@ system32
 	Name: System 3.2
 	Date: 1986-6
 	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system31
+
+finder53
+	Name: Finder 5.3
+	Date: 1986-6
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder52
+
+syssoftware11
+	Name: System Software 1.1
+	Date: 1986-6
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka system32
+	Aka finder53
+	Successor to syssoftware1b
+
+system33
+	Name: System 3.3
+	Date: 1987-1
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system32
+
+finder54
+	Name: Finder 5.4
+	Date: 1987-1
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to finder53
+
+syssoftware2
+	Name: System Software 2.0
+	Date: 1987-1
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka system33
+	Aka finder54
+	Successor to syssoftware11
+
+system4
+	Name: System 4.0
+	Date: 1987-3
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Successor to system33
+
+syssoftware201
+	Name: System Software 2.01
+	Date: 1987-3
+	Reference: http://www.applemuseum.seastar.net/
+	Type: OS
+	Aka system4
+	Aka finder54
+	Successor to syssoftware2
+
