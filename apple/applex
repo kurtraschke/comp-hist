@@ -1,1 +1,52 @@
 #This is where the Apple I, II, and III will go.
+applei
+	Name: Apple I
+	Date: 1976
+	Reference: The History of Computers
+
+apple2
+        Name: Apple II
+        Date: 1977-04
+        Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Successor to applei
+
+apple2p
+	Name: Apple II Plus
+	Date: 1979
+	Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+	Successor to apple2
+
+apple2e
+        Name: Apple IIe
+        Date: 1983
+        Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Successor to apple2p
+
+apple2c
+        Name: Apple IIc
+        Date: 1984-04-24
+        Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Code taken from apple2e
+
+apple2cp
+        Name: Apple IIc+
+        Date: 1988-09
+        Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Successor to apple2c
+
+apple2gs
+        Name: Apple IIgs
+        Date: 1986
+        Reference: http://www.gno.org/pub/apple2/doc/FAQs/csa2.part1.txt
+        Code taken from apple2e
+
+apple3
+        Name: Apple III
+        Date: 1980
+        Reference: http://www.applefritter.com/apples/appleiii/faq.html
+
+apple3p
+        Name: Apple III Plus
+        Date: 1984
+        Reference: http://www.applefritter.com/apples/appleiii/faq.html
+	Successor to apple3p
