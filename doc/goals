@@ -3,7 +3,6 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 0.5
 	There should be three working parsers (the third of which should probably be to raw postscript)
 	the Unix history tree at http://perso.wanadoo.fr/levenez/unix/index.html should be merged in
-	the linux1 kernels should be done
 	motorola should be done
 	datagen/nova should be done
 
@@ -15,7 +14,6 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 	the PDP computers should be done
 	the VAX computers should be done
 	POSIX should be current
-	Linux should be done
 	at least one node in use today should be traced back to ENIAC
 
 
