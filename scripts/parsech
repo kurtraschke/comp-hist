@@ -3,19 +3,17 @@
 use Getopt::Std;
 use strict;
 my(%Name, %Year, %Month, %Day, %Info);
-my(%Color, %Shape, %Linkto);
-my(%Reference, %Type, %Status, %Linkcolor);
-my(%Opts, $Maxyear, $Minyear, %VPos, $VScale);
+my(%Reference, %Type, %Status, %Linkto);
+my(%Opts);
 
-getopts('hvo:s:', \%Opts); #Get our options for parsing
-
-if ( defined $Opts{s} ) {$VScale=$Opts{s};} else {$VScale=1;}
-
-#now, the case statements for what to do
-if( defined $Opts{h} ){ &help; exit; }
-elsif( defined $Opts{v} ){ print("Parsech, version 1.5, 2000-10-4\n"); exit; }
-elsif( defined $Opts{o} ) { &output; }
-else{ print("Invalid args. See -h for proper usage\n"); exit; }
+{
+  getopts('hvo:s:', \%Opts); #Get our options for parsing
+  #now, the case statements for what to do
+  if( defined $Opts{h} ){ &help; exit; }
+  elsif( defined $Opts{v} ){ print("Parsech, version 2.0, 2000-11-29\n"); exit; }
+  elsif( defined $Opts{o} ) { output(@ARGV); }
+  else{ print("Invalid args. See -h for proper usage\n"); exit; }
+}
 
 sub help {
     print("ParseCH, the Parser for Comp-Hist\n");
@@ -25,93 +23,98 @@ sub help {
   }
 
 sub output {
-  if($Opts{o} eq "dump"){&dump(@ARGV);}
-  elsif($Opts{o} eq "chml"){&chml(@ARGV);}
-  elsif($Opts{o} eq "info"){&info(@ARGV);}
-  elsif($Opts{o} eq "vcg"){&vcg(@ARGV);}
-  elsif($Opts{o} eq "biblio"){&biblio(@ARGV);}
-  elsif($Opts{o} eq "dbm"){&dbm(@ARGV);}
-  elsif($Opts{o} eq "dot"){&dot(@ARGV);}
-  else {print "Invalid output format: valid formats are dump, chml, vcg, dbm, and info\n"; exit;}
+  if($Opts{o} eq "dump"){&dump(@_);}
+  elsif($Opts{o} eq "chml"){&chml(@_);}
+  elsif($Opts{o} eq "info"){&info(@_);}
+  elsif($Opts{o} eq "vcg"){&vcg(@_);}
+  elsif($Opts{o} eq "biblio"){&biblio(@_);}
+  elsif($Opts{o} eq "dbm"){&dbm(@_);}
+  elsif($Opts{o} eq "dot"){&dot(@_);}
+  else {die "Invalid output format: valid formats are dump, chml, vcg, dbm, and info\n";}
 }
 
 sub parse{
   no strict "refs";
   my $node;
-  while(<>){
-    s/\#.*//;
-    if(/^(\S+)/){ $node = $1; }
-    if(/^\tName: (.*)/){ $Name{$node} = $1; }
-    if (/^\tFounded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
-      $Year{$node}=$1; 
-      $Month{$node}=$2;
-      $Day{$node}=$3;
-    }
-    elsif (/^\tFounded.*(\d\d\d\d)-(\d\d)/) {
-      $Year{$node}=$1;
-      $Month{$node}=$2;
-    }
-    elsif (/^\tFounded.*(\d\d\d\d)/) {
-      $Year{$node}=$1;
-      $Month{$node}="0";
-    }
-    
-    if (/^\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
-      $Year{$node}=$1;
+  foreach my $file (@_){
+    open $file, $file;
+    while(<$file>){
+      s/\#.*//;
+      if(/^(\S+)/){ $node = $1; }
+      if(/^\tName: (.*)/){ $Name{$node} = $1; }
+      if (/^\tFounded.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+	$Year{$node}=$1; 
 	$Month{$node}=$2;
-      $Day{$node}=$3;
-    }
-    elsif (/^\tDate:.*(\d\d\d\d)-(\d\d)/) {
-      $Year{$node}=$1;
-      $Month{$node}=$2;
-    }
-    elsif (/^\tDate:.*(\d\d\d\d)/) {
+	$Day{$node}=$3;
+      }
+      elsif (/^\tFounded.*(\d\d\d\d)-(\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}=$2;
+      }
+      elsif (/^\tFounded.*(\d\d\d\d)/) {
 	$Year{$node}=$1;
 	$Month{$node}="0";
       }
-    
-    if(/^\tReference: (.*)/){ $Reference{$node} = $1; }
-    
-    if(/^\tInfo: (.*)/){ $Info{$node} = $1; }
-    
-    if(/^\tType: hardware/){ $Type{$node} = "hardware"; }
-    elsif(/^\tType: os/i){ $Type{$node} = "os"; }
-    elsif(/^\tType: language/){ $Type{$node} = "language"; }
-    elsif(/^\tType: standard/){ $Type{$node} = "standard"; }
-    elsif(/^\tType: other/){ $Type{$node} = "other"; }
-    elsif(/^\tType: company/){ $Type{$node} = "company"; }
-    elsif(/^\tType: announcement/){ $Type{$node} = "announcement"; }
-    
-    if(/^\tStatus: released/i){ $Status{$node} = "released"; }
-    elsif(/^\tStatus: internal/i){ $Status{$node} = "internal"; }
-    elsif(/^\tStatus: prototype/i){ $Status{$node} = "prototype"; }
-    elsif(/^\tStatus: research/i){ $Status{$node} = "research"; }
-    elsif(/^\tStatus: continual evolution/i){ $Status{$node} = "contev"; }
-    
-    if(/^\tAka (\S+)/) { linkup($node, $1, "aka"); }
-    if (/^\tSuccessor to (\S+)/) { linkup($node, $1, "successor"); }
-    if (/^\tCode taken from (\S+)/) { linkup($node, $1, "codetaken"); }
-    if (/^\tInfluenced by (\S+)/) { linkup($node, $1, "influenced"); }
-    if(/^\tRuns on (\S+)/){ linkup($node, $1, "runson"); }
-    if(/^\tRan on (\S+)/){ linkup($node, $1, "runson"); }
-    if(/^\tWritten in (\S+)/){ linkup($node, $1, "writtenin"); }
-    
+      
+      if (/^\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/){
+	$Year{$node}=$1;
+	$Month{$node}=$2;
+	$Day{$node}=$3;
+      }
+      elsif (/^\tDate:.*(\d\d\d\d)-(\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}=$2;
+      }
+      elsif (/^\tDate:.*(\d\d\d\d)/) {
+	$Year{$node}=$1;
+	$Month{$node}="0";
+      }
+      
+      if(/^\tReference: (.*)/){ $Reference{$node} = $1; }
+      
+      if(/^\tInfo: (.*)/){ $Info{$node} = $1; }
+      
+      if(/^\tType: hardware/){ $Type{$node} = "hardware"; }
+      elsif(/^\tType: os/i){ $Type{$node} = "os"; }
+      elsif(/^\tType: language/){ $Type{$node} = "language"; }
+      elsif(/^\tType: standard/){ $Type{$node} = "standard"; }
+      elsif(/^\tType: other/){ $Type{$node} = "other"; }
+      elsif(/^\tType: company/){ $Type{$node} = "company"; }
+      elsif(/^\tType: announcement/){ $Type{$node} = "announcement"; }
+      
+      if(/^\tStatus: released/i){ $Status{$node} = "released"; }
+      elsif(/^\tStatus: internal/i){ $Status{$node} = "internal"; }
+      elsif(/^\tStatus: prototype/i){ $Status{$node} = "prototype"; }
+      elsif(/^\tStatus: research/i){ $Status{$node} = "research"; }
+      elsif(/^\tStatus: continual evolution/i){ $Status{$node} = "contev"; }
+      
+      if(/^\tAka (\S+)/) { linkup($node, $1, "aka"); }
+      if (/^\tSuccessor to (\S+)/) { linkup($node, $1, "successor"); }
+      if (/^\tCode taken from (\S+)/) { linkup($node, $1, "codetaken"); }
+      if (/^\tInfluenced by (\S+)/) { linkup($node, $1, "influenced"); }
+      if(/^\tRuns on (\S+)/){ linkup($node, $1, "runson"); }
+      if(/^\tRan on (\S+)/){ linkup($node, $1, "runson"); }
+      if(/^\tWritten in (\S+)/){ linkup($node, $1, "writtenin"); }
+      
+    }
   }
 }
 
 sub dominmaxYear {
-  $Maxyear=0;
-  $Minyear=800000;
-  foreach my $Year (values %Year){
+  my $Maxyear=0;
+  my $Minyear=800000;
+  foreach my $Year (values %{$_[0]}){
     if($Year gt $Maxyear){ $Maxyear = int($Year); }
     if($Year lt $Minyear){ $Minyear = int($Year); }
   }
+  return($Minyear, $Maxyear);
 }
 
 sub dopos{
-  my($node, $Year);
-  my $file = shift;
-  foreach $node (keys %Year){
+  my($node, $Year, %VPos, $VScale);
+  my($Minyear, $Maxyear) = &dominmaxYear;
+  $VScale = $Opts{s} || 1;
+  foreach $node (keys %{$_[0]}){
     if(!defined $Month{$node}){
       $Year = int($Year{$node}) - $Minyear;
       $VPos{$node} = $Year * 12;
@@ -122,7 +125,8 @@ sub dopos{
     }
     $VPos{$node} = ($VPos{$node}/$VScale);
 #    print STDERR "VPos for node $Name{$node} is $VPos{$node}\n";
-  }   
+  }
+  return %VPos;
 }
 
 sub linkup {
@@ -203,7 +207,8 @@ sub biblio{
 }
 
 sub setcolor{
-    my $node;
+    my($node, %Color, %Type);
+    %Type = %{$_[0]};
     foreach $node (keys %Type){
 	$Color{$node} = "blue" if $Type{$node} =~ /^hardware/;
 	$Color{$node} = "red" if $Type{$node} =~ /^os/i;
@@ -213,26 +218,28 @@ sub setcolor{
 	$Color{$node} = "gold" if $Type{$node} =~ /^announcement/;
 	$Color{$node} = "magenta" if $Type{$node} =~ /^other/;
     }
+    return %Color;
 }
 
 sub setshape {
-    my $node;
-    %Shape = ();
+    my($node, %Shape, %Status);
+    %Status = %{$_[0]};
     foreach $node (keys %Status){
 	if ($Status{$node} =~ /^released/){ $Shape{$node} = "box"; }
-	if ($Status{$node} =~ /^triangle/){ $Shape{$node} = "triangle";}
-	if ($Status{$node} =~ /^contev/){$Shape{$node} = "ellipse";}
-	if ($Status{$node} =~ /^prototype/){$Shape{$node} = "rhomb";}
-	if ($Status{$node} =~ /^research/){$Shape{$node} = "triangle";}
+	elsif ($Status{$node} =~ /^triangle/){ $Shape{$node} = "triangle";}
+	elsif ($Status{$node} =~ /^contev/){$Shape{$node} = "ellipse";}
+	elsif ($Status{$node} =~ /^prototype/){$Shape{$node} = "rhomb";}
+	elsif ($Status{$node} =~ /^research/){$Shape{$node} = "triangle";}
 	else {$Shape{$node} = "box";}
     }
+    return %Status
 }
 
 sub setlinkcolor {
-  my($linkcolor, $linkweight);
-  foreach my $node (keys %Linkto){
-    foreach my $linkto (keys %{$Linkto{$node}}){
-      $linkweight=$Linkto{$node}{$linkto};
+  my($linkcolor, $linkweight, %Linkcolor, %Linkto);
+  foreach my $node (keys %{$_[0]}){
+    foreach my $linkto (keys %{${$_[0]}{$node}}){
+      $linkweight=${$_[0]}{$node}{$linkto};
       if($linkweight eq "aka"){$linkcolor="blue";}
       elsif($linkweight eq "successor"){$linkcolor="red";}
       elsif($linkweight eq "codetaken"){$linkcolor="orange";}
@@ -242,34 +249,35 @@ sub setlinkcolor {
       $Linkcolor{$node}{$linkto}=$linkcolor;
     }
   }
+  return %Linkcolor;
 }
 
 sub vcg{
-    &parse(@_);
-    &dominmaxYear;
-    &dopos;
-    &setcolor;
-    &setshape;
-    &setlinkcolor;
-    my($node, $linkto);
-    print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
-    foreach $node (sort keys %Name){
-      print("\tnode: {\n\t\ttitle: \"$node\"\n");
-      print("\t\tlabel: \"$Name{$node}\"\n");
-      print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
-      print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
-      print("\t\tshape: $Shape{$node}\n") if defined $Shape{$node};
-      print(" \t}\n");
-      foreach $linkto (sort keys %{$Linkto{$node}}){
-	print("\tedge:{\n");
-	print("\t\tsourcename: \"$linkto\"\n");
-	print("\t\ttargetname: \"$node\"\n");
-	print("\t\tcolor: \"$Linkcolor{$node}{$linkto}\"\n");
-	print("\t}\n");
-      }
-      print("}\n");
+  my($node, $linkto, %Linkcolor, %Color, %Shape);
+  my(%VPos);
+  &parse(@_);
+  %VPos = dopos(\%Year);
+  %Color = setcolor(\%Type);
+  %Shape = setshape(\%Status);
+  %Linkcolor = setlinkcolor(\%Linkto);
+  print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
+  foreach $node (sort keys %Name){
+    print("\tnode: {\n\t\ttitle: \"$node\"\n");
+    print("\t\tlabel: \"$Name{$node}\"\n");
+    print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
+    print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
+    print("\t\tshape: $Shape{$node}\n") if defined $Shape{$node};
+    print(" \t}\n");
+    foreach $linkto ( keys %{$Linkto{$node}}){
+      print("\tedge:{\n");
+      print("\t\tsourcename: \"$linkto\"\n");
+      print("\t\ttargetname: \"$node\"\n");
+      print("\t\tcolor: $Linkcolor{$node}{$linkto}\n");
+      print("\t}\n");
     }
   }
+  print("}\n");
+}
 
 sub dbm {
   use GDBM_File;
@@ -305,8 +313,8 @@ sub dbm {
 
 sub dot {
   &parse(@_);
-  &dominmaxYear;
-  &dopos;
+  my($Minyear, $Maxyear) = &dominmaxYear;
+  my %Vpos = dopos(\%Year);
   print("digraph comp_hist {\n");
   print("\tnode [shape=plaintext,fontsize=24]\n");
   print("\t{ edge\n\t\t[style=bold]\n");
@@ -426,3 +434,5 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+=cut
