@@ -1,0 +1,37 @@
+#!/usr/bin/perl -w
+
+use strict;
+no strict "refs";
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(:ALL);
+use ParseCH::DirGraph qw(:ALL);
+use Getopt::Std;
+
+my($node, $linkto, %Opts);
+getopt('s:', \%Opts);
+parser(@ARGV);
+
+my $VScale = $Opts{s} || 1;
+my %Color = setcolor(\%Type);
+my %VPos = dopos($VScale, \%Year, \%Month);
+my %Shape = setshape(\%Status);
+my %Linkcolor = setlinkcolor(\%Linkto);
+
+print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
+foreach $node (sort keys %Name){
+  print("\tnode: {\n\t\ttitle: \"$node\"\n");
+  print("\t\tlabel: \"$Name{$node}\"\n");
+  print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
+  print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
+  print("\t\tshape: $Shape{$node}\n") if defined $Shape{$node};
+  print(" \t}\n");
+  foreach $linkto ( keys %{$Linkto{$node}}){
+    print("\tedge:{\n");
+    print("\t\tsourcename: \"$linkto\"\n");
+    print("\t\ttargetname: \"$node\"\n");
+    print("\t\tcolor: $Linkcolor{$node}{$linkto}\n");
+    print("\t}\n");
+  }
+}
+print("}\n");

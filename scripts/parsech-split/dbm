@@ -1,0 +1,26 @@
+#!/usr/bin/perl -w
+
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(:ALL);
+use DB_File;
+use Data::Dumper;
+
+no strict "subs";
+my %d;
+
+mkdir('parsech_dbm', 0777);
+parser(@ARGV);
+
+#Setup for %Linkto to be handled
+foreach my $key (keys %Linkto){
+  $Linkto{$key} = Dumper(%{$Linkto{$key}});
+}
+
+#Now, the hash tying
+foreach my $d qw(Name Year Month Day Reference Info Type Status Linkto){
+  tie %d, 'DB_File', "parsech_dbm/$d", O_CREAT, 0640;
+  %d = %{$d};
+  untie %d;
+  %d=qw();
+}

@@ -1,0 +1,11 @@
+#!/usr/bin/perl -w
+
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(&parser %Info %Name);
+
+my $node;
+parser(@ARGV);	
+foreach $node (sort keys %Info){
+  print("Info on $Name{$node}: $Info{$node}\n\n");
+}	

@@ -1,0 +1,26 @@
+#!/usr/bin/perl -w
+
+use strict;
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(:ALL);
+use ParseCH::ExpNick;
+
+parser(@ARGV);
+
+foreach my $node (sort keys %Name){
+  print("$node\n");
+  print("\tName: $Name{$node}\n");
+  print("\tDate: $Year{$node}") if defined $Year{$node};
+  print("-$Month{$node}") if defined $Month{$node};
+  print("-$Day{$node}") if defined $Day{$node};
+  print("\n") if defined $Year{$node};
+  print("\tReference: $Reference{$node}\n") if defined $Reference{$node};
+  print("\tInfo: $Info{$node}\n") if defined $Info{$node};
+  print("\tType: $Type{$node}\n") if defined $Type{$node};
+  print("\tStatus: $Status{$node}\n") if defined $Status{$node};
+  foreach my $linkto (keys %{$Linkto{$node}}){
+    print "\t", expnick($Linkto{$node}{$linkto}), " $linkto\n";
+  }
+  print("\n");
+}

@@ -1,0 +1,15 @@
+#!/usr/bin/perl -w
+
+use strict;
+use FindBin qw($Bin);
+use lib $Bin;
+use ParseCH qw(&parser %Name %Reference);
+
+my($node);
+
+parser(@ARGV);
+
+foreach $node (keys %Reference){
+  $Reference{$node} =~ s[\\n][\n];
+  print("Bibliography entry for $Name{$node}: $Reference{$node}\n\n");
+}
