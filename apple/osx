@@ -29,6 +29,7 @@ osxdp4
 	Reference: Some Apple page
         Type: OS
 	Successor to osxdp3
+	Code taken from darwin10
 
 osxdp3
 	Name: Apple Mac OS X DP3
@@ -43,6 +44,7 @@ osxdp2
 	Reference: stepwise.com
         Type: OS
 	Successor to osxdp1
+	Code taken from darwin01
 
 osxdp1
 	Name: Apple Mac OS X DP1
@@ -50,6 +52,7 @@ osxdp1
 	Reference: stepwise.com
         Type: OS
 	Code taken from rhapdr2	
+	Code taken from  darwin01
 
 rhapdr1
 	Name: Rhapsody DR1
