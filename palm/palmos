@@ -1,1 +1,48 @@
 #PalmOS goes here. 
+palmos10
+	Name: PalmOS 1.0
+	Date: 1996-4
+	Reference: PalmPilot : The Ultimate Guide
+	Type: os
+	Ran on pilot1000
+	Ran on pilot5000
+
+palmos106
+	Name: PalmOS 1.0.6
+	Reference: http://www.palmpower.com/issuesprint/issue199806/island.html
+	Type: os
+	Successor to palmos10
+
+palmos107
+	Name: PalmOS 1.0.7
+	Reference: http://www.palmpower.com/issuesprint/issue199806/island.html
+	Type: os
+	Successor to palmos106
+
+palmos20
+	Name: PalmOS 2.0
+	Date: 1997
+	Reference: PalmPilot : The Ultimate Guide
+	Type: os
+	Successor to palmos107
+	Ran on pppersonal
+	Ran on pppro
+
+palmos204
+	Name: PalmOS 2.0.4
+	Reference: http://www.palmpower.com/issuesprint/issue199806/island.html
+	Type: os
+	Successor to palmos20
+
+palmos205
+	Name: PalmOS 2.0.5
+	Reference: http://www.palmpower.com/issuesprint/issue199806/island.html
+	Type: os
+	Successor to palmos204
+
+palmos3
+	Name: PalmOS 3.0
+	Date: 1998-3
+	Reference: PalmPilot : The Ultimate Guide
+	Type: os
+	Ran on piii
