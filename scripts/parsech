@@ -101,9 +101,9 @@ The data fields are parsed as follows:
 =cut yourself a slice of rug and start coding
 
 sub parse{
-    foreach(@ARGV){
-	open(FILE, $_);
-	while(<FILE>){
+    foreach $file (@ARGV){
+	open($file, $file);
+	while(<$file>){
 	    s/\#.*//;
 	    
 	    if(/^(\S+)/){ $node = $1; }
