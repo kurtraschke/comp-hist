@@ -1,7 +1,7 @@
 #########################################################################
 #			          OpenBSD				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/04/22 03:08:30 $
+# $Revision: 1.2 $ $Date: 2000/08/03 19:38:02 $
 #
 # [wkt] The following node isn't a true release, but indicates when OpenBSD
 # split development from NetBSD. In email from Theo de Raadt
@@ -59,3 +59,22 @@ openbsd2.4
 	Date: 1998-12-01
 	Reference: Usenet posting
 	Successor to openbsd2.3
+
+openbsd2.5
+	Name: OpenBSD 2.5
+	Date: 1999-05-19
+	Reference: http://www.openbsd.org/plus25.html
+	Successor to openbsd2.4
+
+openbsd2.6
+	Name: OpenBSD 2.6
+	Date: 1999-12-01
+	Reference: http://www.openbsd.org/plus26.html
+	Successor to openbsd2.5
+
+openbsd2.7
+	Name: OpenBSD 2.7
+	Date: 2000-06-15
+	Reference: http://www.openbsd.org/plus27.html
+	Successor to openbsd2.6
+
