@@ -110,7 +110,7 @@ hpux10
 	Reference: Unix history tree
 	Type: OS
 	Successor to hpux9.05
-#	Code taken from unixware1.1.1
+	Code taken from unixware1.1.1
 
 hpux10.10
 	Name: Hewlett-Packard Unix 10.10
