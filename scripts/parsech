@@ -3,8 +3,8 @@
 use Getopt::Std;
 use strict;
 my(%Name, %Year, %Month, %Day, %Info);
-my(%Color, %Shape, %Linkto, %Linkweight);
-my(%Reference, %Type, %Status, %VCG_Weights);
+my(%Color, %Shape, %Linkto);
+my(%Reference, %Type, %Status, %Linkcolor);
 my(%Opts, $Maxyear, $Minyear, %VPos, $VScale);
 
 =head1 NAME
@@ -97,7 +97,7 @@ The data fields are parsed as follows:
 
 =over 5
 
-=item First, a regexp filters out the comments (C<s/#.*//>)
+=item First, a regexp filters out the comments (C<s/\#.*//>)
 
 =item Next, we check to see if its a node nick field, and sets stuff up if it is.
 
@@ -222,11 +222,10 @@ sub dopos{
 
 linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by L<parse>.
 
-=cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
+=cut ! Youre beautiful! A Day In The Life Of JAPH will be a hit!
 
 sub linkup {
-  push(@{$Linkto{$_[0]}}, $_[1]);
-  push(@{$Linkweight{$_[0]}}, $_[2]);
+  $Linkto{$_[0]}{$_[1]} = $_[2];
 }
 
 =head2 dump
@@ -269,7 +268,7 @@ The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Mark
 =cut
 
 sub chml{
-  my($i, $node);
+  my($linkto, $node);
   &parse(@_);
   print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
   
@@ -287,9 +286,9 @@ sub chml{
     print("\t<status status=\"$Status{$node}\" />\n") if defined $Status{$node};
     print("\t<reference>$Reference{$node} </reference>\n") if defined $Reference{$node};
     print("\t<info>$Info{$node} </info>\n") if defined $Info{$node};
-    for( $i=0; $i <= $#{$Linkto{$node}}; $i++ ) {
-	    print("\t<link linktype=\"${$Linkweight{$node}}[$i]\"><id>${$Linkto{$node}}[$i]</id></link>\n");
-	  }
+    foreach $linkto (keys %{$Linkto{$node}}){
+      print("<link linktype=\"$Linkto{$node}{$linkto}\"><id>$linkto</id></link>");
+    }
     print("</node>\n\n");
   }
   
@@ -394,42 +393,32 @@ sub setshape {
     }
 }
 
-=head2 setweights_vcg
+=head2 setlinkcolor
 
-This lovely little function sets up the weights for L<vcg> to use. 
+This lovely little function sets up colors for all the links.
 
 =cut
 
-sub setweights_vcg {
-    my($node, $linkweight);
-    foreach $node (keys %Name){
-	foreach $linkweight (@{$Linkweight{$node}}){
-	    @{$VCG_Weights{$node}} = '';
-	    if($linkweight =~ /^aka/){
-		push(@{$VCG_Weights{$node}}, "thickness: 8 arrowsize: 40 backarrowsize: 400");
-	    }	    
-	    elsif($linkweight =~ /^successor/){
-		push(@{$VCG_Weights{$node}},  "thickness: 4 arrowsize: 20"); 
-	    }	    
-	    elsif($linkweight =~ /^codetaken/){
-		push(@{$VCG_Weights{$node}},  "");
-	    }	    
-	    elsif($linkweight =~ /^influenced/){
-		push(@{$VCG_Weights{$node}}, "linestyle: dashed");
-	    }
-	    elsif($linkweight =~ /^runson/){
-		push(@{$VCG_Weights{$node}}, "thickness: 8 linestyle: dashed");
-	    }	    
-	    elsif($linkweight =~ /^writtenin/){
-		push(@{$VCG_Weights{$node}}, "thickness: 6 linestyle: dashed");
-	    }
-	}
+sub setlinkcolor {
+  my($linkcolor, $linkweight);
+  foreach my $node (keys %Linkto){
+    foreach my $linkto (keys %{$Linkto{$node}}){
+      $linkweight=$Linkto{$node}{$linkto};
+      if($linkweight eq "aka"){$linkcolor="blue";}
+      elsif($linkweight eq "successor"){$linkcolor="red";}
+      elsif($linkweight eq "codetaken"){$linkcolor="orange";}
+      elsif($linkweight eq "influenced"){$linkcolor="pink";}
+      elsif($linkweight eq "runson"){$linkcolor="yellow";}
+      elsif($linkweight eq "writtenin"){$linkcolor="green";}
+      $Linkcolor{$node}{$linkto}=$linkcolor;
     }
+  }
 }
+
 
 =head2 vcg
 
-The vcg subroutine is an adapted form of tovcg's "graph" routine. The changes are as follows:
+The vcg subroutine is an adapted form of the "graph" subroutine from the old tovcg parser routine. The changes are as follows:
 
 =over 5
 
@@ -437,7 +426,7 @@ The vcg subroutine is an adapted form of tovcg's "graph" routine. The changes ar
 
 =item it prints the surrounding VCG headings
 
-=item it doesn't seperate the files from each other (yet)
+=item it doesnt seperate the files from each other (yet)
 
 =item and it takes care of linkage
 
@@ -449,28 +438,26 @@ sub vcg{
     &dopos;
     &setcolor;
     &setshape;
-    &setweights_vcg;
-    my $node;
+    &setlinkcolor;
+    my($node, $linkto);
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
     foreach $node (sort keys %Name){
-	print("\tnode: {\n\t\ttitle: \"$node\"\n");
-	print("\t\tlabel: \"$Name{$node}\"\n");
-	print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
-	print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
-	print("\t\tshape: $Shape{$node}\n") if defined $Shape{$node};
-	print(" \t}\n");
-	if(defined $Linkto{$node}){
-	    for(my $i=0; $i < scalar(@{$Linkto{$node}}); $i++){
-		print("\tedge: {\n");
-		print("\t\tsourcename: \"$Linkto{$node}[$i]\"\n");
-		print("\t\ttargetname: \"$node\" \n");
-		print("\t\t$VCG_Weights{$node}[$i]\n") if defined $VCG_Weights{$node}[$i];
-		print("\t}\n");
-	    }
-	}
+      print("\tnode: {\n\t\ttitle: \"$node\"\n");
+      print("\t\tlabel: \"$Name{$node}\"\n");
+      print("\t\tvertical_order: $VPos{$node}\n") if defined $VPos{$node};
+      print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
+      print("\t\tshape: $Shape{$node}\n") if defined $Shape{$node};
+      print(" \t}\n");
+      foreach $linkto (sort keys %{$Linkto{$node}}){
+	print("\tedge:{\n");
+	print("\t\tsourcename: \"$linkto\"\n");
+	print("\t\ttargetname: \"$node\"\n");
+	print("\t\tcolor: \"$Linkcolor{$node}{$linkto}\"\n");
+	print("\t}\n");
+      }
+      print("}\n");
     }
-    print("}\n");
-}
+  }
 
 sub dbm {
   use GDBM_File;
@@ -496,12 +483,12 @@ sub dbm {
   untie(%Status);
   untie(%Reference);
   #Now, we store the links. Each node gets its own DBM database
-  foreach my $mnode (sort keys %Linkto){
-    tie(%links, 'GDBM_File', "parsech_dbm/links/$mnode", &GDBM_WRCREAT, 0640);
-    for(my $i; defined $Linkto{$mnode}[$i]; $i++){
-      $links{$Linkto{$mnode}[$i]} = $Linkweight{$mnode}[$i];
-    }
+  foreach my $node (keys %Linkto){
+    tie(%links, 'GDBM_File', "parsech_dbm/links/$node", &GDBM_WRCREAT, 0640);
+    %links=%{$Linkto{$node}};
     untie(%links);
-    %links = ();
+    %links=();
   }
 }
+
+ __END__
