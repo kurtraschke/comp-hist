@@ -115,10 +115,9 @@ sub parse{
 
 	if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
         if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
-
-
+	
 	if(/.*Reference: (.*)/){ $reference{$node} = $1; }
-
+	
 	if(/.*Info: (.*)/){ $info{$node} = $1; }
 
 	if(/.*Type: hardware/){ $type{$node} = "hardware"; }
@@ -315,6 +314,22 @@ sub setshape {
 	if ($status{$node} =~ /^prototype/){$shape{$node} = "rhomb";}
 	if ($status{$node} =~ /^research/){$shape{$node} = "triangle";}
 	else {$shape{$node} = "box";}
+    }
+}
+
+=head2 B<setweights_vcg>
+
+This lovely little function sets up the weights for B<vcg> to use. 
+
+=cut
+
+sub setweights_vcg {
+    foreach $node (keys %name){
+	foreach $linkweight (@{$linkweight{$node}}){
+	    if($linkweight =~ /^aka$/){
+		push(@{$vcg_weights{$node}), "thickness: 8 arrow: 40 backarrowsize: 400");
+	    }
+	}
     }
 }
 
