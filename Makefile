@@ -93,7 +93,7 @@ dot.ps: dot
 
 clean:
 	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/
-	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too.
+	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too."
 
 biblio: dump
 	perl scripts/parsech-split/biblio dump > bibliography
