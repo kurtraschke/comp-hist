@@ -1,0 +1,19 @@
+#########################
+#	MS-DOS		#
+# QDOS as well.		#
+#########################
+
+msdos1
+	Name: Microsoft Disk Operating System 1.0
+	Date: 1981 #the release date of the PC
+	Reference: http://www.acad.humberc.on.ca/~frig8279/osessay/dos/history.html
+
+#msdos11
+#	Name: Microsoft Disk Operating System 1.1
+#	Date: Unknown
+# 	Reference: http://www.acad.humberc.on.ca/~frig8279/osessay/dos/history.html
+
+msdos2
+	Name: Microsoft Disk Operating System 2.0
+	Date: 1983
+	Reference: http://www.acad.humberc.on.ca/~frig8279/osessay/dos/history.html
