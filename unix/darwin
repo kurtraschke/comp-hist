@@ -3,7 +3,7 @@ darwin01
         Name: Apple Darwin 0.1
         Date: 1999-03-16
         Reference: http://publicsource.apple.com/news/
-        Code taken from freebsd41
+        Code taken from freebsd4.1
 #        Code taken from mach30
 
 darwin02
