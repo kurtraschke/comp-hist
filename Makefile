@@ -12,7 +12,9 @@ INTEL-SRCS = intel/4004 intel/pentium
 
 IBM-SRCS = intel/pc/ibmpc 
 
-SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS)
+SINCLAIR-SRCS = sinclair
+
+SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS)
 
 all: comp-history.ps biblio
 
