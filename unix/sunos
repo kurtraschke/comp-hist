@@ -1,7 +1,7 @@
 #########################################################################
 #				SunOS				        #
 #########################################################################
-# $Revision: 1.5 $ $Date: 2000/08/22 13:26:22 $
+# $Revision: 1.6 $ $Date: 2000/08/28 15:59:29 $
 #
 # From: Joey KAHN <kahn@tholian.net>
 # 
@@ -73,6 +73,7 @@ sunos1.1
 	Type: OS
 	Status: released
 	Successor to sunos1
+	Code taken from sysV
 
 sunos1.2
 	Name: SunOS 1.2
