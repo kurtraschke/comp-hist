@@ -14,7 +14,7 @@ IBM-SRCS = intel/pc/ibmpc
 
 SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS)
 
-all: comp-history.ps
+all: comp-history.ps biblio
 
 comp-history: 
 	perl -w scripts/todot $(SRCS) >comp-history
