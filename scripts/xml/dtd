@@ -1,0 +1,3 @@
+<!--comp-hist.dtd-->
+<!ELEMENT tree (node)+>
+<!ELEMENT node (id, name, date) reference 
