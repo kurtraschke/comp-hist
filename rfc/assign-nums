@@ -26,4 +26,70 @@ rfc739
 	Type: standard
 	Successor to rfc503
 
-rfc
+rfc750
+	Name: Assigned Numbers (RFC 750)
+	Date: 1978-09-26
+	Type: standard
+	Successor to rfc739
+
+rfc755
+	Name: Assigned Numbers (RFC 755)
+	Date: 1979-05-03
+	Type: standard
+	Successor to rfc750
+
+rfc758
+	Name: Assigned Numbers (RFC 758)
+	Date: 1979-08-01
+	Type: standard
+	Successor to rfc755
+
+rfc762
+	Name: Assigned Numbers (RFC 762)
+	Date: 1980-01-01
+	Type: standard
+	Successor to rfc758
+
+rfc770
+	Name: Assigned Numbers (RFC 770)
+	Date: 1980-09-01
+	Type: standard
+	Successor to rfc762
+
+rfc776
+	Name: Assigned Numbers (RFC 776)
+	Date: 1981-01-01
+	Type: standard
+	Successor to rfc770
+
+rfc790
+	Name: Assigned Numbers (RFC 790)
+	Date: 1981-09-01
+	Type: standard
+	Successor to rfc776
+
+rfc820
+	Name: Assigned Numbers (RFC 820)
+	Date: 1982-08-14
+	Type: standard
+	Successor to rfc790
+
+rfc870
+	Name: Assigned Numbers (RFC 870)
+	Date: 1983-10-01
+	Type: standard
+	Successor to rfc820
+
+rfc900
+	Name: Assigned Numbers (RFC 900)
+	Date: 1984-06-01
+	Type: standard
+	Successor to rfc870
+
+rfc923
+	Name: Assigned Numbers (RFC 923)
+	Date: 1984-10-01
+	Type: standard
+	Successor to rfc900
+
+
