@@ -50,3 +50,10 @@ athlon
 	Type: hardware
 	Successor to k6
 	Influenced by p3550
+
+duron
+	Name: The AMD Duron
+	Date: 2000-6-19
+	Reference: /. announcement
+	Type: hardware
+	Code taken from athlon
