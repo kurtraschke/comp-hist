@@ -1,7 +1,7 @@
 #########################################################################
 #			    Unixware					#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/08/17 01:30:35 $
+# $Revision: 1.2 $ $Date: 2000/08/18 01:59:27 $
 #
 # [wkt] Mostly stuff from Greg Lehey grog@lemis.com
 
@@ -9,4 +9,5 @@ unixware1
 	Name: Unixware 1.0
 	Date: 1992-11-02
 	Reference: Greg Lehey
+	Type: OS
 	Code taken from sysVr4

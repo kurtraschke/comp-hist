@@ -1,7 +1,7 @@
 #########################################################################
 #			    Tandem UX					#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/08/17 01:31:48 $
+# $Revision: 1.2 $ $Date: 2000/08/18 01:58:37 $
 #
 # [wkt] Mostly stuff from Greg Lehey grog@lemis.com
 
@@ -9,17 +9,20 @@ tandemUX
 	Name: Tandem NonStop UX
 	Date: 1987-04
 	Reference: Greg Lehey
+        Type: OS
 	Code taken from sysVr2
 
 tandemUXB00
 	Name: Tandem NonStop-UX B00
 	Date: 1989-08-22
 	Reference: Greg Lehey
+        Type: OS
 	Successor to tandemUX
 
 tandemUXB10
 	Name: Tandem NonStop-UX B10
 	Date: 1989-09-20
 	Reference: Greg Lehey
+        Type: OS
 	Successor to tandemUXB00
 
