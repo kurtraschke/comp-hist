@@ -108,7 +108,7 @@ craysv1
 	Date: 1999-9-15
 	Reference: http://www.cray.com/news/9909/backlog.html
 	Type: hardware
-	Made by cray
+	Made by cri
 	Successor to crayj90se
 
 crayt3d
@@ -146,7 +146,7 @@ teramta
 #This is when Tera became Cray, Inc.
 craymta
 	Name: Cray MTA
-	Date: 1999-8
+	Date: 2000-3
 	Reference: http://www.findarticles.com/m0EIN/2000_April_4/61229579/p1/article.jhtml
 	Type: hardware
 	Made by cray
