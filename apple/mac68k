@@ -75,6 +75,14 @@ macclassicii
 	Code taken from 68030
 	Made by apple
 
+macperforma200
+        Name: Macintosh Performa 200
+        Date: 1991-9
+        Refenence: Macworld Mac and Power Mac Secrets
+        Type: hardware
+	Made by apple
+	Aka macclassicii
+
 maccc
         Name: Macintosh Color Classic
         Date: 1993-2
@@ -88,7 +96,7 @@ macii
         Date: 1987-3
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
-        Code taken from macse
+        Influenced by macse
 	Code taken from 68020
 	Made by apple
 
@@ -99,6 +107,7 @@ maciix
 	Type: hardware
         Successor to macii
 	Made by apple
+	Code taken from 68030
 
 maciifx
         Name: Macintosh IIfx
@@ -140,10 +149,79 @@ maciivx
         Successor to maciisi
 	Made by apple
 
+macperforma600
+        Name: Macintosh Performa 600
+        Date: 1992-10
+        Refenence: Macworld Mac and Power Mac Secrets
+        Type: hardware
+        Aka maciivx
+        Made by apple
 
+maclc
+	Name: Macintosh LC
+	Date: 1990-9
+	Reference: http://www.lowendmac.com/lc/lc.shtml
+	Made by apple
+	Code taken from 68020
+	Influenced by iici
+	Type: hardware
 
+maclcii
+	Name: Macintosh LC II
+	Date: 1992-3
+	Reference: http://www.lowendmac.com/lc/lcii.shtml
+	Made by apple
+	Type: hardware
+	Code taken from 68030
+	Successor to maclc
 
+macperforma400
+	Name: Macintosh Performa 400
+	Date: 1993-9
+	Reference: http://www.lowendmac.com/lc/lcii.shtml
+        Made by apple
+        Type: hardware
+	Aka maclcii
 
+macperforma405
+        Name: Macintosh Performa 405
+        Date: 1993-9
+        Reference: http://www.lowendmac.com/lc/lcii.shtml
+        Made by apple
+        Type: hardware
+        Aka maclcii
+
+macperforma410
+        Name: Macintosh Performa 410
+        Date: 1993-9
+        Reference: http://www.lowendmac.com/lc/lcii.shtml
+        Made by apple
+        Type: hardware
+        Aka maclcii
+
+macperforma430
+        Name: Macintosh Performa 430
+        Date: 1993-9
+        Reference: http://www.lowendmac.com/lc/lcii.shtml
+        Made by apple
+        Type: hardware
+        Aka maclcii
+
+maclciii
+	Name: Macintosh LC III
+	Date: 1993-2
+	Reference:  http://www.lowendmac.com/lc/lciii.shtml
+	Made by apple
+	Type: hardware
+	Successor to maclcii
+
+macperforma460
+        Name: Macintosh Performa 460
+        Date: 1993-9
+        Reference: http://www.lowendmac.com/lc/lcii.shtml
+        Made by apple
+        Type: hardware
+        Successor to maclciii
 
 
 
