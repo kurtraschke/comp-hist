@@ -2,7 +2,7 @@
 #########################################################################
 #			    FreeBSD					#
 #########################################################################
-# $Revision: 1.4 $ $Date: 2000/09/04 13:01:35 $
+# $Revision: 1.5 $ $Date: 2000/11/21 21:08:26 $
 #
 # Mostly from http://www.au.FreeBSD.org/news/newsflash.html
 #
@@ -178,10 +178,16 @@ freebsd4.1
         Type: OS
 	Successor to freebsd4.0
 
+freebsd4.2
+	Name: FreeBSD 4.2
+	Date: 2000-11-21
+	Reference: http://slashdot.org/article.pl?sid=00/11/21/1314255&mode=nested
+	Type: os
+	Succcessor to freebsd4.1
+
 freebsd5.0
 	Name: FreeBSD 5.0
 	Date: # TBD
 	Reference: FreeBSD's newvers.sh CVS log
         Type: OS
 	Successor to freebsd4.0 # 1000
-
