@@ -9,47 +9,47 @@ $linkcnt=0;
 while (<>) {
     if (/^#/) { next; }
     if (/^(\S+)/) { $node=$1; next; }
-    if (/\tName: (.*)/) { $Name{$node}=$1; next; }
+    if (/.*Name: (.*)/) { $Name{$node}=$1; next; }
 
-    if (/\tSuccessor to (\S+)\s+(\d+)/) {
+    if (/.*Successor to (\S+)\s+(\d+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
 	$Weight[$linkcnt]=$2;
 	$linkcnt++; next;
     }
-    if (/\tCode taken from (\S+)\s+(\d+)/) {
+    if (/.*Code taken from (\S+)\s+(\d+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="code";
 	$Weight[$linkcnt]=$2;
 	$linkcnt++; next;
     }
-    if (/\tInfluenced by (\S+)\s+(\d+)/) {
+    if (/.*Influenced by (\S+)\s+(\d+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
 	$Weight[$linkcnt]=$2;
 	$linkcnt++; next;
     }
-    if (/\tSuccessor to (\S+)/) {
+    if (/.*Successor to (\S+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="succ";
 	$Weight[$linkcnt]=$default_succweight;
 	$linkcnt++; next;
     }
-    if (/\tCode taken from (\S+)/) {
+    if (/.*Code taken from (\S+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="code";
 	$Weight[$linkcnt]=$default_codeweight;
 	$linkcnt++; next;
     }
-    if (/\tInfluenced by (\S+)/) {
+    if (/.*Influenced by (\S+)/) {
 	$From[$linkcnt]=$1; $To[$linkcnt]=$node; $Link[$linkcnt]="idea";
 	$Weight[$linkcnt]=$default_ideaweight;
 	$linkcnt++; next;
     }
 
-    if (/\tDate:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
+    if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
 				# Convert to year-mon
 	$yr=$1; $mon=$2; goto dodate;
     }
-    if (/\tDate:.*(\d\d\d\d)-(\d\d)/) {
+    if (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
 	$yr=$1; $mon=$2; goto dodate;
     }
-    if (/\tDate:.*(\d\d\d\d)/) {
+    if (/.*Date:.*(\d\d\d\d)/) {
 	$yr=$1; $mon="00";
 dodate:
 	$d="$yr.$mon"; $Date{$d}{$node}=$node;
