@@ -1,4 +1,4 @@
-APPLE-SRCS = applex lisa mac68k macppc
+APPLE-SRCS = applex lisa mac68k macppc osx
 
 all: apple-history.ps
 
