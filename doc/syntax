@@ -1,22 +1,77 @@
 #OK, for all you people wondering how to make your own node, 
 #here are directions. I will put this in the form of a sample 
-#node, anything in parenthesies is my description.
+#node, anything in after a pound is my description.
+#
+#The test for a new parser is that this file correctly runs 
+#through it and the output from it is valid
 
-fakenode (a node nickname)
-	Name: Fake Node (this is what will show up on the final graph)
-	Date: 2000-4-20 (this can be in yyyy-mm-dd, yyyy-mm, or yyyy format)
-	Reference: A Website or book or paper ('make biblio' does a bibliography)
-	Type: OS (can be one of OS os hardware standard or language)(this field is case sensitive and *required*)
-	Info: this is a nonexistant node (this field places everything after Info: into a file called information in the dir you ran tovcg (no,todot doesn't do this) in)
-	Aka fnode (this is for stuff with two names (as in Unicode and it's ISO standard name)
-	Successor to fakenode0 (this is for stuff like Windows 95 to 98)
-	Code taken from foonode (like MS DOS 6.22 to Windows 95)
-	Influenced by barnode (like CP/M to QDOS)
-	Runs on foovax (this should only be used for one-platform OSes, and even then only for the earliest possible hardware)
-	#Hi (this is a comment)
+fakenode 
+#a node nickname
+	Name: Fake Node 
+	#this is what will show up on the final graph
+	Date: 2000-4-20 
+	#this can be in yyyy-mm-dd, yyyy-mm, or yyyy format
+	Reference: A Website or book or paper 
+	#'make biblio' does a bibliography
+	Type: OS 
+	#can be one of OS os hardware standard or language this field is case sensitive
+	Info: this is a nonexistant node 
+	#this field places everything after Info: into a file called information in the dir you ran tovcg (no,todot doesn't do this) in
+	Aka fnode 	
+	#this is for stuff with two names (as in Unicode and it's ISO standard name)
+	Successor to fakenode0 	
+	#this is for stuff like Windows 95 to 98
+	Code taken from foonode 
+ #like MS DOS 6.22 to Windows 95
+	Influenced by barnode 	
+  #like CP/M to QDOS#
+	Runs on foovax 	
+   #this should only be used for one-platform OSes, and even then only for the earliest possible hardware
+	Made by fakecompany
+    #Guess
+	#This is a comment
 
-fakecompany (this is a company name)
-	Name: Fake Company Inc (same deal as above)
-	Founded on 2000-3-2 (same deal as date above)
-	Type: company (same as Type above)
-	(The other fields also work down here)
+fakecompany 	
+#this is a company name
+	Name: Fake Company Inc
+	Founded on 2000-3-2 	
+	#same deal as date above
+	Type: company 
+	#same as Type above
+	#The other fields also work down here
+
+#The remainder of this file is a torture test for the parsers.
+
+fnode
+	Name: Fnode, version 325254
+	Date: 2000-4-20
+	Successor to fakenode0
+	Type: standard
+
+fakenode0
+	Name: Fake Node, version 0
+	Date: 1999-2
+	Aka foonode
+	Type: OS
+
+foonode
+	Name: The Great Foo Node
+	Type: os
+	Influenced by barnode
+	Ran on foovax
+
+foovax
+	Name: VAX, version FOO
+	Date: 1900
+	Type: hardware
+
+barnode 
+	Name: The BarNoDe
+	Date: 1992-6-2
+	Type: language
+
+node
+	Name: The Node
+	Date: 1989-24
+	Type: other
+#That type doesn't really exist. Go away.
