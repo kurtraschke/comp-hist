@@ -142,14 +142,14 @@ pdp1120
 	Code taken from pdp8e
 
 pdp1040
-	Name: The Programmed Data Processor, model 10/40
+	Name: The Programmed Data Processor, model 10/40/\nDECsystem-10/40
 	Date: 1971
 	Reference: http://www.digital.com/timeline/1971-2.htm
 	Type: hardware
 	Successor to pdp10
 
 pdp1050
-	Name: The Programmed Data Processor, model 10/50
+	Name: The Programmed Data Processor, model 10/50\nDECsystem-10/50
         Date: 1971
         Reference: http://www.digital.com/timeline/1971-2.htm
         Type: hardware
@@ -175,3 +175,32 @@ pdp16m
 	Reference: http://www.digital.com/timeline/1972.htm
 	Type: hardware
 	Successor to pdp16/rtm
+
+pdp1140
+	Name: The Programmed Data Processor, model 11/40
+	Date: 1972
+	Reference: http://www.digital.com/timeline/1972.htm
+	Type: hardware
+	Successor to pdp1145
+
+pdp1105
+	Name: The Programmed Data Processor, model 11/05
+	Date: 1972
+	Reference: http://www.digital.com/timeline/1972.htm
+	Type: hardware
+	Successor to pdp1120
+
+pdp1110
+	Name: The Programmed Data Processor, model 11/10
+	Date: 1972
+	Reference: http://www.digital.com/timeline/1972.htm
+	Type: hardware
+	Successor to pdp1120
+
+pdp1070
+	Name: The Programmed Data Processor, model 10/70/\nDECsystem-10/70
+	Date: 1972
+	Reference: http://www.digital.com/timeline/1972.htm
+	Type: hardware
+	Successor to pdp1050
+
