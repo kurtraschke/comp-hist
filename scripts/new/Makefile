@@ -10,3 +10,8 @@ html:
 
 clean:
 	rm cparse html
+
+comp-hist.html: html
+	cd ../../ ; make dump
+	./html ../../dump > ../../comp-hist.html
+

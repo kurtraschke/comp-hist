@@ -58,7 +58,7 @@ RFC-STDS = rfc/off-stds rfc/assgin-nums
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS)
 
-all: comp-history-vcg biblio info cparser
+all: comp-history-vcg biblio info html
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
@@ -87,3 +87,7 @@ dump:
 
 cparser:
 	cd scripts/new ; make
+
+html:
+	cd scripts/new ; make comp-hist.html
+
