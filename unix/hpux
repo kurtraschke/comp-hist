@@ -83,3 +83,73 @@ hpux9.02
 	Type: OS
 	Successor to hpux9
 
+hpux9.03
+	Name: Hewlett-Packard Unix 9.03
+	Date: 1993
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux9.02
+
+hpux9.04
+	Name: Hewlett-Packard Unix 9.04
+	Date: 1994
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux9.03
+
+hpux9.05
+	Name: Hewlett-Packard Unix 9.05
+	Date: 1994
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux9.04
+
+hpux10
+	Name: Hewlett-Packard Unix 10.0
+	Date: 1995-2-9
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux9.05
+#	Code taken from unixware1.1.1
+
+hpux10.10
+	Name: Hewlett-Packard Unix 10.10
+	Date: 1996-2
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux10
+
+hpux10.20
+	Name: Hewlett-Packard Unix 10.20
+	Date: 1996-9-4
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux10.10
+
+hpux10.30
+	Name: Hewlett-Packard Unix 10.30
+	Date: 1997
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux10.20
+
+hpux11
+	Name: Hewlett-Packard Unix 11.00
+	Date: 1997
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux10.30
+
+hpux11a
+	Name: Hewlett-Packard Unix 11.00
+	Date: 1998
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux11
+
+hpux11i
+	Name: Hewlett-Packard Unix 11i
+	Date: 2000-6-14
+	Reference: Unix history tree
+	Type: OS
+	Successor to hpux11a
