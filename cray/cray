@@ -1,3 +1,6 @@
+#Cray systems go here.
+#Some of these systems ran UNICOS - does it have an entry?
+
 cray1
 	Name: Cray-1
 	Date: 1976
@@ -10,7 +13,7 @@ cray2
 	Date: 1985
 	Reference: http://www.cray.com/company/history.html
 	Type: hardware
-	Successor to cray1
+	Influenced by cray1
 	Made by cri
 
 crayxmp
@@ -35,7 +38,7 @@ cray3
 #Date is a guesstimate.
 	Reference: http://www.jps.net/ethelen/comp-hist/cray-comp.html
 	Type: hardware
-	Successor to cray2
+	Influenced by cray2
 	Made by ccc
 
 cray4	
@@ -56,5 +59,109 @@ crayc90
 	Successor to crayymp
 	Made by cri
 
+#Eventually the C90m should be added - but that will come later
 
 
+crayt90
+	Name: Cray T90
+	Date: 1995
+	Reference: http://netlib2.cs.utk.edu/utk/papers/advanced-computers/crayv.html
+	Type: hardware
+	Successor to crayc90
+	Made by cri
+
+crayxms
+	Name: Cray XMS
+	Date: 1990
+	Reference: http://www.cbi.umn.edu/minn/craycron.htm
+	Type: hardware
+	Code taken from crayxmp
+	Made by cri
+
+crayympel
+	Name: Cray YMP-EL
+	Date: 1992
+	Reference: http://www.digiweb.com/~hansp/ccc/search.cgi?4==Cray&%40mfg
+	Type: hardware
+	Made by cri
+	Successor to crayxms
+	Code taken from crayymp
+	
+crayj90
+	Name: Cray J90
+	Date: 1994
+	Reference: http://netlib2.cs.utk.edu/utk/papers/advanced-computers/crayv.html 
+	Type: hardware
+	Made by cri
+	Successor to crayympel
+
+crayj90se
+	Name: Cray J90se
+	Date: 1997
+	Reference: http://netlib2.cs.utk.edu/utk/papers/advanced-computers/crayv.html
+	Type: hardware
+	Made by cri
+	Successor to crayj90
+
+craysv1
+	Name: Cray SV1
+	Date: 1999-9-15
+	Reference: http://www.cray.com/news/9909/backlog.html
+	Type: hardware
+	Made by cray
+	Successor to crayj90se
+
+crayt3d
+	Name: Cray T3d
+	Date: 1993
+	Reference: http://www.cray.com/company/history.html
+	Type: hardware
+	Made by cri
+	Influenced by crayymp
+	Influenced by crayc90
+
+crayt3e
+	Name: Cray T3e
+	Date: 1995
+	Reference: http://www.cray.com/company/history.html
+	Type: hardware
+	Made by cri
+	Successor to crayt3d
+
+teramta
+	Name: Tera MTA
+	Date: 1997
+	Reference: http://www.sunworld.com/sunworldonline/swol-12-1997/swol-12-tera.html
+	Type: hardware
+	Made by tera
+
+#This is when Tera became Cray, Inc.
+craymta
+	Name: Cray MTA
+	Date: 1999-8
+	Reference: http://www.findarticles.com/m0EIN/2000_April_4/61229579/p1/article.jhtml
+	Type: hardware
+	Made by cray
+	Successor to teramta
+
+crayapp
+	Name: Cray APP
+	Date: 1994
+	Reference: http://netlib2.cs.utk.edu/utk/papers/advanced-computers/gone.html
+	Type: hardware
+	Made by cri
+
+craysmp
+	Name: Cray SMP
+#No date or reference, but I know it exists.  Here: http://dialspace.dial.pipex.com/town/park/abm64/CrayWWWStuff/Cfaqp1.html#TOC1
+	Type: hardware
+	Made by cri
+	Successor to crayapp
+
+craycs6400
+	Name: Cray CS6400
+	Date: 1994-2
+	Reference: http://www.fh-wolfenbuettel.de/rz/docs/sun/sunflash/april.1995/flashback/1254.cray.html
+	Type: hardware
+	Made by cri
+	Successor to craysmp
