@@ -14,7 +14,8 @@ aux10
 
 aux20
 	Name: Apple A/UX 2.0
-	Date: 1990-3
+	Date: 1990-6
+	Reference: http://db.tidbits.com/getbits.acgi?tbart=03870
 	Reference: http://victoria.tc.ca/Technology/Mac/AppleTime.txt.html
 	Type: os
 	Successor to aux10
