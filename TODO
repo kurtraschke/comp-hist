@@ -1,15 +1,8 @@
 OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt and others, feel free to add to this. This is what we would like to see before each of the named versions are released.
 
-0.5
-	There should be three working parsers
-	the CCC (<http://digiweb.com/~hansp/ccc>) should be merged in
-
 1.0
-	MacOS should be done (this includes OSX)
-	VMS should be done
-	POSIX should be current
-	at least one node in use today should be traced back to ENIAC
-	the Unix History tree should be completely merged in.
+	Sun and SGI should have trees, and they should be partially complete
+	The NeXT tree should be complete
 
-someday
-	WAITS
+(someday)
+	Apple hardware should be done
