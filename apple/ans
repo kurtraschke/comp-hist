@@ -1,0 +1,17 @@
+#The Apple Network Servers go here.  They ran AIX.
+
+ans500
+	Name: Apple Network Server 500
+	Date: 1996-2
+	Type: hardware
+	Made by apple
+	Reference: http://www.erik.co.uk/ans/
+
+
+ans700
+        Name: Apple Network Server 700
+        Date: 1996-2
+        Type: hardware
+        Made by apple
+        Reference: http://www.erik.co.uk/ans/
+	Successor to ans500
