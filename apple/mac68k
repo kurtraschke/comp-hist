@@ -29,3 +29,95 @@ macplus
         Type: hardware
         Successor to mac512k
 
+macse
+	Name: Macintosh SE
+	Date: 1987-3
+	Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+	Successor to macplus
+
+macse30
+        Name: Macintosh SE/30
+        Date: 1989-1
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to macse
+
+macclassic
+        Name: Macintosh Classic
+        Date: 1990-9
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to macse30
+
+macclassicii
+        Name: Macintosh Classic II
+        Date: 1991-9
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to macclassic
+
+maccc
+        Name: Macintosh Color Classic
+        Date: 1993-2
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to macclassicii
+
+macii
+        Name: Macintosh II
+        Date: 1987-3
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Code taken from macse
+
+maciix
+        Name: Macintosh IIx
+        Date: 1988-9
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to macii
+
+maciifx
+        Name: Macintosh IIfx
+        Date: 1990-3
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to maciix
+
+maciicx
+        Name: Macintosh IIcx
+        Date: 1989-5
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to maciix
+
+maciici
+        Name: Macintosh IIci
+        Date: 1989-8
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to maciicx
+
+maciisi
+        Name: Macintosh IIsi
+        Date: 1990-11
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to maciici
+
+maciivx
+        Name: Macintosh IIvx
+        Date: 1992-10
+        Refenence: Macworld Mac and Power Mac Secrets
+	Type: hardware
+        Successor to maciisi
+
+
+
+
+
+
+
+
+
