@@ -1,7 +1,7 @@
 #########################################################################
 #			    3BSD/4BSD versions				#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/08/16 19:24:59 $
+# $Revision: 1.2 $ $Date: 2000/08/17 12:04:26 $
 #
 # [wkt] Most refs from pg 164 & 165 of QCU. I should also peruse Kirk's
 # CSRG CD set for verification of details.
@@ -9,6 +9,7 @@
 	Name: 3BSD
 	Date: 1980-03
 	Reference: last-mod timestamps in Distributions/ucb/3bsd.tar
+        Type: OS
 	Successor to 32V
 	Code taken from 2bsd
 #			virtual memory, page replacement,
@@ -18,18 +19,21 @@
 	Name: 4BSD
 	Date: 1980-10
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+        Type: OS
 	Successor to 3bsd 1000
 
 4.1bsd
 	Name: 4.1BSD
 	Date: 1981-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+        Type: OS
 	Successor to 4bsd 1000
 
 4.1absd
 	Name: 4.1a BSD
 	Date: 1982-04
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+        Type: OS
 	Successor to 4.1bsd 1000
 #			alpha release, 100 sites, networking [44B]
 
@@ -38,6 +42,7 @@
 # [wkt] Month in date is bogus. I made it up to make the graph look ok.
 	Date: 1982-08
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+        Type: OS
 	Successor to 4.1absd 1000
 #			internal release, fast filesystem [44B]
 
@@ -46,6 +51,7 @@
 # [wkt] Month in date is bogus. I made it up to make the graph look ok.
 	Date: 1982-12
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+        Type: OS
 	Successor to 4.1bbsd 1000
 #			beta release, IPC [44B]
 
@@ -53,6 +59,7 @@
 	Name: 4.2BSD
 	Date: 1983-09
 	Reference: Quarter Century of UNIX by Peter Salus, pg 164
+        Type: OS
 	Successor to 4.1cbsd
 #                       Landmark filesystem change.
 #                       VAX hardware support extended to 11/730.
@@ -63,6 +70,7 @@
 	Name: 4.3BSD
 	Date: 1986-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+        Type: OS
 	Successor to 4.2bsd 1000
 #			Code taken from DEC Ultrix with DEC's blessing
 #                       DNS added to the standard libc
@@ -78,6 +86,7 @@
 	Name: 4.3BSD Tahoe
 	Date: 1988-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+        Type: OS
 	Successor to 4.3bsd
 #			Code taken from CCI's 4.2BSD-based vendor release
 #                       tahoe architecture support added.
@@ -95,12 +104,14 @@ net1
 	Name: BSD Net/1
 	Date: 1988-11
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+        Type: OS
 	Code taken from 4.3tahoe
 
 4.3reno
 	Name: 4.3BSD Reno
 	Date: 1990-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+        Type: OS
 	Successor to 4.3tahoe 1000
 #			Influenced by Sun and DEC vendor systems (NFS and /var)
 #                       experimental hp300 architecture support added.
@@ -112,30 +123,35 @@ net2
 	Name: BSD Net/2
 	Date: 1991-06
 	Reference: Quarter Century of UNIX by Peter Salus, pg 165
+        Type: OS
 	Code taken from 4.3reno
 
 4.4alpha
 	Name: 4.4BSD Alpha
 	Date: 1992-07
 	Reference: Wolfram Schneider
+        Type: OS
 	Successor to 4.3reno 1000
 
 4.4bsd
 	Name: 4.4BSD
 	Date: 1993-06
 	Reference: Usenet postings
+        Type: OS
 	Successor to 4.4alpha 1000
 
 4.4lite
 	Name: 4.4BSD Lite
 	Date: 1994-03
 	Reference: Usenet postings
+        Type: OS
 	Successor to 4.4bsd 1000
 
 4.4lite2
 	Name: 4.4BSD Lite Release 2
 	Date: 1995-06
 	Reference: Usenet postings
+        Type: OS
 	Successor to 4.4lite 1000
 #			the true final distribution from the CSRG
 

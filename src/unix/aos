@@ -1,7 +1,7 @@
 #########################################################################
 #			    IBM AOS					#
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/08/17 01:20:52 $
+# $Revision: 1.2 $ $Date: 2000/08/17 12:05:55 $
 #
 # From Robert D. Keys <rdkeys@seedlab1.cropsci.ncsu.edu>
 #
@@ -22,12 +22,14 @@ aos
 	Name: IBM AOS
 	Date: 1988
 	Reference: Robert D. Keys
+        Type: OS
 	Code taken from 4.3bsd
 
 aosreno
 	Name: IBM AOS (Reno)
 	Date: 1992
 	Reference: Robert D. Keys
+        Type: OS
 	Code taken from 4.3reno
 	Successor to aos
 
@@ -35,6 +37,7 @@ aoslite
 	Name: IBM AOS (Lite)
 	Date: 1995
 	Reference: Robert D. Keys
+        Type: OS
 	Code taken from 4.4bsd
 	Successor to aosreno
 	
