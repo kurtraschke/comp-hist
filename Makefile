@@ -16,7 +16,7 @@ SINCLAIR-SRCS = sinclair
 
 CTSS-SRCS = ctss/ctss $(UNIX-SRCS)
 
-DEC-SRCS = dec/pdp dec/tops
+DEC-SRCS = dec/pdp dec/tops dec/rsts
 
 SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS)
 
