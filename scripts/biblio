@@ -1,2 +1,2 @@
-cat /tmp/biblio | grep Reference: | sort -u | sed s/Reference:// > bibliography
+cat /tmp/biblio | grep Reference: | sort -u | sed s/.*Reference:// > bibliography
 
