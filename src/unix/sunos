@@ -1,7 +1,7 @@
 #########################################################################
 #			SunOS and Solaris			        #
 #########################################################################
-# $Revision: 1.1 $ $Date: 2000/08/17 01:26:16 $
+# $Revision: 1.2 $ $Date: 2000/08/17 14:03:17 $
 #
 # From: Joey KAHN <kahn@tholian.net>
 # 
@@ -62,9 +62,32 @@ sunos2
 	Name: SunOS 2.0
 	Date: 1985-05-15
 	Reference: SunOS 2.0 manual, title page
+	Type: OS
 
 sunos3
 	Name: SunOS 3.0
 	Date: 1986-02-17
 	Reference: SunOS 3.0 manual, title page
+	Type: OS
 	Successor to sunos2
+
+#Everything from here down, except for the ones with Reference: is from above
+
+sunos32
+	Name: SunOS 3.2
+	Date: 1986-9
+	Type: OS
+	Successor to sunos3
+
+sunos402
+	Name: SunOS 4.0.2
+	Date: 1989-4 #Resetting due to weirdness
+	Type: OS
+	Successor to sunos32
+
+sunos403
+	Name: SunOS 4.0.3
+	Date: 1989-5
+	Type: OS
+	Successor to sunos402
+
