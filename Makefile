@@ -67,9 +67,9 @@ SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $
 all: dump vcg biblio info html chml browser dot dbm
 
 dot: dump
-	perl -w scripts/todot dump >comp-history.dot
+	perl -w scripts/parsech-split/dot dump >comp-history.dot
 
-comp-hist-dot.ps: dot
+dot.ps: dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
@@ -86,7 +86,7 @@ info: dump
 vcg: dump
 	perl -w scripts/parsech-split/vcg dump >comp-history.vcg 
 
-comp-hist-vcg.ps: vcg
+vcg.ps: vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg
 
 html: dump
