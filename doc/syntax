@@ -17,8 +17,8 @@ fakenode
 	#can be one of OS os hardware standard or language this field is case sensitive
 	Info: this is a nonexistant node 
 	#this field places everything after Info: into a file called information in the dir you ran make in
-	Status: Jobsed
-	#can be one of released killed Jobsed prototype or research
+	Status: internal
+	#can be one of released, contiunal evolution, internal, prototype, or research 
 	Aka fnode 	
 	#this is for stuff with two names (as in Unicode and it's ISO standard name)
 	Successor to fakenode0 	
