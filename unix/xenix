@@ -1,0 +1,34 @@
+#########################
+#	Xenix		#
+#########################
+#MS's Unix
+
+xenix
+	Name: XENIX
+	Date: 1980-8-25
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Code taken from v7
+
+xenix3
+	Name: XENIX 3.0
+	Date: 1983-4
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to xenix
+
+xenix3.2
+	Name: XENIX 3.2
+	Date: 1987
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to xenix3
+
+xenix5
+	Name: XENIX 5
+	Date: 1987-6
+#	Fudge up there
+	Reference: http://perso.wanadoo.fr/levenez/unix/index.html
+	Type: OS
+	Successor to xenix3.2
+
