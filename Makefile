@@ -8,7 +8,9 @@ PARC-SRCS = parc
 
 APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc
 
-SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS)
+INTEL-SRCS = intel/4004
+
+SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS)
 
 all: comp-history.ps
 
