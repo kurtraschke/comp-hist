@@ -47,13 +47,6 @@ winnt4op
 	Type: OS
 	Successor to winnt4sp3
 
-winnt4op
-	Name: Windows New Technology 4.0 Option Pack
-	Date: 1997-12
-	Reference: http://perso.wanadoo.fr/levenez/windows/
-	Type: OS
-	Successor to winnt4sp3
-
 winnt4sp4
 	Name: Windows New Technology 4.0 Service Pack 4
 	Date: 1998-10
