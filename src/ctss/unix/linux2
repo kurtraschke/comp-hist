@@ -271,6 +271,13 @@ linux2038
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux2037
 
+linux2039
+	Name: Linux 2.0.39
+	Date: 2001-01-09
+	Refernce: Linux Kernel Archive (www.kernel.org)
+	Type: os
+	Successor to linux2038
+
 linux210
 	Name: Linux 2.1.0
 	Type: os
@@ -1917,13 +1924,13 @@ linux24pre
 
 linux240
 	Name: Linux 2.4.0
-	Date: 2001-1-4
+	Date: 2001-01-04
 	Reference: date on tarball
 	Type: os
 	Successor to linux24pre
 
 linux241
 	Name: Linux 2.4.1
-	Date: 2001-1-30
+	Date: 2001-01-30
 	Type: os
 	Successor to linux240
