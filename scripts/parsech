@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w
 
+
 =head1 NAME
 
 B<parsech> - Parse Comp-Hist
@@ -35,7 +36,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments
+take the following arguments: dump.
 
 =item B<-v> version
 
@@ -49,12 +50,12 @@ This switch will print a brief help message and exit.
 
 =cut it out!
 
-getopts('o:hv'); #Get our options for parsing
+getopts('o:hv', \%opts); #Get our options for parsing
 
 #now, the case statements for what to do
-if( defined $opt_h ){ &help; exit; }
-elsif( defined $opt_v ){ print("Parsech, version 0.01, 2000-9-23\n"); exit; }
-elsif( defined $opt_o ){ &$opt_o; }
+if( defined $opts{h} ){ &help; exit; }
+elsif( defined $opts{v} ){ print("Parsech, version 0.02, 2000-9-23\n"); exit; }
+elsif( defined $opts{o} ) { $output = $opts{o}; &$output; }
 else{ print("Invalid args. See -h for proper usage\n"); exit; }
 
 sub help {
@@ -64,13 +65,15 @@ sub help {
     print("\t-o - sets the output format, takes one arg, see man page for possible args\n");
 }
 
-=head2 B<parse> function
+=head2 B<parse>
 
 The parse subroutine does the heavy lifting involved in parsing,
 and really should be the only function that ever touches the 
 file's contents.
 
 The data fields are parsed as follows:
+
+=over 5
 
 =item First, a regexp filters out the comments (C<s/#.*//>)
 
@@ -79,6 +82,10 @@ The data fields are parsed as follows:
 =item Then, we look for a Name: field and set that up.
 
 =item After that, date parsing happens.
+
+=item Then, reference parsing is done.
+
+=item As a follow up, we then do Info parsing
 
 =item Then, we do the Type parsing. Note that to get colors from this, the setcolor routine must be run.
 
@@ -103,6 +110,10 @@ sub parse{
 	if(/^\bFounded.*(\d\d\d\d)/){ $year{$node} = $1; }
 
 
+	if(/^\bReference: (.*)/){ $reference{$node} = $1; }
+
+	if(/^\bInfo: (.*)/){ $info{$node} = $1; }
+
 	if(/^\bType: hardware/i){ $type{$node} = "hardware"; }
 	if(/^\bType: OS/i){ $type{$node} = "os"; }
 	if(/^\bType: language/i){ $type{$node} = "language"; }
@@ -114,7 +125,7 @@ sub parse{
 
 	if(/^\bStatus: released/i){ $status{$node} = "released"; }
 	if(/^\bStatus: internal/i){ $status{$node} = "internal"; } 
-	if(/^\bStatus: continual evolution/i){ $status{$node} = "contev"; }
+	if(/^\bStatus: [continual evolution|contev]/i){ $status{$node} = "contev"; }
 	if(/^\bStatus: prototype/i){ $status{$node} = "prototype"; }
 	if(/^\bStatus: research/i){ $status{$node} = "research"; }
 
@@ -128,6 +139,12 @@ sub parse{
 	if(/^\bWritten in (\S+)/){ linkup $node, $1, "writtenin"; }
 }
 
+=head2 B<minmaxyear> 
+
+This function reads in the %year hash (created by B<parse>) and sets the variables $maxyear and $minyear accordingly.
+
+=cut it out! that hurts!
+
 sub dominmaxyear {
     foreach $year (keys %year){
 	if($year > $maxyear){ $maxyear = $year; }
@@ -135,9 +152,15 @@ sub dominmaxyear {
     }
 }
 
+=head2 B<dopos>
+
+dopos reads in the nodes given to it as arguments and sets a vertical position for the node accordingly. Useful mostly for dot and vcg output.
+
+=cut , wrap, and print
+
 sub dopos{
     my $file = $_[0];
-    foreach $node (@{$files{$file}}){
+    foreach $node (@_){
 	if(!defined $month{$node}){
 	    $year = $year{$node} - $minyear;
 	    $vpos{$node} = $year * 12;
@@ -149,9 +172,59 @@ sub dopos{
     }   
 }
 
+=head2 B<linkup>
+
+linkup is the routine that creates the @linkfrom, @linkto, and @linkweight arrays. Used mostly by B<parse>
+
+=cut ! You're beautiful! A Day In The Life Of JAPH will be a hit!
+
 sub linkup{
     push(@linkfrom, $_[0]);
     push(@linkto, $_[1]);
     push(@linkweight, $_[2]);
 }
 
+=head2 B<dump>
+
+B<dump> is a rough output format. All it does is sort the nodes and strip comments.
+
+=cut ! that scene is all wrong!
+
+sub dump {
+    while(<>){
+	parse;
+    }
+    foreach $node (sort keys %name){
+	print("$node\n");
+	print("\tName: $name{$node}\n");
+	print("\tDate $year{$node}") if defined $year{$node};
+	print("-$month{$node}") if defined $month{$node};
+	print("-$day{$node}") if defined $day{$node};
+	print("\n") if defined $year{$node};
+	print("\tReference: $reference{$node}\n") if defined $reference{$node};
+	print("\tInfo: $info{$node}\n") if defined $info{$node};
+	print("\tType: $type{$node}\n") if defined $type{$node};
+	print("\tStatus: $status{$node}\n") if defined $status{$node};
+	for($i = 0; $i <= $#linkfrom; $i++){
+	    if($linkfrom[$i] == $node){
+		my $expweight = expnick $linkweight[$i];
+		print("\t$expweight $linkto[$i]");
+	    }
+	}
+    }
+}
+
+=head2 B<expnick>
+
+B<expnick> expands the nicknames B<parse> assigns to certan fields.
+
+=cut
+
+sub expnick ($) {
+    return "Aka" if $_[0] == aka;
+    return "Successor to" if $_[0] == successor;
+    return "Code taken from" if $_[0] == codetaken;
+    return "Influenced by" if $_[0] == influenced;
+    return "Runs on" if $_[0] == runson;
+    return "Written in" if $_[0] == writtenin;
+}
