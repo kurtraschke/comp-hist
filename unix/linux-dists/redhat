@@ -1,0 +1,26 @@
+#########################
+#	Red Hat		#
+#########################
+#The distro I'm writing this from
+
+redhat-1.0
+	Name: Red Hat Commercial Linux (Mother's Day) 1.0
+	Date: 1995-6-5
+	Reference: date on user's manual
+	Type: OS
+	Code taken from linux128
+
+redhat-1.1
+	Name: Red Hat Commercial Linux (Mother's Day) 1.1
+#	Date: needed
+	Reference: ftp site
+	Type: OS
+	Successor to redhat-1.0
+
+redhat-2.0
+	Name: Red Hat Linux 2.0
+#	Date: needed
+	Reference: ftp.redhat.com
+	Type: OS
+	Code taken from linux1213
+	Successor to redhat-1.1
