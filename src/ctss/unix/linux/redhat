@@ -3,73 +3,90 @@
 #########################
 #The distro I'm writing this from
 
-redhat-01.0
+redhat-1.0
 	Name: Red Hat Commercial Linux (Mother's Day) 1.0
 	Date: 1995-06-05
 	Reference: date on user's manual
 	Type: OS
 	Code taken from linux128
 
-redhat-01.1
+redhat-1.1
 	Name: Red Hat Commercial Linux (Mother's Day) 1.1
-#	Date: needed
-	Reference: ftp site
+	Date: 1995-08-01
+	Reference: http://www.cs.helsinki.fi/u/mjrauhal/linux/cola.archive/1995-08/cola.1995-08-01.017
 	Type: OS
-	Successor to redhat-01.0
+	Successor to redhat-1.0
+	Code taken from linux1211
 
-redhat-02.0
+redhat-2.0
 	Name: Red Hat Linux 2.0
 #	Date: needed
 	Reference: ftp.redhat.com
 	Type: OS
 	Code taken from linux1213
-	Successor to redhat-01.1
+	Successor to redhat-1.1
+
+redhat-3.0.3
+	Name: Red Hat Linux 3.0.3
+	Date: 1996-03-16
+	Reference: http://www.cs.helsinki.fi/u/mjrauhal/linux/cola.archive/1996-03/cola.1996-03-23.001
+	Type: os
+	Code taken from linux1213
+	Successor to redhat-2.0
+
+redhat-4.1
+	Name: Red Hat Linux 4.1
+	Date: 1997-02-07
+	Reference: http://www.cs.helsinki.fi/u/mjrauhal/linux/cola.archive/1997-02/cola.1997-02-07.019
+	Type: os
+	Successor to redhat-3.0.3
+	Code taken from linux2027
 
 #other releases please
 
-redhat-05.1
+redhat-5.1
 	Name: Red Hat Linux 5.1
 	Date: 1998-05-17
 	Reference: /. announcement
 	Type: OS
 	Code taken from linux2034
-	Successor to redhat-02.0
+	Successor to redhat-4.1
 
-redhat-05.2
+redhat-5.2
 	Name: Red Hat Linux 5.2
 	Date: 1998-11-01
 	Reference: /. announcement
 	Type: OS
-	Successor to redhat-05.1
+	Successor to redhat-5.1
 
-redhat-06.0
+redhat-6.0
 	Name: Red Hat Linux 6.0
 	Date: 1999-04-26
 	Reference: /. announcement
 	Type: OS
 	Code taken from linux225
-	Successor to redhat-05.2
+	Successor to redhat-5.2
 
-redhat-06.1
+redhat-6.1
 	Name: Red Hat Linux 6.1
 	Date: 1999-10-02
 	Reference: /. announcement
 	Type: OS
 	Code taken from linux2212
-	Successor to redhat-06.0
+	Successor to redhat-6.0
 
-redhat-06.2
+redhat-6.2
 	Name: Red Hat Linux 6.2
 	Date: 2000-03-27
 	Reference: /. announcement
 	Type: OS
 	Code taken from linux2214
-	Successor to redhat-06.1
+	Successor to redhat-6.1
 
-redhat-07.0
+redhat-7.0
 	Name: Red Hat Linux 7.0
 	Date: 2000-09-25
 	Reference: http://slashdot.org/article.pl?sid=00/09/25/1547247&mode=thread
 	Type: OS
 	Code taken from linux2216
-	Successor to redhat-06.2
+	Successor to redhat-6.2
