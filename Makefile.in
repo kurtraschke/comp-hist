@@ -19,10 +19,10 @@ info:  dump
 	@PERL@ scripts/parsech-split/info dump > information
 
 vcg: dump
-	@PERL@ -w scripts/parsech-split/vcg dump >comp-history.vcg 
+	@PERL@ -w scripts/parsech-split/vcg dump >comp-hist.vcg 
 
 vcg.ps: vcg
-	@VCG@ comp-history.vcg -psoutput comp-history.vcg
+	@VCG@ -silent -color -paper letter -psoutput comp-hist.ps comp-hist.vcg
 
 html: dump
 	@PERL@ scripts/parsech-split/html dump >comp-hist.html
