@@ -1,0 +1,15 @@
+#########################
+#	Unix Corp$	#
+#########################
+
+fsf
+	Name: The Free Software Foundation
+	Date: 1985
+	Reference: http://www.gnu.org/gnu/thegnuproject.html
+	Type: company
+
+sgi
+	Name: Silicon Graphics, Inc.
+	Date: 1982
+	Reference: http://www.sgi.com/newsroom/factsheet.html
+	Type: company
