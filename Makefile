@@ -64,28 +64,29 @@ SGI-SRCS = sgi/corp
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS) $(SGI-SRCS)
 
-all: comp-history-vcg biblio info html chml browser
+all: vcg biblio info html chml browser dot
 
-comp-history-dot: 
+dot: 
 	perl -w scripts/todot $(SRCS) >comp-history.dot
 
-comp-history-dot.ps: comp-history-dot
+comp-hist-dot.ps: dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
 	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-*
 	cd scripts/new ; make clean
 	cd scripts/browser ; make clean
+
 biblio:
 	perl scripts/parsech -o biblio $(SRCS) > bibliography
 
 info:
 	perl scripts/parsech -o info $(SRCS) > information
 
-comp-history-vcg:
+vcg:
 	perl -w scripts/parsech -o vcg $(SRCS) >comp-history.vcg 
 
-comp-history-vcg.ps: comp-history-vcg
+comp-hist-vcg.ps: vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
 
 dump:
