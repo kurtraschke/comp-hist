@@ -36,7 +36,7 @@ biblio:
 	rm /tmp/biblio
 
 comp-history-vcg:
-	perl -w scripts/tovcg $(SRCS) >comp-history.vcg
+	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
 
