@@ -14,7 +14,7 @@ fakenode
 	Reference: A Website or book or paper 
 	#'make biblio' does a bibliography
 	Type: OS 
-	#can be one of OS os hardware standard or language this field is case sensitive
+	#can be one of OS os hardware standard announcement or language this field is case sensitive
 	Info: this is a nonexistant node 
 	#this field places everything after Info: into a file called information in the dir you ran make in
 	Status: internal
