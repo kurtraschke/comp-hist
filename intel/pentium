@@ -277,15 +277,13 @@ mp3500018
 p3733018
 	Name: Intel Pentium III (500, 533, 550, 600, 650, 667, 700, and 733 MHz) (0.18 micron process)
 	Date: 1999-10-25
-	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.ht
-m
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to p3600
 
 p3xeon733018
 	Name: Intel Pentium III (600, 667, and 733 MHz) (0.18 micron process)
 	Date: 1999-10-25
-	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.ht
-m
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Code taken from p3733018
 	Successor to p3xeon550
 
