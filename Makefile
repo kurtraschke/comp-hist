@@ -6,7 +6,7 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux apple/macos
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux apple/macos apple/corp
 
 INTEL-SRCS = intel/4004 intel/pentium
 
@@ -22,7 +22,7 @@ DEC-SRCS = dec/pdp dec/tops dec/rsts dec/pdp11
 
 LINC-SRCS = linc
 
-DATAGEN-SRCS = datagen/nova
+DATAGEN-SRCS = datagen/nova datagen/corp
 
 MOTOROLA-SRCS = motorola/68xxx motorola/ppc
 
@@ -39,7 +39,7 @@ clean:
 	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf information
 
 biblio:
-	cat $(SRCS) | scripts/biblio > biblography
+	cat $(SRCS) | scripts/biblio > bibliography
 
 comp-history-vcg:
 	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
