@@ -1,4 +1,4 @@
-CPM-SRCS = windows cpm
+CPM-SRCS = windows cpm msdos
 
 all: cpm-history.ps
 
