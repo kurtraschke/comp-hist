@@ -10,20 +10,65 @@ use vars        qw($VERSION @ISA @EXPORT %EXPORT_TAGS);
 $VERSION = 0.01; #May as well
 
 @ISA = qw(Exporter);
-@EXPORT = qw(&docomment &donode &doname &doref &dotype &dostatus &doinf);
+@EXPORT = qw(&docomment &donode &doname &doref &dotype &dostatus &doinf &doto &dofrom &doweight);
 %EXPORT_TAGS = ();
 
 #non-exported globals (nothing is exported. yet.)
-use vars    qw(@node);
+use vars    qw(@node @to @from @weight);
 
 @node = '';
+@to = '';
+@from = '';
+@weight = '';
 
-#First, an invisible function
+#First, an invisible function or two
 
 my $onode = sub {
     cout;
     my $node = $1 if /^(\S+)/;
     return $node;
+}
+
+my $linkup = sub {
+    open FILE, $_[0];
+    while(<FILE>){
+	$node = &$onode;
+	if(/.*Aka (\S+)/){
+	    $to[$linkcnt] = $node;
+	    $from[$linkcnt] = $1;
+	    $weight[$linkcnt] = aka;
+	}
+        if(/.*Successor to (\S+)/){
+            $to[$linkcnt] = $node;
+            $from[$linkcnt] = $1;
+            $weight[$linkcnt] = successor;
+        }
+        if(/.*Code taken from (\S+)/){
+            $to[$linkcnt] = $node;
+            $from[$linkcnt] = $1;
+            $weight[$linkcnt] = code;
+        }
+        if(/.*Influenced by (\S+)/){
+            $to[$linkcnt] = $node;
+            $from[$linkcnt] = $1;
+            $weight[$linkcnt] = influence;
+        }
+        if(/.*Runs on (\S+)/){
+            $to[$linkcnt] = $node;
+            $from[$linkcnt] = $1;
+            $weight[$linkcnt] = runs;
+        }
+        if(/.*Ran on (\S+)/){
+            $to[$linkcnt] = $node;
+            $from[$linkcnt] = $1;
+            $weight[$linkcnt] = runs;
+        }
+        if(/.*Written in (\S+)/){
+            $to[$linkcnt] = $node;
+            $from[$linkcnt] = $1;
+            $weight[$linkcnt] = written;
+        }
+    }
 }
 
 #Now the ones they can see
@@ -121,3 +166,23 @@ sub doinf {
     return @uinf;
 }
 
+sub doto {
+    foreach $file (@_){
+	&$linkup
+	}
+    return @to;
+}
+
+sub dofrom {
+    foreach $file (@_){
+        &$linkup
+        }
+    return @from;
+}
+
+sub doweight {
+    foreach $file (@_){
+        &$linkup
+        }
+    return @weight;
+}
