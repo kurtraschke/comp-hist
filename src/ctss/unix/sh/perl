@@ -12,14 +12,14 @@ perl1
 	Code taken from sh
 
 perl1.001..10
-	Name: The Perl 1.001..10
+	Name: The Practical Extraction and Reporting Language 1.001..10
 	Date: 1988-01-30
 	Reference: the perlhist manpage
 	Type: language
 	Successor to perl1
 
 perl1.011..14
-	Name: The Perl 1.011..14
+	Name: The Practical Extraction and Reporting Language 1.011..14
 	Date: 1988-02-02
 	Reference: the perlhist manpage
 	Type: language
@@ -27,17 +27,24 @@ perl1.011..14
 
 perl2
 	Name: The Practial Extraction and Reporting Language 2.000
-	Date: 1988-01-05
+	Date: 1988-06-05
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
 	Successor to perl1.011..14
+
+perl2.001
+	Name: The Practical Extraction and Reporting Language 2.001
+	Date: 1988-06-28
+	Reference: the perlhist manpage
+	Type: language
+	Successor to perl2
 
 perl3
 	Name: The Practial Extraction and Reporting Language 3.000
 	Date: 1989-10-18
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html 
 	Type: language
-	Successor to perl2
+	Successor to perl2.001
 
 perl4
 	Name: The Practial Extraction and Reporting Language 4.000
