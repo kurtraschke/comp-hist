@@ -9,7 +9,7 @@ use Data::Dumper;
 no strict "subs";
 my %d;
 
-mkdir('parsech_dbm', 0777);
+mkdir('parsech_dbm', 0777) or die "Couldn't make parsech_dbm dir: $!\n";
 parser(@ARGV);
 
 #Setup for %Linkto to be handled
