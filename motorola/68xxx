@@ -11,7 +11,8 @@
 
 6809
 	Name: The  Motorola 6809
-	Date: would be nice
+	Date: 1979
+    Reference: http://www.cs.regina.ca/~bayko/cpu.html#Sec1Part6
 	Reference: http://www.computerhistory.org/exhibits/microprocessors/up2.page#intel
 	Type: hardware
 	Successor to 6800
@@ -51,6 +52,8 @@
 	Type: hardware
 	Successor to 68008
 
+#8800 was a chipset, the 88100 was the processor, 88200 the MMU
+
 88000
 	Name: The Motorola 88000
 	Date: 1988
@@ -58,12 +61,12 @@
 	Type: hardware
 	Code taken from 68030
 
-88100
-	Name: The Motorola 88100
-	Date: needed
-	Reference: http://www.computerhistory.org/exhibits/microprocessors/up2.page#intel
-	Type: hardware
-	Successor to 88000
+#88100
+#	Name: The Motorola 88100
+#	Date: needed
+#	Reference: http://www.computerhistory.org/exhibits/microprocessors/up2.page#intel
+#	Type: hardware
+#	Successor to 88000
 
 6803050
 	Name: The Motorola 68030 (50 MHz)

@@ -69,15 +69,28 @@ int main (int argc, char *argv[])
 
         if (NULL != (nlink = nlist->reference))
         {
+			char
+		       *ref = (char *)(nlink->node);
+				
             if (nlink->next == NULL)
-                printf ("%sReference : %s", prefix, (char *)(nlink->node));
+			{
+				printf ("%sReference : ", prefix);
+			    if (strncmp ("http:", ref, 5) == 0)
+					printf ("<a href=\"%s\">%s</a>", ref, ref);
+				else
+					printf ("%s", ref);
+			}
             else
             {
                 printf ("%sReferences :\n", prefix);
                 while (nlink)
                 {
-                    printf ("%s&nbsp;&nbsp;&nbsp;%s\n", prefix, 
-                        (char*)(nlink->node));                        
+					ref = (char *)(nlink->node);	
+                    printf ("%s&nbsp;&nbsp;&nbsp;\n", prefix);
+					if (strncmp ("http:", ref, 5) == 0)
+						printf ("<a href=\"%s\">%s</a>", ref, ref);
+					else
+						printf ("%s", ref);					
 
                     nlink = nlink->next;
                 }
