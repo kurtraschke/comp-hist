@@ -6,7 +6,7 @@ ORD-SRCS = ord-corps
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux apple/macos apple/corp apple/ans
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/osx apple/aux apple/macos apple/corp apple/ans
 
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
@@ -45,7 +45,7 @@ info:
 	cat $(SRCS) | sh ./scripts/info > information
 
 comp-history-vcg:
-	perl -w scripts/tovcg $(SRCS) >comp-history.vcg 2>/dev/null
+	perl -w scripts/tovcg.exp $(SRCS) >comp-history.vcg 
 
 comp-history-vcg.ps: comp-history-vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
