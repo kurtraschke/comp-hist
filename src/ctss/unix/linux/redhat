@@ -93,8 +93,8 @@ redhat-7.0
 
 redhat-7.1
 	Name: Red Hat Linux 7.1
-	Date: 2001-0416
-	Reference: /. announcement
+	Date: 2001-04-16
+	Reference: http://www.redhat.com/about/presscenter/2001/press_sevenone.html
 	Type: os
 	Code taken from linux243
 	Successor to redhat-7.0
