@@ -1879,3 +1879,17 @@ linux24t9
 	Reference: date on kernel.org
 	Type: OS
 	Successor to linux24t8
+
+linux24t10
+	Name: Linux 2.4.0-test10
+	Date: 2000-10-31
+	Reference: date on kernel.org
+	Type: OS
+	Successor to linux24t9
+
+linux24t11
+	Name: Linux 2.4.0-test11
+	Date: 2000-11-20
+	Reference: date on kernel.org
+	Type: OS
+	Successor to linux24t10
