@@ -1,19 +1,21 @@
 #########################################################################
 #			    Research Editions				#
 #########################################################################
-# $Revision: 1.2 $ $Date: 2000/08/17 02:05:06 $
+# $Revision: 1.3 $ $Date: 2000/08/17 04:31:57 $
 #
 updp7
 	Name: Unix, PDP-7 version
 	Date: 1969-09
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
 	Type: OS
+	Runs on pdp7
 
 v1
 	Name: Unix, 1st Edition
 	Date: 1971-11-03
 	Reference: Quarter Century of UNIX by Peter Salus, pg 43
 	Successor to updp7 100
+	Runs on pdp1120
 #			DEC PDP-11/20, Assembler
 
 v2
