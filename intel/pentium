@@ -1,0 +1,41 @@
+#########################
+#	Pentium		#
+#########################
+#The post pentium intels
+
+pentium6066
+	Name: Intel Pentium (60 & 66 MHZ)
+	Date: 1993-3-22
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to 486dx
+
+dx4
+	Name: Intel DX4
+	Date: 1994-3-7
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to dx2
+
+pentium90100
+	Name: Intel Pentium (90 & 100 MHz)
+	Date: 1994-3-7
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentium6066
+
+pentium75
+	Name: Intel Pentium (75 MHz)
+	Date: 1994-10-10
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentium6066
+
+pentium120
+	Name: Intel Pentium (120 MHz)
+	Date: 1995-3-27
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentium6066
+	Successor to pentium75
+
+pentium133
+	Name: Intel Pentium (133 MHz)
+	Date: 1995-6
+	Successor to pentium120
+
