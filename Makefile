@@ -28,7 +28,7 @@ DATAGEN-SRCS = datagen/nova datagen/corp
 
 MOTOROLA-SRCS = motorola/68xxx motorola/ppc
 
-BCPL-SRCS = bcpl/bcpl
+BCPL-SRCS = bcpl/bcpl bcpl/c++
 
 LISP-SRCS = lisp
 
