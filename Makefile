@@ -41,5 +41,10 @@ unix-history:
 #        perl -w scripts/todot $(PARC-SRCS)
 
 clean:
-	rm -f *.html *.css comp-history *.aux *.log comp-history.ps
+	rm -f *.html *.css comp-history *.aux *.log comp-history.ps /tmp/biblio bibliography
+
+biblio:
+	cat $(SRCS) >/tmp/biblio
+	scripts/biblio
+	rm /tmp/biblio
 
