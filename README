@@ -6,6 +6,8 @@ In order to be able to use this, you will need a copy of Graphviz <http://resear
 
 If you want to make a node, look in TODO and doc/goals to see what we need done. Then look at the syntax in the doc/ directory. 
 
+All contributions to this project from others would be appreciated. The biggest thing right now is getting a parser for VCG working <http://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html>. Help on this is most needed.
+
 	TIA for your help-
 	Scott Fenton <sj12fn@home.com>
 
