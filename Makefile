@@ -36,7 +36,7 @@ SH-SRCS = sh/sh sh/awk sh/perl
 
 BE-SRCS = be/corp be/bebox be/beos
 
-LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian
+LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian unix/linux-dists/leetnux unix/linux-dists/minilinux
 
 POWER-SRCS = ibm/power/power
 
