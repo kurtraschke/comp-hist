@@ -23,13 +23,6 @@ osxserv12
         Type: OS
 	Successor to osxserv102
 
-osxpb
-	Name: Apple Mac OS X Public Beta
-	Date: 2000-9-13
-	Reference: http://slashdot.org/articles/00/09/13/1233200.shtml
-	Type: OS
-	Successor to osxdp4
-
 osxdp4
 	Name: Apple Mac OS X DP4
 	Date: 2000-3
