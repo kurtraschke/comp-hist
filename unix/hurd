@@ -26,9 +26,11 @@ hurd0.1
 
 gnu0.1
 	Name: GNU 0.1
+	Date: 1996-9-7
         Reference: The date on ftp.gnu.org
         Type: OS
         Successor to gnu0.0
+	Code taken from hurd0.1
 
 hurd0.2
 	Name: Hurd 0.2
