@@ -166,3 +166,10 @@ pdp16/rtm
 	Reference: http://www.digital.com/timeline/1971.htm
 	Type: hardware
 	Code taken from pdp1040
+
+pdp16m
+	Name: The Programmed Data Processor, model 16/M
+	Date: 1972
+	Reference: http://www.digital.com/timeline/1972.htm
+	Type: hardware
+	Successor to pdp16/rtm
