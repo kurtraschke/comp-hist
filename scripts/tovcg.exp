@@ -2,76 +2,84 @@
 
 #Tovcg.exp, the next generation of tovcg
 
-$minyear = 3000;
+%files = ();
+@files = @AGRV;
+$minyear = 3000000;
 
 print("graph: {\ntitle: \"The Computer Family Tree\"\n\n");
-sub parse{
-while(<>){
-    s/\#.*//
-    if(/^(\S+)/){ $node = $1; next; }
-    if(/.*Name: (.*)/){ $name{$node} = $1; next; }
-    if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
-    if(/.*Date.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; goto dodate;}
-    if(/.*Date.*(\d\d\d\d)/){ $year{$node} = $1; goto dodate; }
-    if(/.*Founded.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
-    if(/.*Founded.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; goto dodate;}
-    if(/.*Founded.*(\d\d\d\d)/){
-	$year{$node} = $1; goto dodate;
-      dodate:
-	if($year{$node} < $minyear){ $minyear = $year{$node}; }
-    }
 
-    if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
-    if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
-    if(/.*Type: language/){ $color{$node} = "color: green"; }
-    if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
-    if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
-    if(/.*Type: company/){ $color{$node} = "color: cyan"; }
-
-    if(/.*Aka (\S+)/) {
-        print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
-    }
-    if (/.*Successor to (\S+)/) {
-        print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 4 arrowsize: 20 }\n");
-    }
-    if (/.*Code taken from (\S+)/) {
-        print("edge: { sourcename: \"$1\" targetname: \"$node\" }\n");
-    }
-    if (/.*Influenced by (\S+)/) {
-        print("edge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
-    }
-    if(/.*Runs on (\S+)/){
-	print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
-    }
-    if(/.*Ran on (\S+)/){
-        print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
-    }
-    if(/.*Made by (\S+)/){
-	print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 10 }\n");
-    }
-}
+foreach $file (@files){
+    parse($file);
 }
 
-foreach $node (keys(%year)){
-    if(!defined $month{$node}){
-	$year = $year{$node} - $minyear;
-	$vpos{$node} = $year * 12;
-    }
-    else{
-	$year = $year{$node} - $minyear;
-	$vpos{$node} = $year * 12 + $month{$node};
-    }
+foreach $file (@files){
+    dopos($file);
 }
 
-foreach $node (keys(%name)){
-    if(!defined $vpos{$node}){
-	print("node: { title: \"$node\" label: \"$name{$node}\" $color{$node} }\n");
-    }
-    else{
-	print("node: { title: \"$node\" label: \"$name{$node}\" vertical_order: $vpos{$node} $color{$node} }\n");
-    }
-}
 print("\n}\n");
+
+sub parse{
+    $file = $_[0];
+    open FILE, $file;
+    while(<FILE>){
+	s/\#.*//;
+	if(/^(\S+)/){ $node = $1; push( @{$files{$file}}, $1 ); next; }
+	if(/.*Name: (.*)/){ $name{$node} = $1; next; }
+	if(/.*Date.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
+	if(/.*Date.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; goto dodate;}
+	if(/.*Date.*(\d\d\d\d)/){ $year{$node} = $1; goto dodate; }
+	if(/.*Founded.*(\d\d\d\d)-(\d\d)-\d\d/){$year{$node} = $1; $month{$node} =  $2; goto dodate;}
+	if(/.*Founded.*(\d\d\d\d)-(\d\d)/){$year{$node} = $1; $month{$node} = $2; goto dodate;}
+	if(/.*Founded.*(\d\d\d\d)/){
+	    $year{$node} = $1; goto dodate;
+	  dodate:
+	    if($year{$node} < $minyear){ $minyear = $year{$node}; }
+	}
+
+	if(/.*Type: hardware/){ $color{$node} = "color: blue"; }
+	if(/.*Type: [OS|os]/){ $color{$node} = "color: red"; }
+	if(/.*Type: language/){ $color{$node} = "color: green"; }
+	if(/.*Type: standard/){ $color{$node} = "color: yellow"; }
+	if(/.*Type: other/){ $color{$node} = "color: magenta"; } #You don't know about this line. Go away.
+	if(/.*Type: company/){ $color{$node} = "color: cyan"; }
+	
+	if(/.*Aka (\S+)/) {
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 arrowsize: 40 backarrowsize: 400 }\n");
+	}
+	if (/.*Successor to (\S+)/) {
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 4 arrowsize: 20 }\n");
+	}
+	if (/.*Code taken from (\S+)/) {
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" }\n");
+	}
+	if (/.*Influenced by (\S+)/) {
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" linestyle: dashed }\n");
+	}
+	if(/.*Runs on (\S+)/){
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
+	}
+	if(/.*Ran on (\S+)/){
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 8 linestyle: dashed }\n");
+	}
+	if(/.*Made by (\S+)/){
+	    print("edge: { sourcename: \"$1\" targetname: \"$node\" thickness: 10 }\n");
+	}
+    }
+}
+
+sub dopos{
+    $file = $_[0];
+    foreach $node (@{$files{$file}}){
+	if(!defined $month{$node}){
+	    $year = $year{$node} - $minyear;
+	    $vpos{$node} = $year * 12;
+	}
+	else{
+	    $year = $year{$node} - $minyear;
+	    $vpos{$node} = $year * 12 + $month{$node};
+	}
+    }
+}
 
 
 
