@@ -5,10 +5,10 @@
 
 sh
 	Name: Bourne Shell
-	Date: 1971
+	Date: 1971-11-3
 	Reference: http://perso.wanadoo.fr/levenez/lang/index.html
 	Type: language
-	Ran on v7
+	Ran on v1
 
 csh
 	Name: C Shell
