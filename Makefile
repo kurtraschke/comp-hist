@@ -26,7 +26,7 @@ DATAGEN-SRCS = datagen/nova
 
 SRCS = $(CTSS-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS) $(DEC-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS)
 
-all: comp-history-dot.ps biblio comp-history-vcg
+all: comp-history-vcg biblio
 
 comp-history-dot: 
 	perl -w scripts/todot $(SRCS) >comp-history-dot
