@@ -76,20 +76,56 @@ pentium233mmx
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to pentium200166mmx
 
-ppro200l2
-	Name: Pentium Pro (200 MHz) with 1 MB of integrated L2 cache
+ppro200
+	Name: Intel Pentium Pro (200 MHz) with 1 MB of integrated L2 cache
 	Date: 1997-8-18
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to ppro200
 
 mpentium233
-	Name: Mobile Pentium with MMX (200, 233 MHz)
+	Name: Intel Mobile Pentium with MMX (200, 233 MHz)
 	Date: 1997-9-8
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to pentium233mmx
 
 mpentium266
-	Name: Mobile Pentium with MMX (266 MHz)
+	Name: Intel Mobile Pentium with MMX (266 MHz)
 	Date: 1998-1-12
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to mpentium233
+
+p2333
+	Name: Intel Pentium II (333 MHz)
+	Date: 1998-1-26
+	Referernce: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to pentium200166mmx
+
+mp2266
+	Name: Intel Mobile Pentium II (233, 266 MHz)
+	Date: 1998-4-2
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to mpentium266
+
+p2400
+	Name: Intel Pentium II (350 and 400 MHz)
+	Date: 1998-4-15
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to p2333
+
+celery266
+	Name: Intel Celeron (266 MHz)
+	Date: 1998-4-15
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Code taken from p2400
+
+celery300
+	Name: Intel Celeron (300 MHz)
+	Date: 1998-6-8
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to celery266
+
+
+
+
+
 
