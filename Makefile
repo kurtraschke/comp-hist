@@ -69,7 +69,7 @@ comp-history-dot.ps: comp-history-dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump
+	rm -f *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml
 	cd scripts/new ; make clean
 
 biblio:
