@@ -27,3 +27,4 @@ OK, to keep stuff straight, here is a more specific form of the TODO file. Kurt 
 	POSIX should be current
 	Multics should be done
 	at least one node in use today should be traced back to ENIAC
+	sometime before this point, we should switch to using Autoconf
