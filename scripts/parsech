@@ -216,6 +216,11 @@ sub expnick {
     return "Written in" if $_[0] =~ /writtenin/;
 }
 
+=head2 B<xml>
+
+The xml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Markup Language).
+
+=cut
 
 sub xml{
     print("<!DOCTYPE TREE PUBLIC \"\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\"\n\n");
