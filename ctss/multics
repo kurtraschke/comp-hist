@@ -8,7 +8,7 @@ multicsproj
 	Founded on 1965
 	#That's the date that GE and Bell Labs joined MIT in the project
 	Reference: http://www.multicians.org/history.html
-	Type: corporation
+	Type: company
 	#sort of
 	Influenced by ctss
 	Info: The multics project was an alliance between GE, Bell Labs, and MIT to produce the Multics operating system. All the partners in the project eventually withdrew except for GE, which sold its computer division to Honeywell, which (unsuccessfully) tried to commercialize Multics. The act of Bell Labs withdrawing from Project Multics in April 1969 left a Bell Labs programmer named Ken Thompson in a lurch, and a a result, Unix was born.
