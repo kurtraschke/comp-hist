@@ -8,7 +8,7 @@ B<parsech> - Parse Comp-Hist
 
 A parser for the Computer History Graphing Project.
     
-    parsech B<-o> [dump|xml|info]
+    parsech B<-o> [dump|chml|info]
     parsech B<-h>
     parsech B<-v>
 
@@ -35,7 +35,7 @@ plus all the files you want parsed.
 =item B<-o> output
 
 This switch dictates the output format. Currently, it will 
-take the following arguments: dump, xml, or info.
+take the following arguments: dump, chml, or info.
 
 =item B<-v> version
 
@@ -72,9 +72,9 @@ sub output (){
 	}
     }
     if($opts{o} =~ /dump/){&dump;}
-    elsif($opts{o} =~ /xml/){&xml;}
+    elsif($opts{o} =~ /chml/){&chml;}
     elsif($opts{o} =~ /info/){&info;}
-    else {print "Invalid output format: valid formats are dump, xml, and info\n"; exit;}
+    else {print "Invalid output format: valid formats are dump, chml, and info\n"; exit;}
 }
 
 =head2 B<parse>
@@ -216,14 +216,14 @@ sub expnick {
     return "Written in" if $_[0] =~ /writtenin/;
 }
 
-=head2 B<xml>
+=head2 B<chml>
 
-The xml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Markup Language).
+The chml routine sucks in the files, and spits out a bit of CHML (Comp-Hist Markup Language).
 
 =cut
 
-sub xml{
-    print("<!DOCTYPE TREE PUBLIC \"\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
+sub chml{
+    print("<!DOCTYPE TREE PUBLIC \"-//Comp_Hist//DTD CHML 1.0//EN\" \"http://comp-hist.sourceforge.net/comp-hist.dtd\">\n\n");
 
     print("<tree>\n");
 
