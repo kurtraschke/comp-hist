@@ -16,40 +16,25 @@ SINCLAIR-SRCS = sinclair
 
 SRCS = $(UNIX-SRCS) $(CPM-SRCS) $(ORD-SRCS) $(PARC-SRCS) $(APPLE-SRCS) $(INTEL-SRCS) $(IBM-SRCS) $(SINCLAIR-SRCS)
 
-all: comp-history.ps biblio
+all: comp-history-dot.ps biblio comp-history-vcg
 
-comp-history: 
-	perl -w scripts/todot $(SRCS) >comp-history
+comp-history-dot: 
+	perl -w scripts/todot $(SRCS) >comp-history-dot
 
-comp-history.ps: comp-history 
-	dot -Tps comp-history >comp-history.ps
-
-unix-history.ps: unix-history
-	dot -Tps unix/unix-history
-
-unix-history:
-	perl -w scripts/todot $(UNIX-SRCS)
-
-#ord-history.ps: ord-history
-#        dot -Tps ord-corps-history
-
-#ord-history:
-#        perl -w scripts/todot $(ORD-SRCS)
-
-#parc-history.ps: parc-history
-#        dot -Tps parc-history
-
-#parc-history: $(SRCS)
-#        perl -w scripts/todot $(PARC-SRCS)
-
+comp-history-dot.ps: comp-history-dot
+	dot -Tps comp-history-dot >comp-history-dot.ps
 clean:
-	rm -f *.html *.css comp-history *.aux *.log comp-history.ps /tmp/biblio bibliography *.pdf
+	rm -f *.html *.css comp-history* *.aux *.log /tmp/biblio bibliography *.pdf
 
 biblio:
 	cat $(SRCS) >/tmp/biblio
 	scripts/biblio
 	rm /tmp/biblio
 
+comp-history-vcg:
+	perl -w scripts/tovcg $(SRCS) >comp-history-vcg
+comp-history-vcg.ps: comp-history-vcg
+	xvcg comp-history-vcg -psoutput comp-history-vcg.ps
 
 
 
