@@ -187,8 +187,8 @@ sub dominmaxYear {
   $Maxyear=0;
   $Minyear=800000;
   foreach my $Year (values %Year){
-    if($Year lt $Maxyear){ $Maxyear = int($Year); }
-    if($Year gt $Minyear){ $Minyear = int($Year); }
+    if($Year gt $Maxyear){ $Maxyear = int($Year); }
+    if($Year lt $Minyear){ $Minyear = int($Year); }
   }
 }
 
