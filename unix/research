@@ -1,7 +1,7 @@
 #########################################################################
 #			    Research Editions				#
 #########################################################################
-# $Revision: 1.9 $ $Date: 2000/08/28 16:10:04 $
+# $Revision: 1.10 $ $Date: 2000/08/29 22:32:10 $
 #
 updp7
 	Name: Uniplexed Information and Computing Service
@@ -47,6 +47,7 @@ v4
         Type: OS
 	Status: research
 	Successor to v3 100
+	Written in c
 #			rewriting in C effected,
 #			above 30 installations
 
@@ -75,6 +76,7 @@ v7
 	Status: research
 	Successor to v6 1000
 	Code taken from pwb1.0
+	Written in k&rc
 
 v8
 	Name: Unix Time-Sharing System,\n 8th Edition
