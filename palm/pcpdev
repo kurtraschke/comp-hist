@@ -1,6 +1,6 @@
 #Other Palm Computing Platform devices go here.
-#Devices I know of so far:
-#TRGPro, Visor, Qualcomm pdQ, Symbol SPT1500, Symbol SPT1700, Sony CLIE
+#Devices needing to be entered:
+#Qualcomm pdQ, Symbol SPT1500, Symbol SPT1700
 hsvs
 	Name: Handspring Visor Solo
 	Date: 1999-9
@@ -19,3 +19,18 @@ hsvd
 	Date: 1999-9
 	Type: hardware
 	Successor to hsv
+
+trgpro
+	Name: TRG TRGPro
+	Date: 1999-10-18
+	Reference: http://www.trgpro.com/about/press101899a.html
+	Type: hardware
+	Code taken from piiixe
+
+sonyclie
+	Name: Sony CLIE PEG-S300
+	Date: 2000-8-30
+	Reference: http://www.sel.sony.com/SEL/corpcomm/news/consumer/621.html
+	Type: hardware
+
+
