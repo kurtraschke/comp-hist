@@ -65,3 +65,9 @@
 	Type: hardware
 	Successor to 6803050
 
+mos6502
+	Name: The MOS Technology 6502
+	Date: 1975
+	Reference: http://microbackup.magnet.fsu.edu/chipshots/mos/index.html
+	Type: hardware
+	Influenced by 6800
