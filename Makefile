@@ -64,27 +64,25 @@ SGI-SRCS = sgi/corp
 
 SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS) $(SGI-SRCS)
 
-all: vcg biblio info html chml browser dot dbm
+all: unexpand vcg biblio info html chml browser dot dbm
 
-dot: 
-	perl -w scripts/todot $(SRCS) >comp-history.dot
+dot: unexpand
+	perl -w scripts/todot unexpand >comp-history.dot
 
 comp-hist-dot.ps: dot
 	dot -Tps comp-history.dot >comp-history.dot.ps
 
 clean:
-	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/
-	cd scripts/new ; make clean
-	cd scripts/browser ; make clean
+	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/ unexpand
 
-biblio:
-	perl scripts/parsech -o biblio $(SRCS) > bibliography
+biblio: unexpand
+	perl scripts/parsech -o biblio unexpand > bibliography
 
-info:
-	perl scripts/parsech -o info $(SRCS) > information
+info: unexpand
+	perl scripts/parsech -o info unexpand > information
 
-vcg:
-	perl -w scripts/parsech -o vcg $(SRCS) >comp-history.vcg 
+vcg: unexpand
+	perl -w scripts/parsech -o vcg unexpand >comp-history.vcg 
 
 comp-hist-vcg.ps: vcg
 	xvcg comp-history.vcg -psoutput comp-history.vcg.ps
@@ -98,8 +96,8 @@ cparser:
 html:
 	cd scripts/new ; make comp-hist.html
 
-chml:
-	perl scripts/parsech -o chml $(SRCS) >comp-hist.xml
+chml: unexpand
+	perl scripts/parsech -o chml unexpand >comp-hist.xml
 
 browser:
 	cd scripts/browser ; ./configure ; make 
@@ -107,5 +105,8 @@ browser:
 browse: browser dump
 	cd scripts/browser/src ; ./browser ../../../dump
 
-dbm:
-	perl scripts/parsech -o dbm $(SRCS)
+dbm: unexpand
+	perl scripts/parsech -o dbm dump
+
+unexpand: dump
+	unexpand dump >unexpand
