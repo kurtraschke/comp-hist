@@ -7,10 +7,10 @@ require Exporter;
 use vars        qw($VERSION @ISA @EXPORT %EXPORT_TAGS);
 
 # set version number
-$VERSION = 0.01; #May as well
+$VERSION = 1.4; #CVS version
 
 @ISA = qw(Exporter);
-@EXPORT = qw(&docomment &donode &doname &doref &dotype &dostatus &doinf &doto &dofrom &doweight);
+@EXPORT = qw(&docomment &doname &doref &dotype &dostatus &doinf &doto &dofrom &doweight);
 %EXPORT_TAGS = ();
 
 #non-exported globals (nothing is exported. yet.)
@@ -21,10 +21,9 @@ use vars    qw(@node @to @from @weight);
 @from = '';
 @weight = '';
 
-#First, an invisible function or two
+#First, an unexported function or two
 
-my $onode = sub {
-    cout;
+sub onode {
     my $node = $1 if /^(\S+)/;
     return $node;
 }
@@ -32,41 +31,41 @@ my $onode = sub {
 my $linkup = sub {
     open FILE, $_[0];
     while(<FILE>){
-	$node = &$onode;
+	my $node = onode();
 	if(/.*Aka (\S+)/){
-	    $to[$linkcnt] = $node;
-	    $from[$linkcnt] = $1;
-	    $weight[$linkcnt] = aka;
+	    push(@to, $node);
+	    push(@from, $1);
+	    push(@weight, "aka");
 	}
         if(/.*Successor to (\S+)/){
-            $to[$linkcnt] = $node;
-            $from[$linkcnt] = $1;
-            $weight[$linkcnt] = successor;
+            push(@to, $node);
+            push(@from, $1);
+            push(@weight, "successor");
         }
         if(/.*Code taken from (\S+)/){
-            $to[$linkcnt] = $node;
-            $from[$linkcnt] = $1;
-            $weight[$linkcnt] = code;
+            push(@to, $node);
+            push(@from, $1);
+            push(@weight, "code");
         }
         if(/.*Influenced by (\S+)/){
-            $to[$linkcnt] = $node;
-            $from[$linkcnt] = $1;
-            $weight[$linkcnt] = influence;
+            push(@to, $node);
+            push(@from, $1);
+            push(@weight, "influence");
         }
         if(/.*Runs on (\S+)/){
-            $to[$linkcnt] = $node;
-            $from[$linkcnt] = $1;
-            $weight[$linkcnt] = runs;
+            push(@to, $node);
+            push(@from, $1);
+            push(@weight, "runs");
         }
         if(/.*Ran on (\S+)/){
-            $to[$linkcnt] = $node;
-            $from[$linkcnt] = $1;
-            $weight[$linkcnt] = runs;
+            push(@to, $node);
+            push(@from, $1);
+            push(@weight, "ran");
         }
         if(/.*Written in (\S+)/){
-            $to[$linkcnt] = $node;
-            $from[$linkcnt] = $1;
-            $weight[$linkcnt] = written;
+            push(@to, $node);
+            push(@from, $1);
+            push(@weight, "written");
         }
     }
 }
@@ -77,34 +76,24 @@ sub docomment {
     s/#.*//;
 }
 
-sub donode {
-    open FILE, $_[0];
-    while(<FILE>){
-	my $node[$ncount] = $1 if /^(\S+)/;
-	my $ncount++;
-    }
-    return @node;
-}
-
 sub doname {
     open FILE, $_[0];
     while(<FILE>){
-	my $node = &$onode;
+	my $node = onode;
 	my $name{$node} = $1 if /.*Name: (.*)/;
     }
     return %name;
 }
 
 sub doref {
-    open FILE, $_[0];
     my @ref = ();
     my $item = '';
     my %seen = ();
     my @uref = ();
-    while(<FILE>){
-	my $node = &$onode;
-	$ref[$rcnt] = $1 if /.*Reference: (.*)/;
-	my $rcnt++;
+    foreach $file (@_){
+	while(<$file>){
+	    push(@ref, $1) if /.*Reference: (.*)/;
+	}
     }
     #Now, get rid of the duplicates
     foreach $item (@ref){
@@ -120,7 +109,7 @@ sub dotype {
     open FILE, $_[0];
     while(<FILE>){
         #This is the whole reason for this module
-	my $node = &$onode;
+	my $node = onode();
         if(/.*Type: hardware/i){ my $color{$node} = "color: blue"; }
         if(/.*Type: OS/i){ my $color{$node} = "color: red"; }
         if(/.*Type: language/i){ my $color{$node} = "color: green"; }
@@ -135,7 +124,7 @@ sub dotype {
 sub dostatus {
     open FILE, $_[0];
     while(<FILE>){
-	my $node = &$onode;
+	my $node = onode;
 	if(/.*Status: released/i){ my $shape{$node} = "shape: box"; }
         if(/.*Status: internal/i){ my $shape{$node} = "shape: triangle"; }
         if(/.*Status: continual evolution/i){ my $shape{$node} = "shape: ellipse"; }
@@ -146,15 +135,14 @@ sub dostatus {
     }
 
 sub doinf {
-    open FILE, $_[0];
     my @inf = ();
     my $item = '';
     my %seen = ();
     my @uinf = ();
-    while(<FILE>){
-        my $node = &$onode;
-        $inf[$icnt] = $1 if /.*Info: (.*)/;
-        my $icnt++;
+    foreach $file (@_){
+	while(<$file>){
+	    push(@inf, $1) if /.*Info: (.*)/;
+	}
     }
     #Now, get rid of the duplicates
     foreach $item (@inf){
