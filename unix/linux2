@@ -1858,3 +1858,10 @@ linux24t6
 	Date: 2000-08-09
 	Reference: Linux Kernel Archive (www.kernel.org)
 	Successor to linux24t5
+
+linux24t7
+	Name: Linux 2.4.0-test7
+	Date: 2000-08-24
+	Reference: date on kernel.org
+	Type: OS
+	Successor to linux24t6
