@@ -1,0 +1,27 @@
+cray1
+	Name: Cray-1
+	Date: 1976
+	Reference: http://www.cray.com/company/history.html
+	Type: hardware
+
+cray2
+	Name: Cray-2
+	Date: 1985
+	Reference: http://www.cray.com/company/history.html
+	Type: hardware
+	Successor to cray1
+
+crayxmp
+	Name: Cray X-MP
+	Date: 1982
+	Reference: http://www.cray.com/company/history.html
+	Type: hardware
+	Code taken from cray1
+
+crayymp
+	Name: Cray Y-MP
+	Date: 1988
+	Reference: http://www.cray.com/company/history.html
+	Type: hardware
+	Successor to crayxmp
+
