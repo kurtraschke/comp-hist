@@ -17,13 +17,15 @@ ORD-SRCS = ord-corps $(IBM-SRCS)
 
 PARC-SRCS = parc
 
-APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/osx apple/aux apple/macos apple/corp apple/servers apple/newton
+APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/osx apple/aux\
+	 apple/macos apple/corp apple/servers apple/newton
 
 NEXT-SRCS = next/corp next/hw
 
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
-IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS) ibm/602 ibm/corp ibm/sys-360/360 $(CTSS-SRCS)
+IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS) ibm/602 ibm/corp\
+	 ibm/sys-360/360 $(CTSS-SRCS)
 
 SINCLAIR-SRCS = sinclair
 
@@ -31,13 +33,15 @@ TRANSISTOR-SRCS = transistor $(DEC-SRCS)
 
 CTSS-SRCS = ctss/ctss ctss/multics ctss/its $(UNIX-SRCS)
 
-DEC-SRCS = dec/pdp dec/tops dec/rsts dec/pdp11 dec/corp dec/rsx dec/vms $(CPM-SRCS) $(WAITS-SRCS)
+DEC-SRCS = dec/pdp dec/tops dec/rsts dec/pdp11 dec/corp dec/rsx\
+	 dec/vms $(CPM-SRCS) $(WAITS-SRCS)
 
 LINC-SRCS = linc $(PARC-SRCS)
 
 DATAGEN-SRCS = datagen/nova datagen/corp
 
-MOTOROLA-SRCS = motorola/68xxx motorola/ppc $(APPLE-SRCS) $(BE-SRCS) $(NEXT-SRCS)
+MOTOROLA-SRCS = motorola/68xxx motorola/ppc $(APPLE-SRCS)\
+	 $(BE-SRCS) $(NEXT-SRCS)
 
 BCPL-SRCS = bcpl/bcpl bcpl/c++ bcpl/obj-c
 
@@ -47,7 +51,8 @@ SH-SRCS = sh/sh sh/awk sh/perl
 
 BE-SRCS = be/corp be/bebox be/beos
 
-LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian unix/linux-dists/leetnux unix/linux-dists/minilinux
+LINUX-SRCS = unix/linux-dists/redhat unix/linux-dists/debian\
+	 unix/linux-dists/leetnux unix/linux-dists/minilinux
 
 POWER-SRCS = ibm/power/power
 
@@ -63,7 +68,8 @@ WAITS-SRCS = waits
 
 FORTRAN-SRCS = fortran/fortran
 
-RFC-STDS = rfc/off-stds rfc/assgin-nums rfc/host-req-comm rfc/host-req-apps
+RFC-STDS = rfc/off-stds rfc/assgin-nums rfc/host-req-comm\
+	 rfc/host-req-apps
 
 PALM-SRCS = palm/palm palm/palmos palm/pcpdev
 
@@ -71,7 +77,11 @@ SUN-SRCS = sun/corp
 
 SGI-SRCS = sgi/corp
 
-SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS) $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS) $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS) $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS) $(SGI-SRCS)
+SRCS = $(ORD-SRCS) $(INTEL-SRCS) $(SINCLAIR-SRCS) $(LINC-SRCS)\
+	 $(DATAGEN-SRCS) $(TRANSISTOR-SRCS) $(MOTOROLA-SRCS)\
+	 $(LISP-SRCS) $(ALGOL-SRCS) $(CRAY-SRCS) $(CORP-SRCS)\
+	 $(FORTRAN-SRCS) $(RFC-SRCS) $(PALM-SRCS) $(SUN-SRCS)\
+	 $(SGI-SRCS)
 
 all: dump vcg biblio info html chml browser dot dbm
 
@@ -83,8 +93,7 @@ dot.ps: dot
 
 clean:
 	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm/
-	@echo "Errors after this point are fine - it's just because you haven't compiled the browser."
-	-cd scripts/browser ; make clean
+	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too.
 
 biblio: dump
 	perl scripts/parsech-split/biblio dump > bibliography
