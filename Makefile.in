@@ -10,7 +10,7 @@ dot.ps: dot
 
 clean:
 	rm -rf *.html *.css comp-history* *.aux *.log *.ps bibliography *.pdf information dump *xml pod2html-* parsech_dbm
-	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too."
+	@echo "That's it for the normal cleanup. However, if you've built the browser, you probably want to cd to scripts/browser, and make clean there too.  CVS users can also run make cvs_clean for a more comprehensive cleanup."
 
 biblio: dump
 	@PERL@ scripts/parsech-split/biblio dump > bibliography
@@ -47,6 +47,5 @@ dump: $(SRCS)
 sources:
 	@echo $(SRCS)
 
-cvs_clean:
-	make clean
+cvs_clean: clean
 	rm -f config.* Makefile

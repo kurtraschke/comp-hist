@@ -16,7 +16,7 @@ foreach $node (sort keys %Name){
   print("<node>\n");
   print("\t<id>$node</id>\n");
   print("\t<name>$Name{$node}</name>\n");
-  print("\t<date Year=\"$Year{$node}\"") if defined $Year{$node};
+  print("\t<date year=\"$Year{$node}\"") if defined $Year{$node};
   print(" month=\"$Month{$node}\"") if defined $Month{$node}; 
   print(" day=\"$Day{$node}\"") if defined $Day{$node};
   print(" />\n") if defined $Year{$node};
@@ -25,7 +25,7 @@ foreach $node (sort keys %Name){
   print("\t<reference>$Reference{$node} </reference>\n") if defined $Reference{$node};
   print("\t<info>$Info{$node} </info>\n") if defined $Info{$node};
   foreach $linkto (keys %{$Linkto{$node}}){
-    print("\t<link linktype=\"$Linkto{$node}{$linkto}\"><id>$linkto</id></link>");
+    print("\t<link linktype=\"$Linkto{$node}{$linkto}\"><id>$linkto</id></link>\n");
   }
   print("</node>\n\n");
 }
