@@ -12,7 +12,7 @@ NEXT-SRCS = next/corp next/hw
 
 INTEL-SRCS = intel/4004 intel/pentium intel/corps intel/amd
 
-IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS)
+IBM-SRCS = intel/pc/ibmpc $(POWER-SRCS) ibm/602
 
 SINCLAIR-SRCS = sinclair
 
