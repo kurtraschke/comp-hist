@@ -195,6 +195,7 @@ msdos331
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
         Type: OS
 	Successor to msdos305
+	#from here came OS/2 (datewise, at least)
 
 pcdos34
 #development version - not released

@@ -37,6 +37,7 @@ windows103
         Type: OS
 	Successor to windows101
 	Code taken from pcdos31
+	Code taken from msos/2
 
 windows2
 	Name: Microsoft Windows 2.0
