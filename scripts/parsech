@@ -2,10 +2,10 @@
 
 use Getopt::Std;
 use strict;
-my(%name, %year, %month, %day, %info);
-my(%color, %shape, %linkto, %linkweight);
+my(%Name, %Year, %Month, %Day, %Info);
+my(%Color, %shape, %linkto, %linkweight);
 my(%reference, %type, %status, %vcg_weights);
-my(%opts, $maxyear, $minyear, %vpos);
+my(%opts, $maxYear, $minYear, %vpos);
 
 =head1 NAME
 
@@ -121,14 +121,14 @@ sub parse{
 	    
 	    if(/^(\S+)/){ $node = $1; }
 
-	    if(/.*Name: (.*)/){ $name{$node} = $1; }
+	    if(/.*Name: (.*)/){ $Name{$node} = $1; }
 
-	    if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
-	    if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$year{$node} = $1; $month{$node} =  $2; $day{$node} = $3;}
+	    if(/.*Date.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$Year{$node} = $1; $Month{$node} =  $2; $Day{$node} = $3;}
+	    if(/.*Founded.*(\d\d\d\d)-?(\d\d)?-?(\d\d)?/){$Year{$node} = $1; $Month{$node} =  $2; $Day{$node} = $3;}
 	
 	    if(/.*Reference: (.*)/){ $reference{$node} = $1; }
 	
-	    if(/.*Info: (.*)/){ $info{$node} = $1; }
+	    if(/.*Info: (.*)/){ $Info{$node} = $1; }
 
 	    if(/.*Type: hardware/){ $type{$node} = "hardware"; }
 	    if(/.*Type: os/i){ $type{$node} = "os"; }
@@ -152,17 +152,17 @@ sub parse{
     }
 }
 
-=head2 minmaxyear
+=head2 minmaxYear
 
-This function reads in the %year hash (created by L<parse>) and sets the variables $maxyear and $minyear accordingly.
+This function reads in the %Year hash (created by L<parse>) and sets the variables $maxYear and $minYear accordingly.
 
 =cut it out! that hurts!
 
-sub dominmaxyear {
-    my $year;
-    foreach $year (keys %year){
-	if($year > $maxyear){ $maxyear = $year; }
-	if($year < $minyear){ $minyear = $year; }
+sub dominmaxYear {
+    my $Year;
+    foreach $Year (keys %Year){
+	if($Year > $maxYear){ $maxYear = $Year; }
+	if($Year < $minYear){ $minYear = $Year; }
     }
 }
 
@@ -173,16 +173,16 @@ dopos reads in the nodes given to it as arguments and sets a vertical position f
 =cut , wrap, and print
 
 sub dopos{
-    my($node, $year);
+    my($node, $Year);
     my $file = $_[0];
     foreach $node (@_){
-	if(!defined $month{$node}){
-	    $year = $year{$node} - $minyear;
-	    $vpos{$node} = $year * 12;
+	if(!defined $Month{$node}){
+	    $Year = $Year{$node} - $minYear;
+	    $vpos{$node} = $Year * 12;
 	}
 	else{
-	    $year = $year{$node} - $minyear;
-	    $vpos{$node} = $year * 12 + $month{$node};
+	    $Year = $Year{$node} - $minYear;
+	    $vpos{$node} = $Year * 12 + $Month{$node};
 	}
     }   
 }
@@ -208,15 +208,15 @@ dump is a rough output format. All it does is sort the nodes and strip comments.
 sub dump {
     my $node;
     &parse;
-    foreach $node (sort keys %name){
+    foreach $node (sort keys %Name){
 	print("$node\n");
-	print("\tName: $name{$node}\n");
-	print("\tDate $year{$node}") if defined $year{$node};
-	print("-$month{$node}") if defined $month{$node};
-	print("-$day{$node}") if defined $day{$node};
-	print("\n") if defined $year{$node};
+	print("\tName: $Name{$node}\n");
+	print("\tDate $Year{$node}") if defined $Year{$node};
+	print("-$Month{$node}") if defined $Month{$node};
+	print("-$Day{$node}") if defined $Day{$node};
+	print("\n") if defined $Year{$node};
 	print("\tReference: $reference{$node}\n") if defined $reference{$node};
-	print("\tInfo: $info{$node}\n") if defined $info{$node};
+	print("\tInfo: $Info{$node}\n") if defined $Info{$node};
 	print("\tType: $type{$node}\n") if defined $type{$node};
 	print("\tStatus: $status{$node}\n") if defined $status{$node};
 	print("\n");
@@ -245,18 +245,18 @@ sub chml{
 
     print("<tree>\n");
 
-    foreach $node (sort keys %name){
+    foreach $node (sort keys %Name){
 	print("<node>\n");
 	print("\t<id>$node</id>\n");
-	print("\t<name>$name{$node}</name>\n");
-	print("\t<date year=\"$year{$node}\"") if defined $year{$node};
-	print(" month=\"$month{$node}\"") if defined $month{$node}; 
-	print(" day=\"$day{$node}\"") if defined $day{$node};
-	print(" />\n") if defined $year{$node};
+	print("\t<name>$Name{$node}</name>\n");
+	print("\t<date Year=\"$Year{$node}\"") if defined $Year{$node};
+	print(" month=\"$Month{$node}\"") if defined $Month{$node}; 
+	print(" day=\"$Day{$node}\"") if defined $Day{$node};
+	print(" />\n") if defined $Year{$node};
 	print("\t<type types=\"$type{$node}\" />\n") if defined $type{$node};
 	print("\t<status status=\"$status{$node}\" />\n") if defined $status{$node};
 	print("\t<reference>$reference{$node} </reference>\n") if defined $reference{$node};
-	print("\t<info>$info{$node} </info>\n") if defined $info{$node};
+	print("\t<info>$Info{$node} </info>\n") if defined $Info{$node};
 	for( $i=0; $i <= $#{$linkto{$node}}; $i++ ) {
 	    print("\t<link linktype=\"${$linkweight{$node}}[$i]\"><id>${$linkto{$node}}[$i]</id></link>\n");
 	}
@@ -275,8 +275,8 @@ The info routine parses the data and then, for each node with an Info: field, sp
 sub info{
     my $node;
     &parse;
-    foreach $node (sort keys %info){
-	print("Info on $name{$node}: $info{$node}\n\n");
+    foreach $node (sort keys %Info){
+	print("Info on $Name{$node}: $Info{$node}\n\n");
     }
 }
 
@@ -290,13 +290,13 @@ sub biblio{
     my $node;
     &parse;
     foreach $node (sort keys %reference){
-        print("Bibliographical information for $name{$node}: $reference{$node}\n\n") if defined $reference{$node};
+        print("Bibliographical information for $Name{$node}: $reference{$node}\n\n") if defined $reference{$node};
     }
 }
 
 =head2 setcolor
 
-The setcolor routine turns types of nodes into colors and stores them in the %color hash. The rules for translation are below:
+The setcolor routine turns types of nodes into colors and stores them in the %Color hash. The rules for translation are below:
 
 =over 5
 
@@ -319,13 +319,13 @@ The setcolor routine turns types of nodes into colors and stores them in the %co
 sub setcolor{
     my $node;
     foreach $node (keys %type){
-	$color{$node} = "blue" if $type{$node} =~ /^hardware/;
-	$color{$node} = "red" if $type{$node} =~ /^os/i;
-	$color{$node} = "green" if $type{$node} =~ /^language/;
-	$color{$node} = "yellow" if $type{$node} =~ /^standard/;
-	$color{$node} = "cyan" if $type{$node} =~ /^company/;
-	$color{$node} = "gold" if $type{$node} =~ /^announcement/;
-	$color{$node} = "magenta" if $type{$node} =~ /^other/;
+	$Color{$node} = "blue" if $type{$node} =~ /^hardware/;
+	$Color{$node} = "red" if $type{$node} =~ /^os/i;
+	$Color{$node} = "green" if $type{$node} =~ /^language/;
+	$Color{$node} = "yellow" if $type{$node} =~ /^standard/;
+	$Color{$node} = "cyan" if $type{$node} =~ /^company/;
+	$Color{$node} = "gold" if $type{$node} =~ /^announcement/;
+	$Color{$node} = "magenta" if $type{$node} =~ /^other/;
     }
 }
 
@@ -372,7 +372,7 @@ This lovely little function sets up the weights for L<vcg> to use.
 
 sub setweights_vcg {
     my($node, $linkweight);
-    foreach $node (keys %name){
+    foreach $node (keys %Name){
 	foreach $linkweight (@{$linkweight{$node}}){
 	    @{$vcg_weights{$node}} = '';
 	    if($linkweight =~ /^aka/){
@@ -421,11 +421,11 @@ sub vcg{
     &setweights_vcg;
     my $node;
     print("graph: {\n\ttitle: \"The Computer Family Tree\"\n\n");
-    foreach $node (sort keys %name){
+    foreach $node (sort keys %Name){
 	print("\t\tnode: {\n\ttitle: \"$node\"\n");
-	print("\t\tlabel: \"$name{$node}\"\n");
+	print("\t\tlabel: \"$Name{$node}\"\n");
 	print("\t\tvertical_order: $vpos{$node}\n") if defined $vpos{$node};
-	print("\t\tcolor: $color{$node}\n") if defined $color{$node};
+	print("\t\tcolor: $Color{$node}\n") if defined $Color{$node};
 	print("\t\tshape: $shape{$node}\n") if defined $shape{$node};
 	print(" \t}\n");
 	if(defined $linkto{$node}){
