@@ -5,7 +5,7 @@ use strict;
 BEGIN{
   use Exporter ();
   use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
-  $VERSION = do { my @r = (q$Revision: 1.2 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 1.3 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
   @ISA = qw(Exporter);
   @EXPORT = qw();
   %EXPORT_TAGS = (ALL => [qw(&dominmaxYear &dopos &setcolor &setshape &setlinkcolor)]);
@@ -27,13 +27,18 @@ sub dominmaxYear {
   return($Minyear, $Maxyear);
 }
 
-sub dopos{
+sub dopos {
+  no strict 'refs';
+  my $output = shift;
+  my $vpos = "dopos_$output";
+  &{$vpos}(@_);
+}
+
+sub dopos_vcg{
   my(%VPos, $Year);
   my $VScale = shift;
-  my $year = shift;
-  my $month = shift;
-  my %Year = %{$year};
-  my %Month = %{$month};
+  my %Year = %{shift;};
+  my %Month = %{shift;};
   my($Minyear, $Maxyear) = dominmaxYear(\%Year);
   foreach my $node (keys %Year){
     if(!defined $Month{$node}){
@@ -96,4 +101,23 @@ sub setlinkcolor {
   return %Linkcolor;
 }
 
+sub dopos_dot {
+  my($d, %Date);
+  shift; #Get rid of vscale argument
+  my %Year = %{shift;};
+  my %Month = %{shift;};
+  my($Minyear, $Maxyear) = dominmaxYear(\%Year);
+  #populate %Date
+  foreach my $node (keys %Year){
+    $d="$Year{$node}.$Month{$node}";
+    $Date{$d}{$node}=$node;
+    $Date{$d}{$d}=$d;
+  }
+  for my $i ($Minyear .. $Maxyear){
+    $d="$i.00";
+    $Date{$d}{$i}=$i;
+    $Date{$d}{$d}=$d;
+  }
+  return %Date;
+}
 1;
