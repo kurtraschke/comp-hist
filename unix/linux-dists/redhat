@@ -66,3 +66,10 @@ redhat-6.2
 	Code taken from linux2214
 	Successor to redhat-6.1
 
+redhat-7.0
+	Name: Red Hat Linux 7.0
+	Date: 2000-9-25
+	Reference: http://slashdot.org/article.pl?sid=00/09/25/1547247&mode=thread
+	Type: OS
+	Code taken from linux2216
+	Successor to redhat-6.2
