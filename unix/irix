@@ -1,0 +1,26 @@
+#########################
+#	IRIX		#
+#########################
+
+irix
+	Name: SGI IRIX
+	Date: when was IRIX announced?
+	Reference: Unix history tree
+	Type: announcement
+	Code taken from sysVr3.2
+
+irix4.0.5
+	Name: SGI IRIX 4.0.5
+	Date: 1990
+	Reference: Unix history tree
+	Type: OS
+	Successor to irix
+
+irix5.3
+	Name: SGI IRIX 5.3
+	Date: 1993
+	Reference: Unix history tree
+	Type: OS
+	Successor to irix4.0.5
+
+
