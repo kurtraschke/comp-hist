@@ -5,39 +5,24 @@
 #The test for a new parser is that this file correctly runs 
 #through it and the output from it is valid
 
-fakenode 
-#a node nickname
-	Name: Fake Node 
-	#this is what will show up on the final graph
-	Date: 2000-4-20 
-	#this can be in yyyy-mm-dd, yyyy-mm, or yyyy format
-	Reference: A Website or book or paper 
-	#'make biblio' does a bibliography
-	Type: OS 
-	#can be one of OS os hardware standard announcement or language this field is case sensitive
-	Info: this is a nonexistant node 
-	#this field places everything after Info: into a file called information in the dir you ran make in
-	Status: internal
-	#can be one of released, contiunal evolution, internal, prototype, or research 
-	Aka fnode 	
-	#this is for stuff with two names (as in Unicode and it's ISO standard name)
-	Successor to fakenode0 	
-	#this is for stuff like Windows 95 to 98
-	Code taken from foonode 
- #like MS DOS 6.22 to Windows 95
-	Influenced by barnode 	
-  #like CP/M to QDOS#
-	Runs on foovax 	
-   #this should only be used for one-platform OSes, and even then only for the earliest possible hardware
+fakenode #a node nickname
+	Name: Fake Node  #this is what will show up on the final graph
+	Date: 2000-4-20 #this can be in yyyy-mm-dd, yyyy-mm, or yyyy format
+	Reference: A Website or book or paper #'make biblio' does a bibliography
+	Type: OS #can be one of OS os hardware standard announcement or language this field is case sensitive
+	Info: this is a nonexistant node #this field places everything after Info: into a file called information in the dir you ran make in
+	Status: internal #can be one of released, contiunal evolution, internal, prototype, or research 
+	Aka fnode #this is for stuff with two names (as in Unicode and it's ISO standard name)
+	Successor to fakenode0 	#this is for stuff like Windows 95 to 98
+	Code taken from foonode #like MS DOS 6.22 to Windows 95
+	Influenced by barnode #like CP/M to QDOS
+	Runs on foovax #this should only be used for one-platform OSes, and even then only for the earliest possible hardware
 	#This is a comment
 
-fakecompany 	
-#this is a company name
+fakecompany #this is a company name
 	Name: Fake Company Inc
-	Founded on 2000-3-2 	
-	#same deal as date above
-	Type: company 
-	#same as Type above
+	Founded on 2000-3-2 #same deal as date above
+	Type: company #same as Type above
 	#The other fields also work down here
 
 #The remainder of this file is a torture test for the parsers.
