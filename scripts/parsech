@@ -479,7 +479,7 @@ sub dbm {
   no strict "subs", "refs";
   &parse;
   my(%d);
-  mkdir('parsech_dbm');
+  mkdir('parsech_dbm', 0777);
   chdir('parsech_dbm');
   foreach my $hash ("Name", "Year", "Month", "Day", "Info",
 		    "Reference", "Type", "Status"){
