@@ -39,12 +39,25 @@ ppc604100
 	Type: hardware
 	Code taken from ppc60180
 
+ppc604e
+	Name: The Power Performance Chip 604e
+	Date: 1997-5-29
+	Reference: http://www.rimatech.com/powerpc/ppcnews.1997.html
+	Type: hardware
+	Successor to ppc604100
+
 ppc620133
 	Name: The Power Performance Chip 620 (133 MHz)
 	Date: 1996
 	Reference: http://library.thinkquest.org/25111/processor.shtml#Motorola
 	Type: hardware
+	Status: prototype
 	Code taken from ppc60180
 
-
+ppc750
+	Name: The Power Performance Chip 750 (G3)
+	Date: 1998-7-27
+	Reference: http://www.rimatech.com/powerpc/
+	Type: hardware
+	Successor to ppc620133	
 
