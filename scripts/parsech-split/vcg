@@ -14,7 +14,7 @@ parser(@ARGV);
 
 my $VScale = $Opts{s} || 1;
 my %Color = setcolor(\%Type);
-my %VPos = dopos($VScale, \%Year, \%Month);
+my %VPos = dopos("vcg", $VScale, \%Year, \%Month);
 my %Shape = setshape(\%Status);
 my %Linkcolor = setlinkcolor(\%Linkto);
 
