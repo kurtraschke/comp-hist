@@ -108,7 +108,7 @@ static int short get_line (char *s, FILE *f)
 		if ((*ts == '#') || (*ts == '\n'))
 			continue;
 
-		while (( by == ' ') || (*ts == '\t') || (*ts == '\n'))
+		while ((*ts == ' ') || (*ts == '\t') || (*ts == '\n'))
 			ts++;
 
 		if (*ts == '#')
@@ -250,7 +250,7 @@ static struct Node *add_new_node (struct Node *list)
 	/* Clear all field contnets */
 
 	for (fn = 0; fields[fn].typ != UNK; fn++)
-	   tmp->field[fn+1] = NULL;
+	   tmp->field[fn] = NULL;
 
 	return tmp;
 }
@@ -289,116 +289,149 @@ void parse_line (struct Node *node)
 
 	skip_spaces ();
 
-	while (0 != (n = strlen (fields[i].fname)))
+    /* Find the field corresponding to this input line */
+
+    while (1)
 	{
-		if (!strncmp (current_pos, fields[i].fname, n))
-		{
-			current_pos += n;
+        /* We start i at 0, so the pre-inc will check field[1] first.
+           If we do not find the field id in this line and the client
+           asks to store undefined fileds then we set i to 0
+         */
 
-			if (((fields[i].flags & ALLOWDUPS) == 0) && node->field[i + 1])
-                error (0, "Duplicate field");
+	    if (0 == (n = strlen (fields[++i].fname)))
+	    {
+            /* Check if this is an ignore field */
+            
+            vv = ignore_fields;
+            while (*vv)
+            {
+                if (strncmp (current_pos, *vv, strlen (*vv)) == 0)
+                    return;
+                vv++;
+            }
 
-        	skip_spaces ();
-            ts = current_pos;
-
-        	/* Find end of line, # or \n */
-
-        	while (*ts && (*ts != '#') && (*ts != '\n'))
-        		ts++;
-
-        	/* Trim any trailing whitespace */
-
-        	ts--;
-        	while (((*ts == '\t') || (*ts == ' ')) && (ts > current_pos))
-        		ts--;
-
-        	/* And terminate the string */
-
-        	savech = *++ts;
-        	*ts = '\0';
-
-            switch (fields[i].typ)
-			{
-			case STR:
-                (char *)(node->field[1+i]) = dupstr (current_pos);
-                *(current_pos = ts) = savech;
+            #if     UNKNOWNFIELDS == -1  /* Declare error */    
+                error (0, "Unknown field definition");
                 return;
+            #elsif  UNKNOWNFIELDS == 0   /* Silently ignore */
+                return;
+            #else                        /* Save in MSTR field[0] */
+                i = 0;
+                break;
+            #endif
+        }
+		else if (0 == strncmp (current_pos, fields[i].fname, n))
+            break;
+    }
 
-			case LINK:
-            case MSTR:
-                /* All link fields are implemented using NodeLinks which
-                    allow multiple links.
-                 */
-                    
-                if (nodelinkcount == 0)
-                {
-                    nodelinkpool = (struct NodeLink *) malloc (
-                        (nodelinkcount = NODELINKPOOL) * sizeof (
-                        struct NodeLink));
+    /* i is the field index, n is the length of the field id string */
 
-                    if (nodelinkpool == NULL)
-                           out_of_memory ("allocating nodelinkpool");
-                }
+	current_pos += n;
 
-                /* Here we add the new nodelink to the end of the chain,
-                   or to the head if it is empty. This ensures that for
-                   multiple field specifications, the order in the list is
-                   the same as the order in the file.
-                 */
+	if (((fields[i].flags & ALLOWDUPS) == 0) && node->field[i])
+        error (0, "Duplicate field");
 
-                if ((nl = (struct NodeLink *)(node->field[1+i])) == NULL)
-                    nl = (struct NodeLink *)(node->field[1+i]) = 
-                        nodelinkpool++;
-                else
-                {
-                    while (nl->next)
-                        nl = nl->next;
+  	skip_spaces ();
+    ts = current_pos;
 
-                    nl->next = nodelinkpool++;
-                    nl = nl->next;
-                }
+   	/* Find end of line, # or \n */
 
-                nl->next = NULL;
-                nodelinkcount--;
-               
-                (char *)(nl->node) = dupstr (current_pos);
-                *(current_pos = ts) = savech;
+   	while (*ts && (*ts != '#') && (*ts != '\n'))
+   		ts++;
 
-				return;
+   	/* Trim any trailing whitespace */
 
-			case DATE:
-				read_date ((struct Date **)&(node->field[1+i]));
-                *ts = savech;
-				return;
+   	ts--;
+   	while (((*ts == '\t') || (*ts == ' ')) && (ts > current_pos))
+   		ts--;
 
-			case ENUM:
-				vv = fields[i].values;
+   	/* And terminate the string */
 
-				while (*vv)
-				{
-					if (strcmp (*vv, current_pos) == 0)
-					{
-						(char *)(node->field[1+i]) = *vv;
-						break;
-					}
-					vv++;
-				}
+   	savech = *++ts;
+   	*ts = '\0';
 
-				if (*vv == NULL)
-					error (0, "Invalid field value - field ignored");
-			}
+    switch (fields[i].typ)
+	{
+	case STR:
+        (char *)(node->field[i]) = dupstr (current_pos);
+        *(current_pos = ts) = savech;
+        return;
 
-			return;
+	case LINK:
+    case MSTR:
+        /* All link fields are implemented using NodeLinks which
+           allow multiple links.
+         */
+              
+        if (nodelinkcount == 0)
+        {
+           nodelinkpool = (struct NodeLink *) malloc (
+               (nodelinkcount = NODELINKPOOL) * sizeof (struct NodeLink));
+
+           if (nodelinkpool == NULL)
+              out_of_memory ("allocating nodelinkpool");
+        }
+
+        /* Here we add the new nodelink to the end of the chain,
+           or to the head if it is empty. Yes it is easier to add
+           to the head but this way ensures that for multiple field
+           specifications, the order in the list is the same as the
+           order in the file.
+         */
+
+        if ((nl = (struct NodeLink *)(node->field[i])) == NULL)
+            nl = (struct NodeLink *)(node->field[i]) = nodelinkpool++;
+        else
+        {
+            while (nl->next)
+               nl = nl->next;
+
+            nl->next = nodelinkpool++;
+            nl = nl->next;
+        }
+
+        nl->next = NULL;
+        nodelinkcount--;
+         
+        (char *)(nl->node) = dupstr (current_pos);
+        *(current_pos = ts) = savech;
+
+    	return;
+
+	case DATE:
+		read_date ((struct Date **)&(node->field[i]));
+        *ts = savech;
+
+        return;
+
+	case ENUM:
+		vv = fields[i].values;
+
+		while (1)
+		{
+            if (*vv == NULL)   /* End of valid values */
+            {
+      	    	error (0, (*++vv == NULL) ? "Invalid field value" : 
+      	    	    "Invalid field value - using default");
+
+                break;
+            }
+
+   			if (strcmp (*vv, current_pos) == 0)
+				break;
+
+            vv++;
 		}
 
-		i++;
+		(char *)(node->field[i]) = *vv;
+           return;
 	}
 }
 
 
 struct Node *seek_node (struct Node *nodes, char *s)
 {
-	/* returns the node which identifier is s */
+	/* returns the node whose identifier is s */
 
 	while (nodes && (0 != strcmp (s, nodes->id)))
 		nodes = nodes->next;
@@ -409,7 +442,9 @@ struct Node *seek_node (struct Node *nodes, char *s)
 
 struct Node *parse_files (int argc, char **argv)
 {
-	/* parses an entire file adding the parsed content to node_list */
+	/* parses all the files in the list passed as argc, argv returning
+       a pointer to the resulting node list 
+     */     
 
 	FILE
 		*f;
@@ -427,29 +462,25 @@ struct Node *parse_files (int argc, char **argv)
 
 	error_count = 0;
 
-	while (argc--)
+	while (argc--)  /* For each requested file */
 	{
-		if ((f = fopen (*argv, "r")) == NULL)
-			error (1, "cannot open file");
+		if ((f = fopen (*argv, "r")) == NULL)       /* Open the file */
+			error (1, "cannot open file");  
 
 		current_file = *argv++;
 		line_count = 0;
 
-		get_line (current_line, f);
+		get_line (current_line, f);                 /* Get the first line */
 
-		if (*current_pos == ' ')
+		if (*current_pos == ' ')                    /* Should be a nodeid */
 			error (1, "Expected node id");
 
-		while (1)
-		{
+		do   /* Scan the rest of the file */
 			if (*current_pos != ' ')
 				node_list = add_new_node (node_list);
 			else
 				parse_line (node_list);
-
-			if (get_line (current_line, f) == -1)
-				break;
-		}
+        while (get_line (current_line, f) != -1);
 
 		fclose (f);
 	}
@@ -467,20 +498,44 @@ struct Node *parse_files (int argc, char **argv)
 			node
 		 */
 
-		for (fn = 0; fields[fn].typ != UNK;)
+		for (fn = 1; fields[fn].typ != UNK;)
 		{
 			/* If field is required make sure it has a value */
 
-			if ((fields[fn].flags & REQUIRED) && (t->field[fn+1] == NULL))
+			if ((fields[fn].flags & REQUIRED) && (t->field[fn] == NULL))
 			{
-				fprintf (stderr, "Node %s, field %s not specified\n",
-					t->id, fields[fn].fname);
-				error_count++;
+                /* The field is not specified, check if it is an ENUM field
+                   and if so if there is a non-null default value 
+                 */
+
+                if (fields[fn].typ == ENUM)
+                {
+                    char
+                        **vv = fields[fn].values;
+
+                    while (*vv++)       /* skip on to default value */
+                        ;
+                    
+                    if (*vv)
+                    {
+                        (char *)t->field[fn] = *vv;                        
+                        fprintf (stderr, "Node %s, using default value for "
+                            "required field %s\n", t->id, fields[fn].fname);
+                    }
+                }
+
+                if (t->field[fn] == NULL)
+                {
+				    fprintf (stderr, "Node %s, required field %s not "
+				        "specified\n", t->id, fields[fn].fname);
+                        
+				    error_count++;
+                }
 			}
 
-			if ((fields[fn].typ == LINK) && t->field[fn+1])
+			if ((fields[fn].typ == LINK) && t->field[fn])
 			{
-                nl = (struct NodeLink *)(t->field[fn+1]);
+                nl = (struct NodeLink *)(t->field[fn]);
                 
                 while (nl)
                 {
@@ -510,7 +565,7 @@ struct Node *parse_files (int argc, char **argv)
 #if defined(DISPLAY) || defined(TESTING)
 
 /*---------------------------------------------------------------------------
-										 Display Routines
+							 Display Routines
 ---------------------------------------------------------------------------*/
 
 static void print_date (struct Date *d)
@@ -537,29 +592,33 @@ void disp_node (struct Node *n)
     struct NodeLink
         *nl;
 
-	printf ("\n%s\n", n->id);
+	printf ("%s\n", n->id);
 
-	for (fn = 0; fields[fn].typ != UNK; fn++)
-		if (n->field[fn + 1])
+	for (fn = 1; ; fn++, (fn = ((fields[fn].typ == UNK) ? 0 : fn)))
+    {
+	    if (n->field[fn])
 			switch (fields[fn].typ)
 			{
 			case STR:
 			case ENUM:
 				printf ("\t%s %s\n", fields[fn].fname, 
-				    (char *)(n->field[fn + 1]));
+				    (char *)(n->field[fn]));
 				break;
 
 			case DATE:
 				printf ("\t%s ", fields[fn].fname);
-				print_date ((struct Date *)(n->field[fn + 1]));
+				print_date ((struct Date *)(n->field[fn]));
 				break;
 
             case MSTR:
-                nl = (struct NodeLink *)(n->field[fn + 1]);
+                nl = (struct NodeLink *)(n->field[fn]);
                 while (nl)
                 {
-                    printf ("\t%s%s\n", fields[fn].fname, 
-                        (char*)(nl->node));
+                    if (fn == 0)
+                        printf ("\t%s # ?\n", (char*)(nl->node));
+                    else
+                        printf ("\t%s %s\n", fields[fn].fname, 
+                            (char*)(nl->node));
 
                     nl = nl->next;
                 }
@@ -567,7 +626,7 @@ void disp_node (struct Node *n)
                 break;
 
 			case LINK:
-                nl = (struct NodeLink *)(n->field[fn + 1]);
+                nl = (struct NodeLink *)(n->field[fn]);
 
                 while (nl)
                 {
@@ -579,6 +638,9 @@ void disp_node (struct Node *n)
 				break;
 			}
 
+        if (fn == 0)
+            break;
+    }
 	printf ("\n");
 }
 

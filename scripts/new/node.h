@@ -94,13 +94,13 @@ char
      */
 
     *ignore_fields[] = {
-        "Info:",
+        
         NULL };
     
 	/* Valid values of 'type' field */
 
 char
-	*typeValues[] = {"OS", "hardware", "language", "standard", 
+	*typeValues[] = {"OS", "os", "hardware", "language", "standard", 
 		"announcement", "company", NULL, "??"};
 
 #endif
