@@ -16,7 +16,7 @@ fakenode
 	Type: OS 
 	#can be one of OS os hardware standard or language this field is case sensitive
 	Info: this is a nonexistant node 
-	#this field places everything after Info: into a file called information in the dir you ran tovcg (no,todot doesn't do this) in
+	#this field places everything after Info: into a file called information in the dir you ran make in
 	Aka fnode 	
 	#this is for stuff with two names (as in Unicode and it's ISO standard name)
 	Successor to fakenode0 	
