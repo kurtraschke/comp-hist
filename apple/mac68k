@@ -5,6 +5,8 @@ mac128k
 	Date: 1984-1
 	Reference:  Macworld Mac and Power Mac Secrets
 	Type: hardware
+	Made by apple
+	Code taken from 68000
 	Code taken from lisa2
 	Influenced by alto
 
@@ -14,6 +16,7 @@ mac512k
 	Reference:  Macworld Mac and Power Mac Secrets
         Type: hardware
 	Successor to mac128k
+	Made by apple
 
 mac512ke
         Name: Macintosh 512ke
@@ -21,6 +24,7 @@ mac512ke
         Reference:  Macworld Mac and Power Mac Secrets
         Type: hardware
         Successor to mac512k
+	Made by apple
 
 macplus
         Name: Macintosh Plus
@@ -28,6 +32,7 @@ macplus
         Reference:  Macworld Mac and Power Mac Secrets
         Type: hardware
         Successor to mac512k
+	Made by apple
 
 macse
 	Name: Macintosh SE
@@ -35,13 +40,23 @@ macse
 	Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
 	Successor to macplus
+	Made by apple
+
+macsefdhd
+        Name: Macintosh SE FDHD
+        Date: 1989-8
+        Refenence: http://www.lowendmac.com/compact/se.shtml
+        Type: hardware
+        Successor to macse
+        Made by apple
 
 macse30
         Name: Macintosh SE/30
         Date: 1989-1
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
-        Successor to macse
+        Successor to macsefdhd
+	Made by apple
 
 macclassic
         Name: Macintosh Classic
@@ -49,6 +64,7 @@ macclassic
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macse30
+	Made by apple
 
 macclassicii
         Name: Macintosh Classic II
@@ -56,6 +72,8 @@ macclassicii
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macclassic
+	Code taken from 68030
+	Made by apple
 
 maccc
         Name: Macintosh Color Classic
@@ -63,6 +81,7 @@ maccc
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macclassicii
+	Made by apple
 
 macii
         Name: Macintosh II
@@ -70,6 +89,8 @@ macii
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Code taken from macse
+	Code taken from 68020
+	Made by apple
 
 maciix
         Name: Macintosh IIx
@@ -77,6 +98,7 @@ maciix
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to macii
+	Made by apple
 
 maciifx
         Name: Macintosh IIfx
@@ -84,6 +106,7 @@ maciifx
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciix
+	Made by apple
 
 maciicx
         Name: Macintosh IIcx
@@ -91,6 +114,7 @@ maciicx
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciix
+	Made by apple
 
 maciici
         Name: Macintosh IIci
@@ -98,6 +122,7 @@ maciici
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciicx
+	Made by apple
 
 maciisi
         Name: Macintosh IIsi
@@ -105,6 +130,7 @@ maciisi
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciici
+	Made by apple
 
 maciivx
         Name: Macintosh IIvx
@@ -112,7 +138,7 @@ maciivx
         Refenence: Macworld Mac and Power Mac Secrets
 	Type: hardware
         Successor to maciisi
-
+	Made by apple
 
 
 
