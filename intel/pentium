@@ -100,7 +100,7 @@ p2333
 	Referernce: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
 	Successor to pentium200166mmx
 
-mp266
+mp2266
 	Name: Intel Mobile Pentium II (233, 266 MHz)
 	Date: 1998-4-2
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
@@ -259,7 +259,7 @@ mp2400025
 	Name: Intel Mobile Pentium II (400 MHz) (0.25 micron process)
 	Date: 1999-6-14
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
-	Successor to mp24366
+	Successor to mp2366
 
 mcelery466
 	Name: Mobile Intel Celeron Processor (466/433 MHz)
@@ -268,9 +268,36 @@ mcelery466
 	Successor to mcelery400
 
 mp3500018
-	Name: Mobile Pentium III (500, 450, and 400 MHz) (0.18 micron process)
-	Date: 1999-9-25
+	Name: Intel Mobile Pentium III (500, 450, and 400 MHz) (0.18 micron process)
+	Date: 1999-10-25
 	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
-	Successor to mp240018
+	Successor to mp2400018
 	Code taken from p3600
+
+p3733018
+	Name: Intel Pentium III (500, 533, 550, 600, 650, 667, 700, and 733 MHz) (0.18 micron process)
+	Date: 1999-10-25
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.ht
+m
+	Successor to p3600
+
+p3xeon733018
+	Name: Intel Pentium III (600, 667, and 733 MHz) (0.18 micron process)
+	Date: 1999-10-25
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.ht
+m
+	Code taken from p3733018
+	Successor to p3xeon550
+
+celery533
+	Name: Intel Celeron (533 MHz)
+	Date: 2000-1-4
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to celery500
+
+p3xeon800018
+	Name: Intel Pentium III Xeon (800 MHz) (0.18 micron process)
+	Date: 2000-1-12
+	Reference: http://www.intel.com/pressroom/kits/processors/quickrefyr.htm
+	Successor to p3xeon733018
 
