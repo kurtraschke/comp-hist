@@ -8,7 +8,7 @@ PARC-SRCS = parc
 
 APPLE-SRCS = apple/applex apple/lisa apple/mac68k apple/macppc apple/osx apple/aux apple/macos apple/corp apple/ans
 
-INTEL-SRCS = intel/4004 intel/pentium
+INTEL-SRCS = intel/4004 intel/pentium intel/corps
 
 IBM-SRCS = intel/pc/ibmpc 
 
