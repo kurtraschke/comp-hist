@@ -62,6 +62,7 @@ pcdos185
 	Name: IBM Personal Computer DOS 1.85
 	Date: 1983-04
 	Reference: Programmer's Technical Reference for MSDOS and the IBM PC - Dave Williams
+        Type: OS
 	Successor to pcdos11
 
 msdos201
