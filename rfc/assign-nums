@@ -92,4 +92,50 @@ rfc923
 	Type: standard
 	Successor to rfc900
 
+rfc943
+	Name: Assigned Numbers (RFC 943)
+	Date: 1985-04-01
+	Type: standard
+	Successor to rfc923
 
+rfc960
+	Name: Assigned Numbers (RFC 960)
+	Date: 1985-12-01
+	Type: standard
+	Succesor to rfc943
+
+rfc990
+	Name: Assigned Numbers (RFC 990)
+	Date: 1986-11-01
+	Type: standard
+	Successor to rfc960
+
+rfc997
+	Name: Assigned Numbers (RFC 997)
+	Date: 1987-03-01
+	Type: standard
+	Successor to rfc990
+
+rfc1010
+	Name: Assigned Numbers (RFC 1010)
+	Date: 1987-05-01
+	Type: standard
+	Successor to rfc997
+
+rfc1060
+	Name: Assigned Numbers (RFC 1060)
+	Date: 1990-03-01
+	Type: standard
+	Successor to rfc1010
+
+rfc1340
+	Name: Assigned Numbers (RFC 1340)
+	Date: 1992-07
+	Type: standard
+	Successor to rfc1060
+
+rfc1700
+	Name: Assigned Numbers (RFC 1700)
+	Date: 1994-10
+	Type: standard
+	Successor to rfc1340
