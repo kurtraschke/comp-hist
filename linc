@@ -11,6 +11,12 @@ whirlwind
 	Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
 	Type: hardware
 
+whirlwindii
+        Name: MIT Lincoln Lab Whirlwind II
+        Date: 1953-7
+        Reference: http://columbia.digiweb.com/~hansp/ccc/cclist1.htm
+        Type: hardware
+	Successor to whirlwind
 tx0
 	Name: MIT Lincoln Lab TX-0
 	Date: 1956
