@@ -1,4 +1,5 @@
-#This file is for the Apple Newton Messagepad devices
+#This file is for the Apple Newton Messagepad devices.
+#Someday we should create a file for Newton OS.
 
 applenewtonmp
 	Name: Apple Newton Messagepad
@@ -42,21 +43,21 @@ motmarco
 	Code taken from applenewtmp110
 
 applenewtmp130
-        Name:  Apple Newton Messagepad 130
+        Name: Apple Newton Messagepad 130
         Date: 1996-3
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
         Successor to applenewtmp120
 
 applenewtmp200
-        Name:  Apple Newton Messagepad 2000
+        Name: Apple Newton Messagepad 2000
         Date: 1997-3
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
         Successor to applenewtmp130
 
 applenewtemate300
-        Name:  Apple Newton eMate 300
+        Name: Apple Newton eMate 300
         Date: 1997-3
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
@@ -64,7 +65,7 @@ applenewtemate300
 	Influenced by notetaker
 
 applenewtmp2100
-        Name:  Apple Newton Messagepad 2100
+        Name: Apple Newton Messagepad 2100
         Date: 1997-10
         Reference: http://itr.bschool.unc.edu/faculty/marketing/bayusb/pda/pdatimeline.html
         Type: hardware
