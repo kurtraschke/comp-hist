@@ -5,8 +5,8 @@
 
 eniac
 	Name: Electronical Numerical Integrator and Computer
-	Date: 1946-2-15
-	Reference: Electronic Computers Within the Ordinance Corps, Chapter II <http://ftp.arl.mil/~mike/comphist/61ordnance/chap2.html>
+	Date: 1943
+	Reference: http://www.net.org/html/history/detail/1946-eniac.html
 	Type: hardware
 	#only edvac ordvac and possibly univac should trace to this, all others should trace to those three
 
