@@ -1,6 +1,12 @@
 cray
-	Name: Cray Research, Inc.
+	Name: Cray Research, Inc.\nCRI
 	Date: 1972
 	Type: company
 	Reference: http://www.cray.com/company/history.html
 
+ccc
+	Name: Cray Computer Corporation\n(CCC)
+	Date: 1989-11
+	Type: company
+	Reference: http://nhse.npac.syr.edu/hpccsurvey/orgs/craycc/craycc.html
+	Code taken from cray
