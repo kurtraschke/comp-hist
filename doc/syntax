@@ -17,6 +17,8 @@ fakenode
 	#can be one of OS os hardware standard or language this field is case sensitive
 	Info: this is a nonexistant node 
 	#this field places everything after Info: into a file called information in the dir you ran make in
+	Status: Jobsed
+	#can be one of released killed Jobsed prototype or research
 	Aka fnode 	
 	#this is for stuff with two names (as in Unicode and it's ISO standard name)
 	Successor to fakenode0 	
@@ -27,8 +29,6 @@ fakenode
   #like CP/M to QDOS#
 	Runs on foovax 	
    #this should only be used for one-platform OSes, and even then only for the earliest possible hardware
-	Made by fakecompany
-    #Guess
 	#This is a comment
 
 fakecompany 	
