@@ -1,0 +1,69 @@
+#!/usr/bin/perl -w
+
+#Tovcg, freedom from Graphviz
+
+$minyear = 3000;
+$maxyear = 0;
+$linkcnt = 0;
+$height = $maxyear - $minyear + 2;
+$width = $nodecnt / 2;
+$nextyear = $minyear + 1;
+
+while(<>){
+       if(/^#.*/){ next; }
+       if(/^(\S+)/){ $node = $1; next; }
+       if(/.*Name: (.*)){$name{$node} = $1; $nodecnt++; next;}
+
+       if(/.*Successor to (.*)/){
+            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "succ";
+	    $linkcnt++;
+	}
+
+       if(/.*Code taken from (.*)/){
+            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "code";
+            $linkcnt++;
+        }
+
+       if(/.*Influenced by (.*)/){
+            $from{$linkcnt} = $1; $to{$linkcnt} = $node; $weight{$linkcnt} = "idea";
+            $linkcnt++;
+        }
+
+	if(/.*Type: hardware/){ $color{$node} = yellow; }
+	if(/.*Type: OS/){ $color{$node} = blue; }
+	if(/.*Type: standard/){ $color{$node} = red; }
+	if(/.*Type: language/){ $color{$node} = green; }
+
+        if (/.*Date:.*(\d\d\d\d)-(\d\d)-(\d\d)/) {
+                                # Convert to year-mon
+            $yr=$1; $mon=$2; goto dodate;
+        }
+        if (/.*Date:.*(\d\d\d\d)-(\d\d)/) {
+            $yr=$1; $mon=$2; goto dodate;
+        }
+        if (/.*Date:.*(\d\d\d\d)/) {
+            $yr=$1; $mon="00";
+
+dodate:
+	$date{$node} = $yr.$mon;
+        if ($yr > $maxyear) { $maxyear=$yr; }
+        if ($yr < $minyear) { $minyear=$yr; }
+        next;
+    }
+}
+
+print("graph: { title = "The Computer Family Tree"\n\n");
+print("smanhatten_edges: yes\nlayoutalgorithm: tree\n");
+print("scaling: 0.34\n");
+print("x: 120 y: 20\nxmax: 1152\nymax: 900\n");
+print("width: $width \n");
+print("height: $height \n\n");
+print("color: white\n");
+print("edge.color: black\n");
+print("edge.arrowsize: 20\n");
+print("node.borderwidth: 7\n");
+print("node.bordercolor: black\n");
+print("node.textcolor: black\n\n");
+
+foreach $node %name {
+	print("node: { width: 138 height: 74 title: "$node" label: "$name{$node} color: $color{$node}
